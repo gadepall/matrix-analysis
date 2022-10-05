@@ -1,0 +1,160 @@
+
+\numberwithin{equation}{subsection}
+\subsection{Definitions}
+\begin{definition}
+	The {\em affine} transformation is given by 
+    \begin{align}
+	    \vec{x} &= \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\label{eq:conic_affine}
+    \end{align}
+	where $\vec{P}$ is invertible.
+\end{definition}
+\begin{definition}
+	The eigenvalue decomposition of a symmetric matrix $\vec{V}$ is given by 
+	%\cite{banchoff}
+    \begin{align}
+      \label{eq:conic_parmas_eig_def}
+      \vec{P}^{\top}\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
+      \\
+      \vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+      \\
+      \vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^{\top}=\vec{P}^{-1},
+      \label{eq:eigevecP}
+    \end{align}
+\end{definition}
+\subsection{The Quadratic Form}
+
+\begin{definition}
+  Let $\vec{q}$ be a point such that the ratio of its distance from a fixed point $\vec{F}$ and the distance ($d$) from a fixed line 
+	\begin{align}
+L: \vec{n}^{\top}\vec{x}=c 
+	\end{align}
+		is constant, given by 
+\label{conics/30/def}
+\begin{align}
+\frac{\norm{\vec{q}-\vec{F}}}{d} = e    
+\end{align}
+The locus of $\vec{q}$ is known as a conic section. The line $L$ is known as the directrix and the point $\vec{F}$ is the focus. $e$ is defined to be 
+the eccentricity of the conic.  
+\begin{enumerate}
+    \item For $e = 1$, the conic is a parabola
+    \item For $e < 1$, the conic is an ellipse
+    \item For $e > 1$, the conic is a hyperbola
+\end{enumerate}
+\end{definition}
+\begin{theorem}
+The equation of  a conic with directrix $\vec{n}^{\top}\vec{x} = c$, eccentricity $e$ and focus $\vec{F}$ is given by 
+\begin{align}
+    \label{eq:conic_quad_form}
+    \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+    \end{align}
+where     
+\begin{align}
+  \label{eq:conic_quad_form_v}
+\vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
+\\
+\label{eq:conic_quad_form_u}
+\vec{u} &= ce^2\vec{n}-\norm{\vec{n}}^2\vec{F}, 
+\\
+\label{eq:conic_quad_form_f}
+f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
+%\\
+    \end{align}
+    
+% \begin{align}
+% \vec{x}^{\top}(t\vec{I}-\vec{n}\vec{n}^{\top})\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}+t\norm{\vec{F}}^2-c^2&=0
+% \end{align}
+%
+%and 
+% where 
+% \begin{align}
+%     %t=\frac{\norm{\vec{n}}^2}{e^2}
+%     \norm{\vec{n}} = 1
+% \end{align}
+%\end{theorem}
+\end{theorem}
+\begin{proof}
+  Using Definition \ref{conics/30/def} and Lemma \ref{conics/30/lemma},  for any point $\vec{x}$ on the conic,
+\begin{align}
+\norm{\vec{x}-\vec{F}}^2&=e^2 \frac{\brak{{\vec{n}^{\top}\vec{x} - c}}^2}{\norm{\vec{n}}^2}\label{conics/30/eq:1} \\
+\implies \norm{\vec{n}}^2\brak{\vec{x}-\vec{F}}^{\top}\brak{\vec{x}-\vec{F}}&=e^2\brak{\vec{n}^{\top}\vec{x} - c}^2
+\\
+\implies \norm{\vec{n}}^2\brak{\vec{x}^{\top}\vec{x}-2\vec{F}^{\top}\vec{x}+\norm{\vec{F}}^2}&=e^2\brak{c^2+\brak{\vec{n}^{\top}\vec{x} }^2-2c\vec{n}^{\top}\vec{x}} \\
+&=e^2\brak{c^2+\brak{\vec{x}^{\top}\vec{n}\vec{n}^{\top}\vec{x} }-2c\vec{n}^{\top}\vec{x}}
+% t\vec{x}^{\top}\vec{x}-(\vec{n}^{\top}\vec{x} )^2-2t\vec{F}^{\top}\vec{x}+2c\vec{n}^{\top}\vec{x}=c^2-t\norm{\vec{F}}^2\\
+% t\vec{x}^{\top}\vec{I}\vec{x}-\vec{n}^{\top}\vec{x} \vec{n}^{\top}\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}=c^2-t\norm{\vec{F}}^2\\
+% \vec{x}^{\top}(t\vec{I}-\vec{n}\vec{n}^{\top})\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}+t\norm{\vec{F}}^2-c^2=0
+\end{align}
+%
+which can be expressed as \eqref{eq:conic_quad_form} after simplification.
+
+% See Appendix \ref{app:conicdef}
+\end{proof}
+\begin{theorem}
+  The eccentricity, directrices and foci of \eqref{eq:conic_quad_form} are given by 
+%  \eqref{eq:conic_quad_form_e} -
+%  \eqref{eq:conic_quad_form_F} 
+%  \begin{figure*}[!hb]
+%	  \centering
+%	  \hrule
+\begin{align}
+  \label{eq:conic_quad_form_e} 
+  e&= \sqrt{1-\frac{\lambda_1}{\lambda_2}}
+\\
+\label{eq:conic_quad_form_nc} 
+	\begin{split}
+  \vec{n}&= \sqrt{\lambda_2}\vec{p}_1,  
+  \\
+	c &= 
+  \begin{cases}
+    \frac{e\vec{u}^{\top}\vec{n} \pm \sqrt{e^2\brak{\vec{u}^{\top}\vec{n}}^2-\lambda_2\brak{e^2-1}\brak{\norm{\vec{u}}^2 - \lambda_2 f}}}{\lambda_2e\brak{e^2-1}} & e \ne 1
+    \\
+    \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2\vec{u}^{\top}\vec{n}} & e = 1
+  \end{cases}
+	\end{split}
+  \\
+  \label{eq:conic_quad_form_F} 
+  \vec{F}  &= \frac{ce^2\vec{n}-\vec{u}}{\lambda_2}
+\end{align}  
+%  \end{figure*}
+\end{theorem}
+\begin{proof}
+	See Appendix \ref{app:conic-parameters}
+\end{proof}
+
+\begin{theorem}
+\eqref{eq:conic_quad_form} represents 
+	\begin{enumerate}
+		\item a parabola for $\mydet{\vec{V}} = 0 $,
+		\item ellipse for $\mydet{\vec{V}} > 0 $ and 
+		\item hyperbola for $\mydet{\vec{V}} < 0 $.
+	\end{enumerate}
+%		\item a pair of straight lines if
+%\begin{align}
+%\mydet{
+%\vec{V}&\vec{u}
+%\\
+%\vec{u}^{\top}&f
+%}
+%=  0, \quad \mydet{\vec{V}} < 0
+%\label{eq:quad_forms_pair_det}
+%\end{align}
+%			else, it represents
+\end{theorem}
+\begin{proof}
+  From \eqref{eq:conic_quad_form_e},
+\begin{align}
+  \frac{\lambda_1}{\lambda_2} = 1 - e^2
+\end{align}
+Also, 
+\begin{align}
+	\mydet{\vec{V}} =   \lambda_1\lambda_2 
+\end{align}
+	yielding Table \ref{table:det}
+\begin{table}[!h]
+\centering
+\input{tables/det.tex}
+	\caption{}
+\label{table:det}
+\end{table}
+\end{proof}

@@ -14,14 +14,16 @@
 \contentsline {subsection}{\numberline {3.3}Standard Form}{13}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Corollaries-Standard Form}{14}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Corollaries-Quadratic Form }{15}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6} Chords of a Conic}{15}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7} Tangent and Normal}{17}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Pair of Straight Lines}{18}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.6}Pair of Straight Lines}{15}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7} Chords of a Conic}{17}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8} Tangent and Normal}{18}{subsection.3.8}%
 \contentsline {subsection}{\numberline {3.9}Intersection of Conics}{20}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Miscellaneous}{20}{subsection.3.10}%
-\contentsline {section}{Appendix\nobreakspace A}{21}{section*.2}%
-\contentsline {section}{Appendix\nobreakspace B}{22}{section*.3}%
-\contentsline {subsection}{\numberline {B.1}}{23}{subsection.Appendix.B.1}%
-\contentsline {section}{Appendix\nobreakspace C}{23}{section*.4}%
-\contentsline {section}{Appendix\nobreakspace D}{24}{section*.5}%
-\contentsline {section}{Appendix\nobreakspace E}{25}{section*.6}%
+\contentsline {section}{\numberline {4}Examples}{20}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Loney}{20}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Miscellaneous}{23}{subsection.4.2}%
+\contentsline {section}{Appendix\nobreakspace A}{25}{section*.2}%
+\contentsline {section}{Appendix\nobreakspace B}{26}{section*.3}%
+\contentsline {subsection}{\numberline {B.1}}{26}{subsection.Appendix.B.1}%
+\contentsline {section}{Appendix\nobreakspace C}{27}{section*.4}%
+\contentsline {section}{Appendix\nobreakspace D}{27}{section*.5}%
+\contentsline {section}{Appendix\nobreakspace E}{28}{section*.6}%
