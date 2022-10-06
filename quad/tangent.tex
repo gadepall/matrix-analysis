@@ -153,29 +153,7 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 	  \label{eq:h-tangents-sigma}
   \end{align}                    
 \end{theorem}
-%	\begin{corollary}
-%\begin{align}
-%L_P: \quad \vec{x} = \vec{h} + \mu \vec{m} \quad \mu \in \mathbb{R}
-%\label{eq:conic_tangent-q}
-%\end{align}
-%where 
-%	\begin{align}
-%  \label{eq:conic_tangent_dirvec-h}
-%		\vec{m} &= \myvec{1 \\ m}
-%		\\
-%\vec{m}^{\top}\bm{\Sigma}
-%		\vec{m} &= 0
-%  \label{eq:conic_tangent_qquad-h}
-%\end{align}
-%  and $\mu$ given by 
-%\eqref{eq:tangent_roots}.
-%	\end{corollary}
-%The equations of the tangents from 
 \begin{proof}
-%	Let the direction vector of the tangent from $\vec{h}$ to the conic be given by
-%  \eqref{eq:conic_tangent_dirvec-h}.
-%	The equation of the tangent from $\vec{h}$ to the conic in \eqref{eq:conic_quad_form} can then be expressed as 
-%\label{eq:conic_tangent-q}
  From \eqref{eq:tangent_roots},
  and
   \eqref{eq:conic_tangent_disc}
@@ -196,13 +174,6 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
   {
   \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
   }}\vec{m} &= 0                                                                                             
-%	  \implies 
-%	  \vec{m}^{\top}  \sbrak{\brak{\vec{V}\vec{h}\vec{h}^{\top}\vec{V}+\vec{V}\vec{h}\vec{u}^{\top}+ \vec{u}\vec{h}^{\top}\vec{V}+\vec{u}\vec{u}^{\top}}
-%   -\vec{V}
-%  \brak
-%  {
-%  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
-%  }}\vec{m} &= 0                                                                                             
   \label{eq:conic_tangent_disc-h}
   \end{align}                    
   yielding
@@ -210,73 +181,49 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
   \eqref{eq:quad_form_pair_normvecs}, 
   \eqref{eq:quad_form_pair_normvecs-sigma}
   can be obtained.
-%  Letting 
-%  \eqref{eq:conic_tangent_disc-h} can be expressed as 
-%  Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
-% The points of intersection of the line 
-%\eqref{eq:conic_tangent-q}
-%%	From 
-%%  \eqref{eq:conic_tangent_mq}
-%%  \begin{align}
-%%  \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} = 0
-%%  \end{align}
-%\end{proof}
-%with the conic section in \eqref{eq:conic_quad_form} are given by
-%\begin{align}
-%\vec{x}_i = \vec{q} + \mu_i \vec{m}
-%	\label{eq:chord-pts}
-%\end{align}
-%%
-%where
-%\begin{multline}
-%\mu_i = \frac{1}
-%{
-%\vec{m}^{\top}\vec{V}\vec{m}
-%}
-%\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}}
-%\\
-%\pm
-%{\small
-%\rbrak{\sqrt{
-%\sbrak{
-%\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
-%}^2
-%-
-%\brak
-%{
-%\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
-%}
-%\brak{\vec{m}^{\top}\vec{V}\vec{m}}
-%}
-%}
-%}
-%\label{eq:tangent_roots}
-%\end{multline}
-%
-%
-%%\end{theorem}
-%\begin{proof}
-%  Substituting \eqref{eq:conic_tangent}
-%in \eqref{eq:conic_quad_form}, 
-%\begin{align}
-%\brak{\vec{q} + \mu \vec{m}}^{\top}\vec{V}\brak{\vec{q} + \mu \vec{m}}  + 2 \vec{u}^{\top}\brak{\vec{q} + \mu \vec{m}}+f &= 0
-%\\
-%\implies \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} 
-%+ \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f &= 0
-%\label{eq:conic_intercept}
-%\end{align}
-%Solving the above quadratic in \eqref{eq:conic_intercept}
-%yields \eqref{eq:tangent_roots}.
-%\end{proof}
-%\begin{corollary}
-%  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
-%  \begin{align}
-%  \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} = 0
-%  \label{eq:conic_tangent_mq}
-%  \end{align}
-%\end{corollary}
-%\begin{proof}
-%  In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
-%  in 
 \end{proof}
 %
+\begin{theorem}
+	The normal vectors of the tangents from 
+	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
+	are given by 
+  \begin{align} 
+  \label{eq:dualquad_form_pair_normvecs-sigma}
+  \begin{split}
+  \vec{n}_1 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}
+  \\
+  \vec{n}_2 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm] - \sqrt{\abs{\lambda_2}}}
+  \end{split}
+  \end{align} 
+  where $\lambda_i, \vec{P}$ are the eigenparameters of 
+  \begin{align} 
+		\bm{\Sigma} &= 
+	   \brak{\vec{V}\vec{h}+\vec{u}}
+	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
+   -\vec{V}
+  \brak
+  {
+  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+  }.
+	  \label{eq:dualh-tangents-sigma}
+  \end{align}                    
+\end{theorem}
+%
+\begin{proof}
+From 
+  \eqref{eq:conic_tangent_mq}, the normal vector to  the tangent at $\vec{q}$ can be expressed as 
+  \begin{align}
+  \vec{n} &= \vec{V}\vec{q}+\vec{u} 
+  \label{eq:conic_normal_n}
+  \\
+  \implies \vec{q} &= \vec{V}^{-1}\brak{\vec{n}-\vec{u} }
+  \label{eq:conic_normal_q}
+  \end{align}
+  which upon substituting in \eqref{eq:conic_quad_form} yields
+\begin{align}
+    \label{eq:conic_quad_form_q}
+    \brak{\vec{n}-\vec{u} }^{\top}\vec{V}^{-1}\vec{V}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+2\vec{u}^{\top}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+f&=0
+    \\
+    \implies \vec{n} ^{\top}\vec{V}^{-1}\vec{n}-\vec{u}^{\top}\vec{V}^{-1}\vec{u} +f&=0
+    \end{align}
+\end{proof}

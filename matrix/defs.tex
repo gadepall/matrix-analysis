@@ -276,3 +276,21 @@ the inverse is given by
 \end{align}
 \item For higher order matrices, the inverse should be calculated using row operations.
 \end{enumerate}
+\subsection{Orthogonality}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The rotation matrix is defined as 
+\begin{align}
+	\vec{R}_{\theta} = \myvec{\cos \theta & -\sin \theta  \\ \sin \theta  & \cos \theta  }, \quad \theta \in \sbrak{0, 2\pi}
+\end{align}
+\item The rotation matrix is {\em orthogonal}
+\begin{align}
+	\vec{R}_{\theta}^{\top}\vec{R}_{\theta} = \vec{R}_{\theta}\vec{R}_{\theta}^{\top} = \vec{I}
+\end{align}
+\item 
+\begin{align}
+	\vec{m}^{\top}\vec{n} = 0 \implies \vec{n} = \vec{R}_{\frac{\pi}{2}}\vec{m}
+\end{align}
+\end{enumerate}

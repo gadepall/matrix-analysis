@@ -5,6 +5,7 @@
 \contentsline {subsection}{\numberline {1.4}Determinants}{5}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Rank of a Matrix}{5}{subsection.1.5}%
 \contentsline {subsection}{\numberline {1.6}Inverse of a Matrix}{5}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}Orthogonality}{5}{subsection.1.7}%
 \contentsline {section}{\numberline {2}Linear Forms}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Two Dimensions}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Three Dimensions}{7}{subsection.2.2}%
@@ -20,10 +21,10 @@
 \contentsline {subsection}{\numberline {3.9}Intersection of Conics}{20}{subsection.3.9}%
 \contentsline {section}{\numberline {4}Examples}{20}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Loney}{20}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Miscellaneous}{23}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Miscellaneous}{24}{subsection.4.2}%
 \contentsline {section}{Appendix\nobreakspace A}{25}{section*.2}%
 \contentsline {section}{Appendix\nobreakspace B}{26}{section*.3}%
 \contentsline {subsection}{\numberline {B.1}}{26}{subsection.Appendix.B.1}%
 \contentsline {section}{Appendix\nobreakspace C}{27}{section*.4}%
-\contentsline {section}{Appendix\nobreakspace D}{27}{section*.5}%
+\contentsline {section}{Appendix\nobreakspace D}{28}{section*.5}%
 \contentsline {section}{Appendix\nobreakspace E}{28}{section*.6}%
