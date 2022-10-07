@@ -187,26 +187,22 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 	The normal vectors of the tangents from 
 	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
 	are given by 
-  \begin{align} 
-  \label{eq:dualquad_form_pair_normvecs-sigma}
-  \begin{split}
-  \vec{n}_1 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}
-  \\
-  \vec{n}_2 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm] - \sqrt{\abs{\lambda_2}}}
-  \end{split}
-  \end{align} 
-  where $\lambda_i, \vec{P}$ are the eigenparameters of 
-  \begin{align} 
-		\bm{\Sigma} &= 
-	   \brak{\vec{V}\vec{h}+\vec{u}}
-	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
-   -\vec{V}
-  \brak
-  {
-  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
-  }.
-	  \label{eq:dualh-tangents-sigma}
-  \end{align}                    
+\begin{align}
+	\label{eq:dual-nh}
+	\vec{n} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}+\mu_i\vec{R}\vec{h}, 
+\end{align}
+where
+\begin{align}
+	\vec{R} &= 
+	\vec{R}_{\frac{\pi}{2}} = \myvec{0 & -1 \\ 1 & 0}
+\end{align}
+and $\mu_i$ are obtained from 
+\eqref{eq:tangent_roots} by substituting
+\begin{align}
+	\vec{m} &= \vec{R}\vec{h}, \vec{u} = 0, \vec{q} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}
+\end{align}
+	and replacing $\vec{V}$ with $\vec{V}^{-1}$.
+
 \end{theorem}
 %
 \begin{proof}
@@ -224,6 +220,15 @@ From
     \label{eq:conic_quad_form_q}
     \brak{\vec{n}-\vec{u} }^{\top}\vec{V}^{-1}\vec{V}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+2\vec{u}^{\top}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+f&=0
     \\
-    \implies \vec{n} ^{\top}\vec{V}^{-1}\vec{n}-\vec{u}^{\top}\vec{V}^{-1}\vec{u} +f&=0
+    \implies \vec{n} ^{\top}\vec{V}^{-1}\vec{n}-f_0 = 0
+	\label{eq:dual-nf0}
+	%\vec{u}^{\top}\vec{V}^{-1}\vec{u} +f&=0
     \end{align}
+	Since the tangents pass through the point $\vec{h}$, 
+    \begin{align}
+\vec{n}^{\top}\vec{h} = 1
+    \end{align}
+and	from 
+	\eqref{eq:mat-nh}, we obtain 
+	\eqref{eq:dual-nh}.
 \end{proof}

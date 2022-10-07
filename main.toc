@@ -16,15 +16,16 @@
 \contentsline {subsection}{\numberline {5.4}Corollaries-Standard Form}{15}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Corollaries-Quadratic Form }{15}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Pair of Straight Lines}{16}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7} Chords of a Conic}{17}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8} Tangent and Normal}{19}{subsection.5.8}%
-\contentsline {subsection}{\numberline {5.9}Intersection of Conics}{21}{subsection.5.9}%
-\contentsline {section}{\numberline {6}Examples}{21}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Loney}{21}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Miscellaneous}{24}{subsection.6.2}%
+\contentsline {subsection}{\numberline {5.7}Intersection of Conics}{17}{subsection.5.7}%
+\contentsline {section}{\numberline {6}Conic Lines}{18}{section.6}%
+\contentsline {subsection}{\numberline {6.1} Chords of a Conic}{18}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2} Tangent and Normal}{19}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Examples}{21}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Loney}{21}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Miscellaneous}{25}{subsection.7.2}%
 \contentsline {section}{Appendix\nobreakspace A}{26}{section*.2}%
 \contentsline {section}{Appendix\nobreakspace B}{27}{section*.3}%
 \contentsline {subsection}{\numberline {B.1}}{27}{subsection.Appendix.B.1}%
 \contentsline {section}{Appendix\nobreakspace C}{28}{section*.4}%
-\contentsline {section}{Appendix\nobreakspace D}{28}{section*.5}%
+\contentsline {section}{Appendix\nobreakspace D}{29}{section*.5}%
 \contentsline {section}{Appendix\nobreakspace E}{29}{section*.6}%
