@@ -132,6 +132,55 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 	The normal vectors of the tangents from 
 	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
 	are given by 
+\begin{align}
+	\label{eq:dual-nh}
+	\vec{n} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}+\mu_i\vec{R}\vec{h}, 
+\end{align}
+where
+\begin{align}
+	\vec{R} &= 
+	\vec{R}_{\frac{\pi}{2}} = \myvec{0 & -1 \\ 1 & 0}
+\end{align}
+and $\mu_i$ are obtained from 
+\eqref{eq:tangent_roots} by substituting
+\begin{align}
+	\vec{m} &= \vec{R}\vec{h}, \vec{u} = 0, \vec{q} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}
+\end{align}
+	and replacing $\vec{V}$ with $\vec{V}^{-1}$.
+
+\end{theorem}
+%
+\begin{proof}
+From 
+  \eqref{eq:conic_tangent_mq}, the normal vector to  the tangent at $\vec{q}$ can be expressed as 
+  \begin{align}
+  \vec{n} &= \vec{V}\vec{q}+\vec{u} 
+  \label{eq:conic_normal_n}
+  \\
+  \implies \vec{q} &= \vec{V}^{-1}\brak{\vec{n}-\vec{u} }
+  \label{eq:conic_normal_q}
+  \end{align}
+  which upon substituting in \eqref{eq:conic_quad_form} yields
+\begin{align}
+    \label{eq:conic_quad_form_q}
+    \brak{\vec{n}-\vec{u} }^{\top}\vec{V}^{-1}\vec{V}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+2\vec{u}^{\top}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+f&=0
+    \\
+    \implies \vec{n} ^{\top}\vec{V}^{-1}\vec{n}-f_0 = 0
+	\label{eq:dual-nf0}
+	%\vec{u}^{\top}\vec{V}^{-1}\vec{u} +f&=0
+    \end{align}
+	Since the tangents pass through the point $\vec{h}$, 
+    \begin{align}
+\vec{n}^{\top}\vec{h} = 1
+    \end{align}
+and	from 
+	\eqref{eq:mat-nh}, we obtain 
+	\eqref{eq:dual-nh}.
+\end{proof}
+\begin{theorem}
+	The normal vectors of the tangents from 
+	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
+	are given by 
   \begin{align} 
   \label{eq:quad_form_pair_normvecs-sigma}
   \begin{split}
@@ -183,52 +232,3 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
   can be obtained.
 \end{proof}
 %
-\begin{theorem}
-	The normal vectors of the tangents from 
-	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
-	are given by 
-\begin{align}
-	\label{eq:dual-nh}
-	\vec{n} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}+\mu_i\vec{R}\vec{h}, 
-\end{align}
-where
-\begin{align}
-	\vec{R} &= 
-	\vec{R}_{\frac{\pi}{2}} = \myvec{0 & -1 \\ 1 & 0}
-\end{align}
-and $\mu_i$ are obtained from 
-\eqref{eq:tangent_roots} by substituting
-\begin{align}
-	\vec{m} &= \vec{R}\vec{h}, \vec{u} = 0, \vec{q} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}
-\end{align}
-	and replacing $\vec{V}$ with $\vec{V}^{-1}$.
-
-\end{theorem}
-%
-\begin{proof}
-From 
-  \eqref{eq:conic_tangent_mq}, the normal vector to  the tangent at $\vec{q}$ can be expressed as 
-  \begin{align}
-  \vec{n} &= \vec{V}\vec{q}+\vec{u} 
-  \label{eq:conic_normal_n}
-  \\
-  \implies \vec{q} &= \vec{V}^{-1}\brak{\vec{n}-\vec{u} }
-  \label{eq:conic_normal_q}
-  \end{align}
-  which upon substituting in \eqref{eq:conic_quad_form} yields
-\begin{align}
-    \label{eq:conic_quad_form_q}
-    \brak{\vec{n}-\vec{u} }^{\top}\vec{V}^{-1}\vec{V}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+2\vec{u}^{\top}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+f&=0
-    \\
-    \implies \vec{n} ^{\top}\vec{V}^{-1}\vec{n}-f_0 = 0
-	\label{eq:dual-nf0}
-	%\vec{u}^{\top}\vec{V}^{-1}\vec{u} +f&=0
-    \end{align}
-	Since the tangents pass through the point $\vec{h}$, 
-    \begin{align}
-\vec{n}^{\top}\vec{h} = 1
-    \end{align}
-and	from 
-	\eqref{eq:mat-nh}, we obtain 
-	\eqref{eq:dual-nh}.
-\end{proof}
