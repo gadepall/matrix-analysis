@@ -1,366 +1,260 @@
-\let\negmedspace\undefined
-\let\negthickspace\undefined
-%\RequirePackage{amsmath}
-%\documentclass[journal,12pt,twocolumn]{IEEEtran}
-\documentclass[journal,12pt,onecolumn]{IEEEtran}
-%
-% \usepackage{setspace}
- \usepackage{gensymb}
-%\doublespacing
-%\singlespacing
-%\usepackage{silence}
-%Disable all warnings issued by latex starting with "You have..."
-%\usepackage{graphicx}
-\usepackage{amssymb}
-%\usepackage{relsize}
-\usepackage[cmex10]{amsmath}
-%\usepackage{amsthm}
-%\interdisplaylinepenalty=2500
-%\savesymbol{iint}
-%\usepackage{txfonts}
-%\restoresymbol{TXF}{iint}
-%\usepackage{wasysym}
-\usepackage{amsthm}
-%\usepackage{pifont}
-%\usepackage{iithtlc}
-% \usepackage{mathrsfs}
-% \usepackage{txfonts}
- \usepackage{stfloats}
-% \usepackage{steinmetz}
- \usepackage{bm}
-% \usepackage{cite}
-% \usepackage{cases}
-% \usepackage{subfig}
-%\usepackage{xtab}
-\usepackage{longtable}
-%\usepackage{multirow}
-%\usepackage{algorithm}
-%\usepackage{algpseudocode}
-\usepackage{enumitem}
- \usepackage{mathtools}
- \usepackage{tikz}
-% \usepackage{circuitikz}
-% \usepackage{verbatim}
-%\usepackage{tfrupee}
-\usepackage[breaklinks=true]{hyperref}
-%\usepackage{stmaryrd}
-%\usepackage{tkz-euclide} % loads  TikZ and tkz-base
-%\usetkzobj{all}
-\usepackage{listings}
-    \usepackage{color}                                            %%
-    \usepackage{array}                                            %%
-    \usepackage{longtable}                                        %%
-    \usepackage{calc}                                             %%
-    \usepackage{multirow}                                         %%
-    \usepackage{hhline}                                           %%
-    \usepackage{ifthen}                                           %%
-  %optionally (for landscape tables embedded in another document): %%
-    \usepackage{lscape}     
-% \usepackage{multicol}
-% \usepackage{chngcntr}
-%\usepackage{enumerate}
+%% Run LaTeX on this file several times to get Table of Contents,
+%% cross-references, and citations.
 
-%\usepackage{wasysym}
-%\newcounter{MYtempeqncnt}
-\DeclareMathOperator*{\Res}{Res}
-\DeclareMathOperator*{\equals}{=}
-%\renewcommand{\baselinestretch}{2}
-\renewcommand\thesection{\arabic{section}}
-\renewcommand\thesubsection{\thesection.\arabic{subsection}}
-\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\documentclass[11pt]{book}
+\usepackage{gvv-book}
+%\usepackage{Wiley-AuthoringTemplate}
+\usepackage[sectionbib,authoryear]{natbib}% for name-date citation comment the below line
+%\usepackage[sectionbib,numbers]{natbib}% for numbered citation comment the above line
 
-\renewcommand\thesectiondis{\arabic{section}}
-\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
-\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+%%********************************************************************%%
+%%       How many levels of section head would you like numbered?     %%
+%% 0= no section numbers, 1= section, 2= subsection, 3= subsubsection %%
+\setcounter{secnumdepth}{3}
+%%********************************************************************%%
+%%**********************************************************************%%
+%%     How many levels of section head would you like to appear in the  %%
+%%				Table of Contents?			%%
+%% 0= chapter, 1= section, 2= subsection, 3= subsubsection titles.	%%
+\setcounter{tocdepth}{2}
+%%**********************************************************************%%
 
-% correct bad hyphenation here
-\hyphenation{op-tical net-works semi-conduc-tor}
-\def\inputGnumericTable{}                                 %%
+%\includeonly{ch01}
+\makeindex
 
-\lstset{
-%language=C,
-frame=single, 
-breaklines=true,
-columns=fullflexible
-}
-%\lstset{
-%language=tex,
-%frame=single, 
-%breaklines=true
-%}
 \begin{document}
 
-%
+\frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title Pages
+%% Wiley will provide title and copyright page, but you can make
+%% your own titlepages if you'd like anyway
+%% Setting up title pages, type in the appropriate names here:
+
+\booktitle{Matrix Analysis}
+
+\subtitle{Through Coordinate Geometry}
+
+\AuAff{G. V. V. Sharma}
 
 
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{problem}{Problem}
-\newtheorem{proposition}{Proposition}[section]
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{example}{Example}[section]
-\newtheorem{definition}[problem]{Definition}
-%\newtheorem{thm}{Theorem}[section] 
-%\newtheorem{defn}[thm]{Definition}
-%\newtheorem{algorithm}{Algorithm}[section]
-%\newtheorem{cor}{Corollary}
-\newcommand{\BEQA}{\begin{eqnarray}}
-\newcommand{\EEQA}{\end{eqnarray}}
-\newcommand{\define}{\stackrel{\triangle}{=}}
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
-\bibliographystyle{IEEEtran}
-%\bibliographystyle{ieeetr}
-
-
-\providecommand{\mbf}{\mathbf}
-\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
-\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
-\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
-\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
-\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
-\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
-\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
-\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
-\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
-\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
-\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
-\theoremstyle{remark}
-\newtheorem{rem}{Remark}
-\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
-\providecommand{\abs}[1]{\left\vert#1\right\vert}
-\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
-\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-%\providecommand{\norm}[1]{\lVert#1\rVert}
-\providecommand{\mtx}[1]{\mathbf{#1}}
-\providecommand{\mean}[1]{E\left[ #1 \right]}
-\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
-%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
-\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
-\newcommand{\solution}{\noindent \textbf{Solution: }}
-\newcommand{\cosec}{\,\text{cosec}\,}
-\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
-\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-%\numberwithin{equation}{section}
-\numberwithin{equation}{subsection}
-%\numberwithin{problem}{section}
-%\numberwithin{definition}{section}
-\makeatletter
-\@addtoreset{figure}{problem}
-\makeatother
-
-\let\StandardTheFigure\thefigure
-\let\vec\mathbf
-%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
-\renewcommand{\thefigure}{\theproblem}
-%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
-%\counterwithin{equation}{enumi}
-
-
-%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
-
-\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
-     \def\rightbox#1{\makebox[0in][r]{#1}}
-     \def\centbox#1{\makebox[0in]{#1}}
-     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
-     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
-
-\vspace{3cm}
-
-\title{
-	%\logo{
-%Computational Approach to School Geometry
-	Matrix Analysis
-%	}
-}
-\author{ G V V Sharma$^{*}$% <-this % stops a space
-	\thanks{*The author is with the Department
-		of Electrical Engineering, Indian Institute of Technology, Hyderabad
-		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
-	
-}	
-%\title{
-%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+%% \\ will start a new line.
+%% You may add \affil{} for affiliation, ie,
+%\authors{Robert M. Groves\\
+%\affil{Universitat de les Illes Balears}
+%Floyd J. Fowler, Jr.\\
+%\affil{University of New Mexico}
 %}
 
+%% Print Half Title and Title Page:
+%\halftitlepage
+\titlepage
 
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
-%\title{Matrix Analysis through Octave}
-%
-%
-% author names and IEEE memberships
-% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
-% a structure at a ~ so this keeps an author's name from being broken across
-% two lines.
-% use \thanks{} to gain access to the first footnote area
-% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
-% was not built to handle multiple paragraphs
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Copyright Page
 
-%\author{<-this % stops a space
-%\thanks{}}
-%}
-% note the % following the last \IEEEmembership and also \thanks - 
-% these prevent an unwanted space from occurring between the last author name
-% and the end of the author line. i.e., if you had this:
+\begin{copyrightpage}{2022}
+%Title, etc
+\end{copyrightpage}
+
+% Note, you must use \ to start indented lines, ie,
 % 
-% \author{....lastname \thanks{...} \thanks{...} }
-%                     ^------------^------------^----Do not want these spaces!
-%
-% a space would be appended to the last name and could cause every name on that
-% line to be shifted left slightly. This is one of those "LaTeX things". For
-% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
-% "AB" then you have to do: "\textbf{A}\textbf{B}"
-% \thanks is no different in this regard, so shield the last } of each \thanks
-% that ends a line with a % and do not let a space in before the next \thanks.
-% Spaces after \IEEEmembership other than the last one are OK (and needed) as
-% you are supposed to have spaces between the names. For what it is worth,
-% this is a minor point as most people would not even notice if the said evil
-% space somehow managed to creep in.
+% \begin{copyrightpage}{2004}
+% Survey Methodology / Robert M. Groves . . . [et al.].
+% \       p. cm.---(Wiley series in survey methodology)
+% \    ``Wiley-Interscience."
+% \    Includes bibliographical references and index.
+% \    ISBN 0-471-48348-6 (pbk.)
+% \    1. Surveys---Methodology.  2. Social 
+% \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+% Series.\\
 
-%\WarningFilter{latex}{LaTeX Warning: You have requested, on input line 117, version}
+% HA31.2.S873 2004
+% 001.4'33---dc22                                             2004044064
+% \end{copyrightpage}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Only Dedication (optional) 
 
-% The paper headers
-%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
-%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
-% The only time the second header will appear is for the odd numbered pages
-% after the title page when using the twoside option.
-% 
-% *** Note that you probably will NOT want to include the author's ***
-% *** name in the headers of peer review papers.                   ***
-% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
-% you desire.
-
-
-
-
-% If you want to put a publisher's ID mark on the page you can do it like
-% this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
-% Remember, if you use this you must call \IEEEpubidadjcol in the second
-% column for its text to clear the IEEEpubid mark.
-
-
-
-% make the title area
-\maketitle
-
-%\newpage
+%\dedication{To my parents}
 
 \tableofcontents
 
-\bigskip
+%\listoffigures %optional
+%\listoftables  %optional
 
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
-%\renewcommand{\theequation}{\theenumi}
+%% or Contributor Page for edited books
+%% before \tableofcontents
 
-%\begin{abstract}
-%%\boldmath
-%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Contributors Page for Edited Book
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If your book has chapters written by different authors,
+% you'll need a Contributors page.
+
+% Use \begin{contributors}...\end{contributors} and
+% then enter each author with the \name{} command, followed
+% by the affiliation information.
+
+% \begin{contributors}
+% \name{Masayki Abe,} Fujitsu Laboratories Ltd., Fujitsu Limited, Atsugi, Japan
 %
-%\end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%Cooperative diversity, decode and forward, piecewise linear
-%\end{IEEEkeywords}
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
+% \name{L. A. Akers,} Center for Solid State Electronics Research, Arizona State University, Tempe, Arizona
 %
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
+% \name{G. H. Bernstein,} Department of Electrical and Computer Engineering, University of Notre Dame, Notre Dame, South Bend, Indiana; formerly of
+% Center for Solid State Electronics Research, Arizona
+% State University, Tempe, Arizona 
+% \end{contributors}
 
-\begin{abstract}
-This manual provides an introduction to vectors and their properties,  based on the question papers, year 2020,  from Class 10 and 12, CBSE.
-	%; JEE and JNTU.  
-\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Foreword:
 
+%\begin{foreword}
+%\lipsum[1-2]
+%\end{foreword}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Preface:
+
+%\begin{preface}
+%\lipsum[1-1]
+%\prefaceauthor{}
+%\where{place\\
+% date}
+%\end{preface}
+
+% ie,
+% \begin{preface}
+% This is an example preface.
+% \prefaceauthor{R. K. Watts}
+% \where{Durham, North Carolina\\
+% September, 2004}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Acknowledgments:
+
+%\acknowledgments
+%\lipsum[1-2]
+%\authorinitials{I. R. S.}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Glossary Type of Environment:
+
+% \begin{glossary}
+% \term{<term>}{<description>}
+% \end{glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{acronyms}
+%\acro{ASTA}{Arrivals See Time Averages}
+%\acro{BHCA}{Busy Hour Call Attempts}
+%\acro{BR}{Bandwidth Reservation}
+%\acro{b.u.}{bandwidth unit(s)}
+%\acro{CAC}{Call / Connection Admission Control}
+%\acro{CBP}{Call Blocking Probability(-ies)}
+%\acro{CCS}{Centum Call Seconds}
+%\acro{CDTM}{Connection Dependent Threshold Model}
+%\acro{CS}{Complete Sharing}
+%\acro{DiffServ}{Differentiated Services}
+%\acro{EMLM}{Erlang Multirate Loss Model}
+%\acro{erl}{The Erlang unit of traffic-load}
+%\acro{FIFO}{First in - First out}
+%\acro{GB}{Global balance}
+%\acro{GoS}{Grade of Service}
+%\acro{ICT}{Information and Communication Technology}
+%\acro{IntServ}{Integrated Services}
+%\acro{IP}{Internet Protocol}
+%\acro{ITU-T}{International Telecommunication Unit -- Standardization sector}
+%\acro{LB}{Local balance}
+%\acro{LHS}{Left hand side}
+%\acro{LIFO}{Last in - First out}
+%\acro{MMPP}{Markov Modulated Poisson Process}
+%\acro{MPLS}{Multiple Protocol Labeling Switching}
+%\acro{MRM}{Multi-Retry Model}
+%\acro{MTM}{Multi-Threshold Model}
+%\acro{PASTA}{Poisson Arrivals See Time Averages}
+%\acro{PDF}{Probability Distribution Function}
+%\acro{pdf}{probability density function}
+%\acro{PFS}{Product Form Solution}
+%\acro{QoS}{Quality of Service}
+%\acro{r.v.}{random variable(s)}
+%\acro{RED}{random early detection}
+%\acro{RHS}{Right hand side}
+%\acro{RLA}{Reduced Load Approximation}
+%\acro{SIRO}{service in random order}
+%\acro{SRM}{Single-Retry Model}
+%\acro{STM}{Single-Threshold Model}
+%\acro{TCP}{Transport Control Protocol}
+%\acro{TH}{Threshold(s)}
+%\acro{UDP}{User Datagram Protocol}
+%\end{acronyms}
+
+\setcounter{page}{1}
+
+\begin{introduction}
+This book links high school coordinate geometry to linear algebra and matrix analysis through solved problems.
+
+\end{introduction}
+
+\mainmatter
+\include{ch01}
+\include{ch02} 
+\backmatter
+\appendix
+\chapter{ Vectors}
 \section{$2\times 1$ vectors}
 \input{matrix/two.tex}
+%\include{app01}
+%\appendix
 \section{$3\times 1$ vectors}
 \input{matrix/three.tex}
-\section{Matrices}
+\chapter{Matrices}
 \input{matrix/mat.tex}
-\section{Linear Forms}
-\subsection{Two Dimensions}
-\input{linear/two.tex}
- 
-\subsection{Three Dimensions}
-\input{linear/three.tex}
-\section{Quadratic Forms}
-\input{quad/defs.tex}
-\subsection{Standard Form}
-\input{quad/stddef.tex}
-	\subsection{Corollaries-Standard Form}
-\input{quad/standard.tex}
-	\subsection{Corollaries-Quadratic Form }
 
+\chapter{Linear Forms}
+\section{Two Dimensions}
+\input{linear/two.tex}
+\section{Three Dimensions}
+\input{linear/three.tex}
+\chapter{Quadratic Forms}
+%\numberwithin{equation}{subsection}
+%\numberwithin{equation}{section}
+\section{Conic equation }
+\input{quad/defs.tex}
+\section{Standard Form}
+\input{quad/stddef.tex}
+\chapter{Conic Parameters}
+\section{Standard Form}
+\input{quad/standard.tex}
+\section{Quadratic Form }
 \input{quad/coroll.tex}
 
-\subsection{Pair of Straight Lines}
+\chapter{Conic Lines}
+\section{Pair of Straight Lines}
 %
 \input{quad/pair.tex}
-\subsection{Intersection of Conics}
-\begin{lemma}
-	Let 
-\begin{align}
-    \label{eq:conic_quad_form_ints}
-    \vec{x}^{\top}\vec{V}_i\vec{x}+2\vec{u}_i^{\top}\vec{x}+f_i=0, \quad i = 1,2
-    \end{align}
-    be the equation of two conics.  The locus of their intersection is a pair of straight lines if 
-\begin{align}
-\mydet{
-\vec{V}_1+ \mu \vec{V}_2&\vec{u}_1+\mu\vec{u}_2
-\\
-	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
-}
-	= 0, \mydet{\vec{V}_1+ \mu \vec{V}_2} < 0
-    \label{eq:conic_quad_form_int-mat}
-\end{align}
-
-\end{lemma}
-\begin{proof}
-	The intersection of the conics in 
-    \eqref{eq:conic_quad_form_ints}
-    is given by the curve 
-\begin{align}
-    \label{eq:conic_quad_form_int}
-	\vec{x}^{\top}\brak{\vec{V}_1+ \mu \vec{V}_2}\vec{x}+2\brak{\vec{u}_1+\mu \vec{u}_2}^{\top}\vec{x}
-	+f_1+\mu f_2=0, 
-    \end{align}
-which, from Theorem 
-	  \ref{them:pair-mat-sing}
-represents a pair of straight lines if 
-    \eqref{eq:conic_quad_form_int-mat} is satisfied.
-\end{proof}
-\begin{corollary}
-	The points of intersection of the conics in 
-    \eqref{eq:conic_quad_form_ints} are the points of the intersection of the lines in 
-    \eqref{eq:conic_quad_form_int}.
-\end{corollary}
-\section{Conic Lines}
-\subsection{ Chords of a Conic}
+\section{Intersection of Conics}
+\input{quadlines/inter.tex}
+\section{ Chords of a Conic}
 \input{quadlines/chord.tex}
-\subsection{ Tangent and Normal}
+\section{ Tangent and Normal}
 \input{quadlines/tangent.tex}
+%\chapter{Proofs}
+%   \section{}
+%\input{apps/defs.tex}
+
+%  \section{}
+%\input{apps/parab.tex}
+%  \section{}
+%\input{apps/nonparab.tex}
+%		\section{}
+%\input{apps/params.tex}
+\latexprintindex
+
+\end{document}
+
+ 
 \section{Examples}
 \subsection{Loney}
 \input{examples/loney.tex}
@@ -395,13 +289,3 @@ represents a pair of straight lines if
   % \section{Appendices}
   % \appendix
 			\appendices
-   \section{}
-\input{apps/defs.tex}
-
-  \section{}
-\input{apps/parab.tex}
-  \section{}
-\input{apps/nonparab.tex}
-		\section{}
-\input{apps/params.tex}
-\end{document}

@@ -1,0 +1,116 @@
+
+	\label{app:conic-parameters}
+	From \eqref{eq:conic_quad_form_v}, using the fact that $\vec{V}$ is symmetric with $\vec{V} = \vec{V}^{\top}$,
+  \begin{align}
+	  \vec{V}^{\top} \vec{V}&=\brak{\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}}^{\top}
+	  \brak{\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}}
+    \\
+	  \implies \vec{V}^{2} &= \norm{\vec{n}}^4\vec{I}+e^4\vec{n}\vec{n}^{\top}\vec{n}\vec{n}^{\top}
+	  -2e^2\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+    \\
+	  &= \norm{\vec{n}}^4\vec{I} + e^4\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+	%  \\
+	  - 2e^2\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+    \\
+	  &= \norm{\vec{n}}^4\vec{I} + e^2\brak{e^2 - 2}\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
+    \\
+	  &= \norm{\vec{n}}^4\vec{I} + \brak{e^2 - 2}\norm{\vec{n}}^2\brak{\norm{\vec{n}}^2\vec{I}- \vec{V}}
+    \end{align}
+%    
+which can be expressed as
+\begin{align}
+  \vec{V}^{2} + \brak{e^2 - 2}\norm{\vec{n}}^2\vec{V} - \brak{e^2 - 1}\norm{\vec{n}}^4\vec{I}=0
+  \label{eq:conic_quad_form_e_cayley}
+\end{align}
+	Using the Cayley-Hamilton theorem,
+%	\cite{banchoff}, 
+	\eqref{eq:conic_quad_form_e_cayley} results in the characteristic equation, 
+\begin{align}
+  \lambda^{2} - \brak{2-e^2}\norm{\vec{n}}^2\lambda + \brak{1-e^2 }\norm{\vec{n}}^4=0
+\end{align}
+which can be expressed as
+\begin{align}
+\brak{\frac{\lambda}{\norm{\vec{n}}^2}}^2 - \brak{2-e^2 }\brak{\frac{\lambda}{\norm{\vec{n}}^2}} 
+	+ \brak{1-e^2 } &= 0
+	\\
+	\implies \frac{\lambda}{\norm{\vec{n}}^2} &= 1-e^2, 1
+  \\
+	\text{or, }\lambda_2 = \norm{\vec{n}}^2, \lambda_1 &= \brak{1-e^2}\lambda_2 
+  \label{eq:conic_quad_form_lam_cayley}
+\end{align}
+From   \eqref{eq:conic_quad_form_lam_cayley}, the eccentricity of \eqref{eq:conic_quad_form} is given by 
+\eqref{eq:conic_quad_form_e}.   
+%
+% By inspection, we find that 
+% \begin{align}
+%   \frac{\lambda}}{\norm{\vec{n}}^2} = 1
+%   \label{eq:conic_quad_form_lam2_cayley}
+% \end{align}
+%satisfies \eqref{eq:conic_quad_form_lam_cayley}.
+Multiplying both sides of    \eqref{eq:conic_quad_form_v} by $\vec{n}$,
+\begin{align}
+\vec{V} \vec{n}&=\norm{\vec{n}}^2\vec{n}-e^2\vec{n}\vec{n}^{\top}\vec{n} 
+\\
+&=\norm{\vec{n}}^2\brak{1-e^2}\vec{n} 
+ \\
+% &=\frac{\lambda_1}{\lambda_2}\norm{\vec{n}}^2\vec{n} 
+% \end{align}
+% upon substituting from \eqref{eq:conic_quad_form_e}  and simplifying.  From the above, it is obvious that $\vec{n}$ is an eigenvector
+% of $\vec{V}$.  Choosing 
+% \begin{align}
+%   \lambda_2 = \norm{\vec{n}}^2,
+%   \label{eq:eigevecn_lam2}
+% \end{align}  
+% we obtain 
+% \begin{align}
+  &=\lambda_1 \vec{n} 
+	\\
+  \label{eq:eigevecn}
+\end{align}  
+from \eqref{eq:conic_quad_form_lam_cayley}.
+Thus,  $\lambda_1$ is the corresponding eigenvalue for $\vec{n}$.  From       \eqref{eq:eigevecP} and \eqref{eq:eigevecn}, this implies that 
+\begin{align}  
+	\vec{p}_1 &= \frac{\vec{n}}{\norm{\vec{n}}} 
+	\\
+	\text{or, }
+   \vec{n}&= \norm{\vec{n}}\vec{p}_1  = \sqrt{\lambda_2}\vec{p}_1 
+\end{align}  
+from   \eqref{eq:conic_quad_form_lam_cayley} .
+From \eqref{eq:conic_quad_form_u} and \eqref{eq:conic_quad_form_lam_cayley},
+\begin{align}
+%   \label{eq:conic_quad_form_v}
+% \vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
+% \\
+%\label{eq:conic_quad_form_u}
+\vec{F}  &= \frac{ce^2\vec{n}-\vec{u}}{\lambda_2}
+ \\
+ \implies \norm{\vec{F}}^2  &= \frac{\brak{ce^2\vec{n}-\vec{u}}^{\top}\brak{ce^2\vec{n}-\vec{u}}}{\lambda_2^2}
+ \\
+ \implies \lambda_2^2\norm{\vec{F}}^2  &= c^2e^4\lambda_2-2ce^2\vec{u}^{\top}\vec{n}+\norm{\vec{u}}^2
+ \label{eq:conic_quad_form_u_temp}
+% f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
+% %\\
+    \end{align}
+    Also, \eqref{eq:conic_quad_form_f} can be expressed as
+    \begin{align}
+    \lambda_2\norm{\vec{F}}^2 &= f+c^2e^2
+    \label{eq:conic_quad_form_f_temp}
+\end{align}
+From  \eqref{eq:conic_quad_form_u_temp} and     \eqref{eq:conic_quad_form_f_temp},
+\begin{align}
+c^2e^4\lambda_2-2ce^2\vec{u}^{\top}\vec{n}+\norm{\vec{u}}^2 = \lambda_2\brak{f+c^2e^2}
+\end{align}
+\begin{align}
+\implies \lambda_2e^2\brak{e^2-1}c^2-2ce^2\vec{u}^{\top}\vec{n}
+	+\norm{\vec{u}}^2 - \lambda_2 f = 0
+\end{align}
+yielding
+  \eqref{eq:conic_quad_form_F}. 
+%\begin{align}
+%\text{or, } c = 
+%\begin{cases}
+%  \frac{e\vec{u}^{\top}\vec{n} \pm \sqrt{e^2\brak{\vec{u}^{\top}\vec{n}}^2-\lambda_2\brak{e^2-1}\brak{\norm{\vec{u}}^2 - \lambda_2 f}}}{\lambda_2e\brak{e^2-1}} & e \ne 1
+%  \\
+%  \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2e^2\vec{u}^{\top}\vec{n}} & e = 1
+%\end{cases}
+%\end{align}

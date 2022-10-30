@@ -1,0 +1,33 @@
+
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Let 
+\begin{align}
+  \vec{A} &= \myvec{a_1\\a_2 \\ a_3} \equiv a_1\overrightarrow{i}+a_2\overrightarrow{j}+a_3\overrightarrow{j}, 
+  \\
+  \vec{B} &= \myvec{b_1\\b_2 \\ b_3}, 
+\end{align}
+and 
+\begin{align}
+  \vec{A}_{ij} &= \myvec{a_i\\a_j}, 
+  \\
+  \vec{B}_{ij} &= \myvec{b_i\\b_j}. 
+\end{align}
+
+\item The {\em cross product} or {\em vector product} of $\vec{A}, \vec{B}$ is defined as
+\begin{align}
+  \label{eq:cross3d}
+	\vec{A} \times \vec{B} = \myvec{ \mydet{\vec{A}_{23} & \vec{B}_{23}} \\ \mydet{\vec{A}_{31} & \vec{B}_{31}} \\ \mydet{\vec{A}_{12}  & \vec{B}_{12}}}
+\end{align}
+\item Verify that
+\begin{align}
+  \vec{A} \times \vec{B} = -  \vec{B} \times \vec{A} 
+\end{align}
+\item The area of a triangle is given by 
+\begin{align}
+	\frac{1}{2} \norm{  \vec{A} \times \vec{B}}
+\end{align}
+\end{enumerate}

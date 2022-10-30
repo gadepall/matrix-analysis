@@ -1,8 +1,9 @@
 
-\renewcommand{\theequation}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}
+%\numberwithin{equation}{enumi}
 \item The area of a triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
 \begin{align}
   \label{eq:area3d}
@@ -40,7 +41,8 @@
 %			{ \norm{\vec{m}}^2}
 %	\vec{m}}
 		\end{align}
-		\solution 
+		\solution
+%		\solution{\title{Solution:}
 \begin{align}
 	\label{dist_3d_def}
 	d\brak{\lambda } &=\norm{\vec{A} + \lambda \vec{m}-\vec{P}}

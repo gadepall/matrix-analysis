@@ -1,0 +1,45 @@
+
+	\begin{corollary}
+		The center/vertex of a conic section are given by
+  \begin{align}
+    \label{eq:conic_nonparab_c}
+	    \vec{c} &= - \vec{V}^{-1}\vec{u}  & \mydet{\vec{V}} \ne 0
+    \\
+	    \myvec{ \vec{u}^{\top}+\frac{\eta}{2}\vec{p}_1^{\top} \\ \vec{v}}\vec{c} &= \myvec{-f \\ \frac{\eta}{2}\vec{p}_1-\vec{u}}  
+& \mydet{\vec{V}} = 0
+    \label{eq:conic_parab_c}
+    \end{align}	
+	\end{corollary}
+		\begin{proof}
+			In 
+			\eqref{eq:conic_affine}, substituting $\vec{y} = \vec{0}$, the center/vertex for the quadratic form is obtained as
+    \begin{align}
+	    \vec{x} = \vec{c}, 
+    \end{align}
+			where $\vec{c}$ is derived as 
+    \eqref{eq:conic_nonparab_c}
+    and 
+    \eqref{eq:conic_parab_c}
+in Appendix  \ref{app:parab}.
+		\end{proof}
+
+%
+    \begin{corollary} The equation of the minor and major  axes for the ellipse/hyperbola are respectively given by 
+  \begin{align}
+\vec{p}_i^{\top}\brak{\vec{x}-\vec{c}} = 0, i = 1,2
+	  \label{eq:major-minor-axis-quad}
+  \end{align}
+  The axis of symmetry for the parabola is also given by 
+	  \eqref{eq:major-minor-axis-quad}.
+\end{corollary}
+		\begin{proof}
+From		\eqref{corr:axis}, the major/symmetry axis for the hyperbola/ellipse/parabola can be expressed using 
+\eqref{eq:conic_affine} as
+  \begin{align}
+	  \vec{e}_2^{\top}
+		  \vec{P}^{\top}\brak{\vec{x}-\vec{c}} &= 0
+		  \\
+	  \implies 		  \brak{\vec{P}\vec{e}_2}^{\top}\brak{\vec{x}-\vec{c}} &= 0
+  \end{align}
+yielding	  \eqref{eq:major-minor-axis-quad}, and the proof for the minor axis is similar.
+		\end{proof}

@@ -1,0 +1,208 @@
+
+		\begin{theorem}[Chord]
+  The points of intersection of the line 
+\begin{align}
+L: \quad \vec{x} = \vec{q} + \mu \vec{m} \quad \mu \in \mathbb{R}
+\label{eq:conic_tangent}
+\end{align}
+with the conic section in \eqref{eq:conic_quad_form} are given by
+\begin{align}
+\vec{x}_i = \vec{q} + \mu_i \vec{m}
+	\label{eq:chord-pts}
+\end{align}
+%
+where
+\begin{multline}
+\mu_i = \frac{1}
+{
+\vec{m}^{\top}\vec{V}\vec{m}
+}
+\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}}
+\\
+\pm
+{\small
+\rbrak{\sqrt{
+\sbrak{
+\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+}
+\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+}
+}
+}
+\label{eq:tangent_roots}
+\end{multline}
+
+
+\end{theorem}
+\begin{proof}
+  Substituting \eqref{eq:conic_tangent}
+in \eqref{eq:conic_quad_form}, 
+\begin{align}
+\brak{\vec{q} + \mu \vec{m}}^{\top}\vec{V}\brak{\vec{q} + \mu \vec{m}}  + 2 \vec{u}^{\top}\brak{\vec{q} + \mu \vec{m}}+f &= 0
+\\
+\implies \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} 
++ \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f &= 0
+\label{eq:conic_intercept}
+\end{align}
+Solving the above quadratic in \eqref{eq:conic_intercept}
+yields \eqref{eq:tangent_roots}.
+\end{proof}
+\begin{corollary}
+  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
+  \begin{align}
+  \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} = 0
+  \label{eq:conic_tangent_mq}
+  \end{align}
+\end{corollary}
+\begin{proof}
+  In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
+  in \eqref{eq:tangent_roots}
+  \begin{align}
+  \sbrak{
+  \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+  }^2 -\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+  \brak
+  {
+  \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+  } = 0                                                                                             
+  \label{eq:conic_tangent_disc}
+  \end{align}                    
+  $\because \vec{q}$ is the point of contact, $\vec{q}$ satisfies \eqref{eq:conic_quad_form}
+  and 
+  \begin{align}
+  \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f = 0
+  \label{eq:conic_tangent_qquad}
+  \end{align}
+  Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
+\end{proof}
+	\begin{theorem}
+		The length of the chord in 
+\eqref{eq:conic_tangent}
+is given by 
+\begin{align}
+ \frac{2\sqrt{
+\sbrak{
+\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+}
+\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+}
+}
+{
+\vec{m}^{\top}\vec{V}\vec{m}
+}\norm{\vec{m}}
+\label{eq:chord-len}
+  \end{align}
+	\end{theorem}
+\begin{proof}
+The distance between the points in 
+	\eqref{eq:chord-pts}
+is given by 
+\begin{align}
+	\norm{\vec{x}_1-\vec{x}_2} =  \abs{\mu_1-\mu_2} \norm{\vec{m}}
+\label{eq:conic_tangent_pts_dist}
+\end{align}
+Substituing $\mu_i$ from 
+\eqref{eq:tangent_roots} in
+\eqref{eq:conic_tangent_pts_dist}
+yields
+	\eqref{eq:chord-len}.
+\end{proof}
+	\begin{theorem}
+ The affine transform for the conic section, preserves the norm.  This implies that the length of any chord of a conic
+	is invariant to translation and/or rotation.
+	\end{theorem}
+	\begin{proof}
+	Let 
+%From \eqref{eq:conic_affine}, 
+\begin{align}
+\vec{x}_i = \vec{P}\vec{y}_i+\vec{c} 
+\label{eq:conic_affine_pts}
+\end{align}
+be any two points on the conic.  Then the distance between the points is given by 
+\begin{align}
+	\norm{\vec{x}_1-\vec{x}_2 } &= \norm{\vec{P}\brak{	\vec{y}_1 -\vec{y}_2 }}
+\end{align}
+which can be expressed as 
+\begin{align}
+	\norm{\vec{x}_1-\vec{x}_2 }^2 &= 		\brak{\vec{y}_1 -\vec{y}_2 }^{\top}\vec{P}^{\top}\vec{P}\brak{\vec{y}_1 -\vec{y}_2 }
+	\\
+	&= 		\norm{\vec{y}_1 -\vec{y}_2 }^2
+\label{eq:conic_affine_norm_preserve}
+\end{align}
+since 
+\begin{align}
+	\vec{P}^{\top}\vec{P} = \vec{I}
+\end{align}
+	\end{proof}
+    \begin{corollary} For the standard hyperbola/ellipse, the length of the major axis is 
+  \begin{align}
+\label{eq:chord-len-major}
+ 2\sqrt{\abs{\frac{
+f_0}
+{\lambda_1}
+	  }}
+  \end{align}
+  and the minor axis is 
+  \begin{align}
+\label{eq:chord-len-minor}
+ 2\sqrt{\abs{\frac{
+f_0}
+{\lambda_2}
+	  }}
+  \end{align}
+%	    $\mydet{\vec{V}} \ne 0$, the lengths of the semi-major and semi-minor axes of the conic in \eqref{eq:conic_quad_form} are given by 
+%  \begin{align} 
+%    \label{eq:ellipse_axes}
+%  %  \begin{aligned}[t]
+%    \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_1}}, 
+%    \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_2}}. \quad \brak{\text{ellipse}}
+%    \\
+%%
+%       \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_1}}, 
+%       \sqrt{\frac{f-\vec{u}^{\top}\vec{V}^{-1}\vec{u}}{\lambda_2}}, \quad \brak{\text{hyperbola }}
+%%
+%  %\end{aligned}
+%  \label{eq:hyper_axes}
+%\end{align} 
+%\solution For \begin{align} \abs{\vec{V}} > 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 > 0 
+%  \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes 
+%  \begin{align} 
+%	  \lambda_1y_1^2 +\lambda_2y_2^2 = 
+%  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f 
+%	  \label{eq:hyper-pair-cond}
+%  \end{align} 
+%  yielding        \eqref{eq:ellipse_axes}.  Similarly, \eqref{eq:hyper_axes} can be obtained for 
+%  \begin{align} 
+%    \label{eq:conic_hyper_cond}
+%    \abs{\vec{V}} 
+%    < 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align}
+\end{corollary}
+\begin{proof}
+	See Appendix \ref{app:major}
+\end{proof}
+\begin{theorem}[latus rectum]
+    The latus rectum of a conic section is the chord that passes through the focus and is perpendicular to the major axis.
+	The length of the latus rectum for a conic is given by
+		\begin{align}
+			l =
+			\begin{cases}
+				2\frac{\sqrt{\abs{f_0\lambda_1}}}{\lambda_2} & e \ne 1
+			\\
+			\frac{\eta}{\lambda_2} & e = 1
+			\end{cases}
+			\label{eq:latus-ellipse}
+		\end{align}
+\end{theorem}
+		\begin{proof}
+			See Appendix \ref{app:latus}.
+\end{proof}

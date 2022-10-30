@@ -1,8 +1,9 @@
-\subsection{Eigenvalues and Eigenvectors}
-\renewcommand{\theequation}{\theenumi}
+\section{Eigenvalues and Eigenvectors}
+%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}
+%\numberwithin{equation}{enumi}
 \item The eigenvalue $\lambda$ and the eigenvector $\vec{x}$  for a matrix $\vec{A}$ are defined as, 
 \begin{align}
   \vec{A} \vec{x} = \lambda \vec{x}
@@ -33,11 +34,12 @@ The above equation is known as the characteristic equation.
 
 
 \end{enumerate}
-\subsection{Determinants}
-\renewcommand{\theequation}{\theenumi}
+\section{Determinants}
+%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}
+%\numberwithin{equation}{enumi}
 
 \item Let 
 \begin{align}
@@ -64,21 +66,23 @@ Then,
 \end{align}
 
 \end{enumerate}
-\subsection{Rank of a Matrix}
-\renewcommand{\theequation}{\theenumi}
+\section{Rank of a Matrix}
+%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}
+%\numberwithin{equation}{enumi}
 \item The rank of a matrix is defined as the number of linearly independent rows.  This is also known as the row rank.
 \item Row rank = Column rank.
 \item The rank of a matrix is obtained as the number of nonzero rows obtained after row reduction.
 \item An $n \times n$ matrix is invertible if and only if its rank is $n$.
 \end{enumerate}
-\subsection{Inverse of a Matrix}
-\renewcommand{\theequation}{\theenumi}
+\section{Inverse of a Matrix}
+%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}
+%\numberwithin{equation}{enumi}
 \item For a $2 \times 2$ matrix 
 \begin{align}
 	\vec{A} = \myvec{a_1 & b_1  \\ a_2 & b_2 },
@@ -89,11 +93,12 @@ the inverse is given by
 \end{align}
 \item For higher order matrices, the inverse should be calculated using row operations.
 \end{enumerate}
-\subsection{Orthogonality}
-\renewcommand{\theequation}{\theenumi}
+\section{Orthogonality}
+%\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\begin{enumerate}
+%\numberwithin{equation}{enumi}
 \item The rotation matrix is defined as 
 \begin{align}
 	\vec{R}_{\theta} = \myvec{\cos \theta & -\sin \theta  \\ \sin \theta  & \cos \theta  }, \quad \theta \in \sbrak{0, 2\pi}
@@ -111,4 +116,28 @@ the inverse is given by
 	\label{eq:mat-nh}
 	\vec{n}^{\top}\vec{h} = 1 \implies \vec{n} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}+\mu\vec{R}_{\frac{\pi}{2}}\vec{h}, \quad \mu \in \mathbb{R}.
 \end{align}
+
+
+\item
+	The {\em affine} transformation is given by 
+    \begin{align}
+	    \vec{x} &= \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\label{eq:conic_affine}
+    \end{align}
+	where $\vec{P}$ is invertible.
+
+\item
+	The eigenvalue decomposition of a symmetric matrix $\vec{V}$ is given by 
+	%\cite{banchoff}
+    \begin{align}
+      \label{eq:conic_parmas_eig_def}
+      \vec{P}^{\top}\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
+      \\
+      \vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+      \\
+      \vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^{\top}=\vec{P}^{-1},
+      \label{eq:eigevecP}
+    \end{align}
+
+
 \end{enumerate}

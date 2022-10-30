@@ -1,11 +1,11 @@
-
-\begin{theorem}[Tangent]
+\begin{enumerate}
+\item
   Given the point of contact $\vec{q}$, the equation of a tangent to \eqref{eq:conic_quad_form} is 
   \begin{align}
   \brak{\vec{V}\vec{q}+\vec{u}}^{\top}\vec{x}+\vec{u}^{\top}\vec{q}+f = 0
   \label{eq:conic_tangent_final}
   \end{align}
-\end{theorem}
+
 \begin{proof}
   The normal vector is obtained from \eqref{eq:conic_tangent_mq} and \eqref{eq:normal_vec}
   as
@@ -23,7 +23,7 @@
   \eqref{eq:conic_tangent_final}
 %	\eqref{eq:conic_tangent}.
 \end{proof}
-\begin{theorem}
+\item
 	\label{eq:conic-p-contact-nonparab}
   If $\vec{V}^{-1}$ exists, given the normal vector $\vec{n}$, the tangent points of contact to \eqref{eq:conic_quad_form} are given by
 \begin{align}
@@ -42,7 +42,7 @@ f_0
   \end{split}
 \label{eq:conic_tangent_qk}
 \end{align}
-\end{theorem}
+
 \begin{proof}
   From \eqref{eq:conic_normal_vec},
 \begin{align}
@@ -73,7 +73,7 @@ yields \eqref{eq:conic_tangent_qk}.
 \end{proof}
 
 
-\begin{theorem}
+\item
 	\label{eq:conic-p-contact-parab}
   If $\vec{V}$ is not invertible,  given the normal vector $\vec{n}$, the point of contact to \eqref{eq:conic_quad_form} is given by the matrix equation
 \begin{align}
@@ -92,7 +92,7 @@ yields \eqref{eq:conic_tangent_qk}.
 \label{eq:conic_tangent_qk_eigen}
 \end{align}
 
-\end{theorem}
+
 \begin{proof}
   If $\vec{V}$ is non-invertible, it has a zero eigenvalue.  If the corresponding eigenvector is $\vec{p}_1$, then,
 \begin{align}
@@ -128,27 +128,14 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 \end{align}
 \eqref{eq:conic_zero_eigen_normal_fq} and \eqref{eq:conic_zero_eigen_normal_vq} clubbed together result in \eqref{eq:conic_tangent_q_eigen}.
 \end{proof}
-\begin{theorem}
-	The normal vectors of the tangents from 
-	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
-	are given by 
+\item
+	The normal vectors of the tangents  
+	 to the conic in \eqref{eq:conic_quad_form} satisfy
 \begin{align}
-	\label{eq:dual-nh}
-	\vec{n} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}+\mu_i\vec{R}\vec{h}, 
-\end{align}
-where
-\begin{align}
-	\vec{R} &= 
-	\vec{R}_{\frac{\pi}{2}} = \myvec{0 & -1 \\ 1 & 0}
-\end{align}
-and $\mu_i$ are obtained from 
-\eqref{eq:tangent_roots} by substituting
-\begin{align}
-	\vec{m} &= \vec{R}\vec{h}, \vec{u} = 0, \vec{q} = \frac{\vec{e}_1}{\vec{e}_1^{\top}\vec{h}}
-\end{align}
-	and replacing $\vec{V}$ with $\vec{V}^{-1}$.
+\vec{n} ^{\top}\vec{V}^{-1}\vec{n}-f_0 = 0
+	\label{eq:dual-nf0}
+    \end{align}
 
-\end{theorem}
 %
 \begin{proof}
 From 
@@ -164,22 +151,45 @@ From
 \begin{align}
     \label{eq:conic_quad_form_q}
     \brak{\vec{n}-\vec{u} }^{\top}\vec{V}^{-1}\vec{V}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+2\vec{u}^{\top}\vec{V}^{-1}\brak{\vec{n}-\vec{u} }+f&=0
-    \\
-    \implies \vec{n} ^{\top}\vec{V}^{-1}\vec{n}-f_0 = 0
-	\label{eq:dual-nf0}
 	%\vec{u}^{\top}\vec{V}^{-1}\vec{u} +f&=0
     \end{align}
-	Since the tangents pass through the point $\vec{h}$, 
-    \begin{align}
-\vec{n}^{\top}\vec{h} = 1
-    \end{align}
-and	from 
-	\eqref{eq:mat-nh}, we obtain 
-	\eqref{eq:dual-nh}.
+which can be simplified to obtain \eqref{eq:dual-nf0}.
 \end{proof}
-\begin{theorem}
-	The normal vectors of the tangents from 
-	a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
+\item
+	The normal vectors of the tangents 
+to the conic in \eqref{eq:conic_quad_form} 
+	from 
+	a point $\vec{h}$ 
+	are given by 
+
+\begin{proof}
+Let the equation of the tangent be 
+\begin{align}
+	\vec{n}^{\top}
+	\vec{x} = c
+	\label{eq:ext-tan}
+\end{align}
+If $\vec{q}$ be the point of contact,  since $\vec{h}, \vec{q}$ lie on 
+	\eqref{eq:ext-tan},
+\begin{align}
+	\vec{n}^{\top}
+	\vec{q} = 
+	\vec{n}^{\top}
+	\vec{h} = c
+\end{align}
+From 
+  \eqref{eq:conic_normal_n}, 
+%  \begin{align}
+%	  \vec{n}^{\top}\vec{V}^{-1}\vec{n} &= \vec{n}^{\top}\brak{\vec{q}+\vec{V}^{-1}\vec{u} }
+%	  \\
+%%	  &= \vec{n}^{\top}\vec{q}+\vec{n}^{\top}\vec{V}^{-1}\vec{u} 
+%\end{align}
+\end{proof}
+\item
+	The normal vectors of the tangents 
+to the conic in \eqref{eq:conic_quad_form} 
+	from 
+	a point $\vec{h}$ 
 	are given by 
   \begin{align} 
   \label{eq:quad_form_pair_normvecs-sigma}
@@ -201,7 +211,7 @@ and	from
   }.
 	  \label{eq:h-tangents-sigma}
   \end{align}                    
-\end{theorem}
+
 \begin{proof}
  From \eqref{eq:tangent_roots},
  and
@@ -232,3 +242,4 @@ and	from
   can be obtained.
 \end{proof}
 %
+\end{enumerate}

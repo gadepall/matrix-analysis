@@ -1,0 +1,329 @@
+
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The area of a triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
+\begin{align}
+  \label{eq:area3d}
+ \frac{1}{2} \norm{\brak{\vec{A} - \vec{B}} \times \brak{\vec{A} - \vec{C}}}
+\end{align}
+
+\item Points $\vec{A}, \vec{B}, \vec{C}$ are on a line if 
+\begin{align}
+  \label{eq:line_rank}
+  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} }  = 1
+\end{align}
+\item Points $\vec{A}, \vec{B}, \vec{C}, \vec{D}$ form a paralelogram if 
+\begin{align}
+  \label{eq:parallelgm_rank}
+  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} \\ \vec{D}  }  = 1, 
+  \text{rank}\myvec{\vec{A} \\ \vec{B} \\ \vec{C} }  = 2
+\end{align}
+\item The equation of a line  is given by  
+	\eqref{eq:dir_line}
+	\item The equation of a plane is given by
+	\eqref{eq:normal_line}
+	\item The distance from the origin to the line  in 
+	\eqref{eq:normal_line}
+	is given by 
+	\eqref{eq:dist_line_2d_orig}
+\item The distance from a point $\vec{P}$  to the line in 
+	\eqref{eq:dir_line} is given by 
+\begin{align}
+	\label{dist_3d_def_final}
+		d = \norm{\vec{A} -\vec{P}}^2 - \frac{\cbrak{\vec{m}^{\top}\brak{\vec{A}-\vec{P} 
+	}}^2}{\norm{\vec{m}}^2}
+%	d =\norm{\vec{A}  -\vec{P}
+% -\frac{\vec{m}^{\top}\brak{\vec{A} 
+%			-\vec{P}}}
+%			{ \norm{\vec{m}}^2}
+%	\vec{m}}
+		\end{align}
+		\solution 
+\begin{align}
+	\label{dist_3d_def}
+	d\brak{\lambda } &=\norm{\vec{A} + \lambda \vec{m}-\vec{P}}
+	\\
+\implies 	d^2\brak{\lambda } &=\norm{\vec{A} + \lambda \vec{m}-\vec{P}}^2
+\end{align}
+which can be simplified to obtain 
+	\begin{multline}
+d^2\brak{\lambda } =\lambda^2 \norm{\vec{m}}^2+2\lambda \vec{m}^{\top}\brak{\vec{A} 
+		-\vec{P}}
+		\\
+		+\norm{\vec{A} -\vec{P}}^2
+	\end{multline}
+which is of the form 
+\begin{align}
+	\label{dist_3d_def_quad}
+	d^2\brak{\lambda } &=a \lambda^2 + 2b\lambda +c
+	\\
+	&=a \cbrak{\brak{\lambda+ \frac{b}{a}}^2 +\sbrak{\frac{c}{a}-\brak{\frac{b}{a}}^2 }}
+\end{align}
+with 
+\begin{align}
+	\label{dist_3d_def_quad_abc}
+	a = \norm{\vec{m}}^2, b = \vec{m}^{\top}\brak{\vec{A} 
+		-\vec{P}}, c = 
+		\norm{\vec{A} -\vec{P}}^2
+\end{align}
+which can be expressed as 
+%		\begin{multline}
+%			d^2\brak{\lambda } =\norm{\vec{m}}^2\brak{\lambda + \frac{\vec{m}^{\top}\brak{\vec{A}-\vec{P} }}{\vec{m}}^2}}^2 +2\lambda \vec{m}^{\top}\brak{\vec{A} 
+%			-\vec{P}}
+%			\\
+%			+\norm{\vec{A} -\vec{P}}^2
+%		\end{multline}
+		From the above, $d^2\brak{\lambda}$ is smallest when upon substituting from 
+	\eqref{dist_3d_def_quad_abc}
+\begin{align}
+	\label{dist_3d_def_quad_small}
+	\lambda+ \frac{b}{2a} &= 0 \implies \lambda = - \frac{b}{2a}
+	\\
+	&= -\frac{\vec{m}^{\top}\brak{\vec{A} 
+			-\vec{P}}}
+			{ \norm{\vec{m}}^2}
+	%		\label{dist_3d_lam}
+\end{align}
+and consequently, 
+\begin{align}
+	d_{\min}\brak{\lambda } &=a \brak{\frac{c}{a}-\brak{\frac{b}{a}}^2 } 
+	\\
+	&=c - \frac{b^2}{a }
+\end{align}
+yielding
+	\eqref{dist_3d_def_final} after substituting from 
+	\eqref{dist_3d_def_quad_abc}.
+%From 	\eqref{dist_3d_def} and \eqref{dist_3d_lam}, 
+%	\eqref{dist_3d_def} is obtained.
+\item The distance between the parallel planes 
+	\eqref{eq:parallel_lines}
+	is given by 
+	\eqref{eq:dist_lines_2d}.
+\item The plane 
+		\begin{align}
+		\vec{n}^{\top}
+			\vec{x} = c
+			\label{eq:plain_contain}
+		\end{align}
+		contains the line 
+		\begin{align}
+			\vec{x} = \vec{A}+\lambda \vec{m}
+			\label{eq:line_contain}
+		\end{align}
+		if 
+		\begin{align}
+		\vec{m}^{\top}\vec{n} = 0
+			\label{eq:line_plain_contain}
+		\end{align}
+		\solution Any point on the line 
+			\eqref{eq:line_contain}
+			should also satisfy 
+			\eqref{eq:plain_contain}.  Hence, 
+		\begin{align}
+			\vec{n}^{\top}\brak{\vec{A}+\lambda \vec{m}} &= \vec{n}^{\top}\vec{A}=c
+		\end{align}
+		which can be simplified to obtain
+			\eqref{eq:line_plain_contain}
+		\item The foot of the perpendicular from a point $\vec{P}$ to the plane 
+		\begin{align}
+			\vec{n}^{\top}\vec{x} =c
+		\end{align}
+		is given by 
+		\\
+		\solution The equation of the line perpendicular to the given plane and passing through $\vec{P}$ is 
+		\begin{align}
+			\vec{x} = \vec{P} + \lambda 	\vec{n}
+		\end{align}
+		From 
+	\eqref{eq:dir_line_plane_isect}, the intersection of the above line with the given plane is 
+\begin{align}
+	\vec{x} &= \vec{P} + \frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+\vec{n}
+	\label{eq:foot_perp_pt_plane}
+\end{align}
+\item The image of a point $\vec{P}$ with respect to the plane 
+		\begin{align}
+			\vec{n}^{\top}\vec{x} =c
+		\end{align}
+		is given by 
+		\begin{align}
+			\vec{R} &=
+	  \vec{P} + 2\frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+			\label{eq:image_pt_plane}
+		\end{align}
+		\solution Let $\vec{R}$ be the desired image.  Then, subtituting the expression for the  foot of the perpendicular from $\vec{P}$ to the given plane using 
+	\eqref{eq:foot_perp_pt_plane},
+		\begin{align}
+			\frac{\vec{P}+\vec{R}}{2} &=
+	  \vec{P} + \frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+		\end{align}
+		\item Let a plane pass through the points $\vec{A},\vec{B}$ and be perpendicular to the plane 
+		\begin{align}
+		\vec{n}^{\top}\vec{x} =c 
+			\label{eq:plane_3d_2pt_perp_given}
+		\end{align}
+		Then the equation of this plane is given by 
+		\begin{align}
+		\vec{p}^{\top}\vec{x} = 1
+			\label{eq:plane_3d_2pt}
+		\end{align}
+		where
+		\begin{align}
+			\vec{p} = 		\myvec{\vec{A} & \vec{B} & \vec{n}}^{-\top}  \myvec{1 \\ 1 \\ 0}
+			\label{eq:plane_3d_2pt_perp_norm}
+		\end{align}
+	\solution From the given information, 
+		\begin{align}
+			\vec{p}^{\top}\vec{A} &=d 
+			\\
+			\vec{p}^{\top}\vec{B} &=d 
+			\\
+			\vec{p}^{\top}\vec{n} &= 0
+			\label{eq:plane_3d_2pt_perp_system}
+		\end{align}
+		$\because$ the normal vectors to the two planes will also be perpendicular.  The system of equations in 
+			\eqref{eq:plane_3d_2pt_perp_system}
+			can be expressed as the matrix equation
+		\begin{align}
+			\myvec{\vec{A} & \vec{B} & \vec{n}}^{\top}\vec{p} = d\myvec{1 \\ 1 \\ 0}
+			\label{eq:plane_3d_2pt_perp_system_temp}
+		\end{align}
+		which yields 
+			\eqref{eq:plane_3d_2pt_perp_norm}
+			upon normalising with $d$.
+		\item The intersection of the line represented by 
+	\eqref{eq:dir_line}
+	with the plane represented by 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:dir_line_plane_isect}
+	\vec{x} &= \vec{A} + \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\vec{m}
+\end{align}
+\solution From 
+	\eqref{eq:dir_line}
+	and 
+	\eqref{eq:normal_line},
+\begin{align}
+	\vec{x} &= \vec{A} + \lambda \vec{m}
+	\\
+	\vec{n}^{\top}\vec{x} &= c
+	\\
+	\implies 
+	\vec{n}^{\top}\brak{\vec{A} + \lambda \vec{m}}&= c
+	\label{eq:dir_line_plane_inter}
+\end{align}
+which can be simplified to obtain
+\begin{align}
+	\vec{n}^{\top}\vec{A} + \lambda 	\vec{n}^{\top}\vec{m}&= c
+	\\
+	\implies \lambda &= \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\end{align}
+Substituting the above in 
+	\eqref{eq:dir_line_plane_inter}
+	yields
+	\eqref{eq:dir_line_plane_isect}.
+\item The foot of the perpendicular from the point $\vec{P}$ to the line  represented by 
+	\eqref{eq:dir_line}
+	is given by 
+\begin{align}
+	\label{eq:plane_line_foot_ans}
+	\vec{x} &= \vec{A} + \frac{ \vec{m}^{\top}\brak{\vec{P} - \vec{A}}}{\norm{\vec{m}}^2}
+\vec{m}
+\end{align}
+\solution  Let the equation of the line be 
+\begin{align}
+	\label{eq:dir_line_foot}
+	\vec{x} &= \vec{A} + \lambda \vec{m}
+\end{align}
+	The equation of the plane perpendicular to the given line passing through $\vec{P}$ is given by
+\begin{align}
+	\label{eq:plane_line_foot}
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P}}  &= 0
+	\\
+	\implies \vec{m}^{\top}\vec{x}  &= \vec{m}^{\top}\vec{P}
+\end{align}
+The desired foot of the perpendicular is the intersection of 
+	\eqref{eq:dir_line_foot} with 
+	\eqref{eq:plane_line_foot}
+	which can be obtained from 
+	\eqref{eq:dir_line_plane_isect}
+	as 
+	\eqref{eq:plane_line_foot_ans}
+\item The foot of the perpendicular from a point $\vec{P}$ to a plane is $\vec{Q}$.  The equation of the plane is given by 
+\begin{align}
+	\label{eq:plane_foot_perp}
+	\brak{\vec{P}-\vec{Q}}^{\top}\brak{\vec{x}-\vec{Q}} = 0
+\end{align}
+	\solution  The normal vector to the plane is given by 
+\begin{align}
+	\vec{n}= \vec{P}-\vec{Q} 
+\end{align}
+	Hence, the equation of the plane is
+	\eqref{eq:plane_foot_perp}.
+\item Let $\vec{A}, \vec{B}, \vec{C}$ be  points on a plane.  The equation of the plane is then given by 	
+\begin{align}
+	\myvec{	\vec{A} & \vec{B}& \vec{C}}^{\top} \vec{n}= \myvec{1\\1\\1}
+	\label{eq:plane_3pt}
+\end{align}
+\solution Let the equation of the plane be 
+\begin{align}
+	\vec{n}^{\top}	\vec{x} &= 1
+\end{align}
+Then 
+\begin{align}
+	\vec{n}^{\top}	\vec{A} &= 1
+	\\
+	\vec{n}^{\top}	\vec{B} &= 1
+	\\
+	\vec{n}^{\top}	\vec{C} &= 1
+\end{align}
+which can be combined to obtain 
+	\eqref{eq:plane_3pt}.
+%\renewcommand{\theequation}{\theenumi}
+%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+%\numberwithin{equation}{enumi}
+%
+\item (Parallelogram Law)  Let $\vec{A}, \vec{B}, \vec{D}$ be three vertices of a parallelogram.  Then the vertex $\vec{C}$ is given by 
+\begin{align}
+  \label{eq:pgm_law}
+  \vec{C} = \vec{B}+\vec{C} - \vec{A}
+\end{align}
+		\solution Shifting $\vec{A}$ to the origin, we obtain a parallelogram with corresponding vertices 
+\begin{align}
+  \label{eq:pgm_law_org_vert}
+  \vec{0}, \vec{B}-\vec{A}, \vec{D} - \vec{A}
+\end{align}
+The fourth vertex of this parallelogram is then obtained as 
+\begin{align}
+  \label{eq:pgm_law_org}
+	\brak{\vec{B}-\vec{A}}+\brak{ \vec{D} - \vec{A}} = \vec{D}+ \vec{B} - 2\vec{A}
+\end{align}
+Shifting the origin to $\vec{A}$, the fourth vertex is obtained as 
+\begin{align}
+  \label{eq:pgm_law_org_C}
+		 \vec{C} &= \vec{D}+ \vec{B} - 2\vec{A}+\vec{A} 
+		 \\
+	 &=
+	 \vec{D}+ \vec{B} - \vec{A} 
+\end{align}
+\item (Affine Transformation) Let $\vec{A},\vec{C}$, be opposite vertices of a square. The other two points can be obtained as  
+\begin{align}
+  \label{eq:square_points}
+  \vec{B} = \frac{\norm{\vec{A}-\vec{C}}}{\sqrt{2}} \vec{P}\vec{e}_1+\vec{A}
+  \\
+  \vec{D} = \frac{\norm{\vec{A}-\vec{C}}}{\sqrt{2}} \vec{P}\vec{e}_2+\vec{A}
+\end{align}
+where 
+\begin{align}
+	\vec{P} = \myvec{\cos \brak{\theta-\frac{\pi}{4}} & \sin  \brak{\theta-\frac{\pi}{4}} \\ \sin \brak{\theta-\frac{\pi}{4}} & \cos \brak{\theta-\frac{\pi}{4}}}
+\end{align}
+and 
+\begin{align}
+	\cos\theta = \frac{\brak{\vec{C}-\vec{A}}^{\top}\vec{e}_1}{\norm{\vec{A}-\vec{C}}\norm{\vec{e}_1}}
+\end{align}
+\end{enumerate}

@@ -1,5 +1,5 @@
-
-		\begin{theorem}[Chord]
+\begin{enumerate}
+		\item
   The points of intersection of the line 
 \begin{align}
 L: \quad \vec{x} = \vec{q} + \mu \vec{m} \quad \mu \in \mathbb{R}
@@ -38,7 +38,7 @@ where
 \end{multline}
 
 
-\end{theorem}
+
 \begin{proof}
   Substituting \eqref{eq:conic_tangent}
 in \eqref{eq:conic_quad_form}, 
@@ -52,13 +52,13 @@ in \eqref{eq:conic_quad_form},
 Solving the above quadratic in \eqref{eq:conic_intercept}
 yields \eqref{eq:tangent_roots}.
 \end{proof}
-\begin{corollary}
+\item
   If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
   \begin{align}
   \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} = 0
   \label{eq:conic_tangent_mq}
   \end{align}
-\end{corollary}
+
 \begin{proof}
   In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
   in \eqref{eq:tangent_roots}
@@ -80,7 +80,7 @@ yields \eqref{eq:tangent_roots}.
   \end{align}
   Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
 \end{proof}
-	\begin{theorem}
+	\item
 		The length of the chord in 
 \eqref{eq:conic_tangent}
 is given by 
@@ -102,7 +102,7 @@ is given by
 }\norm{\vec{m}}
 \label{eq:chord-len}
   \end{align}
-	\end{theorem}
+	
 \begin{proof}
 The distance between the points in 
 	\eqref{eq:chord-pts}
@@ -117,10 +117,10 @@ Substituing $\mu_i$ from
 yields
 	\eqref{eq:chord-len}.
 \end{proof}
-	\begin{theorem}
+	\item
  The affine transform for the conic section, preserves the norm.  This implies that the length of any chord of a conic
 	is invariant to translation and/or rotation.
-	\end{theorem}
+	
 	\begin{proof}
 	Let 
 %From \eqref{eq:conic_affine}, 
@@ -144,7 +144,7 @@ since
 	\vec{P}^{\top}\vec{P} = \vec{I}
 \end{align}
 	\end{proof}
-    \begin{corollary} For the standard hyperbola/ellipse, the length of the major axis is 
+    \item For the standard hyperbola/ellipse, the length of the major axis is 
   \begin{align}
 \label{eq:chord-len-major}
  2\sqrt{\abs{\frac{
@@ -186,11 +186,60 @@ f_0}
 %    \label{eq:conic_hyper_cond}
 %    \abs{\vec{V}} 
 %    < 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align}
-\end{corollary}
+
 \begin{proof}
-	See Appendix \ref{app:major}
+%	See Appendix \ref{app:major}
+		\label{app:major}
+		Since the major axis passes through the origin, 
+  \begin{align}
+	  \vec{q} =			\vec{0} 
+\end{align}  
+Further, from Corollary  
+		\eqref{corr:axis},
+  \begin{align}
+  \vec{m}&= \vec{e}_2,  
+\end{align} and
+from 
+    \eqref{eq:conic_simp_temp_nonparab},
+  \begin{align}
+	  \vec{V} =     \frac{\vec{D} }{f_0}, 
+	   \vec{u} = 0, 
+	   f = -1
+	    \label{eq:latus_rectum_ellipse_param}
+\end{align}  
+Substituting the above in
+\eqref{eq:chord-len}, 
+\begin{align}
+ \frac{2\sqrt{
+\vec{e}_1^{\top}\frac{\vec{D}}{f_0}\vec{e}_1
+}
+}
+{
+\vec{e}_1^{\top}\frac{\vec{D}}{f_0}\vec{e}_1
+}\norm{\vec{e}_1}
+  \end{align}
+  yielding 
+\eqref{eq:chord-len-major}.
+Similarly, for the minor axis, the only different parameter is 
+  \begin{align}
+  \vec{m}&= \vec{e}_2,  
+\end{align} 
+Substituting the above in
+\eqref{eq:chord-len}, 
+\begin{align}
+ \frac{2\sqrt{
+\vec{e}_2^{\top}\frac{\vec{D}}{f_0}\vec{e}_2
+}
+}
+{
+\vec{e}_2^{\top}\frac{\vec{D}}{f_0}\vec{e}_2
+}\norm{\vec{e}_2}
+  \end{align}
+  yielding 
+\eqref{eq:chord-len-minor}.
+
 \end{proof}
-\begin{theorem}[latus rectum]
+\item
     The latus rectum of a conic section is the chord that passes through the focus and is perpendicular to the major axis.
 	The length of the latus rectum for a conic is given by
 		\begin{align}
@@ -202,7 +251,119 @@ f_0}
 			\end{cases}
 			\label{eq:latus-ellipse}
 		\end{align}
-\end{theorem}
+
 		\begin{proof}
-			See Appendix \ref{app:latus}.
+%			See Appendix \ref{app:latus}.
+		%\section{}
+		\label{app:latus}
+			The latus rectum is perpendicular to the major axis for the standard conic.  Hence, from Corollary  
+		\eqref{corr:axis},
+  \begin{align}
+  \vec{m}&= \vec{e}_2,  
+\end{align}  
+Since it passes through the focus, from 
+					\eqref{eq:F-ell-hyp-parab}
+  \begin{align}
+	  \vec{q} =			\vec{F} 
+=
+					 \pm e\sqrt{\frac{f_0}{\lambda_2\brak{1-e^2}}} \vec{e }_1
+%					 \frac{e}{\sqrt{f_0\lambda_2\brak{1-e^2}}}\vec{e }_1
+\end{align}  
+for the standard hyperbola/ellipse.  Also, 
+from 
+    \eqref{eq:conic_simp_temp_nonparab},
+  \begin{align}
+	  \vec{V} =     \frac{\vec{D} }{f_0}, 
+	   \vec{u} = 0, 
+	   f = -1
+	    \label{eq:latus_rectum_ellipse_param-new}
+\end{align}  
+Substituting the above in
+\eqref{eq:chord-len}, 
+\begin{align}
+ \frac{2\sqrt{
+\sbrak{
+\vec{e}_2^{\top}\brak{\frac{\vec{D}}{f_0} e\sqrt{\frac{f_0}{\lambda_2\brak{1-e^2}}} \vec{e }_1}
+}^2
+-
+\brak
+{
+ e\sqrt{\frac{f_0}{\lambda_2\brak{1-e^2}}} \vec{e }_1^{\top}\frac{\vec{D}}{f_0} e\sqrt{\frac{f_0}{\lambda_2\brak{1-e^2}}} \vec{e }_1 -1 
+}
+\brak{\vec{e}_2^{\top}\frac{\vec{D}}{f_0}\vec{e}_2}
+}
+}
+{
+\vec{e}_2^{\top}\frac{\vec{D}}{f_0}\vec{e}_2
+}\norm{\vec{e}_2}
+\label{eq:chord-len-sub-ell}
+  \end{align}
+  Since 
+  \begin{align}
+\vec{e}_2^{\top}\vec{D}\vec{e}_1 = 0, 
+%\vec{e}_2^{\top}\vec{e}_2 = 0,
+\vec{e}_1^{\top}\vec{D}\vec{e}_1 = \lambda_1,
+\vec{e}_1^{\top}\vec{e}_1 = 1,
+	  \norm{\vec{e}_2} = 1,
+\vec{e}_2^{\top}\vec{D}\vec{e}_2 = \lambda_2,
+  \end{align}
+\eqref{eq:chord-len-sub-ell} can be expressed as 
+  \begin{align}
+	&		\frac{2\sqrt{\brak{1-\frac{\lambda_1e^2}{{\lambda_2\brak{1-e^2}}}}\brak{\frac{\lambda_2}{f_0}}}}
+{
+	\frac{\lambda_2}{f_0}
+	} 	
+	\\
+	&=		2\frac{\sqrt{
+		f_0\lambda_1}}{\lambda_2}
+ & \brak{ \because e^2 = 1-\frac{\lambda_1}{\lambda_2}}
+		   \end{align}
+For the standard parabola, the parameters in 
+\eqref{eq:chord-len} are
+\begin{align}  
+	\vec{q} =\vec{F} =  -\frac{\eta}{4\lambda_2}\vec{e}_1, \vec{m} = \vec{e}_1, \vec{V} = \vec{D},
+	\vec{u} = \frac{\eta}{2}\vec{e}_1^{\top}, f = 0
+\end{align}  
+
+Substituting the above in
+\eqref{eq:chord-len}, 
+%			from \eqref{eq:conic_simp_temp_nonparab},  
+%					from \eqref{eq:F-ell-hyp-parab}
+%and 						 \\
+the length of the latus rectum  can be expressed as
+{\footnotesize
+\begin{align}
+ \frac{2\sqrt{
+\sbrak{
+\vec{e}_2^{\top}\brak{\vec{D}\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1}+\frac{\eta}{2}\vec{e}_1}
+}^2
+-
+\brak
+{
+\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1}^{\top}\vec{D}\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1} + 2\frac{\eta}{2}\vec{e}_1^{\top}\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1} 
+}
+\brak{\vec{e}_2^{\top}\vec{D}\vec{e}_2}
+}
+}
+{
+\vec{e}_2^{\top}\vec{D}\vec{e}_2
+}\norm{\vec{e}_2}
+\label{eq:chord-len-sub}
+  \end{align}
+  }
+  Since 
+  \begin{align}
+\vec{e}_2^{\top}\vec{D}\vec{e}_1 = 0, 
+\vec{e}_2^{\top}\vec{e}_2 = 0,
+\vec{e}_1^{\top}\vec{D}\vec{e}_1 = 0,
+\vec{e}_1^{\top}\vec{e}_1 = 1,
+	  \norm{\vec{e}_1} = 1,
+\vec{e}_2^{\top}\vec{D}\vec{e}_2 = \lambda_2,
+  \end{align}
+\eqref{eq:chord-len-sub} can be expressed as 
+  \begin{align}
+	  2 \frac{\sqrt{\frac{\eta^2}{4\lambda_2}\lambda_2}}{\lambda_2}
+	  = \frac{\eta}{\lambda_2}
+  \end{align}
 \end{proof}
+\end{enumerate}
