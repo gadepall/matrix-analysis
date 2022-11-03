@@ -1,8 +1,8 @@
 
 %\renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\begin{enumerate}
 %\numberwithin{equation}{enumi}
 \item The equation of a line  is given by  
 \begin{align}
@@ -150,6 +150,22 @@ the foot of the perpendicular satisfies the equations
 \end{align}
 where $\vec{m}$ is the direction vector of the given line.  Combining the above into a matrix equation results in 
 	\eqref{eq:normal_line_foot}.
+\item The equations of the angle bisectors of  the lines 
+	\label{prob:ang-bisect}
+\begin{align}
+	\vec{n}_1^{\top}\vec{x} &= c_1
+	\\
+	\vec{n}_2^{\top}\vec{x} &= c_2
+\end{align}
+are given by 
+\begin{align}
+	\frac{\vec{n}_1^{\top}\vec{x} - c_1}{\norm{\vec{n}_1}}
+	= \pm
+	\frac{\vec{n}_2^{\top}\vec{x} - c_2}{\norm{\vec{n}_2}}
+\end{align}
+\begin{proof}
+Any point on the angle bisector is equidistant from the lines.  
+\end{proof}
 
 %\item ({\em Reflection }) Assuming that straight lines work as a plane mirror for a point, find the image of the point $\vec{P}=\myvec{1\\2}$ in the line 
 %%

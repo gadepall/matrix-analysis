@@ -16,7 +16,7 @@
 \usepackage{wrapfig}
 \usepackage{pstcol,pst-grad}
  \usepackage{bm}
-%\usepackage{enumitem}
+\usepackage{enumitem}
 \usepackage{listings}
     \usepackage{color}                                            %%
     \usepackage{array}                                            %%
@@ -105,7 +105,7 @@
 \usepackage{boites}%
 \usepackage{boites_exemples}%
 \usepackage{graphicx,pstricks}
-\usepackage{enumerate}%
+%\usepackage{enumerate}%
 \usepackage{latexsym}
 \usepackage[fleqn]{mathtools}
 \usepackage{amssymb,amsfonts,amsthm}
@@ -118,21 +118,22 @@
 \hypersetup{bookmarksopen=false}%
 \usepackage{breakurl}%
 \urlstyle{same}%
-
 \@ifpackageloaded{enumerate}{%
 %%
-\def\@@enum@[#1]{%
-  \@enLab{}\let\@enThe\@enQmark
-  \@enloop#1\@enum@
-  \ifx\@enThe\@enQmark\@warning{The counter will not be printed.%
-   ^^J\space\@spaces\@spaces\@spaces The label is: \the\@enLab}\fi
-  \expandafter\edef\csname label\@enumctr\endcsname{\the\@enLab}%
-  \expandafter\let\csname the\@enumctr\endcsname\@enThe
-%  \if!#2!\relax\csname c@\@enumctr\endcsname7\else\csname c@\@enumctr\endcsname#2\fi%
-  \expandafter\settowidth
-            \csname leftmargin\romannumeral\@enumdepth\endcsname
-            {\the\@enLab\hspace{\labelsep}}%
-  \@enum@}
+%\iffalse
+%\def\@@enum@[#1]{%
+%  \@enLab{}\let\@enThe\@enQmark
+%  \@enloop#1\@enum@
+%  \ifx\@enThe\@enQmark\@warning{The counter will not be printed.%
+%   ^^J\space\@spaces\@spaces\@spaces The label is: \the\@enLab}\fi
+%  \expandafter\edef\csname label\@enumctr\endcsname{\the\@enLab}%
+%  \expandafter\let\csname the\@enumctr\endcsname\@enThe
+%%  \if!#2!\relax\csname c@\@enumctr\endcsname7\else\csname c@\@enumctr\endcsname#2\fi%
+%  \expandafter\settowidth
+%            \csname leftmargin\romannumeral\@enumdepth\endcsname
+%            {\the\@enLab\hspace{\labelsep}}%
+%  \@enum@}
+%\fi
 %%
 \newif\ifRoundPunctuation%
 \RoundPunctuationfalse%
@@ -810,8 +811,10 @@ to\@pnumwidth{\hss #2}\par
 
 \def\speakertitle#1#2{\bgroup\vglue12pt\vbox{\parindent=0pt\textbf{#1: #2}\par}\vskip-12pt\vskip0pt\egroup}%
 
-\newenvironment{speakers}{\par\begingroup\parindent=0pt\parskip=0pt\parsep=0pt%
-\begin{enumerate}[Speaker A:]}{\end{enumerate}\endgroup}
+%\iffalse
+%\newenvironment{speakers}{\par\begingroup\parindent=0pt\parskip=0pt\parsep=0pt%
+%\begin{enumerate}[Speaker A:]}{\end{enumerate}\endgroup}
+%		\fi
 
 \newenvironment{dialogue}{\begingroup\parindent=0pt\parskip=0pt\parsep=0pt\begin{speakers}}{\end{speakers}\endgroup}
 
@@ -1084,34 +1087,38 @@ to\@pnumwidth{\hss #2}\par
 %\StepUpCounter{\featuretitcnt}%
 %#1\par\endgroup\noindent}%
 
-\newenvironment{problems}[1][]{\begingroup%
-\if!#1!\section*{Problems}\else\section*{#1}\fi\par%
-\begin{enumerate}[1.]}{\end{enumerate}\endgroup}
+%\iffalse
+%\newenvironment{problems}[1][]{\begingroup%
+%\if!#1!\section*{Problems}\else\section*{#1}\fi\par%
+%\begin{enumerate}[1.]}{\end{enumerate}\endgroup}
+%
+%%\newenvironment{exercise}{\begingroup\begin{enumerate}[a.]}{\end{enumerate}\endgroup}
+%
+%\newif\ifExersResumeNumberLabel%
+%%\ExersResumeNumberLabel
+%\ExersResumeNumberLabelfalse%
+%\fi
 
-\newenvironment{exercise}{\begingroup\begin{enumerate}[a.]}{\end{enumerate}\endgroup}
-
-\newif\ifExersResumeNumberLabel%
-%\ExersResumeNumberLabel
-\ExersResumeNumberLabelfalse%
-
-\newenvironment{exercises}[1][problems]{\begingroup%
-    	        \if!#1!\def\exerssectitle{}\else\section*{#1}\fi%
-%	        \if!#2!%
-%                   \def\exersseclabeltext{}\def\exersresumelabeltext{}%
-%                \else%
-% 		   \ifExersResumeNumberLabel%
-%		      \def\exersresumelabeltext{#2}
-%		      \def\exersseclabeltext{}%
-%                   \else%
-%		      \def\exersresumelabeltext{}%
-%		      \def\exersseclabeltext{#2}%
-%	           \fi%
-%                \fi%
-%\if!#3!\def\exersecextralabel{}\else\def\exersecextralabel{#3}\fi%
-\NumberedExercisetrue%
-\begin{enumerate}[1.]%
-                }%
-               {\end{enumerate}\endgroup}%
+%\iffalse
+%\newenvironment{exercises}[1][problems]{\begingroup%
+%    	        \if!#1!\def\exerssectitle{}\else\section*{#1}\fi%
+%%	        \if!#2!%
+%%                   \def\exersseclabeltext{}\def\exersresumelabeltext{}%
+%%                \else%
+%% 		   \ifExersResumeNumberLabel%
+%%		      \def\exersresumelabeltext{#2}
+%%		      \def\exersseclabeltext{}%
+%%                   \else%
+%%		      \def\exersresumelabeltext{}%
+%%		      \def\exersseclabeltext{#2}%
+%%	           \fi%
+%%                \fi%
+%%\if!#3!\def\exersecextralabel{}\else\def\exersecextralabel{#3}\fi%
+%\NumberedExercisetrue%
+%%\begin{enumerate}[1.]%
+%%                }%
+%%               {\end{enumerate}\endgroup}%
+%\fi
 
 \long\def\ques#1{\item #1}%
 
