@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{PARALLELOGRAM}
 \def\myauthor{VUNNAVA SRAVANI}
 \def\contact{sravani21vunnava@gmail.com}
@@ -57,11 +58,58 @@ columns=fullflexible
 	\maketitle
 	\tableofcontents
    \section{Problem}
-  ABCD is a parallelogram and AP and CQ are
-perpendiculars from vertices A and C on diagonal
-BD . Show that \\
-(i) $\Delta APB \cong \Delta CQD$  \\       
-(ii) AP = CQ
+   \fi
+  $ABCD$ is a parallelogram and $AP$ and $CQ$ are
+perpendiculars from vertices $\vec{A}$ and $\vec{C}$ on diagonal
+$BD$ . Show that 
+\begin{enumerate}
+	\item  $\triangle APB \cong \triangle CQD$   
+		\label{prob:9/8/1/10/1}
+	\item  $AP = CQ$
+		\label{prob:9/8/1/10/2}
+\end{enumerate}
+
+ 	\begin{figure}
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/8/1/10/figs/matrix_line.png}
+		\caption{}
+		\label{fig:9/8/1/10}
+  	\end{figure}
+\solution From Fig. 
+		\ref{fig:9/8/1/10},
+		and 
+    \eqref{eq:angle2d},
+\begin{align}
+		\begin{split}
+	\cos \angle{ABD}
+	&= \frac{(\vec{A}-\vec{B})^T(\vec{D}-\vec{B})}{\norm{\vec{A}-\vec{B}}\norm{\vec{D}-\vec{B}}}
+	\\
+\cos	\angle{CDB}
+	 &= \frac{(\vec{C}-\vec{D})^T(\vec{B}-\vec{D})}{\norm{\vec{C}-\vec{D}}\norm{\vec{B}-\vec{D}}}
+		\end{split}
+	 \label{eq:9/8/1/10/cang}
+%
+\end{align}
+From Appendix 
+	  \ref{eq:two-pgm}, 
+\begin{align}
+\vec{A}
+-
+\vec{B}
+=
+	\vec{D}
+-\vec{C}
+\end{align}
+Substituting in 
+	 \eqref{eq:9/8/1/10/cang},
+\begin{align}
+	\cos \angle{ABD}
+	=\cos \angle{CDB}
+\end{align}
+Using SAS congruence, 
+		\ref{prob:9/8/1/10/1}  is proved. \ref{prob:9/8/1/10/2} follows from 
+\ref{prob:9/8/1/10/1}.
+\iffalse
 
 	   % \includegraphics[scale=1.0]{diag_1.png}
    \section{Solution}
@@ -87,6 +135,8 @@ $\vec{C} = \vec{B}+\vec{C}$
 \end{center}
 \end{center}
 \textbf{To Prove:} AP = CQ
+\fi
+\iffalse
 		\begin{center}
 		The line equation for diagonal BD is $x = \vec{B}+\lambda\vec{m}$
 		\\
@@ -102,10 +152,10 @@ $\vec{C} = \vec{B}+\vec{C}$
 	
 	distance between A and P is $\norm{\vec{A-P}}$\\
 	distance between C and Q is $\norm{\vec{C-Q}}$\\
-	if $\norm{\vec{A-P}}$ =  $\norm{\vec{C-Q}}$\\
+	if $\norm{\vec{A-P}}$ =  \\
 	then AP = CQ..........(1)
 	
-	\textbf{To Prove:}  $\Delta APB \cong \Delta$ CQD\\
+	\textbf{To Prove:}  $\triangle APB \cong \triangle$ CQD\\
 	to prove $\angle {APD}=\angle {CQD}=90^{\circ}$\\
 	$\vec{m1} = \vec{A-P}$\\
 	$\vec{m2} = \vec{P-B}$\\
@@ -138,15 +188,14 @@ $\vec{C} = \vec{B}+\vec{C}$
 	\end{center}
 	\begin{center}
 $\therefore$ from (1),(2) and (3)
-$\Delta APB \cong \Delta CQD$ 
+$\triangle APB \cong \triangle CQD$ 
 	\end{center}
-The below python code realizes the above construction:	\\
 \begin{lstlisting}
 https://github.com/sravani21vunnava/sravani21vunnava/blob/main/Matrices_line/codes/matrix_line.py
 \end{lstlisting}
  
 \section{Construction}
-\includegraphics[scale=0.66]{matrix_line.png}
  	
 \bibliographystyle{ieeetr}
 \end{document}
+\fi

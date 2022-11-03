@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[10pt, a4paper]{article}
 \usepackage[a4paper,outer=1.5cm,inner=1.5cm,top=1.75cm,bottom=1.5cm]{geometry}
 
@@ -21,21 +21,33 @@
 
 
   \section{Problem}
-In  $\Delta$  ABC and  $\Delta$ DEF, AB = DE, AB $\parallel$ DE, BC = EF
-and BC $\parallel$ EF. Vertices A, B and C are joined to
-vertices D, E and F respectively (see Figure).\\
-Show that\\
-(i) quadrilateral ABED is a parallelogram\\
-(ii) quadrilateral BEFC is a parallelogram\\
-(iii) AD $\parallel$ CF and AD = CF\\
-(iv) quadrilateral ACFD is a parallelogram\\
-(v) AC = DF\\
-(vi)$\Delta ABC \cong \Delta$  DEF.\\
-\begin{figure}[h]
-\centering
-\includegraphics[scale=0.5]{fig.png} 
-\caption{Given Figure}
-\end{figure}
+  \fi
+In  $\triangle  ABC$ and  $\triangle DEF, AB = DE, AB \parallel DE, BC = EF$
+and $BC \parallel EF$. Vertices $\vec{A},\vec{B}$ and $\vec{C}$
+are joined to
+vertices 
+$\vec{D},\vec{E}$ and $\vec{F}$
+respectively (see Figure 
+		\ref{fig:9/8/1/11}
+).
+Show that
+\begin{enumerate}
+	\item  quadrilateral  $ABED$ is a parallelogram
+	\item  quadrilateral  $BEFC$ is a parallelogram
+	\item  $AD \parallel  CF $ and $AD = CF$
+		\label{prob:9/8/1/11/3}
+	\item  quadrilateral  $ACFD$ is a parallelogram
+	\item $AC = DF$
+	\item $\triangle ABC \cong \triangle  DEF$.
+\end{enumerate}
+
+ 	\begin{figure}
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/8/1/11/figs/fig.png} 
+		\caption{}
+		\label{fig:9/8/1/11}
+  	\end{figure}
+\iffalse
 
 \section{Solution}
 \begin{center}
@@ -74,6 +86,40 @@ $$\vec{o_1}={\vec{A}-\vec{D}} $$
 $$\vec{o_2}={\vec{C}-\vec{F}} $$
 \unboldmath
 \textbf{To proove\\ i.Quadrilateral ABED is a parallelogram}\\
+\fi
+\solution 
+From the given information
+\begin{align}
+		\label{eq:9/8/1/11/1}
+	\vec{A}-\vec{B}&= \vec{D}-\vec{E}
+	\\
+	\vec{B}-\vec{E}&= \vec{C}-\vec{F}
+		\label{eq:9/8/1/11/2}
+\end{align}
+\begin{enumerate}
+	\item From Appendix 
+	  \ref{eq:two-pgm}, 
+		\eqref{eq:9/8/1/11/1} defines the parallelogram $ABED$.
+	\item Similarly, 
+		\eqref{eq:9/8/1/11/2} defines the parallelogram $BEFC$.
+	\item From 
+		\eqref{eq:9/8/1/11/1}
+		and 
+		\eqref{eq:9/8/1/11/2},
+\begin{align}
+	\vec{A}-\vec{D}=
+ \vec{C}-\vec{F}
+		\label{eq:9/8/1/11/3}
+\end{align}
+which  yields
+		\ref{prob:9/8/1/11/3}.
+	\item 
+		\eqref{eq:9/8/1/11/3} implies that $ACFD$ is a parallelogram.
+	\item \eqref{eq:9/8/1/11/3} implies $AC = DF$.
+	\item Obvious from the fact the $ABCD, BEFC$ and $ACFD$ are parallelograms.
+\end{enumerate}
+\iffalse
+
     Distance between A and B is $\norm{\vec{A-B}}$\\
 	Distance between D and E is $\norm{\vec{D-E}}$\\
 	if $\norm{\vec{A-B}}$ =  $\norm{\vec{D-E}}$\\
@@ -112,14 +158,14 @@ $$\vec{o_2}={\vec{C}-\vec{F}} $$
 	if $\norm{\vec{A-C}}$ =  $\norm{\vec{D-F}}$\\
 	then AC = DF\\
 	$\therefore$ AC=DF\\
-\textbf{vi.$\Delta ABC \cong \Delta DEF$}  \\
+\textbf{vi.$\triangle ABC \cong \triangle DEF$}  \\
 If $\norm{\vec{A-B}}$ =  $\norm{\vec{D-E}}$ and $\norm{\vec{B-C}}$ =  $\norm{\vec{E-F}}$ and $\norm{\vec{A-C}}$ =  $\norm{\vec{D-F}}$\\
-Then,$\Delta ABC \cong \Delta DEF$ .Because, If three sides of one triangle are equal to three sides of another triangle, the triangles are congruent.(By SSS Rule)\\
-$\therefore$ $\Delta ABC \cong \Delta DEF$
-
+Then,$\triangle ABC \cong \triangle DEF$ .Because, If three sides of one triangle are equal to three sides of another triangle, the triangles are congruent.(By SSS Rule)\\
+$\therefore$ $\triangle ABC \cong \triangle DEF$
 \section{Execution}
 *Verify the above proofs in the following code.\\
 \framebox{
 \url{https://github.com/gowripriya-2002/FWC/blob/main/line_assignment/line.py}}	
 \bibliographystyle{ieeetr}
 \end{document}
+\fi

@@ -50,9 +50,9 @@ columns=fullflexible
 In parallelogram $ABCD$, two points $\vec{P}$ and $\vec{Q}$ are
 taken on diagonal $BD$ such that $DP = BQ$. Show that 
 \begin{enumerate}
-	\item  $\Delta APD \cong \Delta CQB$         
+	\item  $\triangle APD \cong \triangle CQB$         
 	\item  $AP = CQ$
-	\item $\Delta AQB \cong \Delta CPD$     
+	\item $\triangle AQB \cong \triangle CPD$     
 	\item  $AQ = CP$   
 	\item  $APCQ$ is a parallelogram 
 \end{enumerate}
@@ -118,55 +118,76 @@ From
     \eqref{eq:angle2d} and the given information,
 
 \begin{align}
+		\label{fig:9/8/1/9/pgm}
 	\vec{A}-\vec{B} &=\vec{D}-\vec{C} \\
 	\implies    \vec{A}-\vec{D} &=\vec{B}-\vec{C}\\
-	\vec{B}-\vec{Q} &=\vec{P}-\vec{D}
+	\vec{B}-\vec{Q} &=\vec{P}-\vec{D} \quad \text{(given)}
+		\label{fig:9/8/1/9/newpgm}
 \end{align}
 
-From (1) and (3):
+From 
+		\eqref{fig:9/8/1/9/pgm}
+		and
+		\eqref{fig:9/8/1/9/newpgm}
+		\iffalse
 \begin{align}
 \begin{split}
     \vec{A}+\vec{C} =\vec{B}+\vec{D}\\
     \vec{P}+\vec{Q} =\vec{B}+\vec{D}
 \end{split}
 \end{align}
-
-From (4)
+%From (4)
 \begin{align}
     \vec{A}+\vec{C} =\vec{P}+\vec{Q}
 \end{align}
 
 From (5)
+\fi
 \begin{align}
-     \implies  \vec{A}-\vec{Q} =\vec{P}-\vec{C}\\
+%     \implies  \vec{A}-\vec{Q} =\vec{P}-\vec{C}\\
     \vec{A}-\vec{P} =\vec{Q}-\vec{C}
+		\label{fig:9/8/1/9/newpgmsol}
 \end{align}
 
 
 \begin{enumerate}
-    \item From (2),(3) and (7)
+    \item From 
+		\eqref{fig:9/8/1/9/pgm}, 
+		\eqref{fig:9/8/1/9/newpgm}
+		and 
+		\eqref{fig:9/8/1/9/newpgmsol}
+		taking the norms of the respective sides, 
     \begin{align}
-        \Delta APD \cong \Delta CQB
+        \triangle APD \cong \triangle CQB
     \end{align}
     
-    \item \begin{align}
-        Equation (7) \implies AP=CQ
+    \item From 
+		\eqref{fig:9/8/1/9/newpgmsol}, taking the norm,
+	    \begin{align}
+AP=CQ
     \end{align}
     
-     \item From (1),(3) and (6)
+    \item From 
+		\eqref{fig:9/8/1/9/pgm}, 
+		\eqref{fig:9/8/1/9/newpgm}
+		and 
+		\eqref{fig:9/8/1/9/newpgmsol}
+		taking the norms of the respective sides, 
     \begin{align}
-        \Delta AQB \cong \Delta CPD
+        \triangle AQB \cong \triangle CPD
     \end{align}
 
-    \item \begin{align}
-        Equation (6) \implies AQ=CP
+    \item From 
+		\eqref{fig:9/8/1/9/newpgmsol}, 
+	    \begin{align}
+AQ=CP
     \end{align}
-
-     \item Equation (6) and (7) 
-      $\implies$  Quadrilateral APCQ is a parallelogram.
 \end{enumerate}
 
 \iffalse
+     \item Equation (6) and (7) 
+      $\implies$  Quadrilateral APCQ is a parallelogram.
+
 
 \textbf{termux commands :}
 \begin{lstlisting}

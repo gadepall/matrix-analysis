@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage[margin=0.5in]{geometry}
 \usepackage[cmex10]{amsmath}
@@ -94,6 +95,7 @@ Using Matrices and lines}\\
 \maketitle
 \tableofcontents
 \section{Problem statement}
+\fi
 ABCD is trapezium in which AB $\parallel$ CD and AD=BC.\\
 Show that, \\
 \begin{enumerate}
@@ -102,7 +104,16 @@ Show that, \\
     \item Diagonal AC = Diagonal BD\\
     \item $\triangle$ ABC  = $\triangle$ BAD \\
 \end{enumerate}
-
+\solution 
+See Fig. 
+		\ref{fig:9/8/1/12}.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/8/1/12/figs/trapezium1.png}
+		\caption{}
+		\label{fig:9/8/1/12}
+  	\end{figure}
+\iffalse
 \section{Considerations}
 \vspace{0.2cm}
 The input parameters are the lengths r, c and angle $\theta$. \\
@@ -143,7 +154,6 @@ The input parameters are the lengths r, c and angle $\theta$. \\
 Plot of Trapezium is shown in figure 1, where point O is origin and points A, B, C and D are the vertices of Trapezium.
 \begin{figure}[h]
 
-\includegraphics[width=1\columnwidth]{trapezium1.png}
 \caption{trapezium}
 \label{fig:trapezium}
 \end{figure}
@@ -482,3 +492,4 @@ In this program, the following points have been verified.\\
 \end{enumerate}
 \end{flushleft}
 \end{document}
+\fi

@@ -133,6 +133,11 @@ yielding
 			\vec{n}^{\top}\vec{x} =c
 		\end{align}
 		is given by 
+\begin{align}
+	\vec{x} &= \vec{P} + \frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
+\vec{n}
+	\label{eq:foot_perp_pt_plane}
+\end{align}
 		\\
 		\solution The equation of the line perpendicular to the given plane and passing through $\vec{P}$ is 
 		\begin{align}
@@ -140,11 +145,14 @@ yielding
 		\end{align}
 		From 
 	\eqref{eq:dir_line_plane_isect}, the intersection of the above line with the given plane is 
+	\eqref{eq:foot_perp_pt_plane}.
+	\iffalse
 \begin{align}
 	\vec{x} &= \vec{P} + \frac{c - \vec{n}^{\top}\vec{P}}{\norm{\vec{n}}^2}
 \vec{n}
 	\label{eq:foot_perp_pt_plane}
 \end{align}
+\fi
 \item The image of a point $\vec{P}$ with respect to the plane 
 		\begin{align}
 			\vec{n}^{\top}\vec{x} =c
