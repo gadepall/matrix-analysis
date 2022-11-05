@@ -1,0 +1,267 @@
+
+\documentclass[10pt,a4paper]{report}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,automata,petri,positioning,calc}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{matrix,calc}
+\usepackage[margin=0.5in]{geometry}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\begin{document}
+%--------------------logo figure-------------------------%
+\begin{figure*}[!tbp]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    \includegraphics[scale = 0.05]{iitlogo.jpg}
+  \end{minipage}
+  \hfill
+  \vspace{5mm}\begin{minipage}[b]{0.4\textwidth}
+\raggedleft  \includegraphics[scale = 0.10]{nrc.png}\
+
+  \end{minipage}\vspace{0.2cm}
+\end{figure*}
+%--------------------name & rollno-----------------------
+\raggedright \textbf{Name}:\hspace{1mm} Chirag Shah\hspace{3cm} \Large \textbf{Assignment-4}\hspace{2.5cm} % 
+\normalsize \textbf{Roll No.} :\hspace{1mm} FWC22053\vspace{1cm}
+\begin{multicols}{2}
+
+\textbf{Triangle Law of Vector addition }
+\vspace{0.5cm}\raggedright \\
+The triangle law of vector addition says that when two vectors are represented as two sides of a triangle with the same order of magnitude and direction, then the magnitude and direction of the resultant vector is represented by the third side of the triangle taken in reverse order..\vspace{3mm} \\ 
+\begin{equation}
+\vec{R}=\vec{A}+\vec{B} 
+\end{equation}
+%----------------problem statement--------------%
+\raggedright \textbf{Problem Statement:}\vspace{2mm}
+\raggedright \\Construct a right triangle whose base is 12cm and sum of its hypotenuse and other side is 18cm.\\
+\vspace{5mm}
+%-----------------------------solution---------------------------
+\raggedright \textbf{SOLUTION}:\vspace{2mm}\\
+Let A,B and C be the vertices of right triangle with with coordinates $\begin{pmatrix}
+0 \\
+0 
+\end{pmatrix} 
+, \begin{pmatrix}
+0 \\
+0 
+\end{pmatrix} 
+ and \begin{pmatrix}
+0 \\
+0 
+\end{pmatrix} $
+\vspace{1mm} respectively.\vspace{2mm}\\
+OB-Base.
+AB-Hypotenuse.
+OA-Side.\\\vspace{2mm}
+%---------given----------------%
+\raggedright \textbf{Given}:\vspace{2mm}\\
+Since its a right triangle OA $\perp$ OB \\\vspace{2mm}
+Since base is 12cm length of OB = 12  \\i.e,\\
+\begin{equation}
+b= 12 \vspace{2mm}
+\end{equation}
+Sum of length OA and AB = 18cm \\ i.e,\\
+\begin{equation}
+a + c= 18 \vspace{2mm}
+\end{equation}
+%-------------To find ------------------%
+\textbf{To Find}\vspace{2mm}\\
+The magnitude of a \hspace{2mm} i.e \\ \vspace{2mm}
+%--------------steps----------------------%
+\textbf{STEP-1}\vspace{2mm}\\
+Let k be the unknown point in the vertex A \vspace{2mm}\\
+Then coordinates of vertices  O,A and B are :\vspace{2mm}\\
+\begin{center}$
+\vec{
+ O =\begin{pmatrix}
+0 \\
+0 
+\end{pmatrix} 
+\vspace{1mm}
+B=\begin{pmatrix}
+12 \\
+0 
+\end{pmatrix} 
+\vspace{1mm}
+A=\begin{pmatrix}
+0 \\
+k 
+\end{pmatrix} }
+\vspace{1mm}$
+\end{center}
+
+\vspace{3mm} 
+We know that a + c= 18 \vspace{2mm}\\
+So, Let m=18 
+\begin{equation}
+   a +c = m \vspace{2mm}
+\end{equation}
+We know that , \\
+\begin{equation}
+c^2 = a^2 + b^2 \vspace{2mm}
+\end{equation}
+
+\textbf{STEP-2}\vspace{2mm}\\
+\begin{equation}\vec{
+    O=\begin{pmatrix}
+0\\
+0
+\end{pmatrix} 
+    B=\begin{pmatrix}
+12\\
+0
+\end{pmatrix} 
+    A=\begin{pmatrix}
+0\\
+k
+ \end{pmatrix} } \vspace{3mm}
+\end{equation}
+  
+By using equation (5)
+\begin{center}
+    $ c^2 =a^2 + b^2 $ \vspace{2mm}
+\end{center}
+\begin{equation}
+    b^2 = c^2- a^2 \vspace{2mm}
+\end{equation}
+We know that $c^2- a^2 =  (c-a) (c+a)$\vspace{2mm}\\
+Since, $ c+a=m$
+\begin{equation}
+  b^2 = c-a (m) \vspace{2mm}
+\end{equation}
+\begin{equation}
+ c-a = \frac{b^2}{m}
+\end{equation}
+And ,
+\begin{equation}
+ c+a = m \vspace{2mm}
+\end{equation}
+Using equation (9) and (10),
+\begin{equation}
+  \begin{pmatrix}
+1 & 1\\
+1 &-1
+\end{pmatrix} 
+\begin{pmatrix}
+c\\
+a
+\end{pmatrix} = \begin{pmatrix}
+m\\
+\frac{b^2}{m}
+\end{pmatrix} 
+\end{equation}\vspace{2mm}\\
+
+\textbf{STEP-2}\vspace{2mm}\\
+Using equation (11) \vspace{2mm}\\
+ Let,
+\begin{equation}
+\vec{P} =\begin{pmatrix}
+1 & 1\\
+1 &-1
+\end{pmatrix} 
+\end{equation} \\ \vspace{2mm}
+\begin{equation}
+  \vec{y} =\begin{pmatrix}
+c \\
+a
+\end{pmatrix} 
+\end{equation}  \vspace{2mm}
+
+\begin{equation}
+ \vec{Q} = \begin{pmatrix}
+x\\
+\frac{b^2}{m}
+\end{pmatrix} 
+\end{equation}\vspace{2mm}
+We know that,\\
+\begin{equation}
+\vec{P  y = Q}
+\end{equation}
+And,\\
+\begin{equation}
+\vec{P^{-1} P = I}
+\end{equation}
+multiplying $P^{-1}$ on both sides in equation (15)\\
+\begin{equation}
+ \vec{y = P^{-1} Q}
+\end{equation}
+Using equation (17) we get ,
+\begin{equation}
+c = 13 \vspace{2mm}
+\end{equation}
+\begin{equation}
+ a = 5 \vspace{2mm}
+\end{equation}
+The Coordinates of $\vec{A}=\begin{pmatrix}
+0\\
+k
+\end{pmatrix}$  is ,\\
+\begin{equation}
+ \vec{A}=\begin{pmatrix}
+0 \\
+5
+\end{pmatrix} 
+\end{equation}
+\textbf{Result} 
+\begin{center}
+ \includegraphics[width=0.5\textwidth]{matrix.jpg}  
+ \end{center}\vspace{5mm}
+ \vspace{2mm}  
+\textbf{implementation}
+\begin{center}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{3}
+    \begin{tabular}{|l|c|}
+    \hline 
+    \textbf{Equation no} & \textbf{Role} \\ \hline
+    5 &  Pythagorean Theorem \\ 
+    11 & Matrix form of Linear equation  \\
+    16 & Results Identity matrix  \\
+    18 & Length of c\\
+    19 & Length of a \\
+    20 & substituting k=5\\
+    \hline
+      \end{tabular}
+  \end{center} \vspace{2mm}
+  
+ \vspace{2mm} \textbf{Construction}
+\begin{center}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|c|}
+    \hline 
+    \textbf{vertex} & \textbf{coordinates} \\ \hline
+   O & $ \begin{pmatrix} 
+0 \\
+0
+\end{pmatrix} $ \\ \hline
+    A & $\begin{pmatrix}
+0 \\
+5
+\end{pmatrix}$   \\\hline
+    B & $\begin{pmatrix}
+12 \\
+0
+\end{pmatrix} $\\
+    \hline
+      \end{tabular}
+  \end{center}
+  
+\raggedright  Download the code \\
+Github link: \href{https://github.com/chiragshah1244/FWC/blob/main/assignments/assignment-1/code/src/seq.cpp}{Assignment-4}.
+  \end{multicols}
+\end{document}

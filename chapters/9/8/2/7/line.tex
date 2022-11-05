@@ -37,6 +37,7 @@ Show that
 	\solution 
 	\begin{enumerate}
 \item Trivial from  Appendix
+		\label{prop:9/8/2/7}
 	  \ref{prop:two-tri-bpt-conv}.
   \item 
 Since $ABC$ is right angled at $C$,
@@ -55,7 +56,20 @@ Substituting (\ref{eq-4}) in (\ref{eq-3}) and dividing by $\lambda$, we get
 \label{eq-5}
 \end{equation}
 From (\ref{eq-5}) it can be concluded that $MD \perp AC$.
-\item 
+\item Since
+\begin{align}
+	\norm{\vec{C}-\vec{M}}^2-\norm{\vec{A}-\vec{M}}^2 &= 	
+	\norm{\vec{C}}^2-\norm{\vec{A}}^2-2\brak{\vec{C}-\vec{A}}^{\top}\vec{M} 
+	\\
+	&=\brak{\vec{C}-\vec{A}}^{\top}\brak{\vec{C}+\vec{A}-2\vec{M}} 
+	\\
+	&=\brak{\vec{C}-\vec{A}}^{\top}\brak{\vec{C}-\vec{B}} = \vec{0} 
+\label{eq:9/8/2/7/sides}
+\end{align}
+upon substituting from 
+Property		\ref{prop:9/8/2/7}
+and 
+\eqref{eq-3}.  Thus, $CM = AM$.
 
 	\end{enumerate}
 

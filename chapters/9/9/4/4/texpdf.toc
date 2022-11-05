@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {section}{\numberline {I}Problem}{1}{section.1}%
+\contentsline {section}{\numberline {II}Construction}{1}{section.2}%
+\contentsline {section}{\numberline {III}Solution}{1}{section.3}%
