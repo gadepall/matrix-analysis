@@ -75,8 +75,8 @@
 \newcommand*{\perm}[1][-3mu]{\permcomb[#1]{P}}
 \newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
 
-%\numberwithin{equation}{section}
-\numberwithin{equation}{subsection}
+%\numberwithin{align}{section}
+\numberwithin{align}{subsection}
 %\numberwithin{problem}{section}
 %\numberwithin{definition}{section}
 
@@ -96,14 +96,15 @@ Using Matrices and lines}\\
 \tableofcontents
 \section{Problem statement}
 \fi
-ABCD is trapezium in which AB $\parallel$ CD and AD=BC.\\
-Show that, \\
+$ABCD$ is trapezium in which $AB \parallel CD$ and $AD=BC$.
+Show that, 
 \begin{enumerate}
-    \item $\angle$ A = $\angle$ B\\
-    \item $\angle$ C = $\angle$ D\\
-    \item Diagonal AC = Diagonal BD\\
-    \item $\triangle$ ABC  = $\triangle$ BAD \\
+    \item $\angle A = \angle B$
+    \item $\angle C = \angle D$
+    \item Diagonal $AC$ = Diagonal $BD$
+    \item $\triangle ABC  = \triangle BAD$
 \end{enumerate}
+\iffalse
 \solution 
 See Fig. 
 		\ref{fig:9/8/1/12}.
@@ -113,7 +114,50 @@ See Fig.
 		\caption{}
 		\label{fig:9/8/1/12}
   	\end{figure}
-\iffalse
+For $\vec{e}_1$ defined in Appedix \ref{def:matrix-two},
+    Let 
+\begin{align}
+	 \label{eq:9/8/1/12/cang}
+		\begin{split}
+	\vec{D} &= \vec{0}
+	\\
+	\vec{C}&= c\vec{e}_1
+\\
+	\vec{A}&= r\myvec{\cos D \\ \sin D}
+\\
+	\vec{B}&= \vec{C} +  r\myvec{-\cos C \\ \sin C}
+		\end{split}
+\end{align}
+%
+Thus, 
+\begin{align}
+	 \label{eq:9/8/1/12/cang/a}
+	\cos \angle{BAD}
+	&= \frac{(\vec{A}-\vec{B})^T(\vec{A}-\vec{D})}{\norm{\vec{A}-\vec{B}}\norm{\vec{A}-\vec{D}}}
+	\\
+\cos	\angle{CBA}
+	 &= \frac{(\vec{B}-\vec{C})^T(\vec{B}-\vec{A})}{\norm{\vec{B}-\vec{C}}\norm{\vec{B}-\vec{A}}}
+	 \label{eq:9/8/1/12/cang/b}
+%
+\end{align}
+Substituting from 
+	 \eqref{eq:9/8/1/12/cang},
+\begin{align}
+	 \label{eq:9/8/1/12/cang/abd}
+	 (\vec{A}-\vec{B})^T(\vec{A}-\vec{D}) &= r\brak{r\myvec{\cos D+ \cos C  & \sin D - \sin C}-c\vec{e}_1^{\top}}\myvec{\cos D \\ \sin D}
+	 \\
+	&= r\brak{r\brak{1+ \cos \brak{C+D}  }-c\cos D }
+\end{align}
+Similarly, 
+\begin{align}
+	 \label{eq:9/8/1/12/cang/abc}
+(\vec{B}-\vec{C})^T(\vec{B}-\vec{A})
+	&= r\brak{-r\myvec{\cos D+ \cos C  & \sin D - \sin C}+c\vec{e}_1^{\top}}\myvec{-\cos C \\ \sin C}
+	 \\
+	&= r\brak{r\brak{1+ \cos \brak{C+D}  }-c\cos D }
+\end{align}
+
+	 \eqref{eq:9/8/1/12/cang},
 \section{Considerations}
 \vspace{0.2cm}
 The input parameters are the lengths r, c and angle $\theta$. \\
@@ -174,12 +218,9 @@ $\vec{O}$ = \myvec{0\\0}
 \vspace{0.25cm}
 Let C be the point on X-axes and it is expressed as\\
 \vspace{0.25cm}
-\begin{equation}
+\begin{align}
     \vec{C} = c
-    \end{equation}
-\begin{equation}
-\implies \vec{C}= \myvec{c \\ 0}
-\end{equation}
+    \end{align}
 
 \vspace{0.25cm}
 \begin{flushleft}
@@ -191,9 +232,6 @@ $\vec{D}$  = -c\\
 Therefore, the coordinates of D are\\
 \end{flushleft}
 
-\begin{equation}
-\implies \vec{D}= \myvec{-c \\ 0}
-\end{equation}
 
 \vspace{0.25cm}
 \begin{flushleft}
@@ -213,9 +251,9 @@ $\angle$BOC = $\theta$\\
 According to the vector geometry formulaes, the vector B can be expresssed as\\
 \end{flushleft}
 \vspace{0.25cm}
-\begin{equation}
+\begin{align}
    \vec{B}= r \myvec{cos\theta \\ sin\theta}
-\end{equation}
+\end{align}
 
 \vspace{0.35cm}
 \begin{flushleft}
@@ -244,7 +282,6 @@ $\implies$ -c+rcos$\theta$ = -r cos $\theta$\\
 \endcenter{}
 	$\implies$ $\vec{A}$
 	= r\myvec{-cos $$ \theta$$ \\ sin$$\theta$$} \\
-\end{flushleft}
 
 Let c=4, r=2.82 and $\theta$=45 \textdegree \\
 
@@ -274,18 +311,17 @@ $\vec{A-B}$ = \myvec{-2 \\ 2} -\myvec{2 \\ 2} = \myvec{-4 \\ 0}
 
 \end{center}
 \vspace{0.4cm}
-\begin{equation}
+\begin{align}
 \angle BAD = arccos \vec{\frac{(A-D).(A-B)}{||A-D ||. ||A-B||}}
-\end{equation}
+\end{align}
 \vspace{0.4cm}
-\begin{equation}
+\begin{align}
 \angle BAD = arccos \frac{(2 \hspace{0.32cm}  2)^T . (-4 \hspace{0.25cm}   0) } {\sqrt{2^2+2^2}.\sqrt{4^2+0}}
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 = arccos \frac{-8 } {\sqrt{8}.\sqrt{16}} = arccos (-0.707) 
-\\
-\end{equation}
+\end{align}
 \begin{flushleft}
 $\implies$   $\angle$ BAD = 135 \textdegree\\
 \vspace{0.3cm}
@@ -300,24 +336,21 @@ To find angle $\angle$ B: \\
 \vspace{0.35cm}
 $\vec{B-A}$ = \myvec{2 \\ 2}-\myvec{-2 \\ 2}
 	= \myvec{4\\0}
-	\\
-	\vspace{0.3cm}\\
 and \\
 
 $\vec{B-C}$ = \myvec{2 \\ 2} -\myvec{4\\0} = \myvec{-2 \\2} 
 \vspace{0.25cm}	
-\begin{equation}
+\begin{align}
 \angle BAD = arccos \vec {\frac{(A-D).(A-B)}{||A-D||.||A-B||}}
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 \angle BAD = arccos \frac{(4, 0)^T .(-2, 2)}{\sqrt{4^2}.\sqrt{2^2+2^2} }
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 = arccos \frac{-8 } {\sqrt{16}.\sqrt{8}} =arccos (-0.707)
-\\
-\end{equation}
+\end{align}
 
 \begin{flushleft}
 $\implies$   $\angle$ ABC = 135 \textdegree\\
@@ -332,28 +365,24 @@ Therefore $\angle A$ = $\angle B$
 \vspace{0.25cm}
 
 To find angle $\angle$C:\\
-\vspace{0.25cm}\\
 $\vec{C-O}$ = \myvec{4\\0} - \myvec{0\\0}
 	= \myvec{4\\0}
-	\\
-	\vspace{0.3cm}\\
-and \\
+and 
 
 $\vec{C-B}$ = \myvec{4\\0}- \myvec{2\\2} = \myvec{2\\-2}
 \\
 
-\begin{equation}
+\begin{align}
 \angle OCB = arccos \vec{\frac{(C-O).(C-B)}{||C-O ||. ||C-B||}}
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 \angle BAD = arccos \frac{(4 \hspace{0.15cm} 0)^T . (2 \hspace{0.15cm} -2) } {\sqrt{4^2}.\sqrt{2^2+2^2}}
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 = arccos \frac{8 } {\sqrt{16}.\sqrt{8}} = arccos (0.707)
-\\
-\end{equation}
+\end{align}
 \begin{flushleft}
 $\implies$   $\angle$ OCB = 45 \textdegree\\
 \vspace{0.3cm}
@@ -378,17 +407,17 @@ $\vec{D-A}$ = \myvec{-4 \\ 0} -\myvec{-2 \\ 2} = \myvec{-2 \\ -2}
 
 \endcenter
 
-\begin{equation}
+\begin{align}
 \angle ODB = arccos \vec{\frac{(D-O).(D-B)}{||D-O ||. ||D-B||}}
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 \angle ODB = arccos \frac{(-4 \hspace{0.29cm} 0)^T .(-2 \hspace{0.22cm} -2)}{\sqrt{4^2}.\sqrt{2^2+2^2} }
-\end{equation}
+\end{align}
 
-\begin{equation}
+\begin{align}
 = arccos \frac{8} {\sqrt{8}.\sqrt{16}} = arccos (0.707)
-\end{equation}
+\end{align}
 
 \begin{flushleft}
 $\implies$   $\angle$ ODB = 45 \textdegree\\

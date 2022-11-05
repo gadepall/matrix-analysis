@@ -132,10 +132,18 @@ which can be simplified to obtain
     \frac{\vec{m}}{\norm{\vec{m}}}
 \end{align}
 \item If the direction vector of a line is expressed as 
+		\label{prop:two-dir-vec}
 	\begin{align}
+		\label{eq:two-dir-vec}
     \vec{m} = \myvec{1\\m},
 \end{align}
  the $m$ is defined to be the {\em} slope of the line. 
+  \item $AB \parallel CD$ if 
+	  \label{prop:two-par-dir-vec}
+  \begin{align}
+	  \vec{A}- \vec{B}= k\brak{\vec{C}- \vec{D}}
+	  \label{eq:two-par-dir-vec}
+  \end{align}
   \item The {\em normal vector} to $\vec{m}$ is defined by 
   \begin{align}
     \label{eq:normal_vec}
@@ -148,6 +156,7 @@ which can be simplified to obtain
 	  \label{eq:section_formula}
   \end{align}
 \item  The standard basis vectors are defined as 
+	\label{def:matrix-two}
 
   \begin{align}
   \vec{e}_1&= \myvec{1\\0}, 
@@ -159,4 +168,72 @@ which can be simplified to obtain
   \begin{align}
  \vec{B}-\vec{A} = \vec{C} -\vec{D}
   \end{align}
+  \item Points $\vec{A},\vec{B}$ and $\vec{C}$ form a triangle  if 
+	  \label{prop:two-tri-indep}
+  \begin{align}
+	  p\brak{\vec{A}- \vec{B}} +q\brak{\vec{A} -\vec{C}} &= 0
+	  \\
+	  \label{eq:two-tri-indep}
+	  \text{or, }\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
+	  \\
+	  \implies p=0, q=0
+  \end{align}
+  are linearly independent.
+  \item In $\triangle ABC$, if $\vec{D}, \vec{E}$ divide the lines $AB, AC$ in the ratio $k:1$ respectively,  then $DE \parallel BC$.
+	  \label{prop:two-tri-bpt}
+	  \begin{proof}
+		  From 
+	  \eqref{eq:section_formula}, 
+  \begin{align}
+	  \vec{D}&= \frac{k\vec{B}+ \vec{A}}{k+1}
+	  \\
+	  \vec{E}&= \frac{k\vec{C}+ \vec{A}}{k+1}
+	  \\
+	  \implies 
+	  \vec{D}-	  \vec{E}&= \frac{k}{k+1}\brak{\vec{B}- \vec{C}}
+  \end{align}
+  Thus, from 
+		  Appendix \ref{prop:two-dir-vec}, $DE \parallel BC$.
+
+	  \end{proof}
+
+  \item In $\triangle ABC$, if $DE \parallel BC$, $\vec{D}$ and $\vec{E}$ divide the lines $AB, AC$ in the same ratio.  
+	  \label{prop:two-tri-bpt-conv}
+	  \begin{proof}
+If $DE \parallel BC$,
+		  from 
+ \eqref{eq:two-par-dir-vec}
+  \begin{align}
+	  \label{prop:two-tri-bpt-conv-1}
+	  \brak{\vec{B}- \vec{C}} = k\brak{\vec{D}-	  \vec{E}}
+  \end{align}
+Using   
+	  \eqref{eq:section_formula}, 
+let 
+  \begin{align}
+	  \vec{D}&= \frac{k_1\vec{B}+ \vec{A}}{k_1+1}
+	  \\
+	  \vec{E}&= \frac{k_2\vec{C}+ \vec{A}}{k_2+1}
+  \end{align}
+	  Subtituting the above in 
+	  \eqref{prop:two-tri-bpt-conv-1}, after some algebra, we obtain 
+	
+  \begin{align}
+\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
+  \end{align}
+  where
+  \begin{align}
+	  p = \frac{1}{k} -  \frac{k_1}{k_1+1},
+	  q = \frac{1}{k} -  \frac{k_1}{k_1+1}
+  \end{align}
+  %
+From 	  
+	  \eqref{eq:two-tri-indep},
+  \begin{align}
+	p = q = 0
+	  \\
+	  \implies k_1 = k_2  = \frac{1}{k-1}
+  \end{align}
+
+	  \end{proof}
 \end{enumerate}
