@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \graphicspath{{./Figures/}}
@@ -20,13 +21,21 @@
 
 \begin{document}
 \maketitle
-\paragraph{\textit{Problem Statement} - For a given Parallelogram ABCD, show that for any
-point ’P’ inside the parallelogram,}
+\fi
+For a given Parallelogram $ABCD$, show that for any
+point $\vec{P}$ inside the parallelogram,
 \begin{enumerate}
-	\item $\boldsymbol{Ar(APD)+Ar(PBC) = \frac{1}{2}Ar(ABCD)}$
-	\item $\boldsymbol{Ar(APD)+Ar(PBC) = Ar(APB)+Ar(PCD)}$
+	\item $Ar(APD)+Ar(PBC) = \frac{1}{2}Ar(ABCD)$
+	\item $Ar(APD)+Ar(PBC) = Ar(APB)+Ar(PCD)$
 \end{enumerate}
 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/9/2/4/figs/Question.png}
+		\caption{}
+		\label{fig:9/9/2/4}
+  	\end{figure}
+	\iffalse
 \begin{figure}[h]
 \centering
 \includegraphics[width=1\columnwidth]{Question.png}
@@ -159,3 +168,4 @@ Let's consider,
 \vspace{2mm}Thus, Triangle law of vector addition says taht sum of two adjacent side vectors of a triangle is equal to third side vector but in opposite direction.
 
 \end{document}
+\fi

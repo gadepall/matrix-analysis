@@ -1,3 +1,4 @@
+\iffalse
 \documentclass{article}
 
 % Language setting
@@ -31,15 +32,62 @@
 \begin{document}
 \maketitle
 \begin{multicols}{2}
-\paragraph{\textbf{Problem: } \textbf{In Fig.1, PQRS and ABRS are parallelograms
-and X is any point on side BR. Show that  }}
+	\fi
+In Fig.1, $PQRS$ and $ABRS$ are parallelograms
+and $\vec{X}$ is any point on side $BR$. Show that  
 \begin{enumerate}
-    \item \textbf{ar (PQRS) = ar(ABRS)}
-    \item \textbf{ar(AXS) = 1/2 ar(PQRS)}
+    \item $ar (PQRS) = ar(ABRS)$
+	    \label{prop:9/9/2/5}
+    \item $ar(AXS) = \frac{1}{2} ar(PQRS)$
 \end{enumerate}
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/9/2/5/figs/parallelogram1.pdf}
+		\caption{}
+		\label{fig:9/9/2/5}
+  	\end{figure}
+	\begin{proof}
+		\begin{enumerate}
+			\item 
+		From Appendix
+	  \ref{eq:two-pgm},
+  \begin{align}
+ \vec{A}-\vec{B} = \vec{S} -\vec{R} = \vec{P}-\vec{Q}
+		\label{eq:9/9/2/5/1}
+  \end{align}
+  and from Appendix
+  \ref{prop:pgm2d}, using 
+		\eqref{eq:9/9/2/5/1}, we obtain Property
+	    \ref{prop:9/9/2/5}.
+    \item Using section formula, let 
+  \begin{align}
+	\vec{X} =   \frac{\vec{R}+k\vec{B}}{1+k}.
+  \end{align}
+  Then, 
+  \begin{align}
+	  ar\brak{AXS} &= \frac{1}{2} \norm{	\vec{S}\times\vec{X}+\vec{X}\times \vec{A}+\vec{A}\times \vec{S}}
+	  \\
+	  &= \frac{1}{2} \norm{	\frac{\vec{S}\times\vec{R}+k\vec{S}\times \vec{B}+\vec{R}\times \vec{A}+k\vec{B}\times \vec{A}}{k+1}+\vec{A}\times \vec{S}}
+  \end{align}
+  Substituting for $\vec{B}$ from 
+		\eqref{eq:9/9/2/5/1}
+		in the above,
+  \begin{align}
+	  ar\brak{AXS} &= \frac{1}{2} \norm{	\frac{\vec{S}\times\vec{R}+\vec{R}\times \vec{A}+k\brak{\vec{S}-\vec{A}}\times \brak{\vec{A}-\vec{S}+\vec{R}}}{k+1}+\vec{A}\times \vec{S}}
+	  \\
+&= \frac{1}{2} \norm{	\frac{\vec{S}\times\vec{R}+\vec{R}\times \vec{A}+k\brak{\vec{S}-\vec{A}}\times \vec{R}}{k+1}+\vec{A}\times \vec{S}}
+\\
+&= \frac{1}{2} \norm{	\vec{S}\times\vec{R}+\vec{R}\times \vec{A}+\vec{A}\times \vec{S}}
+\\
+	  &= \frac{1}{2}ar\brak{ABRS}
+  \end{align}
+		\end{enumerate}
+
+	\end{proof}
+	\iffalse
 %\begin{figure}[h]
 \centering
-\includegraphics[width=\columnwidth]{parallelogram1.pdf} 
+\includegraphics[width=\columnwidth] 
 \centering{Fig 1. Parallelogram}
 \label{fig:triangle}
 %\end{figure}
@@ -245,3 +293,4 @@ Therefore, ar (PSA) = ar (QRB)
 So, parallelograms PQRS and ABRS are equal in area.	  
 \end{multicols}{2}
 \end{document}
+\fi
