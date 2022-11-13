@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[10pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -43,7 +43,50 @@
 \begin{multicols}{2}
 
 \raggedright \textbf{PROBLEM:}\vspace{2mm}\\
-\textbf{ABCD,DCFE and ABFE are parallelograms.Show that   ar(ADE) = ar(BCF)}
+\fi
+In Fig.
+		\ref{fig:9/9/4/3}
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/9/4/3/figs/ABC.pdf}
+		\caption{}
+		\label{fig:9/9/4/3}
+  	\end{figure}
+	$ABCD, DCFE$ and $ABFE$ are parallelograms. Show that   
+	\begin{align}
+	ar(ADE) = ar(BCF)
+		\label{eq:9/9/4/3}
+	\end{align}
+	\begin{proof}
+		From the given information and Appendix
+	  \ref{eq:two-pgm},
+  \begin{align}
+		\label{eq:9/9/4/3/1}
+	  \vec{B}-\vec{A} &= \vec{C} -\vec{D}
+	  \\
+		\label{eq:9/9/4/3/2}
+	  \vec{C}-\vec{D} &= \vec{F} -\vec{E}
+	  \\
+		\label{eq:9/9/4/3/3}
+	  \vec{B}-\vec{A} &= \vec{F} -\vec{E}
+  \end{align}
+  Thus, from  Appendix
+  \ref{prop:pgm2d},
+\begin{align}
+	ar(ADE)  &= 
+	\norm{\brak{\vec{D}-\vec{E}} \times \brak{\vec{D}-\vec{A}}}
+	\\
+	& = 
+	\norm{\brak{\vec{C}-\vec{F}} \times \brak{\vec{C}-\vec{B}}}
+	\\
+	&=	ar(ADE) 
+  \end{align}
+  upon substituting from 
+		\eqref{eq:9/9/4/3/1}
+		and 
+		\eqref{eq:9/9/4/3/2}.
+	\end{proof}
+	\iffalse
 \vspace{0.5cm}\raggedright \\
 Theory:
 Parallelograms on the same base and in between the same parallels are equal in area.\\
@@ -166,3 +209,4 @@ The below python code realizes the above construction: \\
 \bibliographystyle{ieeetr}
 \end{multicols}
 \end{document}
+\fi

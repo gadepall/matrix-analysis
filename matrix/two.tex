@@ -28,17 +28,25 @@ is defined as
 %
 \item The value of the cross product of two vectors is given by  
   \eqref{eq:det2d}.
-\item The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by the absolute value of 
+\item The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
+	\label{prop:area2d}
 \begin{align}
   \label{eq:area2d}
-\frac{1}{2} \mydet{\vec{A-B} & \vec{A-C}}
+	\frac{1}{2}\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{C}}}
+ = 
+ \frac{1}{2}\norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
   \end{align}
-\item The area of the parallelogram with vertices $\vec{A}, \vec{B}, \vec{C}$ and $\vec{D}$ is given by 
-  \label{prop:pgm2d}
+  \item If 
+  \label{prop:area2d-norm}
 \begin{align}
-  \label{eq:pgm2d}
- \norm{\vec{A-B} \times \vec{A-D}}
+  \label{eq:area2d-norm}
+	\norm{\vec{A}\times\vec{B}}  &= \norm{\vec{C}\times \vec{D}}, \quad \text{then}
+	\\
+	\vec{A}\times\vec{B}  &= \pm\brak{\vec{C}\times \vec{D}}
   \end{align}
+  where the sign depends on the orientation of the vectors.
+  \item The median divides the triangle into two triangles of equal area.
+	  \label{prop:two-median-area}
   \item  The transpose of $\vec{A}$ is defined as
 \begin{align}
   \label{eq:transpose2d}
@@ -127,6 +135,12 @@ which can be simplified to obtain
     \label{eq:angle2d_orth}
 \vec{A}^{\top} \vec{B} = 0
   \end{align}
+  \item For an isoceles triangle $ABC$ ith $AB = AC$, the median $AD \perp BC$.
+    \label{prop:two-isosc}
+%  \begin{align}
+%    \label{eq:two-isosc}
+%\vec{A}^{\top} \vec{B} = 0
+%  \end{align}
 
   \item The {\em direction vector} of the line joining two points $\vec{A},\vec{B}$ is given by 
   \begin{align}
@@ -155,6 +169,16 @@ which can be simplified to obtain
     \label{eq:normal_vec}
     \vec{m}^{\top}  \vec{n} = 0
   \end{align}
+  \item  If
+	  \label{prop:two-orth-para}
+\begin{align}
+	\vec{m}^{\top}  \vec{n}_1 &= 0
+	\\
+	\vec{m}^{\top}  \vec{n}_2 &= 0,
+	\\
+	\vec{n}_1 &\parallel \vec{n}_2
+	  \label{eq:two-orth-para}
+\end{align}
   \item The point $\vec{P}$ that divides the line segment $AB$ in the ratio $k:1$  is given by 
 
   \begin{align}
@@ -173,6 +197,16 @@ which can be simplified to obtain
 	  \label{eq:two-pgm}
   \begin{align}
  \vec{B}-\vec{A} = \vec{C} -\vec{D}
+  \end{align}
+  \item Diagonals of a parallelogram bisect each other.
+	  \label{prop:two-pgm-diag-bisect}
+\item The area of the parallelogram with vertices $\vec{A}, \vec{B}, \vec{C}$ and $\vec{D}$ is given by 
+  \label{prop:pgm2d}
+\begin{align}
+  \label{eq:pgm2d}
+	\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{D}}}
+ = 
+ \norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
   \end{align}
   \item Points $\vec{A},\vec{B}$ and $\vec{C}$ form a triangle  if 
 	  \label{prop:two-tri-indep}

@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Problem statement}{1}{section.1}%
+\contentsline {section}{\numberline {2}Method to solve}{1}{section.2}%
+\contentsline {section}{\numberline {3}Components}{1}{section.3}%
+\contentsline {section}{\numberline {4}Distributive law proof with truth table}{1}{section.4}%
+\contentsline {section}{\numberline {5}Connections}{1}{section.5}%
+\contentsline {section}{\numberline {6}Conclusion}{1}{section.6}%

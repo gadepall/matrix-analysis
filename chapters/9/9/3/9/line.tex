@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -11,10 +12,100 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} - The side AB of a parallelogram ABCD is produced to any point P. A line through A and parallel to CP meets CB produced at Q and then parallelogram PBQR is completed.Show that}
-\begin{enumerate}
-  \item \textbf{ar(ABCD) = ar(PBQR)}
-\end{enumerate}
+\fi
+ The side $AB$ of a parallelogram $ABCD$ is produced to any point $\vec{P}$. A line through $\vec{A}$ and parallel to $CP$ meets $CB$ produced at $\vec{Q}$ and then parallelogram $PBQR$ is completed. Show that
+ \begin{align}
+	 ar(ABCD) = ar(PBQR)
+		\label{eq:9/9/3/9}
+ \end{align}
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/9/3/9/figs/l1.pdf}
+		\caption{}
+		\label{fig:9/9/3/9}
+  	\end{figure}
+	\begin{proof}
+		From the given information, using section formula, 
+  \begin{align}
+		\label{eq:9/9/3/9/p}
+	  \vec{Q}&= \frac{k_1\vec{C}+ \vec{B}}{k_1+1}
+	  \\
+	  \vec{P}&= \frac{k_2\vec{A}+ \vec{B}}{k_2+1}
+		\label{eq:9/9/3/9/q}
+  \end{align}
+  Also, since $AQ \parallel CP$,
+  \begin{align}
+	  \vec{A}-\vec{Q}=k\brak{\vec{C}-\vec{P}}
+  \end{align}
+  Substituting from 
+		\eqref{eq:9/9/3/9/p}
+		and
+		\eqref{eq:9/9/3/9/q}
+		in the above, 
+  \begin{align}
+	  \vec{A}-\frac{k_1\vec{C}+ \vec{B}}{k_1+1}=k\brak{\vec{C}-\frac{k_2\vec{A}+ \vec{B}}{k_2+1}}
+  \end{align}
+  which, after some algebra, yields
+  \begin{align}
+		\label{eq:9/9/3/9/tri}
+	  \brak{1 + \frac{kk_2}{k_2+1}}  \vec{A}+\brak{\frac{k}{k_2+1}-\frac{1}{k_1+1}}\vec{B}- \brak{\frac{k_1}{k_1+1}+k}\vec{C}=\vec{0}
+  \end{align}
+  From Appendix
+	  \ref{prop:two-tri-indep},
+		\eqref{eq:9/9/3/9/tri}
+		results in
+  \begin{align}
+	  \brak{\frac{k}{k_2+1}-\frac{1}{k_1+1}} &=
+	  \brak{\frac{k_1}{k_1+1}+k}= 0
+	  \\
+	  \text{or, } k_1 +k_2 = -1
+		\label{eq:9/9/3/9/k1k2}
+  \end{align}
+
+From Appendix
+  \ref{prop:pgm2d}
+\begin{align}
+	ar\brak{PBQR} &= \norm{\vec{P} \times \vec{B}+\vec{B} \times \vec{Q}+\vec{Q} \times \vec{P}}
+		\label{eq:9/9/3/9/arpbqr}
+  \end{align}
+  The R.H.S. in the above can be expressed as
+\begin{align}
+\frac{k_2\vec{A}+ \vec{B}}{k_2+1} \times \vec{B}+\vec{B} \times \frac{k_1\vec{C}+ \vec{B}}{k_1+1}+\frac{k_1\vec{C}+ \vec{B}}{k_1+1} \times \frac{k_2\vec{A}+ \vec{B}}{k_2+1}
+  \end{align}
+  leading to 
+  \begin{multline}
+	  \brak{\frac{k_2}{k_2+1}-\frac{k_2}{\brak{k_1+1}\brak{k_2+1}}} \vec{A}\times \vec{B}
+	  \\
+	  +\vec{B} \times\vec{C}\brak{ \frac{k_1}{k_1+1}-\frac{k_1}{\brak{k_1+1}\brak{k_2+1}}}
+	  \\
+	  +\frac{k_1k_2}{\brak{k_1+1}\brak{k_2+1}}\vec{C} \times \vec{A}
+  \end{multline}
+  that can be simplified to obtain
+\begin{align}
+	ar\brak{PBQR} 
+	  &=
+	  \frac{k_1k_2}{\brak{k_1+1}\brak{k_2+1}}\norm{\brak{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}}
+	  \\
+	  &=\norm{\brak{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}}
+		\label{eq:9/9/3/9/pbqr}
+\end{align}
+  using the fact that 
+  \begin{align}
+\frac{k_1k_2}{\brak{k_1+1}\brak{k_2+1}} = 1
+  \end{align}
+  from 
+		\eqref{eq:9/9/3/9/k1k2}.  Also, from 
+Appendix
+  \ref{prop:pgm2d},
+  \begin{align}
+ar\brak{ABCD} = \norm{\brak{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}}
+		\label{eq:9/9/3/9/abcd}
+  \end{align}
+  yielding
+		\eqref{eq:9/9/3/9} from 
+		\eqref{eq:9/9/3/9/pbqr}.
+	\end{proof}
+\iffalse
 
 \begin{figure}[h]
 \centering
@@ -321,3 +412,4 @@ The input parameters are the values i,j,k,x.\\
 \end{tabular}
 }
 \end{document}
+\fi

@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -22,11 +23,36 @@ columns=fullflexible
 \date{September 2022}
 \begin{document}
 \maketitle
-\paragraph{\textit{Problem Statement} - Show that the diagonals of a parallelogram divide
-it into four triangles of equal area.}
+\fi
+ Show that the diagonals of a parallelogram divide
+it into four triangles of equal area.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/9/3/3/figs/par.pdf}
+		\caption{}
+		\label{fig:9/9/3/3}
+  	\end{figure}
+\begin{proof}
+	See Fig. 
+		\ref{fig:9/9/3/3}.
+	From Appendix
+	  \ref{prop:two-pgm-diag-bisect} and 
+  \ref{prop:area2d}
+\begin{align}
+	ar\brak{AOB} &= 
+	\frac{1}{2} \norm{\vec{A} \times \vec{O}+\vec{O} \times \vec{B}+\vec{B} \times \vec{A}}
+	\\
+	&=	\frac{1}{2} \norm{\vec{A} \times \brak{\frac{\vec{A}+\vec{C}}{2}}+\brak{\frac{\vec{A}+\vec{C}}{2}} \times \vec{B}+\vec{B} \times \vec{A}}
+	\\
+	&=\frac{1}{4} \norm{\vec{A} \times \vec{C}+\vec{C} \times \vec{B}+\vec{B} \times \vec{A}}
+  \end{align}
+  yielding the desired result from Appendix
+  \ref{prop:pgm2d}
+\end{proof}
+\iffalse
 \begin{enumerate}
-	\item \textbf{AB=DC and AD=BC}
-	\item \textbf{O is the midpoint of AC and BD}
+	\item AB=DC and AD=BC
+	\item O is the midpoint of AC and BD
 \end{enumerate}
 \begin{figure}[h]
 \centering
@@ -150,3 +176,4 @@ Hence from the above results we can conclude that \vspace{3mm} \\
 \textbf{Hence We prooved that the diagonals of a parallelogram divide it into 
 four triangles of equal area.} \vspace{4mm} \\
 \end{document}
+\fi

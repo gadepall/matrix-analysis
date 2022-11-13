@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -24,9 +25,46 @@ columns=fullflexible
 \maketitle
 
 \section{Problem Statement}
-In a triangle ABC, E is the mid-point of median AD.
-\vspace{0.3cm}\\ 
-Show that ar($\Delta BED$) = $\frac{1}{4}$ ar($\Delta ABC$)
+\fi
+In $\triangle ABC, \vec{E}$ is the mid-point of median $AD$.
+Show that 
+\begin{align}
+ar(\triangle BED) = \frac{1}{4} ar(\triangle ABC)
+		\label{eq:9/9/3/2}
+\end{align}
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/9/3/2/figs/fig_Triangle.png}
+		\caption{}
+		\label{fig:9/9/3/2}
+  	\end{figure}
+\begin{proof}
+	From Problem 
+\ref{chapters/9/9/3/2},
+  \begin{align}
+ar(\triangle BED) =
+ \frac{1}{4}\norm{\vec{B} \times \vec{C}+\vec{C} \times \vec{E}+\vec{E} \times \vec{B}}
+		\label{eq:9/9/3/2/1}
+  \end{align}
+  Since 
+  \begin{align}
+	  \vec{E} &= \frac{ \vec{A}+\vec{D}}{2}
+	  \\
+	  &= \frac{ 2\vec{A}+\vec{B} + \vec{C}}{4},
+  \end{align}
+  substituting the above in 
+		\eqref{eq:9/9/3/2/1}
+		yields
+  \begin{align}
+	  ar(\triangle BED) &=
+ \frac{1}{4}\norm{\vec{B} \times \vec{C}+\vec{C} \times \frac{ 2\vec{A}+\vec{B} + \vec{C}}{4}+\frac{ 2\vec{A}+\vec{B} + \vec{C}}{4} \times \vec{B}}
+ \\
+	  &=\frac{1}{8}\norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
+  \end{align}
+  resulting in
+		\eqref{eq:9/9/3/2}.
+\end{proof}
+\iffalse
 
 \section{Diagram}
 Plot of Triangle is shown in figure 1, where point B is origin and points A, B, C and D are the vertices of Triangle.
@@ -35,7 +73,6 @@ Plot of Triangle is shown in figure 1, where point B is origin and points A, B, 
 \caption{Triangle}
 \label{fig:Triangle}
 \end{figure}
-
 \section{PROOF}
 In $\Delta ABC$,with AD as median
 E is the mid-point of AD
@@ -104,3 +141,4 @@ FWC-Module-1/main/Matrix%20_Assignment/line_assignment/line.py
 \bibliographystyle{ieeetr}
 \end{document}
 \end{document}
+\fi
