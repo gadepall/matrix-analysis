@@ -1,4 +1,5 @@
- \documentclass[journal,10pt,twocolumn]{article}
+\iffalse 
+\documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{amsmath, bm}
@@ -17,7 +18,30 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{\large Problem Statement} - In Figure 1. A,B,C are the three points with centre O such that $\angle$BOC=30$^\circ$ and $\angle$AOB=60$^\circ$.If D is a point on the circle other than the arc ABC,find $\angle$ADC}
+\paragraph{\textit{\large Problem Statement} - 
+\fi
+In Fig. \ref{fig:9/10/5/1},  $\vec{A}, \vec{B}$ and $\vec{C}$ are three points with centre $\vec{O}$ such that $\angle BOC=30\degree$ and $\angle AOB=60 \degree$. If $\vec{D}$ is a point on the circle other than the arc ABC, find $\angle ADC$.
+		
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/10/5/1/figs/circle1.pdf}
+		\caption{}
+		\label{fig:9/10/5/1}
+  	\end{figure}
+	\solution See Fig. 
+		\eqref{fig:9/10/5/1}. 
+\begin{align}
+	\vec{A} = \vec{e}_2, \vec{B} = \myvec{\cos 30 \\ \sin 30}, \vec{C} = \vec{e}_1
+	\text{ and }
+\vec{D} = \myvec{\cos \theta \\ \sin \theta}.
+\end{align}
+\iffalse
+		From Appendix
+	\ref{prop:circ-ang-centre-arc},
+\begin{align}
+		\label{eq:9/10/5/1}
+	\angle ADC = \frac{1}{2}\angle AOC = 45\degree
+\end{align}
 \section*{\large Solution}
 \begin{figure}[H]
 \centering
@@ -165,3 +189,4 @@ By substituting $\alpha$ and $\beta$ values in (\ref{pf2-eq-4})
 
  
 \end{document}
+\fi

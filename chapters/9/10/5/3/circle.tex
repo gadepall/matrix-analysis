@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
@@ -18,7 +19,22 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} - Let $\angle$PQR = 100° where P,Q and R are points on a circle with centre O.Find $\angle$OPR}
+\paragraph{\textit{Problem Statement} -
+\fi
+Let $\angle PQR = 100\degree$ where $\vec{P}\vec{Q}, \vec{R}$ are points on a circle with centre $\vec{O}$. Find $\angle OPR$.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/9/10/5/3/figs/fig-1.pdf}
+		\caption{}
+		\label{fig:9/10/5/3}
+  	\end{figure}
+	\solution In Fig. 
+		\ref{fig:9/10/5/3},
+\begin{align}
+	\vec{P} = \myvec{\cos\brak{\theta + 160} \\ \sin \brak{\theta + 160}}, \vec{Q} = \myvec{\cos \alpha\\ \sin \alpha}, \vec{R} = \myvec{\cos \theta \\ \sin \theta}.
+\end{align}
+
+\iffalse
 
 \section*{\large Solution}
 
@@ -196,3 +212,4 @@ cos(\angle PQR) = cos\frac{\theta_1-\theta_3}{2}
 
 \end{document}
 Footer
+\fi

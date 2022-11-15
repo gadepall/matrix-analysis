@@ -44,18 +44,65 @@ See Fig.
   	\end{table}
 	From 
 		Table 
-		\ref{table:9/10/4/1},
-	\eqref{eq:circ-cr}
+		\ref{tab:9/10/4/1},
+	\eqref{eq:circ-eq}
+	and
+	\eqref{eq:circ-cr},
+	the equations of the two circles are
+\begin{align}
+	\begin{split}
+	\norm{\vec{x}}^2 -25 &= 0
+	\\
+	\norm{\vec{x}}^2 - 8 \vec{e}_1^{\top}\vec{x} +7 &= 0
+	\end{split}
+		\label{eq:9/10/4/1/circs}
+\end{align}
+From 
+		\eqref{eq:9/10/4/1/circs}
 and
 	\eqref{eq:circ-chord}
 the equation of the common chord is 
 \begin{align}
-	   4\vec{e}_1^{\top}\vec{x} 
-	   -\vec{u}_2^{\top}\vec{x} + f_1 f_2 = 0
-	\label{eq:circ-chord}
+	   \vec{e}_1^{\top}\vec{x} 
+	   &= 4
+		\label{eq:9/10/4/1/chord}
 \end{align}
 %
-The common chord is then given by  the difference of the above equations, yielding
+It is easy to verify that 
+\begin{align}
+	\vec{q} = 4\vec{e}_1
+\end{align}
+is a point on 
+		\eqref{eq:9/10/4/1/chord}.
+		Substituting
+\begin{align}
+\vec{m} = \vec{e}_2, \vec{q} = 4\vec{e}_1, 
+\vec{V}=\vec{I}, \vec{u} = \vec{0}, f = -25
+\end{align}
+in 
+\eqref{eq:chord-len},
+		the length of the chord in 
+\eqref{eq:conic_tangent}
+is given by 
+\begin{align}
+ \frac{2\sqrt{
+\sbrak{
+\vec{e}_2^{\top}\brak{4\vec{e}_1}
+}^2
+-
+\brak
+{
+16\vec{e}_1^{\top}\vec{e}_1 -25
+}
+\brak{\vec{e}_2^{\top}\vec{e}_2}
+}
+}
+{
+\vec{e}_2^{\top}\vec{e}_2
+}\norm{\vec{e}_2}
+= 6
+  \end{align}
+	
 
 \iffalse
 
@@ -120,7 +167,6 @@ $\vec{V} = \vec{I}= \myvec{ 1 & 0\\ 0 & 1} , \vec{u} = \myvec{-4 \\ 0}, \vec{f}=
 \endcenter
 \begin{flushleft}
 \vspace{0.23cm}
-\fi
 Therefore, the circle equation can be written as
 \begin{equation}
     \vec{x}^T \vec{x} + 2 \myvec{-4\\0}^T \vec{x} +7= 0
@@ -150,7 +196,7 @@ The locus of their pair of straight lines\\
 	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f_1 +f_2
 }
 	= 0, 
-    \label{eq:conic_quad_form_int-mat}
+%    \label{eq:conic_quad_form_int-mat}
 \end{align}
 
  
@@ -193,7 +239,6 @@ The locus of their pair of straight lines\\
         = \myvec{4\\ 3} - \myvec{4 \\ -3} \\
         \vspace{5mm}
         =6
-	\iffalse
   \section*{\large Construction}
 {
 \setlength\extrarowheight{5pt}
