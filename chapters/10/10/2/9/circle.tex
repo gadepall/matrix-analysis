@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
@@ -16,7 +17,18 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} - XY and EF are two parallel tangents to a circle , x with centre O and another tangent AB with point of contact C intersecting XY at A and EF at B. Prove that \angle{AOB} = 90$^{\circ}$.}
+\paragraph{\textit{Problem Statement} -
+\fi
+In Fig. 		\ref{fig:10/10/2/9}, $XY$ and $EF$ are two parallel tangents to a circle  with centre $\vec{O}$ and another tangent $AB$ with point of contact $\vec{C}$ intersecting $XY$ at $\vec{A}$ and $EF$ at $\vec{B}$. Prove that $\angle{AOB} = 90\degree$.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/10/2/9/figs/c.pdf}
+		\caption{}
+		\label{fig:10/10/2/9}
+  	\end{figure}
+	\\
+\solution
+\iffalse
 \section*{\large Solution}
 
 \begin{figure}[H]
@@ -147,3 +159,4 @@ then,Angle between those two Vectors is  90$^{\circ}$
 \end{tabular}
 }
 \end{document}
+\fi

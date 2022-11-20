@@ -31,8 +31,58 @@ cm. Find the radius of the circle.
   	\end{figure}
 	\\
 	\solution
+	From the Baudhayana theorem, the radius
+\begin{align}
+	r =3
+\end{align}
+%
+	Let 
+\begin{align}
+	\vec{A} = \vec{O} \text{ and } \vec{O} =  \myvec{5\\0} 
+\end{align}
+The equation of the circle can then be expressed as
+\begin{align}
+	\norm{\vec{x}}^2+2\vec{u}^{\top}\vec{x} +f = 0
+\end{align}
+where 
+\begin{align}
+	\vec{u}  &= - 
+	\vec{O} =-  \myvec{5\\0} 
+	\\
+	f &= \norm{\vec{u}}^2 -r^2 = 16
+\end{align}
+From 
+	  \eqref{eq:h-tangents-sigma},
+  \begin{align} 
+		\bm{\Sigma} &= 
+	   \brak{\vec{A}+\vec{u}}
+	  \brak{\vec{A}+\vec{u}}^{\top}
+   -
+  \brak
+  {
+  \vec{A}^{\top}\vec{A} + 2\vec{u}^{\top}\vec{A} +f
+  }\vec{I}
+  \\
+	  &=\myvec{9 & 0 \\ 0 & -16}
+  \end{align}                    
+  Thus,
+  from 
+  \eqref{eq:quad_form_pair_normvecs-sigma},
+  \begin{align} 
+	  \vec{P} &= \vec{I}, \lambda_1 = 9, \lambda_2 = -16
+	  \\
+	  \implies
+	  \vec{n}_1 &= \myvec{3 \\[2mm] 4} \quad \text{ and }
+  \vec{n}_2 = \myvec{3 \\[2mm] -4}
+  \end{align} 
+  Substituting  from the above in 
+\eqref{eq:conic_tangent_qk-circ},
+  \begin{align} 
+	\vec{q}_{22} = \frac{1}{5}\myvec{16 \\ 12} = \vec{Q}
+\end{align}
+in Fig. 
+		\ref{fig:10/10/2/6}.
 \iffalse
-}
 \begin{enumerate}
 	\item \textbf{PO = 5cm}
 	\item \textbf{PQ = 4cm}

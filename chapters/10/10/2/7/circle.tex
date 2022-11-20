@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -13,7 +13,33 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} -Two concentric circles are of radii 5cm and 3cm. Find the length of the chord of the larger circle which touches the smaller circle.}
+\paragraph{\textit{Problem Statement} -
+\fi
+Two concentric circles are of radii 5cm and 3cm. Find the length of the chord of the larger circle which touches the smaller circle.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/10/2/7/figs/fig.pdf}
+		\caption{}
+		\label{fig:10/10/2/7}
+  	\end{figure}
+	\\
+	\solution  See Fig.
+		\ref{fig:10/10/2/7}.  Let 
+\begin{align}
+	\vec{O} &=
+\vec{0}
+\\
+	r_1 &= 5, r_2 = 3.
+\end{align}
+Choosing
+\begin{align}
+	\vec{A} = r_1\myvec{\cos \theta \\ \sin \theta},
+\end{align}
+$\vec{P}$ can be obtained following the approach in Problem 
+\ref{chapters/10/10/2/7}.
+From Appendix
+	\ref{prop:circ-chord-perp}, $\vec{P}$ is the mid point of $AB$.  This can be used to obtain $\vec{B}$.
+\iffalse
 \vspace{5mm}
 
 \section*{Solution}
@@ -97,3 +123,4 @@ The input parameters are the lengths $r_1$ and $r_2$ .\\
 	\hline
 \end{tabular}
 \end{document}
+\fi

@@ -24,6 +24,25 @@
 	   -\vec{u}_2^{\top}\vec{x} + f_1 - f_2 = 0
 	\label{eq:circ-chord}
 \end{align}
+\item The line joining the centre of a circle to the mid point of any chord is perpendicular to the chord.
+	\label{prop:circ-chord-perp}
+	\begin{proof}
+	Let $AB$ be any chord of a circle with centre $\vec{O}= \vec{0}$ and radius $r$.  Then, 
+\begin{align}
+	\norm{\vec{A}}^2 
+	=\norm{\vec{B}}^2  &= r^2
+	\\
+	\implies 
+	\norm{\vec{A}}^2 
+	-\norm{\vec{B}}^2  &=\vec{0}
+	\\
+	\text{or, }\brak{\vec{A}-\vec{B}}^{\top}\brak{\vec{A}+\vec{B}} &= \vec{0}
+\end{align}
+which can be expressed as 
+\begin{align}
+	\brak{\vec{A}-\vec{B}}^{\top}\brak{\frac{\vec{A}+\vec{B}}{2}-\vec{O}} = \vec{0}
+\end{align}
+	\end{proof}
 \item Let 
 \begin{align}
 \vec{A} =  \myvec{\cos \theta_1 \\ \sin \theta_1},

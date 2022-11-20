@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 
 \usepackage[utf8]{inputenc}
@@ -144,7 +145,20 @@ https://github.com/SurabhiSeetha/Fwciith2022/tree/main/avr%20gcc
 \end{lstlisting}
 %
 \section{Question-Class 10, Exercise 11.2, Q(5)}
-\textbf{Draw a line segment AB of length 8cm. Taking A as centre,draw a circle of radius 4cm and taking B as centre,draw another circle of radius 3cm.Construct tangents to each circle from the centre of the circle.} \\
+\textbf{
+\fi
+	Draw a line segment $AB$ of length 8cm. Taking $\vec{A}$ as centre, draw a circle of radius 4cm and taking $\vec{B}$ as centre, draw another circle of radius 3cm. Construct tangents to each circle from the centre of the circle.
+	\\
+	\solution See Fig. 
+		\ref{fig:10/11/2/5}.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/11/2/5/figs/cir.png}
+		\caption{}
+		\label{fig:10/11/2/5}
+  	\end{figure}
+	\iffalse
+} \\
 
 
 \centering
@@ -460,3 +474,4 @@ $ \vec{Q_2} = \myvec{6.875 \\ -2.7810} $ \\
 Therefore, we have solved and gained the values of four point of contacts P1,P2,Q1,Q2 for two circles of radius 4cm and 3cm.\\
 \end{document}
 Footer
+\fi

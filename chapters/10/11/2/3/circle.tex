@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \graphicspath{{./Figures/}}
@@ -32,7 +33,21 @@
 \begin{document}
 
 \maketitle
-\paragraph{\large{\textit{Problem Statement} - Draw a circle of radius 3 cm. Take two points P and Q on one of its extended diameter each at a distance of 7 cm from its centre. Draw tangents to the circle from these two points P and Q.}}
+\paragraph{\large{\textit{Problem Statement} - 
+\fi
+
+Draw a circle of radius 3 cm. Take two points $\vec{P}$ and $\vec{Q}$ on one of its extended diameter each at a distance of 7 cm from its centre. Draw tangents to the circle from these two points $\vec{P}$ and $\vec{Q}$.
+\\
+\solution See Fig. 
+		\ref{fig:10/11/2/3}.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/11/2/3/figs/Question.png}
+		\caption{}
+		\label{fig:10/11/2/3}
+  	\end{figure}
+\iffalse
+}}
 \begin{enumerate}
 	\item \large Radius of circle OA = OB = 3cm
 	\item \large Distance from center to points OP = OQ = 7cm
@@ -40,7 +55,7 @@
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=1\columnwidth]{Question.png}
+\includegraphics[width=1\columnwidth]
 \caption{Circle with center O and points P \& Q}
 \label{fig:Circle}
 \end{figure}
@@ -179,3 +194,4 @@ Table 1: Parameter's Table
 
 
 \end{document}
+\fi

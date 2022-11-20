@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -23,8 +24,21 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement:} \\ Draw a circle of radius 6 cm.
-From a point 10 cm away from its centre, construct the pair of tangents to the circle and measure their lengths.}
+\paragraph{\textit{Problem Statement:} \\
+\fi
+Draw a circle of radius 6 cm.
+From a point 10 cm away from its centre, construct the pair of tangents to the circle and measure their lengths.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/11/2/1/figs/circle1.pdf}
+		\caption{}
+		\label{fig:10/11/2/1}
+  	\end{figure}
+	\\
+	\solution  Follow the approach in Problem  
+\ref{chapters/10/10/2/6}.
+\iffalse
+}
 
 \section*{\large Solution}
 
@@ -152,3 +166,4 @@ https://github.com/soundaryanaru/FWC-assignments/blob/main/Matrix/circle_assignm
 \end{lstlisting}
 \bibliographystyle{ieeetr}
 \end{document}
+\fi

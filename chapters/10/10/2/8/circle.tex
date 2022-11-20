@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[a4paper,12pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -21,7 +22,24 @@
 <<<<<<< HEAD
 A quadrilateral $ABCD$ is drawn to circumscribe a circle. Show that $\vec{AB+CD}$ is equal to $\vec{BC+AD}$
 =======
+\fi
 A quadrilateral $ABCD$ is drawn to circumscribe a circle. Show that $AB+CD$ is equal to $BC+AD$
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/10/2/8/figs/circle.png}
+		\caption{}
+		\label{fig:10/10/2/8}
+  	\end{figure}
+	\\
+	\solution 
+	\begin{enumerate}
+		\item  Draw the circle.
+		\item Choose the point $\vec{A}$.
+		\item Draw the tangents from $\vec{A}$ to the circle.
+		\item Choose points $\vec{B}, \vec{D}$ on the tangents.
+		\item From $\vec{B}, \vec{D}$, draw tangents to the circle intersecting at $\vec{C}$.
+	\end{enumerate}
+\iffalse
 >>>>>>> f531642 (Created codes and figs folder)
 \maketitle
 \section{Solution:}
@@ -132,3 +150,4 @@ The construction of rhombus can be done using only two diagonals, taken as d1 an
 \end{table}
 
 \end{document}
+\fi

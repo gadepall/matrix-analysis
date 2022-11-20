@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -18,7 +19,21 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} \\\\- Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line-segment joining the points of contact at the centre.}
+\paragraph{\textit{Problem Statement} \\\\-
+\fi
+Prove that the angle between the two tangents drawn from an external point to a circle is supplementary to the angle subtended by the line-segment joining the points of contact at the centre.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/10/2/10/figs/circle1.pdf}
+		\caption{}
+		\label{fig:10/10/2/10}
+  	\end{figure}
+	\\
+	\solution Follow the approach in Problem 
+\ref{chapters/10/10/2/6}
+for constructing the tangents to the circle.
+\iffalse
+}
 
 \section*{\large Solution}
 
@@ -140,3 +155,4 @@ Therefore,
 \end{equation}
 
 \end{document}
+\fi

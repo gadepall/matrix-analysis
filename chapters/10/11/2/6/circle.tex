@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
@@ -17,7 +18,28 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} - Let ABC be a right triangle in which AB = 6 cm, BC = 8 cm and $\angle$B = 90°. BD is the perpendicular from B on AC. The circle through B, C, D is drawn. Construct the tangents from A to this circle.}
+\paragraph{\textit{Problem Statement} -
+\fi
+Let $ABC$ be a right triangle in which $AB = 6 cm, BC = 8 cm$ and $\angle B = 90\degree$. $BD$ is the perpendicular from $\vec{B}$ on $AC$. The circle through $\vec{B}, \vec{C}, \vec{D}$ is drawn. Construct the tangents from $\vec{A}$ to this circle.
+\\
+\solution
+See Fig. 
+		\ref{fig:10/11/2/6}.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/11/2/6/figs/fig1.pdf}
+		\caption{}
+		\label{fig:10/11/2/6}
+  	\end{figure}
+\begin{align}
+	BD &\perp AC
+	\implies
+	\vec{O} &= \frac{\vec{B}+\vec{C}}{2}
+\label{eq3}
+\end{align}
+From 
+	\eqref{eq:normal_line_foot}, the coordinates of $\vec{D}$ can be obtained.
+\iffalse
 
 \section*{\large Solution}
 
@@ -211,3 +233,4 @@ Substituting (\ref{pf2-eq-2}) and (\ref{pf2-eq-3}) in (\ref{pf2-eq-1}),
 Hence $\angle ACB = \frac{\theta-\phi}{2} = \frac{\angle AOB}{2}$
 
 \end{document}
+\fi

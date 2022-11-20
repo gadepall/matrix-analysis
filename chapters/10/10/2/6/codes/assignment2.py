@@ -63,6 +63,7 @@ O = d*e1 #Centre
 P = np.array(([0,0])) #external point
 theta = mp.acos(a/d)
 Q = np.array(([a*mp.cos(theta),a*mp.sin(theta)]))
+print(5*Q)
 OQ=O-Q  # according to triangular law of vector addition
 r=np.linalg.norm(OQ)
 print(r);
@@ -87,7 +88,7 @@ plt.plot(x_circ[0,:],x_circ[1,:],label='$Circle$')
 #Labeling the coordinates
 tri_coords = np.vstack((P,Q,O)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['P','Q','O']
+vert_labels = ['A','Q','O']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
@@ -102,7 +103,8 @@ plt.grid() # minor
 plt.axis('equal')
 print("Radius of circle is 3cm")
 #if using termux
-plt.savefig('/sdcard/Linearalgebra/circle.pdf')
-#subprocess.run(shlex.split("termux-open /storage/emulated/0/github/school/ncert-vectors/defs/figs/cbse-10-13.pdf"))
+
+plt.savefig('/sdcard/github/matrix-analysis/chapters/10/10/2/6/figs/circle.pdf')
+subprocess.run(shlex.split("termux-open /sdcard/github/matrix-analysis/chapters/10/10/2/6/figs/circle.pdf"))
 #else
 #plt.show()

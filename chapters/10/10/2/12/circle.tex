@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[a4paper,12pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -19,7 +20,15 @@
 \begin{document}
 \maketitle
 \section{Problem:}
-A triangle ABC is drawn to circumscribe a circle of radius 4cm such that the segments BD and DC into which BC is divided by the point of contact D are of lengths 8cm and 6cm respectively.Find the sides AB and AC.\\
+\fi
+A triangle $ABC$ is drawn to circumscribe a circle of radius 4cm such that the segments $BD$ and $DC$ into which $BC$ is divided by the point of contact $D$ are of lengths 8cm and 6cm respectively. Find the sides $AB$ and $AC$.
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/10/2/12/figs/circle.png}
+		\caption{}
+		\label{fig:10/10/2/12}
+  	\end{figure}
+\iffalse
 \begin{figure}[h]
        \includegraphics[width=\linewidth]{circle.png}
 \end{figure}
@@ -55,6 +64,8 @@ A triangle ABC is drawn to circumscribe a circle of radius 4cm such that the seg
 \begin{figure}[h]
     \includegraphics[width=\linewidth]{circle1.png}
 \end{figure}
+\\
+\solution
 Let us assume that the center of the circle is origin and point D lies on Y-axis.\\
 Therefore, we can get the points B and C.\\
 \begin{align*}
@@ -96,3 +107,4 @@ The intersection of these two lines is vertex A. Since, we know all the vertices
 Therefore, length of AB is $\vec{||A-B||}$\\
 and length of AC is $\vec{||A-C||}$
 \end{document}
+\fi

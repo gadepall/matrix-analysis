@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[a4paper,10pt]{report}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
@@ -38,7 +39,20 @@
 \raggedright\large\textbf{2\hspace{1cm}Solution}\hspace{5.25cm}1\vspace{5mm}\\
 \raggedright\large\textbf{3\hspace{1cm}Construction}\hspace{4.25cm}2\vspace{5mm}\\
 \centering \large\textsc{1  P}\footnotesize\textsc{ROBLEM}\vspace{5mm}\\
-\raggedright\large{Construct a tangent to a circle of radius 4cm from a point on the concentric circle of radius 6cm and measure its length.Also verify the measurement by actual calculation.}\vspace{5mm}\\
+\raggedright\large{
+\fi
+	Construct a tangent to a circle of radius 4cm from a point on the concentric circle of radius 6cm and measure its length. Also verify the measurement by actual calculation.
+	\\
+	\solution See Fig. 
+		\ref{fig:10/11/2/2}.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/10/11/2/2/figs/main.png}
+		\caption{}
+		\label{fig:10/11/2/2}
+  	\end{figure}
+\iffalse
+	}\vspace{5mm}\\
 \centering \large\textsc{2  S}\footnotesize\textsc{OLUTION}\vspace{5mm}\\
 \raggedright\large{Consider a point P on the circle of radius 6 cm is at the origin and the center of circle is at d distance from P (where d=6).}\vspace{2mm}\\
 \raggedright\large{Two tangents can be drawn from point P on to the circle of radius 4 cm which is concentric to the circle of radius 6 cm and let the point of contacts be Q1 and Q2.}\vspace{2mm}\\
@@ -171,4 +185,5 @@ where
 \end{mdframed}
 \end{multicols}
 \end{document}
+\fi
 
