@@ -1,0 +1,9 @@
+\contentsline {paragraph}{ Abstarct-The objective of this manual is to show how to design a 4x1 multiplexer. }{1}{Doc-Start}%
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {paragraph}{Mutiplexer}{1}{section.1}%
+\contentsline {section}{\numberline {2}Components}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Arduino}{1}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Truth Table of 4x1 Multiplexer}{1}{section.3}%
+\contentsline {section}{\numberline {4}Circuit Diagram}{1}{section.4}%
+\contentsline {section}{\numberline {5}Hardware}{2}{section.5}%
+\contentsline {section}{\numberline {6}software}{2}{section.6}%

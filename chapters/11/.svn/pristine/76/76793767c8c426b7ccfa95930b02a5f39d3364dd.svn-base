@@ -1,0 +1,183 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\let\vec\mathbf
+\title{\textbf{\\Line Assignment}}
+\author{Sinkona Chinthamalla - FWC22054}
+\begin{document}
+\maketitle
+
+\section{Question}
+\textbf{\textit{Class 11, Exercise 10.1, Q(1):} Draw a quadrilateral in the Cartesian plane, whose vertices are (-4,5), (0,7), (5,-5), (-4,-2). Also, find its area.}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.35]{quadrilateral.png}
+\centering
+\caption{Quadrilateral ABCD}
+\end{figure}
+
+\section{Construction}
+\centering
+\vspace{0.2cm}
+{
+\setlength\extrarowheight{2pt}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Symbol}&\textbf{Value}&\textbf{Description}\\
+	\hline
+	A & $\begin{pmatrix}
+     -4 \\
+      5 
+    \end{pmatrix}$ & Vertex A\\
+	\hline
+	B & $\begin{pmatrix}
+     0 \\
+     7 
+    \end{pmatrix}$ & Vertex B\\
+	\hline
+	C & $\begin{pmatrix}
+      5 \\
+     -5 
+    \end{pmatrix}$ & Vertex C\\
+	\hline
+	D & $\begin{pmatrix}
+     -4 \\
+     -2 
+    \end{pmatrix}$ & Vertex D\\
+	\hline
+\end{tabular}
+}
+
+\section{Solution}
+\raggedright 
+We can divide the quadrilateral into two triangles, one with sides \textbf{AB}, \textbf{BC}, and \textbf{AC}, and the other with sides \textbf{AC}, \textbf{CD}, and \textbf{AD}.\\
+\vspace{0.2cm}
+\textbf{1. Finding area using Matrices} \\
+\vspace{0.25cm}
+Consider $ \triangle ABC, $
+\vspace{0.2cm}
+\begin{equation}
+Ar(\triangle \vec{ABC})= \frac{1}{2} \begin{vmatrix}
+                    \vec{x_1} & \vec{y_1} & 1\\
+                    \vec{x_2} & \vec{y_2} & 1\\
+                    \vec{x_3} & \vec{y_3} & 1
+                   \end{vmatrix} 
+\end{equation} 
+\begin{center}
+$ = \frac{1}{2} \begin{vmatrix}
+                    -4 & 5 & 1\\
+                     0 & 7 & 1\\
+                     5 & -5 & 1
+                   \end{vmatrix} $ \\
+                   \vspace{0.2cm}
+\end{center}
+\vspace{0.2cm}
+\raggedright
+\begin{equation}
+Ar(\triangle ABC)= 29 \quad sq.units 
+\end{equation}  
+\\( Since area cannot be negative )
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35]{diagnol.png}
+\centering
+\caption{Quadrilateral ABCD with diagonal AC}
+\end{figure}
+
+\vspace{0.3cm}
+\noindent Now consider $ \triangle ADC, $
+\begin{equation}
+Ar(\triangle \vec{ADC})= \frac{1}{2} \begin{vmatrix}
+                    \vec{x_1} & \vec{y_1} & 1\\
+                    \vec{x_2} & \vec{y_2} & 1\\
+                    \vec{x_3} & \vec{y_3} & 1
+                   \end{vmatrix} 
+\end{equation} 
+\begin{center}
+$ = \frac{1}{2} \begin{vmatrix}
+                    -4 &  5 & 1\\
+                    -4 & -2 & 1\\
+                     5 & -5 & 1
+                   \end{vmatrix} $
+\end{center}
+\vspace{0.2cm}
+\begin{equation}
+Ar(\triangle ADC)= 31.5 \quad sq.units 
+\end{equation}
+
+\boldmath
+\vspace{0.2cm}
+\textbf{Area of Quadrilateral ABCD} 
+\begin{equation}
+ = Ar(\triangle ABC)+Ar(\triangle ADC)
+\end{equation}
+\begin{center}
+ = 60.5  sq.units
+\end{center}
+
+\newpage
+\vspace{0.2cm} 
+\textbf{2. Finding area using Cross product} \\
+\vspace{0.25cm}
+
+Consider $ \triangle ABC, $
+\begin{equation}
+ Ar(\triangle ABC)= \frac{1}{2}|\vec{B-A} \quad \vec{B-C}| 
+\end{equation}
+\unboldmath
+\begin{align}
+= \frac{1}{2} \begin{vmatrix}
+                    4 & 2\\
+                   -5 & 12
+                   \end{vmatrix} 
+\end{align}
+$ Ar(\triangle ABC)= 29 $ sq.units 
+
+\vspace{0.6cm}
+\raggedright 
+Now consider $ \triangle ADC, $
+\vspace{0.2cm}
+\begin{equation}
+Ar(\triangle ADC)= \frac{1}{2}|\vec{D-A} \quad \vec{D-C}| 
+\end{equation}
+\vspace{0.2cm}\\
+\unboldmath
+\begin{equation}
+= \frac{1}{2} \begin{vmatrix}
+                    0 & -7\\
+                   -9 &  3
+                   \end{vmatrix} 
+\end{equation}
+$ Ar(\triangle ADC)= 31.5 $ sq.units
+\boldmath
+\vspace{0.2cm}
+
+\textbf{Area of Quadrilateral ABCD} 
+$= Ar(\triangle ABC)+Ar(\triangle ADC) $
+\unboldmath
+\vspace{0.2cm}
+\\$ = 60.5 $ sq.units
+
+\vspace{1cm}
+Get the python code from
+\begin{table}[h]
+\large
+\centering
+\begin{tabular}{|l|}
+\hline
+https://github.com/SinkonaChinthamalla/fwc/
+\\blob/main/matrix/line/codes \\
+\hline
+\end{tabular}
+\end{table}	
+\end{document}

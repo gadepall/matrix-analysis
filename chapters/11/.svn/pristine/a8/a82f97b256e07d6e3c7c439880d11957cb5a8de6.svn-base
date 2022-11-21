@@ -1,0 +1,232 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage[cmex10]{amsmath}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{etoolbox}
+\patchcmd{\section}{\centering}{}{}{}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\makeatletter
+\newcommand\xleftrightarrow[2][]{%
+  \ext@arrow 9999{\longleftrightarrowfill@}{#1}{#2}}
+\newcommand\longleftrightarrowfill@{%
+  \arrowfill@\leftarrow\relbar\rightarrow}
+\makeatother
+\title{Matrix Problems \textbf{\\Straight Lines }}
+\author{Manoj Chavva} 
+
+\begin{document}
+\maketitle
+
+
+
+\section{Problem Statement}
+
+\noindent The base of an equilateral triangle with side 2a lies along the y-axis such that the mid-point of the base is at the origin. Find vertices of the triangle.
+
+
+\begin{figure}[h]
+\includegraphics[width=1\columnwidth]{triangle.png}
+\caption{Equilateral Triangle ABC}
+\label{fig:triangle}
+\end{figure}
+
+\section{Construction}
+B and C are the inputs.
+\begin{table}[h]
+\centering
+\large
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Symbol} & \textbf{Value} & \textbf{Description} \\ \hline
+B               & \myvec{0 \\ 2}         & Vertex B             \\ \hline
+C               & \myvec{0 \\ -2}        & Vertex C             \\ \hline
+A               & \myvec{x \\ y}          & Vertex A             \\ \hline
+A1              & \myvec{x1 \\ y1}       & Vertex A             \\ \hline
+\end{tabular}
+\end{table}
+
+\section{Solution}
+\noindent Given the base with 2a is lies on the y-axis with the mid-point of the base is at origin. The vertices of the two points on y-axis will be
+
+\begin{equation}
+\vec{B}=\begin{pmatrix} 
+0\\
+a
+\end{pmatrix}, {
+\vec{C}=\begin{pmatrix} 
+0\\
+-a
+\end{pmatrix} }
+\end{equation}
+\noindent Given $\Delta$ABC is an equilateral triangle i.e 
+\begin{equation}
+ \norm{\vec{A}-\vec{B}}= \norm{\vec{B}-\vec{C}}= \norm{\vec{C}-\vec{A}} =2a
+\end{equation}
+
+%\noindent As AB = AC, triangle is isoceles and by properties of isoceles triangle, altitude is perpendicular bisector of base.\\
+%
+%\noindent Therefore $\angle$AOC = $\angle$AOB = $90^0$ and $\norm{\vec{O}-\vec{B}}= \norm{\vec{O}-\vec{C}}= a$ \\
+%
+%\noindent By Cosine laws,
+%\begin{equation}
+%\cos\vec{B} = \cos\vec{C} = a* \frac{1}{2a} = \frac{1}{2}
+%\end{equation}
+%\begin{equation}
+%\angle B = \angle C = \arccos\frac{1}{2} = 60^0
+%\end{equation}
+% \begin{equation}
+% \angle A = 180^0 -(60^0 * 2) = 60^0
+%  \end{equation}
+%\noindent Therefore, the equilaterial triangle have all internal angles eaqual to  $60^0$ 
+
+\noindent Consider, two sides of equilateral triangle be $\vec{A}$ and $\vec{B}$ then the third side will be $ \vec{A} -\vec{B}$ 
+%Hence,
+%\begin{equation}
+%\norm{\vec{a}-\vec{b}}^2 = l
+%\end{equation}
+%\begin{equation}
+%\brak{\vec{a}-\vec{b}}^{\top} \brak{\vec{a}-\vec{b}} = l^2
+%\end{equation}
+%\begin{equation}
+%l^2 = 2 \vec{a}^{\top} \cdot \vec{b}
+%\end{equation}
+%\begin{equation}
+%l^2 = 2 \norm{\vec{a}}\norm{\vec{b}} \cos\theta
+%\end{equation}
+%\begin{equation}
+%\theta = \arccos\frac{1}{2} = 60^0
+\begin{equation}
+\norm{\vec{A}}=\norm{\vec{B}}=\norm{\vec{A-B}}\\
+\end{equation}
+\begin{equation}
+\norm{\vec{A}}^2=\norm{\vec{B}}^2=\norm{\vec{A-B}}^2\\
+\end{equation}
+\begin{equation}
+\norm{\vec{A}}^2+\norm{\vec{B}}^2-2\vec{A}^T\vec{B}=\norm{\vec{A}}^2=\norm{\vec{B}}^2\\
+\end{equation}
+\begin{equation}
+\frac{\vec{A}^T\vec{B}}{\norm{\vec{A}}^2}=\frac{\vec{A}^T\vec{B}}{\norm{\vec{B}^2}}=\frac{1}{2}
+\end{equation}
+%$\triangle$OAB is a equilateral triangle\\
+
+\noindent Therefore, the  triangle have all internal angles eaqual to  $60^0$
+
+The angle between two vectors is given by 
+  \begin{align}
+    \label{eq:angle2d}
+    \theta = \cos^{-1}\frac{\vec{A}^{\top} \vec{B}}{\norm{A}\norm{B}}
+  \end{align}
+
+ \begin{equation}  
+  \brak{\vec{x}-\vec{B}}^{\top} \brak{\vec{x}-\vec{C}}= \norm{\vec{x}-\vec{B}} \cdot \norm{\vec{x}-\vec{C}} \cdot \cos\theta 
+ \end{equation}
+
+ \begin{equation}  
+\brak{\vec{x}^\top \cdot \vec{x}} - \brak{\vec{x}^\top \cdot \vec{C}} - \brak{\vec{B}^\top \cdot \vec{x}} - \brak{\vec{B}^\top \cdot \vec{C}} = 2a \cdot 2a \cos 60^0   
+ \end{equation}
+
+ \begin{equation}  
+\norm{\vec{x}}^2 - \vec{x}^\top\brak{\vec{B}+\vec{C}} - \vec{B}^\top \cdot \vec{C} = 2a \cdot 2a \cdot \frac{1}{2}
+ \end{equation}
+
+  \begin{equation}  
+\norm{\vec{x}}^2 - \vec{x}^\top\brak{0} -\myvec{0 \\ a} \myvec{0 & -a}  = 4a^2
+ \end{equation}
+
+\begin{equation}
+\norm{\vec{x}}^2 + a^2 = 4a^2
+\end{equation}
+
+\begin{equation}
+\norm{\vec{x}}^2 = 3a^2
+\label{eq-1}
+\end{equation}
+Considering, the line equation of $\vec{AB}$
+
+\begin{equation}
+\norm{\vec{x}-\vec{B}}^2 = 4a^2
+\end{equation}
+
+\begin{equation}
+\brak{\vec{x} -\vec{B}}^{\top} \cdot \brak{\vec{x}-\vec{B}} = 4a^2
+\end{equation}
+
+\begin{equation}
+\norm{\vec{x}}^2-2\cdot \vec{x}^\top \vec{B} + \norm{\vec{B}}^2 = 4a^2
+\end{equation}
+
+\begin{equation}
+3a^2 - 2\cdot \vec{x}^\top \vec{B} + a^2 = 4a^2
+\end{equation}
+
+\begin{equation}
+\vec{x}^\top \vec{B} = 0
+\end{equation}
+\noindent Since we can write, \begin{equation}
+\vec{B} = a \cdot \vec{e}_2
+\end{equation}
+
+\begin{equation}
+\vec{x}^\top \cdot a \cdot \vec{e}_2 = 0
+\end{equation}
+
+\begin{equation}
+\vec{x}^\top \cdot \vec{e}_2 = 0
+\end{equation}
+
+\begin{equation}
+\vec{x} = \lambda \vec{e}_1
+\end{equation}
+
+\noindent From this its clearly concluded that third vertex will lie on x-axis. 
+\noindent From the equation \eqref{eq-1} 
+\begin{equation}
+\vec{x} = \sqrt{3}{a}
+\end{equation}
+
+
+\noindent Hence,the coordinates of the vertices of triangle are 
+  \begin{equation*}
+\vec{A} = 
+   \begin{pmatrix}
+   \pm\sqrt{3}a \\ 0
+ \end{pmatrix}
+ \end{equation*}
+
+\begin{equation}
+\vec{B}=\begin{pmatrix} 
+0\\
+a
+\end{pmatrix}, {
+\vec{C}=\begin{pmatrix} 
+0\\
+-a
+\end{pmatrix} }
+\end{equation}
+
+
+
+\begin{table}[h]
+\large
+\begin{tabular}{lll}
+\multicolumn{3}{l}{Get Python Code for image from}                                                 \\ \hline
+\multicolumn{3}{|l|}{\url{https://github.com/ManojChavva/FWC/blob/main/Matrix/line/code-py/triangle.py}} \\ 
+ \hline
+\multicolumn{3}{l}{Get LaTex code from}                                                            \\ \hline
+\multicolumn{3}{|l|}{\url{https://github.com/ManojChavva/FWC/blob/main/Matrix/line/line.tex}}            \\ \hline
+\end{tabular}
+\end{table}
+
+\end{document}
+

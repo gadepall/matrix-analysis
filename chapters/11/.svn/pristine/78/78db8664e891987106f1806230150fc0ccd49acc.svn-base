@@ -1,0 +1,115 @@
+\documentclass[journal,10pt,twocolumn]{article}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[cmex10]{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\title{\textbf{Conics Assignment}}
+\author{Alavala Chinnapa Reddy}
+\date{September 2022}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\begin{document}
+
+\maketitle
+\paragraph{\textit{Problem Statement} - An equilateral triangle is inscribed in the parabola $y^{2} = 4ax$,where one vertex is at the vertex of the parabola. Find the length of the side of the triangle.} \vspace{5mm}
+\section*{\large Solution}
+
+
+Given, the axis of parabola is horizotal.
+\\ Given,one vertex of $\triangle$OAB is at vertex of parabola.
+
+\begin{figure}[h]
+\includegraphics[width=0.8\columnwidth]{figs/co.pdf}
+\end{figure}
+\begin{equation}
+  \label{eq:std_parabola}
+  \textbf{x}^T\textbf{V}\textbf{x}+2\textbf{u}^T\textbf{x}+f=0
+\end{equation}
+where,
+\begin{eqnarray}
+	\vec{O}=\myvec{0\\0}
+\end{eqnarray}	
+Equation Parabola is $y^2=4ax$\\
+From $\triangle$OAB
+\begin{eqnarray}
+	\norm{\vec{A}}=\norm{\vec{B}}=\norm{\vec{A-B}}\\
+	\norm{\vec{A}}^2=\norm{\vec{B}}^2=\norm{\vec{A-B}}^2\\
+	\norm{\vec{A}}^2+\norm{\vec{B}}^2-2\vec{A}^T\vec{B}=\norm{\vec{A}}^2=\norm{\vec{B}}^2\\
+	\frac{\vec{A}^T\vec{B}}{\norm{\vec{A}}^2}=\frac{\vec{A}^T\vec{B}}{\norm{\vec{B}^2}}=\frac{1}{2}
+\end{eqnarray}
+$\triangle$OAB is a equilateral triangle\\
+$\alpha$=$60^{0}$\\
+The side length of equilateral triangle,OA=OB=AB=r\\
+Let
+\begin{eqnarray}
+	\vec{A}=\myvec{r\cos{\theta_1}\\r\sin{\theta_1}}\\
+	\vec{B}=\myvec{r\cos{\theta_2}\\r\sin{\theta_2}}
+\end{eqnarray}
+\begin{eqnarray}
+	\vec{A}^T\vec{B}=\frac{\norm{\vec{A}}^2}{2}\\
+	r^2\cos{(\theta_1-\theta_2)}=\frac{r^2}{2}\\
+	\theta_1-\theta_2=\cos{^{-1}\frac{1}{2}}
+\end{eqnarray}
+Given $\vec{A}$ satisfy the eq1
+\begin{eqnarray}
+	\vec{A}^T\vec{V}\vec{A}+2\vec{u}^T\vec{A}+f=0\\
+	\vec{A}^T\vec{V}\vec{A}+2\vec{u}^T\vec{A}=0
+\end{eqnarray}
+\begin{equation}
+	\myvec{r\cos{\theta_1}&r\sin{\theta_1}}\myvec{0&0\\0&1}\myvec{r\cos{\theta_1}\\r\sin{\theta_1}}+2\myvec{-2a&0}\myvec{r\cos{\theta_1}\\r\sin{\theta_1}}=0
+\end{equation}
+\begin{equation}
+	\myvec{r\cos{\theta_1}&r\sin{\theta_1}}\myvec{0\\r\sin{\theta_1}}+2(-2ar\cos{\theta_1})=0
+\end{equation}
+\begin{eqnarray}
+	r^2\sin{^2\theta_1}=4ar\cos{\theta_1}\\
+	r=\frac{4a\cos{\theta_1}}{\sin{^2\theta_1}}
+\end{eqnarray}
+Similarly $\vec{B}$ satisfy the eq1
+\begin{equation}
+	r=\frac{4a\cos{\theta_2}}{\sin{^2\theta_2}}
+\end{equation}
+Form eq17 and eq18\\
+Yeilding
+\begin{eqnarray}
+	\cos{(\theta_1+\theta_2)}=1\\
+	\theta_1+\theta_2=\cos{^{-1}1}
+\end{eqnarray}
+Add eq11 and eq20\\
+\begin{equation}
+	\theta_1=\frac{\cos{^{-1}\frac{1}{2}+\cos{^{-1}1}}}{2}
+\end{equation}
+Subtract eq20 from eq11
+\begin{equation}   
+\theta_2=\frac{-\cos{^{-1}\frac{1}{2}+\cos{^{-1}1}}}{2}        
+\end{equation}
+ \section*{\large Construction} The input parameters are V,u,f \\
+ $\vec{V}=\myvec{0&0\\0&1},\vec{u}=\myvec{-2a\\0},f=0$\\
+\setlength\extrarowheight{7pt}
+\begin{tabular}{|c|c|c|}
+  \hline
+  \textbf{Symbol}&\textbf{Value}&\textbf{Description}\\
+  \hline
+	a&1&\\
+  \hline
+	$\alpha$&$60^{0}$&$\angle{A}=\angle{B}=\angle{O}$\\
+	\hline
+	r&Solving eq18&OA=OB=AB\\
+	\hline
+  $\vec{O}$&$\myvec{0\\0}$&center of parabola and Point O\\
+  \hline
+	$\vec{A}$&$\myvec{r\cos{\theta_1}\\r\sin{\theta_1}}$&Point A\\[8pt]
+  \hline
+	$\vec{B}$&$\myvec{r\cos{\theta_2}\\r\sin{\theta_2}}$&Point B\\[8pt]  \hline
+\end{tabular}
+\end{document}
