@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{LINE ASSIGNMENT}
 \def\myauthor{G.Kumar}
 \def\contact{kumargandhamaneni20016@gmail.com}
@@ -49,7 +50,11 @@ columns=fullflexible
 \begin{document}
 	\maketitle
 \section*{Problem}
-   Find angle between the lines,$\sqrt{3}$x+y=1 and x+$\sqrt{3}$y=1.
+\fi
+   Find angle between the lines,$\sqrt{3}x+y=1$ and $x+\sqrt{3}y$=1.
+   \\
+   \solution 
+   \iffalse
    \section*{Solution}
    \includegraphics[scale=0.55]{line.png}
    The input parameters for this construction are :
@@ -91,21 +96,19 @@ columns=fullflexible
    x+\sqrt{3}y=1 
    \end{equation}
    Equation(1) in vector form is given as,
+   \fi
+From    the given equations, the normal vectors can be expressed as
+\iffalse
    \begin{align}
    \myvec{\sqrt{3}&1}\vec{x}=1
    \end{align}
    From this, Normal vector to the line is given as,
-   \begin{align*}
-   \vec{n_1}=\myvec{\sqrt{3}\\1}
-   \end{align*}
-   So, the direction vector of the line is given as,
-\begin{eqnarray*}
-   \vec{m1}=\myvec{-1\\\sqrt{3}}
-\end{eqnarray*} 
-Similarly, Normal vector to the line(2) is given as,
-   \begin{align*}
-   \vec{n_2}=\myvec{1\\\sqrt{3}}
-   \end{align*}
+   \fi
+   \begin{align}
+	   \vec{n}_1=\myvec{\sqrt{3}\\1},
+	   \vec{n}_2=\myvec{1\\\sqrt{3}}
+   \end{align}
+   \iffalse
    So, the direction vector of the line is given as,
 \begin{eqnarray*}
    \vec{m2}=\myvec{-\sqrt{3}\\1}
@@ -113,10 +116,17 @@ Similarly, Normal vector to the line(2) is given as,
 
 \subsection*{Step 2}
 Now, Angle between any two lines,using their direction vectors, is given by, \\
-\begin{eqnarray*}
- cos\theta=\frac{(\vec{m1})^T(\vec{m2})}{\norm{\vec{m1}}\norm{\vec{m2}}}
-\end{eqnarray*}
-So, Angle between the two lines is given by,
+\fi
+The angle between the lines can then be expressed as
+\begin{align}
+	cos\theta&=\frac{\vec{n}_1^T\vec{n}_2}{\norm{\vec{n}_1}\norm{\vec{n}_2}}
+	\\
+	&=\frac{\sqrt{3}}{2} 
+	\\
+	\text{or, }
+\theta=30\degree
+\end{align}
+\iffalse
 \begin{eqnarray}
  cos\angle{x}=\frac{(\vec{m1})^T(\vec{m2})}{\norm{\vec{m1}}\norm{\vec{m2}}}\
 \end{eqnarray}
@@ -134,3 +144,4 @@ This Implies,
 Therefore, the angle between given two lines is $30^\circ$. \\
 \bibliographystyle{ieeetr}
 \end{document}
+\fi

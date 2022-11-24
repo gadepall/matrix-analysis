@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{PYTHON PROGRAMMING ON MATRICES}
 \def\myauthor{K.Pavan Kumar}
 \def\contact{r170850@rguktrkv.ac.in}
@@ -45,7 +46,17 @@ columns=fullflexible
 	\maketitle
 	\tableofcontents
    \section{Problem}
-An arch is in the form of a semi-ellipse. It is 8 m wide and 2 m high at the centre.Find the height of the arch at a point 1.5 m from one end.
+   \fi
+An arch is in the form of a semi-ellipse. It is 8 m wide and 2 m high at the centre. Find the height of the arch at a point 1.5 m from one end.
+\\
+\solution 
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/11/5/4/figs/ellipse.png}
+		\caption{}
+		\label{fig:11/11/5/4}
+  	\end{figure}
+	\iffalse
 
 \section{Construction}
   \includegraphics[scale=0.45]{ellipse.png}
@@ -193,3 +204,4 @@ Below python code realizes the above construction :
 \fbox{\parbox{8.5cm}{\url{https://github.com/FWC_module1/blob/main/matrices/conic/conic.py}}}
 \end{center}
 \end{document}
+\fi

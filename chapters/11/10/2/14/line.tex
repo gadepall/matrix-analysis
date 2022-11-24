@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
@@ -18,7 +19,19 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{\large Problem Statement} - Find equation of the line through the point (0,2)making an angle \begin{align}2\pi/3\end{align} with the positive X-axis.Also find the equation of the line parallel to it and crossing the Y-axis at a distance of 2units below the origin}
+\paragraph{\textit{\large Problem Statement} -
+\fi
+Find the equation of the line through the point (0,2) making an angle \begin{align}2\pi/3\end{align} with the positive X-axis. Also find the equation of the line parallel to it and crossing the Y-axis at a distance of 2 units below the origin
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/14/figs/fig.pdf}
+		\caption{}
+		\label{fig:11/10/2/14}
+  	\end{figure}
+	\\
+	\solution
+\iffalse
+	}
 
 \section*{\large Solution}
 
@@ -49,29 +62,28 @@
 \section*{Assumptions}
 To find the line equation  through the point (0,2)
 \vspace*{3mm}
-
- The Directional vector is:
-
-\begin{eqnarray}
+\fi
+From the  given information, the direction vector is
+\begin{align}
 	\vec{m}=\myvec{1\\-\sqrt{3}}
-\end{eqnarray}
+\end{align}
   
-\section*{Proof:}
-we know that the Normal vector is:
-\begin{eqnarray}
+Thus, 
+the normal vector is
+\begin{align}
 	\vec{n}=\myvec{\sqrt{3}\\1}
-\end{eqnarray}
+\end{align}
 
-
-\begin{eqnarray}
+\iffalse
+\begin{align}
 	\vec{m}=\myvec{1\\-\sqrt{3}}
 	\vec{n}=\myvec{\sqrt{3}\\1}
-\end{eqnarray}
+\end{align}
 
 
-\begin{eqnarray}
+\begin{align}
 	\vec{n^T}=(\sqrt{3}&1)	
-\end{eqnarray}
+\end{align}
 
 
 
@@ -85,45 +97,21 @@ Where line equation  is given by:
 \end{align}
 
 By substituting the values in the above equation:
-
-
-
-\begin{eqnarray}
-	\myvec{\sqrt{3} &1}\myvec{\myvec{x\\y}-\myvec{0\\2}}=0
-\end{eqnarray}
-
-
-
-
-\begin{eqnarray}
-	(\sqrt{3}&1)
-\vec{(x)}=2
-\end{eqnarray}
-
-
-
-
-
-
-
-
-Also find the equation of the line parallel to it and crossing the Y-axis at a distance of 2units below the origin:
-
-
-
-
-
-\begin{eqnarray}
-	\myvec{\sqrt{3} &1}\myvec{\myvec{\vec{x}\\\vec{y}}-\myvec{0\\-2}}=0
-\end{eqnarray}
-
-
-
-
-
-
-\begin{eqnarray}
-	(\sqrt{3}&1)
-\vec{(x)}=-2
-\end{eqnarray}
-\end{document}
+\fi
+and the 
+equation of the line is 
+\begin{align}
+	\myvec{\sqrt{3} &1}\myvec{\vec{x}-\myvec{0\\2}}&=0
+	\\
+	\implies 
+	\myvec{\sqrt{3}&1}
+	\vec{x}&=2
+\end{align}
+The equation of the parallel crossing the Y-axis at a distance of 2 units below the origin is given by 
+\begin{align}
+	\myvec{\sqrt{3} &1}\myvec{\vec{x}-\myvec{0\\-2}}&=0
+	\\
+	\implies 
+	\myvec{\sqrt{3}&1}
+\vec{x}=-2
+\end{align}

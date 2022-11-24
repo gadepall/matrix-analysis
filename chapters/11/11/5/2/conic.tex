@@ -1,4 +1,4 @@
-
+\iffalse
 
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
@@ -21,7 +21,19 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} -An arch is in the form of a parabola with its axis vertical.The arch is 10m high and 5m wide at the base.How wide is it 2m from the vertex of the parabola?} \vspace{5mm}
+\paragraph{\textit{Problem Statement} -
+\fi
+An arch is in the form of a parabola with its axis vertical. The arch is 10m high and 5m wide at the base. How wide is it 2m from the vertex of the parabola?
+\\
+\solution
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/11/5/2/figs/fig.pdf}
+		\caption{}
+		\label{fig:11/11/5/2}
+  	\end{figure}
+	\iffalse
+} \vspace{5mm}
 
 \section*{\large Solution}
 
@@ -180,3 +192,4 @@ substitute the values of \vec{m},\vec{q},\vec{V} and \vec{u}
 	$(\vec{C},\vec{D})$&\myvec{\sqrt{\frac{5y_2}{8}}&\sqrt{\frac{-5y_2}{8}}\\2&2}&points at 2m height\\[8pt]	\hline
 \end{tabular}
 \end{document}
+\fi

@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -15,7 +16,7 @@
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \let\vec\mathbf
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\myvec}[1]{\ensuremath{\myvec{#1}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
 \providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
@@ -25,7 +26,18 @@
 \begin{document}
 \maketitle
 \section{Problem Statement}
-\textbf{Find the equation of the circle passing through the points (2,3)and (-1,1) and whose centre is on the line x-3y-11=0}
+\fi
+Find the equation of the circle passing through the points (2,3) and (-1,1) and whose centre is on the line $x-3y-11=0$
+\\
+\solution See Fig. 
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/11/1/11/figs/fig.pdf}
+		\caption{}
+		\label{fig:11/11/1/11}
+  	\end{figure}
+\iffalse
+}
 \section{Solution}
 To Find : The equation of circle.
 Given , points passing through circle (2,3) and (-1,1), And equation of line passing through the center of circle x-3y-11=0
@@ -41,15 +53,31 @@ Given , points passing through circle (2,3) and (-1,1), And equation of line pas
 
 which is the equation of a circle. 
 And h,k,C are unknown values we should find
+\fi
+From 
+	\eqref{eq:circ-eq}, and the given information, 
+\begin{align}
+	\norm{\vec{P}}^2 + 2 \vec{u}^{\top}\vec{P} + f &= 0
+	\\
+	\norm{\vec{Q}}^2 + 2 \vec{u}^{\top}\vec{Q} + f &= 0
+	\\
+	-\vec{n}^{\top}\vec{u} &=c
+\end{align}
+by noting that the centre of the circle is $-\vec{u}$.
+Substituting numerical values, we obtain the matrix equation
 \begin{align}
 	\label{eq:vertex_system}
-	\myvec{4&6&1\\-2& 2&1\\-1& 3&0}\myvec{h\\k\\f} = \myvec{-13\\-2 \\11}\\
+	\myvec{4&6&1\\-2& 2&1\\-1& 3&0}\myvec{\vec{u}\\f} = \myvec{-13\\-2 \\11}\\
 \end{align}
 The augmented matrix for \eqref{eq:vertex_system} can be expressed as
 \begin{align}
-	\xleftrightarrow[]{1/4 R_1 \leftrightarrow R_1}\myvec{1&3/2&.1/4&\vrule&-13/4\\-2&2&1&\vrule&-2\\-1&3&0&\vrule&11}\\
+	\xleftrightarrow[]{1/4 R_1 \leftrightarrow R_1}\myvec{1&3/2&.1/4&\vrule&-13/4\\-2&2&1&\vrule&-2\\-1&3&0&\vrule&11}
+\end{align}
+which can be reduced to echelon form using row operations to obtain 
+\iffalse
+\begin{align}
 		\xleftrightarrow[]{-1/2R_2 \leftrightarrow R_2}
-		\myvec{1&3/2&.1/4&\vrule&-13/4\\1&-1&-1/2&\vrule&1\\-1&3&0&\vrule&11}\\
+		\myvec{1&3/2&1/4&\vrule&-13/4\\1&-1&-1/2&\vrule&1\\-1&3&0&\vrule&11}\\
 	     \xleftrightarrow[]{-1R_3 \leftrightarrow R_3}	
 \myvec{1&3/2&1/4&\vrule&-13/4\\1&-1&-1/2&\vrule&1\\1&-3&0&\vrule&-11}\\
 		\xleftrightarrow[]{R_2-1.R_1 \leftrightarrow R_2}
@@ -57,7 +85,9 @@ The augmented matrix for \eqref{eq:vertex_system} can be expressed as
 	     \xleftrightarrow[]{R_3-1.R_1 \leftrightarrow R_3}
 	     \myvec{1&3/2&1/4&\vrule&-13/4\\0&-5/2&-3/4&\vrule&17/4\\0&9/2&-1/4&\vrule&-31/4}\\
 	     \xleftrightarrow[]{-2/5R_2 \leftrightarrow R_2}
-	  \myvec{1&3/2&1/4&\vrule&-13/4\\0&1&3/10&\vrule&17/10\\0&9/2&-1/4&\vrule&-31/4}\\    	
+	  \myvec{1&3/2&1/4&\vrule&-13/4\\0&1&3/10&\vrule&17/10\\0&9/2&-1/4&\vrule&-31/4}
+\end{align}
+\begin{align}
 	      \xleftrightarrow[]{-2/9R_3 \leftrightarrow R_3}	
 \myvec{1&3/2&1/4&\vrule&-13/4\\1&-1&-1/2&\vrule&1\\1&-3&0&\vrule&-11}\\
 		\xleftrightarrow[]{R_3-1.R_2 \leftrightarrow R_3}
@@ -71,11 +101,13 @@ The augmented matrix for \eqref{eq:vertex_system} can be expressed as
 	       \xleftrightarrow[]{R_1-3/2R_2 \leftrightarrow R_1}	
 \myvec{1&0&0&\vrule&-7/2\\0&1&0&\vrule&5/2\\0&0&1&\vrule&-14}\\
 \end{align}
-\begin{center}
-\end{center}
- $\vec{u}$=$\vec{\begin{pmatrix}-7/2 \\5/2 \end{pmatrix}}$ 
+yielding 
+\fi
 \begin{align}
+\vec{u}=\myvec{-7/2 \\5/2 },
 f=-14
+\end{align}
+\iffalse
 \end{align}
 from u and f we can find radius
 \begin{align}
@@ -88,11 +120,11 @@ And, from them we can find the equation of circle.\\
  \begin{align}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
 \end{align}	
-$\vec{V}$ = $\begin{pmatrix}
+$\vec{V}$ = $\myvec{
  1 & 0\\
  0 & 1
- \end{pmatrix}$, 
-  $\vec{u}$=$\vec{\begin{pmatrix}7/2 \\-5/2 \end{pmatrix}}$
+ }$, 
+  $\vec{u}$=$\vec{\myvec{7/2 \\-5/2 }}$
   f = 14
 steps for constructing above figure are:  
 \begin{center}
@@ -103,10 +135,10 @@ steps for constructing above figure are:
 	$r$&$\sqrt{65/4}$&Radius of the circle\\
 	\hline
 	\textbf{C}&$\
-	\begin{pmatrix}
+	\myvec{
 		7/2 \\
 		-5/2 \\
-	\end{pmatrix}$
+	}$
 	&center of circle\\
 	\hline
 \end{tabular}
@@ -126,3 +158,4 @@ steps for constructing above figure are:
 \end{document}
 
 
+\fi

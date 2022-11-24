@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{MATRICES USING PYTHON}
 \def\myauthor{R.Ramesh}
 \def\contact{rameshrandhiglra@gmail.com}
@@ -88,7 +89,17 @@ columns=fullflexible
 \begin{document}
 \maketitle
 \paragraph{\textit{\large Problem statement: }\\
- By using the concept of equation of a line, prove that the three points (3, 0), (– 2, – 2) and (8, 2) are collinear. \\}
+\fi
+ By using the concept of equation of a line, prove that the three points (3, 0), (– 2, – 2) and (8, 2) are collinear.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/20/figs/figs6.pdf}
+		\caption{}
+		\label{fig:11/10/2/20}
+  	\end{figure}
+	\\
+	\solution 
+ \iffalse
  \section*{Construction}
  	\begin{center}
 \textsl{}  \includegraphics[scale=0.49]{figs6.pdf}
@@ -137,24 +148,22 @@ the rank of matrix defines number of linearly dependent vectors.
      \boldsymbol{D} & \boldsymbol{E}
  \end{pmatrix}
  \end{equation}
+ \fi
+ The collinearity matrix can be expressed as
  \begin{align}
-			   = \myvec{-5 & -2
+			    \myvec{-5 & -2
 			    \\
 			    5 & 2 }  
-		    \end{align}
-		    Through pivoting, we obtain 
-		    \begin{align}
-			   = \myvec{-5 & -2  
-			    \\
-			    5 & 2 }  
-			    \\
 			    \xleftrightarrow[]{R_2 \leftarrow {R_1 + R_2}}
 			   = \myvec{	    -5 & -2  
 			    \\
 			    0 & 0}  
 \end{align}
+which is a rank 1 matrix.
+\iffalse
 \textbf{}From the above rank of matrix is 1
 \\
 \textbf{If rank of matrix F is "1"  then the vectors  are in linearly dependent.so points are in collinear.} 
   
 \end{document}
+\fi

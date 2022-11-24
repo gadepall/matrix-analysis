@@ -27,6 +27,38 @@
 		1 & \text{otherwise}
 	\end{cases}
 \end{align}
+\item Points $\vec{A}, \vec{B}, \vec{C}$ are collinear if  
+\begin{align}
+	\label{eq:normal_line-collinear}
+	\rank	\myvec{ \vec{B}-\vec{A} &\vec{C}-\vec{A}} < 2
+\end{align}
+
+	\begin{proof}
+		From 
+	\eqref{eq:normal_line}, 
+\begin{align}
+	\vec{n}^{\top}\vec{A} &= c
+	\\
+	\vec{n}^{\top}\vec{B} &= c
+	\\
+	\vec{n}^{\top}\vec{C} &= c
+\end{align}
+which can be expressed as
+\begin{align}
+	\myvec{\vec{A} &\vec{B} &\vec{C}}^{\top}\vec{n} = c\myvec{1 \\ 1 \\ 1}
+\end{align}
+The above set of equations are consistent if 
+\begin{align}
+	\rank	\myvec{1 & 1 & 1 \\ \vec{A} &\vec{B} &\vec{C}} < 3
+	\\
+	\implies 
+	\rank	\myvec{1 & 0 & 0 \\ \vec{A} &\vec{B}-\vec{A} &\vec{C}-\vec{A}} < 3
+\end{align}
+using the fact that row rank = column rank.  The above condition can then be expressed as
+	\eqref{eq:normal_line-collinear}.
+
+
+	\end{proof}
 %	\item The equation of a line with normal vector $\vec{n}$ and passing through a point $\vec{A}$ 
 %		is given by 
 %\begin{align}

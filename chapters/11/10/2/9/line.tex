@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -28,7 +28,18 @@ Matrix Assignment - Lines
 
 
 \section{\textbf{Problem}}
-The Vertices of Triangle PQR is P(2,1), Q(-2,3), R(4,5) . Find the equation of the Median Through R.\\
+\fi
+The Vertices of Triangle $PQR$ is $\vec{P}(2,1), \vec{Q}(-2,3), \vec{R}(4,5)$. Find the equation of the Median Through $\vec{R}$.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/9/figs/line.png}
+		\caption{}
+		\label{fig:11/10/2/9}
+  	\end{figure}
+	\\
+	\solution See Fig. 
+		\ref{fig:11/10/2/9}.
+\iffalse
 
 
 \section{\textbf{Solution}}
@@ -50,9 +61,9 @@ So , By using section formula , we can find the Coordinates of the point A(say) 
 
 \textbf{Section Formula :}
 
-\begin{equation}
+\begin{align}
  Point A = \frac{P + K(Q)}{1+K}  \label{eq-1}
-\end{equation}
+\end{align}
 \\
 where PQ is a line and P and Q is the coordinates and K is the ratio in which the line is being divided.
 \\
@@ -60,24 +71,15 @@ where PQ is a line and P and Q is the coordinates and K is the ratio in which th
 Now , we know that the Median from R will divide the side PQ in two equal parts 
 \\( i.e in th ratio 1 : 1 )
 
-So ,  by using Section Formula,
-
-\begin{equation}
-A = \frac{P + K(Q)}{1+K}
-\end{equation}
-
-  where , K=1 \\ 
-  \linebreak
-$\vec{P} = \myvec{2 \\ 1}$ \hspace{5mm}
-$\vec{Q} = \myvec{-2 \\ 3}$ \hspace{5mm}
-
-\begin{equation}
-\vec{A} = \frac{{\myvec{2\\1}}  + 1{\myvec{-2\\3}}}{1+1}
-\end{equation}                         
-
-\begin{equation}
-\vec{A} = {\myvec{0\\2}}
-\end{equation} 
+So ,  by 
+\fi
+Using Section Formula,
+\begin{align}
+\vec{A} &= \frac{\vec{P} +\vec{Q} }{2}
+\\
+	&= {\myvec{0\\2}}
+\end{align} 
+\iffalse
 Now ,our Aim is to find the equation of Median(line AR)
 
 So, Now we have two points \\
@@ -87,25 +89,34 @@ $\vec{R} = \myvec{4 \\ 5}$ \\
 \linebreak
 We know that ,\\
 The Parametric Equation of line is :\\
-\begin{equation}
+\begin{align}
 \vec{X} = \vec{A}+\lambda\vec{m}
-\end{equation}
+\end{align}
 Where \textbf{m} is the direction vector of the line\\
 \linebreak
-So , the Direction Vector \textbf{m} of line AR is :
-\begin{equation}
-\vec{m} = \myvec{{\vec{R} - \vec{A}}}
-\end{equation}
-\begin{equation}
-\vec{m} = \myvec{4 \\ 5} -\myvec{0 \\ 2}
-\end{equation}
-\begin{equation}
-\vec{m} = \myvec{4 \\ 3}
-\end{equation}
+\fi
+So , the Direction Vector of $AR$ is 
+\begin{align}
+	\vec{m} &={\vec{R} - \vec{A}}
+= \myvec{4 \\ 3}
+\\
+	\implies \vec{n} &= 
+ \myvec{3 \\ -4}
+\end{align}
+which is the normal vector.  Thus, from
+    \eqref{eq:line_norm_eq},
+the equation of the line is 
+\begin{align}
+	\myvec{3 & -4}\brak{\vec{x} - \vec{R}} = 0
+	\\
+	\implies 
+	\myvec{3 & -4}\vec{x} =8 
+\end{align}
+\iffalse
 Therefore the equation of line AR will be:
-\begin{equation}
+\begin{align}
 \vec{X} = \myvec{0 \\ 2}+\lambda\myvec{ 4 \\ 3}
-\end{equation}
+\end{align}
 Equation 9 ,represents the equation of line AR in Parametric Form . 
 
 \newpage
@@ -149,3 +160,4 @@ Execute the code by using the command\\
 
 
 \end{document}
+\fi

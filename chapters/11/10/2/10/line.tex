@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{LINE USING PYTHON}
 \def\myauthor{Mukesh Guptha.CH}
 \def\contact{mukeshchinta1313@gmail.com}
@@ -39,7 +40,7 @@
         \label{fig:#2}
     \end{figure}
 }
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\myvec}[1]{\ensuremath{\myvec{#1}}}
 \let\vec\mathbf
 \lstset{
 frame=single, 
@@ -53,7 +54,19 @@ columns=fullflexible
 \begin{document}
 	\maketitle
  \paragraph*{\large Problem Statement}
-$-$ \textbf{ Find the equation of the line passing through  (-3,5) and perpendicular to the line through the points (2,5) and (-3,6).}
+$-$ \textbf{
+ \fi
+	Find the equation of the line passing through  (-3,5) and perpendicular to the line through the points (2,5) and (-3,6).
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/10/figs/Figure_1.png}
+		\caption{}
+		\label{fig:11/10/2/10}
+  	\end{figure}
+	\\
+	\solution 
+	\iffalse
+}
  
 \begin{figure}[h]
 \centering
@@ -71,16 +84,16 @@ $-$ \textbf{ Find the equation of the line passing through  (-3,5) and perpendic
 	\textbf{Symbol}&\textbf{Value}&\textbf{Description}\\
 	\hline
  c&$
-	\begin{pmatrix}
+	\myvec{
 		5\\
 		-1\\
-	\end{pmatrix}$
+	}$
 	&coefficients of line \\
 	\hline
  d&$
-	\begin{pmatrix}
+	\myvec{
 		20\\
-	\end{pmatrix}$
+	}$
 	&constants\\
 	\hline
  \end{tabular}
@@ -88,47 +101,46 @@ $-$ \textbf{ Find the equation of the line passing through  (-3,5) and perpendic
 \section*{\large solution}
 
 \subsection*{\large part 1}
-let us take A=(2,5),B=(-3,6) and P=(-3,5).Directional vector  of the points\vspace{4mm}m=B-A\\
-\begin{equation}
-m=\begin{pmatrix}
-    2\\
+\fi
+Let 
+\begin{align}
+	\vec{A}=\myvec{2 \\5}, \vec{B}= \myvec{-3 \\ 6}, \vec{P} =\myvec{-3 \\5}
+\end{align}
+The normal vector of the desired  line is then given by 
+\begin{align}
+\vec{n} = \vec{B}-\vec{A}
+=\myvec{
     5\\
-\end{pmatrix}-\begin{pmatrix}
-    -3\\
-    6\\
-\end{pmatrix}\hspace{2em}
-m=\begin{pmatrix}
-    5\\
-    -1\\
-\end{pmatrix}
-\label{eq-1}
-\end{equation}
-
-
-\begin{eqnarray}
-\vec{m^t\vec{(X-P)}}=0
-\end{eqnarray}
-\begin{equation}
-\begin{pmatrix}
-    5 &-1\\
-\end{pmatrix}\begin{pmatrix}
-    X-P\\
-\end{pmatrix}
-    \label{eq-3}
-\end{equation}
-
-\begin{equation}
- \begin{pmatrix}
+    -1
+}
+\end{align}
+Thus, the equation of the line is 
+\begin{align}
+\myvec{
+    5 &-1
+	}\brak{\vec{x} - \myvec{-3 \\5}}
+= 0
+\\
+\implies 
+\myvec{
+    5 &-1
+	}\vec{x} 
+= -20
+\end{align}
+\iffalse
+\begin{align}
+ \myvec{
     5 & -1\\
-\end{pmatrix}\begin{pmatrix}
+}\myvec{
     x+3\\
     y-5\\
-\end{pmatrix}
+}
 \label{eq-4}
-\end{equation}
+\end{align}
 The required line equation is 
-\begin{equation}
+\begin{align}
  5\vec{x}-\vec{y}+20=0
 \label{eq-5}
-\end{equation}
+\end{align}
 \end{document}
+\fi

@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{graphicx}
 \graphicspath{{./figs/}}{}
@@ -15,7 +16,17 @@ Matrix-Lines
 \tableofcontents
 \bigskip
 \section{Problem Statement}
-Find equation of a line passing trough a point (2,2) and cutting off intercepts on the axes whose sum is 9.\\
+\fi
+Find equation of a line passing trough a point (2,2) and cutting off intercepts on the axes whose sum is 9.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/13/figs/assign4.png}
+		\caption{}
+		\label{fig:11/10/2/13}
+  	\end{figure}
+	\\
+	\solution 
+\iffalse
 \section{Construction}
 \begin{figure}[h]
     \centering
@@ -52,152 +63,179 @@ Find equation of a line passing trough a point (2,2) and cutting off intercepts 
 
 
 \section{Solution}
-Given that resultant line passes through point(2,2) and intercepts on axes whose sum is 9 (let x intercept is a and y intercept is b therefore, a + b = 9 ) \\
-\\
-so, b = 9 - a  \\
-\\
-Let ${\vec{P}}$=$\myvec{
+Given that resultant line passes through point(2,2) and intercepts on axes whose sum is 9 (
+\fi
+Let the $x$ intercept be $a$ and the $y$ intercept be $b$. 
+Then 
+\begin{align}
+		\label{eq:11/10/2/13-a+b}
+ a + b = 9
+\end{align}
+Let 
+\begin{align}
+{\vec{P}}=\myvec{
   a\\
-  0}$
- , ${\vec{Q}}$=$\myvec{
+  0}
+ , {\vec{Q}}=\myvec{
   0\\
-  9-a}$
-  , ${\vec{R}}$=$\myvec{
+  b}
+  , {\vec{R}}=\myvec{
   2\\
-  2}$
+  2}
+\end{align}
+Since the points are collinear, from 
+	\eqref{eq:normal_line-collinear},
+	we obtain the matrix
+\begin{align}
+	\myvec{ \vec{P}-\vec{Q} &\vec{P}-\vec{R}} 
+	=
+	 \myvec{
+  a & a-2\\
+  -b & -2
+ }
+\end{align}
+which is singular if the determinant
+\begin{align}
+	-2a +b(a-2) = ab -2\brak{a+b} = 0
+\end{align}
+yielding
+\begin{align}
+	ab = 18
+		\label{eq:11/10/2/13-ab}
+\end{align}
+upon substituting from 
+		\eqref{eq:11/10/2/13-a+b}.
+		\eqref{eq:11/10/2/13-ab}
+		and 
+		\eqref{eq:11/10/2/13-a+b}
+		form
+\begin{align}
+	x^2 -9x +18 = 0
+\end{align}
+with roots
+\begin{align}
+	x = 6,3
+	\\
+	\text{or, }
+	\myvec{a \\ b} = \myvec{6 \\ 3}, \myvec{3\\6}
+\end{align}
+Since the direction vector of the line is 
+\begin{align}
+	\vec{P}-\vec{Q} = \myvec{a \\ -b},
+\end{align}
+the normal vector is 
+\begin{align}
+	\vec{n} = \myvec{b \\ a} \equiv \myvec{1 \\ 2}, \myvec{2\\1}
+\end{align}
+Thus, the possible equations of the line are 
+\begin{align}
+\myvec{1 & 2}\vec{x} = 6
+	\\
+	\myvec{2&1}\vec{x} = 6
+\end{align}
+\iffalse
 \\
 \\
 Equation of line is ${\vec{n^{\top}}\vec{X}} = c$.\\
 \\
 Now we have 3 points which lies on same line so,\\
  The Equation of line through ${\vec{P}}$ is\\
-\begin{equation}
-	\vec{n^{\top}}
+ Hence, 
+\begin{align}
+	\vec{n}^{\top}
 	\myvec{
   a\\
   0}
-  = c \label{eq-1}
-\end{equation}
+  &= c 
 \\
-Equation of line passing through ${\vec{Q}}$ is\\
-\begin{equation}
-	\vec{n^{\top}}
+	\vec{n}^{\top}
      \myvec{
   0\\
-  9 - a
+  b
  }
-  = c \label{eq-2}
-\end{equation}
-\\
-Now eq1 + eq2,\\
-\begin{equation}
-	\vec{n^{\top}}
+	&= c 
+  \\
+  \implies 
+	\vec{n}^{\top}
 	\myvec{
   a\\
-  9 - a
+  b
 }
-  = 2c \label{eq-3}
-\end{equation}
-\\
-Equation of line passing through ${\vec{R}}$ is\\
-\begin{equation}
-	\vec{n^{\top}}
+	&= 2c 
+\end{align}
+upon addition.
+Also, 
+\begin{align}
+	\vec{n}^{\top}
 	\myvec{
   2\\
   2}
-  = c \label{eq-4}
-\end{equation}
- \\
- From eq3 and eq4 we can find normal vector ${\vec{n}}$,\\
- \\
- \begin{equation}
-	 \vec{n^{\top}}
+  = c 
+\end{align}
+	Thus, we obtain, upon clubbing the above two equations,
+ \begin{align}
+	 \vec{n}^{\top}
 	 \myvec{
   a & 9-a\\
   2 & 2
  }
-	 = c.\myvec{
+	 = c\myvec{
   2\\
   1}
- \label{eq-5}
-\end{equation}
- \\
- Therefore,\\
- \begin{equation}
-	 \vec{n^{\top}} = 
+\end{align}
+yielding
+ \begin{align}
+	 \vec{n^{\top}} &= 
 	 \myvec{
   a & 9-a\\
   2 & 2
  }
   ^{-1}
-  .
 	 \myvec{
   2\\
   1}
- .c \label{eq-6}
-\end{equation}
- \\
-\begin{equation}
-	\vec{n^{\top}} = 
-	\myvec{
-  3a-9\\
-  -2}
-  .\frac{c}{4a-18}
- \label{eq-7}
-\end{equation}
- \\
- Now eq4 can be expressed as,\\
- \\
-  \begin{equation}
-	  \myvec{
-  3a - 9\\
-  -2}
- .
-	  \myvec{
-  2\\
-  2}
-  .\frac{c}{4a-18} = c
- \label{eq-8}
-\end{equation}
+ c 
+\end{align}
+%
   \\
   Thus, we get \textbf{a = 2, b = 9-a = 7}\\
   \\
   by substuting a in eq6, finally\\
   \\
-   \begin{equation}
+   \begin{align}
 	   \vec{n^{\top}} = 
 	   \myvec{
   0.3\\
   0.2}
  .c
- \end{equation}
+ \end{align}
   \\
 The Resultant Equation of line is ${\vec{n^{\top}}\vec{X}} = c$ \\
 \\
- \begin{equation}
+ \begin{align}
 	 \myvec{
   0.3\\
   0.2\\
  }
 	 .\vec{X}.c = c
- \end{equation}
+ \end{align}
   \\
 i.e,    \\
-\begin{equation}
+\begin{align}
 	\myvec{
   3\\
   2}
 	.\vec{X} = 10
- \end{equation}
+ \end{align}
 \\
 \textbf{
 Therefore equation of the line is, \\
-\begin{equation}
+\begin{align}
 	\myvec{
   3\\
   2}
 	. \vec{X} = 10
- \end{equation}}
+ \end{align}}
 \begin{center}
     \textbf{3x + 2y = 10}
 \end{center}
@@ -224,3 +262,4 @@ We found the equation of a line passing trough a point
 sum is 9.
 
 \end{document}
+\fi

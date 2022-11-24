@@ -1,4 +1,5 @@
- \documentclass[journal,12pt,twocolumn]{IEEEtran}
+\iffalse 
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{graphicx}
 \graphicspath{{./figs/}}{}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
@@ -15,7 +16,17 @@ Matrix-Lines
 \tableofcontents
 \bigskip
 \section{Problem Statement}
-A line passes through $(x_1,y_1)$ and $(h,k)$.If slope of the line is m show that $(k-y_1)=m(h-x_1)$.\\
+\fi
+A line passes through $(x_1,y_1)$ and $(h,k)$. If slope of the line is m show that $(k-y_1)=m(h-x_1)$.
+\\
+\solution 
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/1/12/figs/figure.pdf}
+		\caption{}
+		\label{fig:11/10/1/12}
+  	\end{figure}
+\iffalse
 \section{Construction}
 \begin{figure}[h]
     \centering
@@ -51,34 +62,43 @@ A line passes through $(x_1,y_1)$ and $(h,k)$.If slope of the line is m show tha
 Given that resultant line passes through point(x1,y1) and (h,k) (let prove the equation in vector form by line eqation ) \\
 \\
 \\
-given ${\vec{A}}$=$\myvec{
+\fi
+Given 
+\begin{align}
+\vec{A}=\myvec{
   x_1\\
-  y_1}$
- , ${\vec{B}}$=$\myvec{
+  y_1}
+ , \vec{B}=\myvec{
   h\\
-  k}$
-\\
+  k}
+\end{align}
 
-Equation of line is  ${\vec{n^{\top}}\vec{x}} = c$.\\
-
+\iffalse
 \textbf{First Method}:\\
 condition is	
 \begin{equation}
 	{\vec{n^{\top}}\vec{{m}}} = 0 \\     \label{eq-1}
 \end{equation}	
-m is the direction vector\\
-		 m=B-A\\
-\begin{equation}
-	 {\vec{n^{\top}}\vec{({B-A})}} = 0\\     \label{eq-2}
-\end{equation}
-\begin{equation}
-	\vec{n^{\top}}
+m is 
+\fi
+The direction vector
+\begin{align}
+	\vec{m} &= \vec{B}-\vec{A}
+	\\
+	&=
 	\myvec{
   h-x_1\\
   k-y_1
   }
-   = 0  \label{eq-3}
-\end{equation}
+   \equiv
+	\myvec{
+1\\
+	\frac{ k-y_1}{h-x_1}
+  }
+\end{align}
+which yields the desired relation from 
+		\eqref{eq:two-dir-vec}.
+\iffalse
 \begin{equation}
  			\myvec{
 					-m& 1}\myvec{
@@ -273,3 +293,4 @@ and execute the code by using command
 prove the equation of a line passes trough a points$(x_1,y_1)$,(h,k) if slope of the line is m i.e $(k-y_1)=m(h-x_1)$.
 
 \end{document}
+\fi

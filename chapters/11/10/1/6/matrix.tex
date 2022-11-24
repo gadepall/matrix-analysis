@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage[none]{hyphenat}
 \usepackage{graphicx}
@@ -19,7 +19,17 @@
 
 
 \section{Question}
-\textbf{\textit{Class 11, Exercise 10.1, Q(6):} Without using the pythagoras theorem ,show that the points (4,4),(3,5) and (-1,-1) are the vertices of a right angled triangle.}
+\textbf{\textit{Class 11, Exercise 10.1, Q(6):}
+\fi
+Without using the Baudhayana theorem, show that the points $(4,4),(3,5)$ and $(-1,-1)$ are the vertices of a right angled triangle.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/1/6/figs/triangle.png}
+		\caption{}
+		\label{fig:11/10/1/6}
+  	\end{figure}
+\iffalse
+}
 
 \begin{figure}[h!]
 \centering
@@ -32,18 +42,18 @@
 \section{Solution}
 \raggedright 
 \vspace{0.25cm}
-Let A,B and C be the vertices of a given traingle with coordinates $\begin{pmatrix}
+Let A,B and C be the vertices of a given traingle with coordinates $\myvec{
 4 \\
 4
-\end{pmatrix}
-, \begin{pmatrix}
+}
+, \myvec{
 3 \\
 5
-\end{pmatrix}
- and \begin{pmatrix}
+}
+ and \myvec{
 -1 \\
 -1
-\end{pmatrix} $
+} $
 \raggedright
 . we have verify whther the given vertices are of right angled triangle or not.\\
 \begin{center}
@@ -74,43 +84,24 @@ It implies that the numerator of the equation 1 should be zero.
  
 \vspace{0.25cm}\raggedright
 So we need to show $(A-B)^T(B-C) or (B-C)^T(C-A) or (C-A)^T(A-B) $ is equal to zero.
+\fi
 
 \vspace{0.5cm}\raggedright
-C-A=$\begin{pmatrix}
--1 \\
--1 
-\end{pmatrix}
--\begin{pmatrix}
-4 \\
-4 \
-\end{pmatrix}
-=\begin{pmatrix}
+\begin{align}
+	\vec{C}-\vec{A}&=\myvec{
 -5 \\
--5 \
-\end{pmatrix}$
-\vspace{0.5cm}\raggedright\\
-$(C-A)^T=(-5\space -5),$
-\vspace{0.5cm}\raggedright
-A-B=$\begin{pmatrix}
-4 \\
-4 \ 
-\end{pmatrix}
--\begin{pmatrix}
-3 \\
-5 \
-\end{pmatrix}
-=\begin{pmatrix}
+	-5},
+\\
+	\vec{A}-\vec{B}&=\myvec{
 1 \\
--1 \
-\end{pmatrix}$
-\vspace{0.25cm}\raggedright
-$(C-A)^T(A-B)=(-5 -5)\begin{pmatrix}
-1 \\
--1 \
-\end{pmatrix}
-=-5+5=0$
-\vspace{0.25cm}\raggedright
-From above we can say that directional vectors CA and AB are perpendicular to each other.\\
+-1 
+}
+\\
+	\implies \brak{\vec{C}-\vec{A}}^{\top}
+	\brak{\vec{A}-\vec{B}}&=0
+\end{align}
+Thus, $AB \perp AC$.
+\iffalse
 \vspace{0.25cm}\raggedright
 Thus we have right angle at the vertex A.
 
@@ -153,3 +144,4 @@ https://github.com/Sireesha1602/sireesha/
 
 
 \end{document}
+\fi

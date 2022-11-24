@@ -1,4 +1,5 @@
- \documentclass[journal,12pt,twocolumn]{IEEEtran}
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{graphicx}
 \graphicspath{{./figs/}}{}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
@@ -15,7 +16,17 @@ Matrix-Lines
 \tableofcontents
 \bigskip
 \section{Problem Statement}
-Find the slope of a line,which passes through the origin and the mid point of the line segment joining the points P(0,-4) and B(8,0)\\
+\fi
+Find the slope of a line,which passes through the origin and the mid point of the line segment joining the points $\vec{P}$(0,-4) and $\vec{B}$(8,0).
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/1/5/figs/line.png}
+		\caption{}
+		\label{fig:11/10/1/5}
+  	\end{figure}
+	\\
+	\solution
+\iffalse
 \section{Construction}
 \begin{figure}[h]
     \centering
@@ -58,26 +69,26 @@ given ${\vec{P}}$=$\myvec{
   8\\
   0}$
   
-  
-\textbf{The mid point of PB line:} \\
+ \fi 
+The mid point of $PB$ is
 \begin{align}
-\implies\vec{M} &=\frac{1}{2}(\vec{P}+\vec{B})
+\vec{M} &=\frac{1}{2}(\vec{P}+\vec{B})
+	= \myvec{4 \\ -2}  
 \end{align}
+The direction vector of line joining $\vec{O}, \vec{M}$ is 
 \begin{align}
-\implies\vec{M} &= \begin{pmatrix}4 \\ -2 \\ \end{pmatrix} 
+\vec{m}&=\vec{O}-\vec{M}
+ = -\vec{M}
 \end{align}
-\\
-\textbf{The direction vector of line joining two points $\vec{O}$,$\vec{M}$ is given by}
+which can be expressed as
 \begin{align}
-\implies\vec{m}&=\vec{O}-\vec{M}
+	\myvec{1 \\ -\frac{1}{2}}
 \end{align}
+Thus the slope is
 \begin{align}
-\implies\vec{m} &= \begin{pmatrix}4 \\ -2 \\ \end{pmatrix}
+	m = -\frac{1}{2}
 \end{align}
-\textbf{By simplifying eq(4),we get}
-\begin{align}
-\implies\vec{m} &= \begin{pmatrix}1 \\ -0.5 \\ \end{pmatrix}
-\end{align}
+\iffalse
 \textbf{The direction vector of a line expressed as}
 \begin{align}
 \implies\vec{m} &= \begin{pmatrix}1 \\ m \\ \end{pmatrix}
@@ -109,3 +120,4 @@ and execute the code by using command
 Hence the slope of line $\vec{O}$ $\vec{M}$ lineis $\vec{m}$=-0.5
 
 \end{document}
+\fi

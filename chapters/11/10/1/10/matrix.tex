@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{PYTHON PROGRAMMING ON MATRICES}
 \def\myauthor{Revathi pamujula}
 \def\contact{revathipamujula111@gmail.com}
@@ -38,54 +39,49 @@ columns=fullflexible
 
 
   \section{Problem}
+  \fi
 Find the angle between x-axis and the line joining points (3,-1) and (4,-2)
+\\
+\solution See Fig. 
+		\ref{fig:11/10/1/10}.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/1/10/figs/fig.png}
+		\caption{}
+		\label{fig:11/10/1/10}
+  	\end{figure}
 
+	\iffalse
 \section{Solution}
 \textbf{Given that:}
 \begin{center}
 
 %\boldmath
-
-$$\vec{P}=\begin{pmatrix} 3\\ -1\ \end{pmatrix}$$
-$$\vec{Q}=\begin{pmatrix} 4\\ -2\ \end{pmatrix}$$
-%\unboldmath
-\end{center}
-Finding the directive vector and assigning it to C\\
-\begin{center}
-%\boldmath
-	$\vec{C}=\vec{P}-\vec{Q}$\\
-%\unboldmath
-\end{center}
-\begin{center}
-%\boldmath
-	$\vec{C}=\begin{pmatrix} 3\\ -1\ \end{pmatrix} - \begin{pmatrix} 4\\ -2\ \end{pmatrix}$
-%\unboldmath
-\end{center}
-
-\begin{center}
-%\boldmath
-$\vec{C}=\begin{pmatrix} -1\\ 1\ \end{pmatrix}$\\
-%\unboldmath
-\end{center}
-
-  Now consider a vector (1,0) along x-axis and assign it to $x$\\
-\begin{center}
-
-%\boldmath
-	$$\vec{x}=\begin{pmatrix} 1\\ 0\ \end{pmatrix}$$
-%\unboldmath
-\end{center}
-
-By using the formula we can find the angle\\
-\begin{center}
-%\boldmath
-	$cos\theta=\frac{\vec{C}^{T}\vec{X}}{||\vec{C}|| ||\vec{X}||}$\\
- %\unboldmath//
- $$\theta=135^{\circ}$$
- \end{center}
+	\fi
+	Let 
+\begin{align}
+\vec{P}=\myvec{ 3\\ -1 },
+\vec{Q}=\myvec{ 4\\ -2 }
+\end{align}
+Then 
+\begin{align}
+	\vec{C}=\vec{P}-\vec{Q}
+=\myvec{ -1\\ 1 }
+\end{align}
+The desired angle is given by
+\begin{align}
+	\cos\theta&=\frac{\vec{C}^{T}\vec{e}_1}{\norm{\vec{C}}\norm{\vec{e}_1}}
+	\\
+	&= -\frac{1}{\sqrt{2}}
+	\\
+	\implies 
+	\theta&=135\degree
+ \end{align}
+ \iffalse
 \begin{figure}[h!]
   \includegraphics[scale=0.5]{fig.png}
   \caption{line assignment }
   \label{fig:line assignment}
 \end{figure}
 \end{document}
+\fi

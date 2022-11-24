@@ -1,3 +1,4 @@
+\iffalse
 % #######################################
 % ########### FILL THESE IN #############
 % #######################################
@@ -98,7 +99,11 @@ columns=fullflexible
     
  
  \Large\section{Problem}
- Q.Find the equation of the line  parallel to the line 3x-4y+2=0 and passing through the point (-2,3).
+ \fi
+Find the equation of the line  parallel to the line 3x-4y+2=0 and passing through the point (-2,3).
+\\
+\solution 
+\iffalse
  \section{Solution}
  \begin{center}
  Given equation is 3x-4y+2=0
@@ -122,12 +127,17 @@ columns=fullflexible
       \hline
    \end{tabular}
 \\ by substituting we get
+\fi
+From the given information, 
 \begin{align}
-\textbf{n}^{\top}=\myvec{3&-4} \\
-\myvec{3&-4}[\textbf{x}-\myvec{-2\\3}]=0
-\\ \myvec{3(-2)-4(3)}
-=-18 
+{\vec{n}}=\myvec{3\\-4} \\
+\implies 
+	\myvec{3&-4}\cbrak{\vec{x}-\myvec{-2\\3}}&=0
+	\\
+	&=-18 
 \end{align}
+which is the required equation of the line.
+\iffalse
   therefore,the equation parallel to the given equation and passing through the point(-2,3) is 3x-4y+18=0
  \end{center}
  \section{Plot}
@@ -141,3 +151,4 @@ columns=fullflexible
 https://github.com/Gowt-hami/fwc-1-module1/blob/main/par.py
 \end{lstlisting}
 \end{document}
+\fi

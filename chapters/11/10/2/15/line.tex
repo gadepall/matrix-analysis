@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
@@ -17,7 +18,18 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{\large Problem Statement} - The perpendicular from the Origin to a line meets it at the point (-2,9).Find the equation of the line?}
+\paragraph{\textit{\large Problem Statement} -
+\fi
+The perpendicular from the origin to a line meets it at the point (-2,9). Find the equation of the line.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/15/figs/line.pdf}
+		\caption{}
+		\label{fig:11/10/2/15}
+  	\end{figure}
+	\\
+	\solution
+	\iffalse
 \section*{\large Solution}
 \begin{figure}[H]
 \centering
@@ -52,50 +64,43 @@ D &  $\myvec{x\\y}$  \\ \hline
 
 
 \section*{Solution:}
+\fi
 
-Given vector points :
-\begin{eqnarray}
+Given 
+\begin{align}
  \vec{0} = \myvec{0\\0},
  \vec{A} = \myvec{-2\\9}
-\end{eqnarray}
-let D be a point on the required line :
-\begin{eqnarray}
+\end{align}
+\iffalse
+Let D be a point on the required line :
+\begin{align}
  \vec{D} = \myvec{x\\y}
-\end{eqnarray} 
- \begin{eqnarray*}
+\end{align} 
+ \begin{align}
  \vec{D-A}=\myvec{x+2\\y-9}
-   \end{eqnarray*}
-directional vector:
-\begin{eqnarray*}
- \vec{n}=\vec{O}- \vec{A}
-\end{eqnarray*}
+   \end{align}
+   \fi
+   The 
+normal vector is
+\begin{align}
+	\vec{n}&=\vec{O}- \vec{A}
+	\\
+	&=\myvec{2\\-9}
+\end{align}
+yielding the equation of the line as
 
-\begin{eqnarray*}
- \vec{n}=\myvec{0\\0} - \myvec{-2 \\9}
-\end{eqnarray*}
+\begin{align}
+	\myvec{2 & -9}\brak{\vec{x} - \myvec{2 \\ -9}}&= 0
+	\\
+	\implies 
+	\myvec{2 & -9}\vec{x} &= 85
+\end{align}
+\iffalse
 
-
-\begin{eqnarray}
- \vec{n}=\myvec{2\\-9}
-\end{eqnarray}
-
-
-General form for the equation of line is :
-\begin{eqnarray*}
-\vec{n^T}\vec{(D-A)} = 0 
-\end{eqnarray*}
-
-
-
-
-
-\begin{eqnarray*}
- \myvec{2\ -9}\myvec{\myvec{x+2\\y-9}}=-85
-\end{eqnarray*}
-
-\begin{eqnarray}
+\begin{align}
  2\vec{x}-9\vec{y}+85=0
-\end{eqnarray}
+\end{align}
 
 
 \end{document}
+\fi
