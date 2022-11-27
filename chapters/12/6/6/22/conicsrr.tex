@@ -1,0 +1,317 @@
+\documentclass[journal,10pt,twocolumn]{article}
+\usepackage{graphicx, float}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath, bm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\DeclareUnicodeCharacter{2212}{-}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+%\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+%\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+%\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+%\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+%\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+%\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+%\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+%\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+%\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+%\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+%\let\vec\mathbf
+
+\title{\textbf{Conic Assignment}}
+\author{Srinivas Dulla \hspace{9cm} FWC22041}
+\date{September 2022}
+
+\begin{document}
+
+\maketitle
+\paragraph{\textit{Problem Statement} - The normal at the point (1,1) on the curve \(2y+x^2=3\) :\\
+(a)x+y=0  \hspace{2cm} (b)x-y=0\\ 
+(c)x+y+1=0 \hspace{2cm}  (d)x-y=1\\}
+
+\section*{\large Solution}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\columnwidth]{cone.jpg}
+\caption{Tangents from A to circle through B, C and D}
+\label{fig:triangle}
+\end{figure}
+
+The given equation of parabola 2y$+$x^2 = 3$ can be written in the general quadratic form as
+\begin{align}
+    \label{eq:conic_quad_form}
+    \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+    \end{align}
+where
+\begin{align}
+	\label{eq:V_matrix}
+	\vec{V} &= \myvec{1 & 0\\0 & 0},
+	\\
+	\label{eq:u_vector}
+	\vec{u} &= \myvec{0\\-2},
+	\\
+	\label{eq:f_value}
+	f &= 3
+	%\\
+\end{align}
+
+The parabola in (\ref{eq:conic_quad_form}) can be expressed in standard form (center/vertex at origin, major-axis - $x$ axis) as
+\begin{align}
+	\label{eq:conic_simp_parab}
+	\vec{y}^{\top}\vec{D}\vec{y} &=  -2\eta\vec{e}_1^{\top}\vec{y}   & \abs{V} &= 0
+\end{align}
+ where
+\begin{align}
+	\label{eq:conic_affine}
+	\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\end{align}
+\begin{align}
+	\label{eq:conic_parmas_eig_def}
+	\vec{P}^{\top}\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
+	\\
+	\label{eq:eigevalV}
+	\vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+	\\
+	\vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^{\top}=\vec{P}^{-1},
+	\label{eq:eigevecP}
+	\\
+	\label{eq:eta}
+	\eta &=\vec{u}^{\top}\vec{p}_1
+	\\
+	\vec{e}_1 &=\myvec{1 \\ 0}
+	\end{align}
+
+To find $\vec{c}$ which is the center of the parabola in (\ref{eq:conic_quad_form}), substitute (\ref{eq:conic_affine}) in (\ref{eq:conic_quad_form})
+\begin{multline}
+\brak{\vec{P}\vec{y}+\vec{c}}^T\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^T\brak{\vec{P}\vec{y}+\vec{c}} + f = 0, 
+\end{multline}
+yielding 
+\begin{multline}
+\vec{y}^T\vec{P}^T\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y} +  \vec{c}^T\vec{V}\vec{c} 
+\\
++2\vec{u}^T\vec{c} + f= 0
+\label{eq:conic_simp_one}
+\end{multline}
+%
+From \eqref{eq:conic_simp_one} and \eqref{eq:conic_parmas_eig_def},
+\begin{multline}
+\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y} +  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}
+\\
++ \vec{u}^T\vec{c} + f= 0
+\label{eq:conic_simp}
+\end{multline}
+For a parabola $\abs{\vec{V}} = 0, \lambda_1 = 0$ and
+\begin{align}
+\vec{V}\vec{p}_1 = 0, 
+\vec{V}\vec{p}_2 = \lambda_2\vec{p}_2.
+\label{eq:conic_parab_eig_prop} 
+\end{align}
+where $\vec{p}_1,\vec{p}_2$ are the eigenvectors of $\vec{V}$ such that  \eqref{eq:conic_parmas_eig_def}
+%
+\begin{align}
+\vec{P} = \myvec{\vec{p}_1 & \vec{p}_2},
+\label{eq:eig_matrix}
+\end{align}
+Substituting \eqref{eq:eig_matrix}
+in \eqref{eq:conic_simp},
+\begin{multline}
+	\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{c}^T\vec{V}+\vec{u}^T}\myvec{\vec{p}_1 & \vec{p}_2}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\\
+\implies \vec{y}^T\vec{D}\vec{y}
+\\
++2\myvec{\brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_1  \brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_2}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\\
+\implies \vec{y}^T\vec{D}\vec{y}
+\\
++2\myvec{\vec{u}^T\vec{p}_1 & \brak{\lambda_2\vec{c}^T+\vec{u}^T}\vec{p}_2}\vec{y}
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\text{ from } \eqref{eq:conic_parab_eig_prop}     \nonumber \\
+\\
+\implies \lambda_2y_2^2+2\brak{\vec{u}^T\vec{p}_1}y_1+  2y_2\brak{\lambda_2\vec{c}+\vec{u}}^T\vec{p}_2
+\\
++  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
+\label{eq:conic_parab_foc_len_temp} 
+\end{multline}
+which is the equation of a parabola. 
+Thus, \eqref{eq:conic_parab_foc_len_temp} 
+can be expressed as \eqref{eq:conic_simp_parab} by choosing
+\begin{align}
+%\label{eq:eta}
+\eta = \vec{u}^T\vec{p}_1
+\end{align}
+and $\vec{c}$ in \eqref{eq:conic_simp} such that
+\begin{align}
+\label{eq:conic_parab_one}
+\vec{P}^{T}\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\myvec{1\\0}
+\\
+\vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f&= 0
+\label{eq:conic_parab_two}
+\end{align}
+Multiplying \eqref{eq:conic_parab_one} by $\vec{P}$ yields
+\begin{align}
+\label{eq:conic_parab_one_eig}
+\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\vec{p}_1,
+\end{align}
+which, upon substituting in \eqref{eq:conic_parab_two}
+results in 
+\begin{align}
+\eta\vec{c}^T\vec{p}_1 + \vec{u}^T\vec{c} + f&= 0
+\label{eq:conic_parab_two_eig}
+\end{align}
+\eqref{eq:conic_parab_one_eig} and \eqref{eq:conic_parab_two_eig} can be clubbed together to obtain \eqref{eq:conic_parab_c}.
+\begin{align}
+    \myvec{ \vec{u}^{\top}+\eta\vec{p}_1^{\top} \\ \vec{V}}\vec{c} &= \myvec{-f \\ \eta\vec{p}_1-\vec{u}}  &\abs{V} &= 0
+    \label{eq:conic_parab_c}
+    \end{align}
+Substituting appropriate values from \eqref{eq:V_matrix}, \eqref{eq:u_vector}, \eqref{eq:f_value}, \eqref{eq:eigevecP}, and \eqref{eq:eta} into \eqref{eq:conic_parab_c}, the below matrix equation is obtained
+\begin{align}
+	\label{eq:vertex_system}
+	\myvec{0&-4\\1& 0\\0& 0}\vec{c} = \myvec{0 \\0 \\0}\\
+\end{align}
+The augmented matrix for \eqref{eq:vertex_system} can be expressed as
+\begin{align}
+	\label{eq:vertex_solv1}
+	\myvec{0&-4&\vrule&0\\1&0&\vrule&0\\0&0&\vrule&0}\\ 	
+	\label{eq:vertex_solv2}
+	\xleftrightarrow[]{R_1 \leftrightarrow R_2}\myvec{1&0&\vrule&0\\0&-4&\vrule&0\\0&0&\vrule&0}\\
+	\label{eq:vertex_solv3}
+	\xleftrightarrow[]{-\frac{R_2}{4} \leftarrow R_2}\myvec{1&0&\vrule&0\\0&1&\vrule&0\\0&0&\vrule&0}\\
+	\label{eq:vertex_solv4}
+	\implies\vec{c} = \myvec{0\\0}
+\end{align}
+
+Let the point from which normals are drawn be $\vec{h}$. Then, the equation of the normal can be written as
+\begin{align}
+	\vec{x} = \vec{h} + \lambda\vec{m}
+	\label{eq:normal_chord}
+\end{align}
+Say the point of intersection of \eqref{eq:normal_chord} with the conic is $\vec{q}$. A tangent drawn at $\vec{q}$ satisfies the equation
+\begin{align}
+	\label{eq:tangency_condition}
+	\vec{n}^\top(\vec{Vq}+\vec{u}) = 0
+\end{align}
+Where $\vec{n}$ is the direction vector of the tangent and is perpendicular to $\vec{m}$ in \eqref{eq:normal_chord}.\\\\
+In general, the parameter values for points of intersection of a line given by \eqref{eq:normal_chord} with a conic is given by
+{\tiny
+\begin{multline}
+\lambda_i = \frac{1}
+{
+\vec{m}^T\vec{V}\vec{m}
+}
+\lbrak{-\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}
+\\
+\pm
+\rbrak{\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+\label{eq:tangent_roots}
+\end{multline}
+}
+Using \eqref{eq:tangent_roots} and \eqref{eq:normal_chord}, the intersection point $\vec{q}$ can be written as
+\begin{align}
+	\label{eq:point_of_tangency}
+	\vec{q} = \vec{h} + \lambda_i\vec{m}
+\end{align}
+Substituting \eqref{eq:point_of_tangency} in \eqref{eq:tangency_condition},
+\begin{align}
+	\label{eq:normal_simp_1}
+	\vec{n}^\top(\vec{V}(\vec{h}+\lambda_i\vec{m})+\vec{u}) = 0\\
+	\label{eq:normal_simp_2}
+	\implies \lambda_i\vec{n}^\top\vec{V}\vec{m} = -\vec{n}^\top(\vec{Vh}+\vec{u})
+\end{align}
+Substituting value of $\lambda_i$ from \eqref{eq:tangent_roots} in \eqref{eq:normal_simp_2}
+{\tiny
+\begin{multline}
+	\frac{1}{\vec{m}^\top\vec{V}\vec{m}}\lbrak{-\vec{m}^\top\brak{\vec{Vh}+\vec{u}}} \\ 
+	\pm \rbrak{\sqrt{\sbrak{\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f}\brak{\vec{m}^T\vec{V}\vec{m}}}}\vec{n}^\top\vec{V}\vec{m} \\
+	= -\vec{n}^\top\brak{\vec{Vh}+\vec{u}}
+	\label{eq:normal_simp_3}
+\end{multline}
+}
+Rearranging the terms,
+{\tiny
+\begin{multline}
+	\pm \sqrt{\sbrak{\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f}\brak{\vec{m}^T\vec{V}\vec{m}}} \brak{\vec{n}^\top\vec{V}\vec{m}} \\ = \brak{\vec{Vh}+\vec{u}}^\top\brak{\brak{\vec{n}^\top\vec{V}\vec{m}}\vec{m}-\brak{\vec{m}^\top\vec{V}\vec{m}}\vec{n}}
+\end{multline}
+}
+Squaring on both sides
+{\tiny
+\begin{multline}
+	\sbrak{\sbrak{\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f}\brak{\vec{m}^T\vec{V}\vec{m}}}\brak{\vec{n}^\top\vec{V}\vec{m}}^2 \\ = \sbrak{\brak{\vec{Vh}+\vec{u}}^\top\brak{\brak{\vec{n}^\top\vec{V}\vec{m}}\vec{m}-\brak{\vec{m}^\top\vec{V}\vec{m}}\vec{n}}}^2
+	\label{eq:normal_solution}
+\end{multline}
+}\\
+If $\vec{n}$ is taken as $\myvec{-\mu \\ 1}$, then $\vec{m}$ is $\myvec{-1 \\ -\mu}$. Substituting these values in \eqref{eq:normal_solution} and solving for $\mu$, the different possible normals passing through $\vec{h}$ are obtained.\\\\
+Thus after solving we get the following values for $\mu$ = {-1, 1/2 - sqrt(3)*I/2, 1/2 + sqrt(3)*I/2}\\\\
+Taking $\mu$=1 we get,
+\begin{center}
+$\vec{n} = \myvec{1 \\ 1}$, $\vec{m} = \myvec{-1 \\ 1}$\\
+\end{center}
+By calculating $\lambda_i$ from \eqref{eq:normal_simp_2}, we get
+\begin{center}
+    $\lambda_i = -1$
+\end{center}
+We find out $\vec{q}$ from \eqref{eq:point_of_tangency},
+\begin{center}
+where $\vec{h} = \myvec{1 \\ 2}$, $\vec{m} = \myvec{-1 \\ 1}$, $\lambda_i = -1$
+\end{center}
+\begin{center}
+    $\vec{q} = \myvec{1 \\ 2} + (-1)\myvec{-1 \\ 1} = $\myvec{2 \\ 1}
+\end{center}
+\begin{center}
+    Thus $\vec{q}$ satisfies Option(a) i.e. $x+y=3$
+\end{center} 
+
+\section*{\large Construction}
+{
+\setlength\extrarowheight{5pt}
+\begin{tabular}{|c|c|c|}
+	\hline
+	\textbf{Symbol}&\textbf{Value}&\textbf{Description}\\[5pt]
+	\hline
+	$\vec{h}$&$\myvec{1 \\ 2}$&Given point through which Normal is passing\\[5pt]
+	\hline
+	$\vec{q}$&$\myvec{2 \\ 1}$&Foot of Normal\\[5pt]
+	\hline
+	$\vec{m}$ & $\myvec{-1 \\ 1}$ & Direction Vector of Normal\\[5pt]
+	\hline
+	$\vec{n}$ & $\myvec{1 \\ 1}$ & Direction Vector of Tangent at $\myvec{q}$\\
+	\hline
+	$\vec{P}$&\myvec{0&1\\1&0}&eigenvectors of $\vec{V}$\\[5pt]
+	\hline
+\end{tabular}
+}
+
+\end{document}

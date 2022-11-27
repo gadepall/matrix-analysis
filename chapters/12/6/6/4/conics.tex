@@ -1,0 +1,207 @@
+\documentclass[journal,10pt,twocolumn]{article}
+\usepackage{graphicx, float}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath, bm}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\DeclareUnicodeCharacter{2212}{-}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+%\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+%\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+%\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+%\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+%\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+%\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+%\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+%\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+%\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+%\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+%\let\vec\mathbf
+
+\title{\textbf{Conic Assignment}}
+\author{Navya Valmeekam \hspace{9cm} FWC22042}
+\date{September 2022}
+
+\begin{document}
+
+\maketitle
+Find the equation of the normal to curve $x^2 = 4y$ which passes through the point
+(1, 2).
+\section*{\large Solution}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{conics.png} 
+\caption{Tangents from A to circle through B, C and D}
+\label{fig:triangle}
+\end{figure}
+
+The given equation of parabola $x^2 = 4y$ can be written in the general quadratic form as
+\begin{align}
+    \label{eq:conic_quad_form}
+    \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+    \end{align}
+where
+\begin{align}
+	\label{eq:V_matrix}
+	\vec{V} &= \myvec{1 & 0\\0 & 0},
+	\\
+	\label{eq:u_vector}
+	\vec{u} &= \myvec{0\\-2},
+	\\
+	\label{eq:f_value}
+	f &= 0
+	%\\
+\end{align}
+
+Let the point from which normals are drawn be $\vec{h}$. Then, the equation of the normal can be written as
+\begin{align}
+	\vec{x} = \vec{h} + \lambda\vec{m}
+	\label{eq:normal_chord}
+\end{align}
+Say the point of intersection of \eqref{eq:normal_chord} with the conic is $\vec{q}$. A tangent drawn at $\vec{q}$ satisfies the equation
+\begin{align}
+	\label{eq:tangency_condition}
+	\vec{n}^\top(\vec{Vq}+\vec{u}) = 0
+\end{align}
+Where $\vec{n}$ is the direction vector of the tangent and is perpendicular to $\vec{m}$ in \eqref{eq:normal_chord}.\\\\
+In general, the parameter values for points of intersection of a line given by \eqref{eq:normal_chord} with a conic is given by
+{\tiny
+\begin{multline}
+\lambda_i = \frac{1}
+{
+\vec{m}^T\vec{V}\vec{m}
+}
+\lbrak{-\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}
+\\
+\pm
+\rbrak{\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+\label{eq:tangent_roots}
+\end{multline}
+}
+Using \eqref{eq:tangent_roots} and \eqref{eq:normal_chord}, the intersection point $\vec{q}$ can be written as
+\begin{align}
+	\label{eq:point_of_tangency}
+	\vec{q} = \vec{h} + \lambda_i\vec{m}
+\end{align}
+Substituting \eqref{eq:point_of_tangency} in \eqref{eq:tangency_condition},
+\begin{align}
+	\label{eq:normal_simp_1}
+	\vec{n}^\top(\vec{V}(\vec{h}+\lambda_i\vec{m})+\vec{u}) = 0\\
+	\label{eq:normal_simp_2}
+	\implies \lambda_i\vec{n}^\top\vec{V}\vec{m} = -\vec{n}^\top(\vec{Vh}+\vec{u})
+\end{align}
+Substituting value of $\lambda_i$ from \eqref{eq:tangent_roots} in \eqref{eq:normal_simp_2}
+{\tiny
+\begin{multline}
+	\frac{1}{\vec{m}^\top\vec{V}\vec{m}}\lbrak{-\vec{m}^\top\brak{\vec{Vh}+\vec{u}}} \\ 
+	\pm \rbrak{\sqrt{\sbrak{\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f}\brak{\vec{m}^T\vec{V}\vec{m}}}}\vec{n}^\top\vec{V}\vec{m} \\
+	= -\vec{n}^\top\brak{\vec{Vh}+\vec{u}}
+	\label{eq:normal_simp_3}
+\end{multline}
+}
+Rearranging the terms,
+{\tiny
+\begin{multline}
+	\pm \sqrt{\sbrak{\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f}\brak{\vec{m}^T\vec{V}\vec{m}}} \brak{\vec{n}^\top\vec{V}\vec{m}} \\ = \brak{\vec{Vh}+\vec{u}}^\top\brak{\brak{\vec{n}^\top\vec{V}\vec{m}}\vec{m}-\brak{\vec{m}^\top\vec{V}\vec{m}}\vec{n}}
+\end{multline}
+}
+Squaring on both sides
+{\tiny
+\begin{multline}
+	\sbrak{\sbrak{\vec{m}^T\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^T\vec{V}\vec{h} + 2\vec{u}^T\vec{h} +f}\brak{\vec{m}^T\vec{V}\vec{m}}}\brak{\vec{n}^\top\vec{V}\vec{m}}^2 \\ = \sbrak{\brak{\vec{Vh}+\vec{u}}^\top\brak{\brak{\vec{n}^\top\vec{V}\vec{m}}\vec{m}-\brak{\vec{m}^\top\vec{V}\vec{m}}\vec{n}}}^2
+	\label{eq:normal_solution}
+\end{multline}
+}\\
+If $\vec{n}$ is taken as $\myvec{-\mu \\ 1}$, then $\vec{m}$ is $\myvec{-1 \\ -\mu}$. Substituting these values in \eqref{eq:normal_solution} and solving for $\mu$, the different possible normals passing through $\vec{h}$ are obtained.\\\\
+Thus after solving we get the following values for $\mu$ = {-1, $\frac{1}{2}$ - $\frac{\sqrt{-3}}{2}$, $\frac{1}{2}$ + $\frac{\sqrt{-3}}{2}$ }\\\\
+Taking $\mu$=1 we get,
+\begin{center}
+$\vec{n} = \myvec{1 \\ 1}$, $\vec{m} = \myvec{-1 \\ 1}$\\
+\end{center}
+By calculating $\lambda_i$ from \eqref{eq:normal_simp_2}, we get
+\begin{center}
+    $\lambda_i = -1$
+\end{center}
+We find out $\vec{q}$ from \eqref{eq:point_of_tangency},
+\begin{center}
+where $\vec{h} = \myvec{1 \\ 2}$, $\vec{m} = \myvec{-1 \\ 1}$, $\lambda_i = -1$
+\end{center}
+\begin{center}
+    $\vec{q} = \myvec{1 \\ 2} + (-1)\myvec{-1 \\ 1} = $\myvec{2 \\ 1}
+\end{center}
+Equation of normal is given by 
+\begin{equation}
+\vec{n^{\top}x=c}
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+2 \\
+1
+\end{pmatrix}
+=
+c
+\end{equation}
+We get c=3\\
+Equation of normal is,
+\begin{equation}
+\begin{pmatrix}
+1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix}
+=
+3
+\end{equation}
+\section*{\large Construction}
+{
+\setlength\extrarowheight{5pt}
+\begin{tabular}{|c|c|c|}
+	\hline 
+	\textbf{Symbol}&\textbf{Value}&\textbf{Description}\\[5pt]
+	\hline
+	$\vec{h}$&$\myvec{1 \\ 2}$&Given point through which Normal is passing\\[5pt]
+	\hline
+	$\vec{q}$&$\myvec{2 \\ 1}$&Foot of Normal\\[5pt]
+	\hline
+	$\vec{m}$ & $\myvec{-1 \\ 1}$ & Direction Vector of Normal\\[5pt]
+	\hline 
+	$\vec{n}$ & $\myvec{1 \\, 1}$ & Direction Vector of Tangent at $\vec{q}$\\
+	\hline
+\end{tabular}
+}
+
+\end{document}

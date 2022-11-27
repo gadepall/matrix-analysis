@@ -1,0 +1,217 @@
+\documentclass[10pt,a4paper]{report}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tikz}
+\usetikzlibrary{arrows,shapes,automata,petri,positioning,calc}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{matrix,calc}
+\usepackage[margin=0.5in]{geometry}
+% ---- power functions -----% 
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+%-------end power functions----%
+\newenvironment{Figure}
+  {\par\medskip\noindent\minipage{\linewidth}}
+  {\endminipage\par\medskip}
+\begin{document}
+%--------------------logo figure-------------------------%
+\begin{figure*}[!tbp]
+  \centering
+  \begin{minipage}[b]{0.4\textwidth}
+    %\includegraphics[scale=0.05]{fig/iitlogo.jpg} 
+  \end{minipage}
+  \hfill
+  \vspace{5mm}\begin{minipage}[b]{0.4\textwidth}
+\raggedleft  \includegraphics[scale=0.05]{iitlogo.jpg}  \
+
+  \end{minipage}\vspace{0.2cm}
+\end{figure*}
+%--------------------name & rollno-----------------------
+\raggedright \textbf{Name}:\hspace{1mm} T.ManasaReddy\hspace{3cm} \Large \textbf{Conic Assignment}\hspace{2.5cm} % 
+\normalsize \textbf{Roll No.} :\hspace{1mm} FWC22048\vspace{1cm}
+\begin{multicols}{2}
+
+%----------------problem statement--------------%
+\raggedright \textbf{Problem Statement:}\vspace{2mm}
+\raggedright \\Find the area of the smaller part of the circle $x^2+y^2=a^2 $ cut off by the line x=$\frac{a}{\sqrt{2}}$\\
+\vspace{5mm}
+%-----------------------------solution---------------------------
+\raggedright \textbf{SOLUTION}:\vspace{2mm}\\
+
+%---------given----------------%
+\raggedright \textbf{Given}:\vspace{2mm}\\
+Equation of Circle is \\\vspace{1mm}
+\begin{align}
+x^2+y^2=a^2
+\end{align}
+Equation of line is \\ \vspace{1mm}
+\begin{align}
+x=\frac{a}{\sqrt{2}}
+\end{align}
+%-------------To find ------------------%
+\textbf{To Find }\vspace{2mm}\\
+To find the intersection points and area of shaded region shown in figure\vspace{2mm}  \\ 
+%--------------steps----------------------%
+\textbf{STEP-1}\vspace{2mm}\\
+The given circle can be expressed as conics with parameters,\\ \vspace{1mm}
+\begin{align}
+\myvec{
+1 & 0\\
+0 & 1
+}
+\end{align}
+
+\begin{align}
+\vec{u}=0
+\end{align} 
+\begin{align}
+f=-a^2
+\end{align} \vspace{2mm}
+
+
+\textbf{STEP-2}\vspace{2mm}\\
+the given line equation can be written as\\ 
+\begin{align} 
+	\vec{x}=\begin{pmatrix}\frac{a}{\sqrt{2}} \\ 0 \\ \end{pmatrix}+k\begin{pmatrix} 0 \\ -1 \\ \end{pmatrix}
+\end{align}
+
+\textbf{STEP-3}\vspace{2mm}\\
+The points of intersection of the line, \\ 
+\begin{align}
+L: \quad \vec{x} = \vec{q} + \kappa \vec{m} \quad \kappa \in \mathbb{R}
+\end{align}
+with the conic section, \\ 
+\begin{align}
+	\vec{x}^{\top}\vec{V}\vec{x} + 2\vec{u}^{\top} \vec{x} + f = 0
+\end{align}
+are given by \\
+\begin{align}
+\vec{x}_i = \vec{q} + \kappa_i \vec{m}
+\end{align}
+where, \\
+{\tiny
+\begin{multline}
+\kappa_i = \frac{1}
+{
+\vec{m}^T\vec{V}\vec{m}
+}
+\lbrak{-\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}}
+\\
+\pm
+\rbrak{\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+\end{multline}
+}
+On substituting\\
+\begin{align}
+\vec{q} &= \myvec{
+\frac{a}{\sqrt{2}}\\
+0
+} 
+\end{align}
+\begin{align}
+\vec{m} = \myvec{ 0 \\ -1 }
+\end{align}
+With the given circle  as in eq(3),(4),(5),\\ 
+
+The value of $\kappa$ ,\\
+\begin{align}
+    \kappa =\frac{a}{\sqrt{2}},\frac{-a}{\sqrt{2}}
+\end{align}
+by substituting eq(13) in eq(6)we get the
+points of intersection of line with Circle \\
+\begin{align}
+    \vec{A}=\myvec{
+\frac{a}{\sqrt{2}}\\
+\frac{-a}{\sqrt{2}}
+    }
+\end{align}
+\begin{align}
+    \vec{B}=\myvec{
+\frac{a}{\sqrt{2}}\\
+\frac{a}{\sqrt{2}}
+    }
+\end{align}
+\textbf{Result}
+\begin{center}
+ \includegraphics[scale=0.5]{conic.png}    
+ \end{center}\vspace{1mm}
+ From the figure,\\ \vspace{1mm}
+Total area of portion is given by, \\ \vspace{1mm}
+area\textbf{ APQ}=2* area of \textbf{APR}
+
+\subsection*{Area of APR}
+Since \textbf{APR} is in first Quadrant \\
+\begin{align}
+y=\sqrt{a^2-x^2}
+\end{align}
+\subsection*{Area of Circle}
+
+\begin{align} 
+\implies APQ=2*\int_{0}^{\frac{a}{\sqrt{2}}}\sqrt{a^2-x^2}\,dx 
+\end{align}
+by solving the above equation we get area of  smaller part of the circle\\
+
+
+
+\vspace{3mm}
+$\implies APQ=\frac{a^2}{2}[1+\frac{\pi}{2}]$\vspace{3mm}
+ \vspace{2mm} \textbf{Construction}
+\begin{center}
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|c|}
+    \hline 
+    \textbf{Points} & \textbf{coordinates} \\ \hline
+   B & $\myvec{
+\frac{a}{\sqrt{2}}\\
+\frac{a}{\sqrt{2}}
+   } $ \\\hline
+   A & $
+   \vec{A}=\myvec{
+\frac{a}{\sqrt{2}}\\
+\frac{-a}{\sqrt{2}}
+   } $ 
+   \\\hline
+      \end{tabular}
+  \end{center}
+  \end{multicols}
+ 
+Get the python code of the figures from
+
+\begin{table}[h]
+\large
+\centering
+\framebox{
+\url{https://github.com/manasa/MANASA_FWC/blob/main/conics/code/conic.py}}
+\bibliographystyle{ieeetr}
+\end{table} 
+\end{document}

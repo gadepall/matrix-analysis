@@ -1,0 +1,106 @@
+\documentclass[journal,10pt,twocolumn]{article}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[cmex10]{amsmath}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{mathtools}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\title{\textbf{Conic section Assignment}}
+\author{T.Varsha Reddy}
+\date{September 2022}
+
+
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+
+\begin{document}
+
+\maketitle
+\section{Problem Statement}
+\textbf{Find the equation of the tangent to the curve} 
+
+\section{Solution}
+The given equation of parabola $y^2 = 3x-2$ can be written in the general quadratic form as
+\begin{align}
+    \label{eq:conic_quad_form}
+    \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+    \end{align}
+where
+\begin{align}
+	\label{eq:V_matrix}
+	\vec{V} &= \myvec{0 & 0\\0 & 1},
+	\\
+	\label{eq:u_vector}
+	\vec{u} &= \myvec{-3/2\\0},
+	\\
+	\label{eq:f_value}
+	f &= 2
+	%\\
+\end{align}
+
+
+which is the equation of a parabola. 
+Thus can be expressed as by choosing
+\begin{align}
+%\label{eq:eta}
+Ki = \frac{\vec{Pi}^T\vec{u}}{\vec{Pi}^T\vec{n}}
+\end{align}
+%\begin{center}
+   where
+   \begin{align}
+     \vec{pi} &= \myvec{1\\0},
+     \\
+     \vec{n} &= \myvec{-2\\1},
+    \end{align}
+   
+%\end{center}
+If V is non invertible,given the normal vector $\eta$,the point of contact is given by the matrix equation. 
+
+\begin{align}
+    \myvec{( \vec{u}+\vec{ki}\vec{n})^T\\ \vec{V}}\vec{q} &= \myvec{-f \\ (\vec{Ki}\vec{n}-\vec{u})}  &\abs{V} &= 0
+    \label{eq:conic_parab_c}
+    \end{align}
+Substituting appropriate values from \eqref{eq:V_matrix}, \eqref{eq:u_vector}, \eqref{eq:f_value}, and into \eqref{eq:conic_parab_c}, the below matrix equation is obtained
+\begin{align}
+	\label{eq:vertex_system}
+	\myvec{-3&0\\0& 0\\0& 1}\vec{q} = \myvec{-41/16\\0 \\3/4}\\
+\end{align}
+The augmented matrix for \eqref{eq:vertex_system} can be expressed as
+\begin{align}
+	%\label{eq:vertex_solv1}
+	%\myvec{-3&0&\vrule&2\\0&0&\vrule&0\\0&1&\vrule&0}\\ 	
+	%\label{eq:vertex_solv2}
+	\xleftrightarrow[]{R_2 \leftrightarrow R_3}\myvec{-3&0&\vrule&-41/16\\0&1&\vrule&0\\0&0&\vrule&3/4}\\
+	\label{eq:vertex_solv3}
+	\xleftrightarrow[]{-\frac{R_1}{-3} \leftarrow R_2}\myvec{1&0&\vrule&41/48\\0&1&\vrule&0\\0&0&\vrule&3/4}\\
+	\label{eq:vertex_solv4}
+	\implies\vec{q} = \myvec{41/48\\3/4}
+\end{align}
+By the equation of tangent is 
+\begin{center}
+\begin{align}
+ \vec{(Vq+u)}^{\top}\vec{X}+\vec{u}^{\top}\vec{q}+\vec{f} =0 
+\end{align}
+\end{center}
+\section{ Construction}
+%\includegraphics[scale=0.5]{../Documents/co.pdf} 
+%\includegraphics[scale=0.5]{co.pdf} 
+\includegraphics[scale=0.5]{conic.pdf} 
+%\vspace{3mm}
+%\url{https://github.com/9705701645/FWC/blob/main/co.py}
+%\begin{multicols}
+ %Download the code \\
+%\href{https://github.com/9705701645/FWC/blob/main/co.py}{Assignment-5}.
+%\end{multicols}
+\end{document}
+
+
