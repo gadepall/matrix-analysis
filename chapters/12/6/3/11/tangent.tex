@@ -154,7 +154,7 @@ y=\frac{1}{x-3}, x\neq{3}
 \solution 
 	\begin{figure}[!ht]
 		\centering
- \includegraphics[width=\columnwidth]{chapters/12/6/3/11/figs/con_fig.pdf}
+ \includegraphics[width=\columnwidth]{chapters/12/6/3/11/figs/con_fig.png}
 		\caption{}
 		\label{fig:12/6/3/11}
   	\end{figure}
@@ -210,6 +210,8 @@ From the given information
 } = \myvec{-2 \\ 1}  \\
 \label{12/6/3/11/eq2}
 \end{align}
+Hence, the given curve is a hyperbola.
+\iffalse
 Since
 \begin{align}
 	\vec{q}&=\vec{V}^{-1}(k_i\vec{n}-\vec{u})    \\
@@ -219,28 +221,26 @@ Since
 	f_0&=f+\vec{u}^{\top}\vec{V}^{-1}\vec{u}     
 \label{12/6/3/11/eq4}
 \end{align}
-\iffalse
 \centering
 \begin{align}
 n= 
 \end{align}
 \vspace{0.30cm}
 \raggedright
-\fi
 substituting  \eqref{12/6/3/11/eq1} in  \eqref{12/6/3/11/eq4},
-\iffalse
 \centering
 $f_o=-1+\myvec{0 & \frac{-3}{2}}\myvec{0 & 2 \\ 2 & 0}\myvec{0 \\ \frac{-3}{2}}$\\
 $f_o=-1+\myvec{0 & \frac{-3}{2}}\myvec{-3 \\ 0}$\\
 $f_o=-1+0$\\
 \vspace{0.30cm}
-\fi
 \begin{align}
 f_0=-1           
 \label{12/6/3/11/eq6}
 \end{align}
+\fi
 %\raggedright
-Substituting  \eqref{12/6/3/11/eq6} in  \eqref{12/6/3/11/eq3},
+Substituting  numerical values, we obtain the condition in 
+	\eqref{prop:conic-p-contact-nonparab-cond},
 \iffalse
 \centering
 \vspace{0.3cm}
@@ -251,26 +251,24 @@ k_i
 =\pm{\sqrt{\frac{-1}{\myvec{ 2 & -4}\myvec{ -2 \\ 1}}}}$\\
 \end{align}
 \vspace{0.25cm}
-\fi
 \begin{align}
-k_i=\pm{\sqrt{\frac{1}{8}}}   
+k_i=\pm{\sqrt{-\frac{1}{8}}}   
 \label{12/6/3/11/eq7}
 \end{align}
+\fi
+which implies that the line with slope 2 is not a tangent.  This can be verified from Fig. 
+		\ref{fig:12/6/3/11}.
 \iffalse
 \vspace{0.3cm}            
 \raggedright
-\fi
 Substituting  \eqref{12/6/3/11/eq7} in \eqref{12/6/3/11/eq2},
-\iffalse
 \vspace{0.4cm}
 \centering
-\fi
 \begin{align}
-	\vec{q}&=(\myvec{0 & 2 \\ 2 & 0}{\pm{\sqrt{\frac{1}{8}}\myvec{ -2 \\ 1}}}-\myvec{0 \\ \frac{-3}{2}})
+	\vec{q}&=\myvec{0 & 2 \\ 2 & 0}\brak{\pm{\sqrt{\frac{1}{8}}}\myvec{ -2 \\ 1}-\myvec{0 \\ \frac{-3}{2}}}
 	&=\myvec{3.707\\-1.414}
 \label{12/6/3/11/eq8}
 \end{align}
-\iffalse
 \raggedright
 We know that,\\
 \vspace{0.3cm}
@@ -281,7 +279,7 @@ We know that,\\
 \pm\sqrt{(\vec{m}^{\top}(\vec{Vq+u}))^2-(\vec{q}^{\top}+2\vec{u}^{\top}\vec{q}+f)(\vec{m}^{\top}\vec{Vm})}                 
 \label{12/6/3/11/eq9}
 \end{align}
-\fi
+%\fi
  substituting Eq. \eqref{12/6/3/11/eq1} and \eqref{12/6/3/11/eq8} in 
 \eqref{eq:tangent_roots},
 \begin{align}
