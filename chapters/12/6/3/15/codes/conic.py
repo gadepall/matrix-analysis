@@ -7,9 +7,10 @@ from sympy import *
 
 import sys                                          #for path to external scripts
 
-sys.path.insert(0,'/home/aluru-ajay99/CoordGeo')         #path to my scripts
+#sys.path.insert(0,'/home/aluru-ajay99/CoordGeo')         #path to my scripts
 
 
+sys.path.insert(0, '/sdcard/github/cbse-papers/CoordGeo')        #path to my scripts
 
 #local imports
 from line.funcs import *
@@ -64,6 +65,7 @@ eta = u@P[:,0]
 a = np.vstack((u.T + eta*P[:,0].T, V))
 b = np.hstack((-f, eta*P[:,0]-u)) 
 center = LA.lstsq(a,b,rcond=None)[0]
+print(center)
 O = center 
 n = np.sqrt(lamda[1])*P[:,0]
 c = 0.5*(LA.norm(u)**2 - lamda[1]*f)/(u.T@n)

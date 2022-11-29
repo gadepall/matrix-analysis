@@ -1,3 +1,4 @@
+\iffalse
 \def\mytitle{MATRIX ANALYSIS USING PYTHON}
 \def\myauthor{Soundarya Naru}
 \def\contact{narusoundarya2002@gmail.com}
@@ -44,7 +45,7 @@
 \providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
 \newcommand{\figuremacro}[5]{
     \begin{figure}[#1]
-        \centering
+        \aligning
         \includegraphics[width=#5\columnwidth]{#2}
         \caption[#3]{\textbf{#3}#4}
         \label{fig:#2}
@@ -57,27 +58,36 @@ frame=single,
 breaklines=true,
 columns=fullflexible
 }
-%\thiswatermark{\centering \put(181,-119.0){\includegraphics[scale=0.13]{iith_logo3}} }
+%\thiswatermark{\aligning \put(181,-119.0){\includegraphics[scale=0.13]{iith_logo3}} }
 \title{\mytitle}
 \author{\myauthor\hspace{1em}\\\contact\\FWC22034\hspace{6.5em}IITH\hspace{0.5em}\mymodule\hspace{6em}Assignment}
 \begin{document}
 	\maketitle
 	\tableofcontents
    \section{Problem}
+   \fi
  Find points on the curve $\frac{x^2}{9}+\frac{y^2}{16}=1$ at which the tangents are 
- \begin{center}
- (i) parallel to x-axis\\  
-(ii) parallel to y-axis
- \end{center}
+ \begin{enumerate}
+	 \item parallel to x-axis\\  
+	 \item parallel to y-axis
+ \end{enumerate}
+ \solution 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/6/3/13/figs/conic_1.pdf}
+		\caption{}
+		\label{fig:12/6/3/13}
+  	\end{figure}
+ \iffalse
 \section{Construction}
   \includegraphics[scale=0.5]{conic_1.pdf}
-  \begin{center}
+  \begin{align}
   Figure of construction
-  	\end{center}
+  	\end{align}
   The dimensions of the figure is taken as below\\\\
 {
 \setlength\extrarowheight{2pt}
-\centering
+\aligning
 \begin{tabular}{|c|c|}
  \hline
  \textbf{Symbol}&\textbf{Value}\\
@@ -97,12 +107,15 @@ The standard equation of the conics is given as :
 \begin{align}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
 \end{align}
-The given circle  can be expressed as conics with \\parameters
+\fi
+The parameters of the given conic are
 \begin{align}
 	\lambda_1&=16,\lambda_2=9 \\ \vec{V} &= \myvec{	\lambda_1& 0 \\
 			          0 & \lambda_2}  
 		    , \vec{u} = \myvec{0 \\0}, f = -144
+		\label{eq:12/6/3/13/params}
 	\end{align}
+	\iffalse
 	(i) Find points on the curve $\frac{x^2}{9}+\frac{y^2}{16}=1$ at which the tangents are parallel to x-axis\\
 	
 The points are given by the following equation\\
@@ -113,10 +126,32 @@ And the intermediate parameters are given by\\
 \begin{equation}
 k_i=\pm\sqrt{\frac{\vec{u}^T\vec{v}^{-1}\vec{u}-f}{\vec{n_1}^T\vec{v}^{-1}\vec{n_1}}}
 \end{equation}
-Here $\vec{n_1}$ is normal vector which is parallel to x-axis.\\
-\begin{center}
-		$\vec{n_1}=\myvec{0\\1}$\\
-\end{center}
+\fi
+\begin{enumerate}
+	\item The 
+normal vector  in this case is
+\begin{align}
+		\vec{n_1}=\myvec{0\\1}
+\end{align}
+which can be used along with the parameters in 
+		\eqref{eq:12/6/3/13/params}
+		to obtain 
+\begin{equation}
+\vec{q_1}=\myvec{0\\4},
+\vec{q_2}=\myvec{0\\-4}
+\end{equation}
+using 
+\eqref{eq:conic_tangent_qk}.
+\item Simlarly, 
+	choosing
+\begin{align}
+	\vec{n_2}&=\myvec{1\\0},
+	\\
+	\vec{q_3}&=\myvec{3\\0},
+	\vec{q_4}=\myvec{-3\\0}
+\end{align}
+\end{enumerate}
+\iffalse
 Now to obtain the k1 and k2 values substitute n1 value in equation (6)\\
 \begin{equation}
 \vec{v}^{-1}=\myvec{1/16&0\\0&1/9}
@@ -158,9 +193,9 @@ And the intermediate parameters are given by\\
 k_i=\pm\sqrt{\frac{\vec{u}^T\vec{v}^{-1}\vec{u}-f}{\vec{n_2}^T\vec{v}^{-1}\vec{n_2}}}
 \end{equation}
 Here $\vec{n_2}$ is normal vector which is parallel to y-axis.\\
-\begin{center}
+\begin{align}
 		$\vec{n_2}=\myvec{1\\0}$\\
-\end{center}
+\end{align}
 Now to obtain the k3 and k4 values substitute n2 value in equation (17)\\
 \begin{equation}
 \vec{v}^{-1}=\myvec{1/16&0\\0&1/9}
@@ -198,8 +233,9 @@ The points on the curve $\frac{x^2}{9}+\frac{y^2}{16}=1$ at which the tangents a
 \begin{equation}
 \vec{q_3}=\myvec{3\\0},\vec{q_4}=\myvec{-3\\0}
 \end{equation}
-\begin{center}
+\begin{align}
 Below python code realizes the above construction :
 \fbox{\parbox{8.5cm}{\url{https://github.com/soundaryanaru/FWC-assignments/blob/main/Matrix/Conic_assignment/code/ellipse.py}}}
-\end{center}
+\end{align}
 \end{document}
+\fi

@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[10pt,a4paper]{report}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -52,7 +52,12 @@
 
 %----------------problem statement--------------%
 \raggedright \textbf{Problem Statement:}\vspace{2mm}
-\raggedright \\Find the equations of tangent and normal to the parabola  $y^2 = 4ax$ at point (a$t^2$,2at) .\\
+\raggedright \\
+\fi
+	Find the equations of tangent and normal to the parabola  $y^2 = 4ax$ at point (a$t^2$,2at).
+	\\
+	\solution
+	\iffalse
 \vspace{5mm}
 
 %-----------------------------solution---------------------------
@@ -62,63 +67,62 @@
 \raggedright \textbf{Given}:\vspace{2mm}\\
 The given equation of parabola $y^2 = 4ax$ can be written as
 \begin{align}
-    \label{eq:conic_quad_form}
+    \label{12/6/3/22eq:conic_quad_form}
     \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
     \end{align}
 where
+\fi
+The conic parameters are
 \begin{align}
-	\label{eq:V_matrix}
+	\label{12/6/3/22eq:V_matrix}
 	\vec{V} &= \myvec{0 & 0\\0 & 1},
 	\\
-	\label{eq:u_vector}
+	\label{12/6/3/22eq:u_vector}
 	\vec{u} &= \myvec{-2a\\0},
 	\\
-	\label{eq:f_value}
+	\label{12/6/3/22eq:f_value}
 	f &= 0
 	%\\
 \end{align}
 
-
+\iffalse
 
 %-------------To find ------------------%
 \textbf{To Find }\vspace{2mm}\\
 Equation of tangent and normal at  point (a$t^2$,2at) \vspace{5mm}  \\ 
 %--------------steps----------------------%
 \textbf{STEP-1}\vspace{2mm}\\
+\fi
 The equation of tangent is given by
-\begin{center}
 \begin{align}
-\label{eq:tangent_to_conic}
+\label{12/6/3/22eq:tangent_to_conic}
  \vec{(Vq+u)}^{\top}\vec{x}+\vec{u}^{\top}\vec{q}+f =0 
 \end{align}
-\end{center}
 where
 \begin{align}
 \vec{q}=\myvec{at^2\\
 2at}
 \end{align}
-substituting $\vec{V}$, $\vec{u}$, $\vec{q}$ and f in \eqref{eq:tangent_to_conic} we get the tangent equation as\\
+substituting $\vec{V}$, $\vec{u}$, $\vec{q}$ and $f$ in \eqref{12/6/3/22eq:tangent_to_conic} we get the tangent equation as
 \begin{align}
-\myvec{-(1/t) \hspace{2mm} 1} \vec{x}=at
+	\myvec{-(1/t) & 1} \vec{x}=at
 \end{align}
-
- \textbf{STEP-2}\vspace{2mm}\\
-The equation of normal is given by
-\begin{center}
+Similarly, 
+the equation of normal is given by
 \begin{align}
-\label{eq:normal_to_conic}
+\label{12/6/3/22eq:normal_to_conic}
 \vec{m}^{\top}(\vec{x}-\vec{q})=0
 \end{align}
-\end{center}
-where $\vec{m}$ is given by:
+where 
 \begin{align}
 \vec{m}=\myvec{1\\
 1/t}
 \end{align}
-substituting $\vec{m}$,$\vec{q}$ in \eqref{eq:normal_to_conic} we get the normal equation as\\
+Substituting $\vec{m}$,$\vec{q}$ in \eqref{12/6/3/22eq:normal_to_conic}, we get the normal equation as
 \begin{align}
-\myvec{t \hspace{2mm} 1} \vec{x}=2at+at^3
+	\myvec{t & 1} \vec{x}=2at+at^3
 \end{align}
+\iffalse
 \begin{center}
 \includegraphics[scale=0.6]{../../../python/figs/conic.pdf} 
  \end{center}\vspace{1mm}
@@ -142,3 +146,4 @@ substituting $\vec{m}$,$\vec{q}$ in \eqref{eq:normal_to_conic} we get the normal
 Github link: \href{https://github.com/KrishnaYadati/Assignments/blob/main/Matrix_conic_assignment/codes/conic.py}{Assignment-6}.
   \end{multicols}
 \end{document}
+\fi

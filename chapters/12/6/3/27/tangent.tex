@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 
 \usepackage[utf8]{inputenc}
@@ -145,7 +146,17 @@ https://github.com/dukkipativijay/Fwciith2022/tree/main/Assignment%201%20-%20Ass
 \textbf{\textit{Class 12-1, Exercise 6.3,Q(27)}}\\
 \vspace{0.25cm}
 \raggedright
-\textbf{The line $y = x + 1$ is a tangent to the curve $y^2 = 4x$ at the point?} \\
+\fi
+Find the point at which the line $y = x + 1$ is a tangent to the curve $y^2 = 4x$.
+\\
+\solution 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/6/3/27/figs/conicfig.png}
+		\caption{}
+		\label{fig:12/6/3/27}
+  	\end{figure}
+	\iffalse
 \centering
 \vspace{0.25cm}
 \includegraphics[width=0.5\textwidth]{conicfig.png}
@@ -235,7 +246,25 @@ $ V = \myvec{0&0\\0&1} \hspace{2.2cm} u = \myvec{-2\\0} $ \\
 Hence, the Eq. (6) of our Parabola can be written in the form of Conic Eq. (2) as,\\
 \vspace{0.25cm}
 \centering
-$\vec{x^T} \myvec{0&0\\0&1}\vec{x} + 2 \myvec{-2&0} \vec{x} + 0 = 0$ \hspace{0.5cm} (8)\\ 
+\fi
+The parameters of the conic are
+\begin{align}
+ \vec{V} = \myvec{0&0\\0&1},  \vec{u} = \myvec{-2&0}, f = 0 
+\end{align}
+Following the approach in Problem 
+\ref{chapters/12/6/3/15},
+since
+\begin{align}
+	\vec{n} = \myvec{1 \\ -1}
+\end{align}
+we obtain
+\begin{align}
+	\vec{q} = \myvec{1 \\ 2}
+\end{align}
+See Fig. 
+		\ref{fig:12/6/3/27},
+
+\iffalse
 \vspace{0.25cm}
 \raggedright
 Let us consider the direction vector of \textbf{L} as m,\\
@@ -307,3 +336,4 @@ $ P = \myvec{1\\2}$ \\
 Is the required point of contact of the given line and the conic.
 \end{document}
 Footer
+\fi
