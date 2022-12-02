@@ -3,12 +3,12 @@
 		\item
   The points of intersection of the line 
 \begin{align}
-L: \quad \vec{x} = \vec{q} + \mu \vec{m} \quad \mu \in \mathbb{R}
+L: \quad \vec{x} = \vec{h} + \mu \vec{m} \quad \mu \in \mathbb{R}
 \label{eq:conic_tangent}
 \end{align}
 with the conic section in \eqref{eq:conic_quad_form} are given by
 \begin{align}
-\vec{x}_i = \vec{q} + \mu_i \vec{m}
+\vec{x}_i = \vec{h} + \mu_i \vec{m}
 	\label{eq:chord-pts}
 \end{align}
 %
@@ -18,18 +18,18 @@ where
 {
 \vec{m}^{\top}\vec{V}\vec{m}
 }
-\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}}
+\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}
 \\
 \pm
 {\small
 \rbrak{\sqrt{
 \sbrak{
-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}
 }^2
--
+	-\text{g}
 \brak
-{
-\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+{\vec{h}
+%\vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
 }
 \brak{\vec{m}^{\top}\vec{V}\vec{m}}
 }
@@ -44,12 +44,18 @@ where
   Substituting \eqref{eq:conic_tangent}
 in \eqref{eq:conic_quad_form}, 
 \begin{align}
-\brak{\vec{q} + \mu \vec{m}}^{\top}\vec{V}\brak{\vec{q} + \mu \vec{m}}  + 2 \vec{u}^{\top}\brak{\vec{q} + \mu \vec{m}}+f &= 0
+\brak{\vec{h} + \mu \vec{m}}^{\top}\vec{V}\brak{\vec{h} + \mu \vec{m}}  + 2 \vec{u}^{\top}\brak{\vec{h} + \mu \vec{m}}+f &= 0
 \\
-\implies \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} 
-+ \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f &= 0
+\implies \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} 
++ \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f &= 0
+	\\
+	\text{or, }
+\mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} 
+	+ \text{g}\brak{\vec{h}} &=0
+	%^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f &= 0
 \label{eq:conic_intercept}
 \end{align}
+for g defined in \eqref{eq:conic_quad_form}.
 Solving the above quadratic in \eqref{eq:conic_intercept}
 yields \eqref{eq:tangent_roots}.
 \end{proof}
@@ -67,16 +73,19 @@ yields \eqref{eq:tangent_roots}.
   \sbrak{
   \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
   }^2 -\brak{\vec{m}^{\top}\vec{V}\vec{m}}
-  \brak
+	  \text{g}\brak
   {
-  \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+  \vec{q}
+%  \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
   } = 0                                                                                             
   \label{eq:conic_tangent_disc}
   \end{align}                    
-  $\because \vec{q}$ is the point of contact, $\vec{q}$ satisfies \eqref{eq:conic_quad_form}
-  and 
+  $\because \vec{q}$ is the point of contact,
+	%$\vec{q}$ satisfies \eqref{eq:conic_quad_form}
+%  and 
   \begin{align}
-  \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f = 0
+	  \text{g}\brak{  \vec{q}} = 0
+%  \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f = 0
   \label{eq:conic_tangent_qquad}
   \end{align}
   Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
@@ -88,12 +97,12 @@ is given by
 \begin{align}
  \frac{2\sqrt{
 \sbrak{
-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}
 }^2
 -
 \brak
 {
-\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+\vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
 }
 \brak{\vec{m}^{\top}\vec{V}\vec{m}}
 }
