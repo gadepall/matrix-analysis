@@ -266,6 +266,43 @@ From
 %\end{align}
 \end{proof}
 \fi
+\item  A point $\vec{h}$ lies on a tangent to the conic in \eqref{eq:conic_quad_form} if 
+\begin{align}
+  \vec{m}^{\top}  \sbrak{\brak{\vec{V}\vec{h}+\vec{u}}
+	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
+   -\vec{V}
+	  \text{g}\brak{
+  \vec{h}
+	  }
+	  }\vec{m} 
+	  &= 0                                                                                             
+	  \label{eq:h-tangents-cond}
+\end{align}
+\begin{proof}
+ From \eqref{eq:tangent_roots}
+ and
+  \eqref{eq:conic_tangent_disc}
+  \begin{align}
+  \sbrak{
+  \vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}
+  }^2 -\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+	  \text{g}\brak{
+  \vec{h}
+	  }
+	  &= 0                                                                                             
+	  \iffalse
+  \\
+	  \implies 
+  \brak
+  {
+  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+  }
+\fi
+  \label{eq:conic_tangent_disc-h}
+  \end{align}                    
+  yielding
+	  \eqref{eq:h-tangents-cond}.
+\end{proof}
 \item
 	The normal vectors of the tangents 
 to the conic in \eqref{eq:conic_quad_form} 
@@ -295,68 +332,17 @@ to the conic in \eqref{eq:conic_quad_form}
   }\vec{V}.
 	  \label{eq:h-tangents-sigma}
   \end{align}                    
-
-\begin{proof}
- From \eqref{eq:tangent_roots},
- and
-  \eqref{eq:conic_tangent_disc}
-  \begin{align}
-  \sbrak{
-  \vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}
-  }^2 -\brak{\vec{m}^{\top}\vec{V}\vec{m}}
-	  \text{g}\brak{
-  \vec{h}
-	  }
-	  \iffalse
-  \brak
-  {
-  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
-  } 
-  \fi
-	  &= 0                                                                                             
-  \\
-	  \implies 
-  \vec{m}^{\top}  \sbrak{\brak{\vec{V}\vec{h}+\vec{u}}
-	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
-   -\vec{V}
-	  \text{g}\brak{
-  \vec{h}
-	  }
-	  \iffalse
-  \brak
-  {
-  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
-  }
-\fi
-	  }\vec{m} 
-	  &= 0                                                                                             
-  \label{eq:conic_tangent_disc-h}
-  \end{align}                    
-  yielding
+  \begin{proof}
+	  From 
+	  \eqref{eq:h-tangents-cond} we obtain
 	  \eqref{eq:h-tangents-sigma}.  Consequently, from 
   \eqref{eq:quad_form_pair_normvecs}, 
   \eqref{eq:quad_form_pair_normvecs-sigma}
   can be obtained.
-\end{proof}
-%
-\item The point of contact for the normal passing through a point $\vec{h}$ is given by 
-\begin{align}
-	\label{eq:point_of_tangency}
-	\vec{q} = \vec{h} + \mu\vec{n}
-	%\vec{q} = \vec{h} + \mu\vec{R}\vec{m}
-\end{align}
-where
-\begin{align}
-	\label{eq:point_of_tangency-mu}
-	\mu &=- \frac  {\vec{m}^\top(\vec{Vh}+\vec{u})}{\vec{m}^\top\vec{V}\vec{n}},
-	%\mu &=- \frac  {\vec{m}^\top(\vec{Vh}+\vec{u})}{\vec{m}^\top\vec{V}\vec{R}\vec{m}},
-	\\
-	\label{eq:point_of_tangency-mn}
-	\vec{n} &= \myvec{-m \\ 1},
-	\vec{m} = \myvec{1 \\ m}
-\end{align}
-%$\vec{R}$ is the rotation matrix,
-and $m$ is the root of 
+  \end{proof}
+
+\item A point $\vec{h}$ lies on a normal to the conic in \eqref{eq:conic_quad_form} 
+	if
 \begin{multline}
 	\label{eq:point_of_tangency-m}
 	\brak{ {\vec{m}^\top(\vec{Vh}+\vec{u})}}^2\brak{\vec{n}^{\top}\vec{V}\vec{n}} - 2\brak{\vec{m}^\top\vec{V}\vec{n}} \brak{ {\vec{m}^\top(\vec{Vh}+\vec{u})}\vec{n}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}} 
@@ -367,25 +353,13 @@ and $m$ is the root of
 %	\vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f 
 	= 0
 \end{multline}
-\iffalse
-\begin{align}
-	\label{eq:point_of_tangency-m}
-	\brak{{\vec{m}^\top(\vec{Vh}+\vec{u})}}^2
-	\brak{\vec{m}^{\top}\vec{V}\brak{\vec{m} - 2\vec{n}}}  
-	%\brak{\vec{m}^{\top}\vec{V}\brak{\vec{I} - 2\vec{R}}\vec{m}}  
-+  \text{g}\brak{
-  \vec{h}
-	  }\brak{\vec{m}^\top\vec{V}\vec{n}}^2
-	  %}\brak{\vec{m}^\top\vec{V}\vec{R}\vec{m}}^2
-	&= 0
-\end{align}
-\begin{multline}
-	\sbrak{\sbrak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}\brak{\vec{n}^\top\vec{V}\vec{m}}^2 \\ = \sbrak{\brak{\vec{Vh}+\vec{u}}^\top\brak{\brak{\vec{n}^\top\vec{V}\vec{m}}\vec{m}-\brak{\vec{m}^\top\vec{V}\vec{m}}\vec{n}}}^2
-%	\label{eq:normal_solution}
-\end{multline
-}
-	\fi
 \begin{proof}
+The point of contact for the normal passing through a point $\vec{h}$ is given by 
+\begin{align}
+	\label{eq:point_of_tangency}
+	\vec{q} = \vec{h} + \mu\vec{n}
+	%\vec{q} = \vec{h} + \mu\vec{R}\vec{m}
+\end{align}
 From 
   \eqref{eq:conic_tangent_mq},
 	the tangent at $\vec{q}$ satisfies 
@@ -403,7 +377,18 @@ Substituting \eqref{eq:point_of_tangency} in \eqref{eq:tangency_condition},
 	%\implies \mu\vec{m}^\top\vec{V}\vec{R}\vec{m} = -\vec{m}^\top(\vec{Vh}+\vec{u})
 \end{align}
 yielding 
-	\eqref{eq:point_of_tangency-mu}.
+\begin{align}
+	\label{eq:point_of_tangency-mu}
+	\mu &=- \frac  {\vec{m}^\top(\vec{Vh}+\vec{u})}{\vec{m}^\top\vec{V}\vec{n}},
+	%\mu &=- \frac  {\vec{m}^\top(\vec{Vh}+\vec{u})}{\vec{m}^\top\vec{V}\vec{R}\vec{m}},
+%	\iffalse
+%	\\
+%	\label{eq:point_of_tangency-mn}
+%	\vec{n} &= \myvec{-m \\ 1},
+%	\vec{m} = \myvec{1 \\ m}
+%	\fi
+\end{align}
+%	\eqref{eq:point_of_tangency-mu}.
 	From 
 \eqref{eq:conic_intercept},
 \begin{align}
@@ -439,15 +424,41 @@ From
 %	\vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f 
 	&= 0,
 \end{align}
-\fi
 which, from 
 	\eqref{eq:point_of_tangency-mu}
 	and 
 	\eqref{eq:point_of_tangency-mn}
-	yields
+\fi
+	yielding
 	\eqref{eq:point_of_tangency-m}.
 \end{proof}
+%
 \iffalse
+\item The point of contact for the normal passing through a point $\vec{h}$ is given by 
+\begin{align}
+	\label{eq:point_of_tangency}
+	\vec{q} = \vec{h} + \mu\vec{n}
+	%\vec{q} = \vec{h} + \mu\vec{R}\vec{m}
+\end{align}
+where
+%$\vec{R}$ is the rotation matrix,
+and $m$ is the root of 
+\begin{align}
+	\label{eq:point_of_tangency-m}
+	\brak{{\vec{m}^\top(\vec{Vh}+\vec{u})}}^2
+	\brak{\vec{m}^{\top}\vec{V}\brak{\vec{m} - 2\vec{n}}}  
+	%\brak{\vec{m}^{\top}\vec{V}\brak{\vec{I} - 2\vec{R}}\vec{m}}  
++  \text{g}\brak{
+  \vec{h}
+	  }\brak{\vec{m}^\top\vec{V}\vec{n}}^2
+	  %}\brak{\vec{m}^\top\vec{V}\vec{R}\vec{m}}^2
+	&= 0
+\end{align}
+\begin{multline}
+	\sbrak{\sbrak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2-\brak{\vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}\brak{\vec{n}^\top\vec{V}\vec{m}}^2 \\ = \sbrak{\brak{\vec{Vh}+\vec{u}}^\top\brak{\brak{\vec{n}^\top\vec{V}\vec{m}}\vec{m}-\brak{\vec{m}^\top\vec{V}\vec{m}}\vec{n}}}^2
+%	\label{eq:normal_solution}
+\end{multline
+}
 \item The point of contact for the normal passing through a point $\vec{h}$ is given by 
 \begin{align}
 %	\label{eq:point_of_tangency}
