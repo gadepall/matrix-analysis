@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -46,7 +47,18 @@
 
 %----------------problem statement--------------%
 \raggedright \textbf{Problem Statement:}\vspace{2mm}
-\raggedright \\ Find the area of the region bounded by the parabola $y=x^2$ and $y= |x|$.\\
+\raggedright \\ 
+\fi
+	Find the area of the region bounded by the parabola $y=x^2$ and $y= \abs{x}$.
+	\\
+	\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/1/9/figs/con3.pdf}
+		\caption{}
+		\label{fig:12/8/1/9}
+  	\end{figure}
+	\iffalse
 \vspace{5mm}
 %-----------------------------solution---------------------------
 \raggedright \textbf{SOLUTION}:\vspace{2mm}\\
@@ -71,6 +83,7 @@ To find the intersection points and area of shaded region shown in figure\vspace
 The given parabola and line can be expressed as conics with parameters,\\ \vspace{1mm}
 
 For Parabola,\\\vspace{1mm}
+The conic parameters are
 \begin{align}
 \vec{V}_1=\myvec{
 1 & 0\\
@@ -229,3 +242,4 @@ main/assignment6
   \end{multicols}
 \end{document}
 Footer
+\fi

@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx, float}
 \usepackage[margin=0.5in]{geometry}
@@ -36,26 +37,29 @@
 %\let\vec\mathbf
 
 \title{\textbf{Conic Assignment}}
-\author{Srinivas Dulla \hspace{9cm} FWC22041}
+\author{Namrath Pinnamaneni \hspace{9cm} FWC22042}
 \date{September 2022}
 
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} - The normal at the point (1,1) on the curve \(2y+x^2=3\) :\\
-(a)x+y=0  \hspace{2cm} (b)x-y=0\\ 
-(c)x+y+1=0 \hspace{2cm}  (d)x-y=1\\}
+\paragraph{\textit{Problem Statement} -
+\fi
+Find the normal to the curve $x_2=4y$ passing (1,2). 
+\iffalse
+(a)x+y=3  \hspace{2cm} (b)x-y=3\\ 
+(c)x+y=1 \hspace{2cm}  (d)x-y=1\\}
 
 \section*{\large Solution}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=1\columnwidth]{cone.jpg}
+\includegraphics[width=1\columnwidth]{conic.png}
 \caption{Tangents from A to circle through B, C and D}
 \label{fig:triangle}
 \end{figure}
 
-The given equation of parabola 2y$+$x^2 = 3$ can be written in the general quadratic form as
+The given equation of parabola $x^2 = 4y$ can be written in the general quadratic form as
 \begin{align}
     \label{eq:conic_quad_form}
     \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
@@ -69,138 +73,8 @@ where
 	\vec{u} &= \myvec{0\\-2},
 	\\
 	\label{eq:f_value}
-	f &= 3
+	f &= 0
 	%\\
-\end{align}
-
-The parabola in (\ref{eq:conic_quad_form}) can be expressed in standard form (center/vertex at origin, major-axis - $x$ axis) as
-\begin{align}
-	\label{eq:conic_simp_parab}
-	\vec{y}^{\top}\vec{D}\vec{y} &=  -2\eta\vec{e}_1^{\top}\vec{y}   & \abs{V} &= 0
-\end{align}
- where
-\begin{align}
-	\label{eq:conic_affine}
-	\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
-\end{align}
-\begin{align}
-	\label{eq:conic_parmas_eig_def}
-	\vec{P}^{\top}\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
-	\\
-	\label{eq:eigevalV}
-	\vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
-	\\
-	\vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^{\top}=\vec{P}^{-1},
-	\label{eq:eigevecP}
-	\\
-	\label{eq:eta}
-	\eta &=\vec{u}^{\top}\vec{p}_1
-	\\
-	\vec{e}_1 &=\myvec{1 \\ 0}
-	\end{align}
-
-To find $\vec{c}$ which is the center of the parabola in (\ref{eq:conic_quad_form}), substitute (\ref{eq:conic_affine}) in (\ref{eq:conic_quad_form})
-\begin{multline}
-\brak{\vec{P}\vec{y}+\vec{c}}^T\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^T\brak{\vec{P}\vec{y}+\vec{c}} + f = 0, 
-\end{multline}
-yielding 
-\begin{multline}
-\vec{y}^T\vec{P}^T\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y} +  \vec{c}^T\vec{V}\vec{c} 
-\\
-+2\vec{u}^T\vec{c} + f= 0
-\label{eq:conic_simp_one}
-\end{multline}
-%
-From \eqref{eq:conic_simp_one} and \eqref{eq:conic_parmas_eig_def},
-\begin{multline}
-\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y} +  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}
-\\
-+ \vec{u}^T\vec{c} + f= 0
-\label{eq:conic_simp}
-\end{multline}
-For a parabola $\abs{\vec{V}} = 0, \lambda_1 = 0$ and
-\begin{align}
-\vec{V}\vec{p}_1 = 0, 
-\vec{V}\vec{p}_2 = \lambda_2\vec{p}_2.
-\label{eq:conic_parab_eig_prop} 
-\end{align}
-where $\vec{p}_1,\vec{p}_2$ are the eigenvectors of $\vec{V}$ such that  \eqref{eq:conic_parmas_eig_def}
-%
-\begin{align}
-\vec{P} = \myvec{\vec{p}_1 & \vec{p}_2},
-\label{eq:eig_matrix}
-\end{align}
-Substituting \eqref{eq:eig_matrix}
-in \eqref{eq:conic_simp},
-\begin{multline}
-	\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{c}^T\vec{V}+\vec{u}^T}\myvec{\vec{p}_1 & \vec{p}_2}\vec{y}
-\\
-+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-\\
-\implies \vec{y}^T\vec{D}\vec{y}
-\\
-+2\myvec{\brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_1  \brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_2}\vec{y}
-\\
-+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-\\
-\implies \vec{y}^T\vec{D}\vec{y}
-\\
-+2\myvec{\vec{u}^T\vec{p}_1 & \brak{\lambda_2\vec{c}^T+\vec{u}^T}\vec{p}_2}\vec{y}
-\\
-+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-\text{ from } \eqref{eq:conic_parab_eig_prop}     \nonumber \\
-\\
-\implies \lambda_2y_2^2+2\brak{\vec{u}^T\vec{p}_1}y_1+  2y_2\brak{\lambda_2\vec{c}+\vec{u}}^T\vec{p}_2
-\\
-+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-\label{eq:conic_parab_foc_len_temp} 
-\end{multline}
-which is the equation of a parabola. 
-Thus, \eqref{eq:conic_parab_foc_len_temp} 
-can be expressed as \eqref{eq:conic_simp_parab} by choosing
-\begin{align}
-%\label{eq:eta}
-\eta = \vec{u}^T\vec{p}_1
-\end{align}
-and $\vec{c}$ in \eqref{eq:conic_simp} such that
-\begin{align}
-\label{eq:conic_parab_one}
-\vec{P}^{T}\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\myvec{1\\0}
-\\
-\vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f&= 0
-\label{eq:conic_parab_two}
-\end{align}
-Multiplying \eqref{eq:conic_parab_one} by $\vec{P}$ yields
-\begin{align}
-\label{eq:conic_parab_one_eig}
-\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\vec{p}_1,
-\end{align}
-which, upon substituting in \eqref{eq:conic_parab_two}
-results in 
-\begin{align}
-\eta\vec{c}^T\vec{p}_1 + \vec{u}^T\vec{c} + f&= 0
-\label{eq:conic_parab_two_eig}
-\end{align}
-\eqref{eq:conic_parab_one_eig} and \eqref{eq:conic_parab_two_eig} can be clubbed together to obtain \eqref{eq:conic_parab_c}.
-\begin{align}
-    \myvec{ \vec{u}^{\top}+\eta\vec{p}_1^{\top} \\ \vec{V}}\vec{c} &= \myvec{-f \\ \eta\vec{p}_1-\vec{u}}  &\abs{V} &= 0
-    \label{eq:conic_parab_c}
-    \end{align}
-Substituting appropriate values from \eqref{eq:V_matrix}, \eqref{eq:u_vector}, \eqref{eq:f_value}, \eqref{eq:eigevecP}, and \eqref{eq:eta} into \eqref{eq:conic_parab_c}, the below matrix equation is obtained
-\begin{align}
-	\label{eq:vertex_system}
-	\myvec{0&-4\\1& 0\\0& 0}\vec{c} = \myvec{0 \\0 \\0}\\
-\end{align}
-The augmented matrix for \eqref{eq:vertex_system} can be expressed as
-\begin{align}
-	\label{eq:vertex_solv1}
-	\myvec{0&-4&\vrule&0\\1&0&\vrule&0\\0&0&\vrule&0}\\ 	
-	\label{eq:vertex_solv2}
-	\xleftrightarrow[]{R_1 \leftrightarrow R_2}\myvec{1&0&\vrule&0\\0&-4&\vrule&0\\0&0&\vrule&0}\\
-	\label{eq:vertex_solv3}
-	\xleftrightarrow[]{-\frac{R_2}{4} \leftarrow R_2}\myvec{1&0&\vrule&0\\0&1&\vrule&0\\0&0&\vrule&0}\\
-	\label{eq:vertex_solv4}
-	\implies\vec{c} = \myvec{0\\0}
 \end{align}
 
 Let the point from which normals are drawn be $\vec{h}$. Then, the equation of the normal can be written as
@@ -309,9 +183,8 @@ where $\vec{h} = \myvec{1 \\ 2}$, $\vec{m} = \myvec{-1 \\ 1}$, $\lambda_i = -1$
 	\hline
 	$\vec{n}$ & $\myvec{1 \\ 1}$ & Direction Vector of Tangent at $\myvec{q}$\\
 	\hline
-	$\vec{P}$&\myvec{0&1\\1&0}&eigenvectors of $\vec{V}$\\[5pt]
-	\hline
 \end{tabular}
 }
 
 \end{document}
+\fi

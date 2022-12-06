@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
@@ -38,7 +39,17 @@
 \begin{multicols}{2}
 
 \section{Problem:}  
+\fi
 Find the area bounded by the curve $x^2=4y$ and the line $x=4y-2$.
+\\
+\solution 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/1/10/figs/conic.png}
+		\caption{}
+		\label{fig:12/8/1/10}
+  	\end{figure}
+\iffalse
 
 \section{Solution: }
 \raggedright \textbf{Input Parameters :}\\ \vspace{2mm}
@@ -60,17 +71,22 @@ The standard equation of the conics is given as :
 \begin{align}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
 \end{align}
-The given curve  can be expressed as conics with \\parameters
+\fi
+The given curve  can be expressed as a conic with parameters
 \begin{align}
 	\vec{V} &= \myvec{1 & 0\\0 & 0}, \vec{u} = \myvec{0 \\-2}, f = 0
 	\end{align}
+\iffalse
 
 \raggedright \textbf{Step - 2 :}\\ \vspace{2mm}
 Line Equation : $x=4y-2$. \\ \vspace{1mm}
-From the above line equation below vectors are taken
+\fi
+The parameters of the given line are
 \begin{align}
 \vec{q} = \myvec{-2 \\0} , \vec{m}=\myvec{4\\1}
 \end{align}
+The points of intersection can then be obtained from \eqref{eq:tangent_roots} as
+\iffalse
 
 \raggedright \textbf{Step - 3 :}\\ \vspace{2mm}
 The points of intersection of the line, \\ 
@@ -112,24 +128,25 @@ where, \\
 \raggedright On substituting $\vec{V},\vec{q} ,\vec{m}$ in the above equation,
 we get the values of $\mu$. By substituting the values of $\mu$ in eq(6), \\we get the points of intersection of line with the given curve. \\
 \centering $i.e., \vec{x}_1,\vec{x}_2$\\ 
+\fi
 
 \begin{align}
 \therefore \vec{x}_1=\myvec{2\\1} , \vec{x}_2=\myvec{-1\\ \frac{1}{4}}
 \end{align}
+\iffalse
 
 \raggedright \textbf{Step - 4 :}\\ \vspace{2mm}
 The area bounded by the curve $x^2=4y$ and line $x=4y-2$ is given by\\
-
+\fi
+The desired area is then obtained as
 \begin{align}
-\implies A=\int_{x_2}^{x_1} [f(x)-g(x)] \,dx
+	A&=\int_{x_2}^{x_1} [f(x)-g(x)] \,dx
+	\\
+	&=\int_{-1}^{2} \brak{\frac{x+2}{4}-\frac{x^2}{4}} \,dx
+	\\
+	& = \frac{9}{8} 
 \end{align}
-
-\begin{align}
-\implies A=\int_{-1}^{2} (\frac{x+2}{4}-\frac{x^2}{4}) \,dx
-\end{align}
-
-\centering By solving we get the required area\\
-$\therefore A = \frac{9}{8}$ 
+\iffalse
 
 \raggedright \textbf{Code Link :}\\ \vspace{2mm}
 The below link realises the code of the above construction.\\
@@ -151,3 +168,4 @@ The below link realises the code of the above construction.\\
  
 \end{multicols}
 \end{document}
+\fi

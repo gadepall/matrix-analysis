@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}                                                                           
    \usepackage{amsmath}
    \usepackage{amsfonts}
@@ -43,7 +44,18 @@
   %----------------problem statement--------------%
  \raggedright \textbf{Problem Statement:} \vspace{2mm}
 
-	  \textbf{Find the area of the region in the first quadrant enclosed by x-axis, line $x=\sqrt{3}y$ and circle $x^2+y^2=4$.} \\
+	  \textbf{
+\fi
+		  Find the area of the region in the first quadrant enclosed by the x-axis, line $x=\sqrt{3}y$ and circle $x^2+y^2=4$.
+		  \\
+		  \solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/1/6/figs/conics-fig.pdf} 
+		\caption{}
+		\label{fig:12/8/1/6}
+  	\end{figure}
+\iffalse
 	  \vspace{3mm}
 \textbf{Figure:}
 \raggedright 
@@ -53,13 +65,15 @@
 \end{center}
 	  \textbf{Solution:} \\
 \vspace{0.25cm}
-  From the given information,
+\fi
+  From the given information, the parameters of the  circle and line are
                       \begin{align}
-                              x^2 +y^2 &= 4
-                              \\                                                                             
-			      x - \sqrt{3}y &= 0
+			      f= -4, \vec{u}=\vec{0}, \vec{V}=\vec{I}, \vec{m}=\myvec{1 \\ \sqrt{3}}, \vec{h} = \vec{0}
+		\label{eq:12/8/1/6}
                     \end{align}                                                                              
-		    the above equations can be expressed in vector form as      
+Substituting		    the above parameters in  
+\eqref{eq:tangent_roots},
+\iffalse
 		    \begin{align}                                                                             
 		    \label{eq:cbse-2020-circ}                                                                 
 		    \vec{x}^{\top}\vec{x} &= r^2               \\                                             
@@ -108,15 +122,16 @@ yielding
                             \vec{A} &= \myvec{0 \\ 0},  r^2 = 4                                             
 	  \end{align}                                                                                 
 	  Substituting the above values in equation (8) we get                                                        
+	  \fi
 	  \begin{align}                                                                               
-		  \lambda = \sqrt{3}
+		  \mu= \sqrt{3}
 	  \end{align}
-	  By substituting the values in equation (5)
-the desired point of intersection is                                               
+	  yielding  
+the desired point of intersection as                                               
 \begin{align}
-	\vec{x} &= \myvec{0\\ 0} + \sqrt{3} \myvec{1 \\ 1/\sqrt{3}}        \\                        
-	\vec{x} &= \myvec{\sqrt{3} \\ 1}                               
+	\vec{x} = \myvec{\sqrt{3} \\ 1}                               
 \end{align}
+\iffalse
 we have $\vec O$ = $\begin{pmatrix} 0 \\ 0 \end{pmatrix}$ 
 	$\vec x$ = $\begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}$ 
 		$\vec p$ = $\begin{pmatrix} 2 \\ 0 \end{pmatrix}$ \\
@@ -130,20 +145,23 @@ The angle between two vectors is given by
 	\theta =\cos^{-1}  \frac{\vec {X^{\top}P}}{\norm{\vec X}\norm{\vec P}}
 \end{align}
 By substitting (14) and (15) in equation (16) we get 
+\fi
+From
+		\eqref{eq:12/8/1/6},
+		the angle between the given line and the x axis is
 \begin{align}
-	\theta=30^\circ
-\end{align} \\
-The area of the sector is \\
+	\theta=30\degree
+\end{align} 
+and
+the area of the sector is 
 \begin{align}
-	{\frac{\theta}{360}}\pi r^2
-\end{align}
-By substituting the values in above equation \\
-the desired region  area is
-\begin{align}
+	{\frac{\theta}{360}}\pi r^2=
 	\frac{\pi}{3}
 \end{align}
+\iffalse
 \vspace{5mm}
 Github link: \href{https://github.com/Prathyushakorepu/FWC/tree/main/Matrix/Conic}{Assignment-6}.
 \bibliographystyle{ieeetr}
 \end{multicols}{2}
 \end{document}
+\fi
