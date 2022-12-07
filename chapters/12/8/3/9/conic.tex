@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -50,8 +51,18 @@
 
 %----------------problem statement--------------%
 \raggedright \textbf{Problem Statement:}\vspace{2mm}
-\raggedright \\Find the area of the smaller region bounded by the ellipse $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$
-and the line $\frac{x}{a}+\frac{y}{b}=1$\\
+\raggedright \\
+\fi
+	Find the area of the smaller region bounded by the ellipse $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$
+and the line $\frac{x}{a}+\frac{y}{b}=1$.\\
+\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/9/figs/conic_fig.png}    
+		\caption{}
+		\label{fig:12/8/3/9}
+  	\end{figure}
+\iffalse
 \vspace{5mm}
 %-----------------------------solution---------------------------
 \raggedright \textbf{SOLUTION}:\vspace{2mm}\\
@@ -71,24 +82,21 @@ Equation of line is \\ \vspace{1mm}
 To find the intersection points and area of shaded region shown in figure\vspace{2mm}  \\ 
 %--------------steps----------------------%
 \textbf{STEP-1}\vspace{2mm}\\
-The given ellipse can be expressed as conics with parameters,\\ \vspace{1mm}
+\fi
+The given ellipse can be expressed as a conic with parameters
 \begin{align}
 \vec{V}=\myvec{
 b^2 & 0\\
 0 & a^2
-}
+},
+\vec{u}=0,
+f=-(a^2b^2).
 \end{align}
-
-\begin{align}
-\vec{u}=0
-\end{align} 
-\begin{align}
-f=-(a^2b^2)
-\end{align} \vspace{2mm}
-
-
+\iffalse
 \textbf{STEP-2}\vspace{2mm}\\
-the given line equation can be written as\\ 
+\fi
+The given line parameters are
+\iffalse
 \begin{align} 
 	\vec{x}=\begin{pmatrix}a \\ 0 \\ \end{pmatrix}+k\begin{pmatrix}\frac{1}{b} \\ -\frac{1}{a} \\ \end{pmatrix}
 \end{align}
@@ -131,35 +139,41 @@ where, \\
 \end{multline}
 }
 On substituting\\
+\fi
 \begin{align}
-\vec{q} &= \myvec{
+\vec{h} &= \myvec{
 a\\
 0
-} 
+}, 
+\vec{m} = \myvec{\frac{1}{b} \\ -\frac{1}{a}}.
 \end{align}
-\begin{align}
-\vec{m} = \myvec{\frac{1}{b} \\ -\frac{1}{a}}
-\end{align}
+Substituting the given parameters in \eqref{eq:tangent_roots}
+\iffalse
 With the given ellipse as in eq(3),(4),(5),\\ 
 
 The value of $\kappa$ ,\\
+\fi
 \begin{align}
-    \kappa =0,-6
+    \mu=0,-6
 \end{align}
+yielding
+\iffalse
 by substituting eq(13) in eq(6)we get the
-points of intersection of line with ellipse \\
+\fi
+the points of intersection 
 \begin{align}
     \vec{A}=\myvec{
 a\\
 0
-    }
-\end{align}
-\begin{align}
+    },
     \vec{B}=\myvec{
 0\\
 b
     }
 \end{align}
+From Fig.
+		\ref{fig:12/8/3/9},
+		\iffalse
 \textbf{Result}
 \begin{center}
  \includegraphics[scale=0.5]{fig/conic_fig.png}    
@@ -170,26 +184,14 @@ Total Area=(area of ellipse in first quadrant)-(area of a triangle\textbf{AOB})
 
 \subsection*{Area of triangle}
 
+\fi
+the desired area is
 \begin{align}
-\implies A1=\int_{0}^{a} \frac{b}{a}(a-x) \,dx
+\int_{0}^{a}\frac{b}{a}\sqrt{a^2-x^2} \,dx 
+-\int_{0}^{a} \frac{b}{a}(a-x) \,dx
+	= \frac{ab}{2}\brak{\frac{\pi}{2}-1}
 \end{align}
-by solving the above equation we get area of triangle \textbf{$\frac{ab}{2}$}
-\subsection*{Area of ellipse}
-
-\begin{align} 
-\implies A2=\int_{0}^{a}\frac{b}{a}\sqrt{a^2-x^2} \,dx 
-\end{align}
-by solving the above equation we get area of ellipse $\frac{\pi ab}{4}$
-
-the total area is
-
-\vspace{3mm}
-$\implies A=\frac{\pi ab}{4}-\frac{ab}{2}$\vspace{3mm}
-
-The area of the smaller region is ,
-\begin{align}
-\hspace{-4.25cm}A= \frac{ab}{2}(\frac{\pi}{2}-1)
-\end{align}
+\iffalse
  \vspace{2mm} \textbf{Construction}
 \begin{center}
 \setlength{\arrayrulewidth}{0.5mm}
@@ -222,3 +224,4 @@ Get the python code of the figures from
  
 \end{document}
  
+\fi

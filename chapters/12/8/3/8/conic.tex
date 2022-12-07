@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -50,8 +51,18 @@
 
 %----------------problem statement--------------%
 \raggedright \textbf{Problem Statement:}\vspace{2mm}
-\raggedright \\Find the area of the smaller region bounded by the ellipse $\frac{x^2}{9}+\frac{y^2}{4}=1$
-and the line $\frac{x}{3}+\frac{y}{2}=1$\\
+\raggedright \\
+\fi
+	Find the area of the smaller region bounded by the ellipse $\frac{x^2}{9}+\frac{y^2}{4}=1$
+and the line $\frac{x}{3}+\frac{y}{2}=1$.\\
+\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/8/figs/conic_fig.png}
+		\caption{}
+		\label{fig:12/8/3/8}
+  	\end{figure}
+\iffalse
 \vspace{5mm}
 %-----------------------------solution---------------------------
 \raggedright \textbf{SOLUTION}:\vspace{2mm}\\
@@ -71,24 +82,18 @@ The general equation of line is \\ \vspace{1mm}
 To find the intersection points and area of shaded region shown in figure\vspace{2mm}  \\ 
 %--------------steps----------------------%
 \textbf{STEP-1}\vspace{2mm}\\
-The given ellipse can be expressed as conics with parameters,\\ \vspace{1mm}
+\fi
+The given ellipse can be expressed as conics with parameters
 \begin{align}
 \vec{V}=\myvec{
 b^2 & 0\\
 0 & a^2
-}
-\end{align}
-
-\begin{align}
-\vec{u}=0
+},
+\vec{u}=0,
+f=-(a^2b^2).
 \end{align} 
-\begin{align}
-f=-(a^2b^2)
-\end{align} \vspace{2mm}
-
-
-\textbf{STEP-2}\vspace{2mm}\\
-the given line equation can be written as\\ 
+The line parameters are
+\iffalse
 \begin{align} 
 	\vec{x}=\begin{pmatrix}a \\ 0 \\ \end{pmatrix}+k\begin{pmatrix}\frac{1}{b} \\ -\frac{1}{a} \\ \end{pmatrix}
 \end{align}
@@ -131,35 +136,41 @@ where, \\
 \end{multline}
 }
 On substituting\\
+\fi
 \begin{align}
-\vec{q} &= \myvec{
+\vec{h} &= \myvec{
 a\\
 0
-} 
+},
+\vec{m} = \myvec{\frac{1}{b} \\ -\frac{1}{a}}.
 \end{align}
-\begin{align}
-\vec{m} = \myvec{\frac{1}{b} \\ -\frac{1}{a}}
-\end{align}
+\iffalse
 With the given ellipse as in eq(3),(4),(5),\\ 
 
 The value of $\kappa$ ,\\
+\fi
+Substituting the given parameters in \eqref{eq:tangent_roots},
 \begin{align}
-    \kappa =0,-6
+    \mu=0,-6
 \end{align}
+yielding the points of intersection
+\iffalse
 by substituting eq(13) in eq(6)we get the
 points of intersection of line with ellipse \\
+\fi
 \begin{align}
     \vec{A}=\myvec{
 a\\
 0
-    }
-\end{align}
-\begin{align}
+    },
     \vec{B}=\myvec{
 0\\
 b
-    }
+    }.
 \end{align}
+From Fig. 
+		\ref{fig:12/8/3/8},
+		\iffalse
 \section{Substituting the numericals according to the problem}
 \begin{align}
 a=3, \vspace{2mm}
@@ -181,32 +192,18 @@ Total area of portion is given by, \\ \vspace{1mm}
 Total Area=(area of ellipse in first quadrant)-(area of a triangle\textbf{AOB})
 
 \subsection*{Area of ellipse}
-
+\fi
+the desired
+area is
 \begin{align} 
-\implies A2=\int_{0}^{a}\frac{b}{a}\sqrt{a^2-x^2} \,dx 
-\\
-=\int_{0}^{3}\frac{2}{3}\sqrt{9-x^2} \,dx 
+%A2=\int_{0}^{a}\frac{b}{a}\sqrt{a^2-x^2} \,dx 
+%\\
+\int_{0}^{3}\frac{2}{3}\sqrt{9-x^2} \,dx 
+%\implies A1=\int_{0}^{a} \frac{b}{a}(a-x) \,dx\\
+-\int_{0}^{3} \frac{2}{3}(3-x) \,dx
+	= 3\brak{\frac{\pi}{2}-1}
 \end{align}
-by solving the above equation we get area of ellipse $\frac{3\pi}{2}$
-
-\subsection*{Area of triangle}
-
-\begin{align}
-\implies A1=\int_{0}^{a} \frac{b}{a}(a-x) \,dx\\
-=\int_{0}^{3} \frac{2}{3}(3-x) \,dx
-\end{align}
-by solving the above equation we get area of triangle 3 square units.
-\\
-
-The total area is
-
-\vspace{3mm}
-$\implies A=\frac{3\pi}{2}-3$\vspace{3mm}
-
-The area of the smaller region is ,
-\begin{align}
-\hspace{-4.25cm}A= 3(\frac{\pi}{2}-1) square units
-\end{align}
+\iffalse
  \vspace{2mm} \textbf{Construction}
 \begin{center}
 \setlength{\arrayrulewidth}{0.5mm}
@@ -238,3 +235,4 @@ The area of the smaller region is ,
 \end{table} 
  
 \end{document}
+\fi

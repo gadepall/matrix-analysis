@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -50,7 +51,17 @@
 
 %----------------problem statement--------------%
 \raggedright \textbf{Problem Statement:}\vspace{2mm}
-\raggedright \\Find the area enclosed by the parabola $4y=3x^2 $ and the line $2y=3x+12$\\
+\raggedright \\
+\fi
+	Find the area enclosed by the parabola $4y=3x^2 $ and the line $2y=3x+12$.\\
+	\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/7/figs/conic.png}
+		\caption{}
+		\label{fig:12/8/3/7}
+  	\end{figure}
+\iffalse
 \vspace{5mm}
 %-----------------------------solution---------------------------
 \raggedright \textbf{SOLUTION}:\vspace{2mm}\\
@@ -74,21 +85,18 @@ The given parabola can be expressed as conics with parameters,\\ \vspace{1mm}
 \begin{align}
 	\vec{x}^{\top}\vec{V}\vec{x} + 2\vec{u}^{\top} \vec{x} + f = 0
 \end{align}
+\fi
+The parameters of the given conic are
 \begin{align}
 \vec{V}=\myvec{
 3 & 0\\
 0 & 0
-}
-\end{align}
-
-\begin{align}
-\vec{u}=\myvec{0\\-2}
+},
+\vec{u}=\myvec{0\\-2},
+f=0.
 \end{align} 
-\begin{align}
-f=0
-\end{align} \vspace{2mm}
-
-
+For the line, the parameters are
+\iffalse
 \textbf{STEP-2}\vspace{2mm}\\
 the given line equation can be written as\\ 
 \begin{align} 
@@ -136,35 +144,42 @@ where, \\
 \end{multline}
 }
 On substituting\\
+\fi
 \begin{align}
-\vec{q} &= \myvec{
+\vec{h} = \myvec{
 -2\\
 3
-} 
-\end{align}
-\begin{align}
+},
 \vec{m} = \myvec{2 \\ 3}
 \end{align}
+\iffalse
 With the given parabola as in eq(3),(4),(5),\\ 
 
 The value of $\kappa$ ,\\
+\fi
+yielding
 \begin{align}
-    \kappa =-2.5,2.7
+    \mu=-2.5,2.7
 \end{align}
+upon substitution in \eqref{eq:tangent_roots}
+resulting in the points of intersection
+\iffalse
 by substituting eq(13) in eq(6)we get the
 points of intersection of line with parabola \\
+\fi
 \begin{align}
     \vec{A}=\myvec{
 -2\\
 3
-    }
-\end{align}
-\begin{align}
+    },
     \vec{B}=\myvec{
 4\\
 12
-    }
+    }.
 \end{align}
+From Fig. 
+		\ref{fig:12/8/3/7},
+		\iffalse
 \textbf{Result}
 \begin{center}
  \includegraphics[scale=0.5]{conic.png}    
@@ -174,27 +189,14 @@ Total area of portion is given by, \\ \vspace{1mm}
 Total Area=(area enclosed by the line)-(area of parabola under the line )
 
 \subsection*{Area Under the line}
-
+\fi
+the desired area is 
 \begin{align}
-\implies A1=\int_{-2}^{4} \frac{3x+12}{2} \,dx
+\int_{-2}^{4} \frac{3x+12}{2} \,dx
+-\int_{-2}^{4}\frac{3x^2}{4} \,dx 
+= 27 
 \end{align}
-by solving the above equation we get area of triangle \textbf{$45 m^2$}
-\subsection*{Area of enclosed ny the parabola under line}
-
-\begin{align} 
-\implies A2=\int_{-2}^{4}\frac{3x^2}{4} \,dx 
-\end{align}
-by solving the above equation we get area of parabola under the line \textbf{$18 m^2$}
-
-the total area is
-
-\vspace{3mm}
-$\implies A=63 m^2 $\vspace{3mm}
-
-The area enclosed by the parabola and line is ,
-\begin{align}
-\hspace{-4.25cm}A= 27 m^2
-\end{align}
+\iffalse
  \vspace{2mm} \textbf{Construction}
 \begin{center}
 \setlength{\arrayrulewidth}{0.5mm}
@@ -227,3 +229,4 @@ Get the python code of the figures from
  
 \end{document}
  
+\fi

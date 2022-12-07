@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,10pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
@@ -23,7 +24,18 @@
 \begin{document}
 
 \maketitle
-\paragraph{\textit{Problem Statement} - Find the area of the region bounded by the curve $x^2=y$ and the lines y=x+2 and the x axis }
+\paragraph{\textit{Problem Statement} -
+\fi
+Find the area of the region bounded by the curve $x^2=y$ and the lines $y=x+2$ and the $x$ axis.
+\\
+\solution 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/10/figs/conics1.png}
+		\caption{}
+		\label{fig:12/8/3/10}
+  	\end{figure}
+\iffalse
 
 \section*{\large Solution}
 
@@ -41,18 +53,12 @@ The given equation of parabola $x^2 = y$ can be written in the general quadratic
     \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
     \end{align}
 where
+The parameters of the given conic are
 \begin{align}
- \label{eq:V_matrix}
- \vec{V} &= \myvec{1 & 0\\0 & 0},
- \\
- \label{eq:u_vector}
- \vec{u} &= \myvec{0\\-0.5},
- \\
- \label{eq:f_value}
- f &= 0
- %\\
+ \vec{V} = \myvec{1 & 0\\0 & 0},
+ \vec{u} = \myvec{0\\-0.5},
+ f = 0
 \end{align}
-
 The points of intersection of the line 
 \begin{align}
  L: \quad \vec{x} = \vec{q} + \mu \vec{m} \quad \mu \in \mathbf{R}
@@ -89,30 +95,21 @@ where
 \label{eq:tangent_roots}
 \end{multline}
 }
-
-
-
-From the line y=x+2 the vectors q,m are taken,
-\begin{equation}
-\vec{q}=\myvec{0\\2}
-\end{equation}
-
-\begin{equation}
+The parameters of the line $y=x+2$ are
+\begin{align}
+\vec{h}=\myvec{0\\2},
 \vec{m}=\myvec{1\\1}
-\end{equation}
-
-by substituting eq(2),(3),(4),(8),(9) in eq(7)
-\begin{equation}
+\end{align}
+yielding
+\begin{align}
 \mu_i=-2
-\end{equation}
-substituting eq(8),(9),(10) in eq(6) the intersection points on the parabola are
-\begin{equation}
-\vec{a_0}=\myvec{2\\4}
-\end{equation}
-\begin{equation}
+\end{align}
+upon substituting in \eqref{eq:tangent_roots}.     The points of intersection of this line with the conic are
+\begin{align}
+\vec{a_0}=\myvec{2\\4},
 \vec{a_1}=\myvec{-1\\1}
-\end{equation}
-%\begin{center}
+\end{align}
+Similarly, 
 Given line equation y=x+2\\
 
 $$x-y=-2$$\\
@@ -168,8 +165,5 @@ Area of the parabola in between the lines parabola and y=x+2 is given by
 \implies A_1+ A_2=\frac{5}{6}sq units
 \end{align}
 
-
-
-  
-
 \end{document}
+\fi

@@ -1,4 +1,4 @@
-
+\iffalse
 \def\mytitle{MATRICES USING PYTHON(CONIC)}
 \def\myauthor{R.Radhika}
 \def\contact{r170234@rguktrkv.ac.in}
@@ -56,7 +56,17 @@ columns=fullflexible
 	\maketitle
 	\tableofcontents
    \section{Problem}
-   The area bounded by the curve y=$x|x|$ x-axis and the ordinates $x$=-1 and $x$=1,is given by
+   \fi
+Find   the area bounded by the curve $y=x|x|, x$-axis and the ordinates $x$=-1 and $x$=1.
+\\
+\solution 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/17/figs/conicfig.pdf}
+		\caption{}
+		\label{fig:12/8/3/17}
+  	\end{figure}
+   \iffalse
 [Hint: y=$x^2$ if $x>0$  and y=$-x^2$ if $x<0$]
    					
 \section{Construction}
@@ -76,31 +86,31 @@ The standard conic equation\\
 \begin{align}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u_1}^{\top}\vec{x}+f_1=0
 \end{align}
+\fi
+The parameters of the given conics are
 \begin{align}
-\vec{V}=\myvec{1&0\\0&0} ,\vec{u_1}=\myvec{0\\-\frac{1}{2}},  f_1=0
+	\vec{V}_1&=\myvec{1&0\\0&0} ,\vec{u_1}=\myvec{0\\-\frac{1}{2}},  f_1=0
+	\\
+	\vec{V}_2&=\myvec{-1&0\\0&0} ,\vec{u_2}=\myvec{0\\-\frac{1}{2}},  f_2=0
 \end{align}
-\begin{align}
-\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u_2}^{\top}\vec{x}+f_2=0
-\end{align}
-\begin{align}
-\vec{V}=\myvec{-1&0\\0&0} ,\vec{u_2}=\myvec{0\\-\frac{1}{2}},  f_2=0
-\end{align}
-The intersection of two conics\\
+The determinant equation for the intersection of two conics is 
+\iffalse
 \begin{align}
 |\myvec{\vec{V_1}+\mu{\vec{V_2}}&\vec{u_1}+\mu{\vec{u_2}}\\\vec{u_1}+\mu{\vec{u_2}}&0}|
 \end{align}
 substitute eq 3 and 4 in eq 6\\
+\fi
 \begin{align}
-\myvec{1-\mu&0&0\\0&0&-\frac{1}{2}-\frac{\mu}{2}\\0&-\frac{1}{2}-\frac{\mu}{2}&0}
+\mydet{1-\mu&0&0\\0&0&-\frac{1}{2}-\frac{\mu}{2}\\0&-\frac{1}{2}-\frac{\mu}{2}&0} = 0
 \end{align}
-by solving eq-7 \\
 yielding,
 \begin{align}
-\mu^3+\mu^2-\mu-1=0
+	\mu^3+\mu^2-\mu-1&=0
+	\\
+	\implies
+	\mu&=-1, 1, 1
 \end{align}
-After solving eq-8\\
-we get\\
-$\mu=-1,1,1$
+\iffalse
 \begin{align}
 |\vec{V_1}+\mu\vec{V_2}|<0
 \end{align}
@@ -187,3 +197,4 @@ Below python code realizes the above construction
     \end{tabular}
 \end{table}
 \end{document}
+\fi

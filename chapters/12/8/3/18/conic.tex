@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 %\usepackage[latin1]{inputenc}
 \usepackage[utf8]{inputenc}
@@ -36,8 +37,19 @@
 \begin{multicols}{2}
 
 %----------------problem statement--------------%
+
 \raggedright \textbf{Problem Statement:}\vspace{2mm}
-\raggedright \\The area of the circle $x^2 + y^2 = 16$ exterior to the parabola $y^2 = 6x$ is\\
+\raggedright \\
+\fi
+	Find the area of the circle $x^2 + y^2 = 16$ exterior to the parabola $y^2 = 6x$.\\
+	\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/18/figs/cp.jpg}
+		\caption{}
+		\label{fig:12/8/3/18}
+  	\end{figure}
+	\iffalse
 \vspace{5mm}
 %-----------------------------solution---------------------------
 \raggedright \textbf{SOLUTION}:\vspace{2mm}\\
@@ -63,46 +75,25 @@ r= 4
 To find the intersection points and area of unshaded region shown in figure\vspace{2mm}  \\ 
 %--------------steps----------------------%
 \textbf{STEP-1}\vspace{2mm}\\
-The given circle and parabola can be expressed as conics with parameters,\\ \vspace{1mm}
-For circle,\\ \vspace{1mm}
+\fi
+The given circle and parabola can be expressed as conics with respectiveparameters
 \begin{align}
-\vec{V}_1=\vec{I}
-\end{align}
-\begin{align}
-\vec{V}_1=\myvec{
-1 & 0\\
-0 & 1
-}
-\end{align} 
-
-\begin{align}
-\vec{u_1}=0
-\end{align} 
-\begin{align}
-f_1=-16
-\end{align} \vspace{2mm}
-
-For Parabola,\\\vspace{1mm}
-\begin{align}
-\vec{V}_2=\myvec{
+	\vec{V}_1&=\vec{I},
+\vec{u_1}=0,
+f_1=-16,
+\\
+	\vec{V}_2&=\myvec{
 0 & 0\\
 0 & 1
-}
-\end{align} 
-
-\begin{align}
+},
 \vec{u_2}= -\myvec{
 3\\
 0
-}
-\end{align} 
-\begin{align}
+},
 f_2=0
-\end{align} \vspace{2mm}
-
-\textbf{STEP-2}\vspace{2mm}\\
-The intersection of the given conics is obtained
-as\\
+\end{align} 
+The determinant of the intersection of the given conics is 
+\iffalse
 \begin{align}
 	\vec{x}^{\top}\brak{\vec{V}_1 + \mu\vec{V}_2}\vec{x}+2 \brak{\vec{u}_1+\mu \vec{u}_2}^{\top} \vec{x} 
 	\\
@@ -134,20 +125,21 @@ And,\\
 \end{align}
 Substituting equation (13),(14) and (15) in equation (16)\\ \vspace{1mm}
 We get,\\ \vspace{1mm}
+\fi
 \begin{align}
 \implies \mydet{1& 0 & -3\mu\\ 
 0 & 1+\mu & 0 \\
 -3\mu & 0 & -16
 } &= 0
 \end{align}
-Solving the above equation we get,\\ \vspace{1mm}
+yielding
 \begin{align}
-9\mu^3 + 9\mu^2 + 16\mu + 16=0
-\end{align}
-gives,\\ \vspace{1mm}
-\begin{align}
+	9\mu^3 + 9\mu^2 + 16\mu + 16&=0
+	\\
+	\text{or, }
     \mu = -1
 \end{align}
+\iffalse
  Thus, the parameters for a straight line can be expressed as\\ \vspace{1mm}
  \begin{align}
 	\vec{V} &= 
@@ -330,3 +322,4 @@ Area A is,\\
 \bibliographystyle{ieeetr}
  \end{multicols}
 \end{document}
+\fi

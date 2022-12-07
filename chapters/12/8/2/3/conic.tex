@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage[none]{hyphenat}
 \usepackage{graphicx}
@@ -15,7 +16,7 @@
 \title{\textbf{\\Conics Assignment}}
 \author{Sinkona Chinthamalla - FWC22054}
 
-\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\myvec}[1]{\ensuremath{\myvec{#1}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
 \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
 \providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
@@ -26,7 +27,18 @@
 \maketitle
 
 \section{Question}
-\textbf {Find the area of the region bounded by the curves $y=x^2+2$, $y=x$, $x=0$ and $x=3. $}
+\textbf {
+\fi
+	Find the area of the region bounded by the curves $y=x^2+2$, $y=x$, $x=0$ and $x=3. $
+	\\
+	\solution 
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/2/3/figs/conic1.pdf}
+		\caption{}
+		\label{fig:12/8/2/3}
+  	\end{figure}
+	\iffalse
 
 \begin{figure}[h!]
 \includegraphics[scale=0.55]{conic1.pdf }
@@ -42,28 +54,28 @@
 	\textbf{Symbol}&\textbf{Value}&\textbf{Description}\\
 	\hline
 	\textbf{A} & 
-	$ \begin{pmatrix}
+	$ \myvec{
       0 \\
       2
-    \end{pmatrix}$ & $\vec{q_1} $\\
+    }$ & $\vec{q_1} $\\
 	\hline
 	B & 
-	$\begin{pmatrix}
+	$\myvec{
      3 \\
      11
-    \end{pmatrix}$ & $\vec{q_2} $\\
+    }$ & $\vec{q_2} $\\
 	\hline
 	C & 
-	$\begin{pmatrix}
+	$\myvec{
      3 \\
      3
-    \end{pmatrix}$ & $\vec{q_3} $\\
+    }$ & $\vec{q_3} $\\
 	\hline
 	O & 
-	$\begin{pmatrix}
+	$\myvec{
      0 \\
      0
-    \end{pmatrix}$ & $\vec{q_4} $\\
+    }$ & $\vec{q_4} $\\
 	\hline
 \end{tabular}
 }
@@ -74,29 +86,32 @@
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f = 0 
 \end{align}
 where
+\fi
+The conic parameters are
 \begin{align}
-\vec{V} = \begin{pmatrix}
+\vec{V} = \myvec{
 1 & 0\\
 0 & 0
-\end{pmatrix} \\
-\vec{u} = \begin{pmatrix}
+}, 
+\vec{u} = \myvec{
       0 \\
      -1/2
-    \end{pmatrix}  \\
-f = 2  
+    },  
+f = 2.  
 \end{align}
+\iffalse
 
 \textbf{Finding Points of Intersection}
 \vspace{0.2cm}
 \\1. Consider line 
+The intersection of the line
 \begin{align}
-\begin{pmatrix}
- 1 & 0
-\end{pmatrix} \vec{x} = 0 \\ 
-\vec{q_1} = y_1\vec{e_2} 
+%\myvec{
+% 1 & 0
+%} \vec{x} = 0 \\ 
+\vec{x} = \mu\vec{e_2},
 \end{align}
-
-To find the point of intersection of the Parabola with (5), substitute (6) in (1)
+with the given conic is 
 \begin{align}
 \vec{q_1}^{\top}\vec{V}\vec{q_1}+2\vec{u}^{\top}\vec{q_1}+f = 0 \\
 y_1^2\vec{e_2}^{\top}\vec{V}\vec{e_2}+2y_1\vec{u}^{\top}\vec{e_2}+f = 0 
@@ -126,9 +141,9 @@ Therefore, $y_1$ is obtained by substituting (3), (4) and $\vec{e_2}$ in (10).
 \vspace{0.4cm}
 2. Now consider line 
 \begin{align}
-\begin{pmatrix}
+\myvec{
  1 & 0
-\end{pmatrix} \vec{x} = 3 \\
+} \vec{x} = 3 \\
 \vec{q_2} = y_2\vec{e_2}+3\vec{e_1}
 \end{align}
 
@@ -169,38 +184,38 @@ Therefore, $d_2$ is obtained by substituting (2), (3), (4), $\vec{e_1}$ and $\ve
 \vspace{0.4cm}
 Therefore, the Points of Intersection of (5) and (11) with the given parabola are
 \begin{align}
-\vec{q_1} = \begin{pmatrix}
+\vec{q_1} = \myvec{
  0\\
  2
-\end{pmatrix} 
+} 
 \end{align}
 and 
 \begin{align}
-\vec{q_2} = \begin{pmatrix}
+\vec{q_2} = \myvec{
  3\\
  11
-\end{pmatrix} 
+} 
 \end{align}
 respectively.
 
 \vspace{0.2cm}
 The Points of Intersection of (11) and (5) with the line
 \begin{align}
-\begin{pmatrix}
+\myvec{
  1 & -1
-\end{pmatrix} \vec{x} = 0
+} \vec{x} = 0
 \end{align}  are
 \begin{align}
-\vec{q_3} = \begin{pmatrix}
+\vec{q_3} = \myvec{
  3\\
  3
-\end{pmatrix} 
+} 
 \end{align}
 \begin{align}
-\vec{q_4} = \begin{pmatrix}
+\vec{q_4} = \myvec{
  0\\
  0
-\end{pmatrix} 
+} 
 \end{align}
 and
 
@@ -239,3 +254,4 @@ Thus, the desired area is the bounded region in
 %\end{tabular}
 %\end{table}	
 \end{document}
+\fi

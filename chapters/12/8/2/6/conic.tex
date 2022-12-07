@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{graphicx}
 \usepackage{listings}
@@ -34,7 +35,18 @@
 \maketitle
 \section{Problem Statement}
 
-\noindent Smaller area enclosed by the circle $x^2 + y^2 = 4$ and the line $x + y = 2$. 
+\noindent 
+\fi
+Find the smaller area enclosed by the circle $x^2 + y^2 = 4$ and the line $x + y = 2$. 
+\\
+\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/2/6/figs/conic.png}
+		\caption{}
+		\label{fig:12/8/2/6}
+  	\end{figure}
+\iffalse
 \begin{enumerate}
 \item $2(\pi -2)$
 \item $\pi -2$
@@ -51,12 +63,12 @@
 
 \raggedright \textbf{Given}: \\
 Equation of circle is  
-\begin{equation} x^2 + y^2 = 4
-\end{equation}
+\begin{align} x^2 + y^2 = 4
+\end{align}
 Equation of line is 
-\begin{equation}
+\begin{align}
 x+y=2
-\end{equation}
+\end{align}
 \textbf{To Find:} \\
 To find the intersection points and area of shaded region shown in figure\
 \section{Construction}
@@ -81,28 +93,26 @@ To find the intersection points and area of shaded region shown in figure\
 \end{table}
 \newpage
 \section{solution}
+\fi
 The given circle can be expressed as conics with parameters,
-\begin{equation}
+\begin{align}
 \vec{V}=\myvec{
 4 & 0\\
 0 & 4
-}
-\end{equation}
-\begin{equation}
-\vec{u}=0 
-\end{equation}
-\begin{equation}
+},
+\vec{u}=0,
 f=-16
-\end{equation}
+\end{align}
+\iffalse
 
 The given line equation can be written as\\ 
 \begin{align} 
 	\vec{x}=\begin{pmatrix}2 \\ 0 \\ \end{pmatrix}+k\begin{pmatrix}\frac{1}{2} \\ -\frac{1}{2} \\ \end{pmatrix}
 \end{align}
 The points of intersection of the line, \\ 
-\begin{equation}
+\begin{align}
 L: \quad \vec{x} = \vec{q} + \kappa \vec{m} \quad \kappa \in \mathbb{R}
-\end{equation}
+\end{align}
 
 with the conic section, \\ 
 \begin{align}
@@ -122,7 +132,7 @@ where, \\
 \lbrak{-\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}}
 \pm
 \end{equation*}
-\begin{equation}
+\begin{align}
 \rbrak{\sqrt{
 \sbrak{
 \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
@@ -135,47 +145,56 @@ where, \\
 \brak{\vec{m}^T\vec{V}\vec{m}}
 }
 }
-\end{equation}
+\end{align}
 On substituting\\
+\fi
+The line parameters are
 \begin{align}
-\vec{q} &= \myvec{
+\vec{h} &= \myvec{
 2\\
 0
-} 
-\end{align}
-\begin{align}
+}, 
 \vec{m} = \myvec{\frac{1}{2} \\ -\frac{1}{2}}
 \end{align}
+\iffalse
 With the given as in eq(3),(4),(5),\\ 
 
 The value of $\kappa$ ,\\
-\begin{equation}
-\kappa =0,-4
-\end{equation}
-    
+\fi
+Substituting the parameters in \eqref{eq:tangent_roots},
+\begin{align}
+\mu =0,-4
+\end{align}
+yielding the points of intersection as
+   \iffalse 
 By substituting eq(13) in eq(6) we get the
 points of intersection of line with circle \\
+\fi
 \begin{align}
     \vec{A}=\myvec{
 0\\
 2
-    }
-\end{align}
-\begin{align}
+    },
     \vec{B}=\myvec{
 2\\
 0
     }
 \end{align}
-From the figure \\
+From Fig. 
+		\ref{fig:12/8/2/6},
+		\iffalse
 Total area of portion is given by,\\ 
 Total Area=(area of circle in first quadrant)-(area of a triangle \textbf{AOB})
 
 \subsection*{Area of triangle}
-
+\fi
+the desired area is
 \begin{align}
-\implies A_1=\int_{0}^{2} (2-x) \,dx
+\int_{0}^{2}\sqrt{4-x^2} \,dx 
+-\int_{0}^{2} (2-x) \,dx
+=\pi - 2
 \end{align}
+\iffalse
 By solving the above equation we get area of triangle as 2 units
 \subsection*{Area of circle}
 
@@ -206,3 +225,4 @@ $\implies \vec{A}=\pi - 2$
 
 
 
+\fi

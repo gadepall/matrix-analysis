@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt,a4paper]{report}
 \usepackage[latin1]{inputenc}
 \usepackage{amsmath}
@@ -38,8 +39,17 @@
 \begin{multicols}{2}
 
 \section{Problem:}  
+\fi
 Find the area between the curves $y=x$ and $y=x^2$.
-
+\\
+\solution
+	\begin{figure}[!h]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/12/8/3/2/figs/figure.png}
+		\caption{}
+		\label{fig:12/8/3/2}
+  	\end{figure}
+\iffalse
 \section{Solution: }
 \raggedright \textbf{Input Parameters :}\\ \vspace{2mm}
 \centering Curve Equation : $y=x^2$. \\ \vspace{1mm}
@@ -60,17 +70,21 @@ The standard equation of the conics is given as :
 \begin{align}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
 \end{align}
-The given curve  can be expressed as conics with \\parameters
+\fi
+The given curve  can be expressed as a conic with parameters
 \begin{align}
 	\vec{V} &= \myvec{1 & 0\\0 & 0}, \vec{u} = \myvec{0 \\-\frac{1}{2}}, f = 0
 	\end{align}
-
+\iffalse
 \raggedright \textbf{Step - 2 :}\\ \vspace{2mm}
 Line Equation : $y=x$. \\ \vspace{1mm}
 From the above line equation below vectors are taken
+\fi
+The given line parameters are
 \begin{align}
-\vec{q} = \myvec{0 \\0} , \vec{m}=\myvec{1\\1}
+\vec{h} = \myvec{0 \\0}, \vec{m}=\myvec{1\\1}
 \end{align}
+\iffalse
 
 \raggedright \textbf{Step - 3 :}\\ \vspace{2mm}
 The points of intersection of the line, \\ 
@@ -112,21 +126,20 @@ where, \\
 \raggedright On substituting $\vec{V},\vec{q} ,\vec{m}$ in the above equation,
 we get the values of $\mu$. By substituting the values of $\mu$ in eq(6), \\we get the points of intersection of line with the given curve. \\
 \centering $i.e., \vec{x_1},\vec{x_2}$\\ 
-
+\fi
+Substituting the given parameters in 
+\eqref{eq:tangent_roots},
 \begin{align}
-\therefore \vec{x_1}=\myvec{0\\0} , \vec{x_2}=\myvec{1\\1}
+\vec{x_1}=\myvec{0\\0}, \vec{x_2}=\myvec{1\\1}.
 \end{align}
-
-\raggedright \textbf{Step - 4 :}\\ \vspace{2mm}
-The area bounded by the curve $y=x^2$ and line $y=x$ is given by\\
-
+From Fig. 
+		\ref{fig:12/8/3/2},
+the area bounded by the curve $y=x^2$ and line $y=x$ is given by
 \begin{align}
-\implies A=\int_{0}^{1} [x] \,dx
+	\int_{0}^{1} \brak{x 
+	-\frac{x^2}{2}} \,dx = \frac{1}{6}
 \end{align}
-
-\begin{align}
-\implies A=\frac{x^2}{2} \
-\end{align}
+\iffalse
 
 \centering By solving we get the required area\\
 $\therefore A = \frac{1}{6}$ 
@@ -145,3 +158,4 @@ $\therefore A = \frac{1}{6}$
  
 \end{multicols}
 \end{document}
+\fi
