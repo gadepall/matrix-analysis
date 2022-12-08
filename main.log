@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.16)  7 DEC 2022 09:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.10.16)  8 DEC 2022 06:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,7 +880,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<figs/logo.jpg, id=245, 642.4pt x 642.4pt>
+<figs/logo.jpg, id=257, 642.4pt x 642.4pt>
 File: figs/logo.jpg Graphic file (type jpg)
 <use figs/logo.jpg>
 Package pdftex.def Info: figs/logo.jpg  used on input line 51.
@@ -954,7 +954,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4])
+ [4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -982,7 +988,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
 <to be read again> 
                    \relax 
 l.195 \begin{introduction}
-                           [2]
+                           [2
+
+]
 
 Package hyperref Warning: bookmark level for unknown schapter defaults to 0.
 
@@ -999,7 +1007,6 @@ s been already used, duplicate ignored
                    \relax 
 l.200 \mainmatter
                   [3
-
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1018,7 +1025,7 @@ l.200 \mainmatter
 ]
 Chapter 1.
 (./chapters/11/10/1.tex (./chapters/11/10/1/1/matrix.tex
-<chapters/11/10/1/1/figs/quadrilateral.png, id=347, 564.1075pt x 430.60875pt>
+<chapters/11/10/1/1/figs/quadrilateral.png, id=366, 564.1075pt x 430.60875pt>
 File: chapters/11/10/1/1/figs/quadrilateral.png Graphic file (type png)
 <use chapters/11/10/1/1/figs/quadrilateral.png>
 Package pdftex.def Info: chapters/11/10/1/1/figs/quadrilateral.png  used on inp
@@ -1030,14 +1037,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [1
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
 
-])
-(./chapters/11/10/1/2/matrix.tex
-<chapters/11/10/1/2/figs/triangle.png, id=360, 462.528pt x 346.896pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <./chapters/11/10/1/1/figs/quadrilateral.png>]) (./chapters/11/10/1/2/matri
+x.tex
+<chapters/11/10/1/2/figs/triangle.png, id=384, 462.528pt x 346.896pt>
 File: chapters/11/10/1/2/figs/triangle.png Graphic file (type png)
 <use chapters/11/10/1/2/figs/triangle.png>
 Package pdftex.def Info: chapters/11/10/1/2/figs/triangle.png  used on input li
@@ -1049,28 +1062,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <./chapters/11/10/1/1/figs/quadrilateral.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [3 <./chapters/11/10/1/2/figs/triangle.png>]) (./chapters/11/10/1/4/matrix.tex
-<chapters/11/10/1/4/figs/line.png, id=377, 462.528pt x 346.896pt>
+<chapters/11/10/1/4/figs/line.png, id=395, 462.528pt x 346.896pt>
 File: chapters/11/10/1/4/figs/line.png Graphic file (type png)
 <use chapters/11/10/1/4/figs/line.png>
 Package pdftex.def Info: chapters/11/10/1/4/figs/line.png  used on input line 4
 4.
 (pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 1210) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1079,15 +1077,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4])
 (./chapters/11/10/1/5/matrix.tex
-<chapters/11/10/1/5/figs/line.png, id=395, 531.9875pt x 411.5375pt>
+<chapters/11/10/1/5/figs/line.png, id=414, 531.9875pt x 411.5375pt>
 File: chapters/11/10/1/5/figs/line.png Graphic file (type png)
 <use chapters/11/10/1/5/figs/line.png>
 Package pdftex.def Info: chapters/11/10/1/5/figs/line.png  used on input line 2
 3.
 (pdftex.def)             Requested size: 433.62001pt x 335.4472pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1104,7 +1099,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <./chapters/11/10/1/5/figs/line.png>]) (./chapters/11/10/1/6/matrix.tex
-<chapters/11/10/1/6/figs/triangle.png, id=414, 462.528pt x 346.896pt>
+<chapters/11/10/1/6/figs/triangle.png, id=432, 462.528pt x 346.896pt>
 File: chapters/11/10/1/6/figs/triangle.png Graphic file (type png)
 <use chapters/11/10/1/6/figs/triangle.png>
 Package pdftex.def Info: chapters/11/10/1/6/figs/triangle.png  used on input li
@@ -1120,7 +1115,7 @@ mr/m/n/10.95 (3\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 5)$ and $(\OMS/cmsy/m/n
  []
 
 ) (./chapters/11/10/1/8/matrix.tex
-<chapters/11/10/1/8/figs/sline.png, id=415, 392.46625pt x 256.96pt>
+<chapters/11/10/1/8/figs/sline.png, id=433, 392.46625pt x 256.96pt>
 File: chapters/11/10/1/8/figs/sline.png Graphic file (type png)
 <use chapters/11/10/1/8/figs/sline.png>
 Package pdftex.def Info: chapters/11/10/1/8/figs/sline.png  used on input line 
@@ -1141,8 +1136,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./chapters/11/10/1/6/figs/triangle.png>]) (./chapters/11/10/1/9/matrix.tex
-<chapters/11/10/1/9/figs/paralellogram.png, id=437, 363.3575pt x 266.9975pt>
+ [8 <./chapters/11/10/1/6/figs/triangle.png>]
+Underfull \vbox (badness 3439) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./chapters/11/10/1/8/figs/sline.png>]) (./chapters/11/10/1/9/matrix.tex
+<chapters/11/10/1/9/figs/paralellogram.png, id=466, 363.3575pt x 266.9975pt>
 File: chapters/11/10/1/9/figs/paralellogram.png Graphic file (type png)
 <use chapters/11/10/1/9/figs/paralellogram.png>
 Package pdftex.def Info: chapters/11/10/1/9/figs/paralellogram.png  used on inp
@@ -1154,18 +1158,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./chapters/11/10/1/8/figs/sline.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10 <./chapters/11/10/1/9/figs/paralellogram.png>]) (./chapters/11/10/1/10/mat
 rix.tex
-<chapters/11/10/1/10/figs/fig.png, id=460, 642.4pt x 530.98375pt>
+<chapters/11/10/1/10/figs/fig.png, id=480, 642.4pt x 530.98375pt>
 File: chapters/11/10/1/10/figs/fig.png Graphic file (type png)
 <use chapters/11/10/1/10/figs/fig.png>
 Package pdftex.def Info: chapters/11/10/1/10/figs/fig.png  used on input line 4
@@ -1180,13 +1178,107 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11])
-(./chapters/11/10/1/11/matrix.tex
-<chapters/11/10/1/11/figs/line.png, id=476, 462.528pt x 346.896pt>
+ [11]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./chapters/11/10/1/10/figs/fig.png>]) (./chapters/11/10/1/11/matrix.tex
+<chapters/11/10/1/11/figs/line.png, id=500, 462.528pt x 346.896pt>
 File: chapters/11/10/1/11/figs/line.png Graphic file (type png)
 <use chapters/11/10/1/11/figs/line.png>
 Package pdftex.def Info: chapters/11/10/1/11/figs/line.png  used on input line 
 59.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 4686) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./chapters/11/10/1/11/figs/line.png>]) (./chapters/11/10/1/12/matrix.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+<chapters/11/10/1/12/figs/figure.pdf, id=524, 462.52798pt x 346.89601pt>
+File: chapters/11/10/1/12/figs/figure.pdf Graphic file (type pdf)
+<use chapters/11/10/1/12/figs/figure.pdf>
+Package pdftex.def Info: chapters/11/10/1/12/figs/figure.pdf  used on input lin
+e 25.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./chapters/11/10/1/12/figs/figure.pdf>]) (./chapters/11/10/1/13/matrix.te
+x)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18
+
+]
+Chapter 2.
+(./chapters/11/10/2.tex (./chapters/11/10/2/9/line.tex
+<chapters/11/10/2/9/figs/line.png, id=601, 630.355pt x 478.78876pt>
+File: chapters/11/10/2/9/figs/line.png Graphic file (type png)
+<use chapters/11/10/2/9/figs/line.png>
+Package pdftex.def Info: chapters/11/10/2/9/figs/line.png  used on input line 3
+5.
+(pdftex.def)             Requested size: 433.62001pt x 329.3564pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./chapters/11/10/2/9/figs/line.png>]) (./chapters/11/10/2/10/line.tex
+<chapters/11/10/2/10/figs/Figure_1.png, id=625, 462.528pt x 346.896pt>
+File: chapters/11/10/2/10/figs/Figure_1.png Graphic file (type png)
+<use chapters/11/10/2/10/figs/Figure_1.png>
+Package pdftex.def Info: chapters/11/10/2/10/figs/Figure_1.png  used on input l
+ine 62.
 (pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1197,33 +1289,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./chapters/11/10/1/10/figs/fig.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [13 <./chapters/11/10/1/11/figs/line.png>]) (./chapters/11/10/1/12/matrix.tex
-<chapters/11/10/1/12/figs/figure.pdf, id=493, 462.52798pt x 346.89601pt>
-File: chapters/11/10/1/12/figs/figure.pdf Graphic file (type pdf)
-<use chapters/11/10/1/12/figs/figure.pdf>
-Package pdftex.def Info: chapters/11/10/1/12/figs/figure.pdf  used on input lin
-e 25.
+ [21])
+(./chapters/11/10/2/11/line.tex
+<chapters/11/10/2/11/figs/linefig.pdf, id=639, 462.52798pt x 346.89601pt>
+File: chapters/11/10/2/11/figs/linefig.pdf Graphic file (type pdf)
+<use chapters/11/10/2/11/figs/linefig.pdf>
+Package pdftex.def Info: chapters/11/10/2/11/figs/linefig.pdf  used on input li
+ne 21.
 (pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
 
-Underfull \vbox (badness 1540) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14])
-(./chapters/11/10/1/13/matrix.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1232,9 +1306,284 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./chapters/11/10/1/12/figs/figure.pdf>])) (./chapters/9/11.tex
-(./chapters/9/11/2.tex (./chapters/9/11/2/1/line.tex
-<chapters/9/11/2/1/figs/Figure_1.png, id=562, 462.528pt x 346.896pt>
+ [22 <./chapters/11/10/2/10/figs/Figure_1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./chapters/11/10/2/11/figs/linefig.pdf>]) (./chapters/11/10/2/13/line.tex
+<chapters/11/10/2/13/figs/assign4.png, id=702, 1084.05pt x 784.9325pt>
+File: chapters/11/10/2/13/figs/assign4.png Graphic file (type png)
+<use chapters/11/10/2/13/figs/assign4.png>
+Package pdftex.def Info: chapters/11/10/2/13/figs/assign4.png  used on input li
+ne 23.
+(pdftex.def)             Requested size: 433.62001pt x 313.96744pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./chapters/11/10/2/13/figs/assign4.png>]) (./chapters/11/10/2/14/line.tex
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26]
+<chapters/11/10/2/14/figs/fig.pdf, id=738, 462.52798pt x 346.89601pt>
+File: chapters/11/10/2/14/figs/fig.pdf Graphic file (type pdf)
+<use chapters/11/10/2/14/figs/fig.pdf>
+Package pdftex.def Info: chapters/11/10/2/14/figs/fig.pdf  used on input line 2
+7.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <./chapters/11/10/2/14/figs/fig.pdf>]) (./chapters/11/10/2/15/line.tex
+<chapters/11/10/2/15/figs/line.pdf, id=781, 462.52798pt x 346.89601pt>
+File: chapters/11/10/2/15/figs/line.pdf Graphic file (type pdf)
+<use chapters/11/10/2/15/figs/line.pdf>
+Package pdftex.def Info: chapters/11/10/2/15/figs/line.pdf  used on input line 
+26.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./chapters/11/10/2/15/figs/line.pdf>]) (./chapters/11/10/2/20/line.tex
+<chapters/11/10/2/20/figs/figs6.pdf, id=828, 462.52798pt x 346.89601pt>
+File: chapters/11/10/2/20/figs/figs6.pdf Graphic file (type pdf)
+<use chapters/11/10/2/20/figs/figs6.pdf>
+Package pdftex.def Info: chapters/11/10/2/20/figs/figs6.pdf  used on input line
+ 96.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+))
+(./chapters/11/10/3.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31 <./chapters/11/10/2/20/figs/figs6.pdf>] (./chapters/11/10/3/7/line.tex)
+(./chapters/11/10/3/9/line.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34
+
+]
+Chapter 3.
+(./chapters/11/11/1.tex (./chapters/11/11/1/11/circle.tex
+<chapters/11/11/1/11/figs/fig.pdf, id=910, 462.52798pt x 346.89601pt>
+File: chapters/11/11/1/11/figs/fig.pdf Graphic file (type pdf)
+<use chapters/11/11/1/11/figs/fig.pdf>
+Package pdftex.def Info: chapters/11/11/1/11/figs/fig.pdf  used on input line 3
+5.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36 <./chapters/11/11/1/11/figs/fig.pdf>]) (./chapters/11/11/1/12/circle.tex
+<chapters/11/11/1/12/figs/conic.png, id=962, 462.528pt x 346.896pt>
+File: chapters/11/11/1/12/figs/conic.png Graphic file (type png)
+<use chapters/11/11/1/12/figs/conic.png>
+Package pdftex.def Info: chapters/11/11/1/12/figs/conic.png  used on input line
+ 31.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38 <./chapters/11/11/1/12/figs/conic.png>])) (./chapters/10/11/2.tex
+(./chapters/10/11/2/1/circle.tex
+<chapters/10/11/2/1/figs/circle1.pdf, id=989, 462.52798pt x 346.89601pt>
+File: chapters/10/11/2/1/figs/circle1.pdf Graphic file (type pdf)
+<use chapters/10/11/2/1/figs/circle1.pdf>
+Package pdftex.def Info: chapters/10/11/2/1/figs/circle1.pdf  used on input lin
+e 33.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+) (./chapters/10/11/2/2/circle.tex
+<chapters/10/11/2/2/figs/main.png, id=992, 1334.1042pt x 703.9098pt>
+File: chapters/10/11/2/2/figs/main.png Graphic file (type png)
+<use chapters/10/11/2/2/figs/main.png>
+Package pdftex.def Info: chapters/10/11/2/2/figs/main.png  used on input line 5
+0.
+(pdftex.def)             Requested size: 433.62001pt x 228.78946pt.
+)
+(./chapters/10/11/2/3/circle.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39]
+<chapters/10/11/2/3/figs/Question.png, id=1006, 462.528pt x 346.896pt>
+File: chapters/10/11/2/3/figs/Question.png Graphic file (type png)
+<use chapters/10/11/2/3/figs/Question.png>
+Package pdftex.def Info: chapters/10/11/2/3/figs/Question.png  used on input li
+ne 45.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+)
+(./chapters/10/11/2/4/circle.tex
+<chapters/10/11/2/4/figs/circle1.pdf, id=1008, 462.52798pt x 346.89601pt>
+File: chapters/10/11/2/4/figs/circle1.pdf Graphic file (type pdf)
+<use chapters/10/11/2/4/figs/circle1.pdf>
+Package pdftex.def Info: chapters/10/11/2/4/figs/circle1.pdf  used on input lin
+e 46.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+) (./chapters/10/11/2/5/circle.tex
+<chapters/10/11/2/5/figs/cir.png, id=1010, 462.528pt x 346.896pt>
+File: chapters/10/11/2/5/figs/cir.png Graphic file (type png)
+<use chapters/10/11/2/5/figs/cir.png>
+Package pdftex.def Info: chapters/10/11/2/5/figs/cir.png  used on input line 15
+6.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40 <./chapters/10/11/2/1/figs/circle1.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./chapters/10/11/2/6/circle.tex
+<chapters/10/11/2/6/figs/fig1.pdf, id=1059, 462.52798pt x 346.89601pt>
+File: chapters/10/11/2/6/figs/fig1.pdf Graphic file (type pdf)
+<use chapters/10/11/2/6/figs/fig1.pdf>
+Package pdftex.def Info: chapters/10/11/2/6/figs/fig1.pdf  used on input line 3
+0.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41 <./chapters/10/11/2/2/figs/main.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42 <./chapters/10/11/2/3/figs/Question.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43 <./chapters/10/11/2/4/figs/circle1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44 <./chapters/10/11/2/5/figs/cir.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45 <./chapters/10/11/2/6/figs/fig1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46
+
+]
+Chapter 4.
+(./chapters/9/11.tex (./chapters/9/11/2.tex (./chapters/9/11/2/1/line.tex
+<chapters/9/11/2/1/figs/Figure_1.png, id=1156, 462.528pt x 346.896pt>
 File: chapters/9/11/2/1/figs/Figure_1.png Graphic file (type png)
 <use chapters/9/11/2/1/figs/Figure_1.png>
 Package pdftex.def Info: chapters/9/11/2/1/figs/Figure_1.png  used on input lin
@@ -1250,17 +1599,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./chapters/9/11/2/1/figs/Figure_1.png>]) (./chapters/9/11/2/2/line.tex
-<chapters/9/11/2/2/figs/Fig.png, id=591, 462.528pt x 346.896pt>
+ [48 <./chapters/9/11/2/1/figs/Figure_1.png>]) (./chapters/9/11/2/2/line.tex
+<chapters/9/11/2/2/figs/Fig.png, id=1179, 462.528pt x 346.896pt>
 File: chapters/9/11/2/2/figs/Fig.png Graphic file (type png)
 <use chapters/9/11/2/2/figs/Fig.png>
 Package pdftex.def Info: chapters/9/11/2/2/figs/Fig.png  used on input line 35.
@@ -1271,15 +1623,6 @@ Package pdftex.def Info: chapters/9/11/2/2/figs/Fig.png  used on input line 35.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 5446) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1288,8 +1631,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./chapters/9/11/2/2/figs/Fig.png>]) (./chapters/9/11/2/3/line.tex
-<chapters/9/11/2/3/figs/line1.pdf, id=616, 462.52798pt x 346.89601pt>
+ [49]
+Underfull \vbox (badness 4303) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50 <./chapters/9/11/2/2/figs/Fig.png>]) (./chapters/9/11/2/3/line.tex
+<chapters/9/11/2/3/figs/line1.pdf, id=1203, 462.52798pt x 346.89601pt>
 File: chapters/9/11/2/3/figs/line1.pdf Graphic file (type pdf)
 <use chapters/9/11/2/3/figs/line1.pdf>
 Package pdftex.def Info: chapters/9/11/2/3/figs/line1.pdf  used on input line 4
@@ -1300,19 +1652,13 @@ Package pdftex.def Info: chapters/9/11/2/3/figs/line1.pdf  used on input line 4
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/9/11/2/4/line.tex
-<chapters/9/11/2/4/figs/line.png, id=618, 462.528pt x 346.896pt>
+<chapters/9/11/2/4/figs/line.png, id=1205, 462.528pt x 346.896pt>
 File: chapters/9/11/2/4/figs/line.png Graphic file (type png)
 <use chapters/9/11/2/4/figs/line.png>
 Package pdftex.def Info: chapters/9/11/2/4/figs/line.png  used on input line 40
 .
 (pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1325,7 +1671,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21 <./chapters/9/11/2/3/figs/line1.pdf>]
+ [51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1334,1554 +1680,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22 <./chapters/9/11/2/4/figs/line.png>]) (./chapters/9/11/2/5/line.tex)))
+ [52 <./chapters/9/11/2/3/figs/line1.pdf>]) (./chapters/9/11/2/5/line.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [24
-
-]
-Chapter 2.
-(./chapters/11/10/2.tex (./chapters/11/10/2/9/line.tex
-<chapters/11/10/2/9/figs/line.png, id=687, 630.355pt x 478.78876pt>
-File: chapters/11/10/2/9/figs/line.png Graphic file (type png)
-<use chapters/11/10/2/9/figs/line.png>
-Package pdftex.def Info: chapters/11/10/2/9/figs/line.png  used on input line 3
-5.
-(pdftex.def)             Requested size: 433.62001pt x 329.3564pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [26 <./chapters/11/10/2/9/figs/line.png>]) (./chapters/11/10/2/10/line.tex
-<chapters/11/10/2/10/figs/Figure_1.png, id=711, 462.528pt x 346.896pt>
-File: chapters/11/10/2/10/figs/Figure_1.png Graphic file (type png)
-<use chapters/11/10/2/10/figs/Figure_1.png>
-Package pdftex.def Info: chapters/11/10/2/10/figs/Figure_1.png  used on input l
-ine 62.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27])
-(./chapters/11/10/2/11/line.tex
-<chapters/11/10/2/11/figs/linefig.pdf, id=724, 462.52798pt x 346.89601pt>
-File: chapters/11/10/2/11/figs/linefig.pdf Graphic file (type pdf)
-<use chapters/11/10/2/11/figs/linefig.pdf>
-Package pdftex.def Info: chapters/11/10/2/11/figs/linefig.pdf  used on input li
-ne 21.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28 <./chapters/11/10/2/10/figs/Figure_1.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [29 <./chapters/11/10/2/11/figs/linefig.pdf>]) (./chapters/11/10/2/13/line.tex
-<chapters/11/10/2/13/figs/assign4.png, id=787, 1084.05pt x 784.9325pt>
-File: chapters/11/10/2/13/figs/assign4.png Graphic file (type png)
-<use chapters/11/10/2/13/figs/assign4.png>
-Package pdftex.def Info: chapters/11/10/2/13/figs/assign4.png  used on input li
-ne 23.
-(pdftex.def)             Requested size: 433.62001pt x 313.96744pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [31 <./chapters/11/10/2/13/figs/assign4.png>]) (./chapters/11/10/2/14/line.tex
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [32]
-<chapters/11/10/2/14/figs/fig.pdf, id=824, 462.52798pt x 346.89601pt>
-File: chapters/11/10/2/14/figs/fig.pdf Graphic file (type pdf)
-<use chapters/11/10/2/14/figs/fig.pdf>
-Package pdftex.def Info: chapters/11/10/2/14/figs/fig.pdf  used on input line 2
-7.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33 <./chapters/11/10/2/14/figs/fig.pdf>]) (./chapters/11/10/2/15/line.tex
-<chapters/11/10/2/15/figs/line.pdf, id=867, 462.52798pt x 346.89601pt>
-File: chapters/11/10/2/15/figs/line.pdf Graphic file (type pdf)
-<use chapters/11/10/2/15/figs/line.pdf>
-Package pdftex.def Info: chapters/11/10/2/15/figs/line.pdf  used on input line 
-26.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [35 <./chapters/11/10/2/15/figs/line.pdf>]) (./chapters/11/10/2/20/line.tex
-<chapters/11/10/2/20/figs/figs6.pdf, id=913, 462.52798pt x 346.89601pt>
-File: chapters/11/10/2/20/figs/figs6.pdf Graphic file (type pdf)
-<use chapters/11/10/2/20/figs/figs6.pdf>
-Package pdftex.def Info: chapters/11/10/2/20/figs/figs6.pdf  used on input line
- 96.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-))
-(./chapters/11/10/3.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [37 <./chapters/11/10/2/20/figs/figs6.pdf>] (./chapters/11/10/3/7/line.tex)
-(./chapters/11/10/3/9/line.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [38])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40
-
-]
-Chapter 3.
-(./chapters/11/11/1.tex (./chapters/11/11/1/11/circle.tex
-<chapters/11/11/1/11/figs/fig.pdf, id=995, 462.52798pt x 346.89601pt>
-File: chapters/11/11/1/11/figs/fig.pdf Graphic file (type pdf)
-<use chapters/11/11/1/11/figs/fig.pdf>
-Package pdftex.def Info: chapters/11/11/1/11/figs/fig.pdf  used on input line 3
-5.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [41]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [42 <./chapters/11/11/1/11/figs/fig.pdf>]) (./chapters/11/11/1/12/circle.tex
-<chapters/11/11/1/12/figs/conic.png, id=1048, 462.528pt x 346.896pt>
-File: chapters/11/11/1/12/figs/conic.png Graphic file (type png)
-<use chapters/11/11/1/12/figs/conic.png>
-Package pdftex.def Info: chapters/11/11/1/12/figs/conic.png  used on input line
- 31.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44 <./chapters/11/11/1/12/figs/conic.png>])) (./chapters/10/11/2.tex
-(./chapters/10/11/2/1/circle.tex
-<chapters/10/11/2/1/figs/circle1.pdf, id=1074, 462.52798pt x 346.89601pt>
-File: chapters/10/11/2/1/figs/circle1.pdf Graphic file (type pdf)
-<use chapters/10/11/2/1/figs/circle1.pdf>
-Package pdftex.def Info: chapters/10/11/2/1/figs/circle1.pdf  used on input lin
-e 33.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-) (./chapters/10/11/2/2/circle.tex
-<chapters/10/11/2/2/figs/main.png, id=1077, 1334.1042pt x 703.9098pt>
-File: chapters/10/11/2/2/figs/main.png Graphic file (type png)
-<use chapters/10/11/2/2/figs/main.png>
-Package pdftex.def Info: chapters/10/11/2/2/figs/main.png  used on input line 5
-0.
-(pdftex.def)             Requested size: 433.62001pt x 228.78946pt.
-)
-(./chapters/10/11/2/3/circle.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
-<chapters/10/11/2/3/figs/Question.png, id=1091, 462.528pt x 346.896pt>
-File: chapters/10/11/2/3/figs/Question.png Graphic file (type png)
-<use chapters/10/11/2/3/figs/Question.png>
-Package pdftex.def Info: chapters/10/11/2/3/figs/Question.png  used on input li
-ne 45.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-)
-(./chapters/10/11/2/4/circle.tex
-<chapters/10/11/2/4/figs/circle1.pdf, id=1093, 462.52798pt x 346.89601pt>
-File: chapters/10/11/2/4/figs/circle1.pdf Graphic file (type pdf)
-<use chapters/10/11/2/4/figs/circle1.pdf>
-Package pdftex.def Info: chapters/10/11/2/4/figs/circle1.pdf  used on input lin
-e 46.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-) (./chapters/10/11/2/5/circle.tex
-<chapters/10/11/2/5/figs/cir.png, id=1095, 462.528pt x 346.896pt>
-File: chapters/10/11/2/5/figs/cir.png Graphic file (type png)
-<use chapters/10/11/2/5/figs/cir.png>
-Package pdftex.def Info: chapters/10/11/2/5/figs/cir.png  used on input line 15
-6.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46 <./chapters/10/11/2/1/figs/circle1.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./chapters/10/11/2/6/circle.tex
-<chapters/10/11/2/6/figs/fig1.pdf, id=1144, 462.52798pt x 346.89601pt>
-File: chapters/10/11/2/6/figs/fig1.pdf Graphic file (type pdf)
-<use chapters/10/11/2/6/figs/fig1.pdf>
-Package pdftex.def Info: chapters/10/11/2/6/figs/fig1.pdf  used on input line 3
-0.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47 <./chapters/10/11/2/2/figs/main.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [48 <./chapters/10/11/2/3/figs/Question.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [49 <./chapters/10/11/2/4/figs/circle1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [50 <./chapters/10/11/2/5/figs/cir.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [51 <./chapters/10/11/2/6/figs/fig1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52
-
-]
-Chapter 4.
-(./chapters/11/11/5.tex (./chapters/11/11/5/2/conic.tex
-<chapters/11/11/5/2/figs/fig.pdf, id=1238, 462.52798pt x 346.89601pt>
-File: chapters/11/11/5/2/figs/fig.pdf Graphic file (type pdf)
-<use chapters/11/11/5/2/figs/fig.pdf>
-Package pdftex.def Info: chapters/11/11/5/2/figs/fig.pdf  used on input line 31
-.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-)
-(./chapters/11/11/5/4/conic.tex
-<chapters/11/11/5/4/figs/ellipse.png, id=1239, 560.0925pt x 426.59375pt>
-File: chapters/11/11/5/4/figs/ellipse.png Graphic file (type png)
-<use chapters/11/11/5/4/figs/ellipse.png>
-Package pdftex.def Info: chapters/11/11/5/4/figs/ellipse.png  used on input lin
-e 55.
-(pdftex.def)             Requested size: 433.62001pt x 330.28127pt.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [53]
-(./chapters/11/11/5/6/conic.tex
-<chapters/11/11/5/6/figs/fig1.pdf, id=1249, 462.52798pt x 346.89601pt>
-File: chapters/11/11/5/6/figs/fig1.pdf Graphic file (type pdf)
-<use chapters/11/11/5/6/figs/fig1.pdf>
-Package pdftex.def Info: chapters/11/11/5/6/figs/fig1.pdf  used on input line 3
-2.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-) (./chapters/11/11/5/8/conic.tex
-<chapters/11/11/5/8/figs/co.pdf, id=1250, 462.52798pt x 346.89601pt>
-File: chapters/11/11/5/8/figs/co.pdf Graphic file (type pdf)
-<use chapters/11/11/5/8/figs/co.pdf>
-Package pdftex.def Info: chapters/11/11/5/8/figs/co.pdf  used on input line 30.
-
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [54 <./chapters/11/11/5/2/figs/fig.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [55 <./chapters/11/11/5/4/figs/ellipse.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56 <./chapters/11/11/5/6/figs/fig1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57 <./chapters/11/11/5/8/figs/co.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58
-
-]
-Chapter 5.
-(./chapters/12/8/1.tex (./chapters/12/8/1/1/conic.tex
-<chapters/12/8/1/1/figs/conics1.png, id=1359, 462.528pt x 346.896pt>
-File: chapters/12/8/1/1/figs/conics1.png Graphic file (type png)
-<use chapters/12/8/1/1/figs/conics1.png>
-Package pdftex.def Info: chapters/12/8/1/1/figs/conics1.png  used on input line
- 32.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60 <./chapters/12/8/1/1/figs/conics1.png>]) (./chapters/12/8/1/2/conic.tex
-<chapters/12/8/1/2/figs/conics1.png, id=1380, 561.09625pt x 460.72125pt>
-File: chapters/12/8/1/2/figs/conics1.png Graphic file (type png)
-<use chapters/12/8/1/2/figs/conics1.png>
-Package pdftex.def Info: chapters/12/8/1/2/figs/conics1.png  used on input line
- 34.
-(pdftex.def)             Requested size: 433.62001pt x 356.04999pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [61]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62 <./chapters/12/8/1/2/figs/conics1.png>]) (./chapters/12/8/1/6/conic.tex
-<chapters/12/8/1/6/figs/conics-fig.pdf, id=1400, 462.52798pt x 346.89601pt>
-File: chapters/12/8/1/6/figs/conics-fig.pdf Graphic file (type pdf)
-<use chapters/12/8/1/6/figs/conics-fig.pdf>
-Package pdftex.def Info: chapters/12/8/1/6/figs/conics-fig.pdf  used on input l
-ine 54.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [64 <./chapters/12/8/1/6/figs/conics-fig.pdf>]) (./chapters/12/8/1/7/conic.tex
-<chapters/12/8/1/7/figs/conic.png, id=1449, 462.528pt x 346.896pt>
-File: chapters/12/8/1/7/figs/conic.png Graphic file (type png)
-<use chapters/12/8/1/7/figs/conic.png>
-Package pdftex.def Info: chapters/12/8/1/7/figs/conic.png  used on input line 6
-1.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [65])
-(./chapters/12/8/1/8/conic.tex
-<chapters/12/8/1/8/figs/conics1.png, id=1464, 462.528pt x 346.896pt>
-File: chapters/12/8/1/8/figs/conics1.png Graphic file (type png)
-<use chapters/12/8/1/8/figs/conics1.png>
-Package pdftex.def Info: chapters/12/8/1/8/figs/conics1.png  used on input line
- 35.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [66 <./chapters/12/8/1/7/figs/conic.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [67 <./chapters/12/8/1/8/figs/conics1.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [68])
-(./chapters/12/8/1/9/conic.tex
-<chapters/12/8/1/9/figs/con3.pdf, id=1494, 462.52798pt x 346.89601pt>
-File: chapters/12/8/1/9/figs/con3.pdf Graphic file (type pdf)
-<use chapters/12/8/1/9/figs/con3.pdf>
-Package pdftex.def Info: chapters/12/8/1/9/figs/con3.pdf  used on input line 57
-.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./chapters/12/8/1/10/conic.tex
-<chapters/12/8/1/10/figs/conic.png, id=1495, 462.528pt x 346.896pt>
-File: chapters/12/8/1/10/figs/conic.png Graphic file (type png)
-<use chapters/12/8/1/10/figs/conic.png>
-Package pdftex.def Info: chapters/12/8/1/10/figs/conic.png  used on input line 
-48.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 2269) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [69])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [70 <./chapters/12/8/1/9/figs/con3.pdf>]) (./chapters/12/8/2.tex
-(./chapters/12/8/2/1/conic.tex
-<chapters/12/8/2/1/figs/conic.jpg, id=1545, 1205.50375pt x 682.55pt>
-File: chapters/12/8/2/1/figs/conic.jpg Graphic file (type jpg)
-<use chapters/12/8/2/1/figs/conic.jpg>
-Package pdftex.def Info: chapters/12/8/2/1/figs/conic.jpg  used on input line 6
-0.
-(pdftex.def)             Requested size: 433.62001pt x 245.50952pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [71 <./chapters/12/8/1/10/figs/conic.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [72 <./chapters/12/8/2/1/figs/conic.jpg>]) (./chapters/12/8/2/3/conic.tex
-<chapters/12/8/2/3/figs/conic1.pdf, id=1564, 462.52798pt x 346.89601pt>
-File: chapters/12/8/2/3/figs/conic1.pdf Graphic file (type pdf)
-<use chapters/12/8/2/3/figs/conic1.pdf>
-Package pdftex.def Info: chapters/12/8/2/3/figs/conic1.pdf  used on input line 
-37.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 1348) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [73])
-(./chapters/12/8/2/6/conic.tex
-<chapters/12/8/2/6/figs/conic.png, id=1578, 462.528pt x 346.896pt>
-File: chapters/12/8/2/6/figs/conic.png Graphic file (type png)
-<use chapters/12/8/2/6/figs/conic.png>
-Package pdftex.def Info: chapters/12/8/2/6/figs/conic.png  used on input line 4
-5.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [74 <./chapters/12/8/2/3/figs/conic1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [75 <./chapters/12/8/2/6/figs/conic.png>])) (./chapters/12/8/3.tex
-(./chapters/12/8/3/2/conic.tex
-<chapters/12/8/3/2/figs/figure.png, id=1633, 462.528pt x 346.896pt>
-File: chapters/12/8/3/2/figs/figure.png Graphic file (type png)
-<use chapters/12/8/3/2/figs/figure.png>
-Package pdftex.def Info: chapters/12/8/3/2/figs/figure.png  used on input line 
-48.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [77 <./chapters/12/8/3/2/figs/figure.png>]) (./chapters/12/8/3/3/conic.tex
-<chapters/12/8/3/3/figs/conic.png, id=1656, 521.95pt x 407.5225pt>
-File: chapters/12/8/3/3/figs/conic.png Graphic file (type png)
-<use chapters/12/8/3/3/figs/conic.png>
-Package pdftex.def Info: chapters/12/8/3/3/figs/conic.png  used on input line 3
-4.
-(pdftex.def)             Requested size: 433.62001pt x 338.56071pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [78 <./chapters/12/8/3/3/figs/conic.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [79])
-(./chapters/12/8/3/7/conic.tex
-<chapters/12/8/3/7/figs/conic.png, id=1677, 538.01pt x 446.66875pt>
-File: chapters/12/8/3/7/figs/conic.png Graphic file (type png)
-<use chapters/12/8/3/7/figs/conic.png>
-Package pdftex.def Info: chapters/12/8/3/7/figs/conic.png  used on input line 6
-0.
-(pdftex.def)             Requested size: 433.62001pt x 360.00719pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81 <./chapters/12/8/3/7/figs/conic.png>]) (./chapters/12/8/3/8/conic.tex
-<chapters/12/8/3/8/figs/conic_fig.png, id=1700, 462.528pt x 346.896pt>
-File: chapters/12/8/3/8/figs/conic_fig.png Graphic file (type png)
-<use chapters/12/8/3/8/figs/conic_fig.png>
-Package pdftex.def Info: chapters/12/8/3/8/figs/conic_fig.png  used on input li
-ne 61.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [82 <./chapters/12/8/3/8/figs/conic_fig.png>]) (./chapters/12/8/3/9/conic.tex
-<chapters/12/8/3/9/figs/conic_fig.png, id=1711, 462.528pt x 346.896pt>
-File: chapters/12/8/3/9/figs/conic_fig.png Graphic file (type png)
-<use chapters/12/8/3/9/figs/conic_fig.png>
-Package pdftex.def Info: chapters/12/8/3/9/figs/conic_fig.png  used on input li
-ne 61.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [83]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [84 <./chapters/12/8/3/9/figs/conic_fig.png>]) (./chapters/12/8/3/10/conic.tex
-<chapters/12/8/3/10/figs/conics1.png, id=1734, 550.055pt x 448.67625pt>
-File: chapters/12/8/3/10/figs/conics1.png Graphic file (type png)
-<use chapters/12/8/3/10/figs/conics1.png>
-Package pdftex.def Info: chapters/12/8/3/10/figs/conics1.png  used on input lin
-e 34.
-(pdftex.def)             Requested size: 433.62001pt x 353.71095pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./chapters/12/8/3/17/conic.tex
-<chapters/12/8/3/17/figs/conicfig.pdf, id=1735, 462.52798pt x 346.89601pt>
-File: chapters/12/8/3/17/figs/conicfig.pdf Graphic file (type pdf)
-<use chapters/12/8/3/17/figs/conicfig.pdf>
-Package pdftex.def Info: chapters/12/8/3/17/figs/conicfig.pdf  used on input li
-ne 65.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [85])
-(./chapters/12/8/3/18/conic.tex
-<chapters/12/8/3/18/figs/cp.jpg, id=1747, 629.35126pt x 511.9125pt>
-File: chapters/12/8/3/18/figs/cp.jpg Graphic file (type jpg)
-<use chapters/12/8/3/18/figs/cp.jpg>
-Package pdftex.def Info: chapters/12/8/3/18/figs/cp.jpg  used on input line 48.
-
-(pdftex.def)             Requested size: 433.62001pt x 352.70447pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 5175) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [86 <./chapters/12/8/3/10/figs/conics1.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [87 <./chapters/12/8/3/17/figs/conicfig.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [88 <./chapters/12/8/3/18/figs/cp.jpg>]))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [90
-
-]
-Chapter 6.
-(./chapters/12/6/3.tex (./chapters/12/6/3/2/tangent.tex)
-(./chapters/12/6/3/8/tangent.tex
-<chapters/12/6/3/8/figs/main.png, id=1812, 1334.1042pt x 703.9098pt>
-File: chapters/12/6/3/8/figs/main.png Graphic file (type png)
-<use chapters/12/6/3/8/figs/main.png>
-Package pdftex.def Info: chapters/12/6/3/8/figs/main.png  used on input line 50
-.
-(pdftex.def)             Requested size: 433.62001pt x 228.78946pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [91]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [92 <./chapters/12/6/3/8/figs/main.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [93]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [94])
-(./chapters/12/6/3/10/tangent.tex
-<chapters/12/6/3/10/figs/conic1.pdf, id=1850, 462.52798pt x 346.89601pt>
-File: chapters/12/6/3/10/figs/conic1.pdf Graphic file (type pdf)
-<use chapters/12/6/3/10/figs/conic1.pdf>
-Package pdftex.def Info: chapters/12/6/3/10/figs/conic1.pdf  used on input line
- 45.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [95]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [96 <./chapters/12/6/3/10/figs/conic1.pdf>]) (./chapters/12/6/3/11/tangent.tex
-<chapters/12/6/3/11/figs/con_fig.png, id=1900, 461.8053pt x 346.1733pt>
-File: chapters/12/6/3/11/figs/con_fig.png Graphic file (type png)
-<use chapters/12/6/3/11/figs/con_fig.png>
-Package pdftex.def Info: chapters/12/6/3/11/figs/con_fig.png  used on input lin
-e 157.
-(pdftex.def)             Requested size: 433.62001pt x 325.05959pt.
-
-Underfull \vbox (badness 6493) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [97])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [98 <./chapters/12/6/3/11/figs/con_fig.png>] (./chapters/12/6/3/13/tangent.tex
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-<chapters/12/6/3/13/figs/conic_1.pdf, id=1929, 462.52798pt x 346.89601pt>
-File: chapters/12/6/3/13/figs/conic_1.pdf Graphic file (type pdf)
-<use chapters/12/6/3/13/figs/conic_1.pdf>
-Package pdftex.def Info: chapters/12/6/3/13/figs/conic_1.pdf  used on input lin
-e 77.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 4013) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [99])
-(./chapters/12/6/3/15/tangent.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [100 <./chapters/12/6/3/13/figs/conic_1.pdf>]
-<chapters/12/6/3/15/figs/conic.png, id=1991, 462.528pt x 346.896pt>
-File: chapters/12/6/3/15/figs/conic.png Graphic file (type png)
-<use chapters/12/6/3/15/figs/conic.png>
-Package pdftex.def Info: chapters/12/6/3/15/figs/conic.png  used on input line 
-39.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101 <./chapters/12/6/3/15/figs/conic.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [102])
-(./chapters/12/6/3/25/tangent.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [103]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [104]
-<chapters/12/6/3/25/figs/conic.pdf, id=2042, 462.52798pt x 346.89601pt>
-File: chapters/12/6/3/25/figs/conic.pdf Graphic file (type pdf)
-<use chapters/12/6/3/25/figs/conic.pdf>
-Package pdftex.def Info: chapters/12/6/3/25/figs/conic.pdf  used on input line 
-113.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(./chapters/12/6/3/27/tangent.tex
-<chapters/12/6/3/27/figs/conicfig.png, id=2043, 523.9575pt x 384.43625pt>
-File: chapters/12/6/3/27/figs/conicfig.png Graphic file (type png)
-<use chapters/12/6/3/27/figs/conicfig.png>
-Package pdftex.def Info: chapters/12/6/3/27/figs/conicfig.png  used on input li
-ne 155.
-(pdftex.def)             Requested size: 433.62001pt x 318.16103pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [105]))
-(./chapters/12/6/6.tex (./chapters/12/6/6/4/tangent.tex
-<chapters/12/6/6/4/figs/conics.png, id=2058, 586.19pt x 427.5975pt>
-File: chapters/12/6/6/4/figs/conics.png Graphic file (type png)
-<use chapters/12/6/6/4/figs/conics.png>
-Package pdftex.def Info: chapters/12/6/6/4/figs/conics.png  used on input line 
-53.
-(pdftex.def)             Requested size: 433.62001pt x 316.29974pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [106 <./chapters/12/6/3/25/figs/conic.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [107 <./chapters/12/6/3/27/figs/conicfig.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [108 <./chapters/12/6/6/4/figs/conics.png>]) (./chapters/12/6/6/21/tangent.tex
-<chapters/12/6/6/21/figs/im.pdf, id=2102, 462.52798pt x 346.89601pt>
-File: chapters/12/6/6/21/figs/im.pdf Graphic file (type pdf)
-<use chapters/12/6/6/21/figs/im.pdf>
-Package pdftex.def Info: chapters/12/6/6/21/figs/im.pdf  used on input line 67.
-
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./chapters/12/6/6/22/tangent.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [109]))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [110 <./chapters/12/6/6/21/figs/im.pdf>]
-Chapter 7.
-(./chapters/9/8.tex (./chapters/9/8/1.tex (./chapters/9/8/1/1/line.tex)
-(./chapters/9/8/1/2/assg_4.tex
-<chapters/9/8/1/2/fig.pdf, id=2164, 462.52798pt x 346.89601pt>
-File: chapters/9/8/1/2/fig.pdf Graphic file (type pdf)
-<use chapters/9/8/1/2/fig.pdf>
-Package pdftex.def Info: chapters/9/8/1/2/fig.pdf  used on input line 66.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [111
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [112 <./chapters/9/8/1/2/fig.pdf>]) (./chapters/9/8/1/3/rhombus.tex
-<chapters/9/8/1/3/figs/rhombus.png, id=2212, 462.528pt x 346.896pt>
-File: chapters/9/8/1/3/figs/rhombus.png Graphic file (type png)
-<use chapters/9/8/1/3/figs/rhombus.png>
-Package pdftex.def Info: chapters/9/8/1/3/figs/rhombus.png  used on input line 
-26.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [113]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [114 <./chapters/9/8/1/3/figs/rhombus.png>]) (./chapters/9/8/1/4/line_assignme
-nt.tex)
-(./chapters/9/8/1/6/parallelogram.tex
-<chapters/9/8/1/6/figs/parallel.png, id=2244, 462.528pt x 346.896pt>
-File: chapters/9/8/1/6/figs/parallel.png Graphic file (type png)
-<use chapters/9/8/1/6/figs/parallel.png>
-Package pdftex.def Info: chapters/9/8/1/6/figs/parallel.png  used on input line
- 31.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [115]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [116 <./chapters/9/8/1/6/figs/parallel.png>]) (./chapters/9/8/1/7/matrix1.tex
-<chapters/9/8/1/7/figs/fig5.pdf, id=2276, 462.52798pt x 346.89601pt>
-File: chapters/9/8/1/7/figs/fig5.pdf Graphic file (type pdf)
-<use chapters/9/8/1/7/figs/fig5.pdf>
-Package pdftex.def Info: chapters/9/8/1/7/figs/fig5.pdf  used on input line 79.
-
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [117]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [118 <./chapters/9/8/1/7/figs/fig5.pdf>]) (./chapters/9/8/1/9/main.tex
-<chapters/9/8/1/9/figs/output.pdf, id=2322, 462.52798pt x 346.89601pt>
-File: chapters/9/8/1/9/figs/output.pdf Graphic file (type pdf)
-<use chapters/9/8/1/9/figs/output.pdf>
-Package pdftex.def Info: chapters/9/8/1/9/figs/output.pdf  used on input line 6
-4.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [119]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [120 <./chapters/9/8/1/9/figs/output.pdf>]) (./chapters/9/8/1/10/matrix1.tex
-<chapters/9/8/1/10/figs/matrix_line.png, id=2382, 462.528pt x 346.896pt>
-File: chapters/9/8/1/10/figs/matrix_line.png Graphic file (type png)
-<use chapters/9/8/1/10/figs/matrix_line.png>
-Package pdftex.def Info: chapters/9/8/1/10/figs/matrix_line.png  used on input 
-line 74.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [121]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [122 <./chapters/9/8/1/10/figs/matrix_line.png>]) (./chapters/9/8/1/11/line.te
-x
-<chapters/9/8/1/11/figs/fig.png, id=2414, 462.528pt x 346.896pt>
-File: chapters/9/8/1/11/figs/fig.png Graphic file (type png)
-<use chapters/9/8/1/11/figs/fig.png>
-Package pdftex.def Info: chapters/9/8/1/11/figs/fig.png  used on input line 46.
-
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [123]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [124 <./chapters/9/8/1/11/figs/fig.png>]) (./chapters/9/8/1/12/line.tex))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [125]
-\openout2 = `chapters/9/8/2.aux'.
-
-
-(./chapters/9/8/2.tex (./chapters/9/8/2/1/line.tex
-<chapters/9/8/2/1/figs/line1.pdf, id=2462, 462.52798pt x 346.89601pt>
-File: chapters/9/8/2/1/figs/line1.pdf Graphic file (type pdf)
-<use chapters/9/8/2/1/figs/line1.pdf>
-Package pdftex.def Info: chapters/9/8/2/1/figs/line1.pdf  used on input line 35
-.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 3769) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [126
-
- <./chapters/9/8/2/1/figs/line1.pdf>]) (./chapters/9/8/2/3/line.tex
-<chapters/9/8/2/3/figs/fig.pdf, id=2503, 462.52798pt x 346.89601pt>
-File: chapters/9/8/2/3/figs/fig.pdf Graphic file (type pdf)
-<use chapters/9/8/2/3/figs/fig.pdf>
-Package pdftex.def Info: chapters/9/8/2/3/figs/fig.pdf  used on input line 21.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [127]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [128 <./chapters/9/8/2/3/figs/fig.pdf>]) (./chapters/9/8/2/5/line.tex
-<chapters/9/8/2/5/figs/line_1.pdf, id=2558, 462.52798pt x 346.89601pt>
-File: chapters/9/8/2/5/figs/line_1.pdf Graphic file (type pdf)
-<use chapters/9/8/2/5/figs/line_1.pdf>
-Package pdftex.def Info: chapters/9/8/2/5/figs/line_1.pdf  used on input line 7
-2.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [129]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [130 <./chapters/9/8/2/5/figs/line_1.pdf>]) (./chapters/9/8/2/7/line.tex
-<chapters/9/8/2/7/figs/fig1.pdf, id=2624, 462.52798pt x 346.89601pt>
-File: chapters/9/8/2/7/figs/fig1.pdf Graphic file (type pdf)
-<use chapters/9/8/2/7/figs/fig1.pdf>
-Package pdftex.def Info: chapters/9/8/2/7/figs/fig1.pdf  used on input line 33.
-
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [131]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [132 <./chapters/9/8/2/7/figs/fig1.pdf>]))
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [133])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [134
-
-
-
-]
-Chapter 8.
-(./chapters/9/9.tex (./chapters/9/9/2.tex (./chapters/9/9/2/1/line.tex
-<chapters/9/9/2/1/figs/fig1.pdf, id=2693, 462.528pt x 346.896pt>
-File: chapters/9/9/2/1/figs/fig1.pdf Graphic file (type pdf)
-<use chapters/9/9/2/1/figs/fig1.pdf>
-Package pdftex.def Info: chapters/9/9/2/1/figs/fig1.pdf  used on input line 154
-.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./chapters/9/9/2/2/line.tex
-<chapters/9/9/2/2/figs/main.png, id=2694, 462.528pt x 346.896pt>
-File: chapters/9/9/2/2/figs/main.png Graphic file (type png)
-<use chapters/9/9/2/2/figs/main.png>
-Package pdftex.def Info: chapters/9/9/2/2/figs/main.png  used on input line 38.
-
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [135]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [136 <./chapters/9/9/2/1/figs/fig1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [137 <./chapters/9/9/2/2/figs/main.png>]) (./chapters/9/9/2/4/line.tex
-<chapters/9/9/2/4/figs/Question.png, id=2732, 462.528pt x 346.896pt>
-File: chapters/9/9/2/4/figs/Question.png Graphic file (type png)
-<use chapters/9/9/2/4/figs/Question.png>
-Package pdftex.def Info: chapters/9/9/2/4/figs/Question.png  used on input line
- 34.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (./chapters/9/9/2/5/line.tex
-<chapters/9/9/2/5/figs/parallelogram1.pdf, id=2733, 462.52798pt x 346.89601pt>
-File: chapters/9/9/2/5/figs/parallelogram1.pdf Graphic file (type pdf)
-<use chapters/9/9/2/5/figs/parallelogram1.pdf>
-Package pdftex.def Info: chapters/9/9/2/5/figs/parallelogram1.pdf  used on inpu
-t line 45.
-(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [138]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [139 <./chapters/9/9/2/4/figs/Question.png>])) (./chapters/9/9/3.tex
+ [53 <./chapters/9/11/2/4/figs/line.png>]))) (./chapters/9/9/3.tex
 (./chapters/9/9/3/1/line.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [140 <./chapters/9/9/2/5/figs/parallelogram1.pdf>]
-<chapters/9/9/3/1/figs/fig1.jpg, id=2800, 524.96124pt x 405.515pt>
+<chapters/9/9/3/1/figs/fig1.jpg, id=1262, 524.96124pt x 405.515pt>
 File: chapters/9/9/3/1/figs/fig1.jpg Graphic file (type jpg)
 <use chapters/9/9/3/1/figs/fig1.jpg>
 Package pdftex.def Info: chapters/9/9/3/1/figs/fig1.jpg  used on input line 159
 .
 (pdftex.def)             Requested size: 433.62001pt x 334.96855pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [141 <./chapters/9/9/3/1/figs/fig1.jpg>]) (./chapters/9/9/3/2/Line.tex
-<chapters/9/9/3/2/figs/fig_Triangle.png, id=2812, 462.528pt x 346.896pt>
-File: chapters/9/9/3/2/figs/fig_Triangle.png Graphic file (type png)
-<use chapters/9/9/3/2/figs/fig_Triangle.png>
-Package pdftex.def Info: chapters/9/9/3/2/figs/fig_Triangle.png  used on input 
-line 37.
-(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2891,7 +1707,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [142]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54])
+(./chapters/9/9/3/2/Line.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2900,26 +1720,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [143 <./chapters/9/9/3/2/figs/fig_Triangle.png>]) (./chapters/9/9/3/3/line.tex
-<chapters/9/9/3/3/figs/par.pdf, id=2839, 462.52798pt x 346.89601pt>
+ [55 <./chapters/9/9/3/1/figs/fig1.jpg>]
+<chapters/9/9/3/2/figs/fig_Triangle.png, id=1289, 462.528pt x 346.896pt>
+File: chapters/9/9/3/2/figs/fig_Triangle.png Graphic file (type png)
+<use chapters/9/9/3/2/figs/fig_Triangle.png>
+Package pdftex.def Info: chapters/9/9/3/2/figs/fig_Triangle.png  used on input 
+line 37.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56 <./chapters/9/9/3/2/figs/fig_Triangle.png>]) (./chapters/9/9/3/3/line.tex
+<chapters/9/9/3/3/figs/par.pdf, id=1301, 462.52798pt x 346.89601pt>
 File: chapters/9/9/3/3/figs/par.pdf Graphic file (type pdf)
 <use chapters/9/9/3/3/figs/par.pdf>
 Package pdftex.def Info: chapters/9/9/3/3/figs/par.pdf  used on input line 31.
 (pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [144 <./chapters/9/9/3/3/figs/par.pdf>]) (./chapters/9/9/3/4/line.tex
-<chapters/9/9/3/4/figs/figa6.pdf, id=2896, 462.52798pt x 346.89601pt>
+) (./chapters/9/9/3/4/line.tex
+<chapters/9/9/3/4/figs/figa6.pdf, id=1306, 462.52798pt x 346.89601pt>
 File: chapters/9/9/3/4/figs/figa6.pdf Graphic file (type pdf)
 <use chapters/9/9/3/4/figs/figa6.pdf>
 Package pdftex.def Info: chapters/9/9/3/4/figs/figa6.pdf  used on input line 67
 .
 (pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -2929,8 +1766,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [145]
-<chapters/9/9/3/9/figs/l1.pdf, id=2918, 462.52798pt x 346.89601pt>
+ [58 <./chapters/9/9/3/3/figs/par.pdf>]
+<chapters/9/9/3/9/figs/l1.pdf, id=1381, 462.52798pt x 346.89601pt>
 File: chapters/9/9/3/9/figs/l1.pdf Graphic file (type pdf)
 <use chapters/9/9/3/9/figs/l1.pdf>
 Package pdftex.def Info: chapters/9/9/3/9/figs/l1.pdf  used on input line 23.
@@ -2940,6 +1777,15 @@ Package pdftex.def Info: chapters/9/9/3/9/figs/l1.pdf  used on input line 23.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+Underfull \vbox (badness 3635) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59 <./chapters/9/9/3/4/figs/figa6.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2948,24 +1794,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [146 <./chapters/9/9/3/4/figs/figa6.pdf>]
+ [60 <./chapters/9/9/3/9/figs/l1.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [147 <./chapters/9/9/3/9/figs/l1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [148])
+ [61])
 (./chapters/9/9/3/11/line.tex
-<chapters/9/9/3/11/figs/matrix.pdf, id=3006, 462.52798pt x 346.89601pt>
+<chapters/9/9/3/11/figs/matrix.pdf, id=1471, 462.52798pt x 346.89601pt>
 File: chapters/9/9/3/11/figs/matrix.pdf Graphic file (type pdf)
 <use chapters/9/9/3/11/figs/matrix.pdf>
 Package pdftex.def Info: chapters/9/9/3/11/figs/matrix.pdf  used on input line 
@@ -2984,7 +1821,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [149]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -2993,8 +1830,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [150 <./chapters/9/9/3/11/figs/matrix.pdf>]) (./chapters/9/9/3/16/line.tex
-<chapters/9/9/3/16/figs/main.jpg, id=3065, 915.42pt x 714.67pt>
+ [63 <./chapters/9/9/3/11/figs/matrix.pdf>]) (./chapters/9/9/3/16/line.tex
+<chapters/9/9/3/16/figs/main.jpg, id=1529, 915.42pt x 714.67pt>
 File: chapters/9/9/3/16/figs/main.jpg Graphic file (type jpg)
 <use chapters/9/9/3/16/figs/main.jpg>
 Package pdftex.def Info: chapters/9/9/3/16/figs/main.jpg  used on input line 41
@@ -3010,7 +1847,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [151]
+ [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3019,36 +1856,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [152 <./chapters/9/9/3/16/figs/main.jpg>])) (./chapters/9/9/4.tex
-(./chapters/9/9/4/3/line.tex
-<chapters/9/9/4/3/figs/ABC.pdf, id=3094, 462.52798pt x 346.89601pt>
-File: chapters/9/9/4/3/figs/ABC.pdf Graphic file (type pdf)
-<use chapters/9/9/4/3/figs/ABC.pdf>
-Package pdftex.def Info: chapters/9/9/4/3/figs/ABC.pdf  used on input line 51.
+ [65 <./chapters/9/9/3/16/figs/main.jpg>]))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Chapter 5.
+(./chapters/9/8.tex (./chapters/9/8/1.tex (./chapters/9/8/1/1/line.tex)
+(./chapters/9/8/1/2/assg_4.tex
+<chapters/9/8/1/2/fig.pdf, id=1562, 462.52798pt x 346.89601pt>
+File: chapters/9/8/1/2/fig.pdf Graphic file (type pdf)
+<use chapters/9/8/1/2/fig.pdf>
+Package pdftex.def Info: chapters/9/8/1/2/fig.pdf  used on input line 66.
 (pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [153 <./chapters/9/9/4/3/figs/ABC.pdf>]) (./chapters/9/9/4/4/line.tex
-<chapters/9/9/4/4/figs/construction.png, id=3133, 569.12625pt x 422.57875pt>
-File: chapters/9/9/4/4/figs/construction.png Graphic file (type png)
-<use chapters/9/9/4/4/figs/construction.png>
-Package pdftex.def Info: chapters/9/9/4/4/figs/construction.png  used on input 
-line 51.
-(pdftex.def)             Requested size: 433.62001pt x 321.98209pt.
-)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/9/9/4/5/line.tex
-<chapters/9/9/4/5/figs/matrix.png, id=3135, 462.528pt x 346.896pt>
-File: chapters/9/9/4/5/figs/matrix.png Graphic file (type png)
-<use chapters/9/9/4/5/figs/matrix.png>
-Package pdftex.def Info: chapters/9/9/4/5/figs/matrix.png  used on input line 6
-3.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68 <./chapters/9/8/1/2/fig.pdf>]) (./chapters/9/8/1/3/rhombus.tex
+<chapters/9/8/1/3/figs/rhombus.png, id=1610, 462.528pt x 346.896pt>
+File: chapters/9/8/1/3/figs/rhombus.png Graphic file (type png)
+<use chapters/9/8/1/3/figs/rhombus.png>
+Package pdftex.def Info: chapters/9/8/1/3/figs/rhombus.png  used on input line 
+26.
 (pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
 
 
@@ -3063,8 +1915,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [154])
-Underfull \vbox (badness 4479) has occurred while \output is active []
+ [69]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [70 <./chapters/9/8/1/3/figs/rhombus.png>]) (./chapters/9/8/1/4/line_assignmen
+t.tex)
+(./chapters/9/8/1/6/parallelogram.tex
+<chapters/9/8/1/6/figs/parallel.png, id=1643, 462.528pt x 346.896pt>
+File: chapters/9/8/1/6/figs/parallel.png Graphic file (type png)
+<use chapters/9/8/1/6/figs/parallel.png>
+Package pdftex.def Info: chapters/9/8/1/6/figs/parallel.png  used on input line
+ 31.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3072,16 +1943,355 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [155 <./chapters/9/9/4/4/figs/construction.png>]))
+ [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [156 <./chapters/9/9/4/5/figs/matrix.png>]
-Chapter 9.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [72 <./chapters/9/8/1/6/figs/parallel.png>]) (./chapters/9/8/1/7/matrix1.tex
+<chapters/9/8/1/7/figs/fig5.pdf, id=1674, 462.52798pt x 346.89601pt>
+File: chapters/9/8/1/7/figs/fig5.pdf Graphic file (type pdf)
+<use chapters/9/8/1/7/figs/fig5.pdf>
+Package pdftex.def Info: chapters/9/8/1/7/figs/fig5.pdf  used on input line 79.
+
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [74 <./chapters/9/8/1/7/figs/fig5.pdf>]) (./chapters/9/8/1/9/main.tex
+<chapters/9/8/1/9/figs/output.pdf, id=1720, 462.52798pt x 346.89601pt>
+File: chapters/9/8/1/9/figs/output.pdf Graphic file (type pdf)
+<use chapters/9/8/1/9/figs/output.pdf>
+Package pdftex.def Info: chapters/9/8/1/9/figs/output.pdf  used on input line 6
+4.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76 <./chapters/9/8/1/9/figs/output.pdf>]) (./chapters/9/8/1/10/matrix1.tex
+<chapters/9/8/1/10/figs/matrix_line.png, id=1781, 462.528pt x 346.896pt>
+File: chapters/9/8/1/10/figs/matrix_line.png Graphic file (type png)
+<use chapters/9/8/1/10/figs/matrix_line.png>
+Package pdftex.def Info: chapters/9/8/1/10/figs/matrix_line.png  used on input 
+line 74.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78 <./chapters/9/8/1/10/figs/matrix_line.png>]) (./chapters/9/8/1/11/line.tex
+<chapters/9/8/1/11/figs/fig.png, id=1812, 462.528pt x 346.896pt>
+File: chapters/9/8/1/11/figs/fig.png Graphic file (type png)
+<use chapters/9/8/1/11/figs/fig.png>
+Package pdftex.def Info: chapters/9/8/1/11/figs/fig.png  used on input line 46.
+
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [79]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80 <./chapters/9/8/1/11/figs/fig.png>]) (./chapters/9/8/1/12/line.tex))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
+\openout2 = `chapters/9/8/2.aux'.
+
+
+(./chapters/9/8/2.tex (./chapters/9/8/2/1/line.tex
+<chapters/9/8/2/1/figs/line1.pdf, id=1859, 462.52798pt x 346.89601pt>
+File: chapters/9/8/2/1/figs/line1.pdf Graphic file (type pdf)
+<use chapters/9/8/2/1/figs/line1.pdf>
+Package pdftex.def Info: chapters/9/8/2/1/figs/line1.pdf  used on input line 35
+.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 3769) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82
+
+ <./chapters/9/8/2/1/figs/line1.pdf>]) (./chapters/9/8/2/3/line.tex
+<chapters/9/8/2/3/figs/fig.pdf, id=1901, 462.52798pt x 346.89601pt>
+File: chapters/9/8/2/3/figs/fig.pdf Graphic file (type pdf)
+<use chapters/9/8/2/3/figs/fig.pdf>
+Package pdftex.def Info: chapters/9/8/2/3/figs/fig.pdf  used on input line 21.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [83]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [84 <./chapters/9/8/2/3/figs/fig.pdf>]) (./chapters/9/8/2/5/line.tex
+<chapters/9/8/2/5/figs/line_1.pdf, id=1956, 462.52798pt x 346.89601pt>
+File: chapters/9/8/2/5/figs/line_1.pdf Graphic file (type pdf)
+<use chapters/9/8/2/5/figs/line_1.pdf>
+Package pdftex.def Info: chapters/9/8/2/5/figs/line_1.pdf  used on input line 7
+2.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86 <./chapters/9/8/2/5/figs/line_1.pdf>]) (./chapters/9/8/2/7/line.tex
+<chapters/9/8/2/7/figs/fig1.pdf, id=2021, 462.52798pt x 346.89601pt>
+File: chapters/9/8/2/7/figs/fig1.pdf Graphic file (type pdf)
+<use chapters/9/8/2/7/figs/fig1.pdf>
+Package pdftex.def Info: chapters/9/8/2/7/figs/fig1.pdf  used on input line 33.
+
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [87]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [88 <./chapters/9/8/2/7/figs/fig1.pdf>]))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [89])
+(./chapters/9/9/2.tex (./chapters/9/9/2/1/line.tex
+<chapters/9/9/2/1/figs/fig1.pdf, id=2087, 462.528pt x 346.896pt>
+File: chapters/9/9/2/1/figs/fig1.pdf Graphic file (type pdf)
+<use chapters/9/9/2/1/figs/fig1.pdf>
+Package pdftex.def Info: chapters/9/9/2/1/figs/fig1.pdf  used on input line 154
+.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+)
+(./chapters/9/9/2/2/line.tex
+<chapters/9/9/2/2/figs/main.png, id=2088, 462.528pt x 346.896pt>
+File: chapters/9/9/2/2/figs/main.png Graphic file (type png)
+<use chapters/9/9/2/2/figs/main.png>
+Package pdftex.def Info: chapters/9/9/2/2/figs/main.png  used on input line 38.
+
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 2799) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [90
+
+
+ <./chapters/9/9/2/1/figs/fig1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [91 <./chapters/9/9/2/2/figs/main.png>]) (./chapters/9/9/2/4/line.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [92]
+<chapters/9/9/2/4/figs/Question.png, id=2128, 462.528pt x 346.896pt>
+File: chapters/9/9/2/4/figs/Question.png Graphic file (type png)
+<use chapters/9/9/2/4/figs/Question.png>
+Package pdftex.def Info: chapters/9/9/2/4/figs/Question.png  used on input line
+ 34.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+)
+(./chapters/9/9/2/5/line.tex
+<chapters/9/9/2/5/figs/parallelogram1.pdf, id=2129, 462.52798pt x 346.89601pt>
+File: chapters/9/9/2/5/figs/parallelogram1.pdf Graphic file (type pdf)
+<use chapters/9/9/2/5/figs/parallelogram1.pdf>
+Package pdftex.def Info: chapters/9/9/2/5/figs/parallelogram1.pdf  used on inpu
+t line 45.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 3471) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [93 <./chapters/9/9/2/4/figs/Question.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [94 <./chapters/9/9/2/5/figs/parallelogram1.pdf>])) (./chapters/9/9/4.tex
+(./chapters/9/9/4/3/line.tex
+<chapters/9/9/4/3/figs/ABC.pdf, id=2182, 462.52798pt x 346.89601pt>
+File: chapters/9/9/4/3/figs/ABC.pdf Graphic file (type pdf)
+<use chapters/9/9/4/3/figs/ABC.pdf>
+Package pdftex.def Info: chapters/9/9/4/3/figs/ABC.pdf  used on input line 51.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [95]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [96 <./chapters/9/9/4/3/figs/ABC.pdf>]) (./chapters/9/9/4/4/line.tex
+<chapters/9/9/4/4/figs/construction.png, id=2236, 569.12625pt x 422.57875pt>
+File: chapters/9/9/4/4/figs/construction.png Graphic file (type png)
+<use chapters/9/9/4/4/figs/construction.png>
+Package pdftex.def Info: chapters/9/9/4/4/figs/construction.png  used on input 
+line 51.
+(pdftex.def)             Requested size: 433.62001pt x 321.98209pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./chapters/9/9/4/5/line.tex
+<chapters/9/9/4/5/figs/matrix.png, id=2238, 462.528pt x 346.896pt>
+File: chapters/9/9/4/5/figs/matrix.png Graphic file (type png)
+<use chapters/9/9/4/5/figs/matrix.png>
+Package pdftex.def Info: chapters/9/9/4/5/figs/matrix.png  used on input line 6
+3.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98 <./chapters/9/9/4/4/figs/construction.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [99 <./chapters/9/9/4/5/figs/matrix.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100
+
+]
+Chapter 6.
 (./chapters/9/10/4.tex (./chapters/9/10/4/1/circle.tex
-<chapters/9/10/4/1/figs/cccc.png, id=3174, 1057.9525pt x 710.655pt>
+<chapters/9/10/4/1/figs/cccc.png, id=2276, 1057.9525pt x 710.655pt>
 File: chapters/9/10/4/1/figs/cccc.png Graphic file (type png)
 <use chapters/9/10/4/1/figs/cccc.png>
 Package pdftex.def Info: chapters/9/10/4/1/figs/cccc.png  used on input line 34
@@ -3108,17 +2318,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [157
-
-]
+ [101]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [158 <./chapters/9/10/4/1/figs/cccc.png>])) (./chapters/9/10/5.tex
+ [102 <./chapters/9/10/4/1/figs/cccc.png>])) (./chapters/9/10/5.tex
 (./chapters/9/10/5/1/circle.tex
-<chapters/9/10/5/1/figs/circle1.pdf, id=3203, 462.52798pt x 346.89601pt>
+<chapters/9/10/5/1/figs/circle1.pdf, id=2305, 462.52798pt x 346.89601pt>
 File: chapters/9/10/5/1/figs/circle1.pdf Graphic file (type pdf)
 <use chapters/9/10/5/1/figs/circle1.pdf>
 Package pdftex.def Info: chapters/9/10/5/1/figs/circle1.pdf  used on input line
@@ -3129,7 +2337,7 @@ Package pdftex.def Info: chapters/9/10/5/1/figs/circle1.pdf  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/9/10/5/3/circle.tex
-<chapters/9/10/5/3/figs/fig-1.pdf, id=3205, 462.52798pt x 346.89601pt>
+<chapters/9/10/5/3/figs/fig-1.pdf, id=2307, 462.52798pt x 346.89601pt>
 File: chapters/9/10/5/3/figs/fig-1.pdf Graphic file (type pdf)
 <use chapters/9/10/5/3/figs/fig-1.pdf>
 Package pdftex.def Info: chapters/9/10/5/3/figs/fig-1.pdf  used on input line 2
@@ -3141,9 +2349,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [159]))
+ [103]))
 (./chapters/10/10/1.tex (./chapters/10/10/1/4/circle.tex
-<chapters/10/10/1/4/figs/fig.pdf, id=3225, 462.52798pt x 346.89601pt>
+<chapters/10/10/1/4/figs/fig.pdf, id=2327, 462.52798pt x 346.89601pt>
 File: chapters/10/10/1/4/figs/fig.pdf Graphic file (type pdf)
 <use chapters/10/10/1/4/figs/fig.pdf>
 Package pdftex.def Info: chapters/10/10/1/4/figs/fig.pdf  used on input line 65
@@ -3159,7 +2367,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [160 <./chapters/9/10/5/1/figs/circle1.pdf>]
+ [104 <./chapters/9/10/5/1/figs/circle1.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3168,7 +2376,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [161 <./chapters/9/10/5/3/figs/fig-1.pdf>]
+ [105 <./chapters/9/10/5/3/figs/fig-1.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3177,9 +2385,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [162 <./chapters/10/10/1/4/figs/fig.pdf>])) (./chapters/10/10/2.tex
+ [106 <./chapters/10/10/1/4/figs/fig.pdf>])) (./chapters/10/10/2.tex
 (./chapters/10/10/2/4/circle.tex
-<chapters/10/10/2/4/figs/plot_cir.png, id=3366, 462.528pt x 346.896pt>
+<chapters/10/10/2/4/figs/plot_cir.png, id=2469, 462.528pt x 346.896pt>
 File: chapters/10/10/2/4/figs/plot_cir.png Graphic file (type png)
 <use chapters/10/10/2/4/figs/plot_cir.png>
 Package pdftex.def Info: chapters/10/10/2/4/figs/plot_cir.png  used on input li
@@ -3194,7 +2402,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [163]
+ [107]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3203,9 +2411,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [164 <./chapters/10/10/2/4/figs/plot_cir.png>]) (./chapters/10/10/2/6/circle.t
+ [108 <./chapters/10/10/2/4/figs/plot_cir.png>]) (./chapters/10/10/2/6/circle.t
 ex
-<chapters/10/10/2/6/figs/circle.pdf, id=3396, 462.52798pt x 346.89601pt>
+<chapters/10/10/2/6/figs/circle.pdf, id=2500, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/6/figs/circle.pdf Graphic file (type pdf)
 <use chapters/10/10/2/6/figs/circle.pdf>
 Package pdftex.def Info: chapters/10/10/2/6/figs/circle.pdf  used on input line
@@ -3221,14 +2429,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [165]
+ [109]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [166 <./chapters/10/10/2/6/figs/circle.pdf>]) (./chapters/10/10/2/7/circle.tex
-<chapters/10/10/2/7/figs/fig.pdf, id=3464, 462.52798pt x 346.89601pt>
+ [110 <./chapters/10/10/2/6/figs/circle.pdf>]) (./chapters/10/10/2/7/circle.tex
+<chapters/10/10/2/7/figs/fig.pdf, id=2568, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/7/figs/fig.pdf Graphic file (type pdf)
 <use chapters/10/10/2/7/figs/fig.pdf>
 Package pdftex.def Info: chapters/10/10/2/7/figs/fig.pdf  used on input line 21
@@ -3247,9 +2455,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [167])
+ [111])
 (./chapters/10/10/2/8/circle.tex
-<chapters/10/10/2/8/figs/circle.png, id=3485, 462.528pt x 346.896pt>
+<chapters/10/10/2/8/figs/circle.png, id=2588, 462.528pt x 346.896pt>
 File: chapters/10/10/2/8/figs/circle.png Graphic file (type png)
 <use chapters/10/10/2/8/figs/circle.png>
 Package pdftex.def Info: chapters/10/10/2/8/figs/circle.png  used on input line
@@ -3265,8 +2473,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [168 <./chapters/10/10/2/7/figs/fig.pdf>]) (./chapters/10/10/2/9/circle.tex
-<chapters/10/10/2/9/figs/c.pdf, id=3516, 462.52798pt x 346.89601pt>
+ [112 <./chapters/10/10/2/7/figs/fig.pdf>]) (./chapters/10/10/2/9/circle.tex
+<chapters/10/10/2/9/figs/c.pdf, id=2621, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/9/figs/c.pdf Graphic file (type pdf)
 <use chapters/10/10/2/9/figs/c.pdf>
 Package pdftex.def Info: chapters/10/10/2/9/figs/c.pdf  used on input line 25.
@@ -3277,8 +2485,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [169 <./chapters/10/10/2/8/figs/circle.png>] (./chapters/10/10/2/10/circle.tex
-<chapters/10/10/2/10/figs/circle1.pdf, id=3530, 462.52798pt x 346.89601pt>
+ [113 <./chapters/10/10/2/8/figs/circle.png>] (./chapters/10/10/2/10/circle.tex
+<chapters/10/10/2/10/figs/circle1.pdf, id=2635, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/10/figs/circle1.pdf Graphic file (type pdf)
 <use chapters/10/10/2/10/figs/circle1.pdf>
 Package pdftex.def Info: chapters/10/10/2/10/figs/circle1.pdf  used on input li
@@ -3294,8 +2502,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [170 <./chapters/10/10/2/9/figs/c.pdf>] (./chapters/10/10/2/12/circle.tex
-<chapters/10/10/2/12/figs/circle.png, id=3566, 462.528pt x 346.896pt>
+ [114 <./chapters/10/10/2/9/figs/c.pdf>] (./chapters/10/10/2/12/circle.tex
+<chapters/10/10/2/12/figs/circle.png, id=2670, 462.528pt x 346.896pt>
 File: chapters/10/10/2/12/figs/circle.png Graphic file (type png)
 <use chapters/10/10/2/12/figs/circle.png>
 Package pdftex.def Info: chapters/10/10/2/12/figs/circle.png  used on input lin
@@ -3311,25 +2519,838 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [171 <./chapters/10/10/2/10/figs/circle1.pdf>]
+ [115 <./chapters/10/10/2/10/figs/circle1.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [172 <./chapters/10/10/2/12/figs/circle.png>]
+ [116 <./chapters/10/10/2/12/figs/circle.png>]
+Chapter 7.
+(./chapters/11/11/5.tex (./chapters/11/11/5/2/conic.tex
+<chapters/11/11/5/2/figs/fig.pdf, id=2713, 462.52798pt x 346.89601pt>
+File: chapters/11/11/5/2/figs/fig.pdf Graphic file (type pdf)
+<use chapters/11/11/5/2/figs/fig.pdf>
+Package pdftex.def Info: chapters/11/11/5/2/figs/fig.pdf  used on input line 31
+.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+)
+(./chapters/11/11/5/4/conic.tex
+<chapters/11/11/5/4/figs/ellipse.png, id=2714, 560.0925pt x 426.59375pt>
+File: chapters/11/11/5/4/figs/ellipse.png Graphic file (type png)
+<use chapters/11/11/5/4/figs/ellipse.png>
+Package pdftex.def Info: chapters/11/11/5/4/figs/ellipse.png  used on input lin
+e 55.
+(pdftex.def)             Requested size: 433.62001pt x 330.28127pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117
+
+]
+(./chapters/11/11/5/6/conic.tex
+<chapters/11/11/5/6/figs/fig1.pdf, id=2723, 462.52798pt x 346.89601pt>
+File: chapters/11/11/5/6/figs/fig1.pdf Graphic file (type pdf)
+<use chapters/11/11/5/6/figs/fig1.pdf>
+Package pdftex.def Info: chapters/11/11/5/6/figs/fig1.pdf  used on input line 3
+2.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+) (./chapters/11/11/5/8/conic.tex
+<chapters/11/11/5/8/figs/co.pdf, id=2724, 462.52798pt x 346.89601pt>
+File: chapters/11/11/5/8/figs/co.pdf Graphic file (type pdf)
+<use chapters/11/11/5/8/figs/co.pdf>
+Package pdftex.def Info: chapters/11/11/5/8/figs/co.pdf  used on input line 30.
+
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118 <./chapters/11/11/5/2/figs/fig.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [119 <./chapters/11/11/5/4/figs/ellipse.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [120 <./chapters/11/11/5/6/figs/fig1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [121 <./chapters/11/11/5/8/figs/co.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [122
+
+]
+Chapter 8.
+(./chapters/12/8/1.tex (./chapters/12/8/1/1/conic.tex
+<chapters/12/8/1/1/figs/conics1.png, id=2834, 462.528pt x 346.896pt>
+File: chapters/12/8/1/1/figs/conics1.png Graphic file (type png)
+<use chapters/12/8/1/1/figs/conics1.png>
+Package pdftex.def Info: chapters/12/8/1/1/figs/conics1.png  used on input line
+ 32.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [123]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [124 <./chapters/12/8/1/1/figs/conics1.png>]) (./chapters/12/8/1/2/conic.tex
+<chapters/12/8/1/2/figs/conics1.png, id=2854, 561.09625pt x 460.72125pt>
+File: chapters/12/8/1/2/figs/conics1.png Graphic file (type png)
+<use chapters/12/8/1/2/figs/conics1.png>
+Package pdftex.def Info: chapters/12/8/1/2/figs/conics1.png  used on input line
+ 34.
+(pdftex.def)             Requested size: 433.62001pt x 356.04999pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [125]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [126 <./chapters/12/8/1/2/figs/conics1.png>]) (./chapters/12/8/1/6/conic.tex
+<chapters/12/8/1/6/figs/conics-fig.pdf, id=2874, 462.52798pt x 346.89601pt>
+File: chapters/12/8/1/6/figs/conics-fig.pdf Graphic file (type pdf)
+<use chapters/12/8/1/6/figs/conics-fig.pdf>
+Package pdftex.def Info: chapters/12/8/1/6/figs/conics-fig.pdf  used on input l
+ine 54.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [127]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [128 <./chapters/12/8/1/6/figs/conics-fig.pdf>]) (./chapters/12/8/1/7/conic.te
+x
+<chapters/12/8/1/7/figs/conic.png, id=2923, 462.528pt x 346.896pt>
+File: chapters/12/8/1/7/figs/conic.png Graphic file (type png)
+<use chapters/12/8/1/7/figs/conic.png>
+Package pdftex.def Info: chapters/12/8/1/7/figs/conic.png  used on input line 6
+1.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [129])
+(./chapters/12/8/1/8/conic.tex
+<chapters/12/8/1/8/figs/conics1.png, id=2937, 462.528pt x 346.896pt>
+File: chapters/12/8/1/8/figs/conics1.png Graphic file (type png)
+<use chapters/12/8/1/8/figs/conics1.png>
+Package pdftex.def Info: chapters/12/8/1/8/figs/conics1.png  used on input line
+ 35.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [130 <./chapters/12/8/1/7/figs/conic.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [131 <./chapters/12/8/1/8/figs/conics1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [132])
+(./chapters/12/8/1/9/conic.tex
+<chapters/12/8/1/9/figs/con3.pdf, id=2968, 462.52798pt x 346.89601pt>
+File: chapters/12/8/1/9/figs/con3.pdf Graphic file (type pdf)
+<use chapters/12/8/1/9/figs/con3.pdf>
+Package pdftex.def Info: chapters/12/8/1/9/figs/con3.pdf  used on input line 57
+.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./chapters/12/8/1/10/conic.tex
+<chapters/12/8/1/10/figs/conic.png, id=2969, 462.528pt x 346.896pt>
+File: chapters/12/8/1/10/figs/conic.png Graphic file (type png)
+<use chapters/12/8/1/10/figs/conic.png>
+Package pdftex.def Info: chapters/12/8/1/10/figs/conic.png  used on input line 
+48.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 2269) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [133])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [134 <./chapters/12/8/1/9/figs/con3.pdf>]) (./chapters/12/8/2.tex
+(./chapters/12/8/2/1/conic.tex
+<chapters/12/8/2/1/figs/conic.jpg, id=3019, 1205.50375pt x 682.55pt>
+File: chapters/12/8/2/1/figs/conic.jpg Graphic file (type jpg)
+<use chapters/12/8/2/1/figs/conic.jpg>
+Package pdftex.def Info: chapters/12/8/2/1/figs/conic.jpg  used on input line 6
+0.
+(pdftex.def)             Requested size: 433.62001pt x 245.50952pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [135 <./chapters/12/8/1/10/figs/conic.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [136 <./chapters/12/8/2/1/figs/conic.jpg>]) (./chapters/12/8/2/3/conic.tex
+<chapters/12/8/2/3/figs/conic1.pdf, id=3038, 462.52798pt x 346.89601pt>
+File: chapters/12/8/2/3/figs/conic1.pdf Graphic file (type pdf)
+<use chapters/12/8/2/3/figs/conic1.pdf>
+Package pdftex.def Info: chapters/12/8/2/3/figs/conic1.pdf  used on input line 
+37.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1348) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [137])
+(./chapters/12/8/2/6/conic.tex
+<chapters/12/8/2/6/figs/conic.png, id=3052, 462.528pt x 346.896pt>
+File: chapters/12/8/2/6/figs/conic.png Graphic file (type png)
+<use chapters/12/8/2/6/figs/conic.png>
+Package pdftex.def Info: chapters/12/8/2/6/figs/conic.png  used on input line 4
+5.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [138 <./chapters/12/8/2/3/figs/conic1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [139 <./chapters/12/8/2/6/figs/conic.png>])) (./chapters/12/8/3.tex
+(./chapters/12/8/3/2/conic.tex
+<chapters/12/8/3/2/figs/figure.png, id=3107, 462.528pt x 346.896pt>
+File: chapters/12/8/3/2/figs/figure.png Graphic file (type png)
+<use chapters/12/8/3/2/figs/figure.png>
+Package pdftex.def Info: chapters/12/8/3/2/figs/figure.png  used on input line 
+48.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [140]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [141 <./chapters/12/8/3/2/figs/figure.png>]) (./chapters/12/8/3/3/conic.tex
+<chapters/12/8/3/3/figs/conic.png, id=3129, 521.95pt x 407.5225pt>
+File: chapters/12/8/3/3/figs/conic.png Graphic file (type png)
+<use chapters/12/8/3/3/figs/conic.png>
+Package pdftex.def Info: chapters/12/8/3/3/figs/conic.png  used on input line 3
+4.
+(pdftex.def)             Requested size: 433.62001pt x 338.56071pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [142 <./chapters/12/8/3/3/figs/conic.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [143])
+(./chapters/12/8/3/7/conic.tex
+<chapters/12/8/3/7/figs/conic.png, id=3151, 538.01pt x 446.66875pt>
+File: chapters/12/8/3/7/figs/conic.png Graphic file (type png)
+<use chapters/12/8/3/7/figs/conic.png>
+Package pdftex.def Info: chapters/12/8/3/7/figs/conic.png  used on input line 6
+0.
+(pdftex.def)             Requested size: 433.62001pt x 360.00719pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [144]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [145 <./chapters/12/8/3/7/figs/conic.png>]) (./chapters/12/8/3/8/conic.tex
+<chapters/12/8/3/8/figs/conic_fig.png, id=3174, 462.528pt x 346.896pt>
+File: chapters/12/8/3/8/figs/conic_fig.png Graphic file (type png)
+<use chapters/12/8/3/8/figs/conic_fig.png>
+Package pdftex.def Info: chapters/12/8/3/8/figs/conic_fig.png  used on input li
+ne 61.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [146 <./chapters/12/8/3/8/figs/conic_fig.png>]) (./chapters/12/8/3/9/conic.tex
+<chapters/12/8/3/9/figs/conic_fig.png, id=3185, 462.528pt x 346.896pt>
+File: chapters/12/8/3/9/figs/conic_fig.png Graphic file (type png)
+<use chapters/12/8/3/9/figs/conic_fig.png>
+Package pdftex.def Info: chapters/12/8/3/9/figs/conic_fig.png  used on input li
+ne 61.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [147]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [148 <./chapters/12/8/3/9/figs/conic_fig.png>]) (./chapters/12/8/3/10/conic.te
+x
+<chapters/12/8/3/10/figs/conics1.png, id=3208, 550.055pt x 448.67625pt>
+File: chapters/12/8/3/10/figs/conics1.png Graphic file (type png)
+<use chapters/12/8/3/10/figs/conics1.png>
+Package pdftex.def Info: chapters/12/8/3/10/figs/conics1.png  used on input lin
+e 34.
+(pdftex.def)             Requested size: 433.62001pt x 353.71095pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./chapters/12/8/3/17/conic.tex
+<chapters/12/8/3/17/figs/conicfig.pdf, id=3209, 462.52798pt x 346.89601pt>
+File: chapters/12/8/3/17/figs/conicfig.pdf Graphic file (type pdf)
+<use chapters/12/8/3/17/figs/conicfig.pdf>
+Package pdftex.def Info: chapters/12/8/3/17/figs/conicfig.pdf  used on input li
+ne 65.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [149])
+(./chapters/12/8/3/18/conic.tex
+<chapters/12/8/3/18/figs/cp.jpg, id=3221, 629.35126pt x 511.9125pt>
+File: chapters/12/8/3/18/figs/cp.jpg Graphic file (type jpg)
+<use chapters/12/8/3/18/figs/cp.jpg>
+Package pdftex.def Info: chapters/12/8/3/18/figs/cp.jpg  used on input line 48.
+
+(pdftex.def)             Requested size: 433.62001pt x 352.70447pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5175) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [150 <./chapters/12/8/3/10/figs/conics1.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [151 <./chapters/12/8/3/17/figs/conicfig.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [152 <./chapters/12/8/3/18/figs/cp.jpg>]))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [153]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [154
+
+]
+Chapter 9.
+(./chapters/12/6/3.tex (./chapters/12/6/3/2/tangent.tex)
+(./chapters/12/6/3/8/tangent.tex
+<chapters/12/6/3/8/figs/main.png, id=3286, 1334.1042pt x 703.9098pt>
+File: chapters/12/6/3/8/figs/main.png Graphic file (type png)
+<use chapters/12/6/3/8/figs/main.png>
+Package pdftex.def Info: chapters/12/6/3/8/figs/main.png  used on input line 50
+.
+(pdftex.def)             Requested size: 433.62001pt x 228.78946pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [155]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [156 <./chapters/12/6/3/8/figs/main.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [157]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [158])
+(./chapters/12/6/3/10/tangent.tex
+<chapters/12/6/3/10/figs/conic1.pdf, id=3324, 462.52798pt x 346.89601pt>
+File: chapters/12/6/3/10/figs/conic1.pdf Graphic file (type pdf)
+<use chapters/12/6/3/10/figs/conic1.pdf>
+Package pdftex.def Info: chapters/12/6/3/10/figs/conic1.pdf  used on input line
+ 45.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [159]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [160 <./chapters/12/6/3/10/figs/conic1.pdf>]) (./chapters/12/6/3/11/tangent.te
+x
+<chapters/12/6/3/11/figs/con_fig.png, id=3374, 461.8053pt x 346.1733pt>
+File: chapters/12/6/3/11/figs/con_fig.png Graphic file (type png)
+<use chapters/12/6/3/11/figs/con_fig.png>
+Package pdftex.def Info: chapters/12/6/3/11/figs/con_fig.png  used on input lin
+e 157.
+(pdftex.def)             Requested size: 433.62001pt x 325.05959pt.
+
+Underfull \vbox (badness 6493) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [161])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [162 <./chapters/12/6/3/11/figs/con_fig.png>] (./chapters/12/6/3/13/tangent.te
+x
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
+
+ []
+
+<chapters/12/6/3/13/figs/conic_1.pdf, id=3403, 462.52798pt x 346.89601pt>
+File: chapters/12/6/3/13/figs/conic_1.pdf Graphic file (type pdf)
+<use chapters/12/6/3/13/figs/conic_1.pdf>
+Package pdftex.def Info: chapters/12/6/3/13/figs/conic_1.pdf  used on input lin
+e 77.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 4013) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [163])
+(./chapters/12/6/3/15/tangent.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [164 <./chapters/12/6/3/13/figs/conic_1.pdf>]
+<chapters/12/6/3/15/figs/conic.png, id=3465, 462.528pt x 346.896pt>
+File: chapters/12/6/3/15/figs/conic.png Graphic file (type png)
+<use chapters/12/6/3/15/figs/conic.png>
+Package pdftex.def Info: chapters/12/6/3/15/figs/conic.png  used on input line 
+39.
+(pdftex.def)             Requested size: 433.62001pt x 325.23007pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [165 <./chapters/12/6/3/15/figs/conic.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [166])
+(./chapters/12/6/3/25/tangent.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [167]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [168]
+<chapters/12/6/3/25/figs/conic.pdf, id=3516, 462.52798pt x 346.89601pt>
+File: chapters/12/6/3/25/figs/conic.pdf Graphic file (type pdf)
+<use chapters/12/6/3/25/figs/conic.pdf>
+Package pdftex.def Info: chapters/12/6/3/25/figs/conic.pdf  used on input line 
+113.
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./chapters/12/6/3/27/tangent.tex
+<chapters/12/6/3/27/figs/conicfig.png, id=3517, 523.9575pt x 384.43625pt>
+File: chapters/12/6/3/27/figs/conicfig.png Graphic file (type png)
+<use chapters/12/6/3/27/figs/conicfig.png>
+Package pdftex.def Info: chapters/12/6/3/27/figs/conicfig.png  used on input li
+ne 155.
+(pdftex.def)             Requested size: 433.62001pt x 318.16103pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [169]))
+(./chapters/12/6/6.tex (./chapters/12/6/6/4/tangent.tex
+<chapters/12/6/6/4/figs/conics.png, id=3532, 586.19pt x 427.5975pt>
+File: chapters/12/6/6/4/figs/conics.png Graphic file (type png)
+<use chapters/12/6/6/4/figs/conics.png>
+Package pdftex.def Info: chapters/12/6/6/4/figs/conics.png  used on input line 
+53.
+(pdftex.def)             Requested size: 433.62001pt x 316.29974pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [170 <./chapters/12/6/3/25/figs/conic.pdf>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [171 <./chapters/12/6/3/27/figs/conicfig.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [172 <./chapters/12/6/6/4/figs/conics.png>]) (./chapters/12/6/6/21/tangent.tex
+<chapters/12/6/6/21/figs/im.pdf, id=3576, 462.52798pt x 346.89601pt>
+File: chapters/12/6/6/21/figs/im.pdf Graphic file (type pdf)
+<use chapters/12/6/6/21/figs/im.pdf>
+Package pdftex.def Info: chapters/12/6/6/21/figs/im.pdf  used on input line 67.
+
+(pdftex.def)             Requested size: 433.62001pt x 325.23009pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (./chapters/12/6/6/22/tangent.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [173]))
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [174 <./chapters/12/6/6/21/figs/im.pdf>]
 Appendix A.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 262.
+(hyperref)                removing `math shift' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 262.
+(hyperref)                removing `\times' on input line 277.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 262.
+(hyperref)                removing `math shift' on input line 277.
 
 (./matrix/two.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3340,7 +3361,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [173
+ [175
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3351,26 +3372,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [174]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [175]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [176]
-Underfull \vbox (badness 3780) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3388,12 +3391,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [178]
+Underfull \vbox (badness 3780) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [179]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [180]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [181]
 Underfull \vbox (badness 2376) has occurred while \output is active []
 
 
@@ -3402,18 +3423,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [180])
+ [182])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 266.
+(hyperref)                removing `math shift' on input line 281.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 266.
+(hyperref)                removing `\times' on input line 281.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 281.
 
 (./matrix/three.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3424,13 +3445,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [181])
+ [183])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [182]
+ [184]
 Appendix B.
 (./matrix/mat.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3438,7 +3459,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [183
+ [185
 
 ]
 Underfull \vbox (badness 6284) has occurred while \output is active []
@@ -3449,22 +3470,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [184]
+ [186]
 Underfull \vbox (badness 3375) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [185]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [186])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3476,14 +3485,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [188
-
-]
-Appendix C.
-(./linear/two.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+ [188])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3495,11 +3497,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [190
 
+]
+Appendix C.
+(./linear/two.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [190]
-Underfull \vbox (badness 3735) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3517,7 +3520,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [192]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3735) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3525,8 +3528,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [193])
-(./linear/three.tex
+ [193]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3538,19 +3543,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [195]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [195])
+(./linear/three.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [196]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3589,6 +3592,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [201]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3598,7 +3604,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [202])
+ [202]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3610,14 +3616,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [204
 
-]
-Appendix D.
-(./quad/defs.tex
-Underfull \vbox (badness 7133) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [204])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3629,11 +3631,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [206
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [206]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+]
+Appendix D.
+(./quad/defs.tex
+Underfull \vbox (badness 7133) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3651,7 +3654,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [208]
-Underfull \vbox (badness 4242) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3660,6 +3663,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [209]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [210]
+Underfull \vbox (badness 4242) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [211]
 (./tables/det.tex)) (./quad/circle.tex
 Underfull \vbox (badness 2689) has occurred while \output is active []
 
@@ -3669,48 +3690,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [210]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [211]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [212])
-(./quad/stddef.tex
+ [212]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [213]
-Underfull \vbox (badness 2351) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [214]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [214])
+(./quad/stddef.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [215]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2351) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3727,13 +3730,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [217])
+ [217]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [218]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [219])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [220]
 Appendix E.
 (./quad/standard.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3741,7 +3762,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [219
+ [221
 
 ])
 (./quad/coroll.tex
@@ -3753,19 +3774,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [220]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [221])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [222]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [223])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [224]
 Appendix F.
 (./quad/pair.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3773,7 +3794,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [223
+ [225
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3784,13 +3805,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [224]
+ [226]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [225])
+ [227])
 (./quadlines/inter.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3800,7 +3821,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [226])
+ [228])
 (./quadlines/chord.tex
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 39.
@@ -3810,24 +3831,6 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 39.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [227]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [228]
-Underfull \vbox (badness 7433) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3845,6 +3848,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [230]
+Underfull \vbox (badness 7433) has occurred while \output is active []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -3859,7 +3865,22 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [232])
+ [232]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [233]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [234])
 (./quadlines/tangent.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3869,26 +3890,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [233]
-Underfull \vbox (badness 2582) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [234]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [235]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2582) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3902,7 +3905,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [237]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [238]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [239]
 Underfull \vbox (badness 3108) has occurred while \output is active []
 
 
@@ -3911,31 +3932,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [238])
+ [240])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [239]
+ [241]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [240
+ [242
 
 ]
 No file main.ind.
 (./main.aux (./chapters/9/8/2.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BD3395428F2117E811211C0DBAB78D00;7681.
+(rerunfilecheck)             Checksum: 25D824B3F928F7FD6CA02E44BFA0B675;8269.
  ) 
 Here is how much of TeX's memory you used:
- 26067 strings out of 478238
- 449413 string characters out of 5850455
- 795286 words of memory out of 5000000
- 41627 multiletter control sequences out of 15000+600000
+ 26071 strings out of 478238
+ 449428 string characters out of 5850455
+ 794201 words of memory out of 5000000
+ 41628 multiletter control sequences out of 15000+600000
  496792 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,26n,91p,495b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3961,10 +3982,10 @@ fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/
 type1/public/cm-super/sfrm0800.pfb>
-Output written on main.pdf (248 pages, 2348100 bytes).
+Output written on main.pdf (251 pages, 2349677 bytes).
 PDF statistics:
- 5121 PDF objects out of 5155 (max. 8388607)
- 3760 compressed objects within 38 object streams
- 1686 named destinations out of 1728 (max. 500000)
- 966 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5149 PDF objects out of 5155 (max. 8388607)
+ 3785 compressed objects within 38 object streams
+ 1692 named destinations out of 1728 (max. 500000)
+ 990 words of extra memory for PDF output out of 10000 (max. 10000000)
 
