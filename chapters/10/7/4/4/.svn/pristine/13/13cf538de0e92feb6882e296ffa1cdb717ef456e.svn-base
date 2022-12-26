@@ -1,0 +1,401 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CHAPTER-7 \\ COORDINATE GEOMETRY}
+
+\end{center}
+\section*{Excercise 7.4}
+
+Q4.The two opposite vertices of a square are $(–1, 2) \text{ and } (3, 2)$. Find the coordinates of the other two vertices.\\
+\solution
+
+Given points 
+\begin{align}
+\vec{A} = \myvec
+{
+-1 \\
+ 2\\
+},
+\vec{C} = 
+\myvec
+{
+3\\
+2\\
+}
+\end{align}
+
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{./square}
+	\end{center}
+\caption{}
+\label{fig:Fig1}
+\end{figure}
+
+Shifting $\vec{A}$ to origin with refrence to Figure \ref{fig:Fig2}
+
+\begin{align}
+\vec{A^{\prime}} =
+\myvec{
+0 \\
+0\\
+},
+\vec{C^{\prime}} = \vec{C}-\vec{A} = 
+\myvec{
+4 \\
+0\\
+}
+\end{align}
+
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{./square1}
+	\end{center}
+\caption{}
+\label{fig:Fig2}
+\end{figure}
+
+\newpage
+
+For a generalised case, the angle made by AC on the x-axis will be $\beta = \theta + 45\degree$, where $\theta$ is the angle made by AB on the x-axis.
+Hence, we can calculate the angle made by AB on the x-axis.\\
+
+direction vector is given as
+\begin{align}
+\vec{C} - \vec{A} = \myvec{
+4\\
+0\\
+} \equiv 
+\myvec{
+1\\
+0\\
+}
+\end{align}
+
+However in this particular case, angle made by AC on the x-axis
+\begin{align}
+\tan\beta &= \frac{0}{4} \implies \sin\beta = \frac{0}{4}\\
+\beta &= 0\degree
+\end{align}
+
+Therefore, here $\theta = -45\degree$
+
+We know the rotation matrix for CW rotation is given as
+\begin{align}
+\vec{P}^\top =
+\myvec{
+\cos\theta & \sin\theta \\
+-\sin\theta & \cos\theta \\
+}
+\end{align}
+
+Since the angle here is negative so ultimately the coordinates will be rotated in ACW direction. Now the transformed(rotated) coordinates are with refrence to Figure \ref{fig:Fig3}.
+\begin{align}
+\vec{C^{\prime \prime}} = \vec{P}^\top (\vec{C}-\vec{A}) =
+\myvec{
+\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}
+\myvec{
+4 \\
+0\\
+} = 
+\myvec{
+\frac{4}{\sqrt{2}} \\
+\frac{4}{\sqrt{2}}\\
+}
+\end{align}
+\begin{align}
+\vec{B^{\prime \prime}} = \myvec{
+ 1&0\\
+ 0&0\\
+}\vec{C^{\prime \prime}}=
+\myvec{
+ \frac{4}{\sqrt{2}}\\
+ 0\\
+},
+\vec{D^{\prime \prime}} = \myvec{
+ 0&0\\
+ 0&1\\
+}\vec{C^{\prime \prime}}=
+\myvec{
+ 0\\
+ \frac{4}{\sqrt{2}}\\
+} \text{ and }
+\vec{A^{\prime \prime}} =
+\myvec{
+0 \\
+0\\
+}
+\end{align}
+
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{./square2}
+	\end{center}
+\caption{}
+\label{fig:Fig3}
+\end{figure}
+
+\newpage
+Again tranforming(rotating) the coordinates back to the original axis.
+
+We know for anti-clockwise direction the rotation matrix is given as
+\begin{align}
+\vec{P} =
+\myvec{
+\cos\theta & -\sin\theta \\
+\sin\theta & \cos\theta \\
+}
+\end{align}
+
+Again we know that the angle is negative so the rotation will be in clockwise direction. So now the transformed(rotated) coordinates $\vec{B} \text{ and } \vec{D}$ are with refrence to Figure \ref{fig:Fig4}
+\begin{align}
+\vec{B^{\prime}} &= \vec{P}\vec{B^{\prime \prime}} = \myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}
+\myvec{
+ \frac{4}{\sqrt{2}}\\
+ 0\\
+} = 
+\myvec{
+2 \\
+-2\\
+}\\
+\vec{D^{\prime}} &= \vec{P}\vec{D^{\prime \prime}} = \myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}
+\myvec{
+ 0\\
+ \frac{4}{\sqrt{2}}\\
+} = 
+\myvec{
+2 \\
+2 \\
+}
+\end{align}
+
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{./square3}
+	\end{center}
+\caption{}
+\label{fig:Fig4}
+\end{figure}
+
+Again transforming(shifting) the axis back to the original with refrence to Figure \ref{fig:Fig5}
+\begin{align}
+\vec{B} &= \vec{B^{\prime}}+\vec{A} = \myvec{
+2 \\
+-2\\
+}+\myvec{
+-1 \\
+2\\
+} = 
+\myvec{
+1 \\
+0\\
+}\\
+\vec{D} &= \vec{D^{\prime}}+\vec{A} = \myvec{
+2 \\
+2\\
+}+\myvec{
+-1 \\
+2\\
+} = 
+\myvec{
+1 \\
+4 \\
+}
+\end{align}
+
+Hence, the other two vertices are $\vec{B}(1,0) \text{ and } \vec{D}(1,4)$   
+
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{./square4}
+	\end{center}
+\caption{}
+\label{fig:Fig5}
+\end{figure}
+
+The direct formula for calculation of the vertices is:
+\begin{align}
+\vec{B} &= \vec{A} + \vec{P}\myvec{
+\vec{e_{1}}&\vec{0}\\
+}
+\vec{P}^\top \brak{\vec{C}-\vec{A}}\\
+\vec{D} &= \vec{A} + \vec{P}\myvec{
+\vec{0}&\vec{e_{2}}\\
+}
+\vec{P}^\top \brak{\vec{C}-\vec{A}}\\
+\end{align}
+
+where $\vec{P}$ is the rotation matrix and $\vec{A} \text{ and } \vec{C}$ are the position vectors of opposite vertices.
+
+Derivation of the above formulas:
+
+We know that after shifting the axis and rotating by the required angle any arbitrary square will be aligned with the x and y axis so that we can directly get the vectors $\vec{B} \text{ and } \vec{D}$ as follows
+\begin{align}
+\vec{C^{\prime\prime}} &= \vec{P}^\top \brak{\vec{C} - \vec{A}}\\
+\vec{B^{\prime\prime}} &= \myvec{
+\vec{e_{1}} & \vec{0}
+}\vec{C^{\prime\prime}} = \myvec{
+\vec{e_{1}} & \vec{0}
+}\vec{P}^\top \brak{\vec{C} - \vec{A}}\\
+\vec{B^{\prime}} &= \vec{P} \vec{B^{\prime\prime}}  = \vec{P}\myvec{
+\vec{e_{1}} & \vec{0}
+}\vec{P}^\top \brak{\vec{C} - \vec{A}}\\
+\vec{B} &= \vec{A}+\vec{B^{\prime}}\\
+ &= \vec{A} + \vec{P}\myvec{
+\vec{e_{1}}&\vec{0}\\
+}
+\vec{P}^\top\brak{\vec{C}-\vec{A}}
+\end{align}
+
+Similarly for D it can be derived as
+\begin{align}
+\vec{C^{\prime\prime}} &= \vec{P}^\top \brak{\vec{C} - \vec{A}}\\
+\vec{D^{\prime\prime}} &= \myvec{
+\vec{0} & \vec{e_{2}}
+}\vec{C^{\prime\prime}} = \myvec{
+\vec{0} & \vec{e_{2}}
+}\vec{P}^\top \brak{\vec{C} - \vec{A}}\\
+\vec{D^{\prime}} &= \vec{P} \vec{D^{\prime\prime}} = \vec{P} \myvec{
+\vec{0} & \vec{e_{2}}
+}\vec{P}^\top \brak{\vec{C} - \vec{A}}\\
+\vec{D} &= \vec{A}+\vec{D^{\prime}}\\
+ &= \vec{A} + \vec{P}\myvec{
+\vec{0}&\vec{e_{2}}\\
+}
+\vec{P}^\top\brak{\vec{C}-\vec{A}}
+\end{align}
+
+
+Verification of the above formula for the given question
+
+\begin{align}
+\vec{B} &= \myvec{
+-1\\
+2\\
+}+\myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+ 1&0\\
+ 0&0\\
+}\myvec{
+\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+4\\
+0\\
+}\\
+ &= \myvec{
+-1\\
+2\\
+}+\myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+ 1&0\\
+ 0&0\\
+}\myvec{
+\frac{4}{\sqrt{2}}\\
+\frac{4}{\sqrt{2}}\\
+}\\
+ &= \myvec{
+-1\\
+2\\
+}+\myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+\frac{4}{\sqrt{2}}\\
+0\\
+}\\
+ &= \myvec{
+-1\\
+2\\
+}+\myvec{
+2\\
+-2\\
+}\\
+ &= \myvec{
+1\\
+0\\
+}\\
+\vec{D} &= \myvec{
+-1\\
+2\\
+}+\myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+ 0&0\\
+ 0&1\\
+}\myvec{
+\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+4\\
+0\\
+}\\
+ &= \myvec{
+-1\\
+2\\
+}+\myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+ 0&0\\
+ 0&1\\
+}\myvec{
+\frac{4}{\sqrt{2}}\\
+\frac{4}{\sqrt{2}}\\
+}\\
+ &= \myvec{
+-1\\
+2\\
+}+\myvec{
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+}\myvec{
+0\\
+\frac{4}{\sqrt{2}}\\
+}\\
+ &= \myvec{
+-1\\
+2\\
+}+\myvec{
+2\\
+2\\
+}\\
+ &= \myvec{
+1\\
+4\\
+}
+\end{align}
+
+
+
+
+
+
+
+
+\end{document}
