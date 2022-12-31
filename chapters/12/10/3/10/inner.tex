@@ -1,0 +1,44 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CHAPTER-10 \\ VECTOR ALGEBRA}
+
+\end{center}
+\section*{Excercise 10.3}
+
+Q10.If $\vec{a} = 2\hat{i}+2\hat{j}+3\hat{k}, \vec{b} = -\hat{i}+2\hat{j}+\hat{k} \text{ and } \vec{c} = 3\hat{i}+\hat{j}$ are such that $\vec{a}+\lambda \vec{b}$ is perpendicular to $\vec{c}$, then find the value of $\lambda$.
+\fi
+\solution
+Given that
+\begin{align}
+	(\vec{a}+\lambda \vec{b})^{\top} \vec{c} &= 0\\
+\implies \vec{a}^{\top}\vec{c}+\lambda \vec{b}^{\top}\vec{c}&=0\\
+\implies 	\lambda \vec{b}^{\top}\vec{c}&=-\vec{a}^{\top}\vec{c}\\
+\implies 	\lambda(\vec{b}^{\top}\vec{c})(\vec{b}^{\top}\vec{c})^{-1}&=-(\vec{a}^{\top}\vec{c})(\vec{b}^{\top}\vec{c})^{-1}\\
+\implies 	\lambda&=-(\vec{a}^{\top}\vec{c})(\vec{b}^{\top}\vec{c})^{-1}
+\end{align}
+Now substituting the values
+\begin{align}
+	\vec{a}^{\top}\vec{c}&=\myvec{2&2&3} \myvec{3\\1\\0} = 8\\
+	\vec{b}^{\top}\vec{c}&=\myvec{-1&2&1} \myvec{3\\1\\0} = -1,
+\end{align}
+\begin{align}
+	\lambda&=-(\vec{a}^{\top}\vec{c})(\vec{b}^{\top}\vec{c})^{-1}\\
+	&=-(8)(-1)^{-1}\\
+	&=8
+\end{align}
+
+

@@ -56,8 +56,8 @@ R4 = np.linalg.matrix_rank(M4)
 
 
 #orthogonality of sides
-orth1 = np.matmul((np.transpose(B-A)),(C-B))
-orth2 = np.matmul((np.transpose(C-A)),(D-B))
+orth1 = (B-A).T@(C-B)
+orth2 = (C-A).T@(D-B)
 
 
 #Type of Quadilateral
@@ -94,7 +94,7 @@ plt.plot(x_DA[0,:],x_DA[1,:],label='$DA$')
 
 sqr_vert = np.vstack((A,B,C,D)).T
 plt.scatter(sqr_vert[0,:],sqr_vert[1,:])
-vert_labels = ['A(4,5)','B(7,6)','C(4,3)','D(1,2)']
+vert_labels = ['A','B','C','D']
 
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt,
@@ -109,5 +109,5 @@ plt.ylabel('$y$')
 #plt.legend(loc='best')
 plt.grid()
 plt.axis('equal')
-plt.savefig('/sdcard/Download/latexfiles/quad3.png')
+#plt.savefig('/home/annu/Parvvv/Latex files/WORK/square2.png')
 plt.show()
