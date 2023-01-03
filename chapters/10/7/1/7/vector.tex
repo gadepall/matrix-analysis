@@ -1,0 +1,124 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Coordinate Geometry}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\setcounter{page}{1}
+
+
+
+\section*{10$^{th}$ Maths - Chapter 7}
+
+This is Problem-7 from Exercise 7.1
+
+\begin{enumerate}
+
+\item The point on the $x$-axis which is equidistant from $\myvec{2 \\ -5}$ and $\myvec{-2\\9}$\\
+\solution \\
+\fi
+		The input parameters for this problem are available in Table \ref{tab:10/7/1/7Table-1}
+\begin{table}[ht!]
+\input{chapters/10/7/1/7/tables/table.tex}
+\caption{}
+\label{tab:10/7/1/7Table-1}	
+\end{table}
+%
+  If $\vec{O}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
+\begin{align}
+ \norm{\vec{O}-\vec{A}} &=
+\norm{\vec{A}-\vec{B}} 
+\\
+ \implies \norm{\vec{O}-\vec{A}}^2 &=
+\norm{\vec{O}-\vec{B}}^2 
+\end{align}
+which can be expressed as 
+\begin{multline}
+%  \label{eq:10/7/1/7norm2d_dist}
+ \brak{\vec{O}-\vec{A}}^{\top} \brak{\vec{O}-\vec{A}}=
+ \brak{\vec{O}-\vec{B}}^{\top} 
+\brak{\vec{O}-\vec{B}}
+\\
+ \implies \norm{\vec{O}}^2-2{\vec{O}}^{\top}\vec{A} + \norm{\vec{A}}^2
+ \\= \norm{\vec{O}}^2-2{\vec{O}}^{\top}\vec{B} + \norm{\vec{B}}^2
+\end{multline}
+which can be simplified to obtain
+%  \eqref{eq:10/7/1/7norm2d_equidist}.
+  \begin{align}
+   \vec{O} &=
+    x\vec{e}_1
+  \end{align}
+  where 
+  \begin{align}
+   x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}\label{eq:10/7/1/75}  
+  \end{align}
+  Substituting from Table \eqref{tab:10/7/1/7Table-1} in \eqref{eq:10/7/1/75},
+\begin{align}
+ \brak{\vec{A}-\vec{B}}^{\top}=
+ \brak{\myvec{2 \\ -5}-\myvec{-2\\9}}^{\top}
+	&=\myvec{4 & -14}
+	\\
+	\norm{\vec{A}}^2 = 21,
+	\norm{\vec{B}}^2 &= 85
+    \end{align}
+yielding $x$ = $ -7$.  Thus, 
+		\begin{align}
+\vec{O} = \myvec{ -7 \\ 0}.
+		\end{align}
+		See Fig. 
+\ref{fig:10/7/1/7Fig1}.
+
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=\columnwidth]{chapters/10/7/1/7/figs/fig.pdf}
+ \end{center}
+\caption{}
+\label{fig:10/7/1/7Fig1}
+\end{figure}
+
