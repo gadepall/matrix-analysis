@@ -1,0 +1,87 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{Coordinate Geometry}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{10$^{th}$ Maths - Chapter 7}
+This is Problem-4 from Exercise 7.2
+\begin{enumerate}
+\item Find the ratio in which the line segement joining the points $\myvec{-3 \\ 10}$ and $\myvec{6\\-8}$ is divided by $\myvec{-1\\6}$.\\
+\solution \\
+\fi
+		The input parameters for this problem are available in Table \eqref{tab:10/7/2/4-1}.
+\begin{table}[ht!]
+\input{chapters/10/7/2/4/tables/table.tex}
+\caption{}
+\label{tab:10/7/2/4-1} 
+\end{table}
+Using section formula,
+\begin{align}
+         \vec{R} &=\frac{\vec{Q}+n\vec{P}}{1+n}\label{eq:chapters/10/7/2/4/1}
+\end{align}
+Substituting the values of $\vec{P},\vec{Q}$ and $\vec{R}$ in \eqref{eq:chapters/10/7/2/4/1}
+\begin{align}
+         \myvec{-1\\6} &=\frac{{\myvec{-3\\10}+n\myvec{6\\-8}}}{1+n}\\
+ &=\frac{1}{1+n}\brak{{\myvec{-3\\10}+n\myvec{6\\-8}}} \\
+ &=\frac{1}{1+n}\myvec{-3+6n\\10-8n} \label{eq:chapters/10/7/2/4/4}
+\end{align}
+Simplifying \eqref{eq:chapters/10/7/2/4/4} yeilds,
+\begin{align}
+          -1 &=\frac{-3+6n}{1+n}\\
+\implies          n &=\frac{2}{7}
+\end{align}
+Also,
+\begin{align}
+          6 &=\frac{10-8n}{1+n}\\
+    \implies      n &=\frac{2}{7}
+\end{align}
+Hence the desired ratio is $\dfrac{2}{7}$.  
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=\columnwidth]{chapters/10/7/2/4/figs/fig.png}
+ \end{center}
+\caption{}
+\label{fig:10/7/2/4Fig1}
+\end{figure}

@@ -1,0 +1,70 @@
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{extarrows}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vector/vector-3/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - Vector-3
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+In each of the following, find the value of ’k’,\\ for which the points are collinear.
+\begin{enumerate}[label=(\roman*)]
+\item (7, –2), (5, 1), (3, k)
+\item(8, 1), (k, –4), (2, –5)
+\end{enumerate}
+\section{\textbf{Solution}}
+\fi
+\begin{enumerate}
+    \item Given
+    \begin{align}
+      \vec{A}=\myvec{7\\-2},\Vec{B}=\myvec{5\\1},\vec{C}=\myvec{3\\k}  
+    \end{align}
+    Then
+    \begin{align}
+        \myvec{\vec{A}-\vec{B}}&=\myvec{2\\-3}\\
+        \myvec{\vec{A}-\vec{C}}&=\myvec{4\\2k}\
+    \end{align}
+    Forming the collinearity matrix
+    \begin{align}
+        \myvec{2&-3\\4&2k} \xleftrightarrow{R_1\rightarrow{R_1-1}}&\myvec{1&-2\\4&2k}\\
+         \xleftrightarrow{R_1\rightarrow{R_1-1}}&\myvec{1&-2\\0&2k+8}\\
+        k&=4
+        \end{align}
+    
+    \item Given
+     \begin{align}
+      \vec{A}=\myvec{8\\1},\vec{B}=\myvec{k\\-4},\vec{C}=\myvec{2\\-5}  
+    \end{align}
+    Then
+    \begin{align}
+        \myvec{\vec{A}-\vec{B}}&=\myvec{-8k\\-5}\\
+        \myvec{\vec{A}-\vec{C}}&=\myvec{6\\6}\
+    \end{align}
+    Forming the collinearity matrix
+    \begin{align}
+        \myvec{-8-k&-5\\6&6} \xleftrightarrow{R_1\rightarrow{R_1+8}}&\myvec{-k&3\\6&6}\\
+        k&=3
+        \end{align}
+\end{enumerate}
+
