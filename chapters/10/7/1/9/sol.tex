@@ -1,0 +1,125 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Coordinate Geometry}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\setcounter{page}{1}
+
+
+
+\section*{10$^{th}$ Maths - Chapter 7}
+
+This is Problem-8 from Exercise 7.1
+
+\begin{enumerate}
+
+\item If $\vec{Q}$= $\myvec{0\\ 1}$  is equidistant from $\vec{P}$=$\myvec{5 \\ -3}$ and $\vec{R}$=$\myvec{x\\6}$. Find the values of $x$.\\
+
+\solution \\
+\fi
+		The input parameters for this problem are available in Table
+\begin{table}[ht!]\centering
+\input{tables/table.tex}
+\caption{}
+\label{Table-1}	
+\end{table}
+
+
+  If $\vec{Q}$  is  equidistant from the points $\vec{P}$ and $\vec{R}$, 
+\begin{align}
+ \norm{\vec{P}-\vec{Q}} &=
+\norm{\vec{R}-\vec{Q}} 
+\\
+ \implies \norm{\vec{P}-\vec{Q}}^2 &=
+\norm{\vec{R}-\vec{Q}}^2 
+\end{align}
+which can be expressed as 
+\begin{align}
+%  \label{eq:norm2d_dist}
+ \brak{\vec{P}-\vec{Q}}^{\top} \brak{\vec{P}-\vec{Q}}&=
+ \brak{\vec{R}-\vec{Q}}^{\top} 
+\brak{\vec{R}-\vec{Q}}
+\\ \norm{\vec{Q}}^2-2{\vec{Q}}^{\top}\vec{P} + \norm{\vec{P}}^2
+ &= \norm{\vec{Q}}^2-2{\vec{Q}}^{\top}\vec{R} + \norm{\vec{R}}^2
+\end{align}
+which can be simplified to obtain
+  \begin{align}
+   \implies \norm{\vec{P}}^2-2{\vec{Q}}^{\top}\vec{P} &= \norm{\vec{R}}^2-2{\vec{Q}}^{\top}\vec{R} 
+\label{eq:4} 
+  \end{align}
+  now substituting the P,Q and R values in \eqref{eq:4}
+
+  \begin{align}
+   \norm{\vec{P}}^2 &= 34
+  \\ \norm{\vec{R}}^2 &= x^2+36
+ \\2{\vec{Q}}^{\top}\vec{P} &= -6
+ \\2{\vec{Q}}^{\top}\vec{R} &= 12
+ \end{align}
+upon   substituting the values in \eqref{eq:4}
+\begin{align}
+ x^2+36-12 &=34+6 
+ \\ \implies  x^2 &=16
+\end{align}
+
+Then the value of $x$ = $ 4$ or $-4$.
+Hence, the desired point is $\vec{R}$ is$\myvec{ 4 \\ 6}$ or $\myvec{-4\\6}$
+
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=\columnwidth]{figs/fig.pdf}
+ \end{center}
+\caption{}
+\label{fig:Fig1}
+\end{figure}
+
+
+
+\end{enumerate}
+
+\end{document}

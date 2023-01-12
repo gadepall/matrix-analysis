@@ -1,0 +1,110 @@
+
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CONIC SECTIONS}
+
+\end{center}
+\section*{Excercise 11.3}
+Q2.Find the coordinates of the focii, the vertices, the length of major and minor axes, the eccentricity and the length of the latus rectum of an ellipse whose equation is given by $\frac{x^2}{4}+\frac{y^2}{25}=1$.
+
+\solution
+The equation of the given ellipse can be rearranged as 
+\begin{align}
+	\label{eq:eq1}
+	25x^2+4y^2-100=0
+\end{align}
+The above equation can be equaded to the generic equation of conic sections
+\begin{align}
+	\label{eq:eq2}
+	g\brak{\vec{x}}=\vec{x}^\top \vec{V} \vec{x} + 2\vec{u}^\top \vec{x} + f = 0
+\end{align}
+Comparing coefficients of both equations \eqref{eq:eq1} and \eqref{eq:eq2}
+\begin{align}
+	\label{eq:eq3}
+	\vec{V} &= \myvec{25&0\\0&4}\\
+	\vec{u} &= \vec{0}\\
+	f &= -100
+\end{align}
+From equation \eqref{eq:eq3}, since $\vec{V}$ is already diagonalized, the eigen values $\lambda_1 \text{ and } \lambda_2$ are given as
+\begin{align}
+	\lambda_1 &= 25\\
+	\lambda_2 &= 4
+\end{align}
+Since the given matrix $\vec{V}$ is diagonal, the Eigen vector matrix will be identity. It is given as
+\begin{align}
+	\vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}\\
+		&= \myvec{1&0\\0&1}
+\end{align}
+\begin{enumerate}
+\item The eccentricity of the ellipse is given as
+\begin{align}
+	e &= \sqrt{1 - \frac{\lambda_2}{\lambda_1}} = \sqrt{1-\frac{4}{25}}\\
+	  &= \frac{\sqrt{21}}{5}
+\end{align}
+\item Finding the coordinates of Focii
+\begin{align}
+	\vec{n} &= \sqrt{\lambda_1}\vec{p}_2= \sqrt{25} \myvec{0\\1}\\
+	&= \myvec{0\\5}
+\end{align}
+\begin{align}
+	\label{eq:eq4}
+	c &= \frac{e\vec{u}^\top \vec{n} \pm \sqrt{e^2 \brak{\vec{u}^\top \vec{n}}^2-\lambda_1 \brak{e^2 -1}\brak{\norm{\vec{u}}^2-\lambda_1 f}}}{\lambda_1 e\brak{e^2-1}}
+\end{align}
+Substituting values of $e,\vec{u},\vec{n},\lambda_1 \text{ and } f$ in \eqref{eq:eq4}
+\begin{align}
+	c &= \frac{0 \pm \sqrt{0-25\brak{\frac{21}{25}-1}\brak{0+25\brak{100}}}}{25\frac{\sqrt{21}}{5}\brak{\frac{21}{25}-1}}\\
+	&= \frac{\pm 125}{\sqrt{21}}
+\end{align}
+The focus $\vec{F}$ of the ellipse is expressed as
+\begin{align}
+	\vec{F} &= \frac{ce^2 \vec{n}-\vec{u}}{\lambda_1}\\
+	&= \frac{\pm \frac{125}{\sqrt{21}}\brak{\frac{21}{25}}\myvec{0\\5}}{25}\\
+	&= \myvec{0\\\pm \sqrt{21}}
+\end{align}
+\item The length of the major axis is given by
+\begin{align}
+	\label{eq:eq5}
+	&2\sqrt{\abs{\frac{f_0}{\lambda_2}}}\\
+	f_0 &= \vec{u}^\top \vec{V}^{-1} \vec{u} -f\\
+	    &= 100\\
+	\eqref{eq:eq5} &\implies 2\sqrt{\abs{\frac{100}{4}}}
+	 = 10
+\end{align}
+\item The length of minor axis is given by
+\begin{align}
+	2\sqrt{\abs{\frac{f_0}{\lambda_1}}}&= 2\sqrt{\abs{\frac{100}{25}}}\\
+	&= 4
+\end{align}
+\item The vertices of the ellipse are given by
+\begin{align}
+	\pm \myvec{0\\\sqrt{\abs{\frac{f_0}{\lambda_2}}}}= \pm \myvec{0\\5}
+\end{align}
+\item The length of latus rectum is given as
+\begin{align}
+	2\frac{\sqrt{\abs{f_0 \lambda_2}}}{\lambda_1} &= 2\frac{\sqrt{\abs{100\brak{4}}}}{25}\\
+	&= \frac{8}{5}
+\end{align}
+\end{enumerate}
+The corresponding is shown in Figure \ref{fig:Fig1}
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{figs/ellipse}
+	\end{center}
+\caption{}
+\label{fig:Fig1}
+\end{figure}
+\end{document}
