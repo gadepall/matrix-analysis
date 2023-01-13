@@ -1,0 +1,58 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\section*{CHAPTER 7 - COORDINATE GEOMETRY}
+
+\end{center}
+\section*{Excercise 7.2}
+
+Q7.Find the coordinates of point $\vec{A}$, where AB is the diameter of a circle where the center is (2,-3) and $\vec{B}$ is the point (1,4):
+
+\solution
+\begin{enumerate}
+\item The coordinates $\vec{B}$ and center $\vec{C}$ are given, where:
+	\fi
+	Let
+	\begin{align}
+	\vec{B} = \myvec{
+		1\\
+	    4\\
+		},
+	\vec{C} = \myvec{
+	    2\\
+	   -3\\
+		}
+	\end{align}
+	\iffalse
+Let us assume the coordinates of $\vec{A}$. Now, $\vec{C}$ is the center which is midpoint of line AB and $\vec{B}$ is one of the coordinate of diameter AB of a circle.
+	\fi	
+Hence,	
+	\begin{align}
+	\vec{C} &= \frac{\vec{A+B}}{2} \\
+\implies	2\vec{C} &= \vec{A}+\vec{B} \\
+		\text{or, }	\vec{A} &= 2\vec{C}-\vec{B} \\
+	 &= \myvec{3\\-10\\}	
+	\end{align}       
+	See Fig. 
+\ref{fig:chapters/10/7/2/7Fig}.
+\begin{figure}[!h]
+\begin{center}	
+	\includegraphics[width=\columnwidth]{chapters/10/7/2/7/figs/Vector1.png}
+\end{center}
+\caption{}
+\label{fig:chapters/10/7/2/7Fig}
+\end{figure}
+	

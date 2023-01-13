@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -108,24 +109,21 @@ columns=fullflexible
     $\vec{A} = \myvec{3\\-4\\-4}$, $\vec{B} = \myvec{2\\-1\\1}$, $\vec{C} = 
     \myvec{1\\-3\\-5}$ form the vertices of a right angled triangle.
 
-    \solution We write the direction vectors of the three sides as
+    \solution 
+\fi
+		We write the direction vectors of the three sides as
     \begin{align}
         \vec{c} &= \vec{B} - \vec{A} = \myvec{-1\\3\\5} \\
         \vec{a} &= \vec{C} - \vec{B} = \myvec{-1\\-2\\-6} \\
         \vec{b} &= \vec{C} - \vec{A} = \myvec{-2\\1\\-1}
-        \label{eq:dir-vec}
+        \label{eq:chapters/12/10/2/17/dir-vec}
     \end{align}
-
     Taking the inner product of each pair of vectors,
     \begin{align}
         \vec{c}^\top\vec{a} &= -35 \\
         \vec{a}^\top\vec{b} &= 6 \\
         \vec{b}^\top\vec{c} &= 0
-        \label{eq:inner-prod}
+        \label{eq:chapters/12/10/2/17/inner-prod}
     \end{align}
-
-    From \eqref{eq:inner-prod}, $\vec{b}^\top\vec{c} = 0$, which implies 
-    that $\vec{b} \perp \vec{c}$. Hence, $\triangle ABC$ is right angled at $A$. 
-    The Python code \texttt{codes/perp.py} verifies the answer.
-\end{enumerate}
-\end{document}
+    From \eqref{eq:chapters/12/10/2/17/inner-prod}, $\vec{b}^\top\vec{c} = 0$, which implies 
+    that $\vec{b} \perp \vec{c}$. Hence, $\triangle ABC$ is right angled at $\vec{A}$. 

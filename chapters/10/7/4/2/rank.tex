@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -22,6 +23,8 @@ Q2. Find a relation between x and y if the points $\vec(x, y), \vec(1, 2) \text{
 \solution
 \\
 The coordinates are given as
+\fi
+Let
 	\begin{align}
 	\vec{A} = \myvec{
 		x\\
@@ -36,28 +39,18 @@ The coordinates are given as
 		0\\
 		}
 	\end{align}
+	Then
 	\begin{align}
 \vec{D} &=\brak{\vec{A}-\vec{B}} = \brak{\myvec{x \\y } - \myvec{1 \\2 } } = \myvec{x-1 \\ y-2 }\\
 \vec{E} &= \brak{\vec{A}-\vec{C}} = \brak{\myvec{x \\ y } - \myvec{7 \\0} } = \myvec{x-7 \\y}
 \end{align}
- If points on a line  are  collinear, rank of matrix is " 1 "then the vectors are in linearly dependent.
-For $2\times2$ matrix Rank = 1 means Determinant is 0.
-Through pivoting,we obtain
+Forming the collinearity matrix
 \begin{align}
 	\vec{F} &={\myvec{\vec{D}^{\top}\\ \vec{E}^{\top}}}
 \end{align}
+and performing row reduction,
 \begin{align}
-\begin{split}
-\myvec{
-x-1 & y-2
- \\
-x-7 & y 
-}
-\end{split}
-\end{align}
-
-\begin{align}
-\label{eq:chem_balance_mat_row}
+\label{eq:chapters/10/7/4/2chem_balance_mat_row}
 \myvec{
 x-1 & y-2
 \\
@@ -77,22 +70,16 @@ x-1 & y-2
 	0 & -\frac{1}{3}(x-1)-(y-2)
 }
 \end{align}
-If the rank of the matrix has to be 1 , then:
+For the rank of the matrix to be 1,
 \begin{align}
 	-\frac{1}{3}(x-1)-(y-2)&=0\\
-	x+3y&=7
+	\implies \myvec{1 & 3}\vec{x} &=7	
 \end{align}
-The above straight line equation is represented in vector form of a line as follows: 
-\begin{align}
-	\vec{n}^\top\vec{X} &= c\\
-	\myvec{1 & 3}\vec{X} &=7	
-\end{align}
-Suppose, if $x=-2,y=3$ , then rank of F is equal to one which is collinear as shown in Figure:\ref    {fig:Fig}
+For $x=-2, y=3$, see Fig. \ref{fig:chapters/10/7/4/2Fig} verifying that the points are collinear.
 \begin{figure}[!h]
 	\begin{center} 
-	    \includegraphics[width=\columnwidth]{./figs/sc1.png}
+	    \includegraphics[width=\columnwidth]{chapters/10/7/4/2/figs/sc1.png}
 	\end{center}
 \caption{}
-\label{fig:Fig}
+\label{fig:chapters/10/7/4/2Fig}
 \end{figure}
-\end{document}

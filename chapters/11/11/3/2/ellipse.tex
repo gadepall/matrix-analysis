@@ -1,4 +1,4 @@
-
+\iffalse
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -22,24 +22,25 @@
 Q2.Find the coordinates of the focii, the vertices, the length of major and minor axes, the eccentricity and the length of the latus rectum of an ellipse whose equation is given by $\frac{x^2}{4}+\frac{y^2}{25}=1$.
 
 \solution
+\fi
 The equation of the given ellipse can be rearranged as 
 \begin{align}
-	\label{eq:eq1}
+	\label{eq:chapters/11/11/3/2/eq1}
 	25x^2+4y^2-100=0
 \end{align}
-The above equation can be equaded to the generic equation of conic sections
+The above equation can be equated to the generic equation of conic sections
 \begin{align}
-	\label{eq:eq2}
+	\label{eq:chapters/11/11/3/2/eq2}
 	g\brak{\vec{x}}=\vec{x}^\top \vec{V} \vec{x} + 2\vec{u}^\top \vec{x} + f = 0
 \end{align}
-Comparing coefficients of both equations \eqref{eq:eq1} and \eqref{eq:eq2}
+Comparing coefficients of both equations \eqref{eq:chapters/11/11/3/2/eq1} and \eqref{eq:chapters/11/11/3/2/eq2}
 \begin{align}
-	\label{eq:eq3}
+	\label{eq:chapters/11/11/3/2/eq3}
 	\vec{V} &= \myvec{25&0\\0&4}\\
 	\vec{u} &= \vec{0}\\
 	f &= -100
 \end{align}
-From equation \eqref{eq:eq3}, since $\vec{V}$ is already diagonalized, the eigen values $\lambda_1 \text{ and } \lambda_2$ are given as
+From equation \eqref{eq:chapters/11/11/3/2/eq3}, since $\vec{V}$ is already diagonalized, the eigen values $\lambda_1 \text{ and } \lambda_2$ are given as
 \begin{align}
 	\lambda_1 &= 25\\
 	\lambda_2 &= 4
@@ -61,10 +62,10 @@ Since the given matrix $\vec{V}$ is diagonal, the Eigen vector matrix will be id
 	&= \myvec{0\\5}
 \end{align}
 \begin{align}
-	\label{eq:eq4}
+	\label{eq:chapters/11/11/3/2/eq4}
 	c &= \frac{e\vec{u}^\top \vec{n} \pm \sqrt{e^2 \brak{\vec{u}^\top \vec{n}}^2-\lambda_1 \brak{e^2 -1}\brak{\norm{\vec{u}}^2-\lambda_1 f}}}{\lambda_1 e\brak{e^2-1}}
 \end{align}
-Substituting values of $e,\vec{u},\vec{n},\lambda_1 \text{ and } f$ in \eqref{eq:eq4}
+Substituting values of $e,\vec{u},\vec{n},\lambda_1 \text{ and } f$ in \eqref{eq:chapters/11/11/3/2/eq4}
 \begin{align}
 	c &= \frac{0 \pm \sqrt{0-25\brak{\frac{21}{25}-1}\brak{0+25\brak{100}}}}{25\frac{\sqrt{21}}{5}\brak{\frac{21}{25}-1}}\\
 	&= \frac{\pm 125}{\sqrt{21}}
@@ -77,11 +78,11 @@ The focus $\vec{F}$ of the ellipse is expressed as
 \end{align}
 \item The length of the major axis is given by
 \begin{align}
-	\label{eq:eq5}
+	\label{eq:chapters/11/11/3/2/eq5}
 	&2\sqrt{\abs{\frac{f_0}{\lambda_2}}}\\
 	f_0 &= \vec{u}^\top \vec{V}^{-1} \vec{u} -f\\
 	    &= 100\\
-	\eqref{eq:eq5} &\implies 2\sqrt{\abs{\frac{100}{4}}}
+	\eqref{eq:chapters/11/11/3/2/eq5} &\implies 2\sqrt{\abs{\frac{100}{4}}}
 	 = 10
 \end{align}
 \item The length of minor axis is given by
@@ -99,12 +100,11 @@ The focus $\vec{F}$ of the ellipse is expressed as
 	&= \frac{8}{5}
 \end{align}
 \end{enumerate}
-The corresponding is shown in Figure \ref{fig:Fig1}
+The corresponding is shown in Fig. \ref{fig:chapters/11/11/3/2/Fig1}.
 \begin{figure}[!h]
 	\begin{center} 
-	    \includegraphics[width=\columnwidth]{figs/ellipse}
+	    \includegraphics[width=\columnwidth]{chapters/11/11/3/2/figs/ellipse}
 	\end{center}
 \caption{}
-\label{fig:Fig1}
+\label{fig:chapters/11/11/3/2/Fig1}
 \end{figure}
-\end{document}
