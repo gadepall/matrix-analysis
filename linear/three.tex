@@ -293,6 +293,62 @@ Then
 \end{align}
 which can be combined to obtain 
 	\eqref{eq:plane_3pt}.
+\item The lines 
+    \begin{align}
+        \vec{x} = \vec{x_1} + \lambda_1\vec{m_1} \label{eq:chapters/12/11/2/16/L1-gen} \\
+        \vec{x} = \vec{x_2} + \lambda_2\vec{m_2} \label{eq:chapters/12/11/2/16/L2-gen}
+    \end{align}
+    intersect if
+    \begin{align}
+    %    \lambda_1\vec{m_1} - \lambda_2\vec{m_2} &= \vec{x_2} - \vec{x_1} \\
+       \vec{M}\bm{\lambda} &= \vec{x_2} - \vec{x_1}
+        \label{eq:chapters/12/11/2/16/intersect-cond}
+    \end{align}
+    where
+    \begin{align}
+        \vec{M} \triangleq \myvec{\vec{m_1} & \vec{m_2}} \label{eq:chapters/12/11/2/16/M-def} \\
+        \bm{\lambda} \triangleq \myvec{\lambda_1\\-\lambda_2}
+        \label{eq:chapters/12/11/2/16/lambda-def}
+    \end{align}
+\item 
+    \iffalse
+    Let 
+    \begin{align}
+        \vec{x} = \vec{x_1} + \lambda_1\vec{m_1} \label{eq:chapters/12/11/2/16/L1-gen} \\
+        \vec{x} = \vec{x_2} + \lambda_2\vec{m_2} \label{eq:chapters/12/11/2/16/L2-gen}
+    \end{align}
+be two skew lines. 
+\fi
+	The closest points on two skew lines are given by 
+    \begin{align}
+	    \vec{M}^\top \vec{M}\bm{\lambda} = \vec{M}^\top\brak{\vec{x_2}-\vec{x_1}}
+        \label{eq:chapters/12/11/2/16/lambda-eqn}
+    \end{align}
+	\solution
+	\iffalse
+    If these lines intersect, then
+    If the lines are skew,
+    \fi
+    For the lines defined in \eqref{eq:chapters/12/11/2/16/L1-gen} and \eqref{eq:chapters/12/11/2/16/L2-gen},
+Suppose the closest points on both lines are
+    \begin{align}
+        \vec{A} = \vec{x_1} + \lambda_1\vec{m_1} \label{eq:chapters/12/11/2/16/a-def} \\
+        \vec{B} = \vec{x_2} + \lambda_2\vec{m_2}
+        \label{eq:chapters/12/11/2/16/b-def}
+    \end{align}
+    Then, $AB$ is perpendicular to both lines, hence
+    \begin{align}
+        \vec{m_1}^\top\brak{\vec{A}-\vec{B}} = 0 \\
+        \vec{m_2}^\top\brak{\vec{A}-\vec{B}} = 0 \\
+        \implies \vec{M}^\top\brak{\vec{A}-\vec{B}} = \vec{O}
+        \label{eq:chapters/12/11/2/16/perp-vec}
+    \end{align}
+    Using \eqref{eq:chapters/12/11/2/16/a-def} and \eqref{eq:chapters/12/11/2/16/b-def} in \eqref{eq:chapters/12/11/2/16/perp-vec},
+    \begin{align}
+        \vec{M}^\top\brak{\vec{x_1}-\vec{x_2} + \vec{M}\bm{\lambda}} = \vec{0} \\
+    \end{align}
+    yielding
+        \ref{eq:chapters/12/11/2/16/lambda-eqn}.
 %\renewcommand{\theequation}{\theenumi}
 %%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
 %\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
