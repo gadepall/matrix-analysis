@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single,
+breaklines=true
+}
+ 
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\enlargethispage{-4cm}
+\title{\textbf{Straight Lines}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{12$^{th}$ Maths - Chapter 10}
+This is Problem-12 from Exercise 10.2
+\begin{enumerate}
+\item Find the direction cosines of the vector $\hat{i} +2\hat{j}+3\hat{k}$.
+
+\solution The direction cosines are the cosines of the angles formed by the given vector with the respective axes, let $\vec{A}$ be the given vector
+\begin{align}
+	\vec{A} =\myvec{1\\2\\3}
+\end{align}
+The Directional vectors of $x,y$ and $z$ axes are given respectively 
+\begin{align}
+		\vec{e_1} =\myvec{1\\0\\0},\vec{e_2}=\myvec{0\\1\\0},\vec{e_3} =\myvec{0\\0\\1}
+\end{align}
+		The magnitudes for $\vec{A}$ and directional vectors $\vec{e_1},\vec{e_2},\vec{e_3}$ are
+	\begin{align}
+\norm{\vec{A}} =\sqrt{14},\norm{\vec{e_1}}=\sqrt{1},\norm{\vec{e_1}}=\sqrt{1},\norm{\vec{e_1}}=\sqrt{1}
+	\end{align}
+Let 
+\begin{align}
+	\cos\theta_i=1,2,3  
+\end{align}
+		So for different values of $\cos\theta_i$ the direction cosines of vector $\vec{A}$ are
+\begin{align}
+	\cos\theta_1 &=\frac{\myvec{1&2&3}\myvec{1\\0\\0}}{\sqrt{14}}=\frac{1}{\sqrt{14}}\\
+	\cos\theta_2 &=\frac{\myvec{1&2&3}\myvec{0\\1\\0}}{\sqrt{14}}=\frac{2}{\sqrt{14}}\\
+	\cos\theta_3 &=\frac{\myvec{1&2&3}\myvec{0\\0\\1}}{\sqrt{14}}=\frac{3}{\sqrt{14}}
+\end{align}
+\end{enumerate}
+\end{document}

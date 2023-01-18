@@ -21,7 +21,7 @@ and
 \item The {\em cross product} or {\em vector product} of $\vec{A}, \vec{B}$ is defined as
 \begin{align}
   \label{eq:cross3d}
-	\vec{A} \times \vec{B} = \myvec{ \mydet{\vec{A}_{23} & \vec{B}_{23}} \\ \mydet{\vec{A}_{31} & \vec{B}_{31}} \\ \mydet{\vec{A}_{12}  & \vec{B}_{12}}}
+	\vec{A} \times \vec{B} = \myvec{ \mydet{\vec{A}_{23} & \vec{B}_{23}} \\[10pt] \mydet{\vec{A}_{31} & \vec{B}_{31}} \\[10pt] \mydet{\vec{A}_{12}  & \vec{B}_{12}}}
 \end{align}
 \item Verify that
 \begin{align}
@@ -31,4 +31,32 @@ and
 \begin{align}
 	\frac{1}{2} \norm{  \vec{A} \times \vec{B}}
 \end{align}
+\item (Cauchy-Schwarz Inequality)
+    \begin{align}
+        \label{eq:dot-mag-ineq}
+	    \abs{\vec{a}^\top\vec{b}} &\le \norm{\vec{a}}\norm{\vec{b}}
+    \end{align}
+    \solution
+	\begin{align}
+        \norm{\vec{a}-\frac{\vec{a}^\top\vec{b}}{\norm{\vec{b}}^2}\vec{b}}^2 &\ge 0 \\
+        \implies \norm{\vec{a}}^2 - 2\frac{\brak{\vec{a}^\top\vec{b}}^2}{\norm{\vec{b}}^2} + \frac{\brak{\vec{a}^\top\vec{b}}^2}{\norm{\vec{b}}^2} &\ge 0 \\
+        \implies \norm{\vec{a}}^2 - \frac{\brak{\vec{a}^\top\vec{b}}^2}{\norm{\vec{b}}^2} &\ge 0 \\
+        \implies \norm{\vec{a}}^2\norm{\vec{b}}^2 &\ge \brak{\vec{a}^\top\vec{b}}^2 \\
+    \end{align}
+    yielding
+        \eqref{eq:dot-mag-ineq}.
+\item (Triangle Inequality)
+    \begin{align}
+\norm{\vec{a}+\vec{b}} &\le \norm{\vec{a}}+\norm{\vec{b}}
+        \label{eq:triangle-ineq}
+    \end{align}
+    \solution
+    Using \eqref{eq:dot-mag-ineq},
+    \begin{align}
+        \vec{a}^\top\vec{b} &\le \norm{\vec{a}}\norm{\vec{b}} \\
+\implies        \norm{\vec{a}}^2 + 2\vec{a}^\top\vec{b} + \norm{\vec{b}}^2 &\le \norm{\vec{a}}^2 + 2\norm{\vec{a}}\norm{\vec{b}} + \norm{\vec{b}}^2 \\
+\implies               \norm{\vec{a}+\vec{b}}^2 &\le \brak{\norm{\vec{a}}+\norm{\vec{b}}}^2 
+    \end{align}
+    yielding
+        \eqref{eq:triangle-ineq}.
 \end{enumerate}
