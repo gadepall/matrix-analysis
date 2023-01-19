@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{amsmath}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single,
+breaklines=true
+}
+ 
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\enlargethispage{-4cm}
+\title{\textbf{VECTOR ALGEBRA}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{12$^{th}$ Maths - Chapter 10}
+This is Problem-4 from Exercise 10.3
+\begin{enumerate}
+	\item Find the projection of the vector $\hat{i}+3\hat{j}+7\hat{k}$ on the vector $7\hat{i}-\hat{j}+8\hat{k}$.
+
+\solution let $\vec{A}$ and $\Vec{B}$ be the given vectors
+\begin{align}
+ \vec{A} =\myvec{1\\3\\7},\vec{B} =\myvec{7\\-1\\8}
+\end{align}
+		Let $\vec{C}$ be the projection of $\Vec{A}$ on $\Vec{B}$ then $\vec{C}$ is given as
+\begin{align}
+	\vec{C}=\frac{\Vec{A}^\top \Vec{B}}{\norm{\vec{B}}^2}\vec{B}\label{eq:2}
+\end{align}
+Where 
+\begin{align}
+	\norm{\Vec{B}}^2=\vec{B}^\top\vec{B}=114
+\end{align}
+Then substituting the values of $\vec{A}$ and $\Vec{B}$ in \eqref{eq:2} gives
+ \begin{align}
+	 \vec{C} &=\frac{\myvec{1 & 3 & 7}\myvec{7\\-1\\8}}{2}\myvec{7\\-1\\8}\\
+		&=\frac{10}{19}\myvec{7\\-1\\8}\\
+		&=\myvec{\frac{70}{19}\\[2pt] \frac{-10}{19}\\[2pt] \frac{80}{19}}
+ \end{align}
+\end{enumerate}
+\end{document}
