@@ -1,0 +1,44 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{extarrows}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vectors/12.10.2.11/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - 12.10.2.11
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+Show that the vectors $2\hat{i}+3\hat{j}+4\hat{k}$ and $-4\hat{i}+6\hat{j}-8\hat{k}$ are collinear.
+\section{\textbf{Solution}}
+\fi
+Let
+\begin{align}
+\vec{A}=\myvec{2\\3\\4},\vec{B}=\myvec{-4\\6\\-8}\\
+ \end{align}
+ Forming the collinearity matrix
+ \begin{align}        
+\myvec{\vec{A}^{\top}\\ \vec{B}^{\top}}=\myvec{2&-3&4\\-4&6&-8}
+ \xleftrightarrow{\frac{1}{2}R_1\to R_1}\myvec{1&-\frac{3}{2}&2\\-4&6&-8}\\
+\xleftrightarrow{-\frac{1}{4}R_2\leftarrow R_2}\myvec{1&-\frac{3}{2}&2\\1&\frac{3}{2}&2}
+\xleftrightarrow{R_2-1R_1\to R_2}\myvec{1&-\frac{3}{2}&2\\0&0&0}
+\end{align}
+Thus, the rank of the matrix is 1 and the vectors are collinear.
