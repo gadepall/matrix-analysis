@@ -1,0 +1,99 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Coordinate Geometry}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\setcounter{page}{1}
+
+
+
+\begin{enumerate}
+
+\item\textbf{Problem statement :} Find the area of a rhombus of its vertices are $\myvec{3 ,0}$, $\myvec{4 ,5}$, $\myvec{-1 ,4}$ and $\myvec{-2 ,-1}$taken in order
+
+\solution \\
+\fi
+The input vertices for this problem are given as
+	\begin{align}
+	\vec{A} = \myvec{
+		3\\
+		0
+		},
+	\vec{B} = \myvec{
+		4\\
+		5
+		},
+        \vec{C} = \myvec{
+		-1\\
+		4
+		},
+        \vec{D} = \myvec{
+		-2\\
+		-1
+		}
+	\end{align}
+Since		
+\begin{align}
+ \vec{A-D}= \myvec{3 \\ 0} - \myvec{-2 \\-1}= \myvec{5\\1}
+ \\
+  \vec{B-A}= \myvec{4 \\ 5} - \myvec{3 \\0}= \myvec{1\\5}
+\end{align}
+the area of the rhombus is
+\begin{align}
+                \norm{\myvec{\vec{A-D}}\times \myvec{\vec{B-A}}}=\mydet{5 & 1\\1 & 5} = 24
+\end{align}
+See Fig. 
+\ref{fig:chapters/10/7/2/10/gFig1}.
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=\columnwidth]{chapters/10/7/2/10/figs/fig.pdf}
+ \end{center}
+\caption{}
+\label{fig:chapters/10/7/2/10/gFig1}
+\end{figure}
