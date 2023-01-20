@@ -1,0 +1,85 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{gensymb}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single,
+breaklines=true
+}
+ 
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\enlargethispage{-4cm}
+\title{\textbf{Vector Algebra}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{12$^{th}$ Maths - Chapter 10}
+This is Problem-3 from Exercise 10.4
+\begin{enumerate}
+\item If unit vector $\overrightarrow{a}$ makes angles $\frac{\pi}{3}$ with $\hat{i}$, $\frac{\pi}{4}$ with $\hat{j}$ and an acute angle $\theta$ with $\hat{k}$, then find $\theta$ and hence, the components of $\overrightarrow{a}$.
+
+\solution
+\fi
+		Let 
+		\begin{align}
+			\vec{A}=\myvec{\cos\theta_1\\\cos\theta_2\\\cos\theta_3}
+		\end{align}
+		where
+		\begin{align}
+		\cos\theta_1 &=\cos\frac{\pi}{3}
+			=\frac{1}{2}\\
+			\cos\theta_2 &=\cos\frac{\pi}{4}\\
+			=\frac{1}{\sqrt{2}}
+		\end{align}
+		Since
+\begin{align}
+    \norm{\vec{A}}&=1,
+\sqrt{\cos^2\theta_1+\cos^2\theta_2+\cos^2\theta_3}&=1
+    \implies\sqrt{\frac{1}{2}^2+\frac{1}{\sqrt{2}}^2+\cos^2\theta_3 }&=1\\
+    \implies\cos\theta_3 &=\pm\frac{1}{2}
+\end{align}
+Since $\theta_3$ is an acute angle
+\begin{align}
+ \cos\theta_3=\frac{1}{2}
+\end{align}
+    Hence 
+\begin{align}
+		\vec{A}=\myvec{\frac{1}{2}\\[2pt] \frac{1}{\sqrt{2}}\\[2pt] \frac{1}{2}}
+\end{align}
