@@ -1,4 +1,6 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\iffalse
+\documentclass[A4,12pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -163,8 +165,8 @@ columns=fullflexible
 \vspace{3cm}
 
 
-\title{EE2802: Assignment5}
-\author{Nikam Pratik Balasaheb (EE21BTECH11037)}
+\title{QUIZ 4}
+\author{Shristy Sharma (EE22BNITS11001)}
 
 
 
@@ -183,29 +185,50 @@ columns=fullflexible
 \renewcommand{\thetable}{\theenumi}
 %\renewcommand{\theequation}{\theenumi}
 
-\section{Problem}
-For the vectors $ \vec a = \myvec{ 2\\-1\\2 } \text{ and } \vec b = \myvec{ -1\\1\\-1 }$, find the unit vector along the direction of $ \vec a + \vec b$.
 
-\section{Solution}
+%Download all python codes 
+%
+%\begin{lstlisting}
+%svn co https://github.com/JayatiD93/trunk/My_solution_design/codes
+%\end{lstlisting}
 
+%Download all and latex-tikz codes from 
+%
+%\begin{lstlisting}
+%svn co https://github.com/gadepall/school/trunk/ncert/geometry/figs
+%\end{lstlisting}
+%
+
+
+\section{PROBLEM 1}
+1. Without using distance formula, show that points $\vec{A}$ = $\myvec{ -2\\-1}$,\ $\vec{B}$ = $\myvec{ 4\\0}$ ,\ $\vec{C}$ = $\myvec{ 3\\3}$ and \ $\vec{D}$ = $\myvec{ -3\\2}$ \
+are the vertices of a parallelogram.\\
+\\SOLUTION:\\
+Given,
 \begin{align}
-\vec a = \myvec{ 2\\-1\\2 } \\ \vec b = \myvec{ -1\\1\\-1 }
+\vec{A} = \myvec{ -2\\-1} , \vec{B} = \myvec{ 4\\0}, \vec{C} = \myvec{3\\3} , \vec{D} =\myvec{-3\\2} 
 \end{align}
-
+\fi
+To show that the given points are the vertices of a parallelogram, we need to show the following
+\begin{enumerate}
+\item $\vec{A}-\vec{B} = \vec{D}-\vec{C} $
+\item  $\vec{A}-\vec{D} = \vec{B}-\vec{C} $
+ \end{enumerate}
+So,
 \begin{align}
-\vec a + \vec b = \vec u &= \myvec{ 2\\-1\\2 } + \myvec{ -1\\1\\-1 }\\
-&= \myvec{ 1\\0\\1 }
+\vec{A}-\vec{B} &= \myvec{-2\\-1} - \myvec{4\\0}\\ &= \myvec{-6\\-1}\\
+\vec{D}-\vec{C} &= \myvec{-3\\2} - \myvec{3\\3}\\ &= \myvec{-6\\-1}\\
+\vec{A}-\vec{D} &= \myvec{-2\\-1} - \myvec{-3\\2}\\ &= \myvec{1\\-3}\\
+\vec{B}-\vec{C} &= \myvec{4\\0} - \myvec{ 3\\3}\\ &= \myvec{1\\-3}
 \end{align}
-
-Unit vector in direction of $\vec u$,
-
-\begin{align}
- \hat{\vec{u}} &= \frac{\vec u}{\norm{ \vec{u} }}\\
- &= \frac{1}{\sqrt{2}} \vec u \\
- \hat{\vec{u}} &= \frac{1}{\sqrt{2}} \myvec{ 1\\0\\1 } \\
-\end{align}
-
-\end{document}
+Therefore, we can now say that the given points are the vertices of a parallelogram since both the sides of the quadrilateral are parallel to each other.
+See Fig.      \ref{fig:chapters/11/10/1/91}.
+\begin{figure}[h!]
+  \centering
+   \includegraphics[width=\columnwidth]{chapters/11/10/1/9/figs/paralellogram.png}
+    \caption{}
+     \label{fig:chapters/11/10/1/91}  
+\end{figure}
 
 
 

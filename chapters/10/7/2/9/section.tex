@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -29,117 +30,43 @@
 1. Find the coordinates of the point which divides the line segment joining $\vec(-2,2) \text{ and } \vec(2,8)$ into four equal parts
 \\
 \solution\\		
-Let the points $\vec{X}$,$\vec{Y}$,$\vec{Z}$ which divide the line into 4 equal parts\\
-
-\begin{table}[ht!]\centering
-\input{tables/Book1.tex}
-\end{table}
-
-coordinates and ratio are given as:
+\fi
+Let 
 \begin{align}
 \vec{A}=\myvec{-2\\2\\},
 \vec{B}=\myvec{2\\8\\},
 \end{align}
+Using section formula 
+\begin{align}
+\vec{R}_i&=\frac{\vec{B}+n\vec{A}}{1+n}
+\end{align}
 
 \begin{enumerate}
 
-\item Using section formula for $n$:
+\item $n = 3$
     
 \begin{align}
-n&=3\\
-\vec{R}_1&=\frac{\vec{B}+n\vec{A}}{1+n}\\
-&=\frac{1}{1+3}  \myvec{\myvec{
-2\\
-8
-}
-  +
-   3\myvec{
--2\\
-2
-}}\\
-&= \frac{1}{4} \myvec{\myvec{
-2\\
-8
-}
-  +
+\vec{R}_1=
 \myvec{
--6\\
-6
-}} \\
-&=\frac{1}{4}
-\myvec{
--4\\
-14
-}\\
-&=\myvec{
 -1\\
 \\
 \frac{7}{2}\\
 }
 \end{align}
 
-\item Using section formula for $n$:
+\item $n = 1$
 \begin{align}
-n&=1\\
-\vec{R}_2&=\frac{\vec{B}+n\vec{A}}{1+n}\\
-&=\frac{1}{1+1}  \myvec{\myvec{
-2\\
-8
-}
-  +
-   1\myvec{
--2\\
-2
-}}\\
-&= \frac{1}{2} \myvec{\myvec{
-2\\
-8
-}
-  +1\myvec{
--2\\
-2
-}} \\
-&=\frac{1}{2}
-\myvec{
-0\\
-10
-}\\
-&=\myvec{
+\vec{R}_2
+=\myvec{
 0\\
 5
 }
 \end{align}
 
-\item Using section formula for $n$:
+\item $n=\frac{1}{3}$
 \begin{align}
-n&=\frac{1}{3}\\
-\vec{R}_3&=\frac{\vec{B}+n\vec{A}}{1+n}\\
-&=\frac{1}{1+\frac{1}{3}}  \myvec{\myvec{
-2\\
-8
-}
-  +
-   \frac{1}{3}\myvec{
--2\\
-2
-}}\\
-&= \frac{1}{\frac{4}{3}} \myvec{\myvec{
-2\\
-8
-}
-  +
-\myvec{
-\frac{-2}{3}\\
-\\
-\frac{2}{3}\\
-}} \\
-&=\frac{3}{4}
-\myvec{
-\frac{4}{3}\\
-\\
-\frac{26}{3}\\
-}\\
-&=\myvec{
+\vec{R}_3
+=\myvec{
 1\\
 \\
 \frac{13}{2}\\
@@ -147,12 +74,13 @@ n&=\frac{1}{3}\\
 \end{align}
 
 \end{enumerate}
+See Fig. 
+\ref{fig:chapters/10/7/2/9/Fig}
 \begin{figure}[!h]
 \begin{center}
-   \includegraphics[width=\columnwidth]{./figs/10.7.2.9.png}
+   \includegraphics[width=\columnwidth]{chapters/10/7/2/9/figs/10.7.2.9.png}
 \end{center}
 \caption{}
-\label{fig:Fig}
+\label{fig:chapters/10/7/2/9/Fig}
 \end{figure}
 
-\end{document}
