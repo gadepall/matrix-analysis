@@ -1,0 +1,60 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vectors/12.10.4.4/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - 12.10.4.4
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+Show that $\myvec{\vec{a}-\vec{b}}\times\myvec{\vec{a}+\vec{b}}=2\myvec{\vec{a}\times\vec{b}}$
+\section{\textbf{Solution}}
+Consider
+\begin{align}
+\vec{a}=\myvec{1\\1},\vec{b}&=\myvec{2\\1}
+\end{align}
+\begin{align}
+  \myvec{\vec{a}-\vec{b}}\times\myvec{\vec{a}+\vec{b}}=2\myvec{\vec{a}\times\vec{b}}
+  \end{align}
+  where
+  \begin{align}
+  \myvec{\vec{a}-\vec{b}}&=\myvec{-1\\0}\\
+  \myvec{\vec{a}+\vec{b}}&=\myvec{3\\2}\\
+  \text{LHS} &= \myvec{\vec{a}-\vec{b}}\times\myvec{\vec{a}+\vec{b}}\\
+  &=\mydet{-1 & 3\\0 & 2} \\
+  &=-2\\
+  \text{RHS}&=2\myvec{\vec{a}\times\vec{b}}\\
+  &=2\mydet{1 & 2\\0 & 1}\\
+  &=2\myvec{-1}\\
+  &=-2
+  \end{align}
+  Therefore
+  \begin{center}
+  LHS = RHS
+  \end{center}
+\begin{lstlisting}
+https://github.com/sssurajit/fwc/blob/main/vectors/12.10.4.4/codes/code.py
+\end{lstlisting}
+Execute the code by using the command\\
+\textbf{python3 code.py}
+\end{document}
+
