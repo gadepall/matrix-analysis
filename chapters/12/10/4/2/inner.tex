@@ -1,0 +1,97 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{  Unit Vector Perpendicular}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section{12$^{th}$ Maths - Chapter 10}
+\textbf{This is Problem-2 from Exercise 10.4}
+\begin{enumerate}
+
+\item Find a unit vector  perpendicular to each of a vector $\bar{a}+\bar{b} \text{ and }\bar{a}-\bar{b}$ where  $\overrightarrow{a}=3\hat{i}+2\hat{j}+2\hat{k}\text{ and }\overrightarrow{b}=\hat{i}+2\hat{j}-2\hat{k}$
+\section{Solution}
+\fi
+Since
+\begin{align}
+	\vec{a}+\vec{b}=\myvec{4\\4\\0},\,
+	\vec{a}-\vec{b}=\myvec{2\\0\\4}
+\end{align}
+the desired vector is obtained as
+\begin{align} 
+\myvec{\vec{a}+\vec{b}& \vec{a}-\vec{b}}^\top\vec{x}=0\\
+\implies
+\myvec{
+4&4&0\\
+2&0&4
+}
+\xleftrightarrow[]{R_1=\frac{R_1}{4}}
+\myvec{
+1&1&0\\
+2&0&4
+}\xleftrightarrow[]{R_2=\frac{R_2}{2}}
+\myvec{
+1&1&0\\
+1&0&2
+}\\
+\xleftrightarrow[]{R_2={R_1}-{R_2}}
+\myvec{
+1&1&0\\
+0&-1&2
+}
+\xleftrightarrow[]{R_2=\frac{R_2}{-1}}
+\myvec{
+1&1&0\\
+0&1&-2
+}
+\xleftrightarrow[]{R_1={R_1}-{R_2}}
+\myvec{
+1&0&2\\
+0&1&-2
+}
+\end{align}
+yielding
+\begin{align}
+\begin{split}
+x_1+2x_3=0\\
+x_2-2x_3=0
+\end{split}
+\implies 
+\vec{x}
+=x_3\myvec{-2\\2\\1}
+\end{align}

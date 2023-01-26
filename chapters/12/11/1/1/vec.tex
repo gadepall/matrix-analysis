@@ -1,0 +1,36 @@
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{gensymb}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vectors/12.11.1.1/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - 12.11.1.1
+}
+\author{Surajit Sarka}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+\section{\textbf{Solution}}
+\fi
+The direction vector is
+\begin{align}
+\vec{A}=\myvec{\cos 90^{\circ}\\ \cos 135^{\circ}\\ \cos 45^{\circ}}=\myvec{0\\-\frac{1}{\sqrt{2}}\\ \frac{1}{\sqrt{2}}}
+\end{align}
