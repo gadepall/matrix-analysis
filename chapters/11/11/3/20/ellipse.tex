@@ -105,72 +105,64 @@ columns=fullflexible
 \end{abstract}
 
 \begin{enumerate}
-    \item Find the equation of the ellipse whose 
+    \item Find the equation of the ellipse whose major axis is the $x$-axis and
+    center is the origin and passes through the points
+    \begin{align}
+        \vec{P} = \myvec{4\\3},\ \vec{Q} = \myvec{6\\2}
+    \end{align}
+
     \solution 
 \fi
-		let the equation of the conic with focus $\vec{f}$, directrix
+		Let the equation of the conic with focus $\vec{F}$, directrix
     $\vec{n}^\top\vec{x} = c$ and eccentricity $e$ be
     \begin{align}
-        \vec{x}^\top\vec{v}\vec{x} + 2\vec{u}^\top\vec{x} + f = 0
+        \vec{x}^\top\vec{V}\vec{x} + 2\vec{u}^\top\vec{x} + f = 0
         \label{eq:chapters/11/11/3/20/conic-def}
     \end{align}
     where
     \begin{align}
-        \vec{v} &\triangleq \norm{\vec{n}}^2\vec{i} - e^2\vec{n}\vec{n}^\top \label{eq:chapters/11/11/3/20/v-def} \\
-        \vec{u} &\triangleq ce^2\vec{n} - \norm{\vec{n}}^2\vec{f} \label{eq:chapters/11/11/3/20/u-def} \\
-        f &\triangleq \norm{\vec{n}}^2\norm{\vec{f}}^2 - c^2e^2 \label{eq:chapters/11/11/3/20/f-def}
+        \vec{V} &\triangleq \norm{\vec{n}}^2\vec{I} - e^2\vec{n}\vec{n}^\top \label{eq:chapters/11/11/3/20/V-def} \\
+        \vec{u} &\triangleq ce^2\vec{n} - \norm{\vec{n}}^2\vec{F} \label{eq:chapters/11/11/3/20/u-def} \\
+        f &\triangleq \norm{\vec{n}}^2\norm{\vec{F}}^2 - c^2e^2 \label{eq:chapters/11/11/3/20/f-def}
     \end{align}
-    since the conic is an ellipse whose major axis is along the $x$-axis, we have
+    Since the conic is an ellipse whose major axis is along the $x$-axis, we have
     \begin{align}
         \vec{n} = \myvec{1\\0}
     \end{align}
-    thus,
+    Thus,
     \begin{align}
-        \vec{v} = \myvec{1-e^2&0\\0&1} \label{eq:chapters/11/11/3/20/v-val} \\
-        \vec{u} = ce^2\myvec{1\\0} - \vec{f} \label{eq:chapters/11/11/3/20/u-val} \\
-        f = \norm{\vec{f}}^2 - c^2e^2 \label{eq:chapters/11/11/3/20/f-val}
+        \vec{V} = \myvec{1-e^2&0\\0&1} \label{eq:chapters/11/11/3/20/V-val} \\
+        \vec{u} = ce^2\myvec{1\\0} - \vec{F} \label{eq:chapters/11/11/3/20/u-val} \\
+        f = \norm{\vec{F}}^2 - c^2e^2 \label{eq:chapters/11/11/3/20/f-val}
     \end{align}
-    the centre of the conic is the point which bisects all chords passing 
-    through it. suppose that the centre of the conic is $\vec{c}$. then, if
-    $\vec{c}+\vec{p}$ lies on the conic, so does $\vec{c}-\vec{p}$. substituting 
-    these points in \eqref{eq:chapters/11/11/3/20/conic-def},
+    The centre of the conic is given by
     \begin{align}
-        \brak{\vec{c}+\vec{p}}^\top\vec{v}\brak{\vec{c}+\vec{p}} + 2\vec{u}^\top\brak{\vec{c}+\vec{p}} + f &= 0 \label{eq:chapters/11/11/3/20/c1} \\
-        \brak{\vec{c}-\vec{p}}^\top\vec{v}\brak{\vec{c}-\vec{p}} + 2\vec{u}^\top\brak{\vec{c}-\vec{p}} + f &= 0 \label{eq:chapters/11/11/3/20/c2}
-    \end{align}
-    subtracting \eqref{eq:chapters/11/11/3/20/c2} from \eqref{eq:chapters/11/11/3/20/c1}, and noting from 
-    \eqref{eq:chapters/11/11/3/20/v-def} that $\vec{v}$ is symmetric, we get
-    \begin{align}
-        \vec{c}^\top\vec{vp} + \vec{u}^\top\vec{p} &= 0 \\
-        \implies \brak{\vec{vc} + \vec{u}}^\top\vec{p} &= 0 \\
-        \implies \vec{vc} + \vec{u} = \vec{0} \label{eq:chapters/11/11/3/20/p-arb} \\
-        \implies \vec{c} = -\vec{v}^{-1}\vec{u}
+        \vec{c} = -\vec{V}^{-1}\vec{u}
         \label{eq:chapters/11/11/3/20/center}
     \end{align}
-    where \eqref{eq:chapters/11/11/3/20/p-arb} follows since $\vec{p}$ can be arbitrary. since
-    $\vec{v} \neq \vec{0}$, it follows from \eqref{eq:chapters/11/11/3/20/center} that $\vec{u}
-    = \vec{0}$. thus, from \eqref{eq:chapters/11/11/3/20/u-val},
+    Since $\vec{c} = \vec{0}$ and $\vec{V}^{-1} \neq \vec{0}$, it follows from 
+    \eqref{eq:chapters/11/11/3/20/center} that $\vec{u} = \vec{0}$. Thus, from \eqref{eq:chapters/11/11/3/20/u-val},
     \begin{align}
-        \vec{f} = \myvec{ce^2\\0}
-%        \label{eq:chapters/11/11/3/20/f-c-e}
+        \vec{F} = \myvec{ce^2\\0}
+        \label{eq:chapters/11/11/3/20/F-c-e}
     \end{align}
     and so,
     \begin{align}
         f = c^2e^2\brak{e^2-1}
         \label{eq:chapters/11/11/3/20/f-c-e}
     \end{align}
-    putting $\vec{x} = \vec{p}$ in \eqref{eq:chapters/11/11/3/20/conic-def} and using \eqref{eq:chapters/11/11/3/20/f-c-e}
+    Putting $\vec{x} = \vec{P}$ in \eqref{eq:chapters/11/11/3/20/conic-def} and using \eqref{eq:chapters/11/11/3/20/F-c-e}
     and \eqref{eq:chapters/11/11/3/20/f-c-e},
     \begin{align}
         \myvec{4&3}\myvec{1-e^2&0\\0&1}\myvec{4\\3} + f &= 0 \\
         \implies 16e^2 - f = 25 \label{eq:chapters/11/11/3/20/e1}
     \end{align}
-    putting $\vec{x} = \vec{q}$ in \eqref{eq:chapters/11/11/3/20/conic-def}, we get
+    Putting $\vec{x} = \vec{Q}$ in \eqref{eq:chapters/11/11/3/20/conic-def}, we get
     \begin{align}
         \myvec{6&2}\myvec{1-e^2&0\\0&1}\myvec{6\\2} + f &= 0 \\
         \implies 36e^2 - f = 40 \label{eq:chapters/11/11/3/20/e2}
     \end{align}
-    the equations \eqref{eq:chapters/11/11/3/20/e1} and \eqref{eq:chapters/11/11/3/20/e2} can be formulated as
+    The equations \eqref{eq:chapters/11/11/3/20/e1} and \eqref{eq:chapters/11/11/3/20/e2} can be formulated as
     a matrix equation
     \begin{align}
         \myvec{16&-1\\36&-1}\myvec{e^2\\f} = \myvec{25\\40}
@@ -178,23 +170,23 @@ columns=fullflexible
     \end{align}
     and can be solved using the augmented matrix.
     \begin{align}
-        \myvec{16&-1&25\\36&-1&40} &\xleftrightarrow[]{r_1\leftarrow r_1-r_2} \myvec{-20&0&-15\\36&-1&40} \\
-                 &\xleftrightarrow[]{\substack{r_1\leftarrow\frac{r_1}{-5}\\r_2\leftarrow -r_2}} \myvec{4&0&3\\-36&1&-40} \\
-                 &\xleftrightarrow[]{r_2\leftarrow r_2+9r_1}\myvec{4&0&3\\0&1&-13} \\
-                 &\xleftrightarrow[]{r_1\leftarrow\frac{r_1}{4}}\myvec{1&0&\frac{3}{4}\\0&1&-13} \\
+        \myvec{16&-1&25\\36&-1&40} &\xleftrightarrow[]{R_1\leftarrow R_1-R_2} \myvec{-20&0&-15\\36&-1&40} \\
+                 &\xleftrightarrow[]{\substack{R_1\leftarrow\frac{R_1}{-5}\\R_2\leftarrow -R_2}} \myvec{4&0&3\\-36&1&-40} \\
+                 &\xleftrightarrow[]{R_2\leftarrow R_2+9R_1}\myvec{4&0&3\\0&1&-13} \\
+                 &\xleftrightarrow[]{R_1\leftarrow\frac{R_1}{4}}\myvec{1&0&\frac{3}{4}\\0&1&-13}
     \end{align}
-    thus,
+    Thus,
     \begin{align}
         e^2 = \frac{3}{4},\ f = -13
     \end{align}
-    and the equation of the conic is given by
+    And the equation of the conic is given by
     \begin{align}
         \vec{x}^\top\myvec{\frac{1}{4}&0\\0&1}\vec{x} - 13 = 0
     \end{align}
-    the situation is illustrated in Fig. \ref{fig:chapters/11/11/3/20/ellipse}
+    The situation is illustrated in Fig. \ref{fig:chapters/11/11/3/20/ellipse}
     \begin{figure}[!ht]
         \centering
         \includegraphics[width=\columnwidth]{chapters/11/11/3/20/figs/ellipse.png}
-        \caption{}
+        \caption{Locus of the required ellipse.}
         \label{fig:chapters/11/11/3/20/ellipse}
     \end{figure}
