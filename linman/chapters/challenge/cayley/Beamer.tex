@@ -1,0 +1,220 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+
+\singlespacing
+
+\usepackage[cmex10]{amsmath}
+%\usepackage{amsthm}
+%\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+%\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+%\usepackage{wasysym}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+
+\usepackage{tkz-euclide} %loads TikZ and tkz-base
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                          
+    \usepackage{array}                                          
+    \usepackage{longtable}                                      
+    \usepackage{calc}                                           
+    \usepackage{multirow}                                       
+    \usepackage{hhline}                                         
+    \usepackage{ifthen}
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+\begin{document}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{Matrix Theory (EE5609) Challenging Problem 3}
+\author{Arkadipta De\\MTech Artificial Intelligence\\AI20MTECH14002}
+\maketitle
+\newpage
+%\tableofcontents
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{abstract}
+This document proves the Cayley-Hamilton theorem.
+\end{abstract}
+Download latex codes from 
+%
+\begin{lstlisting}
+https://github.com/Arko98/EE5609/tree/master/Challenge_2
+\end{lstlisting}
+%
+\section{Problem}
+Prove Cayley-Hamilton Theorem.
+\section{Theorem Statement}
+Every Square matrix satisfies its own characteristic equation.\\
+Let, $\vec{A}$ be a square matrix of order $n$ and $p(\lambda) = \det({\vec{A}-\lambda \vec{I}})$ be the characteristic equation of \vec{A} in $\lambda$ and $\vec{I}$ is the identity matrix of order $n$ which is the same order of the matrix $\vec{A}$ then the charcteristic equation of $\vec{A}$ is given by,
+\begin{align}  
+\det({\vec{A}-\lambda \vec{I}}) &= 0\\
+\implies\mydet{a_{11}-\lambda & a_{12} & a_{13} & \cdots & a_{nn}\\ 
+a_{21} & a_{22}-\lambda & a_{23}& \cdots & a_{2n} \\
+\vdots & \vdots & \vdots & \ddots &\vdots \\
+a_{n1} & a_{n2} & a_{n3} & \cdots & a_{nn}-\lambda \\ } &= 0\\
+\implies a_0 + a_1\lambda + a_2\lambda^{2} +  \cdots+a_n\lambda^{n} &= 0\label{eq1}
+\end{align}
+From Cayley-Hamilton theorem, the matrix $\vec{A}$ will satisfy \eqref{eq1},
+\begin{align} 
+a_0 + a_1\vec{A} + a_2\vec{A^{2}} + \cdots+a_n\vec{A^{n}} = 0 \label{eq2}
+\end{align}
+\section{Proof}
+If adj($\vec{A}$) is the adjoint matrix of the matrix $\vec{A}$ of order $n$ which is the transpose of the cofactors of the matrix $\vec{A}$ then, 
+\begin{align} 
+\vec{A}(adj(\vec{A})) &= \det(\vec{A})\label{eqreplace}
+\end{align}
+Replacing $\vec{A}$ with ($\vec{A}-\lambda\vec{I}$) in \eqref{eqreplace} we obtain,
+\begin{align}
+(\vec{A}-\lambda\vec{I})adj(\vec{A}-\lambda\vec{I}) &= \det(\vec{A}-\lambda\vec{I})\vec{I}\label{eq3}
+\end{align}
+As $\vec{A}$ has a polynomial of degree $n$ for variable $\lambda$, then
+$adj(\vec{A}-\lambda\vec{I})$ has a polynomial of degree $n-1$ for variable $\lambda$. Expanding $adj(\vec{A}-\lambda\vec{I})$ with coefficients $b_0,b_1,\cdots,b_n-1$ we get,
+\begin{align} 
+& adj(\vec{A}-\lambda\vec{I}) = b_0 + b_1\lambda + b_2\lambda^{2} +  \cdots+b_{n-1}\lambda^{n-1}
+\end{align}
+Hence, from \eqref{eq3}, putting the value of $adj(\vec{A}-\lambda\vec{I})$ we get,
+\begin{align}
+& (\vec{A}-\lambda\vec{I}) adj(\vec{A}-\lambda\vec{I}) \\&= (\vec{A}-\lambda\vec{I})(b_0 + b_1\lambda + b_2\lambda^{2} +  \cdots+b_{n-1}\lambda^{n-1})\\
+&= \vec{A}b_0 + \vec{A}b_1\lambda +\cdots+ \vec{A}b_{n-1}\lambda^{n-1}- b_0\lambda\\ 
+&    - b_1\lambda^{2}-\cdots - b_{n-1}\lambda^{n}\\
+&=\vec{A}b_0 + \lambda(\vec{A}b_1 - b_0) + \lambda^{2}(\vec{A}b_2 - b_1) + \cdots - b_{n-1}\lambda^{n}  \label{eq4}
+\end{align}
+Putting values from \eqref{eq1} and \eqref{eq4}  in \eqref{eq3},
+\begin{align} 
+&\vec{A}b_0 + \lambda(\vec{A}b_1 - b_0) + \lambda^{2}(\vec{A}b_2 - b_1) + \cdots - b_{n-1}\lambda^{n} \\=
+&a_0 + a_1\lambda + a_2\lambda^{2} +  \cdots+a_n\lambda^{n}\label{eqMain}
+\end{align}
+Comparing coefficients of equal powers of $\lambda$ in both sides of \eqref{eqMain},
+\begin{align}
+\vec{A}b_0 &= a_0 \label{eqS1}\\
+\vec{A}b_1 - b_0 &= a_1 \label{eqS2}
+\end{align}
+\begin{align*}
+&\vdots   
+\end{align*}
+\begin{align}
+\vec{A}b_{n-1} - b_{n-2} &= a_{n-1}\label{eqSn_1}\\
+-b_{n-1} &= a_n \label{eqSn}
+\end{align}
+Now, multiplying both sides of \eqref{eqS1} by $\vec{I}$, both sides of \eqref{eqS2} by $\vec{A}$ and so on upto both sides of \eqref{eqSn_1} by $\vec{A^{n-1}}$ and  both sides of \eqref{eqSn} by $\vec{A^{n}}$ we obtain the following,
+\begin{align}
+\vec{A}b_0 &= a_0\vec{I}\\
+\vec{A^{2}}b_1-\vec{A}b_0 &= \vec{A}a_1
+\end{align}
+\begin{align*}
+&\vdots   
+\end{align*}
+\begin{align}
+\vec{A^{n}}b_n-1-\vec{A^{n-1}}b_n-2 &= a_n-1\vec{A^{n-1}}\\
+-\vec{A^{n}}b_n-1 &= a_n\vec{A^{n}}
+\end{align}
+Adding the equations,
+\begin{align}
+&\vec{A}b_0+\cdots-\vec{A^{n}}b_n-1=a_0 + a_1\vec{A}+\cdots+a_n\vec{A^{n}}\\
+\implies &a_0 + a_1\vec{A} + a_2\vec{A^{2}} +  \cdots+a_n\vec{A^{n}} = 0 \label{eqProved}
+\end{align}
+\eqref{eqProved} together with \eqref{eq1} proves the statement of Cayley-Hamilton theorem.
+\\\end{document}

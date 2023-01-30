@@ -1,0 +1,111 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item {\em (Affine Transformation and Eigenvalue Decompostion)}
+Using 
+\begin{align}
+\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\label{eq:conic_affine}
+\end{align}
+such that 
+\begin{align}
+%\begin{split}
+\label{eq:conic_parmas_eig_def}
+\vec{P}^T\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
+\\
+\vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+\\
+\vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^T=\vec{P}^{-1}
+\end{align}
+\eqref{eq:conic_quad_form} can be expressed as
+\begin{align}
+%\begin{aligned}
+\label{eq:conic_simp_temp_nonparab}
+\vec{y}^T\vec{D}\vec{y} &=  \vec{u}^T\vec{V}^{-1}\vec{u} -f  &  \abs{V} &\ne 0
+\\
+\vec{y}^T\vec{D}\vec{y} &=  -2\eta\myvec{1 & 0}\vec{y}   & \abs{V} &= 0
+\label{eq:conic_simp_temp_parab}
+%\end{aligned}
+\end{align}
+with 
+\begin{align}
+%\begin{aligned}[t]
+\label{eq:conic_nonparab_c}
+\vec{c} &= - \vec{V}^{-1}\vec{u} & \abs{V} &\ne 0
+\\
+\cmyvec{ \vec{u}^T+\eta\vec{p}_1^T \\ \vec{V}}\vec{c} &= \cmyvec{-f \\ \eta\vec{p}_1-\vec{u}}  &\abs{V} &= 0
+%\end{cases}
+%\end{aligned}
+\label{eq:conic_parab_c}
+\\
+\text{where } \eta &=\vec{n}^T\vec{p}_1
+\end{align}
+%\end{lemma}
+\solution
+%\proof
+%
+ Proofs for \eqref{eq:conic_simp_temp_nonparab},
+\eqref{eq:conic_simp_temp_parab}, \eqref{eq:conic_nonparab_c}
+ and \eqref{eq:conic_parab_c}
+are available in Appendix \ref{app:parab}.
+%\begin{align}
+%\vec{y}^T\vec{D}\vec{y} - 4 \myvec{1 & 0}\vec{y} = 0, \quad \text{or, } y_2^2 = \frac{4}{\lambda_2}y_1
+%\end{align}
+%is obtained from 
+%
+\item {\em (Centre/Vertex)}
+The centre/vertex of the conic section in \eqref{eq:conic_quad_form} is given by $\vec{c}$ in \eqref{eq:conic_nonparab_c} or \eqref{eq:conic_parab_c}.  This is because from \eqref{eq:conic_affine},
+\begin{align}
+\label{eq:conic_affine_inv}
+\vec{y} = \vec{P}^T\brak{\vec{x}-\vec{c}}
+\end{align}
+and 
+\begin{align}
+\label{eq:conic_centre}
+\vec{y} = \vec{0} \implies \vec{x}=\vec{c}
+\end{align}
+%
+\item {\em (Circle)}
+For a circle, 
+\begin{align}
+\vec{V}=\vec{D}= \vec{P} = \vec{I}
+\end{align}
+and the centre is obtained from \eqref{eq:conic_nonparab_c}, \eqref{eq:conic_centre}
+as
+\begin{align}
+\label{eq:conic_circ_centre}
+\vec{c} = -\vec{u}
+\end{align}
+\eqref{eq:conic_simp_temp_nonparab}
+becomes
+\begin{align}
+\vec{y}^T\vec{y} &=  \norm{\vec{y}}^2=\brak{\sqrt{\vec{u}^T\vec{u} -f}}^2
+\label{eq:conic_simp_temp_circ}
+\end{align}
+ and the radius is \begin{align} \sqrt{\vec{u}^T\vec{u} -f} \label{eq:conic_simp_temp_circ_rad} \end{align} 
+
+\item {\em (Ellipse) } For \begin{align} \abs{\vec{V}} > 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 > 0 
+\end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes \begin{align} \lambda_1y_1^2 +\lambda_2y_1^2 = 
+\vec{u}^T\vec{V}^{-1}\vec{u} -f \end{align} which is the equation of an ellipse with major and minor axes 
+parameters \begin{align} \sqrt{\frac{\lambda_1}{\vec{u}^T\vec{V}^{-1}\vec{u} -f}}, 
+\sqrt{\frac{\lambda_2}{\vec{u}^T\vec{V}^{-1}\vec{u} -f}}. \end{align} The centre is obtained from 
+\eqref{eq:conic_centre} as \eqref{eq:conic_nonparab_c}. 
+
+\item {\em (Hyperbola)} For \begin{align} \abs{\vec{V}} 
+< 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes 
+\begin{align} \lambda_1y_1^2 -\brak{-\lambda_2}y_1^2 = \vec{u}^T\vec{V}^{-1}\vec{u} -f \end{align} with major 
+and minor axes parameters \begin{align} \sqrt{\frac{\lambda_1}{\vec{u}^T\vec{V}^{-1}\vec{u} -f}}, 
+\sqrt{\frac{\lambda_2}{f-\vec{u}^T\vec{V}^{-1}\vec{u}}}, \end{align} The centre is obtained from 
+\eqref{eq:conic_centre} as \eqref{eq:conic_nonparab_c}. 
+
+\item {\em (Parabola)} For \begin{align} \abs{\vec{V}} 
+= 0, \quad \text{or, } \lambda_1 = 0. \end{align}
+%and \eqref{eq:conic_simp_temp_parab} becomes \begin{align} y_2^2 = \frac{4}{\lambda_2}y_1 \end{align} which is 
+%the equation of a parabola with focal length $\frac{1}{\lambda_2}$.
+The vertex of the parabola  is  obtained using \eqref{eq:conic_parab_c} and the focal length is 
+\begin{align}
+\mydet{\frac{2\vec{p}_1^T\vec{u}}{\lambda_2}}
+\end{align}
+
+\end{enumerate}

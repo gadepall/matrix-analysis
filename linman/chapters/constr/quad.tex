@@ -1,0 +1,137 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+	%
+%
+\item Construct parallelogram $ABCD$ 	in Fig. \ref{fig:pgm_sas}	
+given that  $BC = 5, AB = 6, \angle C = 85 \degree$.
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/constr/quad/pgm_sas.tex}}
+	\end{center}
+	\caption{Parallelogram Properties}
+	\label{fig:pgm_sas}	
+\end{figure}
+%
+\\
+\solution $BD$ is found using the cosine formula and $\triangle BDC$ is drawn using the approach in Construction \ref{const:tri_sss} with 
+%
+\begin{align}
+\vec{B} = \myvec{0\\0},
+\vec{C} = \myvec{5\\0},
+\end{align}
+%
+Since the diagonals bisect each other, 
+%
+\begin{align}
+\vec{O} &= \frac{\vec{B}+\vec{D}}{2}
+\\
+\vec{A} &= 2\vec{O} - \vec{C}.
+\end{align}
+%
+$AB$ and $AD$ are then joined to complete the $\parallel$gm.
+The python code for  Fig. \ref{fig:pgm_sas} is
+\begin{lstlisting}
+codes/quad/pgm_sas.py
+\end{lstlisting}
+%
+and 
+The equivalent latex-tikz code is
+%
+\begin{lstlisting}
+figs/constr/quad/pgm_sas.tex
+\end{lstlisting}
+%
+
+\item Draw the $\parallel$gm $ABCD$ in 	Fig. \ref{fig:pgm_sss}	
+with $BC = 6, CD = 4.5$ and $BD=7.5$.  Show that it is a rectangle.
+\label{const:pgm_sss}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/constr/quad/pgm_sss.tex}}
+	\end{center}
+	\caption{Rectangle}
+	\label{fig:pgm_sss}	
+\end{figure}
+\\
+\solution It is easy to verify that 
+%Using the approach in Construction\ref{const:tri_sss}, $\triangle BCD$ is drawn with
+%
+\begin{align}
+BD^2=BC^2+C^2
+\end{align}
+%
+Hence, using Baudhayana theorem, 
+%
+\begin{align}
+\angle BCD = 90\degree
+\end{align}
+%
+and  $ABCD$ is a rectangle.
+\begin{align}
+\vec{A} = \myvec{0\\4.5}
+\vec{B} = \myvec{0\\0}
+\vec{C} = \myvec{6\\0}
+\vec{D} = \myvec{6\\4}
+\end{align}
+%
+The python code for  Fig. \ref{fig:pgm_sss} is
+\begin{lstlisting}
+codes/quad/pgm_sss.py
+\end{lstlisting}
+%
+and the equivalent latex-tikz code is
+%
+\begin{lstlisting}
+figs/constr/quad/pgm_sss.tex
+\end{lstlisting}
+%
+%
+%
+%
+%
+\item Draw the rhombus $BEST$ with $BE = 4.5$ and $ET = 6$. 
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/constr/quad/rhom_sss.tex}}
+	\end{center}
+	\caption{Rhombus}
+	\label{fig:rhom_sss}	
+\end{figure}
+\\
+\solution The coordinates of the various points in Fig. \ref{fig:rhom_sss} are obtained as
+%
+\begin{align}
+\vec{O} = \myvec{0\\0},
+\vec{B} = \myvec{0\\-4.5}
+\\
+\vec{E} = \myvec{3\\0},
+\vec{S} = \myvec{4.5\\0},
+\vec{T} = \myvec{0\\-3}
+\end{align}
+%
+\item A square is a rectangle whose sides are equal.  Draw a square of side 4.5.
+\\
+\solution The coordinates of the various points in Fig. \ref{fig:square} are obtained as
+%
+\begin{align}
+\vec{A} = \myvec{0\\4.5}
+\\
+\vec{B} = \myvec{0\\0},
+\vec{C} = \myvec{4.5\\0},
+\vec{D} = \myvec{4.5\\4.5}
+\vec{O} = \frac{\vec{B}+\vec{C}}{2}
+%
+\end{align}
+%
+\begin{figure}[!ht]
+	\begin{center}
+		\resizebox{\columnwidth}{!}{\input{./figs/constr/quad/square.tex}}
+	\end{center}
+	\caption{Square}
+	\label{fig:square}	
+\end{figure}
+
+%
+\end{enumerate}

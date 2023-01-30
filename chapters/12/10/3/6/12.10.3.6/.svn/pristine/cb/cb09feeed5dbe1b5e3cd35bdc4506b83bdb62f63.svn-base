@@ -1,0 +1,68 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf{}
+\begin{document}
+
+\begin{center}
+\title{\textbf{VECTORS}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\section{12$^{th}$ Maths - EXERCISE-10.3}
+
+\begin{enumerate}
+\item Find $\abs{\overrightarrow{a}}$ and $\abs{\overrightarrow{b}}$, if ($\overrightarrow{a}$+$\overrightarrow{b}$)$.$($\overrightarrow{a}$-$\overrightarrow{b}$)=8 and $\abs{\overrightarrow{a}}$=8$\abs{\overrightarrow{b}}$.\\  
+
+\solution
+Given  points are
+
+\begin{align}
+\brak{\vec{a}+\vec{b}}^\top\brak{\vec{a}-\vec{b}}&=8\\
+\abs{\vec{a}}&=8\abs{\vec{b}}\\
+\brak{\vec{a}+\vec{b}}^\top\brak{\vec{a}-\vec{b}}&=8\\
+\implies\vec{a}^\top\vec{a}+\vec{b}^\top\vec{a}-\vec{a}^\top\vec{b}-\vec{b}^\top\vec{b}&=8\\
+\implies\norm{\vec{a}}^2-\norm{\vec{b}}^2&=8\\
+\implies\norm{8\vec{b}}^2-\norm{\vec{b}}^2&=8\\
+\implies64{\norm{\vec{b}}}^2-\norm{\vec{b}}^2&=8\\
+\implies63{\norm{\vec{b}}}^2&=8\\
+\implies\norm{\vec{b}}^2&=\frac{8}{63}\\
+\norm{\vec{b}}&=\sqrt{\frac{8}{63}}\\
+\norm{\vec{b}}&=\frac{2\sqrt{2}}{3\sqrt{7}}\\
+\norm{\vec{a}}&=8\norm{\vec{b}}\\
+\implies\norm{\vec{a}}&=\frac{16\sqrt{2}}{3\sqrt{7}}
+\end{align}
+\end{enumerate}
+\end{document}

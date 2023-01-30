@@ -1,0 +1,143 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+%\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+%
+\item Draw Fig. \ref{fig:tri_right_angle} for $a = 4, c =3$.
+\label{const:tri_right_angle}
+%
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!}{\input{./figs/constr/triangle/tri_right_angle.tex}}
+\caption{Right Angled Triangle}
+\label{fig:tri_right_angle}	
+\end{figure}
+\\
+\solution The vertices of $\triangle ABC$ are 
+\begin{align}
+\vec{A} = \myvec{0\\c} = \myvec{0\\3}, \vec{B} = \myvec{0\\0}, \vec{C} = \myvec{a\\0}=\myvec{4\\0}
+\end{align}
+%
+The python code for  Fig. \ref{fig:tri_right_angle} is
+\begin{lstlisting}
+codes/triangle/tri_right_angle.py
+\end{lstlisting}
+%
+and the equivalent latex-tikz code is
+%
+\begin{lstlisting}
+figs/constr/triangle/tri_right_angle.tex
+\end{lstlisting}
+%
+The above latex code can be compiled as a standalone document as
+%
+\begin{lstlisting}
+figs/constr/triangle/tri_right_angle_alone.tex
+\end{lstlisting}
+%
+
+\item Draw Fig. \ref{fig:tri_polar} for $a = 4, c =3$.
+\label{const:tri_polar}
+%
+\\
+\solution 
+ The vertex  $\vec{A}$ can  be expressed  in {\em polar coordinate form} as
+%\label{prob:tri_polar}
+%
+\begin{align}
+\vec{A} = b\myvec{\cos \theta\\  \sin \theta} 
+\end{align}
+%
+where
+\begin{align}
+b = \sqrt{a^2+c^2} = 5, \tan \theta = \frac{3}{4}
+\end{align}
+%The vertices of $\triangle ABC$ are 
+%\begin{align}
+%\vec{A} = \myvec{a\\c} = \myvec{4\\3}, \vec{B} = \myvec{a\\0}  = \myvec{4\\0}, \vec{C} = \myvec{0\\0}.
+%\end{align}
+%
+The python code for  Fig. \ref{fig:tri_polar} is
+\begin{lstlisting}
+codes/triangle/tri_polar.py
+\end{lstlisting}
+%
+and the equivalent latex-tikz code is
+%
+\begin{lstlisting}
+figs/constr/triangle/tri_polar.tex
+\end{lstlisting}
+\begin{figure}[!ht]
+\centering
+\resizebox{\columnwidth}{!}{\input{./figs/constr/triangle/tri_polar.tex}}
+\caption{Right Angled Triangle}
+\label{fig:tri_polar}	
+\end{figure}
+%
+\item Draw Fig. \ref{fig:tri_sss} with $a=6$, $b=5$  and $c=4$.  
+\label{const:tri_sss}
+\begin{figure}[!ht]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/constr/triangle/tri_sss.tex}}
+	\end{center}
+	\caption{}
+	\label{fig:tri_sss}	
+\end{figure}
+\\
+\solution Let the vertices of  $\triangle ABC$ and $\vec{D}$ be 
+\begin{align}
+\label{eq:tri_basic}
+\vec{A} = \myvec{p\\q}, \vec{B} = \myvec{0\\0}, \vec{C} = \myvec{a\\0}, \vec{D} = \myvec{p\\0}
+\end{align}
+%
+
+Then
+\begin{align}
+\label{eq:c_tricoord}
+AB &= \norm{\vec{A}-\vec{B}}^2 = \norm{\vec{A}}^2  = c^2 \quad \because \vec{B} = \vec{0}
+\\
+\label{eq:a_tricoord}
+BC &= \norm{\vec{C}-\vec{B}}^2 = \norm{\vec{C}}^2  = a^2
+\\
+AC &= \norm{\vec{A}-\vec{C}}^2 =    b^2
+\label{eq:b_tricoord}
+\end{align}
+%
+From \eqref{eq:b_tricoord},
+\begin{align}
+b^2 &=\norm{\vec{A}-\vec{C}}^2 = \norm{\vec{A}-\vec{C}}^T\norm{\vec{A}-\vec{C}}  
+\\
+&= \vec{A}^T\vec{A}+\vec{C}^T\vec{C}-\vec{A}^T\vec{C} - \vec{C}^T\vec{A} 
+\\
+&= \norm{\vec{A}}^2 + \norm{\vec{C}}^2 - 2\vec{A}^T\vec{C} \quad \brak{\because \vec{A}^T\vec{C} = \vec{C}^T\vec{A} } 
+\label{eq:tri_const_norm_ac}
+\\
+&= a^2+c^2-2ap
+\end{align}
+%
+yielding
+\begin{align}
+p&= \frac{a^2+c^2-b^2}{2a}
+\end{align}
+%
+From \eqref{eq:c_tricoord}, 
+\begin{align}
+\norm{\vec{A}}^2 &= c^2 = p^2+q^2
+\\
+\implies q&= \pm \sqrt{c^2-p^2}
+\end{align}
+%
+The python code for  Fig. \ref{fig:tri_sss} is
+\begin{lstlisting}
+codes/triangle/tri_sss.py
+\end{lstlisting}
+%
+and the equivalent latex-tikz code is
+%
+\begin{lstlisting}
+figs/constr/triangle/tri_sss.tex
+\end{lstlisting}
+
+\end{enumerate}
+

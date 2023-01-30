@@ -1,0 +1,19 @@
+\begin{lemma}
+    \label{conics/30/lemma}
+    The distance of a point $\vec{P}$ from a line $L: \vec{n}^T\vec{x}=c$ is given by:
+    \begin{align}
+    d = \frac{\abs{c-\vec{P}^T\vec{n}}}{\norm{\vec{n}}}   
+    \end{align}
+    \end{lemma}
+
+Using Definition \ref{conics/30/def} and Lemma \ref{conics/30/lemma},  for any point $\vec{x}$ on the conic,
+\begin{align}
+\norm{\vec{x}-\vec{F}}^2=e^2 \frac{({c-\vec{x}^T\vec{n}})^2}{\norm{\vec{n}}^2}\label{conics/30/eq:1} \\
+t(\vec{x}-\vec{F})^T(\vec{x}-\vec{F})=(c-\vec{x}^T\vec{n})^2
+\\
+t(\vec{x}^T\vec{x}-2\vec{F}^T\vec{x}+\norm{\vec{F}}^2)=c^2+(\vec{x}^T\vec{n})^2-2c\vec{x}^T\vec{n}\\
+t\vec{x}^T\vec{x}-(\vec{x}^T\vec{n})^2-2t\vec{F}^T\vec{x}+2c\vec{n}^T\vec{x}=c^2-t\norm{\vec{F}}^2\\
+t\vec{x}^T\vec{I}\vec{x}-\vec{x}^T\vec{n}\vec{n}^T\vec{x}+2(c\vec{n}-t\vec{F})^T\vec{x}=c^2-t\norm{\vec{F}}^2\\
+\vec{x}^T(t\vec{I}-\vec{n}\vec{n}^T)\vec{x}+2(c\vec{n}-t\vec{F})^T\vec{x}+t\norm{\vec{F}}^2-c^2=0
+\end{align}
+

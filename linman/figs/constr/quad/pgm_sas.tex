@@ -1,0 +1,49 @@
+%Code by GVV Sharma
+%December 10, 2019
+%released under GNU GPL
+%Drawing a parallelogram given 2 sides and an angle
+
+\begin{tikzpicture}
+[scale=2,>=stealth,point/.style={draw,circle,fill = black,inner sep=0.5pt},]
+
+%Triangle sides
+\def\a{5}
+\def\b{6}
+\def\c{7.467975323683154}
+%Coordinates of D
+%\def\p{{\a^2+\c^2-\b^2}/{(2*\a)}}
+\def\p{4.477065543514051}
+\def\q{{sqrt(\c^2-\p^2)}}
+
+%Labeling points
+\node (D) at (\p,\q)[point,label=above right:$D$] {};
+\node (B) at (0, 0)[point,label=below left:$B$] {};
+\node (C) at (\a, 0)[point,label=below right:$C$] {};
+\node (O) at ($(B)!0.5!(D)$)[point,label=below right:$O$] {};
+
+%Coordinates of A
+
+\node (A) at ($(O)!-1!(C)$)[point,label=above right:$A$] {};
+
+
+%Drawing parallelogram ABCD
+\draw (A) -- (B) --  (C) --(D)--(A);
+\draw (A) -- (C);
+\draw (B) --(D);
+
+
+\tkzMarkAngle[fill=green!20](C,A,D)
+\tkzMarkAngle[fill=green!20](A,C,B)
+%
+%
+\tkzMarkAngle[fill=red!30](A,D,B)
+\tkzMarkAngle[fill=red!30](C,B,D)
+
+
+\tkzMarkAngle[fill=orange!40](D,C,O)
+\tkzMarkAngle[fill=orange!40](B,A,C)
+
+\tkzMarkAngle[fill=blue!50](B,D,C)
+\tkzMarkAngle[fill=blue!50](D,B,A)
+
+\end{tikzpicture}

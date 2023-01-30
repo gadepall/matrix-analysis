@@ -1,0 +1,34 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item {\em  (Cauchy-Schwarz Inequality:)} Show that 
+%
+\begin{align}
+\abs{\vec{a}^T\vec{b}} \le \norm{\vec{a}}\norm{\vec{b}}
+\end{align}
+\proof  Using the definition of the inner product,
+\begin{align}
+\cos \theta = \frac{\vec{a}^T\vec{b}} {\norm{\vec{a}}\norm{\vec{b}}} 
+\\
+\because \abs{\cos \theta} \le 1, 
+\abs{\vec{a}^T\vec{b}} \le \norm{\vec{a}}\norm{\vec{b}}
+\end{align}
+\item {\em (Triangle Inequality:)} Show that 
+%
+\begin{align}
+\norm{\vec{a}+\vec{b}} \le \norm{\vec{a}}+\norm{\vec{b}}
+\end{align}
+\proof Let $\vec{O}$ be the origin.  In the triangle formed by $\vec{O}, \vec{a}$ and $-\vec{b}$, the lengths of the sides are
+%
+\begin{align}
+\norm{\vec{a}}, 
+\norm{\vec{b}}, 
+\norm{\vec{a}+\vec{b}} 
+\end{align}
+%
+$\because $ the sum of two sides of a triangle is always greater than the third side, 
+\begin{align}
+\norm{\vec{a}+\vec{b}} \le \norm{\vec{a}} + \norm{\vec{b}}
+\end{align}
+
+\end{enumerate}

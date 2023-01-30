@@ -1,0 +1,50 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item  Find the equation of a plane passing through the points $\vec{a}=\myvec{2\\5\\-3}, \vec{b}=\myvec{-2\\-3\\5}$ and $\vec{c}=\myvec{5\\3\\-3}$ 
+\label{eq:plane}
+\\
+\solution
+The equation of  plane is also  given by \eqref{eq:line_norm_eq_unit} in 3D.  Following the approach in the previous example results in the matrix equation, 
+\begin{align}
+\myvec{2&5&-3 \\ -2&-3&5 \\ 5&3&-3} \vec{n} &= \myvec{1\\1\\1}
+\end{align}
+Row reducing the augmented matrix, 
+\begin{align}
+\myvec{2&5&-3 & 1\\ -2&-3&5 & 1\\ 5&3&-3 & 1} 
+\\
+\xleftrightarrow[R_3\leftarrow 2R_3-5R_1]{R_2\leftarrow \frac{R_2+R_1}{2} }\myvec{2&5&-3 & 1\\ 0&1&1 & 1\\ 0&-19&9 & -3} 
+\\
+\xleftrightarrow[R_3\leftarrow \frac{R_3+19R_2}{4}]{R_1\leftarrow R_1-5R_2 }\myvec{2&0&-8 & -4\\ 0&1&1 & 1\\ 0&0&7 & 4}\\ 
+\xleftrightarrow[R_3\leftarrow 7R2-R_3]{R_1\leftarrow \frac{7R_1+8R_3}{2} }\myvec{7&0&0 & 2\\ 0&7&0 & 3\\ 0&0&7 & 4} 
+\\
+\implies \vec{n} = \frac{1}{7}\myvec{2\\3\\4}
+\end{align}
+Thus, the equation of the plane passing through the given points is
+%
+\begin{align}
+\myvec{2 & 3 & 4}\vec{x} = 7
+\end{align} 
+%\cite{twelve_two}.
+\item  Find the angle between the two planes 
+%\cite{twelve_two}
+\begin{align}
+\myvec{ 2 & 1 & -2}\vec{x} &=5
+\\
+\myvec{ 3 & -6 & -2}\vec{x} &=7
+\end{align}
+\\
+\solution
+The angle between two planes is the same as the angle between their normal vectors.  For 
+\begin{align}
+\vec{n}_1 = \myvec{ 2 \\ 1 \\ -2}
+\vec{n}_2 = \myvec{ 3 \\ -6 \\ -2}
+\end{align}
+using \eqref{eq:vec_angle}, 
+\begin{align}
+\cos \theta = \frac{6-6+4}{\sqrt{9}\sqrt{49}} = \frac{4}{21}
+\end{align}
+\end{enumerate}
+
+

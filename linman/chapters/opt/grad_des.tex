@@ -1,0 +1,74 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+%\item Consider the problem of finding the square root of a number $c$.  This can be expressed as the equation
+%%
+%\begin{equation}
+%\label{eq:root}
+%x^2 -c= 0
+%\end{equation}
+%%
+%
+%\item
+%Sketch the function for different values of $c$
+%%
+%\begin{equation}
+%f(x)= x^{3}-3xc
+%\end{equation}
+%%
+%and comment upon its convexity.
+%
+%\item
+%Show that \eqref{eq:root} results from
+%\begin{align}
+%\min_{x}f(x)= x^{3}-3xc
+%\end{align}
+
+\item
+Find a numerical solution for \eqref{eq:parab}
+
+%
+%\begin{align}
+%f(\lambda) = a\lambda^2 + b\lambda + d
+%\end{align}
+%
+%\eqref{eq:root}.
+%\\
+\solution
+A numerical solution for \eqref{eq:parab} is obtained as
+%
+\begin{align}
+\lambda_{n+1}&=\lambda_{n}-\mu f^{\prime}\brak{\lambda_n}
+\\
+&=\lambda_{n} -\mu \brak{2a\lambda_n+b}
+\label{eq:gradient}
+\end{align}
+
+%\begin{align}
+%x_{n+1}&=x_{n}-{\frac {f(x_{n})}{f^{\prime}(x_{n})}}
+%\\
+%&=x_{n} -\frac{x^2_{n}-c}{2x_n} 
+%\\
+%&=\frac{1}{2}\sbrak{x_{n} +\frac{c}{x_n} }
+%\label{eq:newton}
+%\end{align}
+%
+where $\lambda_0$ is an inital guess and $\mu$ is a variable parameter. The choice of these parameters is very important since they decide how fast the algorithm converges.
+%
+\item
+Write a program to implement \eqref{eq:gradient}.
+%
+\\
+\solution Download and execute
+\begin{lstlisting}
+codes/opt/gd.py
+\end{lstlisting}
+%
+\item Find a closed form solution for $\lambda_n$ in  \eqref{eq:gradient} using the one sided Z transform.
+%
+\item Find the condition for which \eqref{eq:gradient} converges, i.e.
+\begin{align}
+\lim_{n \to \infty}\abs{\lambda_{n+1}-\lambda_n} = 0
+\end{align}
+\end{enumerate}
+

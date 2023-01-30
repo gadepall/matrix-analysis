@@ -1,0 +1,65 @@
+\section{Singular Value Decomposition}
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item 
+\iffalse
+	We revisit \eqref{eq:pseudo_mat_eq}
+%
+\begin{align}
+\myvec{
+1 & 2
+\\
+-1 & 1
+\\
+1 & 2
+}
+\vec{x} =
+\myvec{1 \\ -3 \\ -2}
+\end{align}
+\fi
+\item Consider the rectangular equation
+\begin{align}
+	\vec{M}^{\top}\vec{x}=\vec{b}
+\label{eq:pseudo_mat_eq}
+\end{align}
+
+\item Find $\vec{M}^T\vec{M}$ and $\vec{M}\vec{M}^T$.
+\item Obtain the eigen decomposition 
+\begin{align}
+\vec{M}^T\vec{M} = \vec{P}_1\vec{D}_1\vec{P}_1^T
+\end{align}
+and 
+\begin{align}
+\vec{M}\vec{M}^T = \vec{P}_2\vec{D}_2\vec{P}_2^T
+\end{align}
+\item Perform the $QR$ decompositions
+\begin{align}
+\vec{P}_1 = \vec{U}\vec{R}_1,\,
+\vec{P}_2 = \vec{V}\vec{R}_2
+\end{align}
+\item The singular value decomposition is the given by
+\begin{align}
+\vec{M} = \vec{U} \Sigma \vec{V}^T,
+\end{align}
+where $\Sigma$ has the same shape as $\vec{M}$ and
+\begin{align}
+\Sigma = \myvec{\vec{D}_1 & \vec{0} \\ \vec{0} & \vec{0}}
+\end{align}
+\item \eqref{eq:pseudo_mat_eq} can then be expressed as
+\begin{align}
+\vec{U} \Sigma \vec{V}^T \vec{x} &= \vec{b}
+\\
+\implies \vec{x} & = \vec{V}\Sigma^{-1} \vec{U}^T \vec{b}
+\end{align}
+%
+where $\vec{\Sigma}^{-1}$ is obtained by inverting  only the non-zero elements of $\vec{\Sigma}$.
+\iffalse
+\item The relevant codes are available at
+\begin{lstlisting}
+codes/line/skew_builtin.py
+codes/line/skew_svd.py
+\end{lstlisting}
+\fi
+\end{enumerate}
