@@ -1,0 +1,64 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\let\vec\mathbf
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{Vector Algebra}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{CHAPTER 10 - VECTOR ALGEBRA}
+\section*{Excercise 10.3}
+\solution 
+\begin{enumerate}
+\item If $\overrightarrow{a},\overrightarrow{b},\overrightarrow{c}$ are unit vectors such that $\overrightarrow{a}+\overrightarrow{b}+\overrightarrow{c}=0$, find the value of $\overrightarrow{a}.\overrightarrow{b}+\overrightarrow{b}.\overrightarrow{c}+\overrightarrow{c}.\overrightarrow{a}$.  
+\section{Solution}
+The given vectors $\vec{a},\vec{b}$ and $\vec{c}$ are unit vectors. Since the given vectors $\vec{a},\vec{b},\vec{c}$ are unit vector hence $\vec{a}=\vec{b}=\vec{c}$ which is equal to 1.
+        \begin{align}
+\norm{\vec{a}} &=\sqrt{1^2}=1\\ \norm{\vec{b}}&=\sqrt{1^2}=1\\ \norm{\vec{c}}&=\sqrt{1^2}=1
+        \end{align}
+The Given equation is 
+        \begin{align}
+\vec{a}+\vec{b}+\vec{c}=0
+\end{align}      
+Squaring on both sides,
+\fi
+\begin{align}
+	\norm{{\vec{a}}+{\vec{b}}+{\vec{c}}}^2&=0
+	\\
+	\implies{\norm{\vec{a}}}^2+{\norm{\vec{b}}}^2+{\norm{\vec{c}}}^2+2({{\vec{a}^\top}{\vec{b}}+{\vec{b}^\top}{\vec{c}}+{\vec{c}^\top}{\vec{a}}})&=0\\
+	\implies3+2({{\vec{a}^\top}{\vec{b}}+{\vec{b}^\top}{\vec{c}}+{\vec{c}^\top}{\vec{a}}})&=0\\
+	\implies{\vec{a}^\top}{\vec{b}}+{\vec{b}^\top}{\vec{c}}+{\vec{c}^\top}\vec{a}&=-\frac{3}{2}
+\end{align}
