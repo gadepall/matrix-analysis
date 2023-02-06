@@ -1,0 +1,77 @@
+%\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Vector Dot Product}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+
+\section{12$^{th}$ Maths - Chapter 10}
+This is Problem-6 from Exercise 10.3
+\begin{enumerate}
+\item Find $\norm{\vec{a}}$ and $\norm{\vec{b}}$ if 
+$\brak{\vec{a}+\vec{b}}.\brak{\vec{a}-\vec{b}} = 8$ 
+and $\norm{\vec{a}}=8\norm{\vec{b}}$.\\
+\solution 
+
+  \text{Given}
+  \label{eq:det2f}
+\begin{align}
+  \brak{\vec{a}+\vec{b}}^\top\brak{\vec{a}-\vec{b}} &= 8\\
+  \label{eq:Eq1}
+  \implies \vec{a}^\top\vec{a} + \vec{b}^\top\vec{a} - \vec{a}^\top\vec{b} - \vec{b}^\top\vec{b} &= 8\\
+  \label{eq:Eq2}
+  \implies \norm{\vec{a}}^{2} - \norm{\vec{b}}^{2} &= 8
+  \label{eq:Eq3}
+\end{align}
+\text Substituting $\norm{\vec{a}}=8\norm{\vec{b}}$ in \eqref{eq:Eq3}
+\begin{align}
+  \implies 64\norm{\vec{b}}^{2} - \norm{\vec{b}}^{2} &= 8 \\
+  \label{eq:Eq4}
+  \implies 63\norm{\vec{b}}^{2} &= 8 \\
+  \label{eq:Eq5}
+  \implies \norm{\vec{b}}^{2} &= \frac{8}{63} \\
+  \label{eq:Eq6}
+  \implies \norm{\vec{b}} &= \frac{2\sqrt{2}}{3\sqrt{7}}\\
+  \label{eq:Eq7}
+  \implies \norm{\vec{a}} &= \frac{16\sqrt{2}}{3\sqrt{7}}
+  \label{eq:Eq8}
+\end{align}
+\end{enumerate}
+
+\end{document}
