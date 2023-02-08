@@ -22,10 +22,10 @@
 \contentsline {section}{\numberline {2.2}General Equation of a Line}{181}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Miscellaneous Exercises}{200}{section.2.3}%
 \contentsline {section}{\numberline {2.4}3D line}{213}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Plane}{228}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Line-Plane}{235}{section.2.6}%
-\contentsline {section}{\numberline {2.7}JEE}{236}{section.2.7}%
-\contentsline {section}{\numberline {2.8}JEE}{236}{section.2.8}%
+\contentsline {section}{\numberline {2.5}Plane}{229}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Line-Plane}{236}{section.2.6}%
+\contentsline {section}{\numberline {2.7}JEE}{237}{section.2.7}%
+\contentsline {section}{\numberline {2.8}JEE}{237}{section.2.8}%
 \contentsline {chapter}{\numberline {3}Circles}{265}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Equation}{265}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Construction of Tangents to a Circle}{286}{section.3.2}%
@@ -34,46 +34,46 @@
 \contentsline {section}{\numberline {4.2} Quadrilateral Construction}{297}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Circle Construction}{303}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Equal Chords}{303}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Inscribed Polygons }{308}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Miscellaneous}{315}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Tangent to a Circle}{318}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Tangents from a Point}{321}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Conics}{345}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Parabola}{345}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Ellipse}{358}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Hyperbola}{367}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Miscellaneous}{381}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Exemplar}{390}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Intersection of Conics}{393}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Chords }{393}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Curves}{409}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Miscellaneous}{419}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Tangent And Normal}{433}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Properties}{433}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Miscellaneous}{458}{section.8.2}%
-\contentsline {chapter}{\numberline {A} Vectors}{463}{appendix.A}%
-\contentsline {section}{\numberline {A.1}$2\times 1$ vectors}{463}{section.A.1}%
-\contentsline {section}{\numberline {A.2}$3\times 1$ vectors}{471}{section.A.2}%
-\contentsline {chapter}{\numberline {B}Matrices}{475}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Eigenvalues and Eigenvectors}{475}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Determinants}{476}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Rank of a Matrix}{477}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Inverse of a Matrix}{478}{section.B.4}%
-\contentsline {section}{\numberline {B.5}Orthogonality}{478}{section.B.5}%
-\contentsline {section}{\numberline {B.6}Singular Value Decomposition}{480}{section.B.6}%
-\contentsline {chapter}{\numberline {C}Triangle Constructions}{483}{appendix.C}%
-\contentsline {chapter}{\numberline {D}Linear Forms}{487}{appendix.D}%
-\contentsline {section}{\numberline {D.1}Two Dimensions}{487}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Three Dimensions}{492}{section.D.2}%
-\contentsline {chapter}{\numberline {E}Quadratic Forms}{503}{appendix.E}%
-\contentsline {section}{\numberline {E.1}Conic equation }{503}{section.E.1}%
-\contentsline {section}{\numberline {E.2}Circles}{508}{section.E.2}%
-\contentsline {section}{\numberline {E.3}Standard Form}{511}{section.E.3}%
-\contentsline {chapter}{\numberline {F}Conic Parameters}{517}{appendix.F}%
-\contentsline {section}{\numberline {F.1}Standard Form}{517}{section.F.1}%
-\contentsline {section}{\numberline {F.2}Quadratic Form }{519}{section.F.2}%
-\contentsline {chapter}{\numberline {G}Conic Lines}{521}{appendix.G}%
-\contentsline {section}{\numberline {G.1}Pair of Straight Lines}{521}{section.G.1}%
-\contentsline {section}{\numberline {G.2}Intersection of Conics}{524}{section.G.2}%
-\contentsline {section}{\numberline {G.3} Chords of a Conic}{525}{section.G.3}%
-\contentsline {section}{\numberline {G.4} Tangent and Normal}{531}{section.G.4}%
+\contentsline {section}{\numberline {5.2}Inscribed Polygons }{312}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Miscellaneous}{318}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Tangent to a Circle}{321}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Tangents from a Point}{324}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Conics}{347}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Parabola}{347}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Ellipse}{360}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Hyperbola}{371}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Miscellaneous}{386}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Exemplar}{395}{section.6.5}%
+\contentsline {chapter}{\numberline {7}Intersection of Conics}{399}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Chords }{399}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Curves}{415}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Miscellaneous}{425}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Tangent And Normal}{439}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Properties}{439}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Miscellaneous}{464}{section.8.2}%
+\contentsline {chapter}{\numberline {A} Vectors}{469}{appendix.A}%
+\contentsline {section}{\numberline {A.1}$2\times 1$ vectors}{469}{section.A.1}%
+\contentsline {section}{\numberline {A.2}$3\times 1$ vectors}{477}{section.A.2}%
+\contentsline {chapter}{\numberline {B}Matrices}{481}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Eigenvalues and Eigenvectors}{481}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Determinants}{482}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Rank of a Matrix}{483}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Inverse of a Matrix}{484}{section.B.4}%
+\contentsline {section}{\numberline {B.5}Orthogonality}{484}{section.B.5}%
+\contentsline {section}{\numberline {B.6}Singular Value Decomposition}{486}{section.B.6}%
+\contentsline {chapter}{\numberline {C}Triangle Constructions}{489}{appendix.C}%
+\contentsline {chapter}{\numberline {D}Linear Forms}{493}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Two Dimensions}{493}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Three Dimensions}{498}{section.D.2}%
+\contentsline {chapter}{\numberline {E}Quadratic Forms}{509}{appendix.E}%
+\contentsline {section}{\numberline {E.1}Conic equation }{509}{section.E.1}%
+\contentsline {section}{\numberline {E.2}Circles}{514}{section.E.2}%
+\contentsline {section}{\numberline {E.3}Standard Form}{517}{section.E.3}%
+\contentsline {chapter}{\numberline {F}Conic Parameters}{523}{appendix.F}%
+\contentsline {section}{\numberline {F.1}Standard Form}{523}{section.F.1}%
+\contentsline {section}{\numberline {F.2}Quadratic Form }{525}{section.F.2}%
+\contentsline {chapter}{\numberline {G}Conic Lines}{527}{appendix.G}%
+\contentsline {section}{\numberline {G.1}Pair of Straight Lines}{527}{section.G.1}%
+\contentsline {section}{\numberline {G.2}Intersection of Conics}{530}{section.G.2}%
+\contentsline {section}{\numberline {G.3} Chords of a Conic}{531}{section.G.3}%
+\contentsline {section}{\numberline {G.4} Tangent and Normal}{537}{section.G.4}%

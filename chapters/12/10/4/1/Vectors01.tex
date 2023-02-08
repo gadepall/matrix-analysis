@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{commath}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{extarrows}
+\usepackage{commath}
+%\usepackage[utf8]{inputenc}
+\lstset{ language=tex,
+	frame=single,
+         breaklines=true
+        }
+        \usepackage{hyper ref}
+        \usepackage{atbegshi}
+        \AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+        \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+        \providecommand{\abs}[1]{\left\vert#1\right\vert}
+        \providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}\title{\textbf{Vectors Assignment-1}}
+	\date{\vspace{-5ex}}
+\maketitle
+\end{center}
+\setcounter{page}{1}
+Section{12${th}$Math- Excercise 12.10.4.1}
+
+\begin{enumerate}
+	\item Find $\abs{\vec{a}\times\vec{b}}$, if $\vec{a}=\hat{i}-7\hat{j}+7\hat{k}$ $\text{ and } $ $\vec{b}=3\hat{i}-2\hat{j}+2\hat{k}$
+
+\solution
+
+The given two vectors are
+	\begin{align}
+		\vec{a}=\myvec{1 \\ -7 \\ 7}, \vec{b}=\myvec{3 \\ -2 \\ 2}
+	\end{align}
+The cross product of vectors $\vec{a}$ $\text{ and }$ $\vec{b}$ is given as
+\begin{align}
+	\abs{\vec{a}\times\vec{b}}&=\brak{\mydet{\vec{A}_{23}& \vec{B}_{23} \\ \vec{A}_{31} & \vec{B}_{31} \\ \vec{A}_{12}& \vec{B}_{12}}}\\
+	\mydet{\vec{A}_{23}&\vec{B}_{23}}&=\mydet{-7 & -2 \\ 7 & 2}=-14+14=0\\
+	\mydet{\vec{A}_{31}&\vec{B}_{31}}&=\mydet{1 & 3 \\ 7 & 2}=2-21=-19\\
+	\mydet{\vec{A}_{12}&\vec{B}_{12}}&=\mydet{1 & 3 \\ -7 & -2}=-2+21=19
+\end{align}
+Then,
+\begin{align}
+	\abs{\vec{a}\times\vec{b}}&=\sqrt{-19^2+19^2}\\
+&=19\sqrt{2}
+\end{align}
+\end{enumerate}
+\end{document}

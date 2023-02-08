@@ -1,0 +1,116 @@
+\iffalse
+\documentclass[10pt]{article}
+       \usepackage[latin1]{inputenc}
+       \usepackage{fullpage}
+       \usepackage{color}
+       \usepackage{array}
+       \usepackage{longtable}
+       \usepackage{calc}
+       \usepackage{multirow}
+       \usepackage{hhline}
+       \usepackage{ifthen}
+\usepackage{graphicx}
+\def\inputGnumericTable{}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{Properties of Circle}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section{9$^{th}$ Maths - Chapter 10}
+       This is Problem-2 from Exercise 10.4
+\begin{enumerate}
+\item If two equal chords of a circle intersect within the circle, prove that the segments of one chord are equal to corresponding segments of other chord.
+
+\solution:
+\fi
+\begin{figure}[h!]
+	\begin{center} 
+	  \includegraphics[width=\columnwidth]{chapters/9/10/4/2/figs/c.png}
+	\end{center}
+\caption{Two equal chords intersecting in a circle}
+\label{fig:chapters/9/10/4/2/Fig1}
+\end{figure} 
+See Table 
+\ref{tab:chapters/9/10/4/2/}
+for the input  parameters.
+\begin{table}[h!]
+	\input{chapters/9/10/4/2/tables/table.tex}
+\caption{}
+\label{tab:chapters/9/10/4/2/}
+\end{table}
+Consider
+\begin{align}
+\vec{P}=\myvec{\cos \theta_1\\\sin \theta_1},\,
+\vec{Q}=\myvec{\cos \theta_2\\\sin \theta_2},\,
+\vec{R}=\myvec{\cos \theta_3\\\sin \theta_3},\,
+\vec{S}=\myvec{\cos \theta_4\\\sin \theta_4}
+\label{eq:chapters/9/10/4/2/table1}
+\end{align}
+such that 
+\begin{align}
+	\vec{P}-\vec{Q}&=\myvec{\cos\theta_1-\cos\theta_2 \\ \sin \theta_1-\sin \theta_2}
+	\\
+	\implies \norm{\vec{P}-\vec{Q}}^2 &= 
+	\brak{\cos \theta_1-\cos \theta_2}^2+\brak{\sin \theta_1-\sin \theta_2}^2=d^2\\
+\end{align}
+yielding
+\begin{align}
+	\brak{\frac{\theta_1-\theta_2}{2}}=\sin^{-1}\brak{\frac{d}{2}}.
+	\end{align}
+	Similarly, 
+\begin{align}
+\brak{\frac{\theta_3-\theta_4}{2}}=\sin^{-1}\brak{\frac{d}{2}}.
+\end{align}
+The equations of $PQ$ and $RS$ are obtained using 
+\begin{align}
+\vec{{n}_1^{\top}}\brak{\vec{x}-\vec{P}}&=0\\
+\vec{{n}_2^{\top}}\brak{\vec{x}-\vec{R}}&=0
+\end{align}
+where 
+\begin{align}
+\vec{n}_1
+&=\myvec{\sin \theta_1-\sin \theta_2\\\cos \theta_2-\cos \theta_1}\\
+\vec{n}_2
+&=\myvec{\sin \theta_3-\sin \theta_4\\\cos \theta_4-\cos \theta_3}
+\end{align}
+Substiuting numerical values, the 
+point of intersection of lines $PQ,RS$ is 
+\begin{align}
+\vec{T}=\myvec{0.68341409\\-0.04288508}
+\end{align}
+Thus, 
+\begin{align}
+\norm{\vec{P}-\vec{T}}=
+\norm{\vec{S}-\vec{T}}&=0.5727
+\end{align}
