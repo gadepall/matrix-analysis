@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
@@ -207,69 +208,16 @@ This document contains the solution of the question from NCERT 12th standard cha
 \begin{enumerate}
 
 \item Prove that $\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}=\norm{\vec{a}}^2+\norm{\vec{b}}^2$\\, if and only if $\vec{a}$,$\vec{b}$ are perpendicular, given $\vec{a}\neq0$,$\vec{b}\neq0$.
-
+	\fi
 	\begin{align}
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}} &= \vec{a}^{\top}\vec{a}+\vec{a}^{\top}\vec{b}+\vec{b}^{\top}\vec{a}+\vec{b}^{\top}\vec{b}\\
-		&= \norm{\vec{a}}^2+\norm{\vec{b}}^2+2\vec{a}^{\top}\vec{b}
+		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}} 
+		= \norm{\vec{a}}^2+\norm{\vec{b}}^2+2\vec{a}^{\top}\vec{b}
 	\end{align}
-
-	If 
+Thus, 
 	\begin{align}
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}=\norm{\vec{a}}^2+\norm{\vec{b}}^2
+		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}&=\norm{\vec{a}}^2+\norm{\vec{b}}^2
+		\\
+		\iff
+		\vec{a}^{\top}\vec{b} &= 0 
 	\end{align}
-	Then,
-	\begin{align}
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}&=\norm{\vec{a}}^2+\norm{\vec{b}}^2\\
-		\norm{\vec{a}}^2+\norm{\vec{b}}^2+2\vec{a}^{\top}\vec{b} &= \norm{\vec{a}}^2+\norm{\vec{b}}^2\\
-		2\vec{a}^{\top}\vec{b} &= 0 
-	\end{align}
-
-	$\vec{a}^{\top}\vec{b}=0$ implies that the two vectors are perpendicular.
-
-	If 
-	\begin{align}
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}=\norm{\vec{a}}^2+\norm{\vec{b}}^2
-	\end{align}
-	then $\vec{a}$ and $\vec{b}$ are perpendicular.
-
-	If $\vec{a}$ and $\vec{b}$ are perpendicular then,
-
-	\begin{align}
-		\vec{a}^{\top}\vec{b} &= 0\\
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}} &= \norm{\vec{a}}^2+\norm{\vec{b}}^2+2\vec{a}^{\top}\vec{b}\\
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}} &= \norm{\vec{a}}^2+\norm{\vec{b}}^2
-	\end{align}
-
-	Hence, if $\vec{a}$ and $\vec{b}$ are perpendicular then,
-	\begin{align}
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}} &= \norm{\vec{a}}^2+\norm{\vec{b}}^2
-	\end{align}
-	Hence, $\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}=\norm{\vec{a}}^2+\norm{\vec{b}}^2$\\, if and only if $\vec{a}$,$\vec{b}$ are perpendicular.
-
-	Example:\\
-	Let us take,
-	\begin{align}
-		\vec{a} = \myvec{1\\2} & \text{ and } \vec{b} = \myvec{-2\\1}\\
-		\norm{\vec{a}}^2 &= 1^2+2^2 = 1+4 = 5\\
-		\norm{\vec{b}}^2 &= \brak{-2}^2+1^2= 4+1 = 5\\
-		\vec{a}+\vec{b} &= \myvec{1\\2}+\myvec{-2\\1} = \myvec{-1\\3}\\
-		\brak{\vec{a}+\vec{b}}^{\top}\brak{\vec{a}+\vec{b}}&=\myvec{-1&3}^{\top}\myvec{-1\\3}\\ 
-								   &=1+9 = 10\\
-		\norm{\vec{a}}^2+\norm{\vec{b}}^2&=5+5=10\\
-		\vec{a}^{\top}\vec{b}&=\myvec{1&2}\myvec{-2\\1}\\
-				     &=-2+2=0
-	\end{align}
-\end{enumerate}
-
-%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-%\num then what are its direction cosines ?berwithin{equation}{enumi}
-%\item Verification of the above problem using python code.\\
-%%\solution The  following Python code generates Fig. \ref{fig:point_distance}
-%%\begin{lstlisting}
-%%codes/det_check.py
-%%\end{lstlisting}
-%
-%\end{enumerate}
-
-\end{document}
 

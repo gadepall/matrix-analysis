@@ -1,22 +1,10 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
-%
 \usepackage{setspace}
 \usepackage{gensymb}
-%\doublespacing
 \singlespacing
-
-%\usepackage{graphicx}
-%\usepackage{amssymb}
-%\usepackage{relsize}
 \usepackage[cmex10]{amsmath}
-%\usepackage{amsthm}
-%\interdisplaylinepenalty=2500
-%\savesymbol{iint}
-%\usepackage{txfonts}
-%\restoresymbol{TXF}{iint}
-%\usepackage{wasysym}
 \usepackage{amsthm}
-%\usepackage{iithtlc}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
@@ -24,11 +12,8 @@
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
-%\usepackage{xtab}
 \usepackage{longtable}
 \usepackage{multirow}
-%\usepackage{algorithm}
-%\usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{steinmetz}
@@ -37,9 +22,7 @@
 \usepackage{verbatim}
 \usepackage{tfrupee}
 \usepackage[breaklinks=true]{hyperref}
-%\usepackage{stmaryrd}
-\usepackage{tkz-euclide} % loads  TikZ and tkz-base
-%\usetkzobj{all}
+\usepackage{tkz-euclide}
 \usetikzlibrary{calc,math}
 \usepackage{listings}
     \usepackage{color}                                            %%
@@ -53,12 +36,7 @@
     \usepackage{lscape}     
 \usepackage{multicol}
 \usepackage{chngcntr}
-%\usepackage{enumerate}
-
-%\usepackage{wasysym}
-%\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
-%\renewcommand{\baselinestretch}{2}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
@@ -72,20 +50,12 @@
 \def\inputGnumericTable{}                                 %%
 
 \lstset{
-%language=C,
 frame=single, 
 breaklines=true,
 columns=fullflexible
 }
-%\lstset{
-%language=tex,
-%frame=single, 
-%breaklines=true
-%}
-
 
 \begin{document}
-%
 
 
 \newtheorem{theorem}{Theorem}[section]
@@ -95,18 +65,11 @@ columns=fullflexible
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{example}{Example}[section]
 \newtheorem{definition}[problem]{Definition}
-%\newtheorem{thm}{Theorem}[section] 
-%\newtheorem{defn}[thm]{Definition}
-%\newtheorem{algorithm}{Algorithm}[section]
-%\newtheorem{cor}{Corollary}
 \newcommand{\BEQA}{\begin{eqnarray}}
 \newcommand{\EEQA}{\end{eqnarray}}
 \newcommand{\define}{\stackrel{\triangle}{=}}
 
 \bibliographystyle{IEEEtran}
-%\bibliographystyle{ieeetr}
-
-
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -125,35 +88,25 @@ columns=fullflexible
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-%\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{E\left[ #1 \right]}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
-%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-%\numberwithin{equation}{section}
 \numberwithin{equation}{subsection}
-%\numberwithin{problem}{section}
-%\numberwithin{definition}{section}
 \makeatletter
 \@addtoreset{figure}{problem}
 \makeatother
 
 \let\StandardTheFigure\thefigure
 \let\vec\mathbf
-%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 \renewcommand{\thefigure}{\theproblem}
-%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
-%\counterwithin{equation}{enumi}
 
 
-%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
 
 \def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
      \def\rightbox#1{\makebox[0in][r]{#1}}
@@ -164,8 +117,13 @@ columns=fullflexible
 \vspace{3cm}
 
 
-\title{Quiz 7}
-\author{S Nithish}
+\title{Assignment 1}
+\author{Jaswanth Chowdary Madala}
+
+
+
+
+
 % make the title area
 \maketitle
 
@@ -177,118 +135,116 @@ columns=fullflexible
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-%\renewcommand{\theequation}{\theenumi}
 
 
-\begin{abstract}
-This document contains the solution of the question from NCERT 11th standard chapter 10 exercise 10.4 problem 21
-\end{abstract}
-
-%Download all python codes 
-%
-%\begin{lstlisting}
-%svn co https://github.com/JayatiD93/trunk/My_solution_design/codes
-%\end{lstlisting}
-
-%Download all and latex-tikz codes from 
-%
-%\begin{lstlisting}
-%svn co https://github.com/gadepall/school/trunk/ncert/geometry/figs
-%\end{lstlisting}
-%
-\section{Exercise 10.4}
 \begin{enumerate}
-\item Find the equation of line which is equidistant from parallel lines $9x+6y-7=0$ and $3x+2y+6=0$.
+\item Find the equation of the ellipse that satisfies the conditions - Centre at $\brak{0,0}$, major axis on the y-axis and passes through the points $\brak{3,2}$ and $\brak{1,6}$.
+%\begin{figure}[ht]
+%\centering
+%\includegraphics[width = \columnwidth]{"./chapters/11/11/3/19/figs/fig.png"}
+%\caption{Graph}
+%\label{fig:chapters/11/11/3/19/1}
+%\end{figure}
 
+\textbf{Solution:}
+\fi
+The input parameters are listed in 
+\ref{tab:chapters/11/11/3/19/1}.
+The equation of the conic with focus $\vec{F}$, directrix $\vec{n}^\top\vec{x} = c$ and eccentricity $e$ is given by
+\begin{align}
+\vec{x}^\top\vec{V}\vec{x} + 2\vec{u}^\top\vec{x} + f = 0
+\label{eq:chapters/11/11/3/19/1}
+\end{align}
+where
+\begin{align}
+\vec{V} &\triangleq \norm{\vec{n}}^2\vec{I} - e^2\vec{n}\vec{n}^\top \label{eq:chapters/11/11/3/19/2} \\
+\vec{u} &\triangleq ce^2\vec{n} - \norm{\vec{n}}^2\vec{F} \label{eq:chapters/11/11/3/19/3} \\
+f &\triangleq \norm{\vec{n}}^2\norm{\vec{F}}^2 - c^2e^2 \label{eq:chapters/11/11/3/19/4}
+\end{align}
+Given that the conic is an ellipse with major axis along the $y$-axis,
+\begin{align}
+\vec{n} = \myvec{0\\1}
+\end{align}
+Thus,
+\begin{align}
+\vec{V} = \myvec{1&0\\0&1-e^2} \label{eq:chapters/11/11/3/19/5} \\
+\vec{u} = ce^2\myvec{0\\1} - \vec{F} \label{eq:chapters/11/11/3/19/6} \\
+f = \norm{\vec{F}}^2 - c^2e^2 \label{eq:chapters/11/11/3/19/7}
+\end{align}
+The centre of the conic is given by
+\begin{align}
+\vec{c} = -\vec{V}^{-1}\vec{u}
+\label{eq:chapters/11/11/3/19/8}
+\end{align}
+Since $\vec{c} = \vec{0}$ and $\vec{V}^{-1} \neq \vec{0}$, it follows from \eqref{eq:chapters/11/11/3/19/8} that 
+\begin{align}
+\vec{u} = \vec{0}
+\end{align}
+Thus, from \eqref{eq:chapters/11/11/3/19/6},
+\begin{align}
+\vec{F} = \myvec{0\\ce^2}
+\label{eq:chapters/11/11/3/19/9}
+\end{align}
+and so,
+\begin{align}
+f = c^2e^2\brak{e^2-1}
+%\label{eq:chapters/11/11/3/19/9}
+\end{align}
+Given that the conic passes through 
+\begin{align}
+\vec{P} = \myvec{3\\2},
+\end{align}
+putting $\vec{x} = \vec{P}$ in \eqref{eq:chapters/11/11/3/19/1} we get,
+\begin{align}
+\myvec{3&2}\myvec{1&0\\0&1-e^2}\myvec{3\\2} + f &= 0 \\
+\implies 4e^2 - f = 13 \label{eq:chapters/11/11/3/19/10}
+\end{align}
+Given that the conic passes through
+\begin{align}
+\vec{Q} = \myvec{1\\6},
+\end{align}
+putting $\vec{x} = \vec{Q}$ in \eqref{eq:chapters/11/11/3/19/1}, we get
+\begin{align}
+\myvec{1&6}\myvec{1&0\\0&1-e^2}\myvec{1\\6} + f &= 0 \\
+\implies 36e^2 - f = 37 \label{eq:chapters/11/11/3/19/11}
+\end{align}
+The equations \eqref{eq:chapters/11/11/3/19/10} and \eqref{eq:chapters/11/11/3/19/11} can be formulated as the following matrix equation
+\begin{align}
+\myvec{4&-1\\36&-1}\myvec{e^2\\f} = \myvec{13\\37}
+\label{eq:chapters/11/11/3/19/12}
+\end{align}
+The augmented matrix is given by,
+\begin{align}
+\myvec{4&-1&\vline&13\\36&-1&\vline&37}
+\end{align}
+yielding
+\begin{align}
+\xleftrightarrow[]{R_1\leftarrow R_1-R_2} &\myvec{-32&0&\vline&-24\\36&-1&\vline&37} \\
+\xleftrightarrow[]{R_1\leftarrow-\frac{R_1}{8}}& \myvec{4&0&\vline&3\\36&-1&\vline&37} \\
+\xleftrightarrow[]{R_2\leftarrow R_2-9R_1}
+&\myvec{4&0&\vline&3\\0&-1&\vline&10} \\
+\xleftrightarrow[R_2\leftarrow -R_2]{R_1\leftarrow \frac{R_1}{4}}
+&\myvec{1&0&\vline&\frac{3}{4}\\0&1&\vline&-10}
+\end{align}
+Thus,
+\begin{align}
+e^2 = \frac{3}{4},\ f = -10
+\end{align}
+and the equation of the conic is given by
+\begin{align}
+\vec{x}^\top\myvec{1&0\\0&\frac{1}{4}}\vec{x} - 10 = 0
+\end{align}
+See Fig. 
+\ref{fig:chapters/11/11/3/19/1}.
 \begin{figure}[ht]
-	\centering
-	\includegraphics[width = \columnwidth]{figs/line_plot.jpg}
-	\caption{Triangle ABC}
-	\label{fig:1}
+\centering
+\includegraphics[width = \columnwidth]{chapters/11/11/3/19/figs/fig1.png}
+\caption{Graph}
+\label{fig:chapters/11/11/3/19/1}
 \end{figure}
-
-
-Equation of line 1 is,
-
-\begin{align}
-	\myvec{9 & 6}\vec{x} &= 7\\
-	\myvec{3 & 2}\vec{x} &= \frac{7}{3}
-\end{align}
-
-Equation of line 2 is,
-
-\begin{align}
-	\myvec{3 & 2}\vec{x} &= -6
-\end{align}
-
-The equation of the equidistant line will be of the form,
-
-\begin{align}
-	\myvec{3 & 2}\vec{x} &= c
-\end{align}
-
-If,
-
-\begin{align}
-	\vec{n}^{\top}\vec{x} = c_1\\
-	\vec{n}^{\top}\vec{x} = c_2
-\end{align}
- 
-are two parallel lines then the distance between these two lines is,
-
-\begin{align}
-	d = \frac{\abs{c_1-c_2}}{\norm{\vec{n}}}
-\end{align}
-
-We need to find c such that,
-
-\begin{align}
-	\frac{\abs{c-c_1}}{\norm{\vec{n}}} = \frac{\abs{c-c_2}}{\norm{\vec{n}}}
-\end{align}
-
-where, 
-
-\begin{align}
-	\vec{n} = \myvec{3 \\ 2}
-\end{align}
-
-\begin{align}
-	\frac{\abs{c-c_1}}{\norm{\vec{n}}} &= \frac{\abs{c-c_2}}{\norm{\vec{n}}}\\
-	\abs{c-\frac{7}{3}} &= \abs{c-\brak{-6}}\\
-	\frac{7}{3} - c &= c + 6\\
-	2c &= \frac{7}{3}-6 = \frac{-11}{3}\\
-	c &= \frac{-11}{6}
-\end{align}
-
-Hence, the equation of the line that is equidistant to parallel lines,
-
-\begin{align}
-	\myvec{9 & 6}\vec{x} &= 7\\
-	\myvec{3 & 2}\vec{x} &= -6
-\end{align}
-
-is,
-
-\begin{align}
-	\myvec{3 & 2}\vec{x} &= -\frac{11}{6}
-\end{align}
-
-\end{enumerate}
-
-
-
-
-
-
-%\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
-%\num then what are its direction cosines ?berwithin{equation}{enumi}
-%\item Verification of the above problem using python code.\\
-%%\solution The  following Python code generates Fig. \ref{fig:point_distance}
-%%\begin{lstlisting}
-%%codes/det_check.py
-%%\end{lstlisting}
-%
-%\end{enumerate}
-
-\end{document}
-
+\begin{table}[h]
+\centering
+\input{chapters/11/11/3/19/tables/table1.tex}
+\caption{}
+\label{tab:chapters/11/11/3/19/1}
+\end{table}

@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journel,12pt,twocolumn]{article}
 \usepackage{graphicx}
 \usepackage[none]{hyphenat}
@@ -46,16 +47,17 @@
 \end{enumerate}
 Solution:
 \\
-Given
+\fi
+Let
 \begin{align}
-\vec{P}&=\myvec{-1\\2}\\
-\vec{O}&=\myvec{0\\0}
+\vec{P}=\myvec{-1\\2},\,
+\vec{O}=\myvec{0\\0}
 \end{align}
-The directional vector $\vec{OP}$ is 
+Then, 
 \begin{align}
 \myvec{\vec{O}-\vec{P}}^{\top}\vec{m}&=0\\
-\implies\myvec{1&-2}\myvec{1\\m}&=0\\
-\implies m&=\frac{1}{2}
+\implies\myvec{1&-2}\myvec{1\\m}&=0
+\implies m=\frac{1}{2}
 \end{align}
 From the line equation 
 \begin{align}
@@ -69,4 +71,3 @@ From the line equation
 \caption{}
   \label{fig:Figure}
 \end{figure}
-\end{document}

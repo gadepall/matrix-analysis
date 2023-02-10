@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 
 \usepackage{setspace}
@@ -107,7 +108,9 @@ columns=fullflexible
 \begin{enumerate}[start=17]
 \item  Show that the vectors form the vertices $\myvec{2\\-1\\1}$, $\myvec{1\\-3\\-5}$ and $\myvec{3\\-4\\-4}$ of a right angled triangle.
 \break
-\solution Let's first check if points are not collinear and hence forming a triangle, using row reduction.
+\solution 
+\fi
+		Let's first check if points are not collinear and hence forming a triangle, using row reduction.
 
 \begin{align}
  \myvec{2&1&3\\-1&-3&-4\\1&-5&-4\\1&1&1} &\xleftrightarrow[]{R_2\rightarrow \frac{R_1}{2}+R_2} \myvec{2&1&3\\0&-\frac{5}{2}&-\frac{5}{2}\\1&-5&-4\\1&1&1}\\
@@ -116,9 +119,12 @@ columns=fullflexible
  &\xleftarrow[]{R_3\rightarrow -\frac{11R_2}{5} + R_3} \myvec{2&1&3\\0&-\frac{5}{2}&-\frac{5}{2}\\0&0&0\\0&\frac{1}{2}&-\frac{1}{2}} \\
  &\xleftarrow[]{R_4\rightarrow \frac{R_2}{5} + R_4} \myvec{2&1&3\\0&-\frac{5}{2}&-\frac{5}{2}\\0&0&0\\0&0&-1} 
 \end{align}
-Hence Rank of matrix is 3, which means that points are not collinear. Now, let's check if they form a right angled triangle. \newline
-Let's name the triangle $ABC$, where $\vec{A} = \myvec{2\\-1\\1}$, $\vec{B} = \myvec{1\\-3\\-5}$ and $\vec{C} = \myvec{3\\-4\\-4}$. So sides of triangle are:
-
+Hence Rank of matrix is 3, which means that points are not collinear. Now, let's check if they form a right angled triangle. 
+Let 
+\begin{align}
+\vec{A} = \myvec{2\\-1\\1},\, \vec{B} = \myvec{1\\-3\\-5},\,\vec{C} = \myvec{3\\-4\\-4}
+\end{align}
+Then,
 \begin{align}
  \vec{a} &= \vec{C} - \vec{B} = \myvec{2\\-1\\1}\\
  \vec{b} &= \vec{A} - \vec{C} = \myvec{-1\\3\\5}\\
@@ -135,5 +141,3 @@ If inner product of two vectors is zero, then they are perpendicular. So, we hav
 
 So, $\vec{a}$ and $\vec{b}$ are perpendicular and therefore triangle $ABC$ is right angled triangle.
 
-\end {enumerate}
-\end{document}
