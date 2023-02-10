@@ -1,3 +1,5 @@
+
+\iffalse
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -30,68 +32,53 @@
 \end{center}
 \begin{enumerate}
 \section{EXERCISE-10.5}
-\item A chord of a circle is equal to the radius of the circle. Find the angle subtended by the chord at a point on the minor arc and also at a point on the major arc.
 \section{SOLUTION}
-The input parameters are\\
+\fi
+The input parameters are listed in Table
+\ref{tab:chapters/9/10/5/2/}.	
 \begin{table}[h!]
-	\input{/home/prasaddeva287/prasad/circle/9-10.5-2/table/table.tex}
+	\input{chapters/9/10/5/2/tables/table.tex}
 \caption{}
-\label{table}	
+\label{tab:chapters/9/10/5/2/}	
 \end{table}
-\\
-Take three points Q,R and P on a unit circle  at angles $\theta,\alpha,\text{ and }\beta$.Then
+Take three points Q,R and P on a unit circle  at angles $\theta,\alpha,\text{ and }\beta$. Then
 \begin{align}
-	\vec{Q} = \myvec{\cos\theta\\ \sin\theta},
-	\vec{R} = \myvec{\cos\alpha\\ \sin\alpha},
+	\vec{Q} &= \myvec{\cos\theta\\ \sin\theta},\,
+	\vec{R} = \myvec{\cos\alpha\\ \sin\alpha},\,
 	\vec{S} = \myvec{\cos\beta\\ \sin\beta}
+	\\
+	\cos\angle QRP&= \frac{\brak{\vec{Q}-\vec{R}}^{\top}\brak{\vec{P}-\vec{R}}}{\norm{\vec{Q}-\vec{R}}\norm{\vec{P}-\vec{R}}}\label{eq:chapters/9/10/5/2/2}
 \end{align}
+where
 \begin{align}
-	\cos\angle QRP&= \frac{\brak{\vec{Q}-\vec{R}}\brak{\vec{P}-\vec{R}}}{\norm{\vec{Q}-\vec{R}}\norm{\vec{P}-\vec{R}}}\label{eq:2}
+\brak{\vec{Q}-\vec{R}}^{\top}\brak{\vec{P}-\vec{R}}&= \brak{\cos\alpha-\cos\theta}\cos\alpha+\brak{\sin\theta-\sin\alpha}\label{eq:chapters/9/10/5/2/6}
 \end{align}
-Where
+and 
 \begin{align}
-\brak{\vec{Q}-\vec{R}}\brak{\vec{P}-\vec{R}}&= \brak{\cos\theta-\cos\alpha}\brak{ \sin\theta-\sin\alpha}\brak{1-\cos\alpha}\brak{0-\sin\alpha}\\
-&=\brak{\cos\theta-\cos\alpha}\cos\alpha+\brak{\sin\theta-\sin\alpha}\\
-&=2\sin\frac{\theta-\alpha}{2}\sin\frac{\theta+\alpha}{2}\cos\alpha+2\cos\frac{\theta+\alpha}{2}\sin\frac{\theta-\alpha}{2}\\
-&=\brak{\cos\alpha-\cos\theta}\cos\alpha+\brak{\sin\theta-\sin\alpha}\label{eq:6}
+\norm{\vec{Q}-\vec{R}}^2\norm{\vec{P}-\vec{R}}^2 =\brak{2-2\cos\theta\cos\alpha-2\sin\theta\sin\alpha}\brak{2-\cos\alpha}\label{eq:chapters/9/10/5/2/8}
 \end{align}
+Substituing \eqref{eq:chapters/9/10/5/2/6} and \eqref{eq:chapters/9/10/5/2/8} in \eqref{eq:chapters/9/10/5/2/2},
 \begin{align}
-\norm{\vec{Q}-\vec{R}}^2\norm{\vec{P}-\vec{R}}^2 &= \brak{\cos\theta-\cos\alpha}^2+\brak{\sin\theta-\sin\alpha}^2
-	\brak{1-\cos\alpha}^2+\brak{0-\sin\alpha}^2\\
-	&=\brak{2-2\cos\theta\cos\alpha-2\sin\theta\sin\alpha}\brak{2-\cos\alpha}\label{eq:8}
+\cos\angle QRP \implies \angle QRP&=62\degree
 \end{align}
-substituing the \eqref{eq:6} and \eqref{eq:8} in \eqref{eq:2}
+Similarly, 
 \begin{align}
-\cos\angle QRP&=\frac{2.079}{4.323}\\
-\angle QRP&=\cos^{-1}0.480\\
-\angle QRP&=62\degree
+\brak{\vec{Q}-\vec{S}}^{\top}\brak{\vec{P}-\vec{S}}=\brak{\cos\beta-\cos\theta}\cos\beta+\brak{\sin\theta-\sin\beta}\label{eq:chapters/9/10/5/2/16}
 \end{align}
+and
 \begin{align}
-\cos\angle QSP&= \frac{\brak{\vec{Q}-\vec{S}}\brak{\vec{P}-\vec{S}}}{\norm{\vec{Q}-\vec{S}}\norm{\vec{P}-\vec{S}}}\label{eq:12}
+\norm{\vec{Q}-\vec{S}}^2\norm{\vec{P}-\vec{S}}^2 =\brak{2-2\cos\theta\cos\beta-2\sin\theta\sin\beta}\brak{2-\cos\beta}\label{eq:chapters/9/10/5/2/18}
 \end{align}
-\begin{align}
-\brak{\vec{Q}-\vec{S}}\brak{\vec{P}-\vec{S}}&= \brak{\cos\theta-\cos\beta}\brak{\sin\theta-\sin\beta}\brak{1-\cos\beta}\brak{0-\sin\beta}\\
-&=\brak{\cos\theta-\cos\beta}\cos\beta+\brak{\sin\theta-\sin\beta}\\
-&=2\sin\frac{\theta-\beta}{2}\sin\frac{\theta+\beta}{2}\cos\beta+2\cos\frac{\theta+\beta}{2}\sin\frac{\theta-\beta}{2}\\
-&=\brak{\cos\beta-\cos\theta}\cos\beta+\brak{\sin\theta-\sin\beta}\label{eq:16}
-\end{align}
-\begin{align}
-\norm{\vec{Q}-\vec{S}}^2\norm{\vec{P}-\vec{S}}^2 &= \brak{\cos\theta-\cos\beta}^2+\brak{\sin\theta-\sin\beta}^2
-	\brak{1-\cos\beta}^2+\brak{0-\sin\beta}^2\\
-	&=\brak{2-2\cos\theta\cos\beta-2\sin\theta\sin\beta}\brak{2-\cos\beta}\label{eq:18}
-\end{align}
-substituing the \eqref{eq:16} and \eqref{eq:18} in \eqref{eq:12}
+Substituing \eqref{eq:chapters/9/10/5/2/16} and \eqref{eq:chapters/9/10/5/2/18} in \eqref{eq:chapters/9/10/5/2/18},
 \begin{align}
 \cos\angle QSP&=\frac{1.048}{1.098}\\
-\angle QSP&=\cos^{-1}0.954\\
-\angle QSP&=17\degree
+\implies \angle QSP&=17\degree
 \end{align}
-\section{FIGURE}
+See Fig. 
+		\ref{fig:chapters/9/10/5/2/Figure}.
 \begin{figure}[h]
 \centering
-\includegraphics[width=\columnwidth]{circle.png}
+\includegraphics[width=\columnwidth]{chapters/9/10/5/2/figs/circle.png}
 \caption{}
-		\label{fig:Figure}
+		\label{fig:chapters/9/10/5/2/Figure}
 \end{figure}
-\end{enumerate}
-\end{document}
