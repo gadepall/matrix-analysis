@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -137,145 +138,105 @@ columns=fullflexible
 
 
 \begin{enumerate}
-\item Two congruent circles intersect each other at points $\vec{A}$ and $\vec{B}$. Through $\vec{A}$ any line segment $\vec{PAQ}$ is drawn so that $\vec{P}$, $\vec{Q}$ lie on the two circles. Prove that $BP = BQ$.
-\begin{figure}[ht]
-\centering
-\includegraphics[width = \columnwidth]{"./figs/fig.png"}
-\caption{Graph}
-\label{fig:1}
-\end{figure}
 
 \textbf{Solution:}
-Consider two congruent circles with radius $2\sqrt{2}$ with centres at $\myvec{2\\0}$, $\myvec{-2\\0}$. The equations of these circles is given by,
+\fi
+The parameters used in the construction are shown in Table \ref{tab:chapters/9/10/6/9/1}.
+Let the equations of these circles be given by
 \begin{align}
-\norm{\vec{x}}^2 + 2\vec{u_1}^\top\vec{x} + f_1 &= 0 
-\label{eq:1}\\
-\norm{\vec{x}}^2 + 2\vec{u_2}^\top\vec{x} + f_2 &= 0 
-\label{eq:2}\\
+\norm{\vec{x}}^2 + 2\vec{u_1}^\top\vec{x} + f &= 0 
+\label{eq:chapters/9/10/6/9/1}\\
+\norm{\vec{x}}^2 + 2\vec{u_2}^\top\vec{x} + f &= 0 
+\label{eq:chapters/9/10/6/9/2}\\
 \vec{u_1} = -\myvec{2\\0}, \, \vec{u_2} &= -\myvec{-2\\0}\\
-f_1 = -4, \, f_2 &= -4
+f = -4. 
 \end{align}
-To get points of intersection $\vec{A}, \vec{B}$, the common chord of the circles is given by,
+The common chord of the circles is given by
 \begin{align}
 2\vec{u_1}^\top\vec{x}-2\vec{u_2}^\top\vec{x}+f_1 - f_2 &= 0\\
+\implies
 \myvec{1&0}\vec{x} &= 0
-\label{eq:3}
+\label{eq:chapters/9/10/6/9/3}
 \end{align}
-The equation \eqref{eq:3} can be written in parametric form as,
+\eqref{eq:chapters/9/10/6/9/3} can be written in parametric form as
 \begin{align}
-\vec{h} = \myvec{0\\0}, \, \vec{m} = \myvec{0\\1}\\
-\vec{x} = \myvec{0\\0} + \mu \myvec{0\\1}
-\label{eq:4}
+	\vec{h} &= \myvec{0\\0}, \, \vec{m} = \myvec{0\\1}\\
+	\vec{x} &= \vec{h}+ \mu \vec{m}
+\label{eq:chapters/9/10/6/9/4}
 \end{align} 
-The parameter $\mu$ of the points of intersection of line \eqref{eq:5} with the conic section \eqref{eq:6}
-\begin{align}
-\vec{x} &= \vec{h} + \mu \vec{m}
-\label{eq:5}\\
-\text{g}\brak{\vec{x}} &= \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
-\label{eq:6}
-\end{align}
+The parameter $\mu$ for the points of intersection of the above line with the given conic
+		%line \eqref{eq:chapters/9/10/6/9/5} with the conic section \eqref{eq:chapters/9/10/6/9/6}
 is given by the equation 
 \begin{align}
 \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} + \text{g}\brak{\vec{h}} &=0
-\label{eq:7}
+\label{eq:chapters/9/10/6/9/7}
 \end{align}
-For the line to intersect the conic at 2 points, the discriminant of the quadratic equation \eqref{eq:6} should be greater than 0.
+Substituting numerical values,
 \begin{align}
-\Delta &> 0\\
-{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}}^2-\text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}} &> 0
-\end{align}
-To find the points of intersection $\vec{A}, \vec{B}$, we find the intersection of the circle \eqref{eq:1}, common chord \eqref{eq:4}
-\begin{align}
-\vec{V} = \vec{I}, \, \vec{u} &= \myvec{-2\\0}, \, f = -4\\
+\vec{V} = \vec{I}, \, \vec{u} &= \myvec{-2\\0}, \, f = -4,\,
 \vec{h} = \myvec{0\\0}, \, \vec{m} &= \myvec{0\\1}\\
-\vec{m}^{\top}\vec{V}\vec{m} &= 1\\
-\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= 0\\
-\text{g}\brak{\vec{h}} &= -4
 \end{align}
-Checking whether two circles intersect each other gives,
+we obtain 
 \begin{align}
-{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}}^2-\text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}} &= 0^2 - \brak{-4}\times1\\
-&= 4
+\mu^2 - 4 =0
+\implies \mu = \pm 2
 \end{align}
-Hence, the two circles taken intersect each other.
+From \eqref{eq:chapters/9/10/6/9/4}, 
 \begin{align}
-\mu^2 - 4 &=0\\
-\mu &= \pm 2
-\end{align}
-From the equation \eqref{eq:4} the points $\vec{A},\vec{B}$ are given by,
-\begin{align}
-\vec{A} &= \myvec{0\\2}\\
-\vec{B} &= \myvec{0\\-2} 
+\vec{A} = \myvec{0\\2},\,
+\vec{B} = \myvec{0\\-2} 
 \end{align} 
-Let us consider the direction vector, $\vec{m}$ of the line passing through the point $\vec{A}$ to be,
+Since 
 \begin{align}
 \vec{m} = \myvec{2\\1}
-\label{eq:8}
+\label{eq:chapters/9/10/6/9/8}
 \end{align} 
-The equation of the line passing through the point $\vec{A}$ with the direction vector \eqref{eq:8} in parametric form is given by,
+The equation of the line passing through the point $\vec{A}$ with the direction vector \eqref{eq:chapters/9/10/6/9/8} in parametric form is given by,
 \begin{align}
-\vec{x} = \myvec{0\\2} + \mu \myvec{2\\1}
-\label{eq:9}
+\vec{x} = \myvec{0\\2} + \alpha\myvec{2\\1}
+\label{eq:chapters/9/10/6/9/9}
 \end{align}
-Let $\vec{P}$ be the intersection of the line \eqref{eq:9} and the circle \eqref{eq:1}, $\vec{Q}$ be the intersection of the line \eqref{eq:9} and the circle \eqref{eq:2}. 
-
-To find the point $\vec{P}$,
+Substituing 
 \begin{align}
-\vec{V} = \vec{I}, \, \vec{u} &= \myvec{-2\\0}, \, f = -4\\
-\vec{h} = \myvec{0\\2}, \, \vec{m} &= \myvec{2\\1}\\
-\vec{m}^{\top}\vec{V}\vec{m} &= 5\\
-\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= -2\\
-\text{g}\brak{\vec{h}} &= 0 
+\vec{V} = \vec{I}, \, \vec{u} &= \myvec{-2\\0}, \, f = -4
+\vec{h} = \myvec{0\\2}, 
 \end{align}
-Checking whether the line \eqref{eq:9} and circle \eqref{eq:1} intersect each other gives,
+the intersection of the line in 
+\ref{eq:chapters/9/10/6/9/9}
+with one circle is given by 
 \begin{align}
-{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}}^2-\text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}} &= \brak{-2}^2 - \brak{0}\times5\\
-&= 4
+5\alpha^2 - 4 \alpha &=0
+\implies \alpha &= 0, \frac{4}{5}
 \end{align}
-Hence, the line \eqref{eq:9} and circle \eqref{eq:1} intersect each other.
-\begin{align}
-5\mu^2 - 4 \mu &=0\\
-\mu &= 0, \frac{4}{5}
-\end{align}
+Thus,
 \begin{align}
 \vec{P} &= \myvec{\frac{8}{5}\\\\ \frac{14}{5}}
 \end{align}
-To find the point $\vec{Q}$,
+Similarly, the intersection with the second circle is given by 
 \begin{align}
-\vec{V} = \vec{I}, \, \vec{u} &= \myvec{2\\0}, \, f = -4\\
-\vec{h} = \myvec{0\\2}, \, \vec{m} &= \myvec{2\\1}\\
-\vec{m}^{\top}\vec{V}\vec{m} &= 5\\
-\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= 6\\
-\text{g}\brak{\vec{h}} &= 0
+	5\beta^2 + 12 \beta &=0,\,
+\implies \beta = 0, -\frac{12}{5}\\
+	\text{and } \vec{Q} &= \myvec{-\frac{24}{5}\\\\-\frac{2}{5}}
 \end{align}
-Checking whether the line \eqref{eq:9} and circle \eqref{eq:2} intersect each other gives,
+Thus, 
 \begin{align}
-{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}}^2-\text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}} &= 6^2 - \brak{0}\times5\\
-&= 36
+	\norm{\vec{B}-\vec{P}} &=  
+\norm{\vec{B}-\vec{Q}} =  \frac{8\sqrt{10}}{5}
+\\
+\implies 
+	BP &= BQ.
 \end{align}
-Hence, the line \eqref{eq:9} and circle \eqref{eq:1} intersect each other.
-\begin{align}
-5\mu^2 + 12 \mu &=0\\
-\mu &= 0, -\frac{12}{5}\\
-\vec{Q} &= \myvec{-\frac{24}{5}\\\\-\frac{2}{5}}\\
-\norm{\vec{B}-\vec{P}} &= \norm{\myvec{0\\\\-2} - \myvec{\frac{8}{5}\\\\ \frac{14}{5}}}\\
-&= \norm{\myvec{-\frac{8}{5}\\\\-\frac{24}{5}}}\\
-&= \frac{8\sqrt{10}}{5}\\
-\norm{\vec{B}-\vec{Q}} &= \norm{\myvec{0\\\\-2} - \myvec{-\frac{24}{5}\\\\-\frac{2}{5}}}\\
-&= \norm{\myvec{\frac{24}{5}\\\\-\frac{8}{5}}}\\
-&= \frac{8\sqrt{10}}{5}
-\end{align}
-Hence, $BP = BQ$.
-The parameters used in the construction are shown in the below table \ref{tab:1}
-
+See Fig.
+\ref{fig:chapters/9/10/6/9/1}.
 \begin{table}[h]
 \centering
-\input{tables/table1.tex}
+\input{chapters/9/10/6/9/tables/table1.tex}
 \caption{}
-\label{tab:1}
+\label{tab:chapters/9/10/6/9/1}
 \end{table}
-\end{enumerate}
-\end{document}
-
-
-
+\begin{figure}[ht]
+\centering
+\includegraphics[width = \columnwidth]{chapters/9/10/6/9/figs/fig.png}
+\caption{}
+\label{fig:chapters/9/10/6/9/1}
+\end{figure}
