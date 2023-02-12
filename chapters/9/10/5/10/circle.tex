@@ -1,22 +1,10 @@
-\documentclass[A4,12pt,twocolumn]{IEEEtran}
-%
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
 \usepackage{gensymb}
-%\doublespacing
 \singlespacing
-
-%\usepackage{graphicx}
-%\usepackage{amssymb}
-%\usepackage{relsize}
 \usepackage[cmex10]{amsmath}
-%\usepackage{amsthm}
-%\interdisplaylinepenalty=2500
-%\savesymbol{iint}
-%\usepackage{txfonts}
-%\restoresymbol{TXF}{iint}
-%\usepackage{wasysym}
 \usepackage{amsthm}
-%\usepackage{iithtlc}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
@@ -24,11 +12,8 @@
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
-%\usepackage{xtab}
 \usepackage{longtable}
 \usepackage{multirow}
-%\usepackage{algorithm}
-%\usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{steinmetz}
@@ -37,9 +22,7 @@
 \usepackage{verbatim}
 \usepackage{tfrupee}
 \usepackage[breaklinks=true]{hyperref}
-%\usepackage{stmaryrd}
-\usepackage{tkz-euclide} % loads  TikZ and tkz-base
-%\usetkzobj{all}
+\usepackage{tkz-euclide}
 \usetikzlibrary{calc,math}
 \usepackage{listings}
     \usepackage{color}                                            %%
@@ -53,12 +36,7 @@
     \usepackage{lscape}     
 \usepackage{multicol}
 \usepackage{chngcntr}
-%\usepackage{enumerate}
-
-%\usepackage{wasysym}
-%\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
-%\renewcommand{\baselinestretch}{2}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
@@ -72,19 +50,12 @@
 \def\inputGnumericTable{}                                 %%
 
 \lstset{
-%language=C,
 frame=single, 
 breaklines=true,
 columns=fullflexible
 }
-%\lstset{
-%language=tex,
-%frame=single, 
-%breaklines=true
-%}
 
 \begin{document}
-%
 
 
 \newtheorem{theorem}{Theorem}[section]
@@ -94,18 +65,11 @@ columns=fullflexible
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{example}{Example}[section]
 \newtheorem{definition}[problem]{Definition}
-%\newtheorem{thm}{Theorem}[section] 
-%\newtheorem{defn}[thm]{Definition}
-%\newtheorem{algorithm}{Algorithm}[section]
-%\newtheorem{cor}{Corollary}
 \newcommand{\BEQA}{\begin{eqnarray}}
 \newcommand{\EEQA}{\end{eqnarray}}
 \newcommand{\define}{\stackrel{\triangle}{=}}
 
 \bibliographystyle{IEEEtran}
-%\bibliographystyle{ieeetr}
-
-
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -124,35 +88,25 @@ columns=fullflexible
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-%\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{E\left[ #1 \right]}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
-%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-%\numberwithin{equation}{section}
 \numberwithin{equation}{subsection}
-%\numberwithin{problem}{section}
-%\numberwithin{definition}{section}
 \makeatletter
 \@addtoreset{figure}{problem}
 \makeatother
 
 \let\StandardTheFigure\thefigure
 \let\vec\mathbf
-%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 \renewcommand{\thefigure}{\theproblem}
-%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
-%\counterwithin{equation}{enumi}
 
 
-%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
 
 \def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
      \def\rightbox#1{\makebox[0in][r]{#1}}
@@ -163,8 +117,8 @@ columns=fullflexible
 \vspace{3cm}
 
 
-\title{ASSIGNMENT}
-\author{Shristy Sharma (EE22BNITS11001)}
+\title{Assignment 1}
+\author{Jaswanth Chowdary Madala}
 
 
 
@@ -181,40 +135,112 @@ columns=fullflexible
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-%\renewcommand{\theequation}{\theenumi}
 
 
-%Download all python codes 
-%
-%\begin{lstlisting}
-%svn co https://github.com/JayatiD93/trunk/My_solution_design/codes
-%\end{lstlisting}
+\begin{enumerate}
 
-%Download all and latex-tikz codes from 
-%
-%\begin{lstlisting}
-%svn co https://github.com/gadepall/school/trunk/ncert/geometry/figs
-%\end{lstlisting}
-%
-
-
-\section{PROBLEM }
-1. If the lines $\frac{x-1}{-3} = \frac{y-2}{2k} = \frac{z-3}{2}$ and  $\frac{x-1}{3k} = \frac{y-1}{1} = \frac{z-6}{-5}$ are perpendicular, find the value of k.\\
-\section{SOLUTION:}
-Direction vectors are:
+\textbf{Solution:}
+\fi
+The input parameters are available in Table 
+\ref{tab:chapters/9/10/5/10/1}.
+\begin{table}[h]
+\centering
+\input{chapters/9/10/5/10/tables/table.tex}
+\caption{}
+\label{tab:chapters/9/10/5/10/1}
+\end{table}
+The equation of circle taking $AB$ as diameter is given by,
 \begin{align}
-\myvec{-3\\ 2k\\ 2} \text{and} \myvec{3k\\ 1\\ -5} \\
-\implies \brak{-3}\brak{3k} + \brak{2k}\brak{1} + \brak{2}\brak{-5} = 0\\
-\implies -9k + 2k - 10 = 0\\
-\implies-7k - 10 = 0\\
-\implies k = \frac{-10}{7}
+\norm{\vec{x}}^2 + 2\vec{u_1}^\top\vec{x} + f_1 &= 0 \\
+\implies 
+\norm{\vec{x}}^2 -16 &= 0
+\label{eq:chapters/9/10/5/10/1}
 \end{align}
-\begin{figure}[h!]
-  \centering
-   \includegraphics[width=\columnwidth]{figs/line_1.png}
-    \caption{lines represented for the given points and direction vector with k=$\frac{-10}{7}$}
-     \label{fig:1}
-     \end{figure}  
-\end{document}
-
+where
+\begin{align}
+\vec{u_1} = -\brak{\frac{\vec{A}+\vec{B}}{2}}
+&= \myvec{0\\0}\\
+r_1 = \frac{\norm{\vec{A}-\vec{B}}}{2}
+&= 4\\
+f_1 = \norm{\vec{u_1}}^2 - r_1^2
+&= -4
+\end{align}
+The equation of circle taking $AC$ as diameter is given by,
+\begin{align}
+\norm{\vec{x}}^2 + 2\vec{u_2}^\top\vec{x} + f_2 &= 0 \\
+\implies \norm{\vec{x}}^2 -2\myvec{3&5}\vec{x}+24 &= 0
+\label{eq:chapters/9/10/5/10/2}
+\end{align}
+where
+\begin{align}
+\vec{u_2} = -\brak{\frac{\vec{A}+\vec{C}}{2}}
+&= -\myvec{3\\5}\\
+r_2 = \frac{\norm{\vec{A}-\vec{C}}}{2}
+&= \sqrt{10}\\
+f_2 = \norm{\vec{u_2}}^2 - r_2^2
+&= 24
+\end{align}
+Let the intersection of circles \eqref{eq:chapters/9/10/5/10/1} and \eqref{eq:chapters/9/10/5/10/2} be $\vec{P}$. The equation of the common chord of intersection of two circles, $AP$ is given by,
+\begin{align}
+2\vec{u_1}^\top\vec{x}-2\vec{u_2}^\top\vec{x}+f_1 - f_2 &= 0\\
+\implies
+2\myvec{3 & 5}\vec{x}-16-24&= 0\\
+\myvec{3&5}\vec{x} &= 20
+\label{eq:chapters/9/10/5/10/3}
+\end{align}
+\eqref{eq:chapters/9/10/5/10/3} can be written in parametric form as,
+\begin{align}
+	\vec{x} =  \vec{h}+ \mu \vec{m}, \text{ where }
+\vec{h} = \myvec{0\\4}, \, \vec{m} = \myvec{-5\\3}
+\end{align}
+and $\mu$ 
+is given by 
+\begin{align}
+\mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} + \text{g}\brak{\vec{h}} &=0
+\label{eq:chapters/9/10/5/10/6}
+\end{align}
+with
+\begin{align}
+\text{g}\brak{\vec{h}} &= \vec{h}^{\top}\vec{V}\vec{h}+2\vec{u}^{\top}\vec{h}+f
+\label{eq:chapters/9/10/5/10/5}
+\end{align}
+Substituting
+\begin{align}
+\vec{V} = \vec{I}, \, \vec{u} = \myvec{0\\0}, \, f = 16
+\vec{h} = \myvec{0\\4}, \, \vec{m} = \myvec{-5\\3}
+\end{align}
+\begin{align}
+34\mu^2 + 24 \mu = 0 \implies
+\mu = 0, -\frac{12}{17}
+\end{align}
+where
+$\mu = 0$ corresponds to point $\vec{A}$.
+Thus, 
+\begin{align}
+\vec{P} = \myvec{0\\4} -\frac{12}{17} \myvec{-5\\3}
+ = \myvec{\frac{60}{17}\\\\\frac{32}{17}}
+\end{align}
+The direction vector of $BC$ is given by,
+\begin{align}
+\vec{m} = \vec{C}-\vec{B}
+= \myvec{3\\5}
+\implies \vec{n} = \myvec{-5\\3}
+\end{align}
+yielding the equation 
+\begin{align}
+\vec{n}^\top\vec{x} &= \vec{n}^\top\vec{B}
+\\
+\implies \myvec{-5&3}\vec{x} &= \myvec{-5&3}\myvec{0\\-4}
+= -12
+\label{eq:chapters/9/10/5/10/7}
+\end{align}
+It is clear that $\vec{P}$ satisfies the equation of ${BC}$ in \eqref{eq:chapters/9/10/5/10/7}. Hence, the point of intersection of the circles drawn by taking two sides of a triangle as diameters lies on the third side.
+See Fig. 
+\ref{fig:chapters/9/10/5/10/1}.
+\begin{figure}[ht]
+\centering
+\includegraphics[width = \columnwidth]{chapters/9/10/5/10/figs/fig.png}
+\caption{Graph}
+\label{fig:chapters/9/10/5/10/1}
+\end{figure}
 

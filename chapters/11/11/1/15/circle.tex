@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
@@ -187,34 +188,37 @@ columns=fullflexible
 Does the point $\myvec{-2.5\\3.5}$ lie inside, outside or on the circle $x^2+y^2 = 25$ ?
 
 \section{Solution}
-Given circle equation is,
+\fi
+See Table
+\ref{tab:chapters/11/11/1/15/}.
+\begin{table} [h]
+\begin{center}
+\input{chapters/11/11/1/15/tables/table_1.tex}
+\end{center}
+\caption{Table1}
+\label{tab:chapters/11/11/1/15/}
+\end{table}
+Given circle equation can be expressed as,
 \begin{align}
 	\norm{\vec{x}}^2= 25
 \end{align}
-
-For point $\vec{x}$ and circle with center $\vec{O}$ and radius $r$,
-\begin{table} [h]
-\begin{center}
-\input{tables/table_1.tex}
-\end{center}
-\caption{Table1}
-\label{tab:}
-\end{table}
-
-Here,
+Let,
 \begin{align}
-	\norm{\vec{x} - \vec{O}}^2 &= \norm{\myvec{-2.5\\3.5}}^2
-	&= 18.5\\
-	r^2 &= 25\\
-	\implies \norm{\vec{x}-\vec{O}}^2 <r^2
+	\vec{P}=\myvec{-2.5\\3.5}
 \end{align}
-
-Therefore, the point lies inside the given circle.
+Since
+\begin{align}
+	\norm{\vec{P} - \vec{O}}^2 =
+ 18.5 < 25,
+	\\
+	\implies \norm{\vec{x}-\vec{O}}^2 <r^2,
+\end{align}
+the point lies inside the given circle.
+See Fig. 
+    \ref{fig:chapters/11/11/1/15/}.
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\columnwidth]{figs/Figure_1.png}
+    \includegraphics[width=\columnwidth]{chapters/11/11/1/15/figs/Figure_1.png}
     \caption{Figure 1}
-    \label{fig:}
+    \label{fig:chapters/11/11/1/15/}
 \end{figure}
-
-\end{document}

@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -103,31 +104,22 @@ columns=fullflexible
 Q16. If ${p}$ and ${q}$ are the lengths of perpendiculars from the origin to the lines ${x}\cos\theta - {y}\sin\theta =  {k}\cos2\theta$ and ${x}\sec\theta + {y}\cosec\theta = {k}$, respectively, prove that ${p}^2 + 4{q}^2 = {k}^2$
 
 \solution Equation of lines are as follows:
+\fi
+The line parameters are
 \begin{align}
-    \label{eq:1} {L}_1: {x}\cos\theta - {y}\sin\theta &=  {k}\cos2\theta \\
-    \label{eq:2} \implies \vec{n}_1 = \myvec{\cos\theta \\ -\sin\theta} \text{ and } {c}_1 &= {k}\cos2\theta\\
-    \label{eq:3} {L}_2: {x}\sec\theta + {y}\cosec\theta &= {k} \\
-    \label{eq:4} {L}_2: {x}\sin\theta + {y}\cos\theta &= {k}\cos\theta\sin\theta \\
-    \label{eq:5} {L}_2: {x}\sin\theta + {y}\cos\theta &= \frac{1}{2}{k}\sin2\theta \\
-    \label{eq:6} \implies \vec{n}_2 = \myvec{\sin\theta \\ \cos\theta} \text{ and } {c}_2 &= \frac{1}{2}{k}\sin2\theta
+    \vec{n}_1 = \myvec{\cos\theta \\ -\sin\theta} \text{ and } {c}_1 &= {k}\cos2\theta\\
+    \vec{n}_2 = \myvec{\sin\theta \\ \cos\theta} \text{ and } {c}_2 &= \frac{1}{2}{k}\sin2\theta
+\end{align}
+Then
+\begin{align}
+    {p} &= \frac{\abs{  \vec{n}_1^{\top}\vec{x}-{c}_1 }}{\norm{\vec{n}_1}} 
+    = \abs{{k}\cos2\theta} \\
+     {q} &= \frac{\abs{  \vec{n}_2^{\top}\vec{x}-{c}_2 }}{\norm{\vec{n}_2}} 
+    = \abs{ \frac{1}{2}{k}\sin2\theta}
+\end{align}
+Therefore 
+\begin{align}
+    {p}^2 + 4{q}^2 = {k}^2\cos^2 2\theta + 4 \brak{\frac{1}{4}}{k}^2\sin^2 2\theta 
+= {k}^2
 \end{align}
 
-The lengths of perpendiculars from origin can be found by using the following formula:
-\begin{align}
-    \label{eq:7} {p} &= \frac{\abs{  \vec{n}_1^{\top}\vec{x}-{c}_1 }}{\norm{\vec{n}_1}} \\
-    \label{eq:8} {p} &= \frac{\abs{ \myvec{\cos\theta & -\sin\theta}\myvec{0\\0} - {k}\cos2\theta}}{\sqrt{{\cos\theta}^2 + {\sin\theta}^2}} \\
-    \label{eq:9} {p} &= \abs{{k}\cos2\theta} \\
-    \label{eq:10} \implies {p}^2 &= {k}^2\cos^2 2\theta\\
-    \label{eq:11} {q} &= \frac{\abs{  \vec{n}_2^{\top}\vec{x}-{c}_2 }}{\norm{\vec{n}_2}} \\
-    \label{eq:12} {q} &= \frac{\abs{ \myvec{\sin\theta & \cos\theta}\myvec{0\\0} - \frac{1}{2}{k}\sin2\theta}}{\sqrt{{\sin\theta}^2 + {\cos\theta}^2}} \\
-    \label{eq:13} {q} &= \abs{ \frac{1}{2}{k}\sin2\theta}\\
-    \label{eq:14} \implies {q}^2 &= \frac{1}{4}{k}^2\sin^2 2\theta
-\end{align}
-
-Therefore using \eqref{eq:10} and \eqref{eq:14}, we get:
-\begin{align}
-    {p}^2 + 4{q}^2 = {k}^2\cos^2 2\theta + 4 \brak{\frac{1}{4}}{k}^2\sin^2 2\theta \\
-    \implies {k}^2\brak{\cos^2 2\theta + \sin^2 2\theta} = {k}^2
-\end{align}
-
-\end{document}

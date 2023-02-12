@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -137,87 +138,83 @@ columns=fullflexible
 
 
 \begin{enumerate}
-\item If a line intersects two concentric circles (circles
-with the same centre) with centre $\vec{O}$ at $\vec{A}$, $\vec{B}$, $\vec{C}$ and $\vec{D}$, prove that $AB = CD$.
-\begin{figure}[ht]
-\centering
-\includegraphics[width = \columnwidth]{figs/fig.png}
-\caption{Graph}
-\label{fig:1}
-\end{figure}
 
 \textbf{Solution:}
+\fi
+See Table \ref{tab:chapters/9/10/4/4/1}.
 Let the equations of two concentric circles be,
 \begin{align}
 \norm{\vec{x}}^2 &= 4
-\label{eq:1}\\
+\label{eq:chapters/9/10/4/4/1}\\
 \norm{\vec{x}}^2 &= 9
-\label{eq:2}
+\label{eq:chapters/9/10/4/4/2}
 \end{align}
-The parameter $\mu$ of the points of intersection of line \eqref{eq:3} with the conic section \eqref{eq:4}
-\begin{align}
+Consider the line
+		\begin{align}
 \vec{x} &= \vec{h} + \mu \vec{m}
-\label{eq:3}\\
-\text{g}\brak{\vec{x}} &= \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
-\label{eq:4}
+\label{eq:chapters/9/10/4/4/3}\\
 \end{align}
-is given by the equation 
+ with parameters
+\begin{align}
+\vec{h} = \myvec{1\\0}, \, \vec{m} &= \myvec{0\\1}
+\label{eq:chapters/9/10/4/4/6}
+\end{align} 
+Then,
 \begin{align}
 \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} 
 	+ \text{g}\brak{\vec{h}} &=0
-\label{eq:5}
+\label{eq:chapters/9/10/4/4/5}
 \end{align}
-For the line to intersect the conic at 2 points, the discriminant of the quadratic equation \eqref{eq:6} should be greater than 0.
+with
 \begin{align}
-\Delta &> 0\\
-{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}}^2-\text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}} &> 0
+\text{g}\brak{\vec{x}} &= \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
+\label{eq:chapters/9/10/4/4/4}
 \end{align}
-Because the circles are concentric, if the line intersects the smaller circle then, we can say that the line satisfies the given conditions.
+Substituting
 \begin{align}
 \vec{V} = \vec{I}, \, \vec{u} = \vec{O}, \, f &= -4
 \end{align}
-Consider
+the points of intersection of circle \eqref{eq:chapters/9/10/4/4/1} and the line \eqref{eq:chapters/9/10/4/4/3} with parameters given by \eqref{eq:chapters/9/10/4/4/6} $\vec{B},\vec{C}$ are given by,
 \begin{align}
-\vec{h} = \myvec{1\\0}, \, \vec{m} &= \myvec{0\\1}
-\label{eq:6}\\
-\vec{m}^{\top}\vec{V}\vec{m} & = 1\\
-\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= 0 \\
-\text{g}\brak{\vec{h}} &= -3\\
-\Delta &= 0^2 - 4\brak{1}\brak{-3}\\
-\Delta &> 0
-\end{align} 
-The points of intersection of circle \eqref{eq:1} and the line \eqref{eq:3} with parameters given by \eqref{eq:6} $\vec{B},\vec{C}$ are given by,
+\mu ^2 - 3 &= 0
+\implies \mu = \pm \sqrt{3}
+\end{align}
+yielding
 \begin{align}
-\mu ^2 - 3 &= 0\\
-\mu &= \pm \sqrt{3}\\
 \vec{B} = \myvec{1\\\sqrt{3}}, \, \vec{C} &= \myvec{1\\-\sqrt{3}}
 \end{align}
-
-The points of intersection of circle \eqref{eq:2} and the line \eqref{eq:3} with parameters given by \eqref{eq:6} $\vec{A},\vec{D}$ are given by,
+Substituting
 \begin{align}
 \vec{V} = \vec{I}, \, \vec{u} = \vec{O}, \, f &= -9\\
-\vec{h} = \myvec{1\\0}, \, \vec{m} &= \myvec{0\\1}\\
-\vec{m}^{\top}\vec{V}\vec{m} & = 1\\
-\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= 0 \\
-\text{g}\brak{\vec{h}} &= -8\\
-\mu ^2 - 8 &= 0\\
-\mu &= \pm 2\sqrt{2}
 \end{align}
+The points of intersection of circle \eqref{eq:chapters/9/10/4/4/2} and the line \eqref{eq:chapters/9/10/4/4/3} with parameters given by \eqref{eq:chapters/9/10/4/4/6} $\vec{A},\vec{D}$ are given by,
 \begin{align}
-\vec{A} = \myvec{1\\2\sqrt{2}}, \, \vec{D} &= \myvec{1\\-2\sqrt{2}}\\
-\norm{\vec{A}-\vec{B}} &= \norm{\myvec{0 \\ 2\sqrt{2}-\sqrt{3}}}\\
-&=  2\sqrt{2}-\sqrt{3}\\
-\norm{\vec{C}-\vec{D}} &= \norm{\myvec{0 \\ 2\sqrt{2}-\sqrt{3}}}\\
-&=  2\sqrt{2}-\sqrt{3}
+\mu ^2 - 8 &= 0
+\implies \mu = \pm 2\sqrt{2}
 \end{align}
-Hence $AB = CD$.
-The parameters used in the construction are shown in the below table \ref{tab:1}
-
+yielding
+\begin{align}
+\vec{A} = \myvec{1\\2\sqrt{2}}, \, \vec{D} &= \myvec{1\\-2\sqrt{2}}
+\end{align}
+Thus,
+\begin{align}
+\norm{\vec{A}-\vec{B}} 
+	&=\norm{\vec{C}-\vec{D}} 
+=  2\sqrt{2}-\sqrt{3}
+\\
+	\implies AB &= CD.
+\end{align}
 \begin{table}[h]
 \centering
-\input{tables/table1.tex}
+\input{chapters/9/10/4/4/tables/table1.tex}
 \caption{}
-\label{tab:1}
+\label{tab:chapters/9/10/4/4/1}
 \end{table}
-\end{enumerate}
-\end{document}
+See Fig. 
+\ref{fig:chapters/9/10/4/4/1}
+\begin{figure}[ht]
+\centering
+\includegraphics[width = \columnwidth]{chapters/9/10/4/4/figs/fig.png}
+\caption{}
+\label{fig:chapters/9/10/4/4/1}
+\end{figure}

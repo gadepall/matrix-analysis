@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt]{article}
 \usepackage{graphicx}
 \usepackage[none]{hyphenat}
@@ -48,36 +49,17 @@ This is Problem 11 from Exercise-10.3
 
 \solution
 Given 
+\fi
+The given line parameters are
 \begin{align}
-\text{ Let }\vec{P}=\myvec{x_1\\y_1}\\
-Ax+By+C=0
-\label{eq:1}
+\vec{n}=\myvec{A\\B}, \, c = C
 \end{align}
-The line equation is
+Let 
 \begin{align}
-\vec{n}^{\top}\vec{x}=c
+\vec{P}=\myvec{x_1\\y_1}\\
 \end{align}
-from \eqref{eq:1}
-
+Then the equation of the desired line is
 \begin{align}
-\vec{n}=\myvec{A\\B}
+	\vec{n}^\top\brak{\vec{x}-\vec{P}}&=0\\
+	\implies A(x-x_1)+B(y-y_1)&=0
 \end{align}
-The line passing through the $\vec{P}$ is parallel to line $Ax+By+C=0$.\\
-The line equation for line passing through $\vec{P}$ is
-\begin{align}
-\vec{n}^{\top}\vec{m}=0\\
-\vec{n}^\top\brak{\vec{x}-\vec{P}}=0\\
-\myvec{A&B}\brak{\myvec{x\\y}-\myvec{x_1\\y_1}}=0\\
-\myvec{A&B}\myvec{x-x_1\\y-y_1}=0\\
-A(x-x_1)+B(y-y_1)=0
-\end{align}
-\begin{figure}[!h]
-	\begin{center}
-		\includegraphics[width=\columnwidth]{./figs/fig.png}
-	\end{center}
-\caption{}
-\label{fig:Fig1}
-\end{figure}
-
-\end{enumerate}
-\end{document}
