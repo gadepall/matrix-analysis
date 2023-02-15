@@ -1,0 +1,82 @@
+\iffalse
+\documentclass[10pt]{article}
+       \usepackage[latin1]{inputenc}
+       \usepackage{fullpage}
+       \usepackage{color}
+       \usepackage{array}
+       \usepackage{longtable}
+       \usepackage{calc}
+       \usepackage{multirow}
+       \usepackage{hhline}
+       \usepackage{ifthen}
+\usepackage{graphicx}
+\def\inputGnumericTable{}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\begin{document}
+
+\begin{center}
+\title{\textbf{STRAIGHT LINES}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\section{11$^{th}$ Maths - Chapter 10}
+This is Problem 5 from Exercise-10.4
+\begin{enumerate}
+
+\solution
+\fi
+Let
+\begin{align}
+	\vec{A}=\myvec{\cos\theta\\\sin\theta},\vec{B}&=\myvec{\cos\phi\\\sin\phi}\\
+\implies	\vec{m}=\vec{B}-\vec{A}&=\myvec{\cos\phi-\cos\theta\\\sin\phi-\sin\theta}
+\end{align}
+The normal vector is then given by,
+\begin{align}
+\vec{n}=\myvec{\sin\phi-\sin\theta\\\cos\theta-\cos\phi} \implies
+\norm{\vec{n}}=2\sin\brak{\frac{\phi-\theta}{2}}
+\end{align}
+The equation of the line is
+\begin{align}
+\vec{n}^\top\brak{\vec{x}-\vec{A}}&=0\\
+\implies\myvec{\sin\phi-\sin\theta&\cos\theta-\cos\phi}\vec{x}&=\sin\brak{\phi-\theta}
+\label{eq:chapters/11/10/4/5/1}
+\end{align}
+Thus, 
+\begin{align}
+c=\sin\brak{\phi-\theta}
+\end{align}
+The perpendicular distance from the origin to the line is
+\begin{align}
+d&=\frac{\abs{c}}{\norm{\vec{n}}}\\
+\implies d&=\frac{\sin\brak{\phi-\theta}}{2\sin\brak{\frac{\phi-\theta}{2}}} = \cos\brak{\frac{\phi-\theta}{2}}
+\label{eq:chapters/11/10/4/5/2}
+\end{align}
