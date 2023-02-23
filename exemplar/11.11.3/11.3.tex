@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CLASS-11\\CHAPTER-11 \\ CONIC SECTIONS}
+\end{center}
+
+\section*{EXERCISE - 11.3}
+\section*{Short Answer Type}
+\begin{enumerate}
+ \item Find the equatian of the circle which touches the both axes in first quadrant and whose radius is a.
+ \item Show that the point (x,y) given by $x=\frac{2at}{1+t^2}$ and $y=\frac{a(1-t^2)}{1+t^2}$ lies on a cirecle for all real values of t such that -1$\le t \le $1 where a is any given real numbers. 
+ \item lf a circle passes through the point (0,0),(a,0) and (0,b) then find the coordinates of its centre.
+ \item Find the equation of the cirecle which touches x-axis and whose centre is (1,2)
+ \item lf the lines 3x-4y+4=0 and 6x-8y-7=0 are tangents to a circle, then find the radius of the circle.
+ [Hint:Distance between given parallel lines gives the diameter of the circle.]
+ \item Find the equation of a circle which touches  both the axes and the line 3x-4y+8=0 and lies in the third quadreant
+ [Hint:Let a be the radius of the circle, then (-a,-a) will be centre and perpendicular distance from the centre to the given line gives the radius of the circle.]
+ \item If one end of a diameter of the circle $x^2+y^2-4x-6y+11 =0$ is (3,4), then find the coordinate of the other end of the diameter.
+ \item Find the equation of the circle having (1,-2) as its centre  and passing through 3x+y=14, 2x+5y=18
+ \item If the line y=$\sqrt{3}$x+K touches the circle $x^2=16y,$ then find the value of K.
+ [Hint:Equate perpendicular distance from the centre of the cirle to its redius].
+ \item Find the equation of a circle concentric with the circle $x^2+y^2-6x+1$2y+15=0 and has double of its orea.
+ [Hint:cancentric circles have the same [entre.]
+ \item If the latus rectum of an ellipse is equal to half of minor axis, then find its eccentricity.
+ \item Given the ellipse with equatian $9x^2+25y^2=225,$ find the eccentricity and focl.
+ \item If the eccentricity of an ellipse is $\frac{5}{8}$ and  the distance between its foci is 10 then find latus rectum of the ellipse.
+ \item Find the equatian of ellipse whose eccentricity is $\frac{2}{3}$,latus rectum is 5 and the centre is(0,0).
+ \item Find the distance between the directrices of the ellipse $\frac{x^2}{36}+\frac{y^2}{20}$
+ \item Find the coordinates of a point on the parabla $y^2=8x$ whose focal distance is 4.
+ \item Find the length of the line-segment joining the vertex of the parabola $y^2=4ax$ and a point on the parabola where the line - segment makes an angle 0 to the x-axis.
+\item If the points (0,4) and (0,2) are respectively the vertex and focus of a parabola. then find the equation of the parabola
+\item If the line y=mx+1 is tangent to the parabolay $y^2=4x$ then find the value of m.
+[Hint:solving the equatian of line  and parbola, we obtain a quadratic . equatian and then apply the tangency condition giving the value of m]
+\item If the distance between the foci of a hyperbola is 16 and its eccentricity is $\sqrt{2}$, then obtain the equatian of the hyperbola.
+\item Find the eccentricity of the hyperbola $9y^2-4x^2=36$.
+\item Find the equation of the hyperbola with eccentricity $\frac{3}{2}$ and fociat $(\pm2,0)$.
+
+\section*{Long Answer Type}
+
+\item If the lines 2x-3y=5 and 3x-4y=7 are the diameters of a circie of area 154 squar untits, then obtian the equation of the circle.
+\item Find the equatian of the circle which passes through the points (2,3) and (4,5) and the centre lies on the straight line y-4x+3=0.
+\item Find the equation of a circle whose centre is (3,1) and which cuts offachord of length  6 units on the  line 2x-5y+18=0
+[Hint:To detemine the radius of the circle, find the perpendicular distance from the centre to the given line]
+\item Find the equation of a circle of redius 5 which is touching another circle $x^2+y^2-2x-4y-20=0$ at (5,5).
+\item Find the equation of a circle passing through the point (7,3) having radius 3 units and whose centre lies on the line y=x-1
+\item Find the equation of each of the following parabolas
+\begin{enumerate}
+\item  Directrix x=0. focus ot (6,0)
+\item  vertex  ot (0,4), focus at (0,2)
+\item  Focus at (-1,2), directrix x-2y+3=0
+\end{enumerate}
+\item Find the equation of the set of all points the sum of whose distances  from the points (3,0) and (9,0) is 12.
+\item Find the equatian of the set of all pints whose distance from (0,4) are 2$\pm$3 of their distance from the line y=9.
+\item show that the set of all points such that the difference of their distances from (4,0) and (-4,0) is always equal to 2 represent a hyperbola .
+ Find the equation of the hyperbola with
+ \begin{enumerate}
+	 \item  vertices $(\pm5,0)$, focic $(\pm 7,0)$
+	 \item vertices $(0\pm7)$ ,e =$\frac{4}{3}$ 
+	 \item  Foci (0,$\pm\sqrt{10})$. passing through (2,3)
+\end{enumerate}
+\section*{Objective Type Questions }
+\item State whether the statements in each of the exercis from 33 to 40 are Trueor False justify
+\item The line $x^2+3y=0$ is a diameter of the circle $x^2+y^2+6x+2y=0$.
+\item The shortest distance from the point (2,7) to the circle $x^2+y^2$- 14x-10y-151=0 is equal to 5.
+[Hint:The shortest distance is equal to the difference of the redius and the distance between  the  cntre and the given point.]
+\item lf the line lx+my=1 is a tangent to the circle $x^2+y^2=a^2$, then the ponit (1,m) lies an a circle.
+[Hint:use that distance from tne centre of the centre of the circle to the given line is equal to radius of the circle.]
+\item If ${P}$ is a point (38) on the ellipse $\frac{x^2}{16}+\frac{y^2}{25}=1$ whose foci  are s and s' then Ps +Ps'=8.
+\item The point (1,2) lies inside the cirecle $x^2+y^2-2x+6y+1=0$,
+\item The line 1x+my+n=0 will touch the parabola $y^2=4 ax$ if $ln =am^2$,
+\item The line 2x+3y=12 touches the ellipse $\frac{x^2}{9}+\frac{y^2}{4}=2$ at the point (3,2).
+\item The locus of the point of intersecton of lines $\sqrt{3}x+y-4\sqrt{3}k=0$ and $\sqrt{3}=0\sqrt{3}kx+ky-4\sqrt{3}=0$ for different value of K is a hyperboia whose eccentricity is 2.
+[Hint: Eliminate k between the given equations]
+\end{enumerate}
+Fill in the Blank in Exercises from 41 to 46.
+\begin{enumerate}[resume]
+\item The equation of the circle having centre at (3,-4) and touching the line 5x+12y-12=0 is \makebox[1cm]{\hrulefill}                     
+[Hint: To determine radius find the perpendicular distance  from the centre of the circle to the line.]
+\item The equation of the circle circm scriding the triangle whose sides are the lines y=x+2,3y=4x,2y=3x is  \makebox[1cm]{\hrulefill}         
+\item An ellipse is described by using an endless string which is passed over two pins lf the oxes are 6cm and 4cm, the length of the string and distance between the pins are  \makebox[1cm]{\hrulefill}             
+\item The equation of the llipse having foci (0,1),(0,1) and minor axis of length is \makebox[1cm]{\hrulefill}                
+\item The equation of the parabola having focus at (-1,-2) and the directrix x-2y+3=0 is \makebox[1cm]{\hrulefill}   
+\item The equatian of the hyperbola with vertices ot $(0,\pm6)$ and eccntricity $\frac{5}{3}$ is and its foci are \makebox[1cm]{\hrulefill}
+\end{enumerate}        
+Choose the corret answer out of the given four aptions (M.C.Q.) in exercise 47 to 59.
+\begin{enumerate}[resume]
+\item The area of the circle centred ot (1,2) and passing through (4,6) is
+\begin{enumerate}
+\item 5$\mu$ 
+\item 10$\mu$
+ \item 25$\mu$ 
+\item none of these
+\end{enumerate}
+\item Equatian of the circle with centre on the Y-axis and passing through the orgin and the point (2,3) is
+\begin{enumerate}
+\item $x^2+y^2+6x+6y+3=0$ 
+\item $x^2+y^2-6x-6y-9=0$
+\item $x^2+y^2-6x-6y+9=0$
+\item none of these
+\end{enumerate}
+\item Equatian of the circle with centre on the  y-axis and passing through the origin and the point (2,3) is  
+\begin{enumerate}
+\item $x^2+y^2+13y=0$
+\item $3x^2+3y^2+13x+3=0$
+\item $6x^2+6y^2-13x=0$
+\item $x^2+y^2+13x+3=0$
+\end{enumerate}
+\item The equatian of a circle with origin as centre and passing through the vertices of an equilateral triangle whose median is of lengh 3 a is
+\begin{enumerate}
+\item $x^2+y^2=9a^2$
+\item $x^2+y^2=16a^2$
+\item $x^2+y^2=4a^2$
+\item $x^2+y^2=a^2$
+	[Hint: centroid of the triangle caincdes with the centre of the circle and the redius of the circle is $\frac{2}{3}$of the length of the median]
+\end{enumerate}
+\item If the focus of a parabola is (0,-3) and its directrix is y=3, then its equation is
+\begin{enumerate}
+\item $x^2=-12y$
+\item $x^2=12y$
+\item $y^2=-12x$
+\item $y^2=12x$
+\end{enumerate}
+\item If the parabola $y^2=4ax$ passes through the point (3,2), then the length of its latus rectum is
+\begin{enumerate}
+\item 2$\pm$3
+\item 4$\pm$4
+\item 1$\pm$3
+\item 4
+\end{enumerate}
+\item If the vertex of the parabola is the point (-3,0) and the directrix is the line x+5=0, then its equation is
+\begin{enumerate}
+\item $y^2=8(x+3)$
+\item $x^2=8(y+3)$
+\item $y^2=-8(x+3)$
+\item $y^2=8(x+5)$
+\end{enumerate}
+\item The equatian of the ellipse whose focus is (1,-1), the directrix the line x-y-3
+=0 and eccentricity 1pm2 is
+\begin{enumerate}
+\item $7x^2+2xy+7y^2-10x+10y+7=0$
+\item $7x^2+2xy+7y^2+7=0$
+\item $7x^2+2xy+7y^2+10x-10y-7=0$ 
+\item none
+\end{enumerate}
+\item The length of the latus rectum of the ellipes $3x^2+y^2=12$ is
+\begin{enumerate}
+\item 4
+\item 3
+\item 8
+\item $4\sqrt{3}$
+\end{enumerate}
+\item lf e is the eccentricity of the ellipes $\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a<b)$,then
+\begin{enumerate}
+\item $b^2=a^2(1-e^2)$
+\item $a^2=b^2(1-e^2)$
+\item $a^2=b^2(e^-1)$
+\item $b^2=a^2(e^2-1)$
+\end{enumerate}
+\item The eccentricity of the hyperbola whose latus rectum is 8 and conjugate axis is equal to half of th distance between the foci is 
+\begin{enumerate}
+\item $4\pm3$
+\item $\frac{4}{\sqrt{3}}$
+\item $\frac{2}{\sqrt{3}}$
+\item none of these
+\end{enumerate}
+\item The distance between the foci of a hyperbola is 16 and its eccentricity is $\le{2}$. lts equation is
+\begin{enumerate}
+\item $x^2-y^2=3^2$
+\item $\frac{x^2}{4-}\frac{y^2}{9}=1$
+\item $2x-3y^2=7$
+ \item none of these
+ \end{enumerate}
+ \item Equation of the hyperbola with eccentricty 3$\pm$2 and foci at ($\pm2,0)$ is
+\begin{enumerate} 
+	\item $\frac{x^2}{4}-\frac{y^2}{5}=\frac{4}{9}$
+
+	\item  $\frac{x^2}{9}-\frac{y^2}{9}=\frac{4}{9}$
+	\item  $\frac{x^2}{4}-\frac{y^2}{9}=1$
+\item  none of these.
+\end{enumerate}
+\end{enumerate}
+\end{document}

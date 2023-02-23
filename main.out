@@ -33,50 +33,51 @@
 \BOOKMARK [1][-]{section.3.2}{Construction of Tangents to a Circle}{chapter.3}% 33
 \BOOKMARK [0][-]{chapter.4}{Constructions}{}% 34
 \BOOKMARK [1][-]{section.4.1}{Triangle Constructions}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.2}{ Quadrilateral Construction}{chapter.4}% 36
-\BOOKMARK [0][-]{chapter.5}{Circle Construction}{}% 37
-\BOOKMARK [1][-]{section.5.1}{Equal Chords}{chapter.5}% 38
-\BOOKMARK [1][-]{section.5.2}{Inscribed Polygons }{chapter.5}% 39
-\BOOKMARK [1][-]{section.5.3}{Miscellaneous}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.4}{Tangent to a Circle}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.5}{Tangents from a Point}{chapter.5}% 42
-\BOOKMARK [0][-]{chapter.6}{Conics}{}% 43
-\BOOKMARK [1][-]{section.6.1}{Parabola}{chapter.6}% 44
-\BOOKMARK [1][-]{section.6.2}{Ellipse}{chapter.6}% 45
-\BOOKMARK [1][-]{section.6.3}{Hyperbola}{chapter.6}% 46
-\BOOKMARK [1][-]{section.6.4}{Miscellaneous}{chapter.6}% 47
-\BOOKMARK [1][-]{section.6.5}{Exemplar}{chapter.6}% 48
-\BOOKMARK [1][-]{section.6.6}{Exemplar}{chapter.6}% 49
-\BOOKMARK [0][-]{chapter.7}{Intersection of Conics}{}% 50
-\BOOKMARK [1][-]{section.7.1}{Chords }{chapter.7}% 51
-\BOOKMARK [1][-]{section.7.2}{Curves}{chapter.7}% 52
-\BOOKMARK [1][-]{section.7.3}{Miscellaneous}{chapter.7}% 53
-\BOOKMARK [0][-]{chapter.8}{Tangent And Normal}{}% 54
-\BOOKMARK [1][-]{section.8.1}{Properties}{chapter.8}% 55
-\BOOKMARK [1][-]{section.8.2}{Miscellaneous}{chapter.8}% 56
-\BOOKMARK [0][-]{appendix.A}{ Vectors}{}% 57
-\BOOKMARK [1][-]{section.A.1}{21 vectors}{appendix.A}% 58
-\BOOKMARK [1][-]{section.A.2}{31 vectors}{appendix.A}% 59
-\BOOKMARK [0][-]{appendix.B}{Matrices}{}% 60
-\BOOKMARK [1][-]{section.B.1}{Eigenvalues and Eigenvectors}{appendix.B}% 61
-\BOOKMARK [1][-]{section.B.2}{Determinants}{appendix.B}% 62
-\BOOKMARK [1][-]{section.B.3}{Rank of a Matrix}{appendix.B}% 63
-\BOOKMARK [1][-]{section.B.4}{Inverse of a Matrix}{appendix.B}% 64
-\BOOKMARK [1][-]{section.B.5}{Orthogonality}{appendix.B}% 65
-\BOOKMARK [1][-]{section.B.6}{Singular Value Decomposition}{appendix.B}% 66
-\BOOKMARK [0][-]{appendix.C}{Triangle Constructions}{}% 67
-\BOOKMARK [0][-]{appendix.D}{Linear Forms}{}% 68
-\BOOKMARK [1][-]{section.D.1}{Two Dimensions}{appendix.D}% 69
-\BOOKMARK [1][-]{section.D.2}{Three Dimensions}{appendix.D}% 70
-\BOOKMARK [0][-]{appendix.E}{Quadratic Forms}{}% 71
-\BOOKMARK [1][-]{section.E.1}{Conic equation }{appendix.E}% 72
-\BOOKMARK [1][-]{section.E.2}{Circles}{appendix.E}% 73
-\BOOKMARK [1][-]{section.E.3}{Standard Form}{appendix.E}% 74
-\BOOKMARK [0][-]{appendix.F}{Conic Parameters}{}% 75
-\BOOKMARK [1][-]{section.F.1}{Standard Form}{appendix.F}% 76
-\BOOKMARK [1][-]{section.F.2}{Quadratic Form }{appendix.F}% 77
-\BOOKMARK [0][-]{appendix.G}{Conic Lines}{}% 78
-\BOOKMARK [1][-]{section.G.1}{Pair of Straight Lines}{appendix.G}% 79
-\BOOKMARK [1][-]{section.G.2}{Intersection of Conics}{appendix.G}% 80
-\BOOKMARK [1][-]{section.G.3}{ Chords of a Conic}{appendix.G}% 81
-\BOOKMARK [1][-]{section.G.4}{ Tangent and Normal}{appendix.G}% 82
+\BOOKMARK [1][-]{section.4.2}{Exemplar}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.3}{ Quadrilateral Construction}{chapter.4}% 37
+\BOOKMARK [0][-]{chapter.5}{Circle Construction}{}% 38
+\BOOKMARK [1][-]{section.5.1}{Equal Chords}{chapter.5}% 39
+\BOOKMARK [1][-]{section.5.2}{Inscribed Polygons }{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.3}{Miscellaneous}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Tangent to a Circle}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.5}{Tangents from a Point}{chapter.5}% 43
+\BOOKMARK [0][-]{chapter.6}{Conics}{}% 44
+\BOOKMARK [1][-]{section.6.1}{Parabola}{chapter.6}% 45
+\BOOKMARK [1][-]{section.6.2}{Ellipse}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.3}{Hyperbola}{chapter.6}% 47
+\BOOKMARK [1][-]{section.6.4}{Miscellaneous}{chapter.6}% 48
+\BOOKMARK [1][-]{section.6.5}{Exemplar}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.6}{Exemplar}{chapter.6}% 50
+\BOOKMARK [0][-]{chapter.7}{Intersection of Conics}{}% 51
+\BOOKMARK [1][-]{section.7.1}{Chords }{chapter.7}% 52
+\BOOKMARK [1][-]{section.7.2}{Curves}{chapter.7}% 53
+\BOOKMARK [1][-]{section.7.3}{Miscellaneous}{chapter.7}% 54
+\BOOKMARK [0][-]{chapter.8}{Tangent And Normal}{}% 55
+\BOOKMARK [1][-]{section.8.1}{Properties}{chapter.8}% 56
+\BOOKMARK [1][-]{section.8.2}{Miscellaneous}{chapter.8}% 57
+\BOOKMARK [0][-]{appendix.A}{ Vectors}{}% 58
+\BOOKMARK [1][-]{section.A.1}{21 vectors}{appendix.A}% 59
+\BOOKMARK [1][-]{section.A.2}{31 vectors}{appendix.A}% 60
+\BOOKMARK [0][-]{appendix.B}{Matrices}{}% 61
+\BOOKMARK [1][-]{section.B.1}{Eigenvalues and Eigenvectors}{appendix.B}% 62
+\BOOKMARK [1][-]{section.B.2}{Determinants}{appendix.B}% 63
+\BOOKMARK [1][-]{section.B.3}{Rank of a Matrix}{appendix.B}% 64
+\BOOKMARK [1][-]{section.B.4}{Inverse of a Matrix}{appendix.B}% 65
+\BOOKMARK [1][-]{section.B.5}{Orthogonality}{appendix.B}% 66
+\BOOKMARK [1][-]{section.B.6}{Singular Value Decomposition}{appendix.B}% 67
+\BOOKMARK [0][-]{appendix.C}{Triangle Constructions}{}% 68
+\BOOKMARK [0][-]{appendix.D}{Linear Forms}{}% 69
+\BOOKMARK [1][-]{section.D.1}{Two Dimensions}{appendix.D}% 70
+\BOOKMARK [1][-]{section.D.2}{Three Dimensions}{appendix.D}% 71
+\BOOKMARK [0][-]{appendix.E}{Quadratic Forms}{}% 72
+\BOOKMARK [1][-]{section.E.1}{Conic equation }{appendix.E}% 73
+\BOOKMARK [1][-]{section.E.2}{Circles}{appendix.E}% 74
+\BOOKMARK [1][-]{section.E.3}{Standard Form}{appendix.E}% 75
+\BOOKMARK [0][-]{appendix.F}{Conic Parameters}{}% 76
+\BOOKMARK [1][-]{section.F.1}{Standard Form}{appendix.F}% 77
+\BOOKMARK [1][-]{section.F.2}{Quadratic Form }{appendix.F}% 78
+\BOOKMARK [0][-]{appendix.G}{Conic Lines}{}% 79
+\BOOKMARK [1][-]{section.G.1}{Pair of Straight Lines}{appendix.G}% 80
+\BOOKMARK [1][-]{section.G.2}{Intersection of Conics}{appendix.G}% 81
+\BOOKMARK [1][-]{section.G.3}{ Chords of a Conic}{appendix.G}% 82
+\BOOKMARK [1][-]{section.G.4}{ Tangent and Normal}{appendix.G}% 83

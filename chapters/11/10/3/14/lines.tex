@@ -1,0 +1,134 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{mathtools}
+\usepackage{listings}
+\let\vec\mathbf
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{LINES}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{CHAPTER 11 - STRAIGHT LINES}
+\section*{Excercise 10.3}
+\solution 
+\begin{enumerate}
+\item[Q14.] Find the coordinates of the foot of the perpendicular from (-1 3) to the line 3x-4y-16=0.  
+\section{Solution}
+The given perpendicular point can be taken as,
+\begin{align}
+ \vec{P}=\myvec{
+-1\\
+3
+}
+\end{align}
+Let us assume the coordinates is $\vec{A}$.
+To find the coordinates of foot of perpendicular from point to line is given as:
+\begin{align}
+\myvec{
+\vec{m}&\vec{n}
+}^\top \vec{A} = \myvec{
+\vec{m}^\top\\
+\vec{c}
+}
+\end{align}
+Now, line given 
+\begin{align}
+3x-4y-16 &=0\\
+3x-4y&=16
+\end{align}
+Therefore, it can be equated as
+\begin{align}
+\vec{n}^\top \vec{x} = \vec{c}      \label{4}
+\end{align}
+where,
+\begin{align}
+\vec{n}=\myvec{
+3\\
+-4
+}, \vec{c}=16
+\end{align}
+Here $\vec{m}$ is directional vector of the given line
+\begin{align}
+\vec{m}=\myvec{
+4\\3}
+\end{align}
+Substituting all values in (4), we get
+\begin{align}
+\myvec
+{4&3\\3&-4}\vec{A}&=\myvec{(4&3)&\myvec{-1\\3}\\&16}\\
+\myvec
+{4&3\\3&-4}\vec{A}&=\myvec{5\\16}  \label{9}
+\end{align}
+The augmented matrix for the system equations in (9) is expressed as
+\begin{align}
+  \myvec{
+   4 &  3  & 5\\
+   3 & -4  & 16} 
+\\
+  \xleftrightarrow[]{R_2=R_2-\frac{3}{4}R_1}
+  \myvec{
+  4 & 3 & 5\\
+  0 & \frac{-25}{4} & \frac{49}{4}} 
+\\
+  \xleftrightarrow{R_2=\frac{-4}{25}}
+  \myvec{
+  4 & 3 & 5\\
+  0 & 1 & \frac{-49}{25}}
+\\
+  \xleftrightarrow{R_1=\frac{1}{4}R_1}
+  \myvec{
+  1 & \frac{3}{4} & \frac{5}{4}\\
+  0 & 1 & \frac{-49}{25}}
+\\
+  \xleftrightarrow{R_1=R_1-\frac{3}{4}R_2}
+  \myvec{
+  1 & 0 & \frac{68}{25}\\
+  0 & 1 & \frac{-49}{25}}          
+\end{align}
+Hence,
+\begin{align}
+\vec{A}=\myvec{
+\frac{68}{25}\\[1pt]
+\frac{-49}{25}
+}
+\end{align}
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{figs/lines.png}
+	\end{center}
+\caption{Foot of Perpendicular from point P and given line}
+\label{fig:Fig}
+\end{figure}
+\end{enumerate}
+\end{document}
