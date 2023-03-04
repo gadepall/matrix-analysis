@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -97,20 +98,18 @@ columns=fullflexible
 \author{Lokesh Surana}
 \maketitle
 \section*{Class 11, Chapter 11, Exercise 4.5}
-Q. Find the coordinates of the foci and the vertices, the eccentricity and the length of the latus rectum of the hyperbolas, whose equation is given by $5{y^2}-9{x^2}=36$.
-
+\fi
 The equation of the hyperbola can be rearranged as
 \begin{align}
-	\label{eq:1}
+	\label{eq:chapters/11/11/4/5/1}
 	-x^2 + \frac{5}{9}y^2 -4 = 0
 \end{align}
 The above equation can be equaded to the generic equation of conic sections
 \begin{align}
-	\label{eq:2}
+	\label{eq:chapters/11/11/4/5/2}
 	g\brak{\vec{x}}=\vec{x}^\top \vec{V} \vec{x} + 2\vec{u}^\top \vec{x} + f = 0
 \end{align}
-
-Comparing coefficients of both equations \eqref{eq:1} and \eqref{eq:2}
+Comparing coefficients of both equations \eqref{eq:chapters/11/11/4/5/1} and \eqref{eq:chapters/11/11/4/5/2}
 \begin{align}
 	\label{3}
 	\vec{V} &= \myvec{-1&0\\0&\frac{5}{9}}\\
@@ -131,13 +130,13 @@ From equation \eqref{3}, since $\vec{V}$ is already diagonalized, the eigen valu
 \end{align}
 \item For the standard hyperbola, the coordinates of Focii are given as
 \begin{align}
-	\label{eq:4}
+	\label{eq:chapters/11/11/4/5/4}
 	\vec{F} = \pm \frac{\brak{\frac{1}{e\sqrt{1-e^2}}}\brak{e^2}\sqrt{\frac{\lambda_1}{f_0}}}{\frac{\lambda_1}{f_0}} \vec{e}_2
 \end{align}
 where
 \begin{align}
 	f_0 &= -f\\
-	\eqref{eq:4} \implies &= \pm \frac{\brak{\frac{1}{\frac{\sqrt{14}}{3}\sqrt{1-\frac{14}{9}}}}\brak{\frac{14}{9}}\sqrt{\frac{-1}{4}}}{\frac{-1}{4}} \vec{e}_2\\
+	\eqref{eq:chapters/11/11/4/5/4} \implies &= \pm \frac{\brak{\frac{1}{\frac{\sqrt{14}}{3}\sqrt{1-\frac{14}{9}}}}\brak{\frac{14}{9}}\sqrt{\frac{-1}{4}}}{\frac{-1}{4}} \vec{e}_2\\
 	&= \pm \myvec{0\\\frac{6}{2\sqrt{\frac{14}{5}}}}
 \end{align}
 \item The vertices of the hyperbola are given by
@@ -154,10 +153,9 @@ as length cannot be negative.
 
 \begin{figure}[!h]
 	\begin{center} 
-	    \includegraphics[width=\columnwidth]{figs/hyperbola.png}
+	    \includegraphics[width=\columnwidth]{chapters/11/11/4/5/figs/hyperbola.png}
 	\end{center}
 \caption{}
-\label{fig:1}
+\label{fig:chapters/11/11/4/5/1}
 \end{figure}
 
-\end{document}

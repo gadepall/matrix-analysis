@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt]{article}
 \usepackage{graphicx}
 \usepackage[none]{hyphenat}
@@ -59,19 +60,19 @@
 \end{center}
 \section*{11$^{th}$Math - Chapter 10}
 This is Problem-8 from Exercise 10.4\\\\
-Find the area of triangle formed by the lines $y-x=0, x+y=0, \text{ and } x-k=0$.
 
 \solution\\
-Given line equations represented in vector form:
+\fi
+Given line equations represented in vector form
 \begin{align}
 \myvec{-1&1}\vec{x}&=0
-\label{eq:1}\\
+\label{eq:chapters/11/10/4/8/1}\\
 \myvec{1&1}\vec{x}&=0
-\label{eq:2}\\
+\label{eq:chapters/11/10/4/8/2}\\
 \myvec{1&0}\vec{x}&=k
-\label{eq:3}
+\label{eq:chapters/11/10/4/8/3}
 \end{align}
-The coordinates of the intersection of \eqref{eq:1},\eqref{eq:2}
+The coordinates of the intersection of \eqref{eq:chapters/11/10/4/8/1},\eqref{eq:chapters/11/10/4/8/2}
 \begin{align}
 	\myaugvec{2}{-1&1&0\\1&1&0} 
 	&\xleftrightarrow[]{R_1\leftrightarrow R_2} \myaugvec{2}{1&1&0\\-1&1&0}\\
@@ -81,7 +82,7 @@ The coordinates of the intersection of \eqref{eq:1},\eqref{eq:2}
 \text{ The intersection of lines is }\\
 	\vec{A}&=\myvec{0\\0}
 \end{align}
-The coordinates of the intersection of \eqref{eq:2},\eqref{eq:3}
+The coordinates of the intersection of \eqref{eq:chapters/11/10/4/8/2},\eqref{eq:chapters/11/10/4/8/3}
 \begin{align}
 	\myaugvec{2}{1&1&0\\1&0&k}
 	&\xleftrightarrow[]{R_1\leftrightarrow R_2}
@@ -91,7 +92,7 @@ The coordinates of the intersection of \eqref{eq:2},\eqref{eq:3}
 \text{ The intersection of lines is }\\
 	\vec{B}&=\myvec{k\\-k}
 \end{align}
-The coordinates of the intersection of \eqref{eq:3},\eqref{eq:1}
+The coordinates of the intersection of \eqref{eq:chapters/11/10/4/8/3},\eqref{eq:chapters/11/10/4/8/1}
 \begin{align}
 	\myaugvec{2}{1&0&k\\-1&1&0}
 	&\xleftrightarrow[]{R_2\rightarrow R_2+R_1}
@@ -109,9 +110,8 @@ ar(ABC) &=\frac{1}{2}\norm{(\vec{A}-\vec{B})\times(\vec{A}-\vec{C})}\\
 \end{align}
 \begin{figure}[!h]
 	\begin{center}
-		\includegraphics[width=\columnwidth]{./figs/fig.pdf}
+		\includegraphics[width=\columnwidth]{./chapters/11/10/4/8/figs/fig.pdf}
 	\end{center}
 \caption{}
-\label{figure}
+\label{fig:chapters/11/10/4/8/}
 \end{figure}
-\end{document}

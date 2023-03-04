@@ -1,4 +1,6 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
+\def\inputGnumericTable{}
 \usepackage{setspace}
 \usepackage{gensymb}
 \usepackage{xcolor}
@@ -18,13 +20,22 @@
 \usepackage{longtable}
 \usepackage{multirow}
 \usepackage{enumitem}
-\usepackage{bm}
 \usepackage{mathtools}
 \usepackage{listings}
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows,positioning}
 \usepackage{circuitikz}
-\renewcommand{\vec}[1]{\boldsymbol{\mathbf{#1}}}
+       \usepackage[latin1]{inputenc}
+       \usepackage{fullpage}
+       \usepackage{color}
+       \usepackage{array}
+       \usepackage{longtable}
+       \usepackage{calc}
+       \usepackage{multirow}
+       \usepackage{hhline}
+       \usepackage{ifthen}
+	   \usepackage{setspace}
+\let\vec\mathbf
 \DeclareMathOperator*{\Res}{Res}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
@@ -55,6 +66,7 @@ columns=fullflexible
 \newcommand{\define}{\stackrel{\triangle}{=}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+
 \bibliographystyle{IEEEtran}
 \providecommand{\nCr}[2]{\,^{#1}C_{#2}} % nCr
 \providecommand{\nPr}[2]{\,^{#1}P_{#2}} % nPr
@@ -93,48 +105,60 @@ columns=fullflexible
 \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
 
 \vspace{3cm}
-\title{11.11.1.7}
+\title{\LaTeX\ 9.10.6.7}
 \author{Lokesh Surana}
 \maketitle
-\section*{Class 11, Chapter 11, Exercise 1.7}
+\section*{Class 9, Chapter, 10, Exercse 6.7}
 
-Q. Find the centre and radius of the circle $x^2+y^2-4x-8y-45=0$.  
 
 \solution
-The equation of the circle in vector form is given by
-\begin{align}
-	\label{eq:circle} 
-	\norm{\vec{x}}^2 + 2\vec{u}^{\top}\vec{x} + f = 0
-\end{align}
+\fi
+Consider a unit circle with center at origin.
+Let $AC$ and $BD$ be the diameters of the circle.
+The points on circle that we consider are available in Table \eqref{tab:chapters/9/10/6/7/points}.
+%
+\begin{table}[ht!]
+\input{chapters/9/10/6/7/tables/table.tex}
+\caption{}
+\label{tab:chapters/9/10/6/7/points}
+\end{table}
+%
+\begin{enumerate}
+    \item $AC$ and $BD$ are diameters of the circle. Let's check if they bisect each other,
+    \begin{align}
+        \vec{A} + \vec{C} &= \myvec{1 \\ 0} + \myvec{-1 \\ 0}\\
+        \label{eq:chapters/9/10/6/7/1} &= \myvec{0 \\ 0} \\
+        \vec{B} + \vec{D} &= \myvec{1 \\ 0} + \myvec{-1 \\ 0}\\
+        \label{eq:chapters/9/10/6/7/2} &= \myvec{0 \\ 0}
+    \end{align}
+    From equation \eqref{eq:chapters/9/10/6/7/1} and \eqref{eq:chapters/9/10/6/7/2} $AC$ and $BD$ bisect each other.
+    Hence, we can say that if two chords bisect each other then they are diameters.
+%
+    \item Let's check if $ABCD$ is a rectangle.
+    The sides of a rectangle are parallel to each other. Let's check if $AB$ and $BC$ are parallel to each other.
+    \begin{align}
+        \vec{A} - \vec{B} &= \myvec{1 \\ 0} - \myvec{0 \\ 1}\\
+        \label{eq:chapters/9/10/6/7/4} &= \myvec{1 \\ -1} \\
+        \vec{D} - \vec{C} &= \myvec{0\\ -1} - \myvec{-1 \\ 0}\\
+        \label{eq:chapters/9/10/6/7/5} &= \myvec{1 \\ -1} 
+    \end{align}
+    From equation \eqref{eq:chapters/9/10/6/7/4} and \eqref{eq:chapters/9/10/6/7/5}, $AB$ and $DC$ are parallel to each other.
+    $\implies ABCD$ is a parallelogram.
 
-where
-\begin{align}
-	\vec{u} &= -\vec{c}\\
-	      f &= \norm{\vec{c}}^2 - r^2
-\end{align}
-
-The given circle is
-\begin{align}
-    \label{eq:given} 
-    \norm{\vec{x}}^2  + 2\myvec{-2 & -4}\vec{x} - 45 = 0
-\end{align}
-
-
-Comparing the equations \eqref{eq:circle} and \eqref{eq:given}, we get
-\begin{align}	
-	\vec{u} &= \myvec{-2\\-4}\\
-	\implies \vec{c} &= \myvec{2\\4}\\
-	f &= \norm{\vec{c}}^2 - r^2\\
-	\implies -45 &= \brak{\sqrt{2^2 + 4^2}}^2 - r^2\\
-	\implies r^2 &= 65\\
-	\implies r &= \sqrt{65}	
-\end{align}
+    Now let's check if its a rectangle.
+    Let's check the angle between adjacent sides of this quadrilateral, i.e. $AB$ and $BC$.
+    \begin{align}
+        \label{eq:chapters/9/10/6/7/6} \brak{\vec{A} - \vec{B}}^\top \brak{\vec{B} - \vec{C}} &=  \myvec{1 & -1} \myvec{1 \\ 1} \\
+        &= 0
+    \end{align}
+    From equation \eqref{eq:chapters/9/10/6/7/6}, we can say that the angle between $AB$ and $BC$ is $90\degree$.
+    Hence, the quadrilateral $ABCD$ is a rectangle.
+\end{enumerate}
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\columnwidth]{figs/circle.png}
-    \caption{Circle}
-    \label{fig:cicle}
+    \includegraphics[width=\columnwidth]{chapters/9/10/6/7/figs/circle.png}
+    \caption{circle}
+    \label{fig:chapters/9/10/6/7/circle}
 \end{figure}
 
-\end{document}

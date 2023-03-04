@@ -1,4 +1,5 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\iffalse
+\documentclass[journal,11pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -163,7 +164,7 @@ columns=fullflexible
 \vspace{3cm}
 
 
-\title{Que: 11.11.4.9}
+\title{Que: 11.11.5.5}
 \author{Nikam Pratik Balasaheb (EE21BTECH11037)}
 
 
@@ -184,102 +185,77 @@ columns=fullflexible
 %\renewcommand{\theequation}{\theenumi}
 
 \section{Problem}
-Find the equations of hyperbola having Vertices $\myvec{0\\\pm 3}$ and Foci $\myvec{0\\\pm5}$
+
 
 \section{Solution}
-
+\fi
+Let the angle made by the rod with x-axis be $\theta$.  Then
 \begin{enumerate}
 
-	\item Transverse axis:
-Line joining two foci
-\begin{align}
-	\vec{m} &= \vec{F}_1 - \vec{F}_2\\
-	&= \myvec{0 \\ 10}\\
-	\myvec{1&0}\brak{\vec{x} -\vec{F}_1} &= 0\\
-	\myvec{1& 0}\vec{x} &= 0
-\end{align}
-
-\item Center of hyperbola, $\vec{O}$ is given by:
-\begin{align}
-	\vec{O} &= \frac{\vec{F}_1 + \vec{F}_2}{2}\\
-	\vec{O} &= \myvec{0\\0}
-\end{align}
-
-\item Normal vector of directrix
+\item x-intercept:
 	\begin{align}
-		\vec{n} &= \text{direction vector of transverse axis}\\
-			&= \myvec{0 \\1}
+	\vec{A} = \myvec{12\cos{\theta}\\0}
 	\end{align}
 
-\begin{align}
-	\vec{V} &= \norm{\vec{n}}^2\vec{I} - e^2\vec{n}\vec{n}^{\top}\\
-		&= \myvec{1 & 0 \\ 0 & 1} - e^2\myvec{ 0 & 0 \\ 0 & 1}\\
-		&= \myvec{1 &0\\ 0 & 1-e^2}
-\end{align}
+\item y-intercept:
+	\begin{align}
+		\vec{B} =\myvec{0\\12\sin{\theta}}
+	\end{align}
 
-\begin{align}
-	\vec{u} &= ce^2\vec{n} -\norm{\vec{n}}^2\vec{F}\\
-		&= \myvec{0\\ ce^2 - 5}
-\end{align}
+\item direction vector of rod:
+	\begin{align}
+		\vec{A}-\vec{B} = 12\myvec{\cos{\theta} \\ -\sin{\theta}}
+	\end{align}
+	Unit vector along direction vector:
+	\begin{align}
+		\vec{m} = \myvec{\cos{\theta} \\ -\sin{\theta}}
+	\end{align}
 
-\begin{align}
-	f &= \norm{\vec{n}}^2\norm{\vec{F}}^2 - c^2e^2\\
-	  &= 25 - c^2 e^2
-\end{align}
-
-Equation of the hyperbola:
-\begin{align}
-	\vec{x}^{\top}\vec{V}\vec{x} +2\vec{u}^{\top}\vec{x}+f &= 0\\
-\end{align}
-
-Vertex lies on this curve,
-\begin{align}
-	\vec{v_1}^{\top}\vec{V}\vec{v_1} +2\vec{u}^{\top}\vec{v_1}+f &= 0\\
-	9\brak{1-e^2} + 6 \brak{ce^2 -5} - c^2e^2 +25 &= 0\\
-	4 -9e^2 +6ce^2 -c^2e^2 &= 0 \label{eq:1}
-\end{align}
-Also, the center is given by,
-\begin{align}
-	\vec{O} &= - \vec{V}^{-1} \vec{u}\\
-	\myvec{0\\0} &= \myvec{0\\ \frac{ce^2-5}{1-e^2}}\\
-	ce^2 &= 5
-	\label{eq:2}
-\end{align}
-
-Solving \eqref{eq:1} and \eqref{eq:2},
-\begin{align}
-	c &= \frac{9}{5} \\
-	e &= \frac{5}{3}\\
-\end{align}
-
-\begin{align}
-	\vec{V} &= \myvec{1&0\\0& -\frac{16}{9}} \\
-	\vec{u} &= \myvec{0\\0}\\
-	f &= 16\\
-\end{align}
-
-Equation of the Hyperbola,
-\begin{align}
-	\vec{x}^{\top} \myvec{1&0\\ 0 & -\frac{16}{9}} \vec{x} +16 =0
-\end{align}
-
+\item given point $\vec{P}$:
+	\begin{align}
+		\vec{P} &= \vec{A} - 3 \vec{m}\\
+			&= \myvec{9 \cos{\theta} \\ 3 \sin{\theta}}
+	\end{align}
+\item parametric form of locus:
+	\begin{align}
+		\vec{x} = \myvec{9\cos{\theta} \\ 3\sin{\theta}}\\
+	\end{align}
+	Consider $\vec{Q} = \myvec{\frac{1}{9}&0\\0&\frac{1}{3}}$
+	\begin{align}
+		\vec{Q}\vec{x} &= \myvec{\cos{\theta}\\ \sin{\theta}}\\
+		\norm{\vec{Q}\vec{x}}^2 &= 1\\
+		\brak{\vec{Q}\vec{x}}^{\top} \brak{\vec{Q}\vec{x}} &= 1\\
+		\vec{x}^{\top}\vec{Q}^{\top}\vec{Q}\vec{x} &= 1\\
+		\vec{x}^T\myvec{\frac{1}{81} & 0 \\ 0 & \frac{1}{9}} \vec{x} &= 1
+	\end{align}
+	The locus of point $\vec{P}$ is a conic 
+	\begin{align}\vec{x}^{\top} \vec{V} \vec{x} + 2 \vec{u}^{\top} \vec{x} +f= 0
+	\end{align}
+	where,
+	\begin{align}
+		\vec{V} &= \myvec{\frac{1}{81}&0\\0&\frac{1}{9}}\\
+		\vec{u} &= \myvec{0\\0}\\
+		f &= -1
+	\end{align}
+\end{enumerate}
+See Table 
+	\ref{tab:chapters/11/11/5/5/}.
 \begin{table}[h!]
 	\begin{center}
-	\input{tables/table_1.tex}
-\end{center}
-\caption{Table1}
-\label{tab:}
+		\input{chapters/11/11/5/5/tables/table_1.tex}
+	\end{center}
+	\caption{}
+	\label{tab:chapters/11/11/5/5/}
 \end{table}
-
+See Fig.
+    \ref{fig:chapters/11/11/5/5/}
 \begin{figure}[h!]
   \centering
-    \includegraphics[width=\columnwidth]{figs/Figure_1.png}
-    \caption{Figure 1}
-    \label{fig:}
+    \includegraphics[width=\columnwidth]{chapters/11/11/5/5/figs/Figure_1.png}
+    \caption{}
+    \label{fig:chapters/11/11/5/5/}
 \end{figure}
 
-\end{enumerate}
-\end{document}
 
 
 
