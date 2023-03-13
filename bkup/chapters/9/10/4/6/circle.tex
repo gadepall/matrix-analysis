@@ -1,0 +1,184 @@
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{listings}
+\usepackage{color}    
+\usepackage{array}    
+\usepackage{longtable}
+\usepackage{calc}     
+\usepackage{multirow} 
+\usepackage{hhline}   
+\usepackage{ifthen}   
+\usepackage{lscape}     
+\usepackage{chngcntr}
+\DeclareMathOperator*{\Res}{Res}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\renewcommand\thetable{\arabic{table}}
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+%\lstset{
+%language=tex,
+%frame=single, 
+%breaklines=true
+%}
+
+\begin{document}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+\providecommand{\system}[1]{\overset{\mathcal{#1}}{ \longleftrightarrow}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\let\vec\mathbf
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+
+\vspace{3cm}
+\title{Circle Assignment}
+\author{Gautam Singh}
+\maketitle
+\bigskip
+
+\begin{abstract}
+    This document contains the solution to Question 6 of 
+    Exercise 4 in Chapter 10 of the class 9 NCERT textbook.
+\end{abstract}
+
+\begin{enumerate}
+    \item A circular park of radius 20 m is situated in a colony. Three boys 
+    Ankur, Syed and David are sitting at equal distance on its boundary each 
+    having a toy telephone in his hands to talk each other. Find the length of 
+    the string of each phone.
+
+    \solution 
+    \fi
+		Let the position vectors of the boys be
+    \begin{align}
+        \vec{A} = \myvec{r\\0},\ \vec{S} = \myvec{r\cos\beta\\r\sin\beta},\ \vec{D} = \myvec{r\cos\gamma\\r\sin\gamma}
+        \label{eq:chapters/9/10/4/6/pos-vec-def}
+    \end{align}
+    where
+    \begin{align}
+        \beta, \gamma \in \brak{0,2\pi}
+        \label{eq:chapters/9/10/4/6/int}
+    \end{align}
+    We have,
+    \begin{align}
+        \norm{\vec{A}-\vec{S}}^2 &= \norm{\vec{A}-\vec{D}}^2 \\
+        \implies \vec{A}^\top\vec{S} &= \vec{A}^\top\vec{D} \\
+        \implies \cos\beta &= \cos\gamma \\
+        \implies \beta = 2n\pi \pm \gamma
+        \label{eq:chapters/9/10/4/6/bg-gen}
+    \end{align}
+    where $n \in \mathbb{Z}$. From \eqref{eq:chapters/9/10/4/6/int}, we force $n = 1$
+    and consider the negative sign to get
+    \begin{align}
+        \beta+\gamma = 2\pi
+        \label{eq:chapters/9/10/4/6/bg-sum}
+    \end{align}
+    Therefore, using \eqref{eq:chapters/9/10/4/6/bg-sum}
+    \begin{align}
+        \norm{\vec{A}-\vec{S}}^2 &= \norm{\vec{S}-\vec{D}}^2 \\
+        \implies \vec{A}^\top\vec{S} &= \vec{D}^\top\vec{S} \\
+        \implies \cos\beta &= \cos\brak{\beta-\gamma} \\
+        \implies 2\beta-2\pi &= 2m\pi\pm\beta \\
+        \implies 2\beta\pm\beta &= 2k\pi
+        \label{eq:chapters/9/10/4/6/beta-eqn}
+    \end{align}
+    where $k \in \mathbb{Z}$. From \eqref{eq:chapters/9/10/4/6/int}, we can only consider
+    the plus sign and $k \in \cbrak{1,2}$ to get
+    \begin{align}
+        \beta,\gamma \in \cbrak{\frac{2\pi}{3},\frac{4\pi}{3}}
+        \label{eq:chapters/9/10/4/6/bg-sol}
+    \end{align}
+    Therefore, the length of the thread from \eqref{eq:chapters/9/10/4/6/bg-sol} is
+    \begin{align}
+        \norm{\vec{S}-\vec{D}} &= \norm{r\myvec{\cos\beta-\cos\gamma\\\sin\beta-\sin\gamma}} \\
+                               &= r\sqrt{3}
+    \end{align}
+    Here, $r = 20$ m. Thus, the length is $20\sqrt{3}$ m.
+
+    The situation is demonstrated in Fig. \ref{fig:chapters/9/10/4/6/equilateral}, plotted by the 
+    Python code \texttt{codes/equilateral.py}. The values used for 
+    construction are shown in Table \ref{tab:chapters/9/10/4/6/param}.
+    \begin{table}[!ht]
+        \centering
+        \input{chapters/9/10/4/6/tables/09.10.04.06_1.tex}
+        \caption{Parameters used in the construction of Fig. \ref{fig:chapters/9/10/4/6/equilateral}.}
+        \label{tab:chapters/9/10/4/6/param}
+    \end{table}
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=\columnwidth]{chapters/9/10/4/6/figs/equilateral.png}
+        \caption{$ASD$ is an equilateral triangle of side $20\sqrt{3}$ m.}
+        \label{fig:chapters/9/10/4/6/equilateral}
+    \end{figure}

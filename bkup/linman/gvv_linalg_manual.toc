@@ -1,0 +1,31 @@
+\contentsline {section}{\numberline {1}Points and Vectors}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Vector Algebra}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Triangle}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Quadrilateral}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Circle}{5}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}Vector Calculus}{7}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}Vector Inequalities}{7}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Linear Forms}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Line}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Plane}{12}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Pseudo Inverse}{12}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Quadratic Forms}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Introduction}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Tangents and Normals}{15}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Circle}{17}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Ellipse}{18}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Hyperbola}{20}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Parabola}{23}{subsection.3.6}%
+\contentsline {section}{\numberline {4}Matrix Decompositions}{26}{section.4}%
+\contentsline {subsection}{\numberline {4.1}QR Decomposition}{26}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Singular Value Decomposition}{27}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Optimization}{27}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Introduction}{27}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Convex Function}{28}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Gradient Descent}{29}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Lagrange Multipliers}{29}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Quadratic Programming}{30}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Semi Definite Programming}{30}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Linear Programming}{31}{subsection.5.7}%
+\contentsline {section}{Appendix\nobreakspace A: Proof for the vector form of a conic section}{34}{section*.40}%
+\contentsline {section}{Appendix\nobreakspace B: Proofs for the Parabola}{34}{section*.41}%

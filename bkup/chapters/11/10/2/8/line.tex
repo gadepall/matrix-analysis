@@ -1,0 +1,88 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{gensymb}
+\usepackage{booktabs}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single,
+breaklines=true
+}
+ 
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\enlargethispage{-4cm}
+\title{\textbf{Straight Lines}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{11$^{th}$ Maths - Chapter 10}
+This is Problem-8 from Exercise 2
+\begin{enumerate}
+
+\solution The equation of a line is given by
+		\begin{align}                                                                                          \vec{n}^\top\vec{x}=c \label{eq:chapters/11/10/2/8/1}                                                                                  \end{align}
+			\fi
+			From the given information, 
+the normal vector of the line is
+\begin{align}
+	\vec{n}=\myvec{\cos{30}\degree\\\sin{30}\degree}
+\end{align}
+The distance from the origin to the line is given by
+\begin{align}
+	d=\frac{\abs{c}}{\norm{\vec{n}}}
+	\implies c = \pm d = \pm 5
+\label{eq:chapters/11/10/2/8/3}
+\end{align}
+since
+	\begin{align}
+		\norm{\vec{n}} =1,
+	\end{align}
+		Thus, the equation of lines are
+\begin{align}
+	\myvec{\frac{\sqrt{3}}{2}& \frac{1}{2}}\vec{x}=\pm5
+\end{align}
+See Fig. 
+\ref{fig:chapters/11/10/2/8/Fig1}.
+\begin{figure}[!h]
+\begin{center}
+\includegraphics[width=\columnwidth]{chapters/11/10/2/8/figs/fig.pdf}
+\end{center}
+\caption{}
+\label{fig:chapters/11/10/2/8/Fig1}
+\end{figure}

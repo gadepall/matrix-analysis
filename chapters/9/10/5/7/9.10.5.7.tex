@@ -1,0 +1,122 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage[none]{hyphenat}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{extarrows}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{multicol}
+%\usepackage[utf8]{inputenc}
+\lstset{
+ frame=single,
+ breaklines=true
+}
+\usepackage{hyperref}
+\usepackage[margin=0.65in]{geometry}	 
+%\usepackage{exsheets}% also loads the `tasks' package
+\usepackage{atbegshi}
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+%new macro definitions
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newenvironment{amatrix}[1]{%
+	\left(\begin{array}{@{}*{#1}{c}|c@{}}
+}{%
+	\end{array}\right)
+}
+
+\newcommand{\myaugvec}[2]{\ensuremath{\begin{amatrix}{#1}#2\end{amatrix}}}
+\providecommand{\norm}[1]{\left\1Vert#1\right\rVert}
+\let\vec\mathbf{}
+
+
+%\SetEnumitemKey{twocol}{
+% before=\raggedcolumns\begin{multicols}{2},
+% after=\end{multicols}}
+%\SetEnumitemKey{fourcol}{
+% before=\raggedcolumns\begin{multicols}{4},
+% after=\end{multicols}} 
+
+
+\begin{document}
+\begin{center}
+\title{\textbf{CIRCLES}}
+\date{\vspace{-5ex}}
+\maketitle
+\end{center}
+\section*{9$^{th}$Math - Chapter 10}
+This is Problem-7 from Exercise 10.5\\\\
+If diagonals of a cyclic quadrilateral are diameters of the circle through the vertices of quadrilateral,prove that it is a rectangle.\\
+
+\begin{figure}[!h]
+	\begin{center}
+		\includegraphics[width=\columnwidth]{./figs/fig.pdf}
+	\end{center}
+\caption{}
+\label{fig:1}
+\end{figure}
+
+\section*{\large Construction:}
+The input parameters for construction
+\begin{table}[h!]
+	\small
+	\centering
+	%\subimport{../tables/}{table.tex}
+     \input{tables/table.tex}
+%	\caption{}
+	\label{table:1}
+\end{table}
+\begin{align}
+	\vec{A}&=r\myvec{\cos0\\ \sin0}=\myvec{2\\0}\\
+	\vec{B}&=r\myvec{\cos\frac{\pi}{3}\\ \sin\frac{\pi}{3}}=\myvec{1\\\sqrt{3}}\\
+	\vec{C}&=2\vec{O}-\vec{A}=\myvec{-2\\0}\\
+	\vec{D}&=2\vec{O}-\vec{B}=\myvec{-1\\-\sqrt{3}}
+\end{align}
+\solution
+Consider a circle of radius 2 units.Let $AC$ and $DB$ are diameters of circle which are diagonals of cyclic quadrilateral.
+\begin{align}
+	\vec{A}-\vec{C} &= \vec{D}-\vec{B}
+\end{align}
+To prove $ABCD$ is rectangle
+\begin{enumerate}[ref=(\roman*)]
+\item \label{itm:1} $AB$ and $DC$ are parellel to each other
+\begin{align}
+	\vec{A}-\vec{B} &= \myvec{2\\0} - \myvec{1\\\sqrt{3}}\\
+	&=\myvec{1\\-\sqrt{3}}\\
+	\vec{D}-\vec{C} &= \myvec{-1\\-\sqrt{3}} - \myvec{-2\\0}\\
+	&=\myvec{1\\-\sqrt{3}}\\
+	\implies \text{ $ABCD$ is parallelogram }
+\end{align}
+\item \label{itm:2} Let's check the angle between adjacent sides of this quadrilateral,$AB$ and $BC$
+\begin{align}
+	\brak{\vec{A}-\vec{B}}^{\top}\brak{\vec{B}-\vec{C}} &=\myvec{1 & -\sqrt{3}}\myvec{3\\\sqrt{3}}\\	
+	&= 0\\
+	\implies \angle ABC &= 90\degree
+\end{align}
+from \ref{itm:1} and \ref{itm:2} , Hence the quadrilateral $ABCD$ is rectangle.
+\end{enumerate}
+\end{document}

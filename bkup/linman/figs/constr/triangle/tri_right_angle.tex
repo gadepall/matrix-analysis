@@ -1,0 +1,24 @@
+%Code by GVV Sharma
+%December 6, 2019
+%released under GNU GPL
+%Drawing a right angled triangle
+
+\begin{tikzpicture}[scale=2]
+
+%Triangle sides
+\def\a{4}
+\def\c{3}
+
+%Marking coordiantes
+\coordinate [label=above:$A$] (A) at (0,\c);
+\coordinate [label=left:$B$] (B) at (0,0);
+\coordinate [label=right:$C$] (C) at (\a,0);
+
+%Drawing triangle ABC
+\draw (A) -- node[left] {$\textrm{c}$} (B) -- node[below] {$\textrm{a}$} (C) -- node[above,,xshift=2mm] {$\textrm{b}$} (A);
+
+%Drawing and marking angles
+\tkzMarkAngle[fill=orange!40,size=0.5cm,mark=](A,C,B)
+\tkzMarkRightAngle[fill=blue!20,size=.3](A,B,C)
+\tkzLabelAngle[pos=0.65](A,C,B){$\theta$}
+\end{tikzpicture}

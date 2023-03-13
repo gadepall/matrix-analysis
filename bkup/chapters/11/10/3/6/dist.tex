@@ -1,0 +1,84 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single,
+breaklines=true
+}
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{Parallel Lines}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{11$^{th}$ Maths - Chapter 10}
+This is Problem-6 from Exercise 10.3
+\begin{enumerate}
+\fi
+\begin{enumerate}
+\item 
+The given lines can be expressed as
+\begin{align}
+\myvec{15&8}\vec{x}&=-34\\
+\myvec{15&8}\vec{x}&=31\\
+\implies
+	\vec{n}=\myvec{15\\8},c_1&=-34,c_2= 31
+\end{align}
+The distance between them can then be expressed as
+\begin{align}
+d=\frac{\abs{c_1-c_2}}{\norm{\vec{n}}}
+=\frac{\abs{-34-31}}{\sqrt{289}}
+=\frac{65}{17}
+\end{align}
+ \item 
+ The given lines can be expressed as
+\begin{align}
+\myvec{1&1}\vec{x}&=\frac{-p}{l}\\
+\myvec{1&1}\vec{x}&=\frac{-r}{l}
+\\
+\implies
+	\vec{n}=\myvec{1\\1}, c_1 &= \frac{-p}{l}, c_2 \frac{-r}{l}
+\end{align}
+The distance between them is then obtained as
+\begin{align}
+	d=\frac{1}{l\sqrt{2}}\abs{p-r}
+\end{align}
+\end{enumerate}
+

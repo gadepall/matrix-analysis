@@ -1,0 +1,116 @@
+
+  \label{app:parab}
+	Using 
+\eqref{eq:conic_affine}
+%such that 
+\eqref{eq:conic_quad_form} can be expressed as
+
+%\item  
+%Substituting \eqref{eq:conic_affine} in \eqref{eq:conic_quad_form}
+\begin{align}
+\brak{\vec{P}\vec{y}+\vec{c}}^{\top}\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^{\top}\brak{\vec{P}\vec{y}+\vec{c}}+ f
+	= 0, 
+\end{align}
+yielding 
+\begin{align}
+\vec{y}^{\top}\vec{P}^{\top}\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^{\top}\vec{P}\vec{y}
++  \vec{c}^{\top}\vec{V}\vec{c} + 2\vec{u}^{\top}\vec{c} + f= 0
+\label{eq:conic_simp_one}
+\end{align}
+%
+From \eqref{eq:conic_simp_one} and \eqref{eq:conic_parmas_eig_def},
+\begin{align}
+\vec{y}^{\top}\vec{D}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^{\top}\vec{P}\vec{y}
++  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f= 0
+\label{eq:conic_simp}
+\end{align}
+When $\vec{V}^{-1}$ exists, choosing
+\begin{align}
+%\begin{split}
+\vec{V}\vec{c}+\vec{u} &= \vec{0}, \quad \text{or}, \vec{c} = -\vec{V}^{-1}\vec{u},
+\label{eq:conic_parmas_c_def}
+\end{align}
+%
+%%From \eqref{eq:conic_parmas_k_def} and 
+%%
+and substituting \eqref{eq:conic_parmas_c_def}
+in \eqref{eq:conic_simp}
+yields \eqref{eq:conic_simp_temp_nonparab}. 
+	\subsection{}
+%\item  
+When $\abs{\vec{V}} = 0, \lambda_1 = 0$ and 
+\begin{align}
+\vec{V}\vec{p}_1 = 0, 
+\vec{V}\vec{p}_2 = \lambda_2\vec{p}_2.
+\label{eq:conic_parab_eig_prop} 
+\end{align}
+where $\vec{p}_1,\vec{p}_2$ are the eigenvectors of $\vec{V}$ such that  \eqref{eq:conic_parmas_eig_def}
+%
+\begin{align}
+\vec{P} = \myvec{\vec{p}_1 & \vec{p}_2},
+\label{eq:eig_matrix}
+\end{align}
+Substituting \eqref{eq:eig_matrix}
+in \eqref{eq:conic_simp},
+\begin{align}
+	\vec{y}^{\top}\vec{D}\vec{y}+2\brak{\vec{c}^{\top}\vec{V}+\vec{u}^{\top}}\myvec{\vec{p}_1 & \vec{p}_2}\vec{y}
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\\
+\implies \vec{y}^{\top}\vec{D}\vec{y}
++2\myvec{\brak{\vec{c}^{\top}\vec{V}+\vec{u}^{\top}}\vec{p}_1  \brak{\vec{c}^{\top}\vec{V}+\vec{u}^{\top}}\vec{p}_2}\vec{y}
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\\
+\implies \vec{y}^{\top}\vec{D}\vec{y}
++2\myvec{\vec{u}^{\top}\vec{p}_1 & \brak{\lambda_2\vec{c}^{\top}+\vec{u}^{\top}}\vec{p}_2}\vec{y}
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\end{align}
+upon substituting from 
+ \eqref{eq:conic_parab_eig_prop} yielding
+\begin{align}
+\lambda_2y_2^2+2\brak{\vec{u}^{\top}\vec{p}_1}y_1+  2y_2\brak{\lambda_2\vec{c}+\vec{u}}^{\top}\vec{p}_2
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f= 0
+\label{eq:conic_parab_foc_len_temp} 
+\end{align}
+%which is the equation of a parabola. 
+Thus, \eqref{eq:conic_parab_foc_len_temp} 
+can be expressed as \eqref{eq:conic_simp_temp_parab} by choosing
+\begin{align}
+%\label{eq:eta}
+\eta = 2\vec{u}^{\top}\vec{p}_1
+\end{align}
+%Choosing 
+%\begin{align}
+%\vec{u} + \lambda_2\vec{c} = 0,
+%\vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f = 0,
+%\end{align}
+% the above equation becomes
+%\begin{align}
+%y_2^2= -\frac{2\vec{u}^{\top}\vec{p}_1}{ \lambda_2} \brak{y_1
+%+  \frac{\vec{u}^{\top}\vec{V}\vec{u} - 2\lambda_2\vec{u}^{\top}\vec{u} + f\lambda_2^2}{2\vec{u}^{\top}\vec{p}_1\lambda_2^2}}
+%\\
+%or \eta = 2\vec{u}^{\top}\vec{p}_1
+%%\label{eq:conic_simp_parab_new}
+%\end{align}
+and $\vec{c}$ in \eqref{eq:conic_simp} such that
+\begin{align}
+\label{eq:conic_parab_one}
+2\vec{P}^{\top}\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\myvec{1\\0}
+\\
+\vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\label{eq:conic_parab_two}
+\end{align}
+%we obtain  \eqref{eq:conic_simp_temp_parab}.
+$\because
+\vec{P}^{\top}\vec{P} = \vec{I}$,
+multiplying \eqref{eq:conic_parab_one} by $\vec{P}$ yields
+\begin{align}
+\label{eq:conic_parab_one_eig}
+	\brak{\vec{V}\vec{c}+\vec{u}} &= \frac{\eta}{2}\vec{p}_1,
+\end{align}
+which, upon substituting in \eqref{eq:conic_parab_two}
+results in 
+\begin{align}
+\frac{\eta}{2}\vec{c}^{\top}\vec{p}_1 + \vec{u}^{\top}\vec{c} + f&= 0
+\label{eq:conic_parab_two_eig}
+\end{align}
+\eqref{eq:conic_parab_one_eig} and \eqref{eq:conic_parab_two_eig} can be clubbed together to obtain \eqref{eq:conic_parab_c}.

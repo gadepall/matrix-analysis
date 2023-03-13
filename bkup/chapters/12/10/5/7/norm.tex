@@ -1,0 +1,61 @@
+\iffalse
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf{}
+\begin{document}
+
+\begin{center}
+\title{\textbf{Vector Algebra}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\section{12$^{th}$ Maths - Chapter 10}
+This is Problem 7 from Exercise-10.5
+\begin{enumerate}
+
+\item If $\overrightarrow{a}=\hat{i}+\hat{j}+\hat{k}$,$\overrightarrow{b}=2\hat{i}-\hat{j}+3\hat{k}$ and $\overrightarrow{c}=\hat{i}-2\hat{j}+\hat{k}$, find a unit vector parallel to the vector $2\overrightarrow{a}-\overrightarrow{b}+3\overrightarrow{c}$.\\  
+
+\solution
+Given Vectors
+\fi
+
+\begin{align}
+	\vec{u}=2\vec{a}-\vec{b}+3\vec{c}=\myvec{3\\-3\\2}
+\implies
+\hat{\vec{u}}=\frac{\vec{u}}{\norm{\vec{u}}}
+=\frac{1}{\sqrt{22}}\myvec{3\\-3\\2}
+\end{align}
+

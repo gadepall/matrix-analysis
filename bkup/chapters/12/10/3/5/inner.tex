@@ -1,0 +1,60 @@
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\usepackage{caption}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.15]{/sdcard/IITH/vectors/12.10.3.5/figs/logo.png}} }
+\title{\mytitle}
+\title{
+Assignment - 12.10.3.5
+}
+\author{Surajit Sarkar}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+\section{\textbf{Problem}}
+Show that each of the given three vectors is a unit vector:$\frac{1}{7}\myvec{2\hat{i}+3\hat{j}+6\hat{k}},\frac{1}{7}\myvec{3\hat{i}-6\hat{j}+2\hat{k}},\frac{1}{7}\myvec{6\hat{i}+2\hat{j}-3\hat{k}}$
+Also, Show that they are mutually perpendicular to eatch other.
+\section{\textbf{Solution}}
+\fi
+Let
+\begin{align}
+\vec{A}=\myvec{\frac{2}{7}\\ \frac{3}{7}\\ \frac{6}{7}},\Vec{B}=\myvec{\frac{3}{7}\\ -\frac{6}{7}\\ \frac{2}{7}},\vec{C}=\myvec{\frac{6}{7}\\ \frac{2}{7}\\ -\frac{3}{7}}
+\end{align}
+Then
+\begin{align}
+	\norm{\vec{A}}
+=
+\norm{\vec{B}}
+=
+\norm{\vec{C}}
+=1
+\end{align}
+Also,
+\begin{align}
+\vec{A}^{\top}\vec{B}&=\myvec{\frac{2}{7}&\frac{3}{7}&\frac{6}{7}}\myvec{\frac{3}{7}\\-\frac{6}{7}\\ \frac{2}{7}}
+=\frac{6}{49}-\frac{18}{49}+\frac{12}{49}
+=0
+\\
+\vec{B}^{\top}\vec{C}&=\myvec{\frac{3}{7}&-\frac{6}{7}&\frac{2}{7}}\myvec{\frac{6}{7}\\ \frac{2}{7}\\-\frac{3}{7}}
+=\frac{18}{49}-\frac{12}{49}-\frac{6}{49}
+=0
+\\
+\vec{C}^{\top}\vec{A}&=\myvec{\frac{6}{7}&\frac{2}{7}&-\frac{3}{7}}\myvec{\frac{2}{7}\\ \frac{3}{7}\\ \frac{6}{7}}
+=\frac{12}{49}+\frac{6}{49}-\frac{18}{49}
+=0
+\end{align}
+

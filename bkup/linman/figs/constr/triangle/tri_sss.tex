@@ -1,0 +1,46 @@
+%Code by GVV Sharma
+%December 7, 2019
+%released under GNU GPL
+%Drawing a triangle given 3 sides
+
+\begin{tikzpicture}
+[scale=2,>=stealth,point/.style={draw,circle,fill = black,inner sep=0.5pt},]
+
+%Triangle sides
+\def\a{6}
+\def\b{5}
+\def\c{4}
+ 
+%Coordinates of A
+%\def\p{{\a^2+\c^2-\b^2}/{(2*\a)}}
+\def\p{2.25}
+\def\q{{sqrt(\c^2-\p^2)}}
+
+%Labeling points
+\node (A) at (\p,\q)[point,label=above right:$A$] {};
+\node (B) at (0, 0)[point,label=below left:$B$] {};
+\node (C) at (\a, 0)[point,label=below right:$C$] {};
+
+%Foot of perpendicular
+
+\node (D) at (\p,0)[point,label=above right:$D$] {};
+
+%Drawing triangle ABC
+\draw (A) -- node[left] {$\textrm{c}$} (B) -- node[below] {$\textrm{a}$} (C) -- node[above,xshift=2mm] {$\textrm{b}$} (A);
+
+%Drawing altitude AD
+\draw (A) -- node[left] {$\textrm{h}$}(D);
+
+%Drawing and marking angles
+%\tkzMarkAngle[fill=orange!40,size=0.5cm,mark=](A,C,B)
+%\tkzMarkAngle[fill=orange!40,size=0.4cm,mark=](D,B,A)
+%\tkzMarkAngle[fill=green!40,size=0.5cm,mark=](B,A,C)
+%\tkzMarkAngle[fill=green!40,size=0.5cm,mark=](C,B,D)
+\tkzMarkRightAngle[fill=blue!20,size=.2](A,D,B)
+%\tkzMarkRightAngle[fill=blue!20,size=.2](B,D,A)
+%\tkzLabelAngle[pos=0.65](A,C,B){$\theta$}
+%\tkzLabelAngle[pos=0.65](A,B,D){$\theta$}
+%\tkzLabelAngle[pos=1](B,A,C){\rotatebox{-45}{$\alpha = 90\degree -\theta$}}
+%\tkzLabelAngle[pos=0.65](C,B,D){$\alpha$}
+
+\end{tikzpicture}

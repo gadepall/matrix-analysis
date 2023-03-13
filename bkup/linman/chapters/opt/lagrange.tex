@@ -1,0 +1,203 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item
+	\label{convex_code}
+Find
+\begin{align}
+\label{eq:opt_line_nor_h}
+	\min_{\mbf{x}}g\brak{\mbf{x}} = \norm{\vec{x}-\vec{P}}^2 = r^2 \\
+\text{s.t.} \quad 	h\brak{\mbf{x}} = \vec{n}^T\vec{x} - c = 0\label{eq2_1_line}
+%	\quad g\brak{\mbf{x}} = x_1 + x_2 - 9 = 0
+\end{align}
+by plotting the circles $g\brak{\vec{x}}$
+%
+%\begin{equation}
+% \norm{\vec{x}-\myvec{8\\6}}^2 =r^2
+%%(x_1-8)^2 + (x_2-6)^2 = r^2
+%\end{equation}
+%
+% $\mbf{x}= \myvec{x_1\\x_2}$, 
+for different values of $r$ along with the line $g\brak{\mbf{x}}$.
+%
+%\begin{equation}
+%\label{eq2_1_line}
+%g\brak{\mbf{x}} = \myvec{1 & 1}\vec{x} - 9 = 0
+%\end{equation} 
+%
+\\
+\solution 
+The following code plots Fig. \ref{fig:concirc}	
+
+%	
+\begin{lstlisting}
+codes/opt/concirc.py
+\end{lstlisting}
+
+%
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{./figs/opt/concirc.eps}
+\caption{ Finding $ \displaystyle \min_{\mbf{x}}g\brak{\mbf{x}}$}.
+\label{fig:concirc}	
+\end{figure}
+%
+\item By solving the quadratic equation obtained from \eqref{eq:opt_line_nor_h},
+show that 
+\label{prob:minr}
+\begin{align}
+\min_{\vec{x}} r = \frac{3}{5}, \vec{x}_{\min} = \vec{Q}  = \myvec{2.64\\-4.52}
+\end{align}
+%
+%and find $,
+%$ that minimizes $r$. By labeling  $\vec{Q}$ 
+In Fig. \ref{fig:concirc}, it can be seen  that $\vec{Q}$ is the point of contact of the line $L$ with the circle of minimum radius $r = \frac{3}{5}$.
+%Obtain a theoretical solution for problem \ref{convex_code} 
+%%using coordinate geometry.
+%
+%\solution 
+%From \eqref{eq2_1_line} and \eqref{eq2_1_circ}, 
+%%
+%\begin{align}
+%r^2 & = (x_1-8)^2 + (3- x_1)^2 \\
+%&= 2 x_1^2 - 22 x_1 + 73 \\
+%\Rightarrow r^2 &= \frac{\brak{2x_1-11}^2 + 5^2}{2}
+%\end{align}
+%%
+%which is minium when $x_1 = \frac{11}{2}, x_2 = \frac{7}{2}$.  The minimum value is $\frac{25}{2}$ and 
+%the radius $r = \frac{5}{\sqrt{2}}$.
+\item Show that 
+\begin{align}
+\label{eq:lagrange_n}
+\nabla h(\vec{x}) =  \myvec{3 \\ -4} = \vec{n}
+\end{align}
+where
+\begin{equation}
+\nabla =  
+\begin{pmatrix}
+\frac{\partial}{\partial x_1} \\
+\frac{\partial}{\partial x_2} 
+\end{pmatrix}
+\end{equation}
+
+\item Show that 
+\begin{align}
+\nabla g(\vec{x}) = 2\cbrak{\vec{x}-\myvec{3 \\ -5}} = 2\cbrak{\vec{x}-\vec{P}}
+\label{eq:lagrange_pq}
+\end{align}
+%
+%is the direction vector of the normal at $\vec{x}$.
+\item From Fig. \ref{fig:concirc}, show that 
+\begin{align}
+\label{eq:opt_normal}
+\nabla g(\vec{Q}) = \lambda \nabla h(\vec{Q}),
+\end{align}
+%
+\solution In Fig. \ref{fig:concirc}, PQ is the normal to the line $L$, represented by $h\brak{\vec{x}}$. 
+$\because$ the normal vector of $L$ is in the same direction as $PQ$,  for some constant $k$, 
+%
+\begin{align}
+%\label{eq:opt_normal}
+\brak{\vec{Q}-\vec{P}} = k \vec{n}
+\end{align}
+%
+which is the same as \eqref{eq:opt_normal} after substituting from \eqref{eq:lagrange_n}.
+ and \eqref{eq:lagrange_pq}.
+%where $\vec{p}$ is the point of contact.
+\item Use \eqref{eq:opt_normal} and $\vec{h(\vec{Q})}=0$ from \eqref{eq2_1_line} to obtain $\vec{Q}$.
+\\
+\solution From the given equations, we obtain
+\begin{align}
+\brak{\vec{Q}-\vec{P}}-\lambda \vec{n} &= 0 
+\\
+\vec{n}^T\vec{Q} - c &= 0
+\label{eq:lagrange_mat_eq}
+\end{align}
+%
+which can be simplifed to obtain
+%
+\begin{align}
+\myvec{\vec{I} & -\vec{n} \\ \vec{n}^T & 0}\myvec{\vec{Q}\\ \lambda} = \myvec{\vec{P}\\c}
+%\vec{Q} = \vec{P}+\frac{\brak{c-\vec{n}^T\vec{P}}}{\norm{\vec{n}}^2}\vec{n}
+\label{eq:lagrange_mat_sol}
+\end{align}
+The following code computes the solution to \eqref{eq:lagrange_mat_sol}
+%
+\begin{lstlisting}
+codes/opt/lagmul.py
+\end{lstlisting}
+
+\item
+\label{lagrange}
+	Define 
+	\begin{equation}
+	\label{lagrangian}
+	C\brak{\mbf{x},\lambda} = g\brak{\mbf{x}} - \lambda h\brak{\mbf{x}}%, \quad \lambda > 0
+	\end{equation}
+and show that $\vec{Q}$ can also be obtained by 
+solving the equations
+%
+\begin{align}
+\nabla C\brak{\mbf{x},\lambda} &= 0.
+\label{tangent}
+\end{align}
+%
+What is the sign of $\lambda$?  $C$ is known as the Lagrangian and the above technique is known as the Method of Lagrange Multipliers.
+
+%\solution
+%From \eqref{eq2_1_line} and \eqref{eq2_1_circ}, 
+%%
+%\begin{align}
+%L\brak{\mbf{x},\lambda} &= (x_1-8)^2 + (x_2-6)^2 - \lambda \brak{x_1 + x_2 - 9} \\
+%\Rightarrow \nabla L\brak{\mbf{x},\lambda}  & = 
+%\begin{pmatrix}
+%2x_1  - 16 - \lambda \\
+%2x_2 - 12 - \lambda \\
+%x_1 + x_2 -9
+%\end{pmatrix}
+%\\
+%&=
+%\begin{pmatrix}
+%2 &0 & - 1 \\
+%0 &2 & - 1 \\
+%1 & 1 & 0 
+%\end{pmatrix}
+%\begin{pmatrix}
+%x_1 \\
+%x_2 \\
+%\lambda
+%\end{pmatrix}
+%= 
+%\begin{pmatrix}
+%16 \\
+% 12 \\
+%9
+%\end{pmatrix}
+%=
+%0 
+%\\
+%\Rightarrow 
+%\begin{pmatrix}
+%x_1 \\
+%x_2 \\
+%\lambda
+%\end{pmatrix}
+%&= 
+%\begin{pmatrix}
+%\frac{11}{2} \\
+% \frac{7}{2} \\
+%-5
+%\end{pmatrix}
+%\end{align}
+%%
+%using the following python script.  Note that this method yields the same result as the previous exercises.  Thus, $\lambda$ is negative.
+%	
+\item Obtain $\vec{Q}$ using gradient descent.
+\\
+\solution
+\begin{lstlisting}
+codes/opt/gd_lagrange.py
+\end{lstlisting}
+
+\end{enumerate}

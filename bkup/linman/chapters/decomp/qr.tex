@@ -1,0 +1,79 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item Revisiting Problem \eqref{prob:line_gram_schmidt},
+%
+\begin{align}
+\label{eq:decomp_qr_given}
+{\alpha} = \myvec{3\\-1\\0},
+ {\beta} = \myvec{2\\1\\-3}
+\end{align}
+%
+we can express
+\begin{align}
+\begin{split}
+\alpha = k_1\vec{u}_1 
+\\
+\beta = r_1\vec{u}_1 +k_2\vec{u}_2
+\end{split}
+\label{eq:decomp_gram}
+\end{align}
+%
+where 
+\begin{align}
+k_1 = \norm{\alpha}, \vec{u}_1 = \frac{\vec{\alpha}}{k_1} 
+\\
+r_1 = \frac{\vec{u}_1^T\beta}{\norm{\vec{u}_1}^2}, 
+\vec{u}_2 = \frac{\beta - r_1 \vec{u}_1}{\norm{\beta - r_1 \vec{u}_1}}
+\\
+k_2 = {\vec{u}_2^T\beta}
+\end{align}
+From \eqref{eq:decomp_gram}, 
+\begin{align}
+\myvec{\alpha & \beta } = \myvec{\vec{u}_1 & \vec{u}_2}\myvec{k_1 & r_1 \\ 0 & k_2} 
+\end{align}
+%
+This is known as $\vec{Q}\vec{R}$ decomposition, where 
+\begin{align}
+\vec{R} = \myvec{k_1 & r_1 \\ 0 & k_2} 
+\\
+\vec{Q} = \myvec{\vec{u}_1 & \vec{u}_2}
+\end{align}
+%
+Note that $\vec{R}$ is an upper triangular matrix and 
+\begin{align}
+\vec{Q}^T\vec{Q} = \vec{I}.
+\end{align}
+\item From \eqref{eq:decomp_qr_given},
+\begin{align}
+k_1 = \sqrt{10}, \vec{u}_1 = \frac{1}{\sqrt{10}} \myvec{3\\-1\\0},
+\\
+r_1 = \frac{1}{2}, \vec{u}_2 = \frac{1}{\sqrt{46}}\myvec{1\\3\\-6}
+\\
+k_2 = \sqrt{\frac{23}{2}}
+\end{align}
+Thus, we obtain the $\vec{Q}\vec{R}$ decompositon
+\begin{align}
+\myvec{
+3 & 2
+\\
+-1 & 1
+\\
+0 & -3
+}
+=\myvec{
+\frac{3}{\sqrt{10}} & \frac{1}{\sqrt{46}}
+\\
+\frac{-1}{\sqrt{10}} & \frac{3}{\sqrt{46}}
+\\
+0 & \frac{-6}{\sqrt{46}}
+}
+\myvec{
+\sqrt{10}& \frac{1}{2}
+\\
+0&\sqrt{\frac{23}{2}}
+}
+\end{align}
+
+\end{enumerate}

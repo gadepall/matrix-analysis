@@ -1,0 +1,114 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CONIC SECTIONS}
+
+\end{center}
+\section*{Excercise 11.2}
+
+Q2.Find the coordinates of the focus, axis of the parabola, the equation of the directrix and the length of the latus rectum of a parabola whose equation is given by $x^2=6y$.
+
+\solution
+\fi
+The given equation of the parabola can be rearranged as
+\begin{align}
+	\label{eq:chapters/11/11/2/2/parabolaEq1}
+	x^2-6y=0
+\end{align}
+The above equation can be equated to the generic equation of conic sections
+\begin{align}
+	\label{eq:chapters/11/11/2/2/parabolaEq2}
+	g\brak{\vec{x}}=\vec{x}^\top \vec{V}\vec{x}+2\vec{u}^\top \vec{x}+f=0
+\end{align}
+Comparing the coefficients of both equations \eqref{eq:chapters/11/11/2/2/parabolaEq1} and \eqref{eq:chapters/11/11/2/2/parabolaEq2}
+\begin{align}
+	\label{eq:chapters/11/11/2/2/eqV}
+	\vec{V} &= \myvec{1&0\\0&0}\\
+	\label{eq:chapters/11/11/2/2/eqU}
+	\vec{u} &= -\myvec{0\\3}\\
+	\label{eq:chapters/11/11/2/2/eqF}
+	f &= 0
+\end{align}
+\begin{enumerate}
+\item From equation \eqref{eq:chapters/11/11/2/2/eqV}, since $\vec{V}$ is already diagonalized, the Eigen values $\lambda_1 \text{ and } \lambda_2$ are given as
+\begin{align}
+	\label{eq:chapters/11/11/2/2/eqEigen1}
+	\lambda_1 &= 1\\
+	\label{eq:chapters/11/11/2/2/eqEigen2}
+	\lambda_2 &= 0
+\end{align}
+And the corresponding eigen vector matrix $\vec{P}$ is indentity, so the Eigen vector $\vec{p}_2$ corresponding to Eigen value $\lambda_2$ is
+\begin{align}
+	\vec{p}_2 &= \myvec{0\\1}\\
+	\vec{n} &= \sqrt{\lambda_1}\vec{p}_2\\
+		&= \sqrt{1}\myvec{0\\1}\\
+		&= \myvec{0\\1}
+\end{align}
+Now,
+\begin{align}
+	\label{eq:chapters/11/11/2/2/eqC}
+	c = \frac{\norm{\vec{u}}^2 - \lambda_1 f}{2\vec{u}^\top \vec{n}}
+\end{align}
+Substituting values of $\vec{u},\vec{n},\lambda_1 \text{ and } f$ in \eqref{eq:chapters/11/11/2/2/eqC}
+\begin{align}
+	c = \frac{3^2-1\brak{0}}{-2\myvec{0&3}\myvec{0\\1}} = -\frac{3}{2}
+\end{align}
+The focus $\vec{F}$ of parabola is expressed as
+\begin{align}
+	\vec{F} &= \frac{ce^2 \vec{n}-\vec{u}}{\lambda_1}\\
+		&= \frac{-\frac{3}{2}\brak{1}^2 \myvec{0\\1}+\myvec{0\\3}}{1}\\
+		&= \myvec{0\\\frac{3}{2}}
+\end{align}
+\item Equation of directrix is given as
+\begin{align}
+	\vec{n}^\top \vec{x} &= c\\
+	\myvec{0&1}\vec{x} &= -\frac{3}{2}
+\end{align}
+\item The equation for the axis of parabola passing through $\vec{F}$ and orthogonal to the directrix is given as
+\begin{align}
+	\label{eq:chapters/11/11/2/2/eqM}
+	\vec{m}^\top \brak{\vec{x}-\vec{F}} = 0
+\end{align}
+where $\vec{m}$ is the normal vector to the axis and also the slope of the directrix. Now since
+\begin{align}
+	\vec{n} = \myvec{0\\1}\\
+	\vec{m} = \myvec{1\\0}
+\end{align}
+Substituting in \eqref{eq:chapters/11/11/2/2/eqM}
+\begin{align}
+	\myvec{1&0}\myvec{\vec{x}-\myvec{0\\\frac{3}{2}}}&=0\\
+	\myvec{1&0}\vec{x} &= 0
+\end{align}
+\item The latus rectum of a parabola is given by
+\begin{align}
+	l&=\frac{\eta}{\lambda_1}\\
+	 &=\frac{2\vec{u}^\top \vec{p}_2}{\lambda_1}\\
+	 &=\frac{2\myvec{0&3}\myvec{0\\1}}{1}\\
+	 &=6 \text{ units }
+\end{align}
+See Fig. \ref{fig:chapters/11/11/2/2/Fig1}
+\begin{figure}[!h]
+	\begin{center} 
+	    \includegraphics[width=\columnwidth]{chapters/11/11/2/2/figs/parabola}
+	\end{center}
+\caption{}
+\label{fig:chapters/11/11/2/2/Fig1}
+\end{figure}
+\end{enumerate}
+
+
+
+

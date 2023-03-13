@@ -1,0 +1,118 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single,
+breaklines=true
+}
+ 
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\enlargethispage{-4cm}
+\title{\textbf{Straight Lines}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{11$^{th}$ Maths - Chapter 10}
+This is Problem-1 from Exercise 10.4
+\begin{enumerate}
+
+\solution
+\fi
+The parameters of the given line are
+\begin{align}
+\vec{n}^{\top}\vec{x}=c \label{eq:chapters/11/10/4/1/2}
+\end{align}
+This equation can be expressed in the form of 
+\begin{align}
+\vec{n} = \myvec{k-3\\-4+k^2}, c  = -k^2+7k-6
+\end{align}
+\iffalse
+Then \eqref{eq:chapters/11/10/4/1/1} can be expressed as
+\begin{align}
+\myvec{k-3 & -4+k^2}\vec{x} &=-k^2+7k-6\label{eq:chapters/11/10/4/1/4}
+\end{align}
+\fi
+\begin{enumerate}
+%part-1
+    \item 
+	    In this case,
+	    \iffalse
+The normal vector of $x$-axis is given by
+\begin{align}
+\myvec{0\\1}
+\end{align}
+\fi
+equating $\vec{n}$ to the normal vector of $x$-axis,
+\begin{align}
+\myvec{k-3\\-4+k^2} &=\alpha\myvec{0\\1}\label{eq:chapters/11/10/4/1/6}
+\\
+\implies
+k &=3
+\end{align}
+Substituting the value of $k$ in \eqref{eq:chapters/11/10/4/1/1}, the desired equation is
+\begin{align}
+        \myvec{0 & 5}\vec{x} &=6
+\end{align}
+
+\item In this case, 
+equating $\vec{n}$ to the normal vector of $y$-axis,
+\begin{align}
+\myvec{k-3\\-4+k^2} &=\beta\myvec{1\\0}\label{eq:chapters/11/10/4/1/11}
+\\
+	\implies k &=\pm2
+\end{align}
+Substituting the value of $k$ in \eqref{eq:chapters/11/10/4/1/1}, the desired equation is 
+\begin{align}
+        \myvec{-1 & 0}\vec{x} &=4, \quad  k &=2\\
+        \myvec{-5 & 0}\vec{x} &=-24, \quad  k &=-2
+\end{align}
+\item 
+	In this case, 
+\begin{align}
+	c = 0 \implies 
+	-k^2+7k-6 &= 0\\
+	\implies k =1 \text{ or } k&=6
+\end{align}
+Substituting the value of $k$ in \eqref{eq:chapters/11/10/4/1/1}, the desired equations are 
+\begin{align}
+        \myvec{-2 & -3}\vec{x} &=0, \quad  k &=1\\
+       \myvec{3 & 32}\vec{x} &=0, \quad  k &=6
+\end{align}
+\end{enumerate}

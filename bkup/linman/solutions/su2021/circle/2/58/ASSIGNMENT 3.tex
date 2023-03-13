@@ -1,0 +1,237 @@
+
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+\usepackage{float}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ASSIGNMENT 3}
+\author{P.Kalpana}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/ponnaboinakalpana12/ASSIGNMENT3
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/ponnaboinakalpana12/ASSIGNMENT3
+\end{lstlisting}
+%
+\section{Question No 2.58}
+Draw a  pair of tangents to a circle of radius 5 units  which are inclined to each other at an angle of $60\degree$
+%
+\section{Solution}
+Data from the given question :
+\numberwithin{table}{section}
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{1.5cm}| m{2cm} | m{1.5cm} |} 
+\hline
+& Symbols & Circle \\
+\hline
+Centre & $\vec{O}$ & \myvec{0\\0} \\ 
+\hline
+Radius & $r$ & 5\\ 
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\\
+Let $PA$ and $PB$  be tangents  to circle with radius 5 cm  which are inclined to each other at an angle $60\degree$.
+\\
+We know a tangent is always perpendicular to the radius .
+\begin{align}
+\therefore OA \perp AP ,  OB \perp BP.
+\\
+\angle OAP=90\degree, \angle OBP=90\degree.
+\end{align}
+We know that, line joining the centre and the external point bisect the angle between pair of tangents from that external point.
+\\
+$\angle APB=\theta =60\degree$
+\\
+OP bisect the angle \theta=60\degree
+\\
+ In  $\triangle OAP$, 
+\begin{align}
+\sin\frac{\theta}{2}=\frac{OA}{OP}
+\\
+\frac{1}{2}=\frac{5}{OP}
+\\
+\implies OP=10
+\\
+\therefore \vec{O}=\myvec{0\\0} , \vec{P}=\myvec{10\\0}
+\end{align}
+Now, 
+\begin{align}
+\angle AOB + \angle OBP + \angle APB + \angle PAO=360\degree
+\\
+\implies \angle AOB +90\degree + 60\degree +90\degree =360\degree
+\\
+\angle AOB= 360\degree -140\degree
+\\
+\angle AOB =120\degree.
+\\
+From, this
+\\
+\angle AOP=60\degree
+\end{align}
+\begin{lemma}
+\label{lemma}
+The coordinates of $\vec{A}$ and  $\vec{B}$ can be written as follows:
+\begin{align}
+ \vec{A} =O+r \myvec{\cos \theta\\\sin \theta}
+ \\
+ \vec{B} =O+r \myvec{\cos (360-\theta)\\\sin (360-\theta )}
+ \\
+ \vec{B} =O+r \myvec{\cos\theta\\-\sin\theta}
+\end{align}
+Proof:
+Now substitute the values , 
+we get
+\item For finding coordinate of A:-
+\begin{align}
+&\implies \vec{A}=\myvec{0\\0}+5\myvec{\cos 60 \\\sin 60 }
+&\implies \vec{A}=\myvec{2.5\\4.33}
+\end{align}
+\item For finding the coordinate of B:
+\begin{align}
+\vec{B}=\myvec{0\\0}+5\myvec{\cos 60\\-\sin60}
+\implies \vec{B}=\myvec{2.5\\-4.33}
+\\
+\therefore \vec{O}=\myvec{0\\0}, \vec{P}=\myvec{10\\0}, \vec{A}=\myvec{2.5\\4.33}, \vec{B}=\myvec{2.5\\-4.33}.
+\end{align}
+Plot Tangents PA and PB :
+\numberwithin{figure}{section}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\columnwidth]{Download.png}
+    \caption{Tangent lines to circle of radius 5 units.}
+    \label{fig:Tangent lines to circle of radius 5 units.}
+\end{figure}    
+\end{document}

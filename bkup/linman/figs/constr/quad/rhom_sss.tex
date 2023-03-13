@@ -1,0 +1,32 @@
+%Code by GVV Sharma
+%December 10, 2019
+%released under GNU GPL
+%Drawing a rhombus given a side and a diagonal
+
+\begin{tikzpicture}
+[scale=2,>=stealth,point/.style={draw,circle,fill = black,inner sep=0.5pt},]
+
+%Triangle sides
+\def\a{4.5}%BE
+\def\b{6}%ET
+\def\p{\b/2}%OE
+\def\q{{sqrt(\a^2-\p^2)}}%OB
+
+%Labeling points
+\node (B) at (0,-\q)[point,label=below :$B$] {};
+\node (E) at (\p, 0)[point,label=right:$E$] {};
+\node (S) at (0, \q)[point,label=above:$S$] {};
+\node (T) at (-\p,0)[point,label=left:$T$] {};
+\node (O) at (0, 0)[point,label=below left:$O$] {};
+
+
+%Drawing parallelogram ABCD
+\draw (B) -- (E) --  (S) --(T)--(B);
+\draw (B) -- (S);
+\draw (E) --(T);
+
+
+\tkzMarkRightAngle[fill=blue!20,size=.2](B,O,E)
+
+%
+\end{tikzpicture}

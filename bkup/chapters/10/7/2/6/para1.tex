@@ -1,0 +1,90 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Properties of Parallelegram}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\setcounter{page}{1}
+
+\section{10$^{th}$ Maths - Chapter 7}
+
+This is Problem-6 from Exercise 7.2
+
+\begin{enumerate}
+\item If $\vec{A}(1, 2),\vec{B}(4, x),\vec{C}(y, 6) \text{and } \vec{D}(3, 5)$ are the vertices of a parallelogram taken in order,find x and y.
+\end{enumerate}
+\fi
+
+The input parameters for this problem are available in
+\ref{table:chapters/10/7/2/6/tables/}.	
+\begin{table}[!ht]
+	\centering
+	\input{chapters/10/7/2/6/tables/table.tex}
+\caption{}
+\label{table:chapters/10/7/2/6/tables/}	
+\end{table}
+From the given information,
+\begin{align}
+  \label{eq:chapters/10/7/2/6/tables/det2f}
+	\vec{B}-\vec{A} &= \myvec{4 \\y } - \myvec{1 \\2 }  = \myvec{3 \\y-2 }\\
+	\vec{C}-\vec{D} &= \myvec{x \\6 } - \myvec{3 \\5 }  = \myvec{x-3 \\1}
+\end{align}
+Since $ABCD$ is a parallellogram,
+\begin{align}
+	\myvec{3\\y-2}&=\myvec{x-3\\1}\\
+	\implies x&=6 ,y=3
+\end{align}
+Fig. \ref{fig:chapters/10/7/2/6/Fig3}
+provides a verification.
+\begin{figure}[h!]
+	\begin{center}
+  \includegraphics[width=\columnwidth]{chapters/10/7/2/6/figs/para.pdf}
+	\end{center}
+\caption{}
+\label{fig:chapters/10/7/2/6/Fig3}
+\end{figure}
+

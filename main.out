@@ -1,73 +1,71 @@
-\BOOKMARK [0][-]{chapter*.2}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Vectors}{}% 2
-\BOOKMARK [1][-]{section.1.1}{Length}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.2}{Distance}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.3}{Exercises}{chapter.1}% 5
-\BOOKMARK [1][-]{section.1.4}{Section Formula}{chapter.1}% 6
-\BOOKMARK [1][-]{section.1.5}{Exercises}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.6}{Rank}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.7}{Exercises}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.8}{Scalar Product}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.9}{Exercises}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.10}{Orthogonality}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.11}{Exercises}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.12}{Vector Product}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.13}{Exercises}{chapter.1}% 15
-\BOOKMARK [1][-]{section.1.14}{Miscellaneous}{chapter.1}% 16
-\BOOKMARK [1][-]{section.1.15}{Exercises}{chapter.1}% 17
-\BOOKMARK [1][-]{section.1.16}{Triangle}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.17}{Exercises}{chapter.1}% 19
-\BOOKMARK [1][-]{section.1.18}{ Quadrilateral}{chapter.1}% 20
-\BOOKMARK [1][-]{section.1.19}{Exercises}{chapter.1}% 21
-\BOOKMARK [0][-]{chapter.2}{Linear Forms}{}% 22
-\BOOKMARK [1][-]{section.2.1}{Equation of a Line}{chapter.2}% 23
-\BOOKMARK [1][-]{section.2.2}{Perpendicular}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.3}{Plane}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.4}{Miscellaneous }{chapter.2}% 26
-\BOOKMARK [1][-]{section.2.5}{Exemplar}{chapter.2}% 27
-\BOOKMARK [1][-]{section.2.6}{Singular Value Decomposition}{chapter.2}% 28
-\BOOKMARK [0][-]{chapter.3}{Conics}{}% 29
-\BOOKMARK [1][-]{section.3.1}{Circle}{chapter.3}% 30
-\BOOKMARK [1][-]{section.3.2}{Exercises}{chapter.3}% 31
-\BOOKMARK [1][-]{section.3.3}{Construction}{chapter.3}% 32
-\BOOKMARK [1][-]{section.3.4}{Exercises}{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.5}{Parabola}{chapter.3}% 34
-\BOOKMARK [1][-]{section.3.6}{Exercises}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.7}{Ellipse}{chapter.3}% 36
-\BOOKMARK [1][-]{section.3.8}{Exercises}{chapter.3}% 37
-\BOOKMARK [1][-]{section.3.9}{Hyperbola}{chapter.3}% 38
-\BOOKMARK [1][-]{section.3.10}{Exercises}{chapter.3}% 39
-\BOOKMARK [0][-]{chapter.4}{Intersection of Conics}{}% 40
-\BOOKMARK [1][-]{section.4.1}{Chords }{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.2}{Curves}{chapter.4}% 42
-\BOOKMARK [0][-]{chapter.5}{Tangent And Normal}{}% 43
-\BOOKMARK [1][-]{section.5.1}{Examples}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.2}{Exercises}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.3}{Construction}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.4}{Exercises}{chapter.5}% 47
-\BOOKMARK [0][-]{appendix.A}{ Vectors}{}% 48
-\BOOKMARK [1][-]{section.A.1}{21 vectors}{appendix.A}% 49
-\BOOKMARK [1][-]{section.A.2}{31 vectors}{appendix.A}% 50
-\BOOKMARK [0][-]{appendix.B}{Matrices}{}% 51
-\BOOKMARK [1][-]{section.B.1}{Eigenvalues and Eigenvectors}{appendix.B}% 52
-\BOOKMARK [1][-]{section.B.2}{Determinants}{appendix.B}% 53
-\BOOKMARK [1][-]{section.B.3}{Rank of a Matrix}{appendix.B}% 54
-\BOOKMARK [1][-]{section.B.4}{Inverse of a Matrix}{appendix.B}% 55
-\BOOKMARK [1][-]{section.B.5}{Orthogonality}{appendix.B}% 56
-\BOOKMARK [1][-]{section.B.6}{Singular Value Decomposition}{appendix.B}% 57
-\BOOKMARK [0][-]{appendix.C}{Triangle Constructions}{}% 58
-\BOOKMARK [0][-]{appendix.D}{Linear Forms}{}% 59
-\BOOKMARK [1][-]{section.D.1}{Two Dimensions}{appendix.D}% 60
-\BOOKMARK [1][-]{section.D.2}{Three Dimensions}{appendix.D}% 61
-\BOOKMARK [0][-]{appendix.E}{Quadratic Forms}{}% 62
-\BOOKMARK [1][-]{section.E.1}{Conic equation }{appendix.E}% 63
-\BOOKMARK [1][-]{section.E.2}{Circles}{appendix.E}% 64
-\BOOKMARK [1][-]{section.E.3}{Standard Form}{appendix.E}% 65
-\BOOKMARK [0][-]{appendix.F}{Conic Parameters}{}% 66
-\BOOKMARK [1][-]{section.F.1}{Standard Form}{appendix.F}% 67
-\BOOKMARK [1][-]{section.F.2}{Quadratic Form }{appendix.F}% 68
-\BOOKMARK [0][-]{appendix.G}{Conic Lines}{}% 69
-\BOOKMARK [1][-]{section.G.1}{Pair of Straight Lines}{appendix.G}% 70
-\BOOKMARK [1][-]{section.G.2}{Intersection of Conics}{appendix.G}% 71
-\BOOKMARK [1][-]{section.G.3}{ Chords of a Conic}{appendix.G}% 72
-\BOOKMARK [1][-]{section.G.4}{ Tangent and Normal}{appendix.G}% 73
+\BOOKMARK [1][-]{section.1}{Vectors}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Length}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Distance}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Exercises}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{subsection Formula}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Exercises}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.6}{Rank}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.7}{Exercises}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.8}{Scalar Product}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.9}{Exercises}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.10}{Orthogonality}{section.1}% 11
+\BOOKMARK [2][-]{subsection.1.11}{Exercises}{section.1}% 12
+\BOOKMARK [2][-]{subsection.1.12}{Vector Product}{section.1}% 13
+\BOOKMARK [2][-]{subsection.1.13}{Exercises}{section.1}% 14
+\BOOKMARK [2][-]{subsection.1.14}{Miscellaneous}{section.1}% 15
+\BOOKMARK [2][-]{subsection.1.15}{Exercises}{section.1}% 16
+\BOOKMARK [2][-]{subsection.1.16}{Triangle}{section.1}% 17
+\BOOKMARK [2][-]{subsection.1.17}{Exercises}{section.1}% 18
+\BOOKMARK [2][-]{subsection.1.18}{ Quadrilateral}{section.1}% 19
+\BOOKMARK [2][-]{subsection.1.19}{Exercises}{section.1}% 20
+\BOOKMARK [1][-]{section.2}{Linear Forms}{}% 21
+\BOOKMARK [2][-]{subsection.2.1}{Equation of a Line}{section.2}% 22
+\BOOKMARK [2][-]{subsection.2.2}{Perpendicular}{section.2}% 23
+\BOOKMARK [2][-]{subsection.2.3}{Plane}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.4}{Miscellaneous }{section.2}% 25
+\BOOKMARK [2][-]{subsection.2.5}{Exemplar}{section.2}% 26
+\BOOKMARK [2][-]{subsection.2.6}{Singular Value Decomposition}{section.2}% 27
+\BOOKMARK [1][-]{section.3}{Conics}{}% 28
+\BOOKMARK [2][-]{subsection.3.1}{Circle}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.2}{Exercises}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.3}{Construction}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.4}{Exercises}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.5}{Parabola}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.6}{Exercises}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.7}{Ellipse}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.8}{Exercises}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.9}{Hyperbola}{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.10}{Exercises}{section.3}% 38
+\BOOKMARK [1][-]{section.4}{Intersection of Conics}{}% 39
+\BOOKMARK [2][-]{subsection.4.1}{Chords }{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.2}{Curves}{section.4}% 41
+\BOOKMARK [1][-]{section.5}{Tangent And Normal}{}% 42
+\BOOKMARK [2][-]{subsection.5.1}{Examples}{section.5}% 43
+\BOOKMARK [2][-]{subsection.5.2}{Exercises}{section.5}% 44
+\BOOKMARK [2][-]{subsection.5.3}{Construction}{section.5}% 45
+\BOOKMARK [2][-]{subsection.5.4}{Exercises}{section.5}% 46
+\BOOKMARK [1][-]{section*.2}{Appendix A: \040Vectors}{}% 47
+\BOOKMARK [2][-]{subsection.Appendix.A.1}{21 vectors}{section*.2}% 48
+\BOOKMARK [2][-]{subsection.Appendix.A.2}{31 vectors}{section*.2}% 49
+\BOOKMARK [1][-]{section*.3}{Appendix B: Matrices}{}% 50
+\BOOKMARK [1][-]{section*.4}{Appendix C: Eigenvalues and Eigenvectors}{}% 51
+\BOOKMARK [1][-]{section*.5}{Appendix D: Determinants}{}% 52
+\BOOKMARK [1][-]{section*.6}{Appendix E: Rank of a Matrix}{}% 53
+\BOOKMARK [1][-]{section*.7}{Appendix F: Inverse of a Matrix}{}% 54
+\BOOKMARK [1][-]{section*.8}{Appendix G: Orthogonality}{}% 55
+\BOOKMARK [1][-]{section*.9}{Appendix H: Singular Value Decomposition}{}% 56
+\BOOKMARK [1][-]{section*.10}{Appendix I: Triangle Constructions}{}% 57
+\BOOKMARK [1][-]{section*.11}{Appendix J: Linear Forms}{}% 58
+\BOOKMARK [2][-]{subsection.Appendix.J.1}{Two Dimensions}{section*.11}% 59
+\BOOKMARK [2][-]{subsection.Appendix.J.2}{Three Dimensions}{section*.11}% 60
+\BOOKMARK [1][-]{section*.12}{Appendix K: Quadratic Forms}{}% 61
+\BOOKMARK [2][-]{subsection.Appendix.K.1}{Conic equation }{section*.12}% 62
+\BOOKMARK [2][-]{subsection.Appendix.K.2}{Circles}{section*.12}% 63
+\BOOKMARK [1][-]{section*.13}{Appendix L: Conic Parameters}{}% 64
+\BOOKMARK [2][-]{subsection.Appendix.L.1}{Standard Form}{section*.13}% 65
+\BOOKMARK [2][-]{subsection.Appendix.L.2}{Quadratic Form }{section*.13}% 66
+\BOOKMARK [1][-]{section*.14}{Appendix M: Conic Lines}{}% 67
+\BOOKMARK [2][-]{subsection.Appendix.M.1}{Pair of Straight Lines}{section*.14}% 68
+\BOOKMARK [2][-]{subsection.Appendix.M.2}{Intersubsection of Conics}{section*.14}% 69
+\BOOKMARK [2][-]{subsection.Appendix.M.3}{ Chords of a Conic}{section*.14}% 70
+\BOOKMARK [2][-]{subsection.Appendix.M.4}{ Tangent and Normal}{section*.14}% 71

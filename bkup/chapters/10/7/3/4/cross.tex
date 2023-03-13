@@ -1,0 +1,101 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{Coordinate Geometry}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{10$^{th}$ Maths - Chapter 7}
+This is Problem-4 from Exercise 7.3
+\begin{enumerate}
+\item Find the area of quadrilateral whose vertices, taken in order, are $\myvec{-4 \\ -2}, \myvec{-3\\-5}, \myvec{3\\-2}$ and $\myvec{2\\3}$.\\
+	\solution 
+\fi
+		The input parameters for this problem are available in Table \eqref{tab:10/7/3/4}.
+\begin{table}[ht!]\centering
+\input{chapters/10/7/3/4/tables/table.tex}
+\caption{}
+\label{tab:10/7/3/4}	
+\end{table}
+By joining $\vec{B}$ to $\vec{D}$, two triangles $\vec{A}\vec{B}\vec{D}$ and $\vec{B}\vec{C}\vec{D}$ are obtained.
+Since
+\begin{align}
+	\vec{A}- \vec{B} &= \myvec{-4\\-2\\}-\myvec{-3\\-5\\}=\myvec{-1\\3\\}\label{eq:chapters/10/7/3/4/2}\\
+	  \vec{A}- \vec{D} &= \myvec{-4\\-2\\}-\myvec{2\\3\\}=\myvec{-6\\-5\\}\label{eq:chapters/10/7/3/4/3}
+  \end{align}
+  \begin{align}
+	  ar(ABD)&=\frac{1}{2} \norm{\brak{\vec{A}-\vec{B}}  \times 
+   \brak{\vec{A}- \vec{D}}} \label{eq:chapters/10/7/3/4/1} 
+   \\
+	  &=	\frac{1}{2}\mydet{-1 & 3\\-6 & -5}  
+	=	\frac{23}{2}
+\end{align}
+upon substituting the values of \eqref{eq:chapters/10/7/3/4/2} and \eqref{eq:chapters/10/7/3/4/3} in \eqref{eq:chapters/10/7/3/4/1}.
+Similarly,
+\begin{align}
+	\vec{B}- \vec{C} &= \myvec{-3\\-5\\}-\myvec{3\\-2\\}=\myvec{-6\\-5\\}\label{eq:chapters/10/7/3/4/6} \\
+	  \vec{B}- \vec{D} &= \myvec{-3\\-5\\}-\myvec{2\\3\\}=\myvec{-3\\-8\\}\label{eq:chapters/10/7/3/4/7} 
+  \end{align}
+  yielding
+  \begin{align}
+	  ar(BCD)&=\frac{1}{2} \norm{\brak{\vec{B}-\vec{C}}  \times 
+   \brak{\vec{B}- \vec{D}}} \label{eq:chapters/10/7/3/4/5}
+   \\
+	  &=	\frac{1}{2}\mydet{-6 & -3\\-5 & -8}  
+	=	\frac{33}{2}
+\end{align}
+	upon 	substituting the values of \eqref{eq:chapters/10/7/3/4/6} and \eqref{eq:chapters/10/7/3/4/7} in \eqref{eq:chapters/10/7/3/4/5}
+		Thus, 
+\begin{align}
+	ar(ABCD)&=  ar(ABD) +  ar(BCD)
+	= 28
+\end{align}
+See Fig. 
+\ref{fig:chapters/10/7/3/4/Fig1}
+\begin{figure}[!h]
+ \begin{center}
+  \includegraphics[width=\columnwidth]{chapters/10/7/3/4/figs/fig.pdf}
+ \end{center}
+\caption{}
+\label{fig:chapters/10/7/3/4/Fig1}
+\end{figure}

@@ -1,0 +1,44 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{setspace}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CLASS-12 \\ CHAPTER-11 \\ THREE DIMENSIONAL GEOMETRY}
+\end{center}
+\section*{Excercise 11.2}
+
+Q1. Show that the three lines with direction cosines $\frac{12}{13}, \frac{-3}{13}, \frac{-4}{13}; \frac{4}{13}, \frac{12}{13}, \frac{3}{13}; \frac{3}{13}, \frac{-4}{13}, \frac{12}{13}$ are mutually perpendicular.
+\\
+\solution
+\fi
+Let
+	\begin{align}
+			\vec{A}=\myvec{\frac{12}{13}\\[2pt]\frac{-3}{13}\\[2pt]\frac{-4}{13}},\vec{B}=\myvec{\frac{4}{13}\\[2pt]\frac{12}{13}\\[2pt]\frac{3}{13}},\vec{C}=\myvec{\frac{3}{13}\\[2pt]\frac{-4}{13}\\[2pt]\frac{12}{13}}
+		\end{align}
+		Stacking all three vectors into a single matrix 
+			\begin{align}
+		\vec{P}=\myvec{\frac{12}{13}&\frac{4}{13}    &\frac{3}{13}\\[2pt] \frac{-3}{13}&\frac{12}{13}&\frac{-4}{13}\\[2pt] \frac{-4}{13}&\frac{3}{13}&\frac{12}{13}}, \vec{P}^\top=\myvec{\frac{12}{13}&\frac{-3}{13}   &\frac{-4}{13}\\[2pt] \frac{4}{13}&\frac{12}{13}&\frac{3}{13}\\[2pt] \frac{3}{13}&\frac{-4}{13}&\frac{12}{13}},
+			\end{align}
+			we obtain
+			\begin{align}
+		\vec{P}\vec{P}^\top=
+				\myvec{\frac{12}{13}&\frac{4}{13}    &\frac{3}{13}\\[2pt] \frac{-3}{13}&\frac{12}{13}&\frac{-4}{13}\\[2pt] \frac{-4}{13}&\frac{3}{13}&\frac{12}{13}}\myvec{\frac{12}{13}&\frac{-3}{13}   &\frac{-4}{13}\\[2pt] \frac{4}{13}&\frac{12}{13}&\frac{3}{13}\\[2pt] \frac{3}{13}&\frac{-4}{13}&\frac{12}{13}}=\vec{I} =
+	\vec{P}^\top\vec{P}
+		\end{align}
+					Hence, all three vectors are orthogonal to each other.
+
+
+

@@ -1,0 +1,66 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CHAPTER-10 \\ VECTOR ALGEBRA}
+
+\end{center}
+\section*{Excercise 10.4}
+
+Q5.Find $\lambda \text{ and } \mu \text{ if } (2\hat{i}+6\hat{j}+27\hat{k}) \times (\hat{i}+\lambda \hat{j}+\mu \hat{k})=\vec{0}$
+
+\solution
+\fi
+\begin{align}
+	\text{Let } \vec{A} = \myvec{2\\6\\27} \text{ and } \vec{B} = \myvec{1\\ \lambda \\ \mu}\\
+\end{align}
+The cross product or vector product of $\vec{A},\vec{B}$ is defined as
+\begin{align}
+	\vec{A} \times \vec{B} = \myvec{\mydet{\vec{A}_{23}&\vec{B}_{23}\\\vec{A}_{31}&\vec{B}_{31}\\\vec{A}_{12}&\vec{B}_{12}}}
+\end{align}
+Hence
+\begin{align}
+	\mydet{\vec{A}_{23}&\vec{B}_{23}}&=\mydet{6&\lambda\\27&\mu}=6\mu-27\lambda\\
+	\mydet{\vec{A}_{31}&\vec{B}_{31}}&=\mydet{27&\mu\\2&1}=27-2\mu\\
+	\mydet{\vec{A}_{12}&\vec{B}_{12}}&=\mydet{2&1\\6&\lambda}=2\lambda-6
+\end{align}
+Substituting the values
+\begin{align}
+	\vec{A}\times\vec{B}=\myvec{6\mu-27\lambda\\27-2\mu\\2\lambda-6}
+\end{align}
+Since
+\begin{align}
+	\vec{A} \times \vec{B} &= \vec{0},
+	\\
+	\myvec{6\mu-27\lambda\\27-2\mu\\2\lambda-6}&=\myvec{0\\0\\0},
+\end{align}
+which can be represented in matrix form as
+\begin{align}
+	\myvec{2&0\\0&2\\6&-27}\myvec{\mu\\\lambda}&=\myvec{27\\6\\0}.
+\end{align}
+The augmented matrix is given as
+\begin{align}
+	\myvec{2 & 0 & \vrule & 27\\0 & 2 & \vrule & 6\\ 6 & -27 & \vrule & 0}
+	\xleftrightarrow{R_{3}\rightarrow R_{3}-3R_{1}}  	
+	\myvec{2 & 0 & \vrule & 27\\0 & 2 & \vrule & 6\\ 0 & -27 & \vrule & -81}\\
+	\xleftrightarrow{R_{3}\rightarrow R_{3}+\frac{27}{2}R_{2}}  	
+	\myvec{2 & 0 & \vrule & 27\\0 & 2 & \vrule & 6\\ 0 & 0 & \vrule & 0}
+\end{align}
+yielding
+\begin{align}
+	\mu=13.5,
+	\lambda=3
+\end{align}
+

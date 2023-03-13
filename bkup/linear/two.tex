@@ -1,0 +1,287 @@
+
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\begin{enumerate}
+%\numberwithin{equation}{enumi}
+\item The equation of a line  is given by  
+\begin{align}
+	\label{eq:normal_line}
+   \vec{n}^{\top}\vec{x} = c
+\end{align}
+		where $\vec{n}$ is the normal vector of the line.
+	\item The equation of a line with normal vector $\vec{n}$ and passing through a point $\vec{A}$ 
+		is given by 
+\begin{align}
+    \label{eq:line_norm_eq}
+%	\label{eq:normal_line_pt}
+	\vec{n}^{\top}\brak{\vec{x}-\vec{A}} =0 
+\end{align}
+\item The equation of a line $L$ is also given by  
+\begin{align}
+	\label{eq:normal_line_orig}
+   \vec{n}^{\top}\vec{x}  = 
+	\begin{cases}
+		0  & \vec{0} \in L
+		 \\
+		1 & \text{otherwise}
+	\end{cases}
+\end{align}
+\item Points $\vec{A}, \vec{B}, \vec{C}$ are collinear if  
+\begin{align}
+	\label{eq:normal_line-collinear}
+	\rank	\myvec{ \vec{B}-\vec{A} &\vec{C}-\vec{A}} < 2
+\end{align}
+
+	\begin{proof}
+		From 
+	\eqref{eq:normal_line}, 
+\begin{align}
+	\vec{n}^{\top}\vec{A} &= c
+	\\
+	\vec{n}^{\top}\vec{B} &= c
+	\\
+	\vec{n}^{\top}\vec{C} &= c
+\end{align}
+which can be expressed as
+\begin{align}
+	\myvec{\vec{A} &\vec{B} &\vec{C}}^{\top}\vec{n} = c\myvec{1 \\ 1 \\ 1}
+\end{align}
+The above set of equations are consistent if 
+\begin{align}
+	\rank	\myvec{1 & 1 & 1 \\ \vec{A} &\vec{B} &\vec{C}} < 3
+	\\
+	\implies 
+	\rank	\myvec{1 & 0 & 0 \\ \vec{A} &\vec{B}-\vec{A} &\vec{C}-\vec{A}} < 3
+\end{align}
+using the fact that row rank = column rank.  The above condition can then be expressed as
+	\eqref{eq:normal_line-collinear}.
+
+
+	\end{proof}
+%	\item The equation of a line with normal vector $\vec{n}$ and passing through a point $\vec{A}$ 
+%		is given by 
+%\begin{align}
+%    \label{eq:line_norm_eq-pt}
+%%	\label{eq:normal_line_pt}
+%	\vec{n}^{\top}\brak{\vec{x}-\vec{A}} =0 
+%\end{align}
+\item The parametric equation of a line  is given by  
+\begin{align}
+	\label{eq:dir_line}
+	\vec{x} = \vec{A} + \lambda \vec{m}
+\end{align}
+		where $\vec{m}$ is the direction vector of the line and $\vec{A}$ is any point on the line.
+  \item Let $\vec{A}$ and $\vec{B}$ be two points on a straight line and let $\vec{P}= \myvec{p_1\\p_2}$ be any point on it. If $p_2$ is known, then 
+  \begin{align}
+	  \vec{P}  &=	  \vec{A} + \frac{p_2 -\vec{e}_2^{\top}  \vec{A} }{\vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }}\brak{\vec{B} -\vec{A} }
+	  \label{eq:line-3pt}
+  \end{align}
+  \solution The equation of the line can be expressed in parametric from as 
+  \begin{align}
+	  \vec{x}  &=	  \vec{A} + \lambda \brak{\vec{B} -\vec{A} }
+	  \\
+	  \implies 
+	  \vec{P}  &=	  \vec{A} + \lambda \brak{\vec{B} -\vec{A} }
+	  \\
+	  \implies 	   \vec{e}_2^{\top}\vec{P}  &=	\vec{e}_2^{\top}  \vec{A} + \lambda \vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }
+	  \\
+	 \implies p_2 &=\vec{e}_2^{\top}  \vec{A} + \lambda \vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }
+	 \\
+	  \text{or, } \lambda &= \frac{p_2 -\vec{e}_2^{\top}  \vec{A} }{\vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }}
+  \end{align}
+	  yielding \eqref{eq:line-3pt}.
+	\item The distance from a point $\vec{P}$ to the line  in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+  \label{conics/30/lemma}
+%	\label{eq:line_dist_2d}
+	d = \frac{\abs{   \vec{n}^{\top}\vec{P}-c }}{\norm{\vec{n}}}	
+\end{align}
+		\solution Without loss of generality, let $\vec{A}$ be the foot of the perpendicular from $\vec{P}$ to the line in 
+	\eqref{eq:dir_line}.  The equation of the normal to 
+	\eqref{eq:normal_line} can then be expressed as 
+\begin{align}
+	\label{eq:dir_line_normal_dist}
+	\vec{x} &= \vec{A} + \lambda \vec{n}
+	\\
+	\implies 
+	\vec{P}- \vec{A} &=  \lambda \vec{n}
+	\label{eq:dir_line_normal_dist_pa}
+\end{align}
+$\because \vec{P}$ lies on 
+		\eqref{eq:dir_line_normal_dist}.
+From the above, the desired distance can be expressed as 
+\begin{align}
+d = 	\norm{\vec{P}- \vec{A}}= \abs{\lambda} \norm{\vec{n}}
+	\label{eq:dir_line_normal_dist_pa_d}
+\end{align}
+From 
+	\eqref{eq:dir_line_normal_dist_pa},
+\begin{align}
+	\vec{n}^{\top}
+	\brak{\vec{P}- \vec{A}} &=  \lambda \vec{n}^{\top}\vec{n} = \lambda\norm{\vec{n}}^2
+	\\
+	\implies \abs{\lambda}&= \frac{\abs{\vec{n}^{\top}
+	\brak{\vec{P}- \vec{A}}}}{\norm{\vec{n}}^2} 
+\end{align}
+	Substituting the above in \eqref{eq:dir_line_normal_dist_pa_d} and using 
+	the fact that 
+\begin{align}
+   \vec{n}^{\top}\vec{A} = c
+\end{align}
+from 	\eqref{eq:normal_line}, yields 
+  \eqref{conics/30/lemma}
+%	\eqref{eq:line_dist_2d}.
+
+	\item The distance from the origin to the line  in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:dist_line_2d_orig}
+	d = \frac{\abs{   c }}{\norm{\vec{n}}}	
+\end{align}
+\item The distance between the parallel lines 
+\begin{align}
+	\label{eq:parallel_lines}
+	\begin{split}
+		\vec{n}^{\top}\vec{x} &= c_1
+		\\
+		\vec{n}^{\top}\vec{x} &= c_2
+	\end{split}
+\end{align}
+is given by 
+\begin{align}
+	\label{eq:dist_lines_2d}
+	d = \frac{\abs{   c_1-c_2 }}{\norm{\vec{n}}}	
+\end{align}
+\item The equation of the line perpendicular to 
+	\eqref{eq:normal_line}
+		and passing through the point $\vec{P}$ is given by 
+\begin{align}
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P}}  = 0
+\end{align}
+\item The foot of the perpendicular from $\vec{P}$ to the line in 
+	\eqref{eq:normal_line}
+	is given by 
+\begin{align}
+	\label{eq:normal_line_foot}
+	\myvec{ \vec{m} & \vec{n}}^{\top}\vec{x}= \myvec{\vec{m}^{\top}\vec{P}\\ c }  
+\end{align}
+% 
+\solution From
+	\eqref{eq:normal_line} and 
+\eqref{eq:line_norm_eq}
+%	\eqref{eq:normal_line_pt} 
+the foot of the perpendicular satisfies the equations 
+\begin{align}
+	\vec{n}^{\top}\vec{x} &= c
+	\\
+	\vec{m}^{\top}\brak{\vec{x}-\vec{P} }&=0 
+\end{align}
+where $\vec{m}$ is the direction vector of the given line.  Combining the above into a matrix equation results in 
+	\eqref{eq:normal_line_foot}.
+\item The equations of the angle bisectors of  the lines 
+	\label{prob:ang-bisect}
+\begin{align}
+	\vec{n}_1^{\top}\vec{x} &= c_1
+	\\
+	\vec{n}_2^{\top}\vec{x} &= c_2
+\end{align}
+are given by 
+\begin{align}
+	\frac{\vec{n}_1^{\top}\vec{x} - c_1}{\norm{\vec{n}_1}}
+	= \pm
+	\frac{\vec{n}_2^{\top}\vec{x} - c_2}{\norm{\vec{n}_2}}
+\end{align}
+\begin{proof}
+Any point on the angle bisector is equidistant from the lines.  
+\end{proof}
+
+%\item ({\em Reflection }) Assuming that straight lines work as a plane mirror for a point, find the image of the point $\vec{P}=\myvec{1\\2}$ in the line 
+%%
+%\begin{align}
+%L: \quad \myvec{1 & -3}\vec{x}  = -4.
+%\end{align}
+%\solution From the given equation, the line parameters are
+%\begin{align}
+%\vec{n} = \myvec{1 \\ -3}, c =  -4, \vec{m} = \myvec{3 \\ -1}
+%\end{align}
+%
+%Let $\vec{R}$ be the reflection of $\vec{P}$ such that $PR$ bisects the line $L$ at $\vec{Q}$. Then $\vec{Q}$ bisects $PR$.  
+%This leads to the following equations
+%\begin{align}
+%\label{eq:reflect_bisect}
+%2\vec{Q} &= \vec{P}+\vec{R}
+%\\
+%\label{eq:reflect_Q}
+%\vec{n}^{\top}\vec{Q} &= c \quad \because \vec{Q} \text{ lies on the given line}
+%\\
+%\label{eq:reflect_R}
+%\vec{m}^{\top}\vec{R} &= \vec{m}^{\top}\vec{P} \quad \because \vec{m}\perp \vec{P} - \vec{R}
+%\end{align}
+%%
+%%where 
+%%$\vec{m}$ is the direction vector of $L$.  
+%From \eqref{eq:reflect_bisect} and \eqref{eq:reflect_Q},
+%\begin{align}
+%\label{eq:reflect_bisectQ}
+%\vec{n}^{\top}\vec{R}  &= 2c - \vec{n}^{\top}\vec{P}
+%\end{align}
+%%
+%From \eqref{eq:reflect_bisectQ} and \eqref{eq:reflect_R},
+%\begin{align}
+%\label{eq:reflect_bisectQR}
+%\myvec{\vec{m} & \vec{n}}^T\vec{R} &= \myvec{\vec{m} & -\vec{n}}^T\vec{P}+ \myvec{0 \\ 2c}
+%\end{align}
+%%
+%Letting 
+%\begin{align}
+%\label{eq:reflect_mat}
+%\vec{V}=  \myvec{\vec{m} & \vec{n}}
+%\end{align}
+%with the condition that $\vec{m},\vec{n}$ are orthonormal, i.e.
+%\begin{align}
+%\label{eq:reflect_ortho}
+%\vec{V}^T\vec{V}=  \vec{I}
+%\end{align}
+%%
+%Noting that 
+%\begin{align}
+%\label{eq:reflect_trans}
+%\myvec{\vec{m} & -\vec{n}} &= \myvec{\vec{m} & \vec{n}} \myvec{1 & 0 \\ 0 & -1},
+%\end{align}
+%\eqref{eq:reflect_bisectQR} can be expressed as
+%%
+%\begin{align}
+%\label{eq:reflect_}
+%\vec{V}^T\vec{R} &=  \sbrak{\vec{V}\myvec{1 & 0 \\ 0 & -1}}^T\vec{P}+\myvec{0 \\ 2c}
+%\\
+%\implies \vec{R} &= \sbrak{\vec{V}\myvec{1 & 0 \\ 0 & -1}\vec{V}^{-1}}^T\vec{P}+ \vec{V}\myvec{0 \\ 2c}
+%\\
+% &=\vec{V}\myvec{1 & 0 \\ 0 & -1}\vec{V}^T \vec{P}+2c \vec{n}
+%\label{eq:reflect_mat_final}
+%\end{align}
+%upon substituting from \eqref{eq:reflect_mat} in \eqref{eq:reflect_mat_final}.
+%It can be verified that 
+%%\item Show that, for any $\vec{m},\vec{n}$, 
+%the reflection is also given by
+%\begin{align}
+%%\label{eq:reflect_bisect}
+%\vec{R} &= \myvec{\vec{m} & \vec{n}}\myvec{1 & 0 \\ 0 & -1}\myvec{\vec{m} & \vec{n}}^T \vec{P}+2c \vec{n}
+%\\
+% &= \myvec{\vec{m} & -\vec{n}}\myvec{\vec{m}^T \\ \vec{n}^T} \vec{P}+2c \vec{n}
+%\\
+%\implies \vec{R}&= \brak{\vec{m}\vec{m}^T-\vec{n}\vec{n}^T}\vec{P} + 2c \vec{n} 
+%\label{eq:reflect_orth_vec}
+%\end{align}
+%If $\vec{m}, \vec{n}$ are not orthonormal, \eqref{eq:reflect_orth_vec}
+%can be expressed as
+%\begin{align}
+% \frac{\vec{R}}{2}= \frac{\vec{m}\vec{m}^T-\vec{n}\vec{n}^T}{\vec{m}^T\vec{m}+\vec{n}^T\vec{n}}\vec{P} + c \frac{\vec{n}}{\norm{\vec{n}}^2}
+%\label{eq:reflect_non_orth_vec}
+%\end{align}
+%
+
+\end{enumerate}

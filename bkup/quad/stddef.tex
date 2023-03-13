@@ -1,0 +1,278 @@
+%\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\item
+Using the affine transformation in
+\eqref{eq:conic_affine},
+	the conic in     \eqref{eq:conic_quad_form} can be expressed in standard form 
+	%(centre/vertex at the origin, major axis - $x$ axis)
+	as
+  \begin{align}
+    %\begin{aligned}
+    \label{eq:conic_simp_temp_nonparab}
+	    \vec{y}^{\top}\brak{\frac{\vec{D}}{f_0}}\vec{y} &= 1   &  \abs{\vec{V}} &\ne 0
+    \\
+	    \vec{y}^{\top}\vec{D}\vec{y} &=  -\eta\vec{e}_1^{\top}\vec{y}   & \abs{\vec{V}} &= 0
+    \label{eq:conic_simp_temp_parab}
+    %\end{aligned}
+    \end{align}
+    where
+  \begin{align}
+      %\begin{split}
+      \label{eq:f0}
+	  f_0 &=\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f \ne 0
+	  \\
+      \label{eq:eta}
+       \eta &=2\vec{u}^{\top}\vec{p}_1
+       \\
+       \vec{e}_1 &=\myvec{1 \\ 0}
+      \end{align}
+     
+    
+\begin{proof}
+  \label{app:parab}
+	Using 
+\eqref{eq:conic_affine}
+%such that 
+\eqref{eq:conic_quad_form} can be expressed as
+
+%\item  
+%Substituting \eqref{eq:conic_affine} in \eqref{eq:conic_quad_form}
+\begin{align}
+\brak{\vec{P}\vec{y}+\vec{c}}^{\top}\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^{\top}\brak{\vec{P}\vec{y}+\vec{c}}+ f
+	= 0, 
+\end{align}
+yielding 
+\begin{align}
+\vec{y}^{\top}\vec{P}^{\top}\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^{\top}\vec{P}\vec{y}
++  \vec{c}^{\top}\vec{V}\vec{c} + 2\vec{u}^{\top}\vec{c} + f= 0
+\label{eq:conic_simp_one}
+\end{align}
+%
+From \eqref{eq:conic_simp_one} and \eqref{eq:conic_parmas_eig_def},
+\begin{align}
+\vec{y}^{\top}\vec{D}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^{\top}\vec{P}\vec{y}
++  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f= 0
+\label{eq:conic_simp}
+\end{align}
+When $\vec{V}^{-1}$ exists, choosing
+\begin{align}
+%\begin{split}
+\vec{V}\vec{c}+\vec{u} &= \vec{0}, \quad \text{or}, \vec{c} = -\vec{V}^{-1}\vec{u},
+\label{eq:conic_parmas_c_def}
+\end{align}
+%
+%%From \eqref{eq:conic_parmas_k_def} and 
+%%
+and substituting \eqref{eq:conic_parmas_c_def}
+in \eqref{eq:conic_simp}
+yields \eqref{eq:conic_simp_temp_nonparab}. 
+  %See Appendix \ref{app:parab}.
+When $\abs{\vec{V}} = 0, \lambda_1 = 0$ and 
+\begin{align}
+\vec{V}\vec{p}_1 = 0, 
+\vec{V}\vec{p}_2 = \lambda_2\vec{p}_2.
+\label{eq:conic_parab_eig_prop} 
+\end{align}
+where $\vec{p}_1,\vec{p}_2$ are the eigenvectors of $\vec{V}$ such that  \eqref{eq:conic_parmas_eig_def}
+%
+\begin{align}
+\vec{P} = \myvec{\vec{p}_1 & \vec{p}_2},
+\label{eq:eig_matrix}
+\end{align}
+Substituting \eqref{eq:eig_matrix}
+in \eqref{eq:conic_simp},
+\begin{align}
+	\vec{y}^{\top}\vec{D}\vec{y}+2\brak{\vec{c}^{\top}\vec{V}+\vec{u}^{\top}}\myvec{\vec{p}_1 & \vec{p}_2}\vec{y}
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\\
+\implies \vec{y}^{\top}\vec{D}\vec{y}
++2\myvec{\brak{\vec{c}^{\top}\vec{V}+\vec{u}^{\top}}\vec{p}_1  \brak{\vec{c}^{\top}\vec{V}+\vec{u}^{\top}}\vec{p}_2}\vec{y}
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\\
+\implies \vec{y}^{\top}\vec{D}\vec{y}
++2\myvec{\vec{u}^{\top}\vec{p}_1 & \brak{\lambda_2\vec{c}^{\top}+\vec{u}^{\top}}\vec{p}_2}\vec{y}
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\end{align}
+upon substituting from 
+ \eqref{eq:conic_parab_eig_prop} yielding
+\begin{align}
+\lambda_2y_2^2+2\brak{\vec{u}^{\top}\vec{p}_1}y_1+  2y_2\brak{\lambda_2\vec{c}+\vec{u}}^{\top}\vec{p}_2
+	+  \vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f= 0
+\label{eq:conic_parab_foc_len_temp} 
+\end{align}
+%which is the equation of a parabola. 
+Thus, \eqref{eq:conic_parab_foc_len_temp} 
+can be expressed as \eqref{eq:conic_simp_temp_parab} by choosing
+\begin{align}
+%\label{eq:eta}
+\eta = 2\vec{u}^{\top}\vec{p}_1
+\end{align}
+%Choosing 
+%\begin{align}
+%\vec{u} + \lambda_2\vec{c} = 0,
+%\vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f = 0,
+%\end{align}
+% the above equation becomes
+%\begin{align}
+%y_2^2= -\frac{2\vec{u}^{\top}\vec{p}_1}{ \lambda_2} \brak{y_1
+%+  \frac{\vec{u}^{\top}\vec{V}\vec{u} - 2\lambda_2\vec{u}^{\top}\vec{u} + f\lambda_2^2}{2\vec{u}^{\top}\vec{p}_1\lambda_2^2}}
+%\\
+%or \eta = 2\vec{u}^{\top}\vec{p}_1
+%%\label{eq:conic_simp_parab_new}
+%\end{align}
+and $\vec{c}$ in \eqref{eq:conic_simp} such that
+\begin{align}
+\label{eq:conic_parab_one}
+2\vec{P}^{\top}\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\myvec{1\\0}
+\\
+\vec{c}^{\top}\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^{\top}\vec{c} + f&= 0
+\label{eq:conic_parab_two}
+\end{align}
+%we obtain  \eqref{eq:conic_simp_temp_parab}.
+$\because
+\vec{P}^{\top}\vec{P} = \vec{I}$,
+multiplying \eqref{eq:conic_parab_one} by $\vec{P}$ yields
+\begin{align}
+\label{eq:conic_parab_one_eig}
+	\brak{\vec{V}\vec{c}+\vec{u}} &= \frac{\eta}{2}\vec{p}_1,
+\end{align}
+which, upon substituting in \eqref{eq:conic_parab_two}
+results in 
+\begin{align}
+\frac{\eta}{2}\vec{c}^{\top}\vec{p}_1 + \vec{u}^{\top}\vec{c} + f&= 0
+\label{eq:conic_parab_two_eig}
+\end{align}
+\eqref{eq:conic_parab_one_eig} and \eqref{eq:conic_parab_two_eig} can be clubbed together to obtain \eqref{eq:conic_parab_c}.
+  \end{proof}
+	  \item
+		For the standard conic, 
+				\begin{align}
+					\label{eq:std-prm-P}
+					\vec{P} &= \vec{I}
+					\\
+					\vec{u} &= 
+				\begin{cases}
+				0 & e \ne 1
+       \\
+				\frac{\eta}{2} \vec{e}_1 & e = 1
+				\end{cases}
+				\label{eq:std-prm-u}
+				\\
+				\lambda_1 &  
+					\begin{cases}
+						=0 & e = 1
+						\\
+						\ne 0 & e \ne 1
+					\end{cases}
+				\label{eq:std-prm-lam1}
+				\end{align}
+				where 
+				\begin{align}
+					\vec{I} = \myvec{\vec{e}_1 & \vec{e}_2}
+				\end{align}
+				is the identity matrix.
+	  
+    \item\leavevmode
+		\begin{enumerate}
+			\item The directrices for the  standard conic are given by 
+				\begin{align}
+					\label{eq:dx-ell-hyp}
+					\vec{e}_1^{\top}\vec{y} &=  
+					%\pm\sqrt{\abs{\frac{f_0\lambda_2}{\lambda_1\brak{\lambda_2-\lambda_1}}}} & e \ne 1
+					\pm \frac{1}{e}\sqrt{\frac{\abs{f_0}}{\lambda_2\brak{1-e^2}}} & e \ne 1
+					\\
+					\vec{e}_1^{\top}\vec{y} &= \frac{\eta}{2\lambda_2} & e = 1
+					\label{eq:dx-parab}
+				\end{align}
+    \item The foci of the standard ellipse and hyperbola are given by 
+				\begin{align}
+					\label{eq:F-ell-hyp-parab}
+					\vec{F} 
+=
+					\begin{cases}
+						\pm e\sqrt{\frac{\abs{f_0}}{\lambda_2\brak{1-e^2}}}\vec{e}_1 & e \ne 1
+					%	\pm \sqrt{\abs{\frac{f_0}{\lambda_1}\brak{1 - \frac{\lambda_1}{\lambda_2}}}}\vec{e}_1 & e \ne 1
+						\\
+						 -\frac{\eta}{4\lambda_2}\vec{e}_1 & e = 1
+					\end{cases}
+				\end{align}
+	
+		\end{enumerate}
+	%	where, without loss of generality, $f_0 < 0$ for the hyperbola.
+    
+	\begin{proof}%\leavevmode
+  \label{app:foc-dir}
+%  \input{appendix.tex}
+		\begin{enumerate}
+			\item For the standard hyperbola/ellipse in \eqref{eq:conic_simp_temp_nonparab}, from 
+					\eqref{eq:std-prm-P},
+\eqref{eq:conic_quad_form_nc}
+and 
+					\eqref{eq:std-prm-u},
+				\begin{align}
+\label{eq:n-ell-hyp}
+					\vec{n} &= \sqrt{\frac{\lambda_2}{f_0}} \vec{e}_1 
+					\\
+					c &= 
+					%\pm \frac{\sqrt{-\lambda_2\brak{e^2-1}\brak{\lambda_2 f_0}}}{\lambda_2e\brak{e^2-1}}
+					\pm \frac{\sqrt{-\frac{\lambda_2}{f_0}\brak{e^2-1}\brak{\frac{\lambda_2}{ f_0}}}}{\frac{\lambda_2}{f_0}e\brak{e^2-1}}
+					\\
+					&=\pm \frac{1}{e\sqrt{1-e^2}}
+%					\\
+%					&=\pm\sqrt{\abs{\frac{f_0}{\brak{1 - \frac{\lambda_1}{\lambda_2}}\frac{\lambda_1}{\lambda_2}}}}
+\label{eq:c-ell-hyp}
+				\end{align}
+				yielding 
+					\eqref{eq:dx-ell-hyp} upon substituting from 
+\eqref{eq:conic_quad_form_e} and simplifying.
+For the standard parabola in \eqref{eq:conic_simp_temp_parab},  from 
+					\eqref{eq:std-prm-P},
+\eqref{eq:conic_quad_form_nc}
+and 
+					\eqref{eq:std-prm-u}, noting that $f = 0$,
+
+				\begin{align}
+\label{eq:n-parab}
+					\vec{n} &= \sqrt{\lambda_2} \vec{e}_1 
+					\\
+					c &=
+	\frac{\norm{\frac{\eta}{2} \vec{e}_1}^2   }{2\vec{\brak{\frac{\eta}{2}} \brak{\vec{e}_1}^{\top}\vec{n}}} 
+\\
+					\\
+					&= \frac{\eta}{4\sqrt{\lambda_2}}
+\label{eq:c-parab}
+				\end{align}
+				yielding 
+					\eqref{eq:dx-parab}.
+
+				\item 	For the standard ellipse/hyperbola, substituting from
+\eqref{eq:c-ell-hyp},
+\eqref{eq:n-ell-hyp},
+\eqref{eq:std-prm-u}
+and \eqref{eq:conic_quad_form_e}
+in \eqref{eq:conic_quad_form_F},
+				\begin{align}
+					\vec{F} &= \pm \frac{\brak{\frac{1}{e\sqrt{1-e^2}}}\brak{e^2}\sqrt{\frac{\lambda_2}{f_0}}\vec{e}_1}{\frac{\lambda_2}{f_0}}
+					%\pm\sqrt{\abs{\frac{f_0}{\brak{1 - \frac{\lambda_1}{\lambda_2}}\frac{\lambda_1}{\lambda_2}}}}
+					%\brak{1 - \frac{\lambda_1}{\lambda_2}}\frac{\sqrt{\lambda_2}}{\lambda_2}\vec{e}_1
+ 			\end{align}
+			yielding
+					\eqref{eq:F-ell-hyp-parab}
+					after simplification.
+					For the standard parabola, substituting from 
+\eqref{eq:c-parab},
+\eqref{eq:n-parab},
+\eqref{eq:std-prm-u}
+and \eqref{eq:conic_quad_form_e}
+in \eqref{eq:conic_quad_form_F},			
+				\begin{align}
+	\vec{F}  &= \frac{\brak{\frac{\eta}{4\sqrt{\lambda_2}}}\sqrt{\lambda_2}\vec{e}_1-\vec{\frac{\eta}{2} \vec{e}_1}}{\lambda_2}
+\\
+				\end{align}
+				yielding 
+					\eqref{eq:F-ell-hyp-parab} after simplification.
+
+		\end{enumerate}
+%		See Appendix \ref{app:foc-dir}.
+	\end{proof}
+	\end{enumerate}

@@ -1,0 +1,123 @@
+%\subsection{The Quadratic Form}
+%\numberwithin{equation}{subsection}
+%\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+	\item The equation of a circle is given by 
+	\label{prop:circ-eq}
+\begin{align}
+	\norm{\vec{x}}^2 + 2 \vec{u}^{\top}\vec{x} + f = 0
+	\label{eq:circ-eq}
+\end{align}
+\item For a circle with centre $\vec{c}$ and radius r,
+\begin{align}
+	\vec{u} = -\vec{c}, f = \norm{\vec{u}}^2 - r^2
+	\label{eq:circ-cr}
+\end{align}
+\item Any point $\vec{x}$ on a circle can be expressed as
+\begin{align}
+\vec{x} = \vec{c} + r\myvec{\cos \theta \\ \sin \theta}.
+	\label{eq:circ-polar}
+\end{align}
+\item The equation of the common chord of intersection of two  circles is given by 
+\begin{align}
+	2\brak{\vec{u}_1
+	   -\vec{u}_2}^{\top}\vec{x} + f_1 - f_2 = 0
+	\label{eq:circ-chord}
+\end{align}
+\item The line joining the centre of a circle to the mid point of any chord is perpendicular to the chord.
+	\label{prop:circ-chord-perp}
+	\begin{proof}
+	Let $AB$ be any chord of a circle with centre $\vec{O}= \vec{0}$ and radius $r$.  Then, 
+\begin{align}
+	\norm{\vec{A}}^2 
+	=\norm{\vec{B}}^2  &= r^2
+	\\
+	\implies 
+	\norm{\vec{A}}^2 
+	-\norm{\vec{B}}^2  &=\vec{0}
+	\\
+	\text{or, }\brak{\vec{A}-\vec{B}}^{\top}\brak{\vec{A}+\vec{B}} &= \vec{0}
+\end{align}
+which can be expressed as 
+\begin{align}
+	\brak{\vec{A}-\vec{B}}^{\top}\brak{\frac{\vec{A}+\vec{B}}{2}-\vec{O}} = \vec{0}
+\end{align}
+	\end{proof}
+\item Let 
+\begin{align}
+\vec{A} =  \myvec{\cos \theta_1 \\ \sin \theta_1},
+\vec{B} =  \myvec{\cos \theta_2 \\ \sin \theta_2},
+\end{align}
+ be points on  a unit circle with centre $\vec{O}$ at the origin.  Then
+\begin{align}
+	\label{eq:circ-ang-centre}
+	\cos AOB = \vec{A}^{\top}\vec{B} 
+\end{align}
+\item Let 
+\begin{align}
+\vec{A} =  \myvec{\cos \theta_1 \\ \sin \theta_1},
+\vec{B} =  \myvec{\cos \theta_2 \\ \sin \theta_2},
+\vec{C} =  \myvec{\cos \theta \\ \sin \theta},
+\end{align}
+ be points on  a unit circle.  Then
+  \begin{align}
+	\label{eq:circ-angle-1}
+	  \cos ACB&= \frac{\brak{\vec{C}-\vec{A}}^{\top} \brak{\vec{C}-\vec{B}}}{\norm{\vec{C}-\vec{A}}\norm{\vec{C}-\vec{B}}}
+	  \\
+	  &= \cos \brak{\frac{\theta_1 - \theta_2}{2}}
+	\label{eq:circ-angle-2}
+  \end{align}
+		\begin{proof}
+			Since
+\begin{align}
+	\brak{\vec{C}-\vec{A}}^{\top} \brak{\vec{C}-\vec{B}} &= 
+	\norm{\vec{C}}^2 - \vec{C}^{\top}\brak{\vec{A}+\vec{B}} + \vec{A}^{\top}\vec{B}
+	\\
+	&= 1 - \cos\brak{\theta-\theta_1} - \cos\brak{\theta-\theta_2} + \cos\brak{\theta_1-\theta_2}
+	\\
+	&= 2 \cos^2 \brak{\frac{\theta_1 - \theta_2}{2}}
+	- 2 \cos \brak{\frac{\theta_1 - \theta_2}{2}}
+	\cos \brak{\theta -\frac{\theta_1 + \theta_2}{2}}
+	\\
+	&= 4 \cos \brak{\frac{\theta_1 - \theta_2}{2}}
+	\sin \brak{\frac{\theta - \theta_1}{2}}
+	\sin \brak{\frac{\theta - \theta_2}{2}},
+\end{align}
+and 
+\begin{align}
+	\norm{\vec{C}-\vec{A}}^2 &= \norm{\vec{C}}^2+\norm{\vec{A}}^2 - 2\vec{C}^{\top}\vec{A},
+	\\
+&= 4 
+	\sin^2 \brak{\frac{\theta - \theta_1}{2}}, 
+	\\
+	\norm{\vec{C}-\vec{B}}^2 &= \norm{\vec{C}}^2+\norm{\vec{B}}^2 - 2\vec{C}^{\top}\vec{B},
+	\\
+&= 4 
+	\sin^2 \brak{\frac{\theta - \theta_2}{2}}, 
+\end{align}
+	\eqref{eq:circ-angle-1}
+	can be expressed as
+\begin{align}
+	\frac{	  \cos \brak{\frac{\theta_1 - \theta_2}{2}}
+	\sin \brak{\frac{\theta - \theta_1}{2}}
+	\sin \brak{\frac{\theta - \theta_2}{2}}
+	}
+	{
+	\sin \brak{\frac{\theta - \theta_1}{2}}
+	\sin \brak{\frac{\theta - \theta_1}{2}} 
+} 
+\end{align}
+yielding 
+	\eqref{eq:circ-angle-2}
+		\end{proof}
+	\item From 
+	\eqref{eq:circ-ang-centre}
+	and 
+	\eqref{eq:circ-angle-2},
+	\label{prop:circ-ang-centre-arc}
+\begin{align}
+	\label{eq:circ-ang-centre-arc}
+	\angle AOB = 2\angle AOC
+\end{align}
+
+\end{enumerate}

@@ -1,0 +1,262 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Let $\vec{P}$ be a point such that the ratio of its distance from a fixed point $\vec{F}$ and the distance ($d$) from a fixed line 
+$L: \vec{n}^T\vec{x}=c$ is constant, given by 
+\label{conics/30/def}
+\begin{align}
+\frac{\norm{\vec{P}-\vec{F}}}{d} = e    
+\end{align}
+The locus of $\vec{P}$ such is known as a conic section. The line $L$ is known as the directrix and the point $\vec{F}$ is the focus. $e$ is defined to be 
+the eccentricity of the conic.  
+\begin{enumerate}
+    \item For $e = 1$, the conic is a parabola
+    \item For $e < 1$, the conic is an ellipse
+    \item For $e > 1$, the conic is a hyperbola
+\end{enumerate}
+
+% \item     
+% \begin{definition}
+% \end{definition}
+\item 
+%\begin{theorem}
+The equation of  a conic is given by 
+\begin{align}
+    \label{eq:conic_quad_form}
+    \vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+f=0
+    \end{align}
+where     
+\begin{align}
+\vec{V} &= t\vec{I}-\vec{n}\vec{n}^T, 
+\\
+\vec{u} &= c\vec{n}-t\vec{F}, 
+\\
+f &= t\norm{\vec{F}}^2-c^2
+    \end{align}
+    
+% \begin{align}
+% \vec{x}^T(t\vec{I}-\vec{n}\vec{n}^T)\vec{x}+2(c\vec{n}-t\vec{F})^T\vec{x}+t\norm{\vec{F}}^2-c^2&=0
+% \end{align}
+%
+and 
+\begin{align}
+    t=\frac{\norm{\vec{n}}^2}{e^2}
+\end{align}
+%\end{theorem}
+
+\solution See Appendix \ref{app:conicdef}
+
+% \item The general equation of second degree is given by
+% \begin{align}
+% ax^2+2bxy+cy^2+2dx+2ey+f=0
+% \end{align}
+% and can be expressed as
+% \begin{align}
+% \label{eq:conic_quad_form}
+% \vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+f=0
+% \end{align}
+% %
+% where
+% \begin{align}
+% \vec{V} &= \vec{V}^T = \myvec{a & b \\ b & c}
+% \\
+% \vec{u} &= \myvec{d & e}
+% \end{align}
+
+\item {\em (Affine Transformation and Eigenvalue Decompostion)}
+Using 
+\begin{align}
+\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
+\label{eq:conic_affine}
+\end{align}
+such that 
+\begin{align}
+%\begin{split}
+\label{eq:conic_parmas_eig_def}
+\vec{P}^T\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
+\\
+\vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
+\\
+\vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^T=\vec{P}^{-1}
+\end{align}
+\eqref{eq:conic_quad_form} can be expressed as
+\begin{align}
+%\begin{aligned}
+\label{eq:conic_simp_temp_nonparab}
+\vec{y}^T\vec{D}\vec{y} &=  \vec{u}^T\vec{V}^{-1}\vec{u} -f  &  \abs{V} &\ne 0
+\\
+\vec{y}^T\vec{D}\vec{y} &=  -2\eta\myvec{1 & 0}\vec{y}   & \abs{V} &= 0
+\label{eq:conic_simp_temp_parab}
+%\end{aligned}
+\end{align}
+with 
+\begin{align}
+%\begin{aligned}[t]
+\label{eq:conic_nonparab_c}
+\vec{c} &= - \vec{V}^{-1}\vec{u} & \abs{V} &\ne 0
+\\
+\cmyvec{ \vec{u}^T+\eta\vec{p}_1^T \\ \vec{V}}\vec{c} &= \cmyvec{-f \\ \eta\vec{p}_1-\vec{u}}  &\abs{V} &= 0
+%\end{cases}
+%\end{aligned}
+\label{eq:conic_parab_c}
+\\
+\text{where } \eta &=\vec{n}^T\vec{p}_1
+\end{align}
+%\end{lemma}
+\solution
+%\proof
+%
+ Proofs for \eqref{eq:conic_simp_temp_nonparab},
+\eqref{eq:conic_simp_temp_parab}, \eqref{eq:conic_nonparab_c}
+ and \eqref{eq:conic_parab_c}
+are available in Appendix \ref{app:parab}.
+%\begin{align}
+%\vec{y}^T\vec{D}\vec{y} - 4 \myvec{1 & 0}\vec{y} = 0, \quad \text{or, } y_2^2 = \frac{4}{\lambda_2}y_1
+%\end{align}
+%is obtained from 
+%
+\item {\em (Centre/Vertex)}
+The centre/vertex of the conic section in \eqref{eq:conic_quad_form} is given by $\vec{c}$ in \eqref{eq:conic_nonparab_c} or \eqref{eq:conic_parab_c}.  This is because from \eqref{eq:conic_affine},
+\begin{align}
+\label{eq:conic_affine_inv}
+\vec{y} = \vec{P}^T\brak{\vec{x}-\vec{c}}
+\end{align}
+and 
+\begin{align}
+\label{eq:conic_centre}
+\vec{y} = \vec{0} \implies \vec{x}=\vec{c}
+\end{align}
+%
+\item {\em (Circle)}
+For a circle, 
+\begin{align}
+\vec{V}=\vec{D}= \vec{P} = \vec{I}
+\end{align}
+and the centre is obtained from \eqref{eq:conic_nonparab_c}, \eqref{eq:conic_centre}
+as
+\begin{align}
+\label{eq:conic_circ_centre}
+\vec{c} = -\vec{u}
+\end{align}
+\eqref{eq:conic_simp_temp_nonparab}
+becomes
+\begin{align}
+\vec{y}^T\vec{y} &=  \norm{\vec{y}}^2=\brak{\sqrt{\vec{u}^T\vec{u} -f}}^2
+\label{eq:conic_simp_temp_circ}
+\end{align}
+ and the radius is \begin{align} \sqrt{\vec{u}^T\vec{u} -f} \label{eq:conic_simp_temp_circ_rad} \end{align} 
+
+\item {\em (Ellipse) } For \begin{align} \abs{\vec{V}} > 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 > 0 
+\end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes \begin{align} \lambda_1y_1^2 +\lambda_2y_1^2 = 
+\vec{u}^T\vec{V}^{-1}\vec{u} -f \end{align} which is the equation of an ellipse with major and minor axes 
+parameters \begin{align} \sqrt{\frac{\lambda_1}{\vec{u}^T\vec{V}^{-1}\vec{u} -f}}, 
+\sqrt{\frac{\lambda_2}{\vec{u}^T\vec{V}^{-1}\vec{u} -f}}. \end{align} The centre is obtained from 
+\eqref{eq:conic_centre} as \eqref{eq:conic_nonparab_c}. 
+
+\item {\em (Hyperbola)} For 
+\begin{align} 
+\label{eq:conic_hyper_cond}
+\abs{\vec{V}} 
+< 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes 
+\begin{align} 
+\lambda_1y_1^2 -\brak{-\lambda_2}y_1^2 = \vec{u}^T\vec{V}^{-1}\vec{u} -f 
+\label{eq:quad_form_hyper}
+\end{align} with major 
+and minor axes parameters \begin{align} \sqrt{\frac{\lambda_1}{\vec{u}^T\vec{V}^{-1}\vec{u} -f}}, 
+\sqrt{\frac{\lambda_2}{f-\vec{u}^T\vec{V}^{-1}\vec{u}}}, \end{align} The centre is obtained from 
+\eqref{eq:conic_centre} as \eqref{eq:conic_nonparab_c}. 
+
+\item ({\em Pair of straight lines:}) The {\em asymptotes} of the hyperbola \eqref{eq:conic_quad_form} are defined as the pair of intersecting straight lines 
+\begin{align}
+\label{eq:asymp_quad_form}
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+\vec{u}^T\vec{V}^{-1}\vec{u}=0
+\end{align}
+such that 
+\begin{align} 
+%\label{eq:quad_form_asymp_cond}
+%K =  \vec{u}^T\vec{V}^{-1}\vec{u}
+%\\
+\abs{\vec{V}} < 0
+\label{eq:quad_pair_det}
+\end{align} 
+%
+From \eqref{eq:asymp_quad_form},
+%
+%\eqref{eq:quad_form_hyper} and \eqref{eq:quad_form_asymp_cond} 
+the equation of the asymptotes for \eqref{eq:quad_form_hyper} is
+\begin{align} 
+\myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{y} = 0
+\end{align} 
+%
+and the asymptotes for the hyperbola are obtained using \eqref{eq:conic_affine} as
+%
+\begin{align} 
+\label{eq:quad_form_pair}
+\myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{P}^T\brak{\vec{x}-\vec{c}} = 0
+\end{align} 
+%
+Thus, $\vec{c}$ is the point of intersection of the lines and the normal vectors of the lines in \eqref{eq:quad_form_pair} are 
+\begin{align} 
+\label{eq:quad_form_pair_normvecs}
+\begin{split}
+\vec{n}_1 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}
+\\
+\vec{n}_2 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm] - \sqrt{\abs{\lambda_2}}}
+\end{split}
+\end{align} 
+%
+\item The angle between the asymptotes is given by 
+\begin{align} 
+\label{eq:quad_form_pair_ang_exp}
+\cos\theta=\frac{\vec{n_1}^T\vec{n_2}}{\norm{\vec{n_1}}\norm{\vec{n_2}}}
+\end{align} 
+The orthogonal matrix $\vec{P}$ preserves the norm, i.e.
+\begin{align} 
+\norm{\vec{n_1}} = \norm{\vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
+\\
+=\norm{\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
+=\sqrt{\abs{\lambda_1}+\abs{\lambda_2}} = \norm{\vec{n_2}}
+\end{align} 
+It is easy to verify that 
+\begin{align} 
+\vec{n_1}^T\vec{n_2} = \abs{\lambda_1}-\abs{\lambda_2}
+\end{align} 
+%
+Thus, the angle between the asymptotes is obtained from \eqref{eq:quad_form_pair_ang_exp} as
+\begin{align} 
+\label{eq:quad_form_pair_ang}
+\cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
+{\abs{\lambda_1}+\abs{\lambda_2}}
+\end{align} 
+\item ({\em Conjugate Hyperbola:}) Another hyperbola with the same asymptotes as \eqref{eq:quad_form_pair} can be obtained from \eqref{eq:conic_quad_form} and \eqref{eq:asymp_quad_form} as
+\begin{align}
+\label{eq:hyper_conj_quad_form}
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+2\vec{u}^T\vec{V}^{-1}\vec{u}-f=0
+\end{align}
+%
+\item 
+%Apart from \eqref{eq:quad_form_asymp_cond}, 
+Another condition for \eqref{eq:conic_quad_form} to represent a pair of straight lines is
+\begin{align}
+\mydet{
+\vec{V}&\vec{u}
+\\
+\vec{u}^T&f
+}
+= 0
+\label{eq:quad_forms_pair_det}
+\end{align}
+%
+
+
+\item {\em (Parabola)} For \begin{align} \abs{\vec{V}} 
+= 0, \quad \text{or, } \lambda_1 = 0. \end{align}
+%and \eqref{eq:conic_simp_temp_parab} becomes \begin{align} y_2^2 = \frac{4}{\lambda_2}y_1 \end{align} which is 
+%the equation of a parabola with focal length $\frac{1}{\lambda_2}$.
+The vertex of the parabola  is  obtained using \eqref{eq:conic_parab_c} and the focal length is 
+\begin{align}
+\mydet{\frac{2\vec{p}_1^T\vec{u}}{\lambda_2}}
+\end{align}
+
+\end{enumerate}
+

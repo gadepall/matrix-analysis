@@ -1,0 +1,50 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+\item {\em Definition: }Let $\vec{x} \in \mathbb{R}^2, f\brak{\vec{x}} \in \mathbb{R}$.  Then, 
+\begin{align}
+\frac{df\brak{\vec{x}}}{d\vec{x}} = \myvec{\frac{\partial f(\vec{x})}{\partial x_1}\\\frac{\partial f(\vec{x})}{\partial x_2}}
+\end{align}
+\item 
+\begin{align}
+\begin{split}
+\frac{d\vec{x}}{dx_1} &= \myvec{\frac{dx_1}{dx_1} \\ \frac{dx_1}{dx_1}} 
+\\
+&= \myvec{1\\m} = \vec{m}
+\end{split}
+\label{eq:calc_m_diff}
+\end{align}
+\item Show that 
+\begin{align}
+\begin{split}
+\frac{d\brak{\vec{u}^T\vec{x}}}{d\vec{x}} &= \vec{u}
+\\
+\frac{d\brak{\vec{x}^T\vec{V}\vec{x}}}{d\vec{x}} &= 2\vec{V}^T\vec{x}
+\end{split}
+\label{eq:calc_vec_diff}
+\end{align}
+\item Differentiating \eqref{eq:conic_quad_form}
+%\eqref{eq:ellipse_vec}  
+with respect to $x_1$,
+%
+%\numberwithin{equation}{enumi}
+\begin{align}
+\label{eq:ellipse_tangent_der}
+\sbrak{\frac{d\brak{\vec{x}^T\vec{V}\vec{x}}}{d\vec{x}}}^T\frac{d\vec{x}}{dx_1}
++2\frac{d\brak{\vec{u}^T\vec{x}}}{\vec{x}} \frac{d\vec{x}}{dx_1}
+= 0
+\\
+\implies 2\brak{\vec{V}^T\vec{x}+\vec{u}}\vec{m}  = 0  
+\end{align}
+from \eqref{eq:calc_m_diff} and \eqref{eq:calc_vec_diff}.
+%
+%and \eqref{eq:ellipse_vec_diff}.
+Substituting  the point of contact $\vec{x} = \vec{q}$ and simplifying results in
+\begin{align}
+\brak{\vec{V}\vec{q}+\vec{u}}\vec{m} & = 0 
+\label{eq:ellipse_tangent_der_std}
+\end{align}
+%
+which, upon taking the transpose, yields 
+\eqref{eq:conic_tangent_mq}.
+\end{enumerate}

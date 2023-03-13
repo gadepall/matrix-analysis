@@ -1,0 +1,187 @@
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{listings}
+\usepackage{color}    
+\usepackage{array}    
+\usepackage{longtable}
+\usepackage{calc}     
+\usepackage{multirow} 
+\usepackage{hhline}   
+\usepackage{ifthen}   
+\usepackage{lscape}     
+\usepackage{chngcntr}
+\DeclareMathOperator*{\Res}{Res}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\renewcommand\thetable{\arabic{table}}
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+%\lstset{
+%language=tex,
+%frame=single, 
+%breaklines=true
+%}
+
+\begin{document}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+\providecommand{\system}[1]{\overset{\mathcal{#1}}{ \longleftrightarrow}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\let\vec\mathbf
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+
+\vspace{3cm}
+\title{Circle Assignment}
+\author{Gautam Singh}
+\maketitle
+\bigskip
+
+\begin{abstract}
+    This document contains the solution to Question 10 of 
+    Exercise 6 in Chapter 10 of the class 9 NCERT textbook.
+\end{abstract}
+
+\begin{enumerate}
+    
+    \fi
+		Let the position vectors of the points be
+    \begin{align}
+        \vec{A} = \myvec{1\\0},\ \vec{B} = \myvec{\cos\beta\\\sin\beta},\ \vec{C} = \myvec{\cos\gamma\\\sin\gamma}
+        \label{eq:chapters/9/10/6/10/pts}
+    \end{align}
+
+    Then, the equation of the perpendicular bisector of $BC$ is given by
+    \begin{align}
+        \norm{\vec{x}-\vec{B}}^2&=\norm{\vec{x}-\vec{C}}^2 \\
+        \implies \brak{\vec{B}-\vec{C}}^\top\vec{x} &= 0
+        \label{eq:chapters/9/10/6/10/perp-bisect}
+    \end{align}
+    and the equation of the angle bisector of $\angle A$ is given by
+    \begin{align}
+        &\frac{\brak{\vec{B}-\vec{A}}^\top\brak{\vec{x}-\vec{A}}}{\norm{\vec{B}-\vec{A}}} = \frac{\brak{\vec{C}-\vec{A}}^\top\brak{\vec{x}-\vec{A}}}{\norm{\vec{C}-\vec{A}}} \\
+        &\brak{\frac{\vec{B}-\vec{A}}{\norm{\vec{B}-\vec{A}}}-\frac{\vec{C}-\vec{A}}{\norm{\vec{C}-\vec{A}}}}^\top\brak{\vec{x}-\vec{A}} = 0
+        \label{eq:chapters/9/10/6/10/angle-bisect}
+    \end{align}
+    Note that from \eqref{eq:chapters/9/10/6/10/pts},
+    \begin{align}
+        \frac{\vec{B}-\vec{A}}{\norm{\vec{B}-\vec{A}}} &= \frac{1}{\sqrt{2\brak{1-\cos\beta}}}\myvec{\cos\beta-1\\\sin\beta} \\
+                                                       &= \myvec{-\sin\frac{\beta}{2}\\\cos\frac{\beta}{2}}
+                                                       \label{eq:chapters/9/10/6/10/unit-vec}
+    \end{align}
+    Therefore, using \eqref{eq:chapters/9/10/6/10/pts} in \eqref{eq:chapters/9/10/6/10/perp-bisect} and
+    \eqref{eq:chapters/9/10/6/10/unit-vec} in \eqref{eq:chapters/9/10/6/10/angle-bisect},
+    \begin{align}
+        \myvec{\cos\beta-\cos\gamma\\\sin\beta-\sin\gamma}^\top\vec{x} &= 0 \label{eq:chapters/9/10/6/10/e1} \\
+        \myvec{\sin\frac{\gamma}{2}-\sin\frac{\beta}{2}\\\cos\frac{\beta}{2}-\cos\frac{\gamma}{2}}^\top\vec{x} &= \sin\frac{\gamma}{2}-\sin\frac{\beta}{2} \label{eq:chapters/9/10/6/10/e2}
+    \end{align}
+    Using \eqref{eq:chapters/9/10/6/10/e1} and \eqref{eq:chapters/9/10/6/10/e2}, we form the matrix equation
+    \begin{align}
+        \myvec{\cos\beta-\cos\gamma&\sin\beta-\sin\gamma\\\sin\frac{\gamma}{2}-\sin\frac{\beta}{2}&\cos\frac{\beta}{2}-\cos\frac{\gamma}{2}}\vec{x} \nonumber \\
+        = \myvec{0\\\sin\frac{\gamma}{2}-\sin\frac{\beta}{2}}
+        \label{eq:chapters/9/10/6/10/mtx-eqn}
+    \end{align}
+    Solving \eqref{eq:chapters/9/10/6/10/mtx-eqn} using the augmented matrix, and letting 
+    $\theta \triangleq \frac{\beta+\gamma}{2}$,
+    \begin{align}
+        &\myvec{\cos\beta-\cos\gamma&\sin\beta-\sin\gamma&0\\\sin\frac{\gamma}{2}-\sin\frac{\beta}{2}&\cos\frac{\beta}{2}-\cos\frac{\gamma}{2}&\sin\frac{\gamma}{2}-\sin\frac{\beta}{2}} \\
+        &\xleftrightarrow[]{\substack{R_1\leftarrow\frac{R_1}{\cos\beta-\cos\gamma}\\R_2\leftarrow\frac{R_2}{\sin\frac{\gamma}{2}-\sin\frac{\beta}{2}}}}\myvec{1&-\cot\theta&0\\1&\tan\frac{\theta}{2}&1} \\
+        &\xleftrightarrow[]{R_2\leftarrow R_2-R_1}\myvec{1&-\cot\theta&0\\0&\tan\frac{\theta}{2}+\cot\theta&1} \\
+        &= \myvec{1&-\cot\theta&0\\0&\csc\theta&1} \\
+        &\xleftrightarrow[]{R_1\leftarrow R_1 + R_2\cos\theta}\myvec{1&0&\cos\theta\\0&\csc\theta&1} \\
+        &\xleftrightarrow[]{R_2\leftarrow R_2\sin\theta}\myvec{1&0&\cos\theta\\0&1&\sin\theta}
+        \label{eq:chapters/9/10/6/10/aug-mtx}
+    \end{align}
+    Thus, the intersection of the lines in \eqref{eq:chapters/9/10/6/10/e1} and \eqref{eq:chapters/9/10/6/10/e2} is
+    \begin{align}
+        \vec{D} \triangleq \myvec{\cos\frac{\beta+\gamma}{2}\\\sin\frac{\beta+\gamma}{2}}
+        \label{eq:chapters/9/10/6/10/intersect-pt}
+    \end{align}
+    Hence, it is clear from \eqref{eq:chapters/9/10/6/10/intersect-pt} that $\vec{D}$ lies on the 
+    circumcircle of $\triangle ABC$, as required.
+
+    The situation is illustrated in Fig. \ref{fig:chapters/9/10/6/10/bisector}. The parameters
+    used in the construction are shown in Table \ref{tab:chapters/9/10/6/10/param}.
+    \begin{table}[!ht]
+        \centering
+        \input{chapters/9/10/6/10/tables/09.10.06.10_1.tex}
+        \caption{Parameters used in the construction of Fig. \ref{fig:chapters/9/10/6/10/bisector}.}
+        \label{tab:chapters/9/10/6/10/param}
+    \end{table}
+    \begin{figure}[!ht]
+        \centering
+        \includegraphics[width=\columnwidth]{chapters/9/10/6/10/figs/bisector.png}
+        \caption{The bisector of $\angle A$ and of $BC$ meet on the circumcircle at $D$.}
+        \label{fig:chapters/9/10/6/10/bisector}
+    \end{figure}

@@ -1,0 +1,163 @@
+\iffalse
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+\graphicspath{{./figs/}}{}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\usepackage{listings}
+\usepackage{watermark}
+\usepackage{titlesec}
+\let\vec\mathbf
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+%\thiswatermark{\centering \put(0,-105.0){\includegraphics[scale=0.5]{iith.png}} }
+
+\title{\mytitle}
+\title{
+Matrix Assignment - Lines
+}
+\author{Adarsh Kumar (FWC22068)}
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+
+
+\section{\textbf{Problem}}
+\fi
+The Vertices of Triangle $PQR$ is $\vec{P}(2,1), \vec{Q}(-2,3), \vec{R}(4,5)$. Find the equation of the Median Through $\vec{R}$.
+	\begin{figure}[!ht]
+		\centering
+ \includegraphics[width=\columnwidth]{chapters/11/10/2/9/figs/line.png}
+		\caption{}
+		\label{fig:11/10/2/9}
+  	\end{figure}
+	\\
+	\solution See Fig. 
+		\ref{fig:11/10/2/9}.
+\iffalse
+
+
+\section{\textbf{Solution}}
+Given the Vertices are :\\
+\linebreak
+$\vec{P} = \myvec{2 \\ 1}$ \hspace{5mm}
+$\vec{Q} = \myvec{-2 \\ 3}$ \hspace{5mm}
+$\vec{R} = \myvec{4 \\ 5}$ \hspace{5mm}
+\linebreak
+
+
+We know that the Median through R ,
+will divide the side PQ in two equal parts.
+\\
+We know that the the median through R will
+divide or intersect the side PQ into two equal parts.
+\\
+So , By using section formula , we can find the Coordinates of the point A(say) on PQ where the median intersect the side PQ.
+
+\textbf{Section Formula :}
+
+\begin{align}
+ Point A = \frac{P + K(Q)}{1+K}  \label{eq-1}
+\end{align}
+\\
+where PQ is a line and P and Q is the coordinates and K is the ratio in which the line is being divided.
+\\
+
+Now , we know that the Median from R will divide the side PQ in two equal parts 
+\\( i.e in th ratio 1 : 1 )
+
+So ,  by 
+\fi
+Using Section Formula,
+\begin{align}
+\vec{A} &= \frac{\vec{P} +\vec{Q} }{2}
+\\
+	&= {\myvec{0\\2}}
+\end{align} 
+\iffalse
+Now ,our Aim is to find the equation of Median(line AR)
+
+So, Now we have two points \\
+\linebreak
+$\vec{A} = \myvec{0 \\ 2}$ \hspace{5mm}
+$\vec{R} = \myvec{4 \\ 5}$ \\
+\linebreak
+We know that ,\\
+The Parametric Equation of line is :\\
+\begin{align}
+\vec{X} = \vec{A}+\lambda\vec{m}
+\end{align}
+Where \textbf{m} is the direction vector of the line\\
+\linebreak
+\fi
+So , the Direction Vector of $AR$ is 
+\begin{align}
+	\vec{m} &={\vec{R} - \vec{A}}
+= \myvec{4 \\ 3}
+\\
+	\implies \vec{n} &= 
+ \myvec{3 \\ -4}
+\end{align}
+which is the normal vector.  Thus, from
+    \eqref{eq:line_norm_eq},
+the equation of the line is 
+\begin{align}
+	\myvec{3 & -4}\brak{\vec{x} - \vec{R}} = 0
+	\\
+	\implies 
+	\myvec{3 & -4}\vec{x} =8 
+\end{align}
+\iffalse
+Therefore the equation of line AR will be:
+\begin{align}
+\vec{X} = \myvec{0 \\ 2}+\lambda\myvec{ 4 \\ 3}
+\end{align}
+Equation 9 ,represents the equation of line AR in Parametric Form . 
+
+\newpage
+
+
+\section{\textbf{Figure}}
+\begin{figure}[h]
+    \centering
+\includegraphics[width=\columnwidth]{line.png}
+    \label{fig:my_label}
+\end{figure}
+
+
+\section*{Construction}
+The dimensions of the Triangle made by using Python  are taken as below\\
+\linebreak
+{
+\centering
+	\begin{tabular}{|c|c|}
+	\hline
+	\textbf{vertex}&\textbf{co-ordinates}\\
+	\hline
+	P&(2,1)\\
+	\hline
+	Q&(-2,3)\\
+	\hline
+	R&(4,5)\\
+	\hline
+	A&(0,2)\\
+	\hline
+\end{tabular}
+}
+\section{\textbf{Code Link}}
+
+\begin{lstlisting}
+https://github.com/aadrshptel/Fwc_module1/tree/main/Assignments/Matrix%20assignments/Lines/codes
+\end{lstlisting}
+Execute the code by using the command\\
+\textbf{python3 line.py}
+
+
+
+\end{document}
+\fi

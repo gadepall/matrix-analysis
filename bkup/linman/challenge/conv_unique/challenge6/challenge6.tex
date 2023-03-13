@@ -1,0 +1,250 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+%
+\usepackage{setspace}
+\usepackage{gensymb}
+%\doublespacing
+\singlespacing
+
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm}
+%\usepackage{iithtlc}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+%\usepackage{xtab}
+\usepackage{longtable}
+\usepackage{multirow}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+%\usepackage{stmaryrd}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+%\usetkzobj{all}
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+  %optionally (for landscape tables embedded in another document): %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+%\usepackage{enumerate}
+
+%\usepackage{wasysym}
+%\newcounter{MYtempeqncnt}
+\DeclareMathOperator*{\Res}{Res}
+%\renewcommand{\baselinestretch}{2}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\newenvironment{amatrix}[1]{%
+  \left(\begin{array}{@{}*{#1}{c}|c@{}}
+}{%
+  \end{array}\right)
+}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\DeclarePairedDelimiter\norm{\lVert}{\rVert}%
+
+% Swap the definition of \abs* and \norm*, so that \abs
+% and \norm resizes the size of the brackets, and the 
+% starred version does not.
+\makeatletter
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+%
+\let\oldnorm\norm
+\def\norm{\@ifstar{\oldnorm}{\oldnorm*}}
+\makeatother
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+%\newtheorem{thm}{Theorem}[section] 
+%\newtheorem{defn}[thm]{Definition}
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{ieeetr}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+%\numberwithin{equation}{section}
+\numberwithin{equation}{subsection}
+%\numberwithin{problem}{section}
+%\numberwithin{definition}{section}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+
+
+\begin{document}
+
+\begin{center}
+\huge Challenge 6\\
+
+\large Shaik Zeeshan Ali\\
+\large AI20MTECH11001\\
+\end{center}
+\begin{abstract}
+This document is to prove that convolution is a unique map.
+\end{abstract}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/Zeeshan-IITH/IITH-EE5609/new/master/codes
+\end{lstlisting}
+
+and latex-tikz codes from 
+\begin{lstlisting}
+https://github.com/Zeeshan-IITH/IITH-EE5609
+\end{lstlisting}
+\section{problem}
+Given two signals $\brak{x_0,…,x_n−1}$ and $\brak{h_0,…,h_m−1}$, the (linear) convolution of the two is an m+n−1-length signal  defined as
+\begin{align}
+    y\brak{t}=\brak{h\ast x}_t=\sum_{\tau=0}^{\tau=n-1} x_{\tau} h_\brak{t-\tau}\label{eq:1}\\
+    0\leq t < m+n-1\notag
+\end{align}
+If 
+\begin{align}
+    y(n)=\brak{h_1\ast x}\label{eq:2}\\
+    y(n)=\brak{h_2\ast x}\label{eq:3}
+\end{align}
+then prove that $h_1=h_2$
+\section{construction}
+Writing the convolution operation in matrix form 
+\begin{align}
+    Y=\myvec{h_0&0&0&.&.&0&0\\h_1&h_0&0&.&.&0&0\\h_2&h_1&h_0&.&.&0&0\\.&.&.&.&.&.&.\\h_{n-1}&h_{n-2}&n_{n-3}&.&.&h_1&h_0\\.&.&.&.&.&.&.\\h_{m-1}&h_{m-2}&h_{m-3}&.&.&h_{m-n+1}&h_{m-n}\\0&h_{m-1}&h_{m-2}&.&.&h_{m-n+2}&h_{m-n+1}\\0&0&h_{m-1}&.&.&h_{m-n+3}&h_{m-n+2}\\.&.&.&.&.&.&.\\0&0&0&.&.&0&h_{m-1}}\myvec{x_0\\x_1\\x_2.\\.\\.\\x_{n-1}}
+\end{align}
+\section{Explanation}
+Therefore we can write equation \eqref{eq:1} in matrix form as $\vec{Y}=\vec{H}\vec{X}$ where
+\begin{align}
+    Y=\myvec{h_0&0&0&.&.&0&0\\h_1&h_0&0&.&.&0&0\\h_2&h_1&h_0&.&.&0&0\\.&.&.&.&.&.&.\\h_{n-1}&h_{n-2}&n_{n-3}&.&.&h_1&h_0\\.&.&.&.&.&.&.\\h_{m-1}&h_{m-2}&h_{m-3}&.&.&h_{m-n+1}&h_{m-n}\\0&h_{m-1}&h_{m-2}&.&.&h_{m-n+2}&h_{m-n+1}\\0&0&h_{m-1}&.&.&h_{m-n+3}&h_{m-n+2}\\.&.&.&.&.&.&.\\0&0&0&.&.&0&h_{m-1}}\myvec{x_0\\x_1\\x_2.\\.\\.\\x_{n-1}}
+\end{align}
+So the equations \eqref{eq:2} and \eqref{eq:3} can be written in matrix form where
+\begin{align}
+    \vec{H_1}=\myvec{h_{10}&0&0&.&.&0&0\\h_{11}&h_{10}&0&.&.&0&0\\h_{12}&h_{11}&h_{10}&.&.&0&0\\.&.&.&.&.&.&.\\h_{1n-1}&h_{1n-2}&n_{1n-3}&.&.&h_{11}&h_{10}\\.&.&.&.&.&.&.\\h_{1m-1}&h_{1m-2}&h_{1m-3}&.&.&h_{1m-n+1}&h_{1m-n}\\0&h_{1m-1}&h_{1m-2}&.&.&h_{1m-n+2}&h_{1m-n+1}\\0&0&h_{1m-1}&.&.&h_{1m-n+3}&h_{1m-n+2}\\.&.&.&.&.&.&.\\0&0&0&.&.&0&h_{1m-1}}\\
+    \vec{H_1}=\myvec{h_{20}&0&0&.&.&0&0\\h_{21}&h_{20}&0&.&.&0&0\\h_{22}&h_{21}&h_{20}&.&.&0&0\\.&.&.&.&.&.&.\\h_{2n-1}&h_{2n-2}&n_{2n-3}&.&.&h_{21}&h_{20}\\.&.&.&.&.&.&.\\h_{2m-1}&h_{2m-2}&h_{2m-3}&.&.&h_{2m-n+1}&h_{2m-n}\\0&h_{2m-1}&h_{2m-2}&.&.&h_{2m-n+2}&h_{2m-n+1}\\0&0&h_{2m-1}&.&.&h_{2m-n+3}&h_{2m-n+2}\\.&.&.&.&.&.&.\\0&0&0&.&.&0&h_{2m-1}}
+\end{align}
+So
+\begin{align}
+    \brak{h_1\ast x}-\brak{h_2\ast x}=y(n)-y(n)=0\\
+    (\vec{H_1}-\vec{H_2})\vec{X}=0
+\end{align}
+For the sake of simplicity lets assume that $m=n$,then Toeplitz matrix is of the form
+\begin{align}
+    \vec{H}=\myvec{L\\U}
+\end{align}
+Because $\vec{H_1},\vec{H_2}$ are in toeplitz form,their difference is also in toeplitz form.
+\begin{align}
+    \vec{H}=\vec{H_1}-\vec{H_2}\\
+    \vec{H}=\myvec{h_0&0&0&.&.&0&0\\h_1&h_0&0&.&.&0&0\\h_2&h_1&h_0&.&.&0&0\\.&.&.&.&.&.&.\\h_{m-2}&h_{m-3}&.&.&h_{1}&h_{0}&0\\h_{m-1}&h_{m-2}&h_{m-3}&.&.&h_{1}&h_{0}\\0&h_{m-1}&h_{m-2}&.&.&h_{2}&h_{1}\\0&0&h_{m-1}&.&.&h_{3}&h_{2}\\.&.&.&.&.&.&.\\0&0&0&.&.&0&h_{m-1}}\label{eq:4}
+\end{align}
+Suppose \begin{align}
+    L=\myvec{h_0&0&0&.&.&0&0\\h_1&h_0&0&.&.&0&0\\h_2&h_1&h_0&.&.&0&0\\.&.&.&.&.&.&.\\h_{n-2}&h_{n-3}&.&.&h_{1}&h_{0}&0\\h_{n-1}&h_{n-2}&h_{n-3}&.&.&h_{1}&h_{0}}\label{eq:5}\\
+    LX=0
+\end{align}
+For $LX=0$ to have a non-trivial solution i.e nullity$\neq 0$, the rank of the matrix $R(L) < n$, which implies $h_0=0$.
+\begin{align}
+    L=\myvec{0&0&0&.&.&0&0\\h_1&0&0&.&.&0&0\\h_2&h_1&0&.&.&0&0\\.&.&.&.&.&.&.\\h_{n-2}&h_{n-3}&.&.&h_{1}&0&0\\h_{n-1}&h_{n-2}&h_{n-3}&.&.&h_{1}&0}
+\end{align}
+Similarly if you consider the submatrix of $L$ 
+\begin{align}
+    L^1=\myvec{h_1&0&0&.&.&0&0\\h_2&h_1&0&.&.&0&0\\h_3&h_2&h_1&.&.&0&0\\.&.&.&.&.&.&.\\h_{n-2}&h_{n-3}&.&.&h_{2}&h_{2}&0\\h_{n-1}&h_{n-2}&h_{n-3}&.&.&h_{2}&h_{1}}\label{eq:6}
+    \intertext{where}
+    \myvec{h_1&0&0&.&.&0&0\\h_2&h_1&0&.&.&0&0\\h_3&h_2&h_1&.&.&0&0\\.&.&.&.&.&.&.\\h_{n-2}&h_{n-3}&.&.&h_{2}&h_{1}&0\\h_{n-1}&h_{n-2}&h_{n-3}&.&.&h_{2}&h_{1}}\myvec{x_1\\x_2.\\.\\.\\x_{n-2}}=0
+\end{align}
+By using the similar logic,$h_1=0$. And all the elements of the lower triangular matrix are zero i.e $L=0$,rank(L)=0 which implies $H=0$.\par
+The solution for $LX=0$ or $UX=0$ when $X\neq 0$, is that each of the elements of the matrices $L,U$ is zero irrespective of $X$ because $X$, the input signal does not depend on the system.So,$H=0$, $\vec{H_1}-\vec{H_2}=0$ which means $\vec{H_1}=\vec{H_2}$
+\section{generalization}
+In a toeplitz matrix, each column can be obtained by a shift of the previous column. For example consider
+\begin{align}
+    \vec{H}=\myvec{\vec{c_0} & \vec{c_1} &\vec{c_2} &. &. & . & \vec{c_{n-1}}}
+\end{align}
+The dimension of the column vector $\vec{c_0}$ is $(m+n-1)\times 1$.Here each of the column vector $c_2,c_3..c_n$ can be obtained from \begin{align}
+    \vec{c_i}=\vec{S^i}\vec{c_0}
+    \intertext{where}
+    \vec{S}=\myvec{0&0&0&.&.&0&0\\1&0&0&.&.&0&0\\0&1&0&.&.&0&0\\0&0&1&.&.&0&0\\.&.&.&.&.&.&.\\0&0&0&.&.&1&0}\\
+    \vec{S^{m+n-1}}=0
+\end{align}
+The dimension of the matrix $S$ is $(m+n-1)\times (m+n-1)$.\par
+From equation \eqref{eq:4},we can write it in the form
+\begin{align}
+    \vec{H}=\myvec{\vec{c_0}&\vec{S}\vec{c_0}&\vec{S^2}\vec{c_0}&.&.&\vec{S^{n-1}}\vec{c_0}}
+\end{align}
+We can write the equation $\vec{HX}=0$ as
+\begin{align}
+    \myvec{\vec{c_0}&\vec{S}\vec{c_0}&\vec{S^2}\vec{c_0}&.&.&\vec{S^{n-1}}\vec{c_0}}\myvec{x_0\\x_1\\x_2\\.\\.\\x_{n-1}}=0\\
+    \vec{I}\vec{c_0}x_0+\vec{S}\vec{c_0}x_1+\vec{S^2}\vec{c_0}x_2+...+\vec{S^{n-1}}\vec{c_0}x_{n-1}=0\\
+    \brak{\vec{I}x_0+\vec{S}x_1+\vec{S^2}x_2+...+\vec{S^{n-1}}x_{n-1}}\vec{c_0}=0\label{eq:7}
+\end{align}
+where the dimension if $I,S$ are $(m+n-1)\times (m+n-1)$.$S^i$ can be written in general form as
+\begin{align}
+    \vec{S^i}=\myvec{0_{i\times(m+n-i-1)}&0_{i\times i}\\I_{(m+n-i-1)\times(m+n-i-1)}&0_{(m+n-i-1)\times i}}
+\end{align}
+From equation \eqref{eq:7} we get
+\begin{align}
+    \myvec{x_0 & 0 &0 &0 &.&.&0&0\\x_1&x_0&0&0&.&.&0&0\\x_2&x_1&x_0&0&.&.&0&0\\x_3&x_2&x_1&x_0&.&.&0&0\\.&.&.&.&.&.&.&.\\0&0&x_{n-1}&x_{n-2}&.&.&x_0&0\\0&0&0&x_{n-1}&.&.&x_1&x_0}\vec{c_0}=0\label{eq:8}
+\end{align}
+Since,the equation \eqref{eq:8},should hold for any value of $X$, the matrix has a nullity space zero,because $x_0$ can be non zero.So,$\vec{c_0}=0$ is the only solution.
+\begin{align}
+    \vec{H}=\myvec{\vec{c_0}&\vec{S}\vec{c_0}&\vec{S^2}\vec{c_0}&.&.&\vec{S^{n-1}}\vec{c_0}}\\
+    \vec{H}=0
+\end{align}
+Therefore $H_1=H_2$ or we can say that $h_1=h_2$.
+\end{document}

@@ -1,0 +1,30 @@
+%Code by GVV Sharma
+%December 12, 2019
+%released under GNU GPL
+%Drawing a square given a side 
+
+\begin{tikzpicture}
+[scale=2,>=stealth,point/.style={draw,circle,fill = black,inner sep=0.5pt},]
+
+%Square side
+\def\a{4.5}
+
+%Labeling points
+\node (A) at (0,\a)[point,label=below :$A$] {};
+\node (B) at (0,0)[point,label=below :$B$] {};
+\node (C) at (\a, 0)[point,label=right:$C$] {};
+\node (D) at (\a, \a)[point,label=above:$D$] {};
+\node (O) at ($(B)!0.5!(D)$)[point,label=below left:$O$] {};
+
+
+%Drawing square ABCD
+\draw (A) -- (B) --  (C) --(D)--(A);
+\draw (B) -- (D);
+\draw (A) --(C);
+
+
+\tkzMarkRightAngle[fill=blue!20,size=.2](C,O,D)
+\tkzMarkRightAngle[fill=blue!20,size=.2](A,B,C)
+
+%
+\end{tikzpicture}

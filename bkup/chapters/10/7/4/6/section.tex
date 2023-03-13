@@ -1,0 +1,137 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage[parfill]{parskip}
+\usepackage{hyperref}
+\usepackage{booktabs}
+%\usepackage{setspace}\doublespacing\pagestyle{plain}
+\def\inputGnumericable{}
+\usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{parallel,enumitem}
+\usepackage{listings}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{Coordinate Geometry}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{10$^{th}$ Maths - Chapter 7}
+This is Problem-6 from Exercise 7.4
+\begin{enumerate}
+\item The vertices of $\triangle ABC$ are $\myvec{4 \\ 6}, \myvec{1\\5}, \myvec{7\\2}$. A line is drawn to intersect sides AB and AC at D and E respectively, such that $\dfrac{AD}{AB}=\dfrac{AE}{AC}=\dfrac{1}{4}$. Calculate the area of the $\triangle ADE$ and compare it with the area of $\triangle ABC$.\\
+\solution 
+\fi
+		The input parameters for this problem are available in Table \eqref{table:chapters/10/7/4/61}.
+\begin{table}[ht!]\centering
+\input{chapters/10/7/4/6/tables/table.tex}
+\caption{}
+\label{table:chapters/10/7/4/61}	
+\end{table}
+%
+Given,
+\begin{align}
+\frac{AD}{AB}=\frac{AE}{AC}=\frac{1}{4}\label{eq:chapters/10/7/4/61}
+\end{align}
+\iffalse
+From \eqref{eq:chapters/10/7/4/61},
+\begin{align}
+\frac{AD}{AB} &=\frac{1}{4}\\
+\frac{AD}{BD} &=\frac{1}{3}
+\end{align}
+$\vec{D}$ divides $\vec{A}\vec{B}$ in the ratio of 
+\fi
+	Using Section formula,
+\begin{align}
+\vec{D} &=\frac{\vec{A}+n\vec{B}}{1+n}\label{eq:chapters/10/7/4/64}
+\\
+	&=\myvec{\frac{13}{4}\\[2pt] \frac{23}{4}}
+\end{align}
+substituting
+		$n = \frac{1}{3}$.
+%part-2
+Similarly,
+\iffalse
+From \eqref{eq:chapters/10/7/4/61},
+\begin{align}
+\frac{AE}{AC} &=\frac{1}{4}\\
+\frac{AE}{CE} &=\frac{1}{3}
+\end{align}
+Point $\vec{E}$ divides $\vec{A}\vec{C}$ in the ratio of $n = \frac{1}{3}$.
+Using Section formula,
+\fi
+\begin{align}
+\vec{E} &=\frac{\vec{A}+n\vec{C}}{1+n}\label{eq:chapters/10/7/4/611}
+	&=\myvec{\frac{19}{4}\\[2pt] \frac{20}{4}}
+\end{align}
+and
+\begin{align}
+	\vec{A}- \vec{D} &= \myvec{4\\6}-\myvec{\frac{13}{4}\\[2pt] \frac{23}{4}}=\myvec{\frac{3}{4}\\[2pt] \frac{1}{4}}\label{eq:chapters/10/7/4/617}\\
+	  \vec{A}- \vec{E} &= \myvec{4\\6}-\myvec{\frac{19}{4}\\[2pt] \frac{20}{4}}=\myvec{\frac{-3}{4}\\[2pt]1}\label{eq:chapters/10/7/4/618}
+\end{align}
+yielding
+\begin{align}
+	ar(ABD) &=\frac{1}{2} \norm{\brak{\vec{A}-\vec{D}}  \times 
+   \brak{\vec{A}- \vec{E}}} \label{eq:chapters/10/7/4/616} \\
+	&=\frac{1}{2}\mydet{\frac{3}{4} & \frac{-3}{4}\\[2pt] \frac{1}{4} & 1}  
+	\\
+	&=	\frac{15}{32}
+\end{align}
+Similarly,
+\begin{align}
+	\vec{A}- \vec{B} &= \myvec{4\\6}-\myvec{1\\5}=\myvec{3\\1}\label{eq:chapters/10/7/4/621}\\
+	  \vec{B}-\vec{C} &= \myvec{1\\5}-\myvec{7\\2}=\myvec{-6\\3}\label{eq:chapters/10/7/4/622}
+\end{align}
+yielding
+  \begin{align}
+	  ar(ABC) &=\frac{1}{2} \norm{\brak{\vec{A}-\vec{B}}  \times 
+   \brak{\vec{B}- \vec{C}}} \label{eq:chapters/10/7/4/620} \\
+	  &=\frac{1}{2}\mydet{3 & -6\\1 & 3}  
+	  \\
+	&=	\frac{15}{2}
+\end{align}
+Thus,
+\begin{align}
+	\frac{ar\brak{ADE}}{ar\brak{ABC}}=\frac{1}{16}
+\end{align}
+See Fig. 
+\ref{fig:chapters/10/7/4/6Fig1}.
+\begin{figure}[!h]
+ \begin{center}
+ \includegraphics[width=\columnwidth]{chapters/10/7/4/6/figs/fig.png}
+ \end{center}
+\caption{}
+\label{fig:chapters/10/7/4/6Fig1}
+\end{figure}

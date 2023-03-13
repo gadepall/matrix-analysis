@@ -1,0 +1,283 @@
+
+%\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+%\begin{enumerate}[1.]
+%\begin{enumerate}
+%\numberwithin{equation}{enumi}
+\item Let 
+\begin{align}
+  \vec{A} \equiv \overrightarrow{A} &= \myvec{a_1\\a_2} 
+  \\
+  &\equiv a_1\overrightarrow{i}+a_2\overrightarrow{j}, 
+  \\
+  \vec{B} &= \myvec{b_1\\b_2}, 
+\end{align}
+be $2 \times 1$ vectors.
+Then, the determinant of the $2 \times 2$ matrix 
+\begin{align}  
+  \vec{M} = \myvec{\vec{A} & \vec{B}}
+\end{align}
+is defined as
+\begin{align}
+  \label{eq:det2d}
+  \mydet{\vec{M}} &= \mydet{\vec{A} & \vec{B}} 
+  \\
+  &= \mydet{a_1 & b_1\\a_2 & b_2} = a_1b_2 - a_2 b_1
+\end{align}
+%
+\item The value of the cross product of two vectors is given by  
+  \eqref{eq:det2d}.
+\item The area of the triangle with vertices $\vec{A}, \vec{B}, \vec{C}$ is given by 
+	\label{prop:area2d}
+\begin{align}
+  \label{eq:area2d}
+	\frac{1}{2}\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{C}}}
+ = 
+ \frac{1}{2}\norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
+  \end{align}
+  \item If 
+  \label{prop:area2d-norm}
+\begin{align}
+  \label{eq:area2d-norm}
+	\norm{\vec{A}\times\vec{B}}  &= \norm{\vec{C}\times \vec{D}}, \quad \text{then}
+	\\
+	\vec{A}\times\vec{B}  &= \pm\brak{\vec{C}\times \vec{D}}
+  \end{align}
+  where the sign depends on the orientation of the vectors.
+  \item The median divides the triangle into two triangles of equal area.
+	  \label{prop:two-median-area}
+  \item  The transpose of $\vec{A}$ is defined as
+\begin{align}
+  \label{eq:transpose2d}
+  \vec{A}^{\top}  = \myvec{a_1 & a_2}
+\end{align}
+%
+\item The {\em inner product} or {\em dot product} is defined as
+  \label{prop:dot2d}
+\begin{align}
+  \label{eq:dot2d}
+  \vec{A}^{\top} \vec{B} &\equiv \vec{A} \cdot \vec{B} 
+  \\
+  &= \myvec{a_1 & a_2} \myvec{b_1 \\ b_2}= a_1b_1+a_2b_2 
+\end{align}
+%
+\item {\em norm} of $\vec{A}$ is defined as
+\begin{align}
+  \label{eq:norm2d}
+  \norm{A} &\equiv \mydet{\overrightarrow{A}}
+  \\
+  &= \sqrt{\vec{A}^{\top} \vec{A}}= \sqrt{a_1^2+a_2^2}
+\end{align}
+Thus, 
+\begin{align}
+  \label{eq:norm2d_const}
+  \norm{\lambda \vec{A}} &\equiv \mydet{\lambda\overrightarrow{A}}
+  \\
+  &= \abs{\lambda} \norm{\vec{A}}
+\end{align}
+\item The distance betwen the points $\vec{A}$ and $\vec{B}$ is given by 
+\begin{align}
+  \label{eq:norm2d_dist}
+\norm{\vec{A}-\vec{B}} 
+\end{align}
+\item Let $\vec{x}$ be equidistant from the points $\vec{A}$ and $\vec{B}$.  Then 
+  \begin{align}
+	  \brak{\vec{A}-\vec{B}}^{\top}{\vec{x}} 
+	  =  \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2}
+  \label{eq:norm2d_equidist}
+  \end{align}
+  \solution 
+\begin{align}
+	\norm{\vec{x}-\vec{A}} &=
+\norm{\vec{A}-\vec{B}} 
+\\
+	\implies \norm{\vec{x}-\vec{A}}^2 &=
+\norm{\vec{x}-\vec{B}}^2 
+\end{align}
+which can be expressed as 
+\begin{multline}
+%  \label{eq:norm2d_dist}
+	\brak{\vec{x}-\vec{A}}^{\top} \brak{\vec{x}-\vec{A}}=
+	\brak{\vec{x}-\vec{B}}^{\top} 
+\brak{\vec{x}-\vec{B}}
+\\
+	\implies	\norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{A} + \norm{\vec{A}}^2
+	\\= \norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{B} + \norm{\vec{B}}^2
+\end{multline}
+which can be simplified to obtain
+  \eqref{eq:norm2d_equidist}.
+\item If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
+  \begin{align}
+	  \vec{x} &=
+	   x\vec{e}_1
+  \end{align}
+  where 
+  \begin{align}
+	  x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}
+	  \label{eq:cbse_10_x}
+  \end{align}
+  \solution 
+  From \eqref{eq:norm2d_equidist}.
+  \begin{align}
+	   x\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+		  &=
+	  \frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2}
+   \end{align}
+	  yielding \eqref{eq:cbse_10_x}.
+  \item The angle between two vectors is given by 
+    \label{prop:angle2d}
+  \begin{align}
+    \label{eq:angle2d}
+    \theta = \cos^{-1}\frac{\vec{A}^{\top} \vec{B}}{\norm{A}\norm{B}}
+  \end{align}
+  \item If two vectors are orthogonal (perpendicular), 
+  \begin{align}
+    \label{eq:angle2d_orth}
+\vec{A}^{\top} \vec{B} = 0
+  \end{align}
+  \item For an isoceles triangle $ABC$ ith $AB = AC$, the median $AD \perp BC$.
+    \label{prop:two-isosc}
+%  \begin{align}
+%    \label{eq:two-isosc}
+%\vec{A}^{\top} \vec{B} = 0
+%  \end{align}
+
+  \item The {\em direction vector} of the line joining two points $\vec{A},\vec{B}$ is given by 
+  \begin{align}
+    \label{eq:dir_vec}
+    \vec{m} = \vec{A}-\vec{B}
+  \end{align}
+  \item The points $\vec{A}\vec{A}\vec{A}$
+\item The unit vector in the direction of $\vec{m}$ is defined as
+\begin{align}
+    \frac{\vec{m}}{\norm{\vec{m}}}
+\end{align}
+\item If the direction vector of a line is expressed as 
+		\label{prop:two-dir-vec}
+	\begin{align}
+		\label{eq:two-dir-vec}
+    \vec{m} = \myvec{1\\m},
+\end{align}
+ the $m$ is defined to be the {\em} slope of the line. 
+  \item $AB \parallel CD$ if 
+	  \label{prop:two-par-dir-vec}
+  \begin{align}
+	  \vec{A}- \vec{B}= k\brak{\vec{C}- \vec{D}}
+	  \label{eq:two-par-dir-vec}
+  \end{align}
+  \item The {\em normal vector} to $\vec{m}$ is defined by 
+  \begin{align}
+    \label{eq:normal_vec}
+    \vec{m}^{\top}  \vec{n} = 0
+  \end{align}
+  \item  If
+	  \label{prop:two-orth-para}
+\begin{align}
+	\vec{m}^{\top}  \vec{n}_1 &= 0
+	\\
+	\vec{m}^{\top}  \vec{n}_2 &= 0,
+	\\
+	\vec{n}_1 &\parallel \vec{n}_2
+	  \label{eq:two-orth-para}
+\end{align}
+  \item The point $\vec{P}$ that divides the line segment $AB$ in the ratio $k:1$  is given by 
+
+  \begin{align}
+	  \vec{P}&= \frac{k\vec{B}+ \vec{A}}{k+1}
+	  \label{eq:section_formula}
+  \end{align}
+\item  The standard basis vectors are defined as 
+	\label{def:matrix-two}
+
+  \begin{align}
+  \vec{e}_1&= \myvec{1\\0}, 
+  \\
+  \vec{e}_2&= \myvec{0\\1}.
+  \end{align}
+  \item If $ABCD$ be a parallelogram,
+	  \label{prop:two-pgm}
+  \begin{align}
+	  \label{eq:two-pgm}
+ \vec{B}-\vec{A} = \vec{C} -\vec{D}
+  \end{align}
+  \item Diagonals of a parallelogram bisect each other.
+	  \label{prop:two-pgm-diag-bisect}
+\item The area of the parallelogram with vertices $\vec{A}, \vec{B}, \vec{C}$ and $\vec{D}$ is given by 
+  \label{prop:pgm2d}
+\begin{align}
+  \label{eq:pgm2d}
+	\norm{\brak{\vec{A}-\vec{B}} \times \brak{\vec{A}-\vec{D}}}
+ = 
+ \norm{\vec{A} \times \vec{B}+\vec{B} \times \vec{C}+\vec{C} \times \vec{A}}
+  \end{align}
+  \item Points $\vec{A},\vec{B}$ and $\vec{C}$ form a triangle  if 
+	  \label{prop:two-tri-indep}
+  \begin{align}
+	  p\brak{\vec{A}- \vec{B}} +q\brak{\vec{A} -\vec{C}} &= 0
+	  \\
+	  \label{eq:two-tri-indep}
+	  \text{or, }\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
+	  \\
+	  \implies p=0, q=0
+  \end{align}
+  are linearly independent.
+  \item In $\triangle ABC$, if $\vec{D}, \vec{E}$ divide the lines $AB, AC$ in the ratio $k:1$ respectively,  then $DE \parallel BC$.
+	  \label{prop:two-tri-bpt}
+	  \begin{proof}
+		  From 
+	  \eqref{eq:section_formula}, 
+  \begin{align}
+	  \vec{D}&= \frac{k\vec{B}+ \vec{A}}{k+1}
+	  \\
+	  \vec{E}&= \frac{k\vec{C}+ \vec{A}}{k+1}
+	  \\
+	  \implies 
+	  \vec{D}-	  \vec{E}&= \frac{k}{k+1}\brak{\vec{B}- \vec{C}}
+  \end{align}
+  Thus, from 
+		  Appendix \ref{prop:two-dir-vec}, $DE \parallel BC$.
+
+	  \end{proof}
+
+  \item In $\triangle ABC$, if $DE \parallel BC$, $\vec{D}$ and $\vec{E}$ divide the lines $AB, AC$ in the same ratio.  
+	  \label{prop:two-tri-bpt-conv}
+	  \begin{proof}
+If $DE \parallel BC$,
+		  from 
+ \eqref{eq:two-par-dir-vec}
+  \begin{align}
+	  \label{prop:two-tri-bpt-conv-1}
+	  \brak{\vec{B}- \vec{C}} = k\brak{\vec{D}-	  \vec{E}}
+  \end{align}
+Using   
+	  \eqref{eq:section_formula}, 
+let 
+  \begin{align}
+	  \vec{D}&= \frac{k_1\vec{B}+ \vec{A}}{k_1+1}
+	  \\
+	  \vec{E}&= \frac{k_2\vec{C}+ \vec{A}}{k_2+1}
+  \end{align}
+	  Subtituting the above in 
+	  \eqref{prop:two-tri-bpt-conv-1}, after some algebra, we obtain 
+	
+  \begin{align}
+\brak{p+q}\vec{A}- p\vec{B} -q\vec{C} &= 0
+  \end{align}
+  where
+  \begin{align}
+	  p = \frac{1}{k} -  \frac{k_1}{k_1+1},
+	  q = \frac{1}{k} -  \frac{k_1}{k_1+1}
+  \end{align}
+  %
+From 	  
+	  \eqref{eq:two-tri-indep},
+  \begin{align}
+	p = q = 0
+	  \\
+	  \implies k_1 = k_2  = \frac{1}{k-1}
+  \end{align}
+
+	  \end{proof}
+\end{enumerate}

@@ -1,0 +1,63 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+
+\begin{document}
+\begin{center}
+\title{\textbf{Properties of vectors}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section{12$^{th}$ Maths - Exercise 10.4.10}
+
+\begin{enumerate}
+\item The area of a parallelogram whose adjacent sides are represented by the vectors $\vec{a}=\hat{i}-\hat{j}+3\hat{k}\text{ and } \vec{b}=2\hat{i}-7\hat{j}+\hat{k}$
+\section{Solution}
+Now,
+\fi
+Let 
+\begin{align}
+ \vec{A} = \myvec{1\\-1\\3} \text{ and } \vec{B} = \myvec{2\\ -7 \\ 1}.
+\end{align}
+Then
+\begin{align}
+	\vec{A} \times \vec{B}&=\myvec{20\\5\\-5}
+	\\
+\implies \norm{\vec{A} \times \vec{B}}
+ &= 15\sqrt{2}
+\end{align}
+

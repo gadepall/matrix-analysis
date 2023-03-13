@@ -1,0 +1,40 @@
+%\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\item
+	Let 
+\begin{align}
+    \label{eq:conic_quad_form_ints}
+    \vec{x}^{\top}\vec{V}_i\vec{x}+2\vec{u}_i^{\top}\vec{x}+f_i=0, \quad i = 1,2
+    \end{align}
+    be the equation of two conics.  The locus of their intersection is a pair of straight lines if 
+\begin{align}
+\mydet{
+\vec{V}_1+ \mu \vec{V}_2&\vec{u}_1+\mu\vec{u}_2
+\\
+	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
+}
+	= 0, \mydet{\vec{V}_1+ \mu \vec{V}_2} < 0
+    \label{eq:conic_quad_form_int-mat}
+\end{align}
+
+
+\begin{proof}
+	The intersection of the conics in 
+    \eqref{eq:conic_quad_form_ints}
+    is given by the curve 
+\begin{align}
+    \label{eq:conic_quad_form_int}
+	\vec{x}^{\top}\brak{\vec{V}_1+ \mu \vec{V}_2}\vec{x}+2\brak{\vec{u}_1+\mu \vec{u}_2}^{\top}\vec{x}
+	+f_1+\mu f_2=0, 
+    \end{align}
+which, from Theorem 
+	  \ref{them:pair-mat-sing}
+represents a pair of straight lines if 
+    \eqref{eq:conic_quad_form_int-mat} is satisfied.
+\end{proof}
+\item
+	The points of intersection of the conics in 
+    \eqref{eq:conic_quad_form_ints} are the points of the intersection of the lines in 
+    \eqref{eq:conic_quad_form_int}.
+
+\end{enumerate}

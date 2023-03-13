@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf
+\begin{document}
+\begin{center}
+\title{\textbf{  Vectors}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section{12$^{th}$ Maths - Chapter 10}
+\textbf{This is Problem-4 from Exercise 10.4}
+\begin{enumerate}
+
+\item Show that $(\overrightarrow{a}-\overrightarrow{b})\times(\overrightarrow{a}+\overrightarrow{b})=2(\overrightarrow{a}\times\overrightarrow{b})$ 
+\section{Solution}
+Let us assume that 
+\begin{align}
+\vec{a}=\myvec{1\\2\\3},
+\vec{b}=\myvec{3\\2\\1}
+\end{align}
+
+\begin{align}
+\vec{a+b}&=\myvec{1\\2\\3}+\myvec{3\\2\\1}=\myvec{4\\4\\4}\\
+\vec{a-b}&=\myvec{1\\2\\3}-\myvec{3\\2\\1}=\myvec{-2\\0\\2}
+\end{align}
+by using vector product
+\begin{align}
+\vec{a \times b}&= \myvec{-4\\8\\-4}\\
+2(\vec{a \times b})&= \myvec{-8\\16\\-8}\label{5}\\
+(\vec{a-b}) \times (\vec{a+b})&=\myvec{-8\\16\\-8}\label{6}
+\end{align}
+we can clearly see that \eqref{5} is equal to \eqref{6} \\
+$(\overrightarrow{a}-\overrightarrow{b})\times(\overrightarrow{a}+\overrightarrow{b})=2(\overrightarrow{a}\times\overrightarrow{b})$
+\end{enumerate} 
+\end{document}

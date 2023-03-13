@@ -1,0 +1,69 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+
+\begin{document}
+\begin{center}
+\title{\textbf{Vectors}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+\section*{12$^{th}$ Maths - Exercise 10.2.1}
+
+\begin{enumerate}
+\item Compute the magnitude of the following vectors 
+$\\ \overrightarrow{a}=\hat{i}+\hat{j}+\hat{k},\overrightarrow{b}=2\hat{i}-7\hat{j}+3\hat{k}$ and $\overrightarrow{c}=\dfrac{1}{\sqrt{3}}\hat{i}+\dfrac{1}{\sqrt{3}}\hat{j}-\dfrac{1}{\sqrt{3}}\hat{k}$.\\
+\solution
+\fi
+Let 
+\begin{align}
+ \vec{a} = \myvec{1\\1\\1} , \vec{b} = \myvec{2\\ -7 \\ 3},\vec{c} = \myvec{\dfrac{1}{\sqrt{3}}\\ \dfrac{1}{\sqrt{3}} \\ -\dfrac{1}{\sqrt{3}}} 
+\label{eq:chapters/12/10/2/1/1}
+\end{align}
+Then
+\begin{align}
+	\norm{\vec{a}}&=\sqrt{\vec{a}}^{\top}\vec{a}=\norm{\vec{a}}=\sqrt{3}, 
+	\label{eq:chapters/12/10/2/1/3}
+	\\ \norm{\vec{b}}&=\sqrt{\vec{b}}^{\top}\vec{b}=\norm{\vec{b}}= \sqrt{62}, 
+	\label{eq:chapters/12/10/2/1/4}
+	\\ \norm{\vec{c}}&=\sqrt{\vec{c}}^{\top}\vec{c}	=
+\norm{\vec{c}}=1
+	\label{eq:chapters/12/10/2/1/5}
+\end{align}
+
+
+

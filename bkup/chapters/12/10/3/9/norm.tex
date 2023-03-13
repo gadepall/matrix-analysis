@@ -1,0 +1,59 @@
+\iffalse
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{Vector Dot Product}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\setcounter{page}{1}
+
+\section{12$^{th}$ Maths - Chapter 10}
+This is Problem-9 from Exercise 10.3
+\begin{enumerate}
+\item Find $\norm{\vec{x}}$, if for a unit vector $\vec{a}$, $\brak{\vec{x}-\vec{a}}.\brak{\vec{x}+\vec{a}} = 12$.\\
+	\fi
+\solution 
+From the given information,
+\begin{align}
+  \label{eq:12/10/3/9det2f}
+  \brak{\vec{x}-\vec{a}}^\top\brak{\vec{x}+\vec{a}} &= 12 \\
+  \implies \vec{x}^\top\vec{x} - \vec{a}^\top\vec{x} + \vec{x}^\top\vec{a} - \vec{a}^\top\vec{a} &= 12 \\
+  \implies \norm{\vec{x}}^{2} - \norm{\vec{a}}^{2} &= 12 \\
+\implies   \norm{\vec{x}}^{2} - 1 &= 12  \\
+	\text{or, }  
+	\norm{\vec{x}} &= \sqrt{13}
+\end{align}

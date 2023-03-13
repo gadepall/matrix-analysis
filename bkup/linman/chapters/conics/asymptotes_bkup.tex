@@ -1,0 +1,67 @@
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+
+\item The asymptotes of the hyperbola \eqref{eq:conic_quad_form} are defined as the pair of intersecting straight lines 
+\begin{align}
+\label{eq:asymp_quad_form}
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+K=0
+\end{align}
+such that 
+\begin{align} 
+\label{eq:quad_form_asymp_cond}
+K =  \vec{u}^T\vec{V}^{-1}\vec{u}
+\\
+\abs{\vec{V}} < 0
+\label{eq:quad_pair_det}
+\end{align} 
+%
+\item Let the pair of straight lines be given by 
+\begin{align}
+\label{eq:quad_pair_lines}
+\vec{n}_1^T \vec{x} = c_1
+\\
+\vec{n}_2^T \vec{x} = c_2
+\end{align}
+Equating their product with \eqref{eq:asymp_quad_form},
+\begin{multline}
+\brak{\vec{n}_1^T \vec{x} - c_1}
+\brak{\vec{n}_2^T \vec{x} - c_2} 
+\\
+=
+\vec{x}^T\vec{V}\vec{x}+2\vec{u}^T\vec{x}+K=0
+%\label{eq:quad_pair_lines}
+\end{multline}
+\begin{align}
+\implies 
+\vec{n}_1 *\vec{n}_2  &= \myvec{a \\ 2b \\c}
+\label{eq:quad_pair_conv}
+\\
+c_2\vec{n}_1 + c_1 \vec{n}_2 &= -2\vec{u}
+\label{eq:quad_pair_ci}
+\\
+c_1 c_2 &= K
+\label{eq:quad_pair_f}
+\end{align}
+%
+where $*$ represents convolution.
+\item The slopes of the lines are given by the roots of the polynomial
+\begin{align}
+\label{eq:quad_pair_slopes}
+cm^2 + 2bm + a = 0
+\\
+\implies m_i = \frac{-b \pm \sqrt{-\abs{V}}}{c}
+\end{align}
+and 
+\begin{align}
+\label{eq:quad_pair_norm_vec}
+\vec{n}_i = k_i\myvec{-m_i\\1}, \quad i = 1,2.
+\end{align}
+\item From \eqref{eq:quad_pair_ci},
+\begin{align}
+\label{eq:quad_pair_ci_mat}
+\myvec{\vec{n}_1 & \vec{n}_2}\myvec{c_2\\c_1} = -2\vec{u}
+\end{align}
+$c_1,c_2$ can be obtained such that they satisfy \eqref{eq:quad_pair_f}.
+
+\end{enumerate}
