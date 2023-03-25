@@ -16,56 +16,56 @@
 \contentsline {subsection}{\numberline {1.15}Exercises}{89}{subsection.1.15}%
 \contentsline {subsection}{\numberline {1.16}Triangle}{89}{subsection.1.16}%
 \contentsline {subsection}{\numberline {1.17}Exercises}{92}{subsection.1.17}%
-\contentsline {subsection}{\numberline {1.18} Quadrilateral}{94}{subsection.1.18}%
-\contentsline {subsection}{\numberline {1.19}Exercises}{95}{subsection.1.19}%
-\contentsline {section}{\numberline {2}Linear Forms}{96}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Equation of a Line}{96}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Perpendicular}{106}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Plane}{115}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Miscellaneous }{116}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Exemplar}{122}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Singular Value Decomposition}{127}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Conics}{135}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Circle}{135}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Exercises}{142}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Construction}{143}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Exercises}{158}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Parabola}{166}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Exercises}{174}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Ellipse}{175}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Exercises}{186}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Hyperbola}{187}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Exercises}{197}{subsection.3.10}%
-\contentsline {section}{\numberline {4}Intersection of Conics}{198}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Chords }{198}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Curves}{206}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Tangent And Normal}{209}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Examples}{209}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Exercises}{218}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Construction}{219}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Exercises}{229}{subsection.5.4}%
-\contentsline {section}{Appendix\nobreakspace A: Vectors}{230}{section*.2}%
-\contentsline {subsection}{\numberline {A.1}$2\times 1$ vectors}{230}{subsection.Appendix.A.1}%
-\contentsline {subsection}{\numberline {A.2}$3\times 1$ vectors}{233}{subsection.Appendix.A.2}%
-\contentsline {section}{Appendix\nobreakspace B: Matrices}{234}{section*.3}%
-\contentsline {section}{Appendix\nobreakspace C: Eigenvalues and Eigenvectors}{234}{section*.4}%
-\contentsline {section}{Appendix\nobreakspace D: Determinants}{235}{section*.5}%
-\contentsline {section}{Appendix\nobreakspace E: Rank of a Matrix}{235}{section*.6}%
-\contentsline {section}{Appendix\nobreakspace F: Inverse of a Matrix}{236}{section*.7}%
-\contentsline {section}{Appendix\nobreakspace G: Orthogonality}{236}{section*.8}%
-\contentsline {section}{Appendix\nobreakspace H: Singular Value Decomposition}{237}{section*.9}%
-\contentsline {section}{Appendix\nobreakspace I: Triangle Constructions}{237}{section*.10}%
-\contentsline {section}{Appendix\nobreakspace J: Linear Forms}{238}{section*.11}%
-\contentsline {subsection}{\numberline {J.1}Two Dimensions}{238}{subsection.Appendix.J.1}%
-\contentsline {subsection}{\numberline {J.2}Three Dimensions}{241}{subsection.Appendix.J.2}%
-\contentsline {section}{Appendix\nobreakspace K: Quadratic Forms}{245}{section*.12}%
-\contentsline {subsection}{\numberline {K.1}Conic equation }{245}{subsection.Appendix.K.1}%
-\contentsline {subsection}{\numberline {K.2}Circles}{248}{subsection.Appendix.K.2}%
-\contentsline {section}{Appendix\nobreakspace L: Conic Parameters}{251}{section*.13}%
-\contentsline {subsection}{\numberline {L.1}Standard Form}{251}{subsection.Appendix.L.1}%
-\contentsline {subsection}{\numberline {L.2}Quadratic Form }{252}{subsection.Appendix.L.2}%
-\contentsline {section}{Appendix\nobreakspace M: Conic Lines}{253}{section*.14}%
-\contentsline {subsection}{\numberline {M.1}Pair of Straight Lines}{253}{subsection.Appendix.M.1}%
-\contentsline {subsection}{\numberline {M.2}Intersubsection of Conics}{254}{subsection.Appendix.M.2}%
-\contentsline {subsection}{\numberline {M.3} Chords of a Conic}{255}{subsection.Appendix.M.3}%
-\contentsline {subsection}{\numberline {M.4} Tangent and Normal}{258}{subsection.Appendix.M.4}%
+\contentsline {subsection}{\numberline {1.18} Quadrilateral}{95}{subsection.1.18}%
+\contentsline {subsection}{\numberline {1.19}Exercises}{96}{subsection.1.19}%
+\contentsline {section}{\numberline {2}Linear Forms}{97}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Equation of a Line}{97}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Perpendicular}{107}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Plane}{116}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Miscellaneous }{117}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Exemplar}{123}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Singular Value Decomposition}{128}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Conics}{136}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Circle}{136}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Exercises}{143}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Construction}{144}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Exercises}{160}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Parabola}{168}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Exercises}{176}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Ellipse}{177}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Exercises}{188}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Hyperbola}{189}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Exercises}{199}{subsection.3.10}%
+\contentsline {section}{\numberline {4}Intersection of Conics}{200}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Chords }{200}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Curves}{208}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Tangent And Normal}{211}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Examples}{211}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Exercises}{220}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Construction}{221}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Exercises}{231}{subsection.5.4}%
+\contentsline {section}{Appendix\nobreakspace A: Vectors}{232}{section*.2}%
+\contentsline {subsection}{\numberline {A.1}$2\times 1$ vectors}{232}{subsection.Appendix.A.1}%
+\contentsline {subsection}{\numberline {A.2}$3\times 1$ vectors}{235}{subsection.Appendix.A.2}%
+\contentsline {section}{Appendix\nobreakspace B: Matrices}{236}{section*.3}%
+\contentsline {section}{Appendix\nobreakspace C: Eigenvalues and Eigenvectors}{236}{section*.4}%
+\contentsline {section}{Appendix\nobreakspace D: Determinants}{237}{section*.5}%
+\contentsline {section}{Appendix\nobreakspace E: Rank of a Matrix}{237}{section*.6}%
+\contentsline {section}{Appendix\nobreakspace F: Inverse of a Matrix}{238}{section*.7}%
+\contentsline {section}{Appendix\nobreakspace G: Orthogonality}{238}{section*.8}%
+\contentsline {section}{Appendix\nobreakspace H: Singular Value Decomposition}{239}{section*.9}%
+\contentsline {section}{Appendix\nobreakspace I: Triangle Constructions}{239}{section*.10}%
+\contentsline {section}{Appendix\nobreakspace J: Linear Forms}{240}{section*.11}%
+\contentsline {subsection}{\numberline {J.1}Two Dimensions}{240}{subsection.Appendix.J.1}%
+\contentsline {subsection}{\numberline {J.2}Three Dimensions}{243}{subsection.Appendix.J.2}%
+\contentsline {section}{Appendix\nobreakspace K: Quadratic Forms}{247}{section*.12}%
+\contentsline {subsection}{\numberline {K.1}Conic equation }{247}{subsection.Appendix.K.1}%
+\contentsline {subsection}{\numberline {K.2}Circles}{250}{subsection.Appendix.K.2}%
+\contentsline {section}{Appendix\nobreakspace L: Conic Parameters}{253}{section*.13}%
+\contentsline {subsection}{\numberline {L.1}Standard Form}{253}{subsection.Appendix.L.1}%
+\contentsline {subsection}{\numberline {L.2}Quadratic Form }{254}{subsection.Appendix.L.2}%
+\contentsline {section}{Appendix\nobreakspace M: Conic Lines}{255}{section*.14}%
+\contentsline {subsection}{\numberline {M.1}Pair of Straight Lines}{255}{subsection.Appendix.M.1}%
+\contentsline {subsection}{\numberline {M.2}Intersubsection of Conics}{256}{subsection.Appendix.M.2}%
+\contentsline {subsection}{\numberline {M.3} Chords of a Conic}{257}{subsection.Appendix.M.3}%
+\contentsline {subsection}{\numberline {M.4} Tangent and Normal}{260}{subsection.Appendix.M.4}%

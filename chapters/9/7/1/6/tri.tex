@@ -1,0 +1,119 @@
+\iffalse
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage{amsmath}
+\usepackage[none]{hyphenat}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{extarrows}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{commath}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{multicol}
+%\usepackage[utf8]{inputenc}
+\lstset{
+ frame=single,
+ breaklines=true
+}
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}	 
+%\usepackage{exsheets}% also loads the `tasks' package
+\usepackage{atbegshi}
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+%new macro definitions
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newenvironment{amatrix}[1]{%
+	\left(\begin{array}{@{}*{#1}{c}|c@{}}
+}{%
+	\end{array}\right)
+}
+
+\newcommand{\myaugvec}[2]{\ensuremath{\begin{amatrix}{#1}#2\end{amatrix}}}
+\providecommand{\norm}[1]{\left\1Vert#1\right\rVert}
+\let\vec\mathbf{}
+
+
+%\SetEnumitemKey{twocol}{
+% before=\raggedcolumns\begin{multicols}{2},
+% after=\end{multicols}}
+%\SetEnumitemKey{fourcol}{
+% before=\raggedcolumns\begin{multicols}{4},
+% after=\end{multicols}} 
+
+
+\begin{document}
+\begin{center}
+\title{\textbf{TRIANGLES}}
+\date{\vspace{-5ex}}
+\maketitle
+\end{center}
+\section*{9$^{th}$Math - Chapter 7}
+\section*{Problem}
+\section*{Construction}
+\solution
+\textbf{Given:}
+\fi
+The input parameters are available in Table 
+\ref{tab:chapters/9/7/1/6/1}.
+\begin{table}[!h]
+\centering
+\input{chapters/9/7/1/6/tables/table.tex}
+\label{tab:chapters/9/7/1/6/1}
+\end{table}
+The vertices of $\triangle ABC$ are given by 
+\begin{align}
+	\vec{A}=c\myvec{\cos\frac{\theta}{2}\\\sin\frac{\theta}{2}},\,
+\vec{B}=\myvec{0\\0},\,
+\vec{C}=a\vec{e}_1,
+\end{align}
+and 
+\begin{align}
+\vec{D}=\brak{2c\sin\frac{\theta}{2}}\vec{e_1}
+\end{align}
+Then, using the cosine formula and  the fact that $\triangle AEC$ is iscosceles,
+\begin{align}
+AC = b=\sqrt{a^2+c^2-2ac\cos\theta},\, EC = 2b\sin\frac{\theta}{2}
+\end{align}
+Also, 
+\begin{align}
+\angle BCA=\cos^{-1}\brak{\frac{a^2+b^2-c^2}{2ab}},\,
+\angle ACE=90\degree-\frac{\theta}{2}
+\end{align}
+Let $\phi$ be the angle made by the vector 	$EC$ with  the $x$-axis.  Then,  
+\begin{align}
+\phi=180\degree-\brak{\angle BCA+\angle ACE} = =90\degree-\frac{\theta}{2}\cos^{-1}\brak{\frac{a^2+b^2-c^2}{2ab}}
+\end{align}
+Consequently, 
+Using vector addition,
+\begin{align}
+	\vec{E}-\vec{C}&=\brak{2b\sin\frac{\theta}{2}}\myvec{\cos\phi\\\sin\phi}\\
+	\implies \vec{E}&=\vec{C}+2b\sin\frac{\theta}{2}\myvec{\cos\phi\\\sin\phi}\\
+\end{align}
+Substituting numerical values, 
+\begin{align}
+	\norm{\vec{B}-\vec{C}}
+	=\norm{\vec{D}-\vec{E}}
+\label{eq:chapters/9/7/1/6/5}
+\end{align}

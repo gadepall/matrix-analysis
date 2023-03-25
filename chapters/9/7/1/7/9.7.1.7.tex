@@ -1,0 +1,111 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\def\inputGnumericTable{}
+\usepackage[latin1]{inputenc}
+\usepackage{fullpage}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{calc}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{ifthen}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{gensymb}
+\usepackage{amssymb} % for \because
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{extarrows} % for Row operations arrows
+\usepackage{listings}
+%\usepackage[utf8]{inputenc}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\usepackage{hyperref}
+\usepackage[margin=0.5in]{geometry}
+  
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+
+%New macro definitions
+\renewcommand{\labelenumi}{(\roman{enumi})}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\let\vec\mathbf{}
+\begin{document}
+
+\begin{center}
+\title{\textbf{TRIANGLES}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+\section{9$^{th}$ Maths - Chapter 7}
+
+This is Problem 7 from Exercise-7.1\\\\
+AB is a line segment and P is its mid-point.D and E are points on the same side of
+AB such that $\angle$ BAD = $\angle$ ABE and $\angle$ EPA = $\angle$ DPB.Show that
+\begin{enumerate}
+\item $\triangle$ DAP $\cong$ $\triangle$ EBP
+\item AD = BE
+\end{enumerate}
+\section{construction}
+\begin{figure}[h!]
+	\begin{center}
+		\includegraphics[width=5in]{./figs/fig.png}
+	\end{center}
+\caption{}
+\label{fig:Fig1}
+\end{figure}
+The input parameters for this construction are\\
+\begin{table}[h!]
+	\centering
+ 	\input{/sdcard/Download/codes/lines/9.7.1.7/table/table.tex}
+\caption{}
+\label{table}
+\end{table}\\
+\begin{align}
+\vec{A}=&\myvec{0\\0},\vec{e_1}=\myvec{1\\0},\vec{B}=c\vec{e_1},\vec{P}=\frac{\vec{A}+\vec{B}}{2},\vec{D}=b\myvec{\cos{A}\\\sin{A}}\\
+\text{ Let  }\vec{Q}-\vec{A} =&\vec{E}-\vec{B}\\
+\vec{Q}=&b\myvec{\cos{(180-A)}\\\sin{(180-A)}}=b\myvec{-\cos{A}\\\sin{A}}\\
+\vec{E}=&\vec{B}+\vec{Q}-\vec{A}=c\vec{e_1}+b\myvec{-\cos{A}\\\sin{A}}
+\end{align}
+\solution
+Given\\
+\begin{align}
+\vec{A}-\vec{P} = \vec{P}-\vec{B}\\
+\angle BAD = \angle ABE\\
+\text { Assume  }\vec{A}-\vec{D}=\vec{E}-\vec{B}
+\end{align}
+\textbf{To Prove:}  $\angle EPA = \angle DPB$
+
+\begin{align}
+\text{ Let  }\theta_1=&\angle EPA\\
+\vec{m_1}=&\vec{D}-\vec{P}=\myvec{2.7\\4.7}, \vec{m_2}=\vec{B}-\vec{P}=\myvec{4\\0}\\
+\theta_1=&\cos^{-1}\frac{\vec{m_1}^\top\vec{m_2}}{\norm{\vec{m_1}}\norm{\vec{m_2}}}\\
+\implies\theta_1=&\cos^{-1}\frac{\myvec{2.7&4.7}\myvec{4\\0}}{(5.42)(4)}=60\degree
+\label{eq:1}\\
+\theta_2=&\angle DPB\\
+\vec{n_1}=&\vec{E}-\vec{P}=\myvec{-2.7\\4.7}, \vec{n_2}=\vec{A}-\vec{P}=\myvec{-4\\0}\\
+\theta_2 =& \cos^{-1}\frac{\vec{n_1}^\top\vec{n_2}}{\norm{\vec{n_1}}\norm{\vec{n_2}}}\\
+\implies\theta_2=&\cos^{-1}\frac{\myvec{-2.7&-4.7}\myvec{-4\\0}}{(5.42)(4)}=60\degree
+\label{eq:2}
+\end{align}
+from $\eqref{eq:1}$ and $\eqref{eq:2}$
+\begin{center}
+$\angle$ EPA = $\angle$ DPB
+\end{center}
+\end{document}

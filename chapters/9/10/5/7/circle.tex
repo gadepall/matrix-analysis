@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[10pt]{article}
 \usepackage{graphicx}
 \def\inputGnumericTable{}
@@ -70,53 +71,52 @@
 \end{center}
 \section*{9$^{th}$Math - Chapter 10}
 This is Problem-7 from Exercise 10.5\\\\
-If diagonals of a cyclic quadrilateral are diameters of the circle through the vertices of quadrilateral,prove that it is a rectangle.\\
-
-\begin{figure}[!h]
+\fi
+\begin{figure}[!ht]
 	\begin{center}
-		\includegraphics[width=\columnwidth]{./figs/fig.pdf}
+		\includegraphics[width=\columnwidth]{./chapters/9/10/5/7/figs/fig.pdf}
 	\end{center}
 \caption{}
-\label{fig:1}
+\label{fig:chapters/9/10/5/7/1}
 \end{figure}
-
-\section*{\large Construction:}
 The input parameters for construction
-\begin{table}[h!]
-	\small
+are available in Table
+	\ref{tab:chapters/9/10/5/7/1}.
+\begin{table}[ht!]
 	\centering
-	%\subimport{../tables/}{table.tex}
-     \input{tables/table.tex}
+	%\subimport{../chapters/9/10/5/7/tables/}{table.tex}
+     \input{chapters/9/10/5/7/tables/table.tex}
 %	\caption{}
-	\label{table:1}
+	\label{tab:chapters/9/10/5/7/1}
 \end{table}
+From the given information,
 \begin{align}
 	\vec{A}&=r\myvec{\cos0\\ \sin0}=\myvec{2\\0}\\
 	\vec{B}&=r\myvec{\cos\frac{\pi}{3}\\ \sin\frac{\pi}{3}}=\myvec{1\\\sqrt{3}}\\
 	\vec{C}&=2\vec{O}-\vec{A}=\myvec{-2\\0}\\
 	\vec{D}&=2\vec{O}-\vec{B}=\myvec{-1\\-\sqrt{3}}
 \end{align}
-\solution
-Consider a circle of radius 2 units.Let $AC$ and $DB$ are diameters of circle which are diagonals of cyclic quadrilateral.
+Consider a circle of radius 2 units. Let $AC$ and $DB$ be diameters of circle which are diagonals of cyclic quadrilateral.
+Then, from the above equations,
 \begin{align}
 	\vec{A}-\vec{C} &= \vec{D}-\vec{B}
 \end{align}
-To prove $ABCD$ is rectangle
-\begin{enumerate}[ref=(\roman*)]
-\item \label{itm:1} $AB$ and $DC$ are parellel to each other
+\begin{enumerate}
+\item \label{itm:chapters/9/10/5/7/1} $AB$ and $DC$ are parellel to each other
 \begin{align}
 	\vec{A}-\vec{B} &= \myvec{2\\0} - \myvec{1\\\sqrt{3}}\\
 	&=\myvec{1\\-\sqrt{3}}\\
 	\vec{D}-\vec{C} &= \myvec{-1\\-\sqrt{3}} - \myvec{-2\\0}\\
-	&=\myvec{1\\-\sqrt{3}}\\
-	\implies \text{ $ABCD$ is parallelogram }
+	&=\myvec{1\\-\sqrt{3}}
 \end{align}
-\item \label{itm:2} Let's check the angle between adjacent sides of this quadrilateral,$AB$ and $BC$
+	Thus,  $ABCD$ is parallelogram.
+\item \label{itm:chapters/9/10/5/7/2} Let's check the angle between adjacent sides of this quadrilateral,$AB$ and $BC$
 \begin{align}
 	\brak{\vec{A}-\vec{B}}^{\top}\brak{\vec{B}-\vec{C}} &=\myvec{1 & -\sqrt{3}}\myvec{3\\\sqrt{3}}\\	
 	&= 0\\
 	\implies \angle ABC &= 90\degree
 \end{align}
-from \ref{itm:1} and \ref{itm:2} , Hence the quadrilateral $ABCD$ is rectangle.
+from \ref{itm:chapters/9/10/5/7/1} and \ref{itm:chapters/9/10/5/7/2} , Hence the quadrilateral $ABCD$ is rectangle.
 \end{enumerate}
-\end{document}
+See Fig. 
+\ref{fig:chapters/9/10/5/7/1}.

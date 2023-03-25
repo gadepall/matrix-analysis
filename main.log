@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.1.3)  13 MAR 2023 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.1.3)  20 MAR 2023 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1397,33 +1397,31 @@ LaTeX Info: Redefining \nameref on input line 6.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 85.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 85
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 87.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 87
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 87.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 87.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 85
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 87
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 85.
- [1
+) [1
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -2311,8 +2309,8 @@ Package pdftex.def Info: exemplar/9.7.3/figs/Figure5.png  used on input line 72
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/const/examples/quad.tex
-<chapters/9/9/2/1/figs/fig1.pdf, id=2819, 462.528pt x 346.896pt>
+[94]) (./chapters/const/examples/quad.tex
+<chapters/9/9/2/1/figs/fig1.pdf, id=2861, 462.528pt x 346.896pt>
 File: chapters/9/9/2/1/figs/fig1.pdf Graphic file (type pdf)
 <use chapters/9/9/2/1/figs/fig1.pdf>
 Package pdftex.def Info: chapters/9/9/2/1/figs/fig1.pdf  used on input line 8.
@@ -2322,7 +2320,7 @@ Package pdftex.def Info: chapters/9/9/2/1/figs/fig1.pdf  used on input line 8.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/9/9/2/4/line.tex
-<chapters/9/9/2/4/figs/Question.png, id=2820, 462.528pt x 346.896pt>
+<chapters/9/9/2/4/figs/Question.png, id=2862, 462.528pt x 346.896pt>
 File: chapters/9/9/2/4/figs/Question.png Graphic file (type png)
 <use chapters/9/9/2/4/figs/Question.png>
 Package pdftex.def Info: chapters/9/9/2/4/figs/Question.png  used on input line
@@ -2333,7 +2331,7 @@ Package pdftex.def Info: chapters/9/9/2/4/figs/Question.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
-<chapters/9/9/2/5/figs/parallelogram1.pdf, id=2822, 462.52798pt x 346.89601pt>
+<chapters/9/9/2/5/figs/parallelogram1.pdf, id=2864, 462.52798pt x 346.89601pt>
 File: chapters/9/9/2/5/figs/parallelogram1.pdf Graphic file (type pdf)
 <use chapters/9/9/2/5/figs/parallelogram1.pdf>
 Package pdftex.def Info: chapters/9/9/2/5/figs/parallelogram1.pdf  used on inpu
@@ -2343,8 +2341,8 @@ t line 31.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/9/9/2/5/line.tex [94])) (./chapters/const/exer/quad.tex
-<exemplar/9.9.4/figs/Fig9.24.png, id=2868, 1413.28pt x 526.96875pt>
+(./chapters/9/9/2/5/line.tex [95])) (./chapters/const/exer/quad.tex
+<exemplar/9.9.4/figs/Fig9.24.png, id=2915, 1413.28pt x 526.96875pt>
 File: exemplar/9.9.4/figs/Fig9.24.png Graphic file (type png)
 <use exemplar/9.9.4/figs/Fig9.24.png>
 Package pdftex.def Info: exemplar/9.9.4/figs/Fig9.24.png  used on input line 26
@@ -2354,26 +2352,27 @@ Package pdftex.def Info: exemplar/9.9.4/figs/Fig9.24.png  used on input line 26
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<exemplar/9.9.4/figs/Fig9.25.png, id=2870, 980.66376pt x 659.46375pt>
+<exemplar/9.9.4/figs/Fig9.25.png, id=2917, 980.66376pt x 659.46375pt>
 File: exemplar/9.9.4/figs/Fig9.25.png Graphic file (type png)
 <use exemplar/9.9.4/figs/Fig9.25.png>
 Package pdftex.def Info: exemplar/9.9.4/figs/Fig9.25.png  used on input line 35
 .
 (pdftex.def)             Requested size: 516.0pt x 346.99847pt.
-[95]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<exemplar/9.9.4/figs/Fig9.26.png, id=2900, 1351.0475pt x 587.19376pt>
+[96]
+<exemplar/9.9.4/figs/Fig9.26.png, id=2946, 1351.0475pt x 587.19376pt>
 File: exemplar/9.9.4/figs/Fig9.26.png Graphic file (type png)
 <use exemplar/9.9.4/figs/Fig9.26.png>
 Package pdftex.def Info: exemplar/9.9.4/figs/Fig9.26.png  used on input line 46
 .
 (pdftex.def)             Requested size: 516.0pt x 224.26488pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<exemplar/9.9.4/figs/Fig9.27.png, id=2902, 869.2475pt x 724.7075pt>
+<exemplar/9.9.4/figs/Fig9.27.png, id=2948, 869.2475pt x 724.7075pt>
 File: exemplar/9.9.4/figs/Fig9.27.png Graphic file (type png)
 <use exemplar/9.9.4/figs/Fig9.27.png>
 Package pdftex.def Info: exemplar/9.9.4/figs/Fig9.27.png  used on input line 53
@@ -2382,8 +2381,33 @@ Package pdftex.def Info: exemplar/9.9.4/figs/Fig9.27.png  used on input line 53
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+Overfull \hbox (17.42967pt too wide) in paragraph at lines 60--61
+[]\OT1/ptm/m/n/12 ABC and BDE are two equi-lat-eral tri-an-gles such that $\OT1
+/cmr/bx/n/12 D$\OT1/ptm/m/n/12 is the mid-point of BC.Then ar(BDE)=$[]\OML/cmm/
+m/it/12 ar\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ABC\OT1/cmr/m/n/12 )$\OT1/ptm/m/n/1
+2 . 
+ []
+
+<exemplar/9.9.2/figs/9.8.jpg, id=2950, 548.0475pt x 317.68687pt>
+File: exemplar/9.9.2/figs/9.8.jpg Graphic file (type jpg)
+<use exemplar/9.9.2/figs/9.8.jpg>
+Package pdftex.def Info: exemplar/9.9.2/figs/9.8.jpg  used on input line 64.
+(pdftex.def)             Requested size: 516.0pt x 299.13467pt.
+
+Overfull \hbox (25.16635pt too wide) in paragraph at lines 61--68
+[]\OT1/ptm/m/n/12 In Fig.[]1.23.1[], $\OML/cmm/m/it/12 ABCD$ \OT1/ptm/m/n/12 an
+d $\OML/cmm/m/it/12 EFGD$ \OT1/ptm/m/n/12 are two par-al-lel-o-grams and $\OT1/
+cmr/bx/n/12 G$ \OT1/ptm/m/n/12 is the mid-point of $\OML/cmm/m/it/12 CD$\OT1/pt
+m/m/n/12 . Then$\OML/cmm/m/it/12 ar\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 DPC\OT1/cm
+r/m/n/12 ) =
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) (./chapters/linear/examples/equation.tex (./chapters/11/10/2/2/line.tex
-<chapters/11/10/2/2/figs/fig.pdf, id=2904, 462.52798pt x 346.89601pt>
+<chapters/11/10/2/2/figs/fig.pdf, id=2952, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/2/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/10/2/2/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/10/2/2/figs/fig.pdf  used on input line 73
@@ -2393,26 +2417,26 @@ Package pdftex.def Info: chapters/11/10/2/2/figs/fig.pdf  used on input line 73
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./chapters/11/10/2/3/line.tex
-<chapters/11/10/2/3/figs/fig.pdf, id=2907, 462.52798pt x 346.89601pt>
+(./chapters/11/10/2/3/line.tex [97]
+<chapters/11/10/2/3/figs/fig.pdf, id=2985, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/3/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/10/2/3/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/10/2/3/figs/fig.pdf  used on input line 71
 .
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
-) [96]
+)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/11/10/2/4/line.tex
-<chapters/11/10/2/4/figs/line.png, id=2935, 462.528pt x 346.896pt>
+<chapters/11/10/2/4/figs/line.png, id=2987, 462.528pt x 346.896pt>
 File: chapters/11/10/2/4/figs/line.png Graphic file (type png)
 <use chapters/11/10/2/4/figs/line.png>
 Package pdftex.def Info: chapters/11/10/2/4/figs/line.png  used on input line 1
 30.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/11/10/2/5/line.tex
-<chapters/11/10/2/5/figs/line1.pdf, id=2938, 462.52798pt x 346.89601pt>
+<chapters/11/10/2/5/figs/line1.pdf, id=2990, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/5/figs/line1.pdf Graphic file (type pdf)
 <use chapters/11/10/2/5/figs/line1.pdf>
 Package pdftex.def Info: chapters/11/10/2/5/figs/line1.pdf  used on input line 
@@ -2422,15 +2446,15 @@ Package pdftex.def Info: chapters/11/10/2/5/figs/line1.pdf  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/10/2/6/line.tex [97]
-<chapters/11/10/2/6/figs/line.png, id=2965, 462.528pt x 346.896pt>
+) (./chapters/11/10/2/6/line.tex [98]
+<chapters/11/10/2/6/figs/line.png, id=3016, 462.528pt x 346.896pt>
 File: chapters/11/10/2/6/figs/line.png Graphic file (type png)
 <use chapters/11/10/2/6/figs/line.png>
 Package pdftex.def Info: chapters/11/10/2/6/figs/line.png  used on input line 1
 27.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/11/10/2/7/line.tex
-<chapters/11/10/2/7/figs/Figure_1.png, id=2967, 462.528pt x 346.896pt>
+<chapters/11/10/2/7/figs/Figure_1.png, id=3018, 462.528pt x 346.896pt>
 File: chapters/11/10/2/7/figs/Figure_1.png Graphic file (type png)
 <use chapters/11/10/2/7/figs/Figure_1.png>
 Package pdftex.def Info: chapters/11/10/2/7/figs/Figure_1.png  used on input li
@@ -2440,8 +2464,8 @@ ne 214.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/10/2/8/line.tex
-<chapters/11/10/2/8/figs/fig.pdf, id=2969, 462.52798pt x 346.89601pt>
+) (./chapters/11/10/2/8/line.tex [99]
+<chapters/11/10/2/8/figs/fig.pdf, id=3041, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/8/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/10/2/8/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/10/2/8/figs/fig.pdf  used on input line 84
@@ -2452,14 +2476,14 @@ Package pdftex.def Info: chapters/11/10/2/8/figs/fig.pdf  used on input line 84
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/11/10/2/9/line.tex
-<chapters/11/10/2/9/figs/line.png, id=2970, 630.355pt x 478.78876pt>
+<chapters/11/10/2/9/figs/line.png, id=3042, 630.355pt x 478.78876pt>
 File: chapters/11/10/2/9/figs/line.png Graphic file (type png)
 <use chapters/11/10/2/9/figs/line.png>
 Package pdftex.def Info: chapters/11/10/2/9/figs/line.png  used on input line 3
 5.
 (pdftex.def)             Requested size: 516.0pt x 391.9518pt.
- [98]) (./chapters/11/10/2/10/line.tex
-<chapters/11/10/2/10/figs/Figure_1.png, id=2994, 462.528pt x 346.896pt>
+) (./chapters/11/10/2/10/line.tex
+<chapters/11/10/2/10/figs/Figure_1.png, id=3045, 462.528pt x 346.896pt>
 File: chapters/11/10/2/10/figs/Figure_1.png Graphic file (type png)
 <use chapters/11/10/2/10/figs/Figure_1.png>
 Package pdftex.def Info: chapters/11/10/2/10/figs/Figure_1.png  used on input l
@@ -2467,14 +2491,14 @@ ine 62.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 )
 (./chapters/11/10/2/11/line.tex
-<chapters/11/10/2/11/figs/linefig.pdf, id=2995, 462.52798pt x 346.89601pt>
+<chapters/11/10/2/11/figs/linefig.pdf, id=3046, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/11/figs/linefig.pdf Graphic file (type pdf)
 <use chapters/11/10/2/11/figs/linefig.pdf>
 Package pdftex.def Info: chapters/11/10/2/11/figs/linefig.pdf  used on input li
 ne 21.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
- [99]) (./chapters/11/10/2/12/line.tex
-<chapters/11/10/2/12/figs/problem12.pdf, id=3022, 462.52798pt x 346.89601pt>
+ [100]) (./chapters/11/10/2/12/line.tex
+<chapters/11/10/2/12/figs/problem12.pdf, id=3073, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/12/figs/problem12.pdf Graphic file (type pdf)
 <use chapters/11/10/2/12/figs/problem12.pdf>
 Package pdftex.def Info: chapters/11/10/2/12/figs/problem12.pdf  used on input 
@@ -2485,29 +2509,29 @@ line 96.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/11/10/2/13/line.tex
-<chapters/11/10/2/13/figs/assign4.png, id=3023, 1084.05pt x 784.9325pt>
+<chapters/11/10/2/13/figs/assign4.png, id=3074, 1084.05pt x 784.9325pt>
 File: chapters/11/10/2/13/figs/assign4.png Graphic file (type png)
 <use chapters/11/10/2/13/figs/assign4.png>
 Package pdftex.def Info: chapters/11/10/2/13/figs/assign4.png  used on input li
 ne 23.
 (pdftex.def)             Requested size: 516.0pt x 373.6373pt.
- [100]) (./chapters/11/10/2/14/line.tex
-<chapters/11/10/2/14/figs/fig.pdf, id=3052, 462.52798pt x 346.89601pt>
+ [101]) (./chapters/11/10/2/14/line.tex
+<chapters/11/10/2/14/figs/fig.pdf, id=3103, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/14/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/10/2/14/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/10/2/14/figs/fig.pdf  used on input line 2
 7.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
-)
-(./chapters/11/10/2/15/line.tex
-<chapters/11/10/2/15/figs/line.pdf, id=3053, 462.52798pt x 346.89601pt>
+
+[102]) (./chapters/11/10/2/15/line.tex
+<chapters/11/10/2/15/figs/line.pdf, id=3123, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/15/figs/line.pdf Graphic file (type pdf)
 <use chapters/11/10/2/15/figs/line.pdf>
 Package pdftex.def Info: chapters/11/10/2/15/figs/line.pdf  used on input line 
 26.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
- [101]) (./chapters/11/10/2/18/line.tex
-<chapters/11/10/2/18/figs/line1.png, id=3075, 462.528pt x 346.896pt>
+) (./chapters/11/10/2/18/line.tex
+<chapters/11/10/2/18/figs/line1.png, id=3125, 462.528pt x 346.896pt>
 File: chapters/11/10/2/18/figs/line1.png Graphic file (type png)
 <use chapters/11/10/2/18/figs/line1.png>
 Package pdftex.def Info: chapters/11/10/2/18/figs/line1.png  used on input line
@@ -2517,16 +2541,16 @@ Package pdftex.def Info: chapters/11/10/2/18/figs/line1.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[102]) (./chapters/11/10/2/19/line.tex) (./chapters/11/10/2/20/line.tex
-<chapters/11/10/2/20/figs/figs6.pdf, id=3099, 462.52798pt x 346.89601pt>
+[103]) (./chapters/11/10/2/19/line.tex) (./chapters/11/10/2/20/line.tex
+<chapters/11/10/2/20/figs/figs6.pdf, id=3152, 462.52798pt x 346.89601pt>
 File: chapters/11/10/2/20/figs/figs6.pdf Graphic file (type pdf)
 <use chapters/11/10/2/20/figs/figs6.pdf>
 Package pdftex.def Info: chapters/11/10/2/20/figs/figs6.pdf  used on input line
  96.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
-)
-[103] (./chapters/11/10/3/7/line.tex) (./chapters/11/10/3/8/line.tex
-<chapters/11/10/3/8/figs/fig.pdf, id=3125, 462.52798pt x 346.89601pt>
+
+[104]) (./chapters/11/10/3/7/line.tex) (./chapters/11/10/3/8/line.tex
+<chapters/11/10/3/8/figs/fig.pdf, id=3177, 462.52798pt x 346.89601pt>
 File: chapters/11/10/3/8/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/10/3/8/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/10/3/8/figs/fig.pdf  used on input line 74
@@ -2536,11 +2560,11 @@ Package pdftex.def Info: chapters/11/10/3/8/figs/fig.pdf  used on input line 74
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/10/3/11/line.tex) (./chapters/12/11/4/20/line.tex [104])
-(./chapters/12/11/4/19/line.tex [105])) (./chapters/linear/examples/perp.tex
-(./chapters/11/10/3/3/perp.tex [106]) (./chapters/11/10/3/4/line.tex [107]
-[108]
-<chapters/11/10/3/4/figs/problem4.pdf, id=3252, 462.52798pt x 346.89601pt>
+(./chapters/11/10/3/11/line.tex) [105] (./chapters/12/11/4/20/line.tex)
+(./chapters/12/11/4/19/line.tex [106])) (./chapters/linear/examples/perp.tex
+(./chapters/11/10/3/3/perp.tex [107]) (./chapters/11/10/3/4/line.tex [108]
+[109]
+<chapters/11/10/3/4/figs/problem4.pdf, id=3305, 462.52798pt x 346.89601pt>
 File: chapters/11/10/3/4/figs/problem4.pdf Graphic file (type pdf)
 <use chapters/11/10/3/4/figs/problem4.pdf>
 Package pdftex.def Info: chapters/11/10/3/4/figs/problem4.pdf  used on input li
@@ -2551,7 +2575,7 @@ ne 158.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/11/10/3/5/line.tex
-<chapters/11/10/3/5/figs/line2.png, id=3254, 462.528pt x 346.896pt>
+<chapters/11/10/3/5/figs/line2.png, id=3307, 462.528pt x 346.896pt>
 File: chapters/11/10/3/5/figs/line2.png Graphic file (type png)
 <use chapters/11/10/3/5/figs/line2.png>
 Package pdftex.def Info: chapters/11/10/3/5/figs/line2.png  used on input line 
@@ -2566,8 +2590,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-(./chapters/11/10/3/6/dist.tex [109]) (./chapters/11/10/3/14/line.tex
-<chapters/11/10/3/14/figs/lines.png, id=3280, 628.3475pt x 445.665pt>
+(./chapters/11/10/3/6/dist.tex [110]) (./chapters/11/10/3/14/line.tex
+<chapters/11/10/3/14/figs/lines.png, id=3332, 628.3475pt x 445.665pt>
 File: chapters/11/10/3/14/figs/lines.png Graphic file (type png)
 <use chapters/11/10/3/14/figs/lines.png>
 Package pdftex.def Info: chapters/11/10/3/14/figs/lines.png  used on input line
@@ -2577,20 +2601,20 @@ Package pdftex.def Info: chapters/11/10/3/14/figs/lines.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/10/3/16/line.tex [110])
+(./chapters/11/10/3/16/line.tex [111])
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 43.
 
 (./chapters/11/10/3/17/line.tex
-<chapters/11/10/3/17/figs/fig.png, id=3305, 462.528pt x 346.896pt>
+<chapters/11/10/3/17/figs/fig.png, id=3357, 462.528pt x 346.896pt>
 File: chapters/11/10/3/17/figs/fig.png Graphic file (type png)
 <use chapters/11/10/3/17/figs/fig.png>
 Package pdftex.def Info: chapters/11/10/3/17/figs/fig.png  used on input line 1
 86.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
-) [111] (./chapters/11/10/3/18/dist.tex)
+) [112] (./chapters/11/10/3/18/dist.tex)
 (./chapters/11/10/4/4/line.tex
-<chapters/11/10/4/4/figs/fig.png, id=3330, 467.2pt x 350.4pt>
+<chapters/11/10/4/4/figs/fig.png, id=3383, 467.2pt x 350.4pt>
 File: chapters/11/10/4/4/figs/fig.png Graphic file (type png)
 <use chapters/11/10/4/4/figs/fig.png>
 Package pdftex.def Info: chapters/11/10/4/4/figs/fig.png  used on input line 65
@@ -2608,16 +2632,16 @@ Overfull \hbox (0.8169pt too wide) in paragraph at lines 58--58
 OT1/cmr/m/n/12 )$\OT1/ptm/m/n/12 . 
  []
 
-[112]) (./chapters/11/10/4/21/line.tex
-<chapters/11/10/4/21/figs/line_plot.jpg, id=3354, 462.528pt x 346.896pt>
+[113]) (./chapters/11/10/4/21/line.tex
+<chapters/11/10/4/21/figs/line_plot.jpg, id=3407, 462.528pt x 346.896pt>
 File: chapters/11/10/4/21/figs/line_plot.jpg Graphic file (type jpg)
 <use chapters/11/10/4/21/figs/line_plot.jpg>
 Package pdftex.def Info: chapters/11/10/4/21/figs/line_plot.jpg  used on input 
 line 213.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/11/10/4/23/dist.tex
-[113]) (./chapters/11/10/4/7/line.tex
-<chapters/11/10/4/7/figs/fig.png, id=3379, 462.528pt x 346.896pt>
+[114]) (./chapters/11/10/4/7/line.tex
+<chapters/11/10/4/7/figs/fig.png, id=3431, 462.528pt x 346.896pt>
 File: chapters/11/10/4/7/figs/fig.png Graphic file (type png)
 <use chapters/11/10/4/7/figs/fig.png>
 Package pdftex.def Info: chapters/11/10/4/7/figs/fig.png  used on input line 73
@@ -2630,9 +2654,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: Command \textendash invalid in math mode on input line 78.
 
-(./chapters/12/11/3/1/dist.tex [114])) (./chapters/linear/examples/plane.tex
-(./chapters/12/11/3/2/norm.tex) (./chapters/12/11/3/8/plane.tex [115]
-<chapters/12/11/3/8/figs/plane1.png, id=3423, 462.528pt x 346.896pt>
+(./chapters/12/11/3/1/dist.tex [115])) (./chapters/linear/examples/plane.tex
+(./chapters/12/11/3/2/norm.tex) (./chapters/12/11/3/8/plane.tex [116]
+<chapters/12/11/3/8/figs/plane1.png, id=3476, 462.528pt x 346.896pt>
 File: chapters/12/11/3/8/figs/plane1.png Graphic file (type png)
 <use chapters/12/11/3/8/figs/plane1.png>
 Package pdftex.def Info: chapters/12/11/3/8/figs/plane1.png  used on input line
@@ -2652,16 +2676,16 @@ LaTeX Warning: Command \textendash invalid in math mode on input line 9.
 LaTeX Warning: Command \textendash invalid in math mode on input line 9.
 
 (./chapters/12/11/3/9/plane.tex)) (./chapters/linear/examples/misc.tex
-(./chapters/11/10/4/1/line.tex [116]) (./chapters/11/10/4/2/line.tex
-<chapters/11/10/4/2/figs/line.png, id=3448, 462.528pt x 346.896pt>
+(./chapters/11/10/4/1/line.tex [117]) (./chapters/11/10/4/2/line.tex
+<chapters/11/10/4/2/figs/line.png, id=3501, 462.528pt x 346.896pt>
 File: chapters/11/10/4/2/figs/line.png Graphic file (type png)
 <use chapters/11/10/4/2/figs/line.png>
 Package pdftex.def Info: chapters/11/10/4/2/figs/line.png  used on input line 4
 0.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
- [117])
-(./chapters/11/10/4/3/line.tex [118 <./chapters/11/10/4/2/figs/line.png>]
-<chapters/11/10/4/3/figs/inter.png, id=3490, 462.528pt x 346.896pt>
+ [118])
+(./chapters/11/10/4/3/line.tex [119 <./chapters/11/10/4/2/figs/line.png>]
+<chapters/11/10/4/3/figs/inter.png, id=3542, 462.528pt x 346.896pt>
 File: chapters/11/10/4/3/figs/inter.png Graphic file (type png)
 <use chapters/11/10/4/3/figs/inter.png>
 Package pdftex.def Info: chapters/11/10/4/3/figs/inter.png  used on input line 
@@ -2672,14 +2696,14 @@ Package pdftex.def Info: chapters/11/10/4/3/figs/inter.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/11/10/4/6/line.tex
-<chapters/11/10/4/6/figs/line_fig.png, id=3492, 321.2pt x 240.9pt>
+<chapters/11/10/4/6/figs/line_fig.png, id=3544, 321.2pt x 240.9pt>
 File: chapters/11/10/4/6/figs/line_fig.png Graphic file (type png)
 <use chapters/11/10/4/6/figs/line_fig.png>
 Package pdftex.def Info: chapters/11/10/4/6/figs/line_fig.png  used on input li
 ne 71.
 (pdftex.def)             Requested size: 516.0pt x 387.01376pt.
-) (./chapters/11/10/4/8/line.tex [119]
-<./chapters/11/10/4/8/figs/fig.pdf, id=3524, 462.52798pt x 346.89601pt>
+) (./chapters/11/10/4/8/line.tex [120]
+<./chapters/11/10/4/8/figs/fig.pdf, id=3576, 462.52798pt x 346.89601pt>
 File: ./chapters/11/10/4/8/figs/fig.pdf Graphic file (type pdf)
 <use ./chapters/11/10/4/8/figs/fig.pdf>
 Package pdftex.def Info: ./chapters/11/10/4/8/figs/fig.pdf  used on input line 
@@ -2689,22 +2713,22 @@ Package pdftex.def Info: ./chapters/11/10/4/8/figs/fig.pdf  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/10/4/22/line.tex [120]
-<chapters/11/10/4/22/figs/fig.png, id=3551, 462.528pt x 346.896pt>
+(./chapters/11/10/4/22/line.tex [121]
+<chapters/11/10/4/22/figs/fig.png, id=3605, 462.528pt x 346.896pt>
 File: chapters/11/10/4/22/figs/fig.png Graphic file (type png)
 <use chapters/11/10/4/22/figs/fig.png>
 Package pdftex.def Info: chapters/11/10/4/22/figs/fig.png  used on input line 1
 92.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
-) (./chapters/11/10/4/24/line.tex [121]
-<chapters/11/10/4/24/figs/crossing.png, id=3580, 462.528pt x 346.896pt>
+) (./chapters/11/10/4/24/line.tex [122]
+<chapters/11/10/4/24/figs/crossing.png, id=3633, 462.528pt x 346.896pt>
 File: chapters/11/10/4/24/figs/crossing.png Graphic file (type png)
 <use chapters/11/10/4/24/figs/crossing.png>
 Package pdftex.def Info: chapters/11/10/4/24/figs/crossing.png  used on input l
 ine 150.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ))
-(./exemplar/11.10.3.tex [122] [123] [124] [125]
+(./exemplar/11.10.3.tex [123] [124] [125] [126]
 Underfull \hbox (badness 10000) detected at line 213
 \OT1/ptm/m/n/12 1.
  []
@@ -2839,9 +2863,9 @@ Overfull \hbox (24.0pt too wide) in paragraph at lines 240--241
 [][] 
  []
 
-) (./svd/svd.tex [126] (./chapters/12/11/2/16/svd/main.tex [127] [128] [129]
-[130]
-<chapters/12/11/2/16/svd/figs/skew_svd.png, id=3845, 462.528pt x 346.896pt>
+) (./svd/svd.tex [127] (./chapters/12/11/2/16/svd/main.tex [128] [129] [130]
+[131]
+<chapters/12/11/2/16/svd/figs/skew_svd.png, id=3897, 462.528pt x 346.896pt>
 File: chapters/12/11/2/16/svd/figs/skew_svd.png Graphic file (type png)
 <use chapters/12/11/2/16/svd/figs/skew_svd.png>
 Package pdftex.def Info: chapters/12/11/2/16/svd/figs/skew_svd.png  used on inp
@@ -2854,16 +2878,16 @@ t/12 l[]$ \OT1/ptm/m/n/12 and $\OML/cmm/m/it/12 l[]$ \OT1/ptm/m/n/12 whose vec-
 tor equa-tions are $[]$
  []
 
-[131] [132] [133]
-<./chapters/12/11/2/e11/svd/figs/skew.png, id=3915, 462.528pt x 346.896pt>
+[132] [133] [134]
+<./chapters/12/11/2/e11/svd/figs/skew.png, id=3967, 462.528pt x 346.896pt>
 File: ./chapters/12/11/2/e11/svd/figs/skew.png Graphic file (type png)
 <use ./chapters/12/11/2/e11/svd/figs/skew.png>
 Package pdftex.def Info: ./chapters/12/11/2/e11/svd/figs/skew.png  used on inpu
 t line 289.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 )) (./chapters/circles/examples/equation.tex
-(./chapters/11/11/1/10/circle.tex [134] [135]
-<chapters/11/11/1/10/figs/circ2.png, id=3963, 462.528pt x 346.896pt>
+(./chapters/11/11/1/10/circle.tex [135] [136]
+<chapters/11/11/1/10/figs/circ2.png, id=4016, 462.528pt x 346.896pt>
 File: chapters/11/11/1/10/figs/circ2.png Graphic file (type png)
 <use chapters/11/11/1/10/figs/circ2.png>
 Package pdftex.def Info: chapters/11/11/1/10/figs/circ2.png  used on input line
@@ -2874,14 +2898,14 @@ Package pdftex.def Info: chapters/11/11/1/10/figs/circ2.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/11/11/1/11/circle.tex
-<chapters/11/11/1/11/figs/fig.pdf, id=3964, 462.52798pt x 346.89601pt>
+<chapters/11/11/1/11/figs/fig.pdf, id=4017, 462.52798pt x 346.89601pt>
 File: chapters/11/11/1/11/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/11/1/11/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/11/1/11/figs/fig.pdf  used on input line 3
 4.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
- [136]) (./chapters/11/11/1/12/circle.tex
-<chapters/11/11/1/12/figs/conic.png, id=3991, 462.528pt x 346.896pt>
+ [137]) (./chapters/11/11/1/12/circle.tex
+<chapters/11/11/1/12/figs/conic.png, id=4044, 462.528pt x 346.896pt>
 File: chapters/11/11/1/12/figs/conic.png Graphic file (type png)
 <use chapters/11/11/1/12/figs/conic.png>
 Package pdftex.def Info: chapters/11/11/1/12/figs/conic.png  used on input line
@@ -2889,7 +2913,7 @@ Package pdftex.def Info: chapters/11/11/1/12/figs/conic.png  used on input line
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 )
 (./chapters/11/11/1/14/circle.tex
-<chapters/11/11/1/14/figs/fig.png, id=3998, 289.08pt x 289.08pt>
+<chapters/11/11/1/14/figs/fig.png, id=4051, 289.08pt x 289.08pt>
 File: chapters/11/11/1/14/figs/fig.png Graphic file (type png)
 <use chapters/11/11/1/14/figs/fig.png>
 Package pdftex.def Info: chapters/11/11/1/14/figs/fig.png  used on input line 1
@@ -2900,8 +2924,8 @@ Package pdftex.def Info: chapters/11/11/1/14/figs/fig.png  used on input line 1
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[137]
-<chapters/11/11/1/15/figs/Figure_1.png, id=4024, 289.08pt x 289.08pt>
+[138]
+<chapters/11/11/1/15/figs/Figure_1.png, id=4076, 289.08pt x 289.08pt>
 File: chapters/11/11/1/15/figs/Figure_1.png Graphic file (type png)
 <use chapters/11/11/1/15/figs/Figure_1.png>
 Package pdftex.def Info: chapters/11/11/1/15/figs/Figure_1.png  used on input l
@@ -2911,8 +2935,8 @@ ine 221.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/10/7/4/3/circle.tex [138]
-<chapters/10/7/4/3/figs/problem3.pdf, id=4061, 462.52798pt x 346.89601pt>
+(./chapters/10/7/4/3/circle.tex [139]
+<chapters/10/7/4/3/figs/problem3.pdf, id=4114, 462.52798pt x 346.89601pt>
 File: chapters/10/7/4/3/figs/problem3.pdf Graphic file (type pdf)
 <use chapters/10/7/4/3/figs/problem3.pdf>
 Package pdftex.def Info: chapters/10/7/4/3/figs/problem3.pdf  used on input lin
@@ -2922,8 +2946,8 @@ e 149.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/11/1/1/circle.tex [139]
-<chapters/11/11/1/1/figs/circ1.png, id=4083, 462.528pt x 346.896pt>
+(./chapters/11/11/1/1/circle.tex [140]
+<chapters/11/11/1/1/figs/circ1.png, id=4135, 462.528pt x 346.896pt>
 File: chapters/11/11/1/1/figs/circ1.png Graphic file (type png)
 <use chapters/11/11/1/1/figs/circ1.png>
 Package pdftex.def Info: chapters/11/11/1/1/figs/circ1.png  used on input line 
@@ -2934,7 +2958,7 @@ Package pdftex.def Info: chapters/11/11/1/1/figs/circ1.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/11/11/1/2/circle.tex
-<chapters/11/11/1/2/figs/circle.png, id=4085, 462.528pt x 346.896pt>
+<chapters/11/11/1/2/figs/circle.png, id=4137, 462.528pt x 346.896pt>
 File: chapters/11/11/1/2/figs/circle.png Graphic file (type png)
 <use chapters/11/11/1/2/figs/circle.png>
 Package pdftex.def Info: chapters/11/11/1/2/figs/circle.png  used on input line
@@ -2945,7 +2969,7 @@ Package pdftex.def Info: chapters/11/11/1/2/figs/circle.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/11/11/1/3/circle.tex
-<chapters/11/11/1/3/figs/fig.pdf, id=4086, 462.52798pt x 346.89601pt>
+<chapters/11/11/1/3/figs/fig.pdf, id=4138, 462.52798pt x 346.89601pt>
 File: chapters/11/11/1/3/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/11/1/3/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/11/1/3/figs/fig.pdf  used on input line 77
@@ -2955,15 +2979,15 @@ Package pdftex.def Info: chapters/11/11/1/3/figs/fig.pdf  used on input line 77
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/11/1/4/circle.tex [140]
-<chapters/11/11/1/4/figs/circ.png, id=4108, 462.528pt x 346.896pt>
+(./chapters/11/11/1/4/circle.tex [141]
+<chapters/11/11/1/4/figs/circ.png, id=4161, 462.528pt x 346.896pt>
 File: chapters/11/11/1/4/figs/circ.png Graphic file (type png)
 <use chapters/11/11/1/4/figs/circ.png>
 Package pdftex.def Info: chapters/11/11/1/4/figs/circ.png  used on input line 4
 4.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/11/11/1/5/circle.tex
-<chapters/11/11/1/5/figs/circle.png, id=4110, 462.528pt x 346.896pt>
+<chapters/11/11/1/5/figs/circle.png, id=4163, 462.528pt x 346.896pt>
 File: chapters/11/11/1/5/figs/circle.png Graphic file (type png)
 <use chapters/11/11/1/5/figs/circle.png>
 Package pdftex.def Info: chapters/11/11/1/5/figs/circle.png  used on input line
@@ -2974,7 +2998,7 @@ Package pdftex.def Info: chapters/11/11/1/5/figs/circle.png  used on input line
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 (./chapters/11/11/1/6/circle.tex
-<chapters/11/11/1/6/figs/fig.pdf, id=4112, 462.52798pt x 346.89601pt>
+<chapters/11/11/1/6/figs/fig.pdf, id=4165, 462.52798pt x 346.89601pt>
 File: chapters/11/11/1/6/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/11/1/6/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/11/1/6/figs/fig.pdf  used on input line 86
@@ -2985,14 +3009,14 @@ Package pdftex.def Info: chapters/11/11/1/6/figs/fig.pdf  used on input line 86
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/11/11/1/7/circle.tex
-<chapters/11/11/1/7/figs/circle.png, id=4114, 462.528pt x 346.896pt>
+<chapters/11/11/1/7/figs/circle.png, id=4167, 462.528pt x 346.896pt>
 File: chapters/11/11/1/7/figs/circle.png Graphic file (type png)
 <use chapters/11/11/1/7/figs/circle.png>
 Package pdftex.def Info: chapters/11/11/1/7/figs/circle.png  used on input line
  132.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
-) (./chapters/11/11/1/8/circle.tex [141]
-<chapters/11/11/1/8/figs/11.1.8.png, id=4142, 462.528pt x 346.896pt>
+) (./chapters/11/11/1/8/circle.tex [142]
+<chapters/11/11/1/8/figs/11.1.8.png, id=4195, 462.528pt x 346.896pt>
 File: chapters/11/11/1/8/figs/11.1.8.png Graphic file (type png)
 <use chapters/11/11/1/8/figs/11.1.8.png>
 Package pdftex.def Info: chapters/11/11/1/8/figs/11.1.8.png  used on input line
@@ -3003,7 +3027,7 @@ Package pdftex.def Info: chapters/11/11/1/8/figs/11.1.8.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/11/11/1/9/circle.tex
-<chapters/11/11/1/9/figs/fig.png, id=4144, 462.528pt x 346.896pt>
+<chapters/11/11/1/9/figs/fig.png, id=4197, 462.528pt x 346.896pt>
 File: chapters/11/11/1/9/figs/fig.png Graphic file (type png)
 <use chapters/11/11/1/9/figs/fig.png>
 Package pdftex.def Info: chapters/11/11/1/9/figs/fig.png  used on input line 68
@@ -3013,9 +3037,9 @@ Package pdftex.def Info: chapters/11/11/1/9/figs/fig.png  used on input line 68
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./chapters/circles/exer/equation.tex [142])
+) (./chapters/circles/exer/equation.tex [143])
 (./chapters/circles/examples/const.tex (./chapters/9/10/4/1/circle.tex
-<chapters/9/10/4/1/figs/cccc.png, id=4182, 1057.9525pt x 710.655pt>
+<chapters/9/10/4/1/figs/cccc.png, id=4234, 1057.9525pt x 710.655pt>
 File: chapters/9/10/4/1/figs/cccc.png Graphic file (type png)
 <use chapters/9/10/4/1/figs/cccc.png>
 Package pdftex.def Info: chapters/9/10/4/1/figs/cccc.png  used on input line 34
@@ -3029,8 +3053,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) detected at line 241
  []
 
-) [143]) (./chapters/9/10/4/2/circle.tex
-<chapters/9/10/4/2/figs/c.png, id=4215, 462.528pt x 346.896pt>
+) [144]) (./chapters/9/10/4/2/circle.tex
+<chapters/9/10/4/2/figs/c.png, id=4268, 462.528pt x 346.896pt>
 File: chapters/9/10/4/2/figs/c.png Graphic file (type png)
 <use chapters/9/10/4/2/figs/c.png>
 Package pdftex.def Info: chapters/9/10/4/2/figs/c.png  used on input line 59.
@@ -3039,28 +3063,28 @@ Package pdftex.def Info: chapters/9/10/4/2/figs/c.png  used on input line 59.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[144]) (./chapters/9/10/4/4/circle.tex [145]
+[145]) (./chapters/9/10/4/4/circle.tex [146]
 (./chapters/9/10/4/4/tables/table1.tex)
-<chapters/9/10/4/4/figs/fig.png, id=4270, 289.08pt x 289.08pt>
+<chapters/9/10/4/4/figs/fig.png, id=4322, 289.08pt x 289.08pt>
 File: chapters/9/10/4/4/figs/fig.png Graphic file (type png)
 <use chapters/9/10/4/4/figs/fig.png>
 Package pdftex.def Info: chapters/9/10/4/4/figs/fig.png  used on input line 217
 .
 (pdftex.def)             Requested size: 516.0pt x 516.02963pt.
 )
-<chapters/9/10/4/figs/fig1.jpg, id=4272, 643.40375pt x 523.9575pt>
+<chapters/9/10/4/figs/fig1.jpg, id=4324, 643.40375pt x 523.9575pt>
 File: chapters/9/10/4/figs/fig1.jpg Graphic file (type jpg)
 <use chapters/9/10/4/figs/fig1.jpg>
 Package pdftex.def Info: chapters/9/10/4/figs/fig1.jpg  used on input line 34.
 (pdftex.def)             Requested size: 516.0pt x 420.22191pt.
  (./chapters/9/10/4/5/circle.tex
-[146]
+[147]
 Underfull \hbox (badness 10000) detected at line 224
  []$[]  \OML/cmm/m/it/12 ^^V[] \OT1/cmr/m/n/12 = [] []$ [][]  
  []
 
 (./chapters/9/10/4/5/tables/table_1.tex)
-<chapters/9/10/4/5/figs/Figure_1.png, id=4298, 462.528pt x 346.896pt>
+<chapters/9/10/4/5/figs/Figure_1.png, id=4350, 462.528pt x 346.896pt>
 File: chapters/9/10/4/5/figs/Figure_1.png Graphic file (type png)
 <use chapters/9/10/4/5/figs/Figure_1.png>
 Package pdftex.def Info: chapters/9/10/4/5/figs/Figure_1.png  used on input lin
@@ -3070,16 +3094,16 @@ e 255.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/9/10/4/6/circle.tex [147]
+) (./chapters/9/10/4/6/circle.tex [148]
 (./chapters/9/10/4/6/tables/09.10.04.06_1.tex)
-<chapters/9/10/4/6/figs/equilateral.png, id=4327, 462.528pt x 346.896pt>
+<chapters/9/10/4/6/figs/equilateral.png, id=4379, 462.528pt x 346.896pt>
 File: chapters/9/10/4/6/figs/equilateral.png Graphic file (type png)
 <use chapters/9/10/4/6/figs/equilateral.png>
 Package pdftex.def Info: chapters/9/10/4/6/figs/equilateral.png  used on input 
 line 181.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/9/10/5/1/circle.tex
-<chapters/9/10/5/1/figs/circle1.pdf, id=4328, 462.52798pt x 346.89601pt>
+<chapters/9/10/5/1/figs/circle1.pdf, id=4380, 462.52798pt x 346.89601pt>
 File: chapters/9/10/5/1/figs/circle1.pdf Graphic file (type pdf)
 <use chapters/9/10/5/1/figs/circle1.pdf>
 Package pdftex.def Info: chapters/9/10/5/1/figs/circle1.pdf  used on input line
@@ -3098,9 +3122,9 @@ Overfull \hbox (119.30524pt too wide) detected at line 72
 []
  []
 
-[148]) (./chapters/9/10/5/2/circle.tex (./chapters/9/10/5/2/tables/table.tex)
-[149]
-<chapters/9/10/5/2/figs/circle.png, id=4376, 462.528pt x 346.896pt>
+[149]) (./chapters/9/10/5/2/circle.tex (./chapters/9/10/5/2/tables/table.tex)
+[150]
+<chapters/9/10/5/2/figs/circle.png, id=4429, 462.528pt x 346.896pt>
 File: chapters/9/10/5/2/figs/circle.png Graphic file (type png)
 <use chapters/9/10/5/2/figs/circle.png>
 Package pdftex.def Info: chapters/9/10/5/2/figs/circle.png  used on input line 
@@ -3110,30 +3134,34 @@ Package pdftex.def Info: chapters/9/10/5/2/figs/circle.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./chapters/9/10/5/3/circle.tex
-<chapters/9/10/5/3/figs/fig-1.pdf, id=4377, 462.52798pt x 346.89601pt>
-File: chapters/9/10/5/3/figs/fig-1.pdf Graphic file (type pdf)
-<use chapters/9/10/5/3/figs/fig-1.pdf>
-Package pdftex.def Info: chapters/9/10/5/3/figs/fig-1.pdf  used on input line 2
+(./chapters/9/10/5/7/circle.tex
+<./chapters/9/10/5/7/figs/fig.pdf, id=4430, 462.52798pt x 346.89601pt>
+File: ./chapters/9/10/5/7/figs/fig.pdf Graphic file (type pdf)
+<use ./chapters/9/10/5/7/figs/fig.pdf>
+Package pdftex.def Info: ./chapters/9/10/5/7/figs/fig.pdf  used on input line 7
 7.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
-) (./chapters/9/10/5/10/circle.tex
-(./chapters/9/10/5/10/tables/table.tex) [150]
-<chapters/9/10/5/10/figs/fig.png, id=4409, 505.89pt x 563.706pt>
+ (./chapters/9/10/5/7/tables/table.tex
+Underfull \vbox (badness 10000) detected at line 223
+ []
+
+) [151]) (./chapters/9/10/5/10/circle.tex
+(./chapters/9/10/5/10/tables/table.tex) [152]
+<chapters/9/10/5/10/figs/fig.png, id=4487, 505.89pt x 563.706pt>
 File: chapters/9/10/5/10/figs/fig.png Graphic file (type png)
 <use chapters/9/10/5/10/figs/fig.png>
 Package pdftex.def Info: chapters/9/10/5/10/figs/fig.png  used on input line 24
 2.
 (pdftex.def)             Requested size: 516.0pt x 574.98111pt.
-) (./chapters/9/10/5/12/circle.tex [151]
-<chapters/9/10/5/12/figs/circle.png, id=4442, 462.528pt x 346.896pt>
+) (./chapters/9/10/5/12/circle.tex [153]
+<chapters/9/10/5/12/figs/circle.png, id=4519, 462.528pt x 346.896pt>
 File: chapters/9/10/5/12/figs/circle.png Graphic file (type png)
 <use chapters/9/10/5/12/figs/circle.png>
 Package pdftex.def Info: chapters/9/10/5/12/figs/circle.png  used on input line
  202.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/9/10/6/1/circle.tex
-<chapters/9/10/6/1/figs/circle3.png, id=4444, 462.528pt x 346.896pt>
+<chapters/9/10/6/1/figs/circle3.png, id=4521, 462.528pt x 346.896pt>
 File: chapters/9/10/6/1/figs/circle3.png Graphic file (type png)
 <use chapters/9/10/6/1/figs/circle3.png>
 Package pdftex.def Info: chapters/9/10/6/1/figs/circle3.png  used on input line
@@ -3151,17 +3179,17 @@ Underfull \vbox (badness 10000) detected at line 255
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[152] [153]) (./chapters/9/10/6/7/circle.tex
-(./chapters/9/10/6/7/tables/table.tex) [154]
-<chapters/9/10/6/7/figs/circle.png, id=4525, 462.528pt x 346.896pt>
+[154] [155]) (./chapters/9/10/6/7/circle.tex
+(./chapters/9/10/6/7/tables/table.tex) [156]
+<chapters/9/10/6/7/figs/circle.png, id=4599, 462.528pt x 346.896pt>
 File: chapters/9/10/6/7/figs/circle.png Graphic file (type png)
 <use chapters/9/10/6/7/figs/circle.png>
 Package pdftex.def Info: chapters/9/10/6/7/figs/circle.png  used on input line 
 160.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/9/10/6/9/circle.tex
-[155] (./chapters/9/10/6/9/tables/table1.tex)
-<chapters/9/10/6/9/figs/fig.png, id=4556, 361.35pt x 361.35pt>
+[157] (./chapters/9/10/6/9/tables/table1.tex)
+<chapters/9/10/6/9/figs/fig.png, id=4632, 361.35pt x 361.35pt>
 File: chapters/9/10/6/9/figs/fig.png Graphic file (type png)
 <use chapters/9/10/6/9/figs/fig.png>
 Package pdftex.def Info: chapters/9/10/6/9/figs/fig.png  used on input line 239
@@ -3171,9 +3199,9 @@ Package pdftex.def Info: chapters/9/10/6/9/figs/fig.png  used on input line 239
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./chapters/9/10/6/10/circle.tex [156] [157]
+(./chapters/9/10/6/10/circle.tex [158] [159]
 (./chapters/9/10/6/10/tables/09.10.06.10_1.tex)
-<chapters/9/10/6/10/figs/bisector.png, id=4607, 462.528pt x 346.896pt>
+<chapters/9/10/6/10/figs/bisector.png, id=4682, 462.528pt x 346.896pt>
 File: chapters/9/10/6/10/figs/bisector.png Graphic file (type png)
 <use chapters/9/10/6/10/figs/bisector.png>
 Package pdftex.def Info: chapters/9/10/6/10/figs/bisector.png  used on input li
@@ -3181,50 +3209,50 @@ ne 184.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ))
 (./chapters/circles/exer/const.tex
-<exemplar/9.10.1/figs/10.3.jpg, id=4609, 578.16pt x 620.3175pt>
+<exemplar/9.10.1/figs/10.3.jpg, id=4684, 578.16pt x 620.3175pt>
 File: exemplar/9.10.1/figs/10.3.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.3.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.3.jpg  used on input line 16.
 (pdftex.def)             Requested size: 516.0pt x 553.65208pt.
- [158] [159 <./exemplar/9.10.1/figs/10.3.jpg>]
-<exemplar/9.10.1/figs/10.4.jpg, id=4643, 685.56125pt x 651.43375pt>
+ [160] [161 <./exemplar/9.10.1/figs/10.3.jpg>]
+<exemplar/9.10.1/figs/10.4.jpg, id=4717, 685.56125pt x 651.43375pt>
 File: exemplar/9.10.1/figs/10.4.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.4.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.4.jpg  used on input line 36.
 (pdftex.def)             Requested size: 516.0pt x 490.35338pt.
-<exemplar/9.10.1/figs/10.5.jpg, id=4645, 668.4975pt x 626.34pt>
+<exemplar/9.10.1/figs/10.5.jpg, id=4719, 668.4975pt x 626.34pt>
 File: exemplar/9.10.1/figs/10.5.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.5.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.5.jpg  used on input line 49.
 (pdftex.def)             Requested size: 516.0pt x 483.49704pt.
- [160 <./exemplar/9.10.1/figs/10.4.jpg>]
-<exemplar/9.10.1/figs/10.6.jpg, id=4662, 652.4375pt x 695.59875pt>
+ [162 <./exemplar/9.10.1/figs/10.4.jpg>]
+<exemplar/9.10.1/figs/10.6.jpg, id=4737, 652.4375pt x 695.59875pt>
 File: exemplar/9.10.1/figs/10.6.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.6.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.6.jpg  used on input line 62.
 (pdftex.def)             Requested size: 516.0pt x 550.18568pt.
- [161 <./exemplar/9.10.1/figs/10.5.jpg>]
-<exemplar/9.10.1/figs/10.7.jpg, id=4674, 722.7pt x 689.57625pt>
+ [163 <./exemplar/9.10.1/figs/10.5.jpg>]
+<exemplar/9.10.1/figs/10.7.jpg, id=4750, 722.7pt x 689.57625pt>
 File: exemplar/9.10.1/figs/10.7.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.7.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.7.jpg  used on input line 75.
 (pdftex.def)             Requested size: 516.0pt x 492.34882pt.
- [162 <./exemplar/9.10.1/figs/10.6.jpg>]
-<exemplar/9.10.1/figs/10.8.jpg, id=4686, 559.08875pt x 547.04375pt>
+ [164 <./exemplar/9.10.1/figs/10.6.jpg>]
+<exemplar/9.10.1/figs/10.8.jpg, id=4762, 559.08875pt x 547.04375pt>
 File: exemplar/9.10.1/figs/10.8.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.8.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.8.jpg  used on input line 95.
 (pdftex.def)             Requested size: 516.0pt x 504.9057pt.
- [163 <./exemplar/9.10.1/figs/10.7.jpg>]
-<exemplar/9.10.1/figs/10.9.jpg, id=4704, 641.39626pt x 605.26125pt>
+ [165 <./exemplar/9.10.1/figs/10.7.jpg>]
+<exemplar/9.10.1/figs/10.9.jpg, id=4779, 641.39626pt x 605.26125pt>
 File: exemplar/9.10.1/figs/10.9.jpg Graphic file (type jpg)
 <use exemplar/9.10.1/figs/10.9.jpg>
 Package pdftex.def Info: exemplar/9.10.1/figs/10.9.jpg  used on input line 108.
 
 (pdftex.def)             Requested size: 516.0pt x 486.94336pt.
- [164 <./exemplar/9.10.1/figs/10.8.jpg>] [165 <./exemplar/9.10.1/figs/10.9.jpg>
+ [166 <./exemplar/9.10.1/figs/10.8.jpg>] [167 <./exemplar/9.10.1/figs/10.9.jpg>
 ]
-<exemplar/9.10.2/figs/image.jpg, id=4732, 721.69624pt x 736.7525pt>
+<exemplar/9.10.2/figs/image.jpg, id=4806, 721.69624pt x 736.7525pt>
 File: exemplar/9.10.2/figs/image.jpg Graphic file (type jpg)
 <use exemplar/9.10.2/figs/image.jpg>
 Package pdftex.def Info: exemplar/9.10.2/figs/image.jpg  used on input line 130
@@ -3234,7 +3262,7 @@ Package pdftex.def Info: exemplar/9.10.2/figs/image.jpg  used on input line 130
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<exemplar/9.10.4/figs/image1.jpg, id=4734, 721.69624pt x 801.99625pt>
+<exemplar/9.10.4/figs/image1.jpg, id=4808, 721.69624pt x 801.99625pt>
 File: exemplar/9.10.4/figs/image1.jpg Graphic file (type jpg)
 <use exemplar/9.10.4/figs/image1.jpg>
 Package pdftex.def Info: exemplar/9.10.4/figs/image1.jpg  used on input line 14
@@ -3243,7 +3271,7 @@ Package pdftex.def Info: exemplar/9.10.4/figs/image1.jpg  used on input line 14
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<exemplar/9.10.4/figs/image2.jpg, id=4736, 710.655pt x 711.65875pt>
+<exemplar/9.10.4/figs/image2.jpg, id=4810, 710.655pt x 711.65875pt>
 File: exemplar/9.10.4/figs/image2.jpg Graphic file (type jpg)
 <use exemplar/9.10.4/figs/image2.jpg>
 Package pdftex.def Info: exemplar/9.10.4/figs/image2.jpg  used on input line 15
@@ -3252,7 +3280,7 @@ Package pdftex.def Info: exemplar/9.10.4/figs/image2.jpg  used on input line 15
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<exemplar/9.10.4/figs/image3.jpg, id=4738, 686.565pt x 580.1675pt>
+<exemplar/9.10.4/figs/image3.jpg, id=4812, 686.565pt x 580.1675pt>
 File: exemplar/9.10.4/figs/image3.jpg Graphic file (type jpg)
 <use exemplar/9.10.4/figs/image3.jpg>
 Package pdftex.def Info: exemplar/9.10.4/figs/image3.jpg  used on input line 15
@@ -3261,7 +3289,7 @@ Package pdftex.def Info: exemplar/9.10.4/figs/image3.jpg  used on input line 15
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<exemplar/9.10.4/figs/image4.jpg, id=4740, 682.55pt x 575.14874pt>
+<exemplar/9.10.4/figs/image4.jpg, id=4814, 682.55pt x 575.14874pt>
 File: exemplar/9.10.4/figs/image4.jpg Graphic file (type jpg)
 <use exemplar/9.10.4/figs/image4.jpg>
 Package pdftex.def Info: exemplar/9.10.4/figs/image4.jpg  used on input line 15
@@ -3271,30 +3299,30 @@ Package pdftex.def Info: exemplar/9.10.4/figs/image4.jpg  used on input line 15
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/conics/examples/parab.tex (./chapters/11/11/5/2/conic.tex
-<chapters/11/11/5/2/figs/fig.pdf, id=4741, 462.52798pt x 346.89601pt>
+<chapters/11/11/5/2/figs/fig.pdf, id=4815, 462.52798pt x 346.89601pt>
 File: chapters/11/11/5/2/figs/fig.pdf Graphic file (type pdf)
 <use chapters/11/11/5/2/figs/fig.pdf>
 Package pdftex.def Info: chapters/11/11/5/2/figs/fig.pdf  used on input line 30
 .
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 )
-(./chapters/11/11/5/6/parab.tex [166]
-<chapters/11/11/5/6/figs/fig1.pdf, id=4784, 462.52798pt x 346.89601pt>
+(./chapters/11/11/5/6/parab.tex [168]
+<chapters/11/11/5/6/figs/fig1.pdf, id=4859, 462.52798pt x 346.89601pt>
 File: chapters/11/11/5/6/figs/fig1.pdf Graphic file (type pdf)
 <use chapters/11/11/5/6/figs/fig1.pdf>
 Package pdftex.def Info: chapters/11/11/5/6/figs/fig1.pdf  used on input line 1
 75.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 ) (./chapters/11/11/5/8/parab.tex
-<chapters/11/11/5/8/figs/co.pdf, id=4785, 462.52798pt x 346.89601pt>
+<chapters/11/11/5/8/figs/co.pdf, id=4860, 462.52798pt x 346.89601pt>
 File: chapters/11/11/5/8/figs/co.pdf Graphic file (type pdf)
 <use chapters/11/11/5/8/figs/co.pdf>
 Package pdftex.def Info: chapters/11/11/5/8/figs/co.pdf  used on input line 30.
 
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 )
-[167] (./chapters/11/11/2/1/parab.tex [168]
-<chapters/11/11/2/1/figs/problem1.pdf, id=4839, 462.52798pt x 346.89601pt>
+[169] (./chapters/11/11/2/1/parab.tex [170]
+<chapters/11/11/2/1/figs/problem1.pdf, id=4915, 462.52798pt x 346.89601pt>
 File: chapters/11/11/2/1/figs/problem1.pdf Graphic file (type pdf)
 <use chapters/11/11/2/1/figs/problem1.pdf>
 Package pdftex.def Info: chapters/11/11/2/1/figs/problem1.pdf  used on input li
@@ -3304,8 +3332,8 @@ ne 148.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/2/2/parab.tex [169] [170]
-<chapters/11/11/2/2/figs/parabola.png, id=4897, 462.528pt x 346.896pt>
+) (./chapters/11/11/2/2/parab.tex [171] [172]
+<chapters/11/11/2/2/figs/parabola.png, id=4972, 462.528pt x 346.896pt>
 File: chapters/11/11/2/2/figs/parabola.png Graphic file (type png)
 <use chapters/11/11/2/2/figs/parabola.png>
 Package pdftex.def Info: chapters/11/11/2/2/figs/parabola.png  used on input li
@@ -3317,18 +3345,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 38.
+LaTeX Warning: Command \textendash invalid in math mode on input line 42.
 
 (./chapters/11/11/2/3/parab.tex (./chapters/11/11/2/3/tables/table1.tex)
-[171]
-<chapters/11/11/2/3/figs/fig.png, id=4924, 462.528pt x 346.896pt>
+[173]
+<chapters/11/11/2/3/figs/fig.png, id=4999, 462.528pt x 346.896pt>
 File: chapters/11/11/2/3/figs/fig.png Graphic file (type png)
 <use chapters/11/11/2/3/figs/fig.png>
 Package pdftex.def Info: chapters/11/11/2/3/figs/fig.png  used on input line 22
 1.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
-) (./chapters/11/11/2/4/parab.tex [172] [173]
-<chapters/11/11/2/4/figs/parabola.png, id=4980, 462.528pt x 346.896pt>
+) (./chapters/11/11/2/4/parab.tex [174] [175]
+<chapters/11/11/2/4/figs/parabola.png, id=5055, 462.528pt x 346.896pt>
 File: chapters/11/11/2/4/figs/parabola.png Graphic file (type png)
 <use chapters/11/11/2/4/figs/parabola.png>
 Package pdftex.def Info: chapters/11/11/2/4/figs/parabola.png  used on input li
@@ -3338,18 +3366,18 @@ ne 104.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-)) (./chapters/conics/exer/parab.tex [174])
+)) (./chapters/conics/exer/parab.tex [176])
 (./chapters/conics/examples/ellipse.tex (./chapters/11/11/5/4/conic.tex
-<chapters/11/11/5/4/figs/ellipse.png, id=5018, 560.0925pt x 426.59375pt>
+<chapters/11/11/5/4/figs/ellipse.png, id=5094, 560.0925pt x 426.59375pt>
 File: chapters/11/11/5/4/figs/ellipse.png Graphic file (type png)
 <use chapters/11/11/5/4/figs/ellipse.png>
 Package pdftex.def Info: chapters/11/11/5/4/figs/ellipse.png  used on input lin
 e 54.
 (pdftex.def)             Requested size: 516.0pt x 393.0308pt.
 )
-(./chapters/11/11/5/5/ellipse.tex [175]
+(./chapters/11/11/5/5/ellipse.tex [177]
 (./chapters/11/11/5/5/tables/table_1.tex)
-<chapters/11/11/5/5/figs/Figure_1.png, id=5046, 462.528pt x 346.896pt>
+<chapters/11/11/5/5/figs/Figure_1.png, id=5121, 462.528pt x 346.896pt>
 File: chapters/11/11/5/5/figs/Figure_1.png Graphic file (type png)
 <use chapters/11/11/5/5/figs/Figure_1.png>
 Package pdftex.def Info: chapters/11/11/5/5/figs/Figure_1.png  used on input li
@@ -3359,8 +3387,8 @@ ne 254.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/5/7/ellipse.tex [176] [177]
-<chapters/11/11/5/7/figs/problem7.pdf, id=5105, 462.52798pt x 346.89601pt>
+) (./chapters/11/11/5/7/ellipse.tex [178] [179]
+<chapters/11/11/5/7/figs/problem7.pdf, id=5179, 462.52798pt x 346.89601pt>
 File: chapters/11/11/5/7/figs/problem7.pdf Graphic file (type pdf)
 <use chapters/11/11/5/7/figs/problem7.pdf>
 Package pdftex.def Info: chapters/11/11/5/7/figs/problem7.pdf  used on input li
@@ -3370,8 +3398,8 @@ ne 127.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/11/3/1/ellipse.tex [178] [179]
-<chapters/11/11/3/1/figs/problem1.pdf, id=5161, 462.52798pt x 346.89601pt>
+(./chapters/11/11/3/1/ellipse.tex [180] [181]
+<chapters/11/11/3/1/figs/problem1.pdf, id=5237, 462.52798pt x 346.89601pt>
 File: chapters/11/11/3/1/figs/problem1.pdf Graphic file (type pdf)
 <use chapters/11/11/3/1/figs/problem1.pdf>
 Package pdftex.def Info: chapters/11/11/3/1/figs/problem1.pdf  used on input li
@@ -3381,8 +3409,8 @@ ne 110.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/3/2/ellipse.tex [180]
-<chapters/11/11/3/2/figs/ellipse.png, id=5202, 462.528pt x 346.896pt>
+) (./chapters/11/11/3/2/ellipse.tex [182]
+<chapters/11/11/3/2/figs/ellipse.png, id=5278, 462.528pt x 346.896pt>
 File: chapters/11/11/3/2/figs/ellipse.png Graphic file (type png)
 <use chapters/11/11/3/2/figs/ellipse.png>
 Package pdftex.def Info: chapters/11/11/3/2/figs/ellipse.png  used on input lin
@@ -3392,8 +3420,8 @@ e 106.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./chapters/11/11/3/3/ellipse.tex [181] [182]
-<chapters/11/11/3/3/figs/conic.png, id=5259, 462.528pt x 346.896pt>
+(./chapters/11/11/3/3/ellipse.tex [183] [184]
+<chapters/11/11/3/3/figs/conic.png, id=5334, 462.528pt x 346.896pt>
 File: chapters/11/11/3/3/figs/conic.png Graphic file (type png)
 <use chapters/11/11/3/3/figs/conic.png>
 Package pdftex.def Info: chapters/11/11/3/3/figs/conic.png  used on input line 
@@ -3403,8 +3431,8 @@ Package pdftex.def Info: chapters/11/11/3/3/figs/conic.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/3/19/ellipse.tex [183] [184]
-<chapters/11/11/3/19/figs/fig1.png, id=5324, 325.215pt x 433.62pt>
+) (./chapters/11/11/3/19/ellipse.tex [185] [186]
+<chapters/11/11/3/19/figs/fig1.png, id=5398, 325.215pt x 433.62pt>
 File: chapters/11/11/3/19/figs/fig1.png Graphic file (type png)
 <use chapters/11/11/3/19/figs/fig1.png>
 Package pdftex.def Info: chapters/11/11/3/19/figs/fig1.png  used on input line 
@@ -3415,16 +3443,16 @@ Package pdftex.def Info: chapters/11/11/3/19/figs/fig1.png  used on input line
 LaTeX Warning: Float too large for page by 19.061pt on input line 244.
 
 (./chapters/11/11/3/19/tables/table1.tex)) (./chapters/11/11/3/20/ellipse.tex
-[185]
-<chapters/11/11/3/20/figs/ellipse.png, id=5353, 462.528pt x 346.896pt>
+[187]
+<chapters/11/11/3/20/figs/ellipse.png, id=5429, 462.528pt x 346.896pt>
 File: chapters/11/11/3/20/figs/ellipse.png Graphic file (type png)
 <use chapters/11/11/3/20/figs/ellipse.png>
 Package pdftex.def Info: chapters/11/11/3/20/figs/ellipse.png  used on input li
 ne 189.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
-)) (./chapters/conics/exer/ellipse.tex [186])
-(./chapters/conics/examples/hyper.tex (./chapters/11/11/4/1/hyper.tex [187]
-<chapters/11/11/4/1/figs/problem1.pdf, id=5422, 462.52798pt x 346.89601pt>
+)) (./chapters/conics/exer/ellipse.tex [188])
+(./chapters/conics/examples/hyper.tex (./chapters/11/11/4/1/hyper.tex [189]
+<chapters/11/11/4/1/figs/problem1.pdf, id=5497, 462.52798pt x 346.89601pt>
 File: chapters/11/11/4/1/figs/problem1.pdf Graphic file (type pdf)
 <use chapters/11/11/4/1/figs/problem1.pdf>
 Package pdftex.def Info: chapters/11/11/4/1/figs/problem1.pdf  used on input li
@@ -3434,8 +3462,8 @@ ne 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/4/2/hyper.tex [188]
-<chapters/11/11/4/2/figs/hyperbola.png, id=5462, 462.528pt x 346.896pt>
+) (./chapters/11/11/4/2/hyper.tex [190]
+<chapters/11/11/4/2/figs/hyperbola.png, id=5536, 462.528pt x 346.896pt>
 File: chapters/11/11/4/2/figs/hyperbola.png Graphic file (type png)
 <use chapters/11/11/4/2/figs/hyperbola.png>
 Package pdftex.def Info: chapters/11/11/4/2/figs/hyperbola.png  used on input l
@@ -3445,8 +3473,8 @@ ine 77.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/4/5/hyper.tex [189]
-<chapters/11/11/4/5/figs/hyperbola.png, id=5497, 462.528pt x 346.896pt>
+) (./chapters/11/11/4/5/hyper.tex [191]
+<chapters/11/11/4/5/figs/hyperbola.png, id=5572, 462.528pt x 346.896pt>
 File: chapters/11/11/4/5/figs/hyperbola.png Graphic file (type png)
 <use chapters/11/11/4/5/figs/hyperbola.png>
 Package pdftex.def Info: chapters/11/11/4/5/figs/hyperbola.png  used on input l
@@ -3456,9 +3484,9 @@ ine 156.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/4/9/hyper.tex [190]
+) (./chapters/11/11/4/9/hyper.tex [192]
 (./chapters/11/11/4/9/tables/table_1.tex)
-<chapters/11/11/4/9/figs/Figure_1.png, id=5527, 462.528pt x 346.896pt>
+<chapters/11/11/4/9/figs/Figure_1.png, id=5602, 462.528pt x 346.896pt>
 File: chapters/11/11/4/9/figs/Figure_1.png Graphic file (type png)
 <use chapters/11/11/4/9/figs/Figure_1.png>
 Package pdftex.def Info: chapters/11/11/4/9/figs/Figure_1.png  used on input li
@@ -3471,8 +3499,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/4/8/hyper.tex [191] [192]
-<chapters/11/11/4/8/figs/hyperbola2.png, id=5583, 462.528pt x 346.896pt>
+) (./chapters/11/11/4/8/hyper.tex [193] [194]
+<chapters/11/11/4/8/figs/hyperbola2.png, id=5658, 462.528pt x 346.896pt>
 File: chapters/11/11/4/8/figs/hyperbola2.png Graphic file (type png)
 <use chapters/11/11/4/8/figs/hyperbola2.png>
 Package pdftex.def Info: chapters/11/11/4/8/figs/hyperbola2.png  used on input 
@@ -3482,8 +3510,8 @@ line 97.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/11/11/4/13/hyper.tex [193] [194]
-<chapters/11/11/4/13/figs/fig1.png, id=5643, 462.528pt x 346.896pt>
+) (./chapters/11/11/4/13/hyper.tex [195] [196]
+<chapters/11/11/4/13/figs/fig1.png, id=5718, 462.528pt x 346.896pt>
 File: chapters/11/11/4/13/figs/fig1.png Graphic file (type png)
 <use chapters/11/11/4/13/figs/fig1.png>
 Package pdftex.def Info: chapters/11/11/4/13/figs/fig1.png  used on input line 
@@ -3491,16 +3519,16 @@ Package pdftex.def Info: chapters/11/11/4/13/figs/fig1.png  used on input line
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 
 (./chapters/11/11/4/13/tables/table1.tex)) (./chapters/11/11/4/14/hyper.tex
-[195] [196]
-<chapters/11/11/4/14/figs/hyperbola.png, id=5697, 462.528pt x 346.896pt>
+[197] [198]
+<chapters/11/11/4/14/figs/hyperbola.png, id=5772, 462.528pt x 346.896pt>
 File: chapters/11/11/4/14/figs/hyperbola.png Graphic file (type png)
 <use chapters/11/11/4/14/figs/hyperbola.png>
 Package pdftex.def Info: chapters/11/11/4/14/figs/hyperbola.png  used on input 
 line 199.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
-)) (./chapters/conics/exer/hyper.tex [197])
+)) (./chapters/conics/exer/hyper.tex [199])
 (./chapters/inter/examples/chord.tex (./chapters/12/8/1/1/conic.tex
-<chapters/12/8/1/1/figs/conics1.png, id=5730, 462.528pt x 346.896pt>
+<chapters/12/8/1/1/figs/conics1.png, id=5806, 462.528pt x 346.896pt>
 File: chapters/12/8/1/1/figs/conics1.png Graphic file (type png)
 <use chapters/12/8/1/1/figs/conics1.png>
 Package pdftex.def Info: chapters/12/8/1/1/figs/conics1.png  used on input line
@@ -3511,7 +3539,7 @@ Package pdftex.def Info: chapters/12/8/1/1/figs/conics1.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/1/2/conic.tex
-<chapters/12/8/1/2/figs/conics1.png, id=5732, 561.09625pt x 460.72125pt>
+<chapters/12/8/1/2/figs/conics1.png, id=5808, 561.09625pt x 460.72125pt>
 File: chapters/12/8/1/2/figs/conics1.png Graphic file (type png)
 <use chapters/12/8/1/2/figs/conics1.png>
 Package pdftex.def Info: chapters/12/8/1/2/figs/conics1.png  used on input line
@@ -3521,8 +3549,8 @@ Package pdftex.def Info: chapters/12/8/1/2/figs/conics1.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[198]) (./chapters/12/8/1/6/conic.tex
-<chapters/12/8/1/6/figs/conics-fig.pdf, id=5752, 462.52798pt x 346.89601pt>
+[200]) (./chapters/12/8/1/6/conic.tex
+<chapters/12/8/1/6/figs/conics-fig.pdf, id=5828, 462.52798pt x 346.89601pt>
 File: chapters/12/8/1/6/figs/conics-fig.pdf Graphic file (type pdf)
 <use chapters/12/8/1/6/figs/conics-fig.pdf>
 Package pdftex.def Info: chapters/12/8/1/6/figs/conics-fig.pdf  used on input l
@@ -3533,7 +3561,7 @@ ine 54.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/1/7/conic.tex
-<chapters/12/8/1/7/figs/conic.png, id=5755, 462.528pt x 346.896pt>
+<chapters/12/8/1/7/figs/conic.png, id=5831, 462.528pt x 346.896pt>
 File: chapters/12/8/1/7/figs/conic.png Graphic file (type png)
 <use chapters/12/8/1/7/figs/conic.png>
 Package pdftex.def Info: chapters/12/8/1/7/figs/conic.png  used on input line 6
@@ -3543,8 +3571,8 @@ Package pdftex.def Info: chapters/12/8/1/7/figs/conic.png  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[199]) (./chapters/12/8/1/8/conic.tex
-<chapters/12/8/1/8/figs/conics1.png, id=5781, 462.528pt x 346.896pt>
+[201]) (./chapters/12/8/1/8/conic.tex
+<chapters/12/8/1/8/figs/conics1.png, id=5855, 462.528pt x 346.896pt>
 File: chapters/12/8/1/8/figs/conics1.png Graphic file (type png)
 <use chapters/12/8/1/8/figs/conics1.png>
 Package pdftex.def Info: chapters/12/8/1/8/figs/conics1.png  used on input line
@@ -3554,8 +3582,8 @@ Package pdftex.def Info: chapters/12/8/1/8/figs/conics1.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[200]) (./chapters/12/8/1/9/conic.tex
-<chapters/12/8/1/9/figs/con3.pdf, id=5802, 462.52798pt x 346.89601pt>
+[202]) (./chapters/12/8/1/9/conic.tex
+<chapters/12/8/1/9/figs/con3.pdf, id=5877, 462.52798pt x 346.89601pt>
 File: chapters/12/8/1/9/figs/con3.pdf Graphic file (type pdf)
 <use chapters/12/8/1/9/figs/con3.pdf>
 Package pdftex.def Info: chapters/12/8/1/9/figs/con3.pdf  used on input line 57
@@ -3566,7 +3594,7 @@ Package pdftex.def Info: chapters/12/8/1/9/figs/con3.pdf  used on input line 57
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/12/8/1/10/conic.tex
-<chapters/12/8/1/10/figs/conic.png, id=5803, 462.528pt x 346.896pt>
+<chapters/12/8/1/10/figs/conic.png, id=5878, 462.528pt x 346.896pt>
 File: chapters/12/8/1/10/figs/conic.png Graphic file (type png)
 <use chapters/12/8/1/10/figs/conic.png>
 Package pdftex.def Info: chapters/12/8/1/10/figs/conic.png  used on input line 
@@ -3576,8 +3604,8 @@ Package pdftex.def Info: chapters/12/8/1/10/figs/conic.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/12/8/1/13/intersect.tex [201] [202]
-<chapters/12/8/1/13/figs/problem13.pdf, id=5855, 462.52798pt x 346.89601pt>
+) (./chapters/12/8/1/13/intersect.tex [203] [204]
+<chapters/12/8/1/13/figs/problem13.pdf, id=5930, 462.52798pt x 346.89601pt>
 File: chapters/12/8/1/13/figs/problem13.pdf Graphic file (type pdf)
 <use chapters/12/8/1/13/figs/problem13.pdf>
 Package pdftex.def Info: chapters/12/8/1/13/figs/problem13.pdf  used on input l
@@ -3588,7 +3616,7 @@ ine 107.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/12/8/3/3/conic.tex
-<chapters/12/8/3/3/figs/conic.png, id=5856, 521.95pt x 407.5225pt>
+<chapters/12/8/3/3/figs/conic.png, id=5931, 521.95pt x 407.5225pt>
 File: chapters/12/8/3/3/figs/conic.png Graphic file (type png)
 <use chapters/12/8/3/3/figs/conic.png>
 Package pdftex.def Info: chapters/12/8/3/3/figs/conic.png  used on input line 3
@@ -3599,7 +3627,7 @@ Package pdftex.def Info: chapters/12/8/3/3/figs/conic.png  used on input line 3
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/3/7/conic.tex
-<chapters/12/8/3/7/figs/conic.png, id=5859, 538.01pt x 446.66875pt>
+<chapters/12/8/3/7/figs/conic.png, id=5934, 538.01pt x 446.66875pt>
 File: chapters/12/8/3/7/figs/conic.png Graphic file (type png)
 <use chapters/12/8/3/7/figs/conic.png>
 Package pdftex.def Info: chapters/12/8/3/7/figs/conic.png  used on input line 6
@@ -3609,8 +3637,8 @@ Package pdftex.def Info: chapters/12/8/3/7/figs/conic.png  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[203]) (./chapters/12/8/3/8/conic.tex
-<chapters/12/8/3/8/figs/conic_fig.png, id=5883, 462.528pt x 346.896pt>
+[205]) (./chapters/12/8/3/8/conic.tex
+<chapters/12/8/3/8/figs/conic_fig.png, id=5959, 462.528pt x 346.896pt>
 File: chapters/12/8/3/8/figs/conic_fig.png Graphic file (type png)
 <use chapters/12/8/3/8/figs/conic_fig.png>
 Package pdftex.def Info: chapters/12/8/3/8/figs/conic_fig.png  used on input li
@@ -3621,7 +3649,7 @@ ne 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/3/9/conic.tex
-<chapters/12/8/3/9/figs/conic_fig.png, id=5886, 462.528pt x 346.896pt>
+<chapters/12/8/3/9/figs/conic_fig.png, id=5962, 462.528pt x 346.896pt>
 File: chapters/12/8/3/9/figs/conic_fig.png Graphic file (type png)
 <use chapters/12/8/3/9/figs/conic_fig.png>
 Package pdftex.def Info: chapters/12/8/3/9/figs/conic_fig.png  used on input li
@@ -3632,7 +3660,7 @@ ne 61.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/3/10/conic.tex
-<chapters/12/8/3/10/figs/conics1.png, id=5889, 550.055pt x 448.67625pt>
+<chapters/12/8/3/10/figs/conics1.png, id=5965, 550.055pt x 448.67625pt>
 File: chapters/12/8/3/10/figs/conics1.png Graphic file (type png)
 <use chapters/12/8/3/10/figs/conics1.png>
 Package pdftex.def Info: chapters/12/8/3/10/figs/conics1.png  used on input lin
@@ -3643,7 +3671,7 @@ e 34.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/12/8/3/17/conic.tex
-<chapters/12/8/3/17/figs/conicfig.pdf, id=5890, 462.52798pt x 346.89601pt>
+<chapters/12/8/3/17/figs/conicfig.pdf, id=5966, 462.52798pt x 346.89601pt>
 File: chapters/12/8/3/17/figs/conicfig.pdf Graphic file (type pdf)
 <use chapters/12/8/3/17/figs/conicfig.pdf>
 Package pdftex.def Info: chapters/12/8/3/17/figs/conicfig.pdf  used on input li
@@ -3653,8 +3681,8 @@ ne 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[204]) (./chapters/12/8/2/3/conic.tex
-<chapters/12/8/2/3/figs/conic1.pdf, id=5914, 462.52798pt x 346.89601pt>
+[206]) (./chapters/12/8/2/3/conic.tex
+<chapters/12/8/2/3/figs/conic1.pdf, id=5989, 462.52798pt x 346.89601pt>
 File: chapters/12/8/2/3/figs/conic1.pdf Graphic file (type pdf)
 <use chapters/12/8/2/3/figs/conic1.pdf>
 Package pdftex.def Info: chapters/12/8/2/3/figs/conic1.pdf  used on input line 
@@ -3665,7 +3693,7 @@ Package pdftex.def Info: chapters/12/8/2/3/figs/conic1.pdf  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/2/6/conic.tex
-<chapters/12/8/2/6/figs/conic.png, id=5915, 462.528pt x 346.896pt>
+<chapters/12/8/2/6/figs/conic.png, id=5990, 462.528pt x 346.896pt>
 File: chapters/12/8/2/6/figs/conic.png Graphic file (type png)
 <use chapters/12/8/2/6/figs/conic.png>
 Package pdftex.def Info: chapters/12/8/2/6/figs/conic.png  used on input line 4
@@ -3676,7 +3704,7 @@ Package pdftex.def Info: chapters/12/8/2/6/figs/conic.png  used on input line 4
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )) (./chapters/inter/examples/curves.tex (./chapters/12/8/2/1/conic.tex
-<chapters/12/8/2/1/figs/conic.jpg, id=5918, 1205.50375pt x 682.55pt>
+<chapters/12/8/2/1/figs/conic.jpg, id=5993, 1205.50375pt x 682.55pt>
 File: chapters/12/8/2/1/figs/conic.jpg Graphic file (type jpg)
 <use chapters/12/8/2/1/figs/conic.jpg>
 Package pdftex.def Info: chapters/12/8/2/1/figs/conic.jpg  used on input line 6
@@ -3686,8 +3714,8 @@ Package pdftex.def Info: chapters/12/8/2/1/figs/conic.jpg  used on input line 6
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[205]) (./chapters/12/8/2/2/conic.tex [206] [207]
-<chapters/12/8/2/2/figs/inter1.png, id=5989, 462.528pt x 346.896pt>
+[207]) (./chapters/12/8/2/2/conic.tex [208] [209]
+<chapters/12/8/2/2/figs/inter1.png, id=6064, 462.528pt x 346.896pt>
 File: chapters/12/8/2/2/figs/inter1.png Graphic file (type png)
 <use chapters/12/8/2/2/figs/inter1.png>
 Package pdftex.def Info: chapters/12/8/2/2/figs/inter1.png  used on input line 
@@ -3698,7 +3726,7 @@ Package pdftex.def Info: chapters/12/8/2/2/figs/inter1.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/3/2/conic.tex
-<chapters/12/8/3/2/figs/figure.png, id=5990, 462.528pt x 346.896pt>
+<chapters/12/8/3/2/figs/figure.png, id=6065, 462.528pt x 346.896pt>
 File: chapters/12/8/3/2/figs/figure.png Graphic file (type png)
 <use chapters/12/8/3/2/figs/figure.png>
 Package pdftex.def Info: chapters/12/8/3/2/figs/figure.png  used on input line 
@@ -3709,7 +3737,7 @@ Package pdftex.def Info: chapters/12/8/3/2/figs/figure.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/8/3/18/conic.tex
-<chapters/12/8/3/18/figs/cp.jpg, id=5993, 629.35126pt x 511.9125pt>
+<chapters/12/8/3/18/figs/cp.jpg, id=6068, 629.35126pt x 511.9125pt>
 File: chapters/12/8/3/18/figs/cp.jpg Graphic file (type jpg)
 <use chapters/12/8/3/18/figs/cp.jpg>
 Package pdftex.def Info: chapters/12/8/3/18/figs/cp.jpg  used on input line 48.
@@ -3719,9 +3747,9 @@ Package pdftex.def Info: chapters/12/8/3/18/figs/cp.jpg  used on input line 48.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[208])) (./chapters/tangent/examples/tangent.tex
-(./chapters/12/6/3/2/tangent.tex [209]
-<chapters/12/6/3/2/figs/problem2.pdf, id=6053, 462.52798pt x 346.89601pt>
+[210])) (./chapters/tangent/examples/tangent.tex
+(./chapters/12/6/3/2/tangent.tex [211]
+<chapters/12/6/3/2/figs/problem2.pdf, id=6129, 462.52798pt x 346.89601pt>
 File: chapters/12/6/3/2/figs/problem2.pdf Graphic file (type pdf)
 <use chapters/12/6/3/2/figs/problem2.pdf>
 Package pdftex.def Info: chapters/12/6/3/2/figs/problem2.pdf  used on input lin
@@ -3732,22 +3760,22 @@ e 103.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/12/6/3/8/tangent.tex
-<chapters/12/6/3/8/figs/main.png, id=6054, 1334.1042pt x 703.9098pt>
+<chapters/12/6/3/8/figs/main.png, id=6130, 1334.1042pt x 703.9098pt>
 File: chapters/12/6/3/8/figs/main.png Graphic file (type png)
 <use chapters/12/6/3/8/figs/main.png>
 Package pdftex.def Info: chapters/12/6/3/8/figs/main.png  used on input line 50
 .
 (pdftex.def)             Requested size: 516.0pt x 272.25742pt.
- [210]) (./chapters/12/6/3/10/tangent.tex
-<chapters/12/6/3/10/figs/conic1.pdf, id=6078, 462.52798pt x 346.89601pt>
+ [212]) (./chapters/12/6/3/10/tangent.tex
+<chapters/12/6/3/10/figs/conic1.pdf, id=6154, 462.52798pt x 346.89601pt>
 File: chapters/12/6/3/10/figs/conic1.pdf Graphic file (type pdf)
 <use chapters/12/6/3/10/figs/conic1.pdf>
 Package pdftex.def Info: chapters/12/6/3/10/figs/conic1.pdf  used on input line
  45.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 
-[211]) (./chapters/12/6/3/11/tangent.tex
-<chapters/12/6/3/11/figs/con_fig.png, id=6104, 461.8053pt x 346.1733pt>
+[213]) (./chapters/12/6/3/11/tangent.tex
+<chapters/12/6/3/11/figs/con_fig.png, id=6179, 461.8053pt x 346.1733pt>
 File: chapters/12/6/3/11/figs/con_fig.png Graphic file (type png)
 <use chapters/12/6/3/11/figs/con_fig.png>
 Package pdftex.def Info: chapters/12/6/3/11/figs/con_fig.png  used on input lin
@@ -3758,7 +3786,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
-<chapters/12/6/3/13/figs/conic_1.pdf, id=6107, 462.52798pt x 346.89601pt>
+<chapters/12/6/3/13/figs/conic_1.pdf, id=6182, 462.52798pt x 346.89601pt>
 File: chapters/12/6/3/13/figs/conic_1.pdf Graphic file (type pdf)
 <use chapters/12/6/3/13/figs/conic_1.pdf>
 Package pdftex.def Info: chapters/12/6/3/13/figs/conic_1.pdf  used on input lin
@@ -3767,8 +3795,8 @@ e 77.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[212]) (./chapters/12/6/3/15/tangent.tex
-<chapters/12/6/3/15/figs/conic.png, id=6141, 462.528pt x 346.896pt>
+[214]) (./chapters/12/6/3/15/tangent.tex
+<chapters/12/6/3/15/figs/conic.png, id=6215, 462.528pt x 346.896pt>
 File: chapters/12/6/3/15/figs/conic.png Graphic file (type png)
 <use chapters/12/6/3/15/figs/conic.png>
 Package pdftex.def Info: chapters/12/6/3/15/figs/conic.png  used on input line 
@@ -3778,8 +3806,8 @@ Package pdftex.def Info: chapters/12/6/3/15/figs/conic.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/12/6/3/19/tangent.tex [213]
-<chapters/12/6/3/19/figs/tan1.png, id=6167, 462.528pt x 346.896pt>
+) (./chapters/12/6/3/19/tangent.tex [215]
+<chapters/12/6/3/19/figs/tan1.png, id=6241, 462.528pt x 346.896pt>
 File: chapters/12/6/3/19/figs/tan1.png Graphic file (type png)
 <use chapters/12/6/3/19/figs/tan1.png>
 Package pdftex.def Info: chapters/12/6/3/19/figs/tan1.png  used on input line 5
@@ -3789,8 +3817,8 @@ Package pdftex.def Info: chapters/12/6/3/19/figs/tan1.png  used on input line 5
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/12/6/3/25/tangent.tex [214]
-<chapters/12/6/3/25/figs/conic.pdf, id=6193, 462.52798pt x 346.89601pt>
+) (./chapters/12/6/3/25/tangent.tex [216]
+<chapters/12/6/3/25/figs/conic.pdf, id=6268, 462.52798pt x 346.89601pt>
 File: chapters/12/6/3/25/figs/conic.pdf Graphic file (type pdf)
 <use chapters/12/6/3/25/figs/conic.pdf>
 Package pdftex.def Info: chapters/12/6/3/25/figs/conic.pdf  used on input line 
@@ -3801,7 +3829,7 @@ Package pdftex.def Info: chapters/12/6/3/25/figs/conic.pdf  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/12/6/3/27/tangent.tex
-<chapters/12/6/3/27/figs/conicfig.png, id=6194, 523.9575pt x 384.43625pt>
+<chapters/12/6/3/27/figs/conicfig.png, id=6269, 523.9575pt x 384.43625pt>
 File: chapters/12/6/3/27/figs/conicfig.png Graphic file (type png)
 <use chapters/12/6/3/27/figs/conicfig.png>
 Package pdftex.def Info: chapters/12/6/3/27/figs/conicfig.png  used on input li
@@ -3811,8 +3839,8 @@ ne 155.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [215] (./chapters/12/6/5/27/tangent.tex [216]
-<chapters/12/6/5/27/figs/normal.png, id=6245, 462.528pt x 346.896pt>
+) [217] (./chapters/12/6/5/27/tangent.tex [218]
+<chapters/12/6/5/27/figs/normal.png, id=6321, 462.528pt x 346.896pt>
 File: chapters/12/6/5/27/figs/normal.png Graphic file (type png)
 <use chapters/12/6/5/27/figs/normal.png>
 Package pdftex.def Info: chapters/12/6/5/27/figs/normal.png  used on input line
@@ -3820,7 +3848,7 @@ Package pdftex.def Info: chapters/12/6/5/27/figs/normal.png  used on input line
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 )
 (./chapters/12/6/6/4/tangent.tex
-<chapters/12/6/6/4/figs/conics.png, id=6246, 586.19pt x 427.5975pt>
+<chapters/12/6/6/4/figs/conics.png, id=6322, 586.19pt x 427.5975pt>
 File: chapters/12/6/6/4/figs/conics.png Graphic file (type png)
 <use chapters/12/6/6/4/figs/conics.png>
 Package pdftex.def Info: chapters/12/6/6/4/figs/conics.png  used on input line 
@@ -3830,8 +3858,8 @@ Package pdftex.def Info: chapters/12/6/6/4/figs/conics.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[217]) (./chapters/12/6/6/21/tangent.tex
-<chapters/12/6/6/21/figs/im.pdf, id=6273, 462.52798pt x 346.89601pt>
+[219]) (./chapters/12/6/6/21/tangent.tex
+<chapters/12/6/6/21/figs/im.pdf, id=6347, 462.52798pt x 346.89601pt>
 File: chapters/12/6/6/21/figs/im.pdf Graphic file (type pdf)
 <use chapters/12/6/6/21/figs/im.pdf>
 Package pdftex.def Info: chapters/12/6/6/21/figs/im.pdf  used on input line 67.
@@ -3842,16 +3870,16 @@ Package pdftex.def Info: chapters/12/6/6/21/figs/im.pdf  used on input line 67.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/12/6/6/22/tangent.tex)) (./chapters/tangent/exer/tangent.tex
-[218]) (./chapters/circles/examples/tangent.tex
+[220]) (./chapters/circles/examples/tangent.tex
 (./chapters/10/11/2/1/circle.tex
-<chapters/10/11/2/1/figs/circle1.pdf, id=6308, 462.52798pt x 346.89601pt>
+<chapters/10/11/2/1/figs/circle1.pdf, id=6383, 462.52798pt x 346.89601pt>
 File: chapters/10/11/2/1/figs/circle1.pdf Graphic file (type pdf)
 <use chapters/10/11/2/1/figs/circle1.pdf>
 Package pdftex.def Info: chapters/10/11/2/1/figs/circle1.pdf  used on input lin
 e 33.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 ) (./chapters/10/11/2/2/circle.tex
-<chapters/10/11/2/2/figs/main.png, id=6311, 1334.1042pt x 703.9098pt>
+<chapters/10/11/2/2/figs/main.png, id=6386, 1334.1042pt x 703.9098pt>
 File: chapters/10/11/2/2/figs/main.png Graphic file (type png)
 <use chapters/10/11/2/2/figs/main.png>
 Package pdftex.def Info: chapters/10/11/2/2/figs/main.png  used on input line 5
@@ -3859,14 +3887,14 @@ Package pdftex.def Info: chapters/10/11/2/2/figs/main.png  used on input line 5
 (pdftex.def)             Requested size: 516.0pt x 272.25742pt.
 )
 (./chapters/10/11/2/3/circle.tex
-<chapters/10/11/2/3/figs/Question.png, id=6313, 462.528pt x 346.896pt>
+<chapters/10/11/2/3/figs/Question.png, id=6388, 462.528pt x 346.896pt>
 File: chapters/10/11/2/3/figs/Question.png Graphic file (type png)
 <use chapters/10/11/2/3/figs/Question.png>
 Package pdftex.def Info: chapters/10/11/2/3/figs/Question.png  used on input li
 ne 45.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ) (./chapters/10/11/2/4/circle.tex
-<chapters/10/11/2/4/figs/circle1.pdf, id=6315, 462.52798pt x 346.89601pt>
+<chapters/10/11/2/4/figs/circle1.pdf, id=6390, 462.52798pt x 346.89601pt>
 File: chapters/10/11/2/4/figs/circle1.pdf Graphic file (type pdf)
 <use chapters/10/11/2/4/figs/circle1.pdf>
 Package pdftex.def Info: chapters/10/11/2/4/figs/circle1.pdf  used on input lin
@@ -3874,7 +3902,7 @@ e 46.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 )
 (./chapters/10/11/2/5/circle.tex
-<chapters/10/11/2/5/figs/cir.png, id=6317, 462.528pt x 346.896pt>
+<chapters/10/11/2/5/figs/cir.png, id=6392, 462.528pt x 346.896pt>
 File: chapters/10/11/2/5/figs/cir.png Graphic file (type png)
 <use chapters/10/11/2/5/figs/cir.png>
 Package pdftex.def Info: chapters/10/11/2/5/figs/cir.png  used on input line 15
@@ -3885,15 +3913,15 @@ Package pdftex.def Info: chapters/10/11/2/5/figs/cir.png  used on input line 15
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/10/11/2/6/circle.tex
-<chapters/10/11/2/6/figs/fig1.pdf, id=6319, 462.52798pt x 346.89601pt>
+<chapters/10/11/2/6/figs/fig1.pdf, id=6394, 462.52798pt x 346.89601pt>
 File: chapters/10/11/2/6/figs/fig1.pdf Graphic file (type pdf)
 <use chapters/10/11/2/6/figs/fig1.pdf>
 Package pdftex.def Info: chapters/10/11/2/6/figs/fig1.pdf  used on input line 3
 0.
 (pdftex.def)             Requested size: 516.0pt x 387.01761pt.
 ) (./chapters/10/10/1/3/tangent.tex
-(./chapters/10/10/1/3/tables/table1.tex) [219]
-<chapters/10/10/1/3/figs/fig2.pdf, id=6361, 462.52798pt x 346.89601pt>
+(./chapters/10/10/1/3/tables/table1.tex) [221]
+<chapters/10/10/1/3/figs/fig2.pdf, id=6436, 462.52798pt x 346.89601pt>
 File: chapters/10/10/1/3/figs/fig2.pdf Graphic file (type pdf)
 <use chapters/10/10/1/3/figs/fig2.pdf>
 Package pdftex.def Info: chapters/10/10/1/3/figs/fig2.pdf  used on input line 1
@@ -3904,7 +3932,7 @@ Package pdftex.def Info: chapters/10/10/1/3/figs/fig2.pdf  used on input line 1
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/10/10/1/4/circle.tex
-<chapters/10/10/1/4/figs/fig.pdf, id=6362, 462.52798pt x 346.89601pt>
+<chapters/10/10/1/4/figs/fig.pdf, id=6437, 462.52798pt x 346.89601pt>
 File: chapters/10/10/1/4/figs/fig.pdf Graphic file (type pdf)
 <use chapters/10/10/1/4/figs/fig.pdf>
 Package pdftex.def Info: chapters/10/10/1/4/figs/fig.pdf  used on input line 65
@@ -3914,8 +3942,8 @@ Package pdftex.def Info: chapters/10/10/1/4/figs/fig.pdf  used on input line 65
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[220]) (./chapters/10/10/2/1/tangent.tex [221]
-<chapters/10/10/2/1/figs/problem1.pdf, id=6411, 462.52798pt x 346.89601pt>
+[222]) (./chapters/10/10/2/1/tangent.tex [223]
+<chapters/10/10/2/1/figs/problem1.pdf, id=6487, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/1/figs/problem1.pdf Graphic file (type pdf)
 <use chapters/10/10/2/1/figs/problem1.pdf>
 Package pdftex.def Info: chapters/10/10/2/1/figs/problem1.pdf  used on input li
@@ -3929,8 +3957,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) [222] [223]
-<chapters/10/10/2/2/figs/tangent2.png, id=6461, 462.528pt x 346.896pt>
+) [224] [225]
+<chapters/10/10/2/2/figs/tangent2.png, id=6536, 462.528pt x 346.896pt>
 File: chapters/10/10/2/2/figs/tangent2.png Graphic file (type png)
 <use chapters/10/10/2/2/figs/tangent2.png>
 Package pdftex.def Info: chapters/10/10/2/2/figs/tangent2.png  used on input li
@@ -3940,9 +3968,9 @@ ne 102.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./chapters/10/10/2/3/tangent.tex [224]
+) (./chapters/10/10/2/3/tangent.tex [226]
 (./chapters/10/10/2/3/tables/table_1.tex)
-<chapters/10/10/2/3/figs/Figure_1.png, id=6486, 430.0065pt x 416.9979pt>
+<chapters/10/10/2/3/figs/Figure_1.png, id=6561, 430.0065pt x 416.9979pt>
 File: chapters/10/10/2/3/figs/Figure_1.png Graphic file (type png)
 <use chapters/10/10/2/3/figs/Figure_1.png>
 Package pdftex.def Info: chapters/10/10/2/3/figs/Figure_1.png  used on input li
@@ -3953,14 +3981,14 @@ ne 242.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/10/10/2/4/circle.tex
-<chapters/10/10/2/4/figs/plot_cir.png, id=6487, 462.528pt x 346.896pt>
+<chapters/10/10/2/4/figs/plot_cir.png, id=6562, 462.528pt x 346.896pt>
 File: chapters/10/10/2/4/figs/plot_cir.png Graphic file (type png)
 <use chapters/10/10/2/4/figs/plot_cir.png>
 Package pdftex.def Info: chapters/10/10/2/4/figs/plot_cir.png  used on input li
 ne 31.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
- [225]) (./chapters/10/10/2/6/circle.tex
-<chapters/10/10/2/6/figs/circle.pdf, id=6519, 462.52798pt x 346.89601pt>
+ [227]) (./chapters/10/10/2/6/circle.tex
+<chapters/10/10/2/6/figs/circle.pdf, id=6593, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/6/figs/circle.pdf Graphic file (type pdf)
 <use chapters/10/10/2/6/figs/circle.pdf>
 Package pdftex.def Info: chapters/10/10/2/6/figs/circle.pdf  used on input line
@@ -3971,7 +3999,7 @@ Package pdftex.def Info: chapters/10/10/2/6/figs/circle.pdf  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/10/10/2/7/circle.tex
-<chapters/10/10/2/7/figs/fig.pdf, id=6524, 462.52798pt x 346.89601pt>
+<chapters/10/10/2/7/figs/fig.pdf, id=6598, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/7/figs/fig.pdf Graphic file (type pdf)
 <use chapters/10/10/2/7/figs/fig.pdf>
 Package pdftex.def Info: chapters/10/10/2/7/figs/fig.pdf  used on input line 21
@@ -3982,7 +4010,7 @@ Package pdftex.def Info: chapters/10/10/2/7/figs/fig.pdf  used on input line 21
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/10/10/2/8/circle.tex
-<chapters/10/10/2/8/figs/circle.png, id=6528, 462.528pt x 346.896pt>
+<chapters/10/10/2/8/figs/circle.png, id=6602, 462.528pt x 346.896pt>
 File: chapters/10/10/2/8/figs/circle.png Graphic file (type png)
 <use chapters/10/10/2/8/figs/circle.png>
 Package pdftex.def Info: chapters/10/10/2/8/figs/circle.png  used on input line
@@ -3992,8 +4020,8 @@ Package pdftex.def Info: chapters/10/10/2/8/figs/circle.png  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[226]) (./chapters/10/10/2/9/circle.tex
-<chapters/10/10/2/9/figs/c.pdf, id=6556, 462.52798pt x 346.89601pt>
+[228]) (./chapters/10/10/2/9/circle.tex
+<chapters/10/10/2/9/figs/c.pdf, id=6631, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/9/figs/c.pdf Graphic file (type pdf)
 <use chapters/10/10/2/9/figs/c.pdf>
 Package pdftex.def Info: chapters/10/10/2/9/figs/c.pdf  used on input line 25.
@@ -4003,7 +4031,7 @@ Package pdftex.def Info: chapters/10/10/2/9/figs/c.pdf  used on input line 25.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/10/10/2/10/circle.tex
-<chapters/10/10/2/10/figs/circle1.pdf, id=6557, 462.52798pt x 346.89601pt>
+<chapters/10/10/2/10/figs/circle1.pdf, id=6632, 462.52798pt x 346.89601pt>
 File: chapters/10/10/2/10/figs/circle1.pdf Graphic file (type pdf)
 <use chapters/10/10/2/10/figs/circle1.pdf>
 Package pdftex.def Info: chapters/10/10/2/10/figs/circle1.pdf  used on input li
@@ -4014,7 +4042,7 @@ ne 27.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/10/10/2/12/circle.tex
-<chapters/10/10/2/12/figs/circle.png, id=6559, 462.528pt x 346.896pt>
+<chapters/10/10/2/12/figs/circle.png, id=6634, 462.528pt x 346.896pt>
 File: chapters/10/10/2/12/figs/circle.png Graphic file (type png)
 <use chapters/10/10/2/12/figs/circle.png>
 Package pdftex.def Info: chapters/10/10/2/12/figs/circle.png  used on input lin
@@ -4025,56 +4053,56 @@ e 27.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./chapters/10/10/2/13/circle.tex
-<chapters/10/10/2/13/figs/tangent.png, id=6563, 462.528pt x 346.896pt>
+<chapters/10/10/2/13/figs/tangent.png, id=6638, 462.528pt x 346.896pt>
 File: chapters/10/10/2/13/figs/tangent.png Graphic file (type png)
 <use chapters/10/10/2/13/figs/tangent.png>
 Package pdftex.def Info: chapters/10/10/2/13/figs/tangent.png  used on input li
 ne 137.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
- [227] [228]
-<chapters/10/10/2/13/figs/quad_circ.png, id=6620, 462.528pt x 346.896pt>
+ [229] [230]
+<chapters/10/10/2/13/figs/quad_circ.png, id=6695, 462.528pt x 346.896pt>
 File: chapters/10/10/2/13/figs/quad_circ.png Graphic file (type png)
 <use chapters/10/10/2/13/figs/quad_circ.png>
 Package pdftex.def Info: chapters/10/10/2/13/figs/quad_circ.png  used on input 
 line 249.
 (pdftex.def)             Requested size: 516.0pt x 387.0176pt.
 ))
-(./chapters/circles/exer/tangent.tex [229])
+(./chapters/circles/exer/tangent.tex [231])
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 247.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 247.
+(hyperref)                removing `math shift' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 247.
-
-(./matrix/two.tex [230] [231] [232])
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 251.
+(hyperref)                removing `\times' on input line 249.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\times' on input line 251.
+(hyperref)                removing `math shift' on input line 249.
+
+(./matrix/two.tex [232] [233] [234])
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 253.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 251.
+(hyperref)                removing `\times' on input line 253.
 
-(./matrix/three.tex [233]) (./matrix/mat.tex [234] [235])
-(./linman/chapters/decomp/svd.tex [236]) (./cons/tri.tex (./cons/tri/1/line.tex
-[237]) (./cons/tri/4/line.tex)) (./linear/two.tex [238] [239])
-(./linear/three.tex [240] [241] [242] [243] [244]) (./quad/defs.tex [245]
-[246] (./tables/det.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 253.
+
+(./matrix/three.tex [235]) (./matrix/mat.tex [236] [237])
+(./linman/chapters/decomp/svd.tex [238]) (./cons/tri.tex (./cons/tri/1/line.tex
+[239]) (./cons/tri/4/line.tex)) (./linear/two.tex [240] [241])
+(./linear/three.tex [242] [243] [244] [245] [246]) (./quad/defs.tex [247]
+[248] (./tables/det.tex
 Underfull \vbox (badness 10000) detected at line 236
  []
 
-)) (./quad/circle.tex [247] [248]) (./quad/stddef.tex [249] [250])
-(./quad/standard.tex [251]) (./quad/coroll.tex) (./quad/pair.tex [252] [253])
+)) (./quad/circle.tex [249] [250]) (./quad/stddef.tex [251] [252])
+(./quad/standard.tex [253]) (./quad/coroll.tex) (./quad/pair.tex [254] [255])
 (./quadlines/inter.tex) (./quadlines/chord.tex
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 39.
@@ -4082,103 +4110,106 @@ LaTeX Font Warning: Command \small invalid in math mode on input line 39.
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 39.
 
-[254] [255] [256]) (./quadlines/tangent.tex [257] [258] [259]) [260] [261 <./ex
-emplar/9.7.3/figs/Figure2.png>] [262 <./exemplar/9.7.3/figs/Figure3.png>]
-[263 <./exemplar/9.7.3/figs/Figure4.png>] [264 <./exemplar/9.7.3/figs/Figure5.p
-ng>] [265 <./chapters/9/9/2/1/figs/fig1.pdf>] [266 <./chapters/9/9/2/4/figs/Que
-stion.png>] [267 <./chapters/9/9/2/5/figs/parallelogram1.pdf> <./exemplar/9.9.4
-/figs/Fig9.24.png>] [268 <./exemplar/9.9.4/figs/Fig9.25.png> <./exemplar/9.9.4/
-figs/Fig9.26.png>] [269 <./exemplar/9.9.4/figs/Fig9.27.png>] [270 <./chapters/1
-1/10/2/2/figs/fig.pdf>] [271 <./chapters/11/10/2/3/figs/fig.pdf>] [272 <./chapt
-ers/11/10/2/4/figs/line.png>] [273 <./chapters/11/10/2/5/figs/line1.pdf>]
-[274 <./chapters/11/10/2/6/figs/line.png>] [275 <./chapters/11/10/2/7/figs/Figu
-re_1.png>] [276 <./chapters/11/10/2/8/figs/fig.pdf>] [277 <./chapters/11/10/2/9
-/figs/line.png>] [278 <./chapters/11/10/2/10/figs/Figure_1.png>] [279 <./chapte
-rs/11/10/2/11/figs/linefig.pdf>] [280 <./chapters/11/10/2/12/figs/problem12.pdf
->] [281 <./chapters/11/10/2/13/figs/assign4.png>] [282 <./chapters/11/10/2/14/f
-igs/fig.pdf>] [283 <./chapters/11/10/2/15/figs/line.pdf>] [284 <./chapters/11/1
-0/2/18/figs/line1.png>] [285 <./chapters/11/10/2/20/figs/figs6.pdf>] [286 <./ch
-apters/11/10/3/8/figs/fig.pdf>] [287 <./chapters/11/10/3/4/figs/problem4.pdf>]
-[288 <./chapters/11/10/3/5/figs/line2.png>] [289 <./chapters/11/10/3/14/figs/li
-nes.png>] [290 <./chapters/11/10/3/17/figs/Fig.png>] [291 <./chapters/11/10/4/4
-/figs/fig.png>] [292 <./chapters/11/10/4/21/figs/line_plot.jpg>] [293 <./chapte
-rs/11/10/4/7/figs/fig.png>] [294 <./chapters/12/11/3/8/figs/plane1.png>]
-[295 <./chapters/11/10/4/3/figs/inter.png>] [296 <./chapters/11/10/4/6/figs/lin
-e_fig.png>] [297 <./chapters/11/10/4/8/figs/fig.pdf>] [298 <./chapters/11/10/4/
-22/figs/Fig.png>] [299 <./chapters/11/10/4/24/figs/crossing.png>] [300 <./chapt
-ers/12/11/2/16/svd/figs/skew_svd.png>] [301 <./chapters/12/11/2/e11/svd/figs/sk
-ew.png>] [302 <./chapters/11/11/1/10/figs/circ2.png>] [303 <./chapters/11/11/1/
-11/figs/fig.pdf>] [304 <./chapters/11/11/1/12/figs/conic.png>] [305 <./chapters
-/11/11/1/14/figs/fig.png>] [306 <./chapters/11/11/1/15/figs/Figure_1.png>]
-[307 <./chapters/10/7/4/3/figs/problem3.pdf>] [308 <./chapters/11/11/1/1/figs/c
-irc1.png>] [309 <./chapters/11/11/1/2/figs/circle.png>] [310 <./chapters/11/11/
-1/3/figs/fig.pdf>] [311 <./chapters/11/11/1/4/figs/circ.png>] [312 <./chapters/
-11/11/1/5/figs/circle.png>] [313 <./chapters/11/11/1/6/figs/fig.pdf>] [314 <./c
-hapters/11/11/1/7/figs/circle.png>] [315 <./chapters/11/11/1/8/figs/11.1.8.png>
-] [316 <./chapters/11/11/1/9/figs/fig.png>] [317 <./chapters/9/10/4/1/figs/cccc
-.png>] [318 <./chapters/9/10/4/2/figs/c.png>] [319 <./chapters/9/10/4/4/figs/fi
-g.png>] [320 <./chapters/9/10/4/figs/fig1.jpg>] [321 <./chapters/9/10/4/5/figs/
-Figure_1.png>] [322 <./chapters/9/10/4/6/figs/equilateral.png>] [323 <./chapter
-s/9/10/5/1/figs/circle1.pdf>] [324 <./chapters/9/10/5/2/figs/circle.png>]
-[325 <./chapters/9/10/5/3/figs/fig-1.pdf>] [326 <./chapters/9/10/5/10/figs/fig.
-png>] [327 <./chapters/9/10/5/12/figs/circle.png>] [328 <./chapters/9/10/6/1/fi
-gs/circle3.png>] [329 <./chapters/9/10/6/7/figs/circle.png>] [330 <./chapters/9
-/10/6/9/figs/fig.png>] [331 <./chapters/9/10/6/10/figs/bisector.png>] [332 <./e
-xemplar/9.10.2/figs/image.jpg>] [333 <./exemplar/9.10.4/figs/image1.jpg>]
-[334 <./exemplar/9.10.4/figs/image2.jpg>] [335 <./exemplar/9.10.4/figs/image3.j
-pg>] [336 <./exemplar/9.10.4/figs/image4.jpg>] [337 <./chapters/11/11/5/2/figs/
-fig.pdf>] [338 <./chapters/11/11/5/6/figs/fig1.pdf>] [339 <./chapters/11/11/5/8
-/figs/co.pdf>] [340 <./chapters/11/11/2/1/figs/problem1.pdf>] [341 <./chapters/
-11/11/2/2/figs/parabola.png>] [342 <./chapters/11/11/2/3/figs/fig.png>]
-[343 <./chapters/11/11/2/4/figs/parabola.png>] [344 <./chapters/11/11/5/4/figs/
-ellipse.png>] [345 <./chapters/11/11/5/5/figs/Figure_1.png>] [346 <./chapters/1
-1/11/5/7/figs/problem7.pdf>] [347 <./chapters/11/11/3/1/figs/problem1.pdf>]
-[348 <./chapters/11/11/3/2/figs/ellipse.png>] [349 <./chapters/11/11/3/3/figs/c
-onic.png>] [350 <./chapters/11/11/3/19/figs/fig1.png>] [351 <./chapters/11/11/3
-/20/figs/ellipse.png>] [352 <./chapters/11/11/4/1/figs/problem1.pdf>] [353 <./c
-hapters/11/11/4/2/figs/hyperbola.png>] [354 <./chapters/11/11/4/5/figs/hyperbol
-a.png>] [355 <./chapters/11/11/4/9/figs/Figure_1.png>] [356 <./chapters/11/11/4
-/8/figs/hyperbola2.png>] [357 <./chapters/11/11/4/13/figs/fig1.png>] [358 <./ch
-apters/11/11/4/14/figs/hyperbola.png>] [359 <./chapters/12/8/1/1/figs/conics1.p
-ng>] [360 <./chapters/12/8/1/2/figs/conics1.png>] [361 <./chapters/12/8/1/6/fig
-s/conics-fig.pdf>] [362 <./chapters/12/8/1/7/figs/conic.png>] [363 <./chapters/
-12/8/1/8/figs/conics1.png>] [364 <./chapters/12/8/1/9/figs/con3.pdf>] [365 <./c
-hapters/12/8/1/10/figs/conic.png>] [366 <./chapters/12/8/1/13/figs/problem13.pd
-f>] [367 <./chapters/12/8/3/3/figs/conic.png>] [368 <./chapters/12/8/3/7/figs/c
-onic.png>] [369 <./chapters/12/8/3/8/figs/conic_fig.png>] [370 <./chapters/12/8
-/3/9/figs/conic_fig.png>] [371 <./chapters/12/8/3/10/figs/conics1.png>]
-[372 <./chapters/12/8/3/17/figs/conicfig.pdf>] [373 <./chapters/12/8/2/3/figs/c
-onic1.pdf>] [374 <./chapters/12/8/2/6/figs/conic.png>] [375 <./chapters/12/8/2/
-1/figs/conic.jpg>] [376 <./chapters/12/8/2/2/figs/inter1.png>] [377 <./chapters
-/12/8/3/2/figs/Figure.png>] [378 <./chapters/12/8/3/18/figs/cp.jpg>] [379 <./ch
-apters/12/6/3/2/figs/problem2.pdf>] [380 <./chapters/12/6/3/8/figs/main.png>]
-[381 <./chapters/12/6/3/10/figs/conic1.pdf>] [382 <./chapters/12/6/3/11/figs/co
-n_fig.png>] [383 <./chapters/12/6/3/13/figs/conic_1.pdf>] [384 <./chapters/12/6
-/3/15/figs/conic.png>] [385 <./chapters/12/6/3/19/figs/tan1.png>] [386 <./chapt
-ers/12/6/3/25/figs/conic.pdf>] [387 <./chapters/12/6/3/27/figs/conicfig.png>]
-[388 <./chapters/12/6/5/27/figs/normal.png>] [389 <./chapters/12/6/6/4/figs/con
-ics.png>] [390 <./chapters/12/6/6/21/figs/im.pdf>] [391 <./chapters/10/11/2/1/f
-igs/circle1.pdf>] [392 <./chapters/10/11/2/2/figs/main.png>] [393 <./chapters/1
-0/11/2/3/figs/Question.png>] [394 <./chapters/10/11/2/4/figs/circle1.pdf>]
-[395 <./chapters/10/11/2/5/figs/cir.png>] [396 <./chapters/10/11/2/6/figs/fig1.
-pdf>] [397 <./chapters/10/10/1/3/figs/fig2.pdf>] [398 <./chapters/10/10/1/4/fig
-s/fig.pdf>] [399 <./chapters/10/10/2/1/figs/problem1.pdf>] [400 <./chapters/10/
-10/2/2/figs/tangent2.png>] [401 <./chapters/10/10/2/3/figs/Figure_1.png>]
-[402 <./chapters/10/10/2/4/figs/plot_cir.png>] [403 <./chapters/10/10/2/6/figs/
-circle.pdf>] [404 <./chapters/10/10/2/7/figs/fig.pdf>] [405 <./chapters/10/10/2
-/8/figs/circle.png>] [406 <./chapters/10/10/2/9/figs/c.pdf>] [407 <./chapters/1
-0/10/2/10/figs/circle1.pdf>] [408 <./chapters/10/10/2/12/figs/circle.png>]
-[409 <./chapters/10/10/2/13/figs/tangent.png>] [410 <./chapters/10/10/2/13/figs
-/quad_circ.png>] (./main.aux)
+[256] [257] [258]) (./quadlines/tangent.tex [259] [260] [261]) [262] [263 <./ex
+emplar/9.7.3/figs/Figure2.png>] [264 <./exemplar/9.7.3/figs/Figure3.png>]
+[265 <./exemplar/9.7.3/figs/Figure4.png>] [266 <./exemplar/9.7.3/figs/Figure5.p
+ng>] [267 <./chapters/9/9/2/1/figs/fig1.pdf>] [268 <./chapters/9/9/2/4/figs/Que
+stion.png>] [269 <./chapters/9/9/2/5/figs/parallelogram1.pdf> <./exemplar/9.9.4
+/figs/Fig9.24.png>] [270 <./exemplar/9.9.4/figs/Fig9.25.png> <./exemplar/9.9.4/
+figs/Fig9.26.png>] [271 <./exemplar/9.9.4/figs/Fig9.27.png>] [272 <./exemplar/9
+.9.2/figs/9.8.jpg>] [273 <./chapters/11/10/2/2/figs/fig.pdf>] [274 <./chapters/
+11/10/2/3/figs/fig.pdf>] [275 <./chapters/11/10/2/4/figs/line.png>] [276 <./cha
+pters/11/10/2/5/figs/line1.pdf>] [277 <./chapters/11/10/2/6/figs/line.png>]
+[278 <./chapters/11/10/2/7/figs/Figure_1.png>] [279 <./chapters/11/10/2/8/figs/
+fig.pdf>] [280 <./chapters/11/10/2/9/figs/line.png>] [281 <./chapters/11/10/2/1
+0/figs/Figure_1.png>] [282 <./chapters/11/10/2/11/figs/linefig.pdf>] [283 <./ch
+apters/11/10/2/12/figs/problem12.pdf>] [284 <./chapters/11/10/2/13/figs/assign4
+.png>] [285 <./chapters/11/10/2/14/figs/fig.pdf>] [286 <./chapters/11/10/2/15/f
+igs/line.pdf>] [287 <./chapters/11/10/2/18/figs/line1.png>] [288 <./chapters/11
+/10/2/20/figs/figs6.pdf>] [289 <./chapters/11/10/3/8/figs/fig.pdf>] [290 <./cha
+pters/11/10/3/4/figs/problem4.pdf>] [291 <./chapters/11/10/3/5/figs/line2.png>]
+[292 <./chapters/11/10/3/14/figs/lines.png>] [293 <./chapters/11/10/3/17/figs/F
+ig.png>] [294 <./chapters/11/10/4/4/figs/fig.png>] [295 <./chapters/11/10/4/21/
+figs/line_plot.jpg>] [296 <./chapters/11/10/4/7/figs/fig.png>] [297 <./chapters
+/12/11/3/8/figs/plane1.png>] [298 <./chapters/11/10/4/3/figs/inter.png>]
+[299 <./chapters/11/10/4/6/figs/line_fig.png>] [300 <./chapters/11/10/4/8/figs/
+fig.pdf>] [301 <./chapters/11/10/4/22/figs/Fig.png>] [302 <./chapters/11/10/4/2
+4/figs/crossing.png>] [303 <./chapters/12/11/2/16/svd/figs/skew_svd.png>]
+[304 <./chapters/12/11/2/e11/svd/figs/skew.png>] [305 <./chapters/11/11/1/10/fi
+gs/circ2.png>] [306 <./chapters/11/11/1/11/figs/fig.pdf>] [307 <./chapters/11/1
+1/1/12/figs/conic.png>] [308 <./chapters/11/11/1/14/figs/fig.png>] [309 <./chap
+ters/11/11/1/15/figs/Figure_1.png>] [310 <./chapters/10/7/4/3/figs/problem3.pdf
+>] [311 <./chapters/11/11/1/1/figs/circ1.png>] [312 <./chapters/11/11/1/2/figs/
+circle.png>] [313 <./chapters/11/11/1/3/figs/fig.pdf>] [314 <./chapters/11/11/1
+/4/figs/circ.png>] [315 <./chapters/11/11/1/5/figs/circle.png>] [316 <./chapter
+s/11/11/1/6/figs/fig.pdf>] [317 <./chapters/11/11/1/7/figs/circle.png>]
+[318 <./chapters/11/11/1/8/figs/11.1.8.png>] [319 <./chapters/11/11/1/9/figs/fi
+g.png>] [320 <./chapters/9/10/4/1/figs/cccc.png>] [321 <./chapters/9/10/4/2/fig
+s/c.png>] [322 <./chapters/9/10/4/4/figs/fig.png>] [323 <./chapters/9/10/4/figs
+/fig1.jpg>] [324 <./chapters/9/10/4/5/figs/Figure_1.png>] [325 <./chapters/9/10
+/4/6/figs/equilateral.png>] [326 <./chapters/9/10/5/1/figs/circle1.pdf>]
+[327 <./chapters/9/10/5/2/figs/circle.png>] [328 <./chapters/9/10/5/7/figs/fig.
+pdf>] [329 <./chapters/9/10/5/10/figs/fig.png>] [330 <./chapters/9/10/5/12/figs
+/circle.png>] [331 <./chapters/9/10/6/1/figs/circle3.png>] [332 <./chapters/9/1
+0/6/7/figs/circle.png>] [333 <./chapters/9/10/6/9/figs/fig.png>] [334 <./chapte
+rs/9/10/6/10/figs/bisector.png>] [335 <./exemplar/9.10.2/figs/image.jpg>]
+[336 <./exemplar/9.10.4/figs/image1.jpg>] [337 <./exemplar/9.10.4/figs/image2.j
+pg>] [338 <./exemplar/9.10.4/figs/image3.jpg>] [339 <./exemplar/9.10.4/figs/ima
+ge4.jpg>] [340 <./chapters/11/11/5/2/figs/fig.pdf>] [341 <./chapters/11/11/5/6/
+figs/fig1.pdf>] [342 <./chapters/11/11/5/8/figs/co.pdf>] [343 <./chapters/11/11
+/2/1/figs/problem1.pdf>] [344 <./chapters/11/11/2/2/figs/parabola.png>]
+[345 <./chapters/11/11/2/3/figs/fig.png>] [346 <./chapters/11/11/2/4/figs/parab
+ola.png>] [347 <./chapters/11/11/5/4/figs/ellipse.png>] [348 <./chapters/11/11/
+5/5/figs/Figure_1.png>] [349 <./chapters/11/11/5/7/figs/problem7.pdf>] [350 <./
+chapters/11/11/3/1/figs/problem1.pdf>] [351 <./chapters/11/11/3/2/figs/ellipse.
+png>] [352 <./chapters/11/11/3/3/figs/conic.png>] [353 <./chapters/11/11/3/19/f
+igs/fig1.png>] [354 <./chapters/11/11/3/20/figs/ellipse.png>] [355 <./chapters/
+11/11/4/1/figs/problem1.pdf>] [356 <./chapters/11/11/4/2/figs/hyperbola.png>]
+[357 <./chapters/11/11/4/5/figs/hyperbola.png>] [358 <./chapters/11/11/4/9/figs
+/Figure_1.png>] [359 <./chapters/11/11/4/8/figs/hyperbola2.png>] [360 <./chapte
+rs/11/11/4/13/figs/fig1.png>] [361 <./chapters/11/11/4/14/figs/hyperbola.png>]
+[362 <./chapters/12/8/1/1/figs/conics1.png>] [363 <./chapters/12/8/1/2/figs/con
+ics1.png>] [364 <./chapters/12/8/1/6/figs/conics-fig.pdf>] [365 <./chapters/12/
+8/1/7/figs/conic.png>] [366 <./chapters/12/8/1/8/figs/conics1.png>] [367 <./cha
+pters/12/8/1/9/figs/con3.pdf>] [368 <./chapters/12/8/1/10/figs/conic.png>]
+[369 <./chapters/12/8/1/13/figs/problem13.pdf>] [370 <./chapters/12/8/3/3/figs/
+conic.png>] [371 <./chapters/12/8/3/7/figs/conic.png>] [372 <./chapters/12/8/3/
+8/figs/conic_fig.png>] [373 <./chapters/12/8/3/9/figs/conic_fig.png>] [374 <./c
+hapters/12/8/3/10/figs/conics1.png>] [375 <./chapters/12/8/3/17/figs/conicfig.p
+df>] [376 <./chapters/12/8/2/3/figs/conic1.pdf>] [377 <./chapters/12/8/2/6/figs
+/conic.png>] [378 <./chapters/12/8/2/1/figs/conic.jpg>] [379 <./chapters/12/8/2
+/2/figs/inter1.png>] [380 <./chapters/12/8/3/2/figs/Figure.png>] [381 <./chapte
+rs/12/8/3/18/figs/cp.jpg>] [382 <./chapters/12/6/3/2/figs/problem2.pdf>]
+[383 <./chapters/12/6/3/8/figs/main.png>] [384 <./chapters/12/6/3/10/figs/conic
+1.pdf>] [385 <./chapters/12/6/3/11/figs/con_fig.png>] [386 <./chapters/12/6/3/1
+3/figs/conic_1.pdf>] [387 <./chapters/12/6/3/15/figs/conic.png>] [388 <./chapte
+rs/12/6/3/19/figs/tan1.png>] [389 <./chapters/12/6/3/25/figs/conic.pdf>]
+[390 <./chapters/12/6/3/27/figs/conicfig.png>] [391 <./chapters/12/6/5/27/figs/
+normal.png>] [392 <./chapters/12/6/6/4/figs/conics.png>] [393 <./chapters/12/6/
+6/21/figs/im.pdf>] [394 <./chapters/10/11/2/1/figs/circle1.pdf>] [395 <./chapte
+rs/10/11/2/2/figs/main.png>] [396 <./chapters/10/11/2/3/figs/Question.png>]
+[397 <./chapters/10/11/2/4/figs/circle1.pdf>] [398 <./chapters/10/11/2/5/figs/c
+ir.png>] [399 <./chapters/10/11/2/6/figs/fig1.pdf>] [400 <./chapters/10/10/1/3/
+figs/fig2.pdf>] [401 <./chapters/10/10/1/4/figs/fig.pdf>] [402 <./chapters/10/1
+0/2/1/figs/problem1.pdf>] [403 <./chapters/10/10/2/2/figs/tangent2.png>]
+[404 <./chapters/10/10/2/3/figs/Figure_1.png>] [405 <./chapters/10/10/2/4/figs/
+plot_cir.png>] [406 <./chapters/10/10/2/6/figs/circle.pdf>] [407 <./chapters/10
+/10/2/7/figs/fig.pdf>] [408 <./chapters/10/10/2/8/figs/circle.png>] [409 <./cha
+pters/10/10/2/9/figs/c.pdf>] [410 <./chapters/10/10/2/10/figs/circle1.pdf>]
+[411 <./chapters/10/10/2/12/figs/circle.png>] [412 <./chapters/10/10/2/13/figs/
+tangent.png>] [413 <./chapters/10/10/2/13/figs/quad_circ.png>] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6DFCBB55BA987CA155904BAA9D324A96;4481.
  ) 
 Here is how much of TeX's memory you used:
- 38162 strings out of 479304
- 740771 string characters out of 5869780
- 1175963 words of memory out of 5000000
- 48436 multiletter control sequences out of 15000+600000
- 465839 words of font info for 187 fonts, out of 8000000 for 9000
+ 38201 strings out of 479304
+ 741308 string characters out of 5869780
+ 1176586 words of memory out of 5000000
+ 48409 multiletter control sequences out of 15000+600000
+ 458780 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  218i,26n,217p,504b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -4210,10 +4241,10 @@ mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (410 pages, 7239646 bytes).
+Output written on main.pdf (413 pages, 7267999 bytes).
 PDF statistics:
- 11086 PDF objects out of 12825 (max. 8388607)
- 8457 compressed objects within 85 object streams
- 4789 named destinations out of 5155 (max. 500000)
- 1737 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11169 PDF objects out of 12825 (max. 8388607)
+ 8542 compressed objects within 86 object streams
+ 4853 named destinations out of 5155 (max. 500000)
+ 1742 words of extra memory for PDF output out of 10000 (max. 10000000)
 

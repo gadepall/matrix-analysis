@@ -1,3 +1,4 @@
+\iffalse
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
 \def\inputGnumericTable{}
 \usepackage{setspace}
@@ -109,24 +110,26 @@ columns=fullflexible
 \maketitle
 \section*{Class 11, Chapter 11, Exercise 5.3}
 
-Q. The cable of a uniformly loaded suspension bridge hangs in the form of a parabola. The roadway which is horizontal and 100 m long is supported by vertical wires attached to the cable, the longest wire being 30 m and the shortest being 6 m. Find the length of a supporting wire attached to the roadway 18 m from the middle.
+
 
 \solution
-Uniformly loaded suspension bridge cable hangs in the form of a parabola facing upwards.
-
+\fi
+Uniformly loaded suspension bridge cable hangs in the form of a parabola facing upwards.  The parameters are then listed in Table 
+    \ref{tab:chapters/11/11/5/3/points}.
 \begin{table}[ht!]
-    \input{tables/table.tex}
+	\centering
+    \input{chapters/11/11/5/3/tables/table.tex}
     \caption{points}
-    \label{tab:points}
+    \label{tab:chapters/11/11/5/3/points}
 \end{table}
-
-This will give us a setup similar to figure \ref{fig:Cable}, 
+\iffalse
+This will give us a setup similar to figure \ref{fig:chapters/11/11/5/3/Cable}, 
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\columnwidth]{figs/1.png}
+    \includegraphics[width=\columnwidth]{chapters/11/11/5/3/figs/1.png}
     \caption{Representation of parabola with vertex at origin.}
-    \label{fig:Cable}
+    \label{fig:chapters/11/11/5/3/Cable}
 \end{figure}
 
 Here A and B are the points on the parabola where the cable is attached to the roadway, i.e. longest wire is attached at this points. And vertex of parabola O is point where shortest wire is attached, which is 6m from the ground.
@@ -141,80 +144,63 @@ The generic equation of conic is
 \begin{align}
     g\brak{\vec{x}} = \vec{x}^{\top}\vec{V}\vec{x} + 2\vec{u}^{\top}\vec{x} + f = 0 
 \end{align}
-
+\fi
 As conic is upward facing parabola,
 \begin{align}
     \vec{V} = \myvec{1&0\\0&0}.
 \end{align}
-
-Points \vec{O}, \vec{A}, and \vec{B} are on conic, so we have
+Points $\vec{O}, \vec{A}$, and $\vec{B}$ are on conic, so we have
 \begin{align}
 	\vec{O}^{\top}\vec{V}\vec{O} + 2\vec{u}^{\top}\vec{O} + f &= 0\\
 	\vec{A}^{\top}\vec{V}\vec{A} + 2\vec{u}^{\top}\vec{A} + f &= 0\\
 	\vec{B}^{\top}\vec{V}\vec{B} + 2\vec{u}^{\top}\vec{B} + f &= 0	 
 \end{align}
-
 Rewrite the equations as
 \begin{align}
 	2\vec{O}^{\top}\vec{u} + f &= - \vec{O}^{\top}\vec{V}\vec{O}\\
 	2\vec{A}^{\top}\vec{u} + f &= - \vec{A}^{\top}\vec{V}\vec{A}\\
 	2\vec{B}^{\top}\vec{u} + f &= - \vec{B}^{\top}\vec{V}\vec{B}	
 \end{align}
-
-This can be formulated as matrix, as follows:
+This can be formulated as the matrix equation
 \begin{align}
 	\myvec{2\vec{O}^{\top} & 1\\ 2\vec{A}^{\top} & 1\\ 2\vec{B}^{\top} & 1}\myvec{\vec{u} \\ f} = -\myvec{\vec{O}^{\top}\vec{V}\vec{O}\\ \vec{A}^{\top}\vec{V}\vec{A}\\ \vec{B}^{\top}\vec{V}\vec{B}}
 \end{align}
-
-Substituting the values of \vec{O}, \vec{A}, and \vec{B} in the above equation, we get
+Substituting numerical values in the above equation,
 \begin{align}
     \myvec{0&0&1\\ 100&48&1\\ -100&48&1}\myvec{\vec{u} \\ f} = -\myvec{0\\-2500\\-2500}\\
     \implies f = 0 \text{ and } \vec{u} = \myvec{0\\-\frac{625}{12}}
 \end{align}
-
-So, equation of parabola is
+So, the equation of the parabola is
 \begin{align}
-    \label{eq:parab1}  \vec{x}^{\top}\myvec{1&0\\0&0}\vec{x} + 2\myvec{0&-\frac{625}{12}}\vec{x} = 0 
+    \label{eq:chapters/11/11/5/3/parab1}  \vec{x}^{\top}\myvec{1&0\\0&0}\vec{x} + 2\myvec{0&-\frac{625}{12}}\vec{x} = 0 
 \end{align}
-
-At a point $\lambda_1$ m from middle, i.e.
+At a point $\lambda_1$ m from middle,
 \begin{align}
     \vec{x} = \lambda_1\vec{e}_1 + \lambda_2\vec{e}_2\
 \end{align}
-
-Substitute this in parabola equation, we get
+Substituting this in the parabola equation,
+\begin{multline}
+         \brak{\lambda_1\vec{e}_1 + \lambda_2\vec{e}_2}^{\top}\vec{V}\brak{\lambda_1\vec{e}_1 + \lambda_2\vec{e}_2} + 2\vec{u}^{\top}\brak{\lambda_1\vec{e}_1 + \lambda_2\vec{e}_2} + f = 0 \\
+\implies         \lambda_1^2\vec{e}_1^{\top}\vec{V}\vec{e}_1 + \lambda_2^2\vec{e}_2^{\top}\vec{V}\vec{e}_2 + \lambda_1\lambda_2\vec{e}_1^{\top}\vec{V}\vec{e}_2 + \lambda_1\lambda_2\vec{e}_2^{\top}\vec{V}\vec{e}_1 + 2\lambda_1\vec{u}^{\top}\vec{e}_1 \\ + 2\lambda_2\vec{u}^{\top}\vec{e}_2 + f = 0 
+\end{multline}
+Substituting numerical values in the above, 
 \begin{align}
-    \begin{split}
-        \ \brak{\lambda_1\vec{e}_1 + \lambda_2\vec{e}_2}^{\top}\vec{V}\brak{\lambda_1\vec{e}_1 + \lambda_2\vec{e}_2} \\ + 2\vec{u}^{\top}\brak{\lambda_1\vec{e}_1 + \lambda_2\vec{e}_2} + f &= 0 \
-    \end{split}
+    \lambda_1^2 - \frac{6}{625}\lambda_2 = 0
 \end{align}
-
+Since $\lambda_1 = 18$,
 \begin{align}
-    \begin{split}
-        \ \lambda_1^2\vec{e}_1^{\top}\vec{V}\vec{e}_1 + \lambda_2^2\vec{e}_2^{\top}\vec{V}\vec{e}_2 + \lambda_1\lambda_2\vec{e}_1^{\top}\vec{V}\vec{e}_2 + \\\lambda_1\lambda_2\vec{e}_2^{\top}\vec{V}\vec{e}_1 + 2\lambda_1\vec{u}^{\top}\vec{e}_1 + 2\lambda_2\vec{u}^{\top}\vec{e}_2 + f &= 0 \
-    \end{split}
+\lambda_2 = \frac{6}{625}\brak{18}^2 = \frac{1944}{625}
 \end{align}
-
-Substituting the values of $\vec{V}, \vec{u}, \vec{e}_1, \vec{e}_2$ and $f$
+Thus, the length of a supporting wire attached to the roadway $18 m$ from the middle is 
 \begin{align}
-    \lambda_1^2 - \frac{6}{625}\lambda_2 = 0\\
+     \lambda_2 + d_2 =  \frac{1944}{625} + 6 = \frac{5694}{625} m   
 \end{align}
-
-It is given that $\lambda_1 = 18$
-\begin{align}
-    \implies \lambda_2 = \frac{6}{625}\brak{18}^2 = \frac{1944}{625}
-\end{align}
-
-$\implies$ Length of a supporting wire attached to the roadway $18 m$ from the middle is 
-\begin{align}
-    = \lambda_2 + d_2 =  \frac{1944}{625} + 6 = \frac{5694}{625} m   
-\end{align}
-
+See Fig. 
+    \ref{fig:chapters/11/11/5/3/parabola}.
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\columnwidth]{figs/parabola.png}
+    \includegraphics[width=\columnwidth]{chapters/11/11/5/3/figs/parabola.png}
     \caption{Parabola}
-    \label{fig:parabola}
+    \label{fig:chapters/11/11/5/3/parabola}
 \end{figure}
 
-\end{document}
