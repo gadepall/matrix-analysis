@@ -119,5 +119,24 @@ yielding
 	\label{eq:circ-ang-centre-arc}
 	\angle AOB = 2\angle AOC
 \end{align}
-
+\item The circumcentre $\vec{O}$ of $\triangle ABC$ is given by the matrix equation
+\begin{align}
+	\myvec{\vec{A}-\vec{B} & \vec{B}-\vec{C}}^{\top} \vec{O} &= \frac{1}{2}\myvec{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 \\
+	{\norm{\vec{B}}^2 -\norm{\vec{C}}^2}}
+	\label{eq:circumcirc-eq}
+\end{align}
+	\solution Since $\vec{A},\vec{B}, \vec{C}$ lie on the circle, from 
+	\eqref{eq:circ-eq}
+\begin{align}
+	\norm{\vec{A}}^2 + 2 \vec{u}^{\top}\vec{A} + f = 0
+	\norm{\vec{B}}^2 + 2 \vec{u}^{\top}\vec{B} + f = 0
+	\norm{\vec{C}}^2 + 2 \vec{u}^{\top}\vec{C} + f = 0
+\end{align}
+Subtracting equations and simplifying,
+\begin{align}
+			\brak{\vec{A}-\vec{B}}^{\top} \vec{u} &= -\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2}{2}\\
+			\brak{\vec{B}-\vec{C}}^{\top} \vec{u} &= -\frac{\norm{\vec{B}}^2 -\norm{\vec{C}}^2}{2}
+\end{align}
+which can be stacked to obtain 
+	\eqref{eq:circumcirc-eq}.
 \end{enumerate}

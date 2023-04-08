@@ -198,6 +198,39 @@ are given by
 \begin{proof}
 Any point on the angle bisector is equidistant from the lines.  
 \end{proof}
+\item In $\triangle ABC$, the direction of the angle bisector of $A$ is given by 
+\begin{align}
+\vec{m} = \vec{B}+\vec{C}-2\vec{A}
+	\label{eq:ang-bisect-dir}
+\end{align}
+\solution
+Since the direction vectors of $AB$ and $AC$ are 
+\begin{align}
+ \vec{B}-\vec{A}, \vec{C}-\vec{A}
+\end{align}
+using the parallelogram law, we obtain
+	\eqref{eq:ang-bisect-dir}.
+	\item The perpendicular bisector of $BC$ is given by 
+		\begin{align}
+			\brak{\vec{B}-\vec{C}}^{\top} \vec{x} = \frac{\norm{\vec{B}}^2 -\norm{\vec{C}}^2}{2}
+			\label{prob:perp-bisect}
+		\end{align}
+		\solution The perpendicular bisector passes through the mid point 
+\begin{align}
+	\frac{\vec{B}+ \vec{C}}{2}
+\end{align}
+and has normal vector 
+\begin{align}
+	\vec{B}- \vec{C}
+\end{align}
+Hence, the equation of the perpendicular bisector is 
+\begin{align}
+	\brak{\vec{B}- \vec{C}}^{\top}\sbrak{\vec{x}- \frac{\vec{B}+ \vec{C}}{2}} &= 0
+\end{align}
+yielding
+			\eqref{prob:perp-bisect}.
+
+		mid point of $BC$ is 
 
 %\item ({\em Reflection }) Assuming that straight lines work as a plane mirror for a point, find the image of the point $\vec{P}=\myvec{1\\2}$ in the line 
 %%
