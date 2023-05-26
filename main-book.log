@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.1.3)  11 MAY 2023 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  26 MAY 2023 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (./gvv.sty
+) (./gvv-book-bkup.sty
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-01-09 L3 programming layer (loader) 
@@ -671,7 +671,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip72
 )
-Package hyperref Info: Option `bookmarksopen' set `false' on input line 50.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 51.
 
 (/usr/share/texlive/texmf-dist/tex/latex/breakurl/breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
@@ -1234,23 +1234,20 @@ tex) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-lines.tex
 \c@proposition=\count381
 \c@lemma=\count382
 \c@example=\count383
-\c@matchleft=\count384
-\c@matchright=\count385
-) (./gvv-book-bkup.sty
 \hsizevalue=\dimen362
 \vsizevalue=\dimen363
-\c@temp=\count386
+\c@temp=\count384
 \outermargin=\skip77
-\emailcount=\count387
-\punctcount=\count388
-\aucount=\count389
-\corrauthcount=\count390
-\c@affn=\count391
-\addcount=\count392
+\emailcount=\count385
+\punctcount=\count386
+\aucount=\count387
+\corrauthcount=\count388
+\c@affn=\count389
+\addcount=\count390
 \adjtitleskip=\skip78
 \QELftRghtDimen=\skip79
-\featuretitcnt=\count393
-\c@scheme=\count394
+\featuretitcnt=\count391
+\c@scheme=\count392
 \tabbodybox=\box86
 \chktabbodywdbox=\box87
 \eqnarraycolsep=\skip80
@@ -1263,17 +1260,19 @@ tex) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-lines.tex
 \brlmvdn=\skip83
 \cropraisedimen=\skip84
 \margwidth=\dimen368
-\pagecntcntr=\count395
-LaTeX Info: Redefining \emph on input line 1667.
-\temQEcnt=\count396
+\pagecntcntr=\count393
+LaTeX Info: Redefining \emph on input line 1727.
+\temQEcnt=\count394
 \authhsize=\dimen369
-\QueryCnt=\count397
+\QueryCnt=\count395
 \aqadjdim=\dimen370
-\LASTPAGENO=\count398
-\TmpCnt=\count399
+\LASTPAGENO=\count396
+\TmpCnt=\count397
 \iletterskip=\skip85
-)
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+) (./gvv.sty
+\c@matchleft=\count398
+\c@matchright=\count399
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip86
 \bibsep=\skip87
@@ -10314,12 +10313,12 @@ Package rerunfilecheck Info: File `main-book.out' has not changed.
 (rerunfilecheck)             Checksum: E9AEDF6079AF29CF4905BE6F66613689;4210.
  ) 
 Here is how much of TeX's memory you used:
- 38524 strings out of 479304
- 740054 string characters out of 5869780
- 1104629 words of memory out of 5000000
- 48260 multiletter control sequences out of 15000+600000
+ 38541 strings out of 479304
+ 740163 string characters out of 5869779
+ 1104903 words of memory out of 5000000
+ 48275 multiletter control sequences out of 15000+600000
  431472 words of font info for 139 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 1144 hyphenation exceptions out of 8191
  218i,26n,217p,509b,742s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/tex
