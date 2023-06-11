@@ -1,346 +1,414 @@
-\let\negmedspace\undefined
-\let\negthickspace\undefined
-\documentclass[journal,12pt,onecolumn]{IEEEtran}
-\usepackage{gvv-book}
+%% Run LaTeX on this file several times to get Table of Contents,
+%% cross-references, and citations.
+
+\documentclass[11pt]{book}
+\usepackage{gvv-book-bkup}
 \usepackage{gvv}
+%\usepackage{Wiley-AuthoringTemplate}
+\usepackage[sectionbib,authoryear]{natbib}% for name-date citation comment the below line
+%\usepackage[sectionbib,numbers]{natbib}% for numbered citation comment the above line
+
+%%********************************************************************%%
+%%       How many levels of section head would you like numbered?     %%
+%% 0= no section numbers, 1= section, 2= subsection, 3= subsubsection %%
+\setcounter{secnumdepth}{3}
+%%********************************************************************%%
+%%**********************************************************************%%
+%%     How many levels of section head would you like to appear in the  %%
+%%				Table of Contents?			%%
+%% 0= chapter, 1= section, 2= subsection, 3= subsubsection titles.	%%
+\setcounter{tocdepth}{2}
+%%**********************************************************************%%
+
+%\includeonly{ch01}
+\makeindex
+
 \begin{document}
 
-\title{
-%	\logo{
-Matrix Analysis Through Coordinate Geometry
-%	}
-}
-\author{ G V V Sharma$^{*}$% <-this % stops a space
-\iffalse
-	\thanks{*The author is with the Department
-		of Electrical Engineering, Indian Institute of Technology, Hyderabad
-		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
-		\fi
-	
-}	
-%\title{
-%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+\frontmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Title Pages
+%% Wiley will provide title and copyright page, but you can make
+%% your own titlepages if you'd like anyway
+%% Setting up title pages, type in the appropriate names here:
+
+\booktitle{Matrix Analysis}
+
+\subtitle{Through Coordinate Geometry}
+
+\AuAff{G. V. V. Sharma}
+
+
+%% \\ will start a new line.
+%% You may add \affil{} for affiliation, ie,
+%\authors{Robert M. Groves\\
+%\affil{Universitat de les Illes Balears}
+%Floyd J. Fowler, Jr.\\
+%\affil{University of New Mexico}
 %}
 
+%% Print Half Title and Title Page:
+%\halftitlepage
+\titlepage
 
-% paper title
-% can use linebreaks \\ within to get better formatting as desired
-%\title{Matrix Analysis through Octave}
-%
-%
-% author names and IEEE memberships
-% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
-% a structure at a ~ so this keeps an author's name from being broken across
-% two lines.
-% use \thanks{} to gain access to the first footnote area
-% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
-% was not built to handle multiple paragraphs
-%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Copyright Page
 
-%\author{<-this % stops a space
-%\thanks{}}
-%}
-% note the % following the last \IEEEmembership and also \thanks - 
-% these prevent an unwanted space from occurring between the last author name
-% and the end of the author line. i.e., if you had this:
+\begin{copyrightpage}{2022}
+%Title, etc
+\end{copyrightpage}
+
+% Note, you must use \ to start indented lines, ie,
 % 
-% \author{....lastname \thanks{...} \thanks{...} }
-%                     ^------------^------------^----Do not want these spaces!
-%
-% a space would be appended to the last name and could cause every name on that
-% line to be shifted left slightly. This is one of those "LaTeX things". For
-% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
-% "AB" then you have to do: "\textbf{A}\textbf{B}"
-% \thanks is no different in this regard, so shield the last } of each \thanks
-% that ends a line with a % and do not let a space in before the next \thanks.
-% Spaces after \IEEEmembership other than the last one are OK (and needed) as
-% you are supposed to have spaces between the names. For what it is worth,
-% this is a minor point as most people would not even notice if the said evil
-% space somehow managed to creep in.
+% \begin{copyrightpage}{2004}
+% Survey Methodology / Robert M. Groves . . . [et al.].
+% \       p. cm.---(Wiley series in survey methodology)
+% \    ``Wiley-Interscience."
+% \    Includes bibliographical references and index.
+% \    ISBN 0-471-48348-6 (pbk.)
+% \    1. Surveys---Methodology.  2. Social 
+% \  sciences---Research---Statistical methods.  I. Groves, Robert M.  II. %
+% Series.\\
 
+% HA31.2.S873 2004
+% 001.4'33---dc22                                             2004044064
+% \end{copyrightpage}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Only Dedication (optional) 
 
-% The paper headers
-%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
-%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
-% The only time the second header will appear is for the odd numbered pages
-% after the title page when using the twoside option.
-% 
-% *** Note that you probably will NOT want to include the author's ***
-% *** name in the headers of peer review papers.                   ***
-% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
-% you desire.
-
-
-
-
-% If you want to put a publisher's ID mark on the page you can do it like
-% this:
-%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
-% Remember, if you use this you must call \IEEEpubidadjcol in the second
-% column for its text to clear the IEEEpubid mark.
-
-
-
-% make the title area
-\maketitle
-
-\newpage
+%\dedication{To my parents}
 
 \tableofcontents
 
-\bigskip
+%\listoffigures %optional
+%\listoftables  %optional
 
-\renewcommand{\thefigure}{\theenumi}
-\renewcommand{\thetable}{\theenumi}
-%\renewcommand{\theequation}{\theenumi}
+%% or Contributor Page for edited books
+%% before \tableofcontents
 
-%\begin{abstract}
-%%\boldmath
-%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Contributors Page for Edited Book
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If your book has chapters written by different authors,
+% you'll need a Contributors page.
+
+% Use \begin{contributors}...\end{contributors} and
+% then enter each author with the \name{} command, followed
+% by the affiliation information.
+
+% \begin{contributors}
+% \name{Masayki Abe,} Fujitsu Laboratories Ltd., Fujitsu Limited, Atsugi, Japan
 %
-%\end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-% Note that keywords are not normally used for peerreview papers.
-%\begin{IEEEkeywords}
-%Cooperative diversity, decode and forward, piecewise linear
-%\end{IEEEkeywords}
-
-
-
-% For peer review papers, you can put extra information on the cover
-% page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
+% \name{L. A. Akers,} Center for Solid State Electronics Research, Arizona State University, Tempe, Arizona
 %
-% For peerreview papers, this IEEEtran command inserts a page break and
-% creates the second title. It will be ignored for other modes.
-%\IEEEpeerreviewmaketitle
+% \name{G. H. Bernstein,} Department of Electrical and Computer Engineering, University of Notre Dame, Notre Dame, South Bend, Indiana; formerly of
+% Center for Solid State Electronics Research, Arizona
+% State University, Tempe, Arizona 
+% \end{contributors}
 
-\begin{abstract}
-This manual includes \LaTeX figures.
-%book provides an introduction to optimization  based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
-\end{abstract}
-Download 
-\begin{lstlisting}
-svn co https://github.com/gadepall/school/trunk/training
-\end{lstlisting}
-\section{Vectors}
-\subsection{Length}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Foreword:
+
+%\begin{foreword}
+%\lipsum[1-2]
+%\end{foreword}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Preface:
+
+%\begin{preface}
+%\lipsum[1-1]
+%\prefaceauthor{}
+%\where{place\\
+% date}
+%\end{preface}
+
+% ie,
+% \begin{preface}
+% This is an example preface.
+% \prefaceauthor{R. K. Watts}
+% \where{Durham, North Carolina\\
+% September, 2004}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional Acknowledgments:
+
+%\acknowledgments
+%\lipsum[1-2]
+%\authorinitials{I. R. S.}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Glossary Type of Environment:
+
+% \begin{glossary}
+% \term{<term>}{<description>}
+% \end{glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{acronyms}
+%\acro{ASTA}{Arrivals See Time Averages}
+%\acro{BHCA}{Busy Hour Call Attempts}
+%\acro{BR}{Bandwidth Reservation}
+%\acro{b.u.}{bandwidth unit(s)}
+%\acro{CAC}{Call / Connection Admission Control}
+%\acro{CBP}{Call Blocking Probability(-ies)}
+%\acro{CCS}{Centum Call Seconds}
+%\acro{CDTM}{Connection Dependent Threshold Model}
+%\acro{CS}{Complete Sharing}
+%\acro{DiffServ}{Differentiated Services}
+%\acro{EMLM}{Erlang Multirate Loss Model}
+%\acro{erl}{The Erlang unit of traffic-load}
+%\acro{FIFO}{First in - First out}
+%\acro{GB}{Global balance}
+%\acro{GoS}{Grade of Service}
+%\acro{ICT}{Information and Communication Technology}
+%\acro{IntServ}{Integrated Services}
+%\acro{IP}{Internet Protocol}
+%\acro{ITU-T}{International Telecommunication Unit -- Standardization sector}
+%\acro{LB}{Local balance}
+%\acro{LHS}{Left hand side}
+%\acro{LIFO}{Last in - First out}
+%\acro{MMPP}{Markov Modulated Poisson Process}
+%\acro{MPLS}{Multiple Protocol Labeling Switching}
+%\acro{MRM}{Multi-Retry Model}
+%\acro{MTM}{Multi-Threshold Model}
+%\acro{PASTA}{Poisson Arrivals See Time Averages}
+%\acro{PDF}{Probability Distribution Function}
+%\acro{pdf}{probability density function}
+%\acro{PFS}{Product Form Solution}
+%\acro{QoS}{Quality of Service}
+%\acro{r.v.}{random variable(s)}
+%\acro{RED}{random early detection}
+%\acro{RHS}{Right hand side}
+%\acro{RLA}{Reduced Load Approximation}
+%\acro{SIRO}{service in random order}
+%\acro{SRM}{Single-Retry Model}
+%\acro{STM}{Single-Threshold Model}
+%\acro{TCP}{Transport Control Protocol}
+%\acro{TH}{Threshold(s)}
+%\acro{UDP}{User Datagram Protocol}
+%\end{acronyms}
+
+\setcounter{page}{1}
+
+\begin{introduction}
+This book links high school coordinate geometry to linear algebra and matrix analysis through solved problems.
+
+\end{introduction}
+
+\mainmatter
+
+\chapter{Vectors}
+\section{Length}
 \input{chapters/vectors/examples/length.tex}
-\subsection{Distance}
+\section{Distance}
 \input{chapters/vectors/examples/distance.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/distance.tex}
-\subsection{subsection Formula}
+\section{Section Formula}
 \input{chapters/vectors/examples/section.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/section.tex}
-\subsection{Rank}
+\section{Rank}
 \input{chapters/vectors/examples/rank.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/rank.tex}
-\subsection{Scalar Product}
+\section{Scalar Product}
 \input{chapters/vectors/examples/scalar.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/scalar.tex}
-\subsection{Orthogonality}
+\section{Orthogonality}
 \input{chapters/vectors/examples/ortho.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/ortho.tex}
-\subsection{Vector Product}
+\section{Vector Product}
 \input{chapters/vectors/examples/cross.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/cross.tex}
-\subsection{Miscellaneous}
+\section{Miscellaneous}
 \input{chapters/vectors/examples/misc.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/vectors/exer/misc.tex}
-\subsection{Triangle}
+\section{Triangle}
 \input{chapters/const/examples/tri.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/const/exer/tri.tex}
-\subsection{ Quadrilateral}
+\section{ Quadrilateral}
 \input{chapters/const/examples/quad.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/const/exer/quad.tex}
 %
-\section{Linear Forms}
-\subsection{Equation of a Line}
+\chapter{Linear Forms}
+\section{Equation of a Line}
 \input{chapters/linear/examples/equation.tex}
-\subsection{Perpendicular}
+\section{Perpendicular}
 \input{chapters/linear/examples/perp.tex}
-\subsection{Plane}
+\section{Plane}
 \input{chapters/linear/examples/plane.tex}
-\subsection{Miscellaneous }
+\section{Miscellaneous }
 \input{chapters/linear/examples/misc.tex}
-\subsection{Exemplar}
+\section{Exemplar}
 \input{exemplar/11.10.3}
-\subsection{Singular Value Decomposition}
+\section{Singular Value Decomposition}
 \input{svd/svd.tex}
 %
-%\subsection{JEE}
+%\chapter{Constructions}
+%\section{JEE}
 %\input{jee/7.tex}
 %--------------------------------------------------------
-%\subsection{Properties}
+%\section{Properties}
 %\input{chapters/9/9/3.tex}
 %
-%\subsection{Properties}
+%\section{Properties}
 %\input{chapters/9/8/1.tex}
-%\subsection{Mid Point Theorem}
+%\section{Mid Point Theorem}
 %\input{chapters/9/8/2.tex}
-%\subsection{Parallelograms}
-%\subsection{Triangles and Parallelograms}
+%\section{Parallelograms}
+%\section{Triangles and Parallelograms}
 %\input{chapters/9/9/4.tex}
 %--------------------------------------------------------
 
+%\chapter{Circles}
 %
-\section{Conics}
-\subsection{Circle}
+%\chapter{Tangents to a Circle}
+
+
+\chapter{Conics}
+\section{Circle}
 \input{chapters/circles/examples/equation.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/circles/exer/equation.tex}
-\subsection{Construction}
+\section{Construction}
 \input{chapters/circles/examples/const.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/circles/exer/const.tex}
-\subsection{Parabola}
+\section{Parabola}
 \input{chapters/conics/examples/parab.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/conics/exer/parab.tex}
-\subsection{Ellipse}
+\section{Ellipse}
 \input{chapters/conics/examples/ellipse.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/conics/exer/ellipse.tex}
-\subsection{Hyperbola}
+\section{Hyperbola}
 \input{chapters/conics/examples/hyper.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/conics/exer/hyper.tex}
 
-\section{Intersection of Conics}
-\subsection{Chords }
+\chapter{Intersection of Conics}
+\section{Chords }
 \input{chapters/inter/examples/chord.tex}
-\subsection{Curves}
+\section{Curves}
 \input{chapters/inter/examples/curves.tex}
 %
-\section{Tangent And Normal}
-\subsection{Examples}
+\chapter{Tangent And Normal}
+\section{Examples}
 \input{chapters/tangent/examples/tangent.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/tangent/exer/tangent.tex}
-\subsection{Construction}
+\section{Construction}
 \input{chapters/circles/examples/tangent.tex}
-\subsection{Exercises}
+\section{Exercises}
 \input{chapters/circles/exer/tangent.tex}
 
 
 %\include{ch02} 
-%\backmatter
-%\appendix
-\appendices
-\section{ Vectors}
-\subsection{$2\times 1$ vectors}
+\backmatter
+\appendix
+\chapter{ Vectors}
+\section{$2\times 1$ vectors}
 \input{matrix/two.tex}
 %\include{app01}
 %\appendix
-\subsection{$3\times 1$ vectors}
+\section{$3\times 1$ vectors}
 \input{matrix/three.tex}
-\section{Matrices}
+\chapter{Matrices}
 \input{matrix/mat.tex}
 \input{linman/chapters/decomp/svd.tex}
 
-\section{Triangle Constructions}
+\chapter{Triangle Constructions}
 \input{cons/tri.tex}
 
 
-\section{Linear Forms}
-\subsection{Two Dimensions}
+\chapter{Linear Forms}
+\section{Two Dimensions}
 \input{linear/two.tex}
-\subsection{Three Dimensions}
+\section{Three Dimensions}
 \input{linear/three.tex}
-\section{Quadratic Forms}
-%\numberwithin{equation}{subsubsection}
+\chapter{Quadratic Forms}
 %\numberwithin{equation}{subsection}
-\subsection{Conic equation }
+%\numberwithin{equation}{section}
+\section{Conic equation }
 \input{quad/defs.tex}
-\subsection{Circles}
+\section{Circles}
 \input{quad/circle.tex}
 
-%\subsection{Standard Form}
+\section{Standard Form}
 \input{quad/stddef.tex}
-\section{Conic Parameters}
-\subsection{Standard Form}
+\chapter{Conic Parameters}
+\section{Standard Form}
 \input{quad/standard.tex}
-\subsection{Quadratic Form }
+\section{Quadratic Form }
 \input{quad/coroll.tex}
 
-\section{Conic Lines}
-\subsection{Pair of Straight Lines}
+\chapter{Conic Lines}
+\section{Pair of Straight Lines}
 %
 \input{quad/pair.tex}
-\subsection{Intersubsection of Conics}
+\section{Intersection of Conics}
 \input{quadlines/inter.tex}
-\subsection{ Chords of a Conic}
+\section{ Chords of a Conic}
 \input{quadlines/chord.tex}
-\subsection{ Tangent and Normal}
+\section{ Tangent and Normal}
 \input{quadlines/tangent.tex}
-%\section{Proofs}
-%   \subsection{}
+%\chapter{Proofs}
+%   \section{}
 %\input{apps/defs.tex}
 
-%  \subsection{}
+%  \section{}
 %\input{apps/parab.tex}
-%  \subsection{}
+%  \section{}
 %\input{apps/nonparab.tex}
-%		\subsection{}
+%		\section{}
 %\input{apps/params.tex}
-%\latexprintindex
+\latexprintindex
 
 \end{document}
 
-
-
-%\renewcommand{\theequation}{\theenumi}
-%\subsubsection{Problem}
-
-%\subsection{Chemistry}
-%\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\numberwithin{equation}{enumi}
-\item Fig. \ref{fig:tri_sss_py} is generated using 
-\begin{lstlisting}
-math/codes/tri_sss.py
-\end{lstlisting}
+ 
+\section{Examples}
+\subsection{Loney}
+\input{examples/loney.tex}
+\subsection{Miscellaneous}
+\input{examples/misc.tex}
 %
-\begin{figure}
-\centering
-\includegraphics[width=\columnwidth]{./figs/tri_sss.pdf}
-\caption{Triangle generated using python}
-\label{fig:tri_sss_py}
-\end{figure}
+%%\section*{Disclosure Statement}
+%%The authors report there are no competing interests to declare.
+%%
+%%
+%%
+%%  
+%%%All the results related to conics are summarized in 
+%%%Table \ref{table:conics}.  
+%%%\begin{table*}[!t]
+%%%\centering
+%%%\input{conics.tex}
+%%%%\input{./figs/conics.tex}
+%%%\caption{$\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f = 0$  can be expressed in the above standard form for various conics. $\vec{c}$ represents the centre/vertex of the conic. $\vec{q}$ is/are the point(s) of contact for the tangent(s). }
+%%%\label{table:conics}
+%%%\end{table*}
+%%%\begin{verbatim}
+%%\bibliographystyle{tfs}
+%%%\bibliography{interacttfssample}
+%%\bibliography{school}
+%%\end{verbatim}
+%% included where the list of references is to appear, where \texttt{tfs.bst} is the name of the \textsc{Bib}\TeX\ bibliography style file for Taylor \& Francis' Reference Style S and \texttt{interacttfssample.bib} is the bibliographic database included with the \textsf{Interact}-TFS \LaTeX\ bundle (to be replaced with the name of your own .bib file). \LaTeX/\textsc{Bib}\TeX\ will extract from your .bib file only those references that are cited in your .tex file and list them in the References section.
 %
-\item Fig. \ref{fig:tri_sss_tikz} is generated using 
-\begin{lstlisting}
-math/figs/tri_sss_alone.tex
-\end{lstlisting}
-\begin{figure}[!ht]
-	\begin{center}
-		
-		\resizebox{\columnwidth}{!}{\input{./figs/tri_sss.tex}}
-	\end{center}
-	\caption{Triangle generated using \LaTeX Tikz.}
-	\label{fig:tri_sss_tikz}	
-\end{figure}
+%% Please include a copy of your .bib file and/or the final generated .bbl file among your source files if your .tex file does not contain a reference list in a \texttt{thebibliography} environment.
+%
 
-\end{enumerate}
-\end{document}
-
-
+  % \section{Appendices}
+  % \appendix
+			\appendices

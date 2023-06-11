@@ -1,0 +1,346 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\begin{document}
+
+\title{
+%	\logo{
+Matrix Analysis Through Coordinate Geometry
+%	}
+}
+\author{ G V V Sharma$^{*}$% <-this % stops a space
+\iffalse
+	\thanks{*The author is with the Department
+		of Electrical Engineering, Indian Institute of Technology, Hyderabad
+		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
+		\fi
+	
+}	
+%\title{
+%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+%}
+
+
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+%\title{Matrix Analysis through Octave}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+
+%\author{<-this % stops a space
+%\thanks{}}
+%}
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+
+
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+
+
+
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+
+
+% make the title area
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
+
+%\begin{abstract}
+%%\boldmath
+%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%
+%\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+
+% Note that keywords are not normally used for peerreview papers.
+%\begin{IEEEkeywords}
+%Cooperative diversity, decode and forward, piecewise linear
+%\end{IEEEkeywords}
+
+
+
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle
+
+\begin{abstract}
+This manual includes \LaTeX figures.
+%book provides an introduction to optimization  based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
+\end{abstract}
+Download 
+\begin{lstlisting}
+svn co https://github.com/gadepall/school/trunk/training
+\end{lstlisting}
+\section{Vectors}
+\subsection{Length}
+\input{chapters/vectors/examples/length.tex}
+\subsection{Distance}
+\input{chapters/vectors/examples/distance.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/distance.tex}
+\subsection{subsection Formula}
+\input{chapters/vectors/examples/section.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/section.tex}
+\subsection{Rank}
+\input{chapters/vectors/examples/rank.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/rank.tex}
+\subsection{Scalar Product}
+\input{chapters/vectors/examples/scalar.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/scalar.tex}
+\subsection{Orthogonality}
+\input{chapters/vectors/examples/ortho.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/ortho.tex}
+\subsection{Vector Product}
+\input{chapters/vectors/examples/cross.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/cross.tex}
+\subsection{Miscellaneous}
+\input{chapters/vectors/examples/misc.tex}
+\subsection{Exercises}
+\input{chapters/vectors/exer/misc.tex}
+\subsection{Triangle}
+\input{chapters/const/examples/tri.tex}
+\subsection{Exercises}
+\input{chapters/const/exer/tri.tex}
+\subsection{ Quadrilateral}
+\input{chapters/const/examples/quad.tex}
+\subsection{Exercises}
+\input{chapters/const/exer/quad.tex}
+%
+\section{Linear Forms}
+\subsection{Equation of a Line}
+\input{chapters/linear/examples/equation.tex}
+\subsection{Perpendicular}
+\input{chapters/linear/examples/perp.tex}
+\subsection{Plane}
+\input{chapters/linear/examples/plane.tex}
+\subsection{Miscellaneous }
+\input{chapters/linear/examples/misc.tex}
+\subsection{Exemplar}
+\input{exemplar/11.10.3}
+\subsection{Singular Value Decomposition}
+\input{svd/svd.tex}
+%
+%\subsection{JEE}
+%\input{jee/7.tex}
+%--------------------------------------------------------
+%\subsection{Properties}
+%\input{chapters/9/9/3.tex}
+%
+%\subsection{Properties}
+%\input{chapters/9/8/1.tex}
+%\subsection{Mid Point Theorem}
+%\input{chapters/9/8/2.tex}
+%\subsection{Parallelograms}
+%\subsection{Triangles and Parallelograms}
+%\input{chapters/9/9/4.tex}
+%--------------------------------------------------------
+
+%
+\section{Conics}
+\subsection{Circle}
+\input{chapters/circles/examples/equation.tex}
+\subsection{Exercises}
+\input{chapters/circles/exer/equation.tex}
+\subsection{Construction}
+\input{chapters/circles/examples/const.tex}
+\subsection{Exercises}
+\input{chapters/circles/exer/const.tex}
+\subsection{Parabola}
+\input{chapters/conics/examples/parab.tex}
+\subsection{Exercises}
+\input{chapters/conics/exer/parab.tex}
+\subsection{Ellipse}
+\input{chapters/conics/examples/ellipse.tex}
+\subsection{Exercises}
+\input{chapters/conics/exer/ellipse.tex}
+\subsection{Hyperbola}
+\input{chapters/conics/examples/hyper.tex}
+\subsection{Exercises}
+\input{chapters/conics/exer/hyper.tex}
+
+\section{Intersection of Conics}
+\subsection{Chords }
+\input{chapters/inter/examples/chord.tex}
+\subsection{Curves}
+\input{chapters/inter/examples/curves.tex}
+%
+\section{Tangent And Normal}
+\subsection{Examples}
+\input{chapters/tangent/examples/tangent.tex}
+\subsection{Exercises}
+\input{chapters/tangent/exer/tangent.tex}
+\subsection{Construction}
+\input{chapters/circles/examples/tangent.tex}
+\subsection{Exercises}
+\input{chapters/circles/exer/tangent.tex}
+
+
+%\include{ch02} 
+%\backmatter
+%\appendix
+\appendices
+\section{ Vectors}
+\subsection{$2\times 1$ vectors}
+\input{matrix/two.tex}
+%\include{app01}
+%\appendix
+\subsection{$3\times 1$ vectors}
+\input{matrix/three.tex}
+\section{Matrices}
+\input{matrix/mat.tex}
+\input{linman/chapters/decomp/svd.tex}
+
+\section{Triangle Constructions}
+\input{cons/tri.tex}
+
+
+\section{Linear Forms}
+\subsection{Two Dimensions}
+\input{linear/two.tex}
+\subsection{Three Dimensions}
+\input{linear/three.tex}
+\section{Quadratic Forms}
+%\numberwithin{equation}{subsubsection}
+%\numberwithin{equation}{subsection}
+\subsection{Conic equation }
+\input{quad/defs.tex}
+\subsection{Circles}
+\input{quad/circle.tex}
+
+%\subsection{Standard Form}
+\input{quad/stddef.tex}
+\section{Conic Parameters}
+\subsection{Standard Form}
+\input{quad/standard.tex}
+\subsection{Quadratic Form }
+\input{quad/coroll.tex}
+
+\section{Conic Lines}
+\subsection{Pair of Straight Lines}
+%
+\input{quad/pair.tex}
+\subsection{Intersubsection of Conics}
+\input{quadlines/inter.tex}
+\subsection{ Chords of a Conic}
+\input{quadlines/chord.tex}
+\subsection{ Tangent and Normal}
+\input{quadlines/tangent.tex}
+%\section{Proofs}
+%   \subsection{}
+%\input{apps/defs.tex}
+
+%  \subsection{}
+%\input{apps/parab.tex}
+%  \subsection{}
+%\input{apps/nonparab.tex}
+%		\subsection{}
+%\input{apps/params.tex}
+%\latexprintindex
+
+\end{document}
+
+
+
+%\renewcommand{\theequation}{\theenumi}
+%\subsubsection{Problem}
+
+%\subsection{Chemistry}
+%\begin{enumerate}[label=\arabic*.,ref=\thesubsection.\theenumi]
+%\numberwithin{equation}{enumi}
+\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\numberwithin{equation}{enumi}
+\item Fig. \ref{fig:tri_sss_py} is generated using 
+\begin{lstlisting}
+math/codes/tri_sss.py
+\end{lstlisting}
+%
+\begin{figure}
+\centering
+\includegraphics[width=\columnwidth]{./figs/tri_sss.pdf}
+\caption{Triangle generated using python}
+\label{fig:tri_sss_py}
+\end{figure}
+%
+\item Fig. \ref{fig:tri_sss_tikz} is generated using 
+\begin{lstlisting}
+math/figs/tri_sss_alone.tex
+\end{lstlisting}
+\begin{figure}[!ht]
+	\begin{center}
+		
+		\resizebox{\columnwidth}{!}{\input{./figs/tri_sss.tex}}
+	\end{center}
+	\caption{Triangle generated using \LaTeX Tikz.}
+	\label{fig:tri_sss_tikz}	
+\end{figure}
+
+\end{enumerate}
+\end{document}
+
+
