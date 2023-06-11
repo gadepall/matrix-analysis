@@ -1,0 +1,168 @@
+\documentclass[12pt]{article}
+\usepackage[hidelinks]{hyperref}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\def\inputGnumericTable{}
+\usepackage{color}                                            %%
+\usepackage{array}                                            %%
+\usepackage{longtable}                                        %%
+\usepackage{calc}                                             %%
+\usepackage{multirow}                                         %%
+\usepackage{hhline}                                           %%
+\usepackage{ifthen}
+\usepackage{array}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{refstyle}
+\graphicspath{{/sdcard/Download/vectors/tables}}
+\lstset{
+language=tex,
+frame=single, 
+breaklines=true
+}
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\singlespacing
+\usepackage{siunitx}
+\usepackage[cmex10]{amsmath}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{circuitikz}
+\let\vec\mathbf
+\DeclareMathOperator*{\Res}{Res}
+\graphicspath{{/sdcard/Download/vectors/figs}}
+%Following 2 lines were added to remove the blank page at the beginning
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+%
+
+
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+
+\begin{document}
+
+\begin{center}
+\title{\textbf{VECTOR ALGEBRA}}
+\date{\vspace{-5ex}} %Not to print date automatically
+\maketitle
+\end{center}
+
+\setcounter{page}{1}
+
+\section*{12$^{th}$ Maths - Chapter 10}
+
+This is Problem-8 from Exercise 5.8
+
+ 
+\begin{enumerate}
+
+	\item Show that the points A $\myvec{1\\-2\\-8}$, B $\myvec{5\\0\\-2}$ and C $\myvec{11\\3\\7}$ are collinear, and find the ratio in which B divides AC.\\
+
+
+\solution \\The input parameters for this problem are available in Table \ref{Table-1}
+\begin{table}[ht!]
+\input{tables/table.tex}
+\caption{}
+\label{Table-1}	
+
+\end{table}
+
+		Points $\vec{A}$, $\vec{B}$ and $\vec{C}$ are on a line if
+    \begin{align}
+        \textrm{rank}\myvec{\vec{A} & \vec{B} & \vec{C}} < 3
+        \label{eq:chapters/12/10/5/8rank-collinear}
+    \end{align}
+    Substituting, we must find the rank of
+    \begin{align}
+        \vec{M} = \myvec{1&5&11\\-2&0&3\\-8&-2&7}
+    \end{align}
+    Using row reduction methods to bring $\vec{M}$ into row-reduced echelon form,
+    \begin{align}
+        \myvec{1&5&11\\-2&0&3\\-8&-2&7}&\xleftrightarrow[]{R_2\rightarrow R_2+2R_1}
+        \myvec{1&5&11\\0&10&25\\-8&-2&7} \\
+                &\xleftrightarrow[]{R_3\rightarrow R_3+8R_1}\myvec{1&5&11\\0&10&25\\0&38&95} \\
+                &\xleftrightarrow[]{R_3\rightarrow R_3-\frac{19}{5}R_2}\myvec{1&5&11\\0&10&25\\0&0&0}
+                \label{eq:chapters/12/10/5/8row-red}
+    \end{align}
+    Clearly, the rank of $\vec{M}$ is 2, and hence the given points are 
+    collinear. 
+    Fig. \ref{fig:Fig1}  verifies that the three points are indeed 
+    collinear as claimed.\\
+	Let $\vec{B}$ divide $\vec{AC}$ in k:1 then,
+	\begin{align}
+		\frac{k\vec{C}+\vec{A}}{k+1} = \vec{B}
+	\end{align}
+		\begin{align}
+			\implies k\vec{C}+\vec{A}=\vec{B}\brak{k+1}
+			\implies k\brak{\vec{C}-\vec{B}}=\brak{\vec{B}-\vec{A}}
+		\end{align}
+			Multiplying with $\brak{\vec{C}-\vec{B}}^{\top}$ on both sides,\\
+	
+		\begin{align*}
+			 k\brak{\vec{C}-\vec{B}}\brak{\vec{C}-\vec{B}}^{\top}=\brak{\vec{B}-\vec{A}}{\vec{C}-\vec{B}}^{\top}
+		\end{align*}
+			The value of k is as follows,
+			\begin{align}
+			k &=
+			\frac{\brak{\vec{B}-\vec{A}}\brak{\vec{C}-\vec{B}}^{\top}}{\norm{\vec{C-B}}^2}
+			\label{eq:7}
+			\end{align}
+
+			where,
+			\begin{align}
+				\brak{\vec{B-A}} &=
+				\brak{\myvec{5\\0\\-2}-\myvec{1\\-2\\-8}} =
+				\myvec{4\\2\\6}
+			\end{align}
+			
+			\begin{align}
+				\brak{\vec{C-B}} &=
+				\brak{\myvec{11\\3\\7}-\myvec{5\\0\\-2}} =
+				\myvec{6\\3\\9}
+			\end{align}
+			\begin{align*}
+				\brak{\vec{C}-\vec{B}}^{\top} &=
+				\myvec{6 & 3 & 9}
+			\end{align*}
+			Substituting the values in \eqref{7} the value of $k$ is $2/3$.
+			\\    Hence, $\vec{B}$ divides $\vec{AC}$ in the ratio $2:3$.
+	\begin{figure}[!h]
+		\begin{center}
+			\includegraphics[width=\columnwidth]{figs/line_3d.png}
+		\end{center}
+		\caption{}
+		\label{fig:Fig1}
+	\end{figure}
+
+
+\end{enumerate}
+\end{document}
