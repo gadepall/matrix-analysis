@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.2.16)  13 JUN 2023 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  14 JUN 2023 09:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3721,7 +3721,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [157 <./chapters/11/10/1/14/figs/fig.png>])
+ [157 <./chapters/11/10/1/14/figs/Fig.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -4971,7 +4971,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [252 <./chapters/11/10/3/17/figs/fig.png>]) (./chapters/11/10/4/4/line.tex
+ [252 <./chapters/11/10/3/17/figs/Fig.png>]) (./chapters/11/10/4/4/line.tex
 Underfull \vbox (badness 2529) has occurred while \output is active []
 
 
@@ -5344,7 +5344,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [282 <./chapters/11/10/4/22/figs/fig.png>] (./chapters/11/10/4/24/line.tex
+ [282 <./chapters/11/10/4/22/figs/Fig.png>] (./chapters/11/10/4/24/line.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -8611,7 +8611,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [559 <./chapters/12/8/3/2/figs/figure.png>]) (./chapters/12/8/3/18/conic.tex
+ [559 <./chapters/12/8/3/2/figs/Figure.png>]) (./chapters/12/8/3/18/conic.tex
 <chapters/12/8/3/18/figs/cp.jpg, id=9020, 629.35126pt x 511.9125pt>
 File: chapters/12/8/3/18/figs/cp.jpg Graphic file (type jpg)
 <use chapters/12/8/3/18/figs/cp.jpg>
@@ -10349,16 +10349,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [714]
 No file main.ind.
 (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E9AEDF6079AF29CF4905BE6F66613689;4210.
  ) 
 Here is how much of TeX's memory you used:
- 38568 strings out of 479304
- 740821 string characters out of 5869779
- 1105145 words of memory out of 5000000
+ 38567 strings out of 479304
+ 740815 string characters out of 5869779
+ 1105142 words of memory out of 5000000
  48284 multiletter control sequences out of 15000+600000
  431472 words of font info for 139 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -10391,7 +10388,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1095.pfb>
-Output written on main.pdf (723 pages, 7720345 bytes).
+Output written on main.pdf (723 pages, 7720366 bytes).
 PDF statistics:
  12794 PDF objects out of 12825 (max. 8388607)
  9797 compressed objects within 98 object streams
