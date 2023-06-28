@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  25 JUN 2023 11:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.22)  28 JUN 2023 07:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,7 +23,7 @@ File: bk11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (./gvv-book-bkup.sty
+) (./gvv-book.sty
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-01-09 L3 programming layer (loader) 
@@ -10354,8 +10354,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  38567 strings out of 479304
- 740815 string characters out of 5869779
- 1105142 words of memory out of 5000000
+ 740760 string characters out of 5869779
+ 1105106 words of memory out of 5000000
  48284 multiletter control sequences out of 15000+600000
  431472 words of font info for 139 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
