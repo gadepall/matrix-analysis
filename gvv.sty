@@ -56,7 +56,7 @@ columns=fullflexible
   \end{array}\right)
 }
 %\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
-%\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
 	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\cosec}{\,\text{cosec}\,}
@@ -93,21 +93,21 @@ columns=fullflexible
 %\let\StandardTheFigure\thefigure
 \let\vec\mathbf
 
-\NewDocumentCommand{\system}{gg}{%
-  \IfNoValueTF{#1}
-    {%
- \longleftrightarrow
-    }
-    {%
-      \IfNoValueTF{#2}
-      {%
-\overset{\mathcal{#1}}{ \longleftrightarrow}
-      }
-      {%
-\overset{\mathcal{#1}^{#2}}{ \longleftrightarrow}
-      }
-    }%
-}
+%\NewDocumentCommand{\system}{gg}{%
+ % \IfNoValueTF{#1}
+  %  {%
+ %\longleftrightarrow
+ %   }
+  %  {%
+   %   \IfNoValueTF{#2}
+    %  {%
+%\overset{\mathcal{#1}}{ \longleftrightarrow}
+ %     }
+  %    {%
+%\overset{\mathcal{#1}^{#2}}{ \longleftrightarrow}
+ %     }
+  %  }%
+%}
 %\numberwithin{equation}{section}
 %\numberwithin{equation}{subsection}
 %\numberwithin{problem}{section}
