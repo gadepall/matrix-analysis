@@ -1,0 +1,53 @@
+ Construct a triangle $APB$ in which $a$,$\angle B = \theta$ and $b+c= k$ is given.
+
+
+\textbf{Solution :}
+
+From cosine rule,
+\begin{align}
+  b^2&=a^2+c^2-2ac\cos{\angle B} \\
+  or,b^2&=a^2+c^2-2ac\cos{\theta}\\
+  or,b^2-c^2 &=a^2-2ac\cos{\theta}\\
+  or,\brak{b+c}\brak{b-c}&=a^2-2ac\cos{\theta}\\
+  or,k\brak{b-c}&=a^2-2ac\cos{\theta}\\
+  or,kb+\brak{-k+2a\cos{\theta}}c&=a^2\\
+  b+c&=k\\
+\end{align}
+From \brak{6},\brak{7} \\
+\begin{align}
+&\begin{pmatrix}
+\begin{array}{cc|c}
+k&-k+2a\cos{\theta}&a^2\\
+1&1&k\end{array}
+\end{pmatrix}\\
+\xrightarrow{R_1'=R_1/k}&\begin{pmatrix}
+\begin{array}{cc|c}
+1&\frac{-k+2a\cos{\theta}}{k}&\frac{a^2}{k}\\
+1&1&k\end{array}
+\end{pmatrix}\\
+ \xrightarrow{R_2'= R_2-R_1}&\begin{pmatrix}
+\begin{array}{cc|c}
+1&\frac{-k+2a\cos{\theta}}{k}&\frac{a^2}{k}\\
+0&\frac{2k-2a\cos{\theta}}{k}&\frac{k^2-a^2}{k}\end{array}
+\end{pmatrix}\\
+  \xrightarrow[R_2''=R_2'\brak{\frac{k}{2k-2a\cos{\theta}}}]{R_1''= R_1'-R_2'\brak{\frac{-k+2a\cos{\theta}}{2k-2a\cos{\theta}}}}&\begin{pmatrix}
+\begin{array}{cc|c}
+1&0&\frac{a^2+k^2-2ak\cos{\theta}}{2k-2a\cos{\theta}}\\
+0&1&\frac{k^2-a^2}{2\brak{k-a\cos{\theta}}}\end{array}
+\end{pmatrix}\\
+ \begin{pmatrix}
+     b\\c
+ \end{pmatrix}&=\begin{pmatrix}
+   \frac{a^2+k^2-2ak\cos{\theta}}{2k-2a\cos{\theta}}\\\frac{k^2-a^2}{2\brak{k-a\cos{\theta}}}
+ \end{pmatrix}
+\end{align}
+Therefore,
+\begin{align}
+    \Vec{A}&=c\begin{pmatrix}
+        \cos{\theta}\\\sin{\theta}
+    \end{pmatrix}\\
+    \Vec{B}&=\Vec{0}\\
+    \Vec{C}&=ae_1
+\end{align}
+
+
