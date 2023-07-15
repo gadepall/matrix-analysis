@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  15 JUL 2023 09:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.6.6)  15 JUL 2023 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5435,7 +5435,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [298])
-<chapters/11/10/4/12/figs/straightline.png, id=5165, 549.05125pt x 406.51875pt>
+<chapters/11/10/4/12/figs/straightline.png, id=5167, 549.05125pt x 406.51875pt>
 
 File: chapters/11/10/4/12/figs/straightline.png Graphic file (type png)
 <use chapters/11/10/4/12/figs/straightline.png>
@@ -5622,12 +5622,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--228
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [311]
 Underfull \hbox (badness 10000) detected at line 240
 \OT1/cmr/m/n/10.95 1.
  []
@@ -5672,17 +5666,20 @@ Overfull \hbox (27.37506pt too wide) in paragraph at lines 240--241
 [][] 
  []
 
-) (./svd/svd.tex
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [311])
+(./svd/svd.tex (./chapters/12/11/2/16/svd/main.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [312]
-(./chapters/12/11/2/16/svd/main.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -5692,9 +5689,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [313]
-Underfull \vbox (badness 1303) has occurred while \output is active []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -10451,7 +10445,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1095.pfb>
-Output written on main.pdf (737 pages, 7879052 bytes).
+Output written on main.pdf (737 pages, 7878774 bytes).
 PDF statistics:
  12995 PDF objects out of 15390 (max. 8388607)
  9958 compressed objects within 100 object streams
