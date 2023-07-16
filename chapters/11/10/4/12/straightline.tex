@@ -1,0 +1,41 @@
+Given lines can be written in the form of \begin{align}
+        \Vec{n}^{\top}\Vec{x} = c
+    \end{align}
+   Therefore,
+		\begin{align}
+       \myvec{4&7}\vec{x}=3
+       \label{eq:11/10.4/12/2}
+   \end{align} 
+   \begin{align}
+       \myvec{2&-3}\vec{x}=-1
+       \label{eq:11/10.4/12/3}
+   \end{align}
+   Now, line equation that has equal intercepts on the axes is
+   \begin{align}
+       \myvec{1 & 1}\Vec{x}=c
+       \label{eq:11/10.4/12/4}
+   \end{align}
+   Solving equations \eqref{eq:11/10.4/12/2} and \eqref{eq:11/10.4/12/3}
+		augumented matrix is
+ \begin{align}
+    \myvec{4&7&3\\2&-3&-1}\\
+    \xleftrightarrow{R_1 \leftarrow 4 R_1}
+    \myvec{1&\frac{7}{4}&\frac{3}{4}\\2&-3&-1}
+    \xleftrightarrow{R_2 \leftarrow R_2 - 2R_1}
+    \myvec{1&\frac{7}{4}&\frac{3}{4}\\0&\frac{-13}{2}&\frac{-5}{2}}\\
+    \xleftrightarrow{R_2 \leftarrow \frac{-2}{13}R_2}
+    \myvec{1&\frac{7}{4}&\frac{3}{4}\\0&1&\frac{5}{13}}
+    \xleftrightarrow{R_1 \leftarrow R_1-\frac{7}{4}R_2}
+    \myvec{1&0&\frac{1}{13}\\0&1&\frac{5}{13}}
+\end{align}
+Therfore, \begin{align}    
+\vec{x} = \myvec{\frac{1}{13}\\\frac{5}{13}}
+\end{align}
+Also this point lies on the equation \eqref{eq:11/10.4/12/4}
+\begin{align}
+    \myvec{1 & 1}\myvec{\frac{1}{13}\\\frac{5}{13}} = c\\
+    \frac{1}{13}+\frac{5}{13} = c
+    \end{align}
+    Therefore, the equation is \begin{align}
+        \myvec{1&1}\Vec{x}=\frac{6}{13}
+    \end{align}
