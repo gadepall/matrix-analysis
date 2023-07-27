@@ -1,0 +1,58 @@
+If two equal chords of a circle intersect within the circle,prove that the line joining the point of intersection to the centre makes equal angles with the chords.
+
+\textbf{Solution :}
+
+\begin{table}[H]
+    \centering
+	\input{chapters/9/10/4/3/table/tab1.tex}
+    \caption{Table of input parameters}
+    \label{tab:tab:9.10.4.3.1}
+\end{table}
+
+\begin{table}[H]
+    \centering
+\input{chapters/9/10/4/3/table/tab2.tex}
+\caption{Table of output parameters}
+    \label{tab:tab:9.10.4.3.2}
+\end{table}
+
+\begin{align}
+  \cos{\angle RQS}&=\frac{\vec{\brak{R-Q}}^{\top}\vec{\brak{Q-S}}}{\vec{\norm{R-Q}\norm{Q-S}}}\\
+  &=\cos{\frac{\theta_3-\theta_4}{2}}\\
+   \cos{\angle PSQ}&=\frac{\vec{\brak{P-S}}^{\top}\vec{\brak{S-Q}}}{\vec{\norm{P-S}\norm{S-Q}}}\\
+  &=\cos{\frac{\theta_1-\theta_2}{2}}\\
+   \cos{\angle RQS}&=\cos{\angle PSQ}\\
+   or,\theta_1&=\theta_2-\theta_3+\theta_4\\
+   &=-180\degree
+  \end{align}
+The equation of $PQ$ and $RS$ is obtained by
+\begin{align}
+  \vec{n_1}^{\top}\vec{\brak{x-P}}=0\\
+  \vec{n_2}^{\top}\vec{\brak{x-R}}=0\\
+  or,\vec{n_1}=\myvec{\sin{\theta_2}-\sin{\theta_1}\\\cos{\theta_1}-\cos{\theta_2}}\\
+  or,\vec{n_2}=\myvec{\sin{\theta_4}-\sin{\theta_3}\\\cos{\theta_3}-\cos{\theta_4}}\\
+ \end{align}
+  The value of the point of the intersection is
+\begin{align}
+    \myvec{\vec{n_1}^{\top}\\\vec{n_2}^{\top}}\vec{x}&=\myvec{\vec{n_1}^{\top}\vec{P}\\\vec{n_2}^{\top}\vec{R}}\\
+    \vec{x}&=\myvec{\vec{n_1}^{\top}\\\vec{n_2}^{\top}}^{-1}\myvec{\vec{n_1}^{\top}\vec{P}\\\vec{n_2}^{\top}\vec{R}}\\
+        or,\vec{T} &= \myvec{0\\-0.45}\\
+\cos{\angle OTP} &= \frac{\brak{\vec{T-P}}^{\top}\brak{\vec{O-T}}}{\vec{\norm{T-P}\norm{T-O}}}\\
+or, \angle OTP&= 66\degree
+\end{align}
+Similarly,
+\begin{align}
+   \cos{\angle OTR} &= \frac{\brak{\vec{T-R}}^{\top}\brak{\vec{T-O}}}{\vec{\norm{T-R}\norm{T-O}}}\\
+or, \angle OTR&= 66\degree \\
+So,\angle OTP &= \angle OTR \brak{proved}
+\end{align}
+
+ 
+
+\begin{figure}[H]                            
+\centering
+\includegraphics[width=\columnwidth]{chapters/9/10/4/3/fig/9.10.4.3.png}                            
+\caption{}                              
+\label{fig:9.10.4.3}
+\end{figure}
+
