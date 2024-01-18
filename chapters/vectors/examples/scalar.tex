@@ -79,5 +79,47 @@
 \caption{STRAIGHT LINES}
 \label{fig:chapters/11/10/4/11/figs/strline.jpg}
 \end{figure}
-
+\item\textbf{}The scalar product of the vector $\hat{i}+\hat{j}+\hat{k}$ with a unit vector along the sum of vectors $2\hat{i}+4\hat{j}-5\hat{k}$ and $\lambda\hat{i}+2\hat{j}+3\hat{k}$ is equal to one, Find the value of $\lambda$.
+\\\\
+\textbf{Generalized Construction:}\\
+We now that \\
+\begin{align}
+   &\implies \vec{A}^\top = \frac{\brak{\vec{B}+\vec{C}}}{\norm{\vec{B}+\vec{C}}}\\
+       &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\norm{\vec{B}+\vec{C}} \label{eq:Eqat2}\\
+       &\implies \vec{C}=\lambda\vec{e}_1+\vec{D}\label{eq:EQT-C}
+    \end{align}
+    were,
+    \begin{align}
+       &\implies \norm{\vec{B}+\vec{C}}= \sqrt{\brak{\vec{B}+\vec{C}}^\top\brak{\vec{B}+\vec{C}}}
+    \end{align}
+From the Equation\eqref{eq:Eqat2},We can do
+\begin{align}
+   &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\sqrt{\brak{\vec{B}+\vec{C}}^\top\brak{\vec{B}+\vec{C}}}\\
+&\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\sqrt{\norm{\vec{B}}^2+2\sbrak{\vec{B}^{\top}\vec{C}}+\norm{\vec{C}}^2}\\
+&\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\sqrt{{\vec{B}^{\top}\vec{B}}+2\sbrak{\vec{B}^{\top}\vec{C}}+{\vec{C}^\top\vec{C}}}\label{eq:Eqt6}
+\end{align}
+Substitute the $\vec{C}$ Value in the Equation\eqref{eq:Eqt6},We get
+\begin{align}
+&\implies\vec{A}^{\top}\brak{\vec{B}+\lambda\vec{e}_1+\vec{D}}=\sqrt{\vec{B}^{\top}\vec{B}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\brak{\lambda\vec{e}_1+\vec{D}}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}}
+\end{align}
+S.O.B.S,we get
+\begin{align}
+&\implies\brak{\vec{A}^{\top}\brak{\vec{B}+\lambda\vec{e}_1+\vec{D}}}^{2}=\vec{B}^{\top}\vec{B}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\brak{\brak{\lambda\vec{e}_1+\vec{D}}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}} \\
+&\implies\brak{\vec{A}^{\top}\lambda\vec{e}_1}^{2}+\brak{\vec{A}^{\top}\vec{B}+\vec{D}}^{2}+2\brak{\vec{A}^{\top}\lambda\vec{e}_1}\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}=\vec{B}^{\top}\vec{B}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\lambda^{2}+2\lambda\vec{e}_1^{\top}\vec{D}+\vec{D}^{\top}\vec{D}\\
+&\implies\brak{\lambda^{2}}+\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}+2\brak{\vec{A}^{\top}\lambda\vec{e}_1}\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}=\vec{B}^{\top}\vec{B}+2\lambda\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}+\vec{D}^{\top}\vec{D}+\lambda^{2}\\
+&\implies2\lambda\sbrak{\vec{A}^\top\vec{e}_1\vec{A}^\top\brak{\vec{B}+\vec{D}}-\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}}=\vec{B}^{\top}\vec{B}+2\lambda\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}+\vec{D}^{\top}\vec{D}-\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}\\
+&\implies2\lambda=\frac{\vec{B}^{\top}\vec{B}+2\vec{B}^{\top}\vec{D}+\vec{D}^{\top}\vec{D}-\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}}{\sbrak{\vec{A}^\top\vec{e}_1\vec{A}^\top\brak{\vec{B}+\vec{D}}-\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}}}\\
+&\implies\lambda=\frac{\vec{B}^{\top}\vec{B}+2\vec{B}^{\top}\vec{D}+\vec{D}^{\top}\vec{D}-\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}}{2\sbrak{\vec{A}^\top\vec{e}_1\vec{A}^\top\brak{\vec{B}+\vec{D}}-\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}}} \label{eq:EWQ77}
+\end{align}
+Substitute the Given Data in Equation\eqref{eq:EWQ77},
+\begin{align*}
+\vec{A}=\myvec{1\\1\\1};\vec{B}=\myvec{2\\4\\-5};\vec{C}=\myvec{\lambda\\2\\3}
+\end{align*}
+we get,
+\begin{align}   
+&\implies\lambda=\frac{45-14+13-36}{2\brak{1\brak{6}-2}}\\
+&\implies\lambda=\frac{44-36}{8}\\
+&\impliedby\lambda=\frac{8}{8}\\
+ &\implies \lambda = 1
+\end{align}
 \end{enumerate}
