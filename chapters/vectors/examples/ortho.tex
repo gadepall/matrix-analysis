@@ -90,4 +90,104 @@ line determined by the points $(3, 5, – 1), (4, 3, – 1)$.
     \solution
 		\input{chapters/12/11/4/6/inner.tex}
 \item If $\vec{a},\vec{b},\vec{c}$ are mutually perpendicular vectors of equal magnitudes, show that the vector $\vec{c}.\vec{d}$=15 is equally inclined to $\vec{a},\vec{b}$ and $\vec{c}$.\\
+    \item If $ \vec{A},\vec{B},\vec{C} $ are mutually perpendicular vectors of equal magnitudes,show that the  $ \vec{A}+\vec{B}+\vec{C} $ is equally inclined to $ \vec{A},\vec{B}  \text{ and }  \vec{C} $.\\
+    \textbf{Solution:}
+    
+    Suppose we have the following vectors:
+    \begin{align*}
+        \vec{v}_1 = \myvec{1 \\1 \\1}  \\
+        \vec{v}_2 = \myvec{6\\ 4\\ 5}  \\
+        \vec{v}_3 = \myvec{3 \\6\\ 9}
+    \end{align*}
+        
+
+\textbf{Step 1: Initialize}
+
+Set $\vec{u}_1 = \vec{v}_1$:\\
+
+ $\vec{u}_1 = \myvec{1\\1\\1}$
+ 
+
+\textbf{Step 2: Orthogonalization}
+
+For  $ \vec{v}_2$ :
+ \begin{align}
+     \vec{u}_2 = \vec{v}_2 - \frac{\langle \vec{v}_2, \vec{u}_1 \rangle}{\langle \vec{u}_1, \vec{u}_1 \rangle} \vec{u}_1 \\
+     \vec{u}_2=\vec{v}_2- \brak{\vec{u}_1 ^\top \vec{v}_2} \vec{u}_1\\ 
+     \vec{u}_2\implies \myvec{1\\-1\\0}
+ \end{align}
+
+For $\vec{v}_3 $:
+\begin{align}
+    \vec{u}_3 = \vec{v}_3 - \frac{\langle \vec{v}_3, \vec{u}_1 \rangle}{\langle \vec{u}_1, \vec{u}_1 \rangle} \vec{u}_1 - \frac{\langle \vec{v}_3, \vec{u}_2 \rangle}{\langle \vec{u}_2, \vec{u}_2 \rangle} \vec{u}_2 \\
+    \vec{u}_3=\vec{v}_3- \brak{\vec{u}_2 ^\top \vec{v}_3} \vec{u}_2- \brak{\vec{u}_1 ^\top \vec{v}_3} \vec{u}_1\\ 
+\vec{u}_3\implies \myvec{-1\\-1\\2}
+\end{align}
+
+\textbf{Step 3: Normalization}
+
+Normalize each vector:
+\begin{align}
+\vec{u}_1 = \frac{\vec{u}_1}{\norm{\vec{u}_1}} \\
+\vec{u}_2 = \frac{\vec{u}_2}{\norm{\vec{u}_2}} \\
+\vec{u}_3 = \frac{\vec{u}_3}{\norm{\vec{u}_3}} 
+\end{align}
+
+The final orthonormal basis is:
+\begin{align*}
+\vec{u}_1 = \myvec{\frac{1}{\sqrt{3}}\\ \frac{1}{\sqrt{3}}\\ \frac{1}{\sqrt{3}}} 
+\implies\myvec{0.577\\0.577\\0.577}\\
+\vec{u}_2 = \myvec{\frac{1}{\sqrt{2}}\\\frac{-1}{\sqrt{2}}\\0 }
+\implies \myvec{0.707 \\ -0.707 \\ 0}\\
+\vec{u}_3 = \myvec{\frac{-1}{\sqrt{6}}\\ \frac{-1}{\sqrt{6}}\\ \frac{2}{\sqrt{6}}} 
+\implies \myvec{-0.408\\-0.408\\0.816}
+\end{align*}
+\textbf{Step 4: QR Decoposition}
+
+we calculate Q by means of Gram–Schmidt process\\
+$Q$ is an orthogonal matrix 
+\begin{align*}
+    Q=\myvec{ 0.577&0.707&-0.408\\0.577&-0.707&-0.408\\0.577&0&0.816}
+\end{align*}
+To verify it as a orthonormal matrix we have to check this property i.e,  $Q^{\top}.Q =I$
+\begin{align*}
+    \implies Q^\top Q &= \myvec{1&0&0\\0&1&0\\0&0&1}
+\end{align*}
+\textbf{Step 5: Findings angles between $\vec{u}_1,\vec{u}_2,\vec{u}_3  \text{ and } \vec{u}_1+\vec{u}_2+\vec{u}_3 $}
+\begin{align}
+    \vec{u}_1=\myvec{0.577\\0.577\\0.577}\\
+    \vec{u}_2=\myvec{0.707 \\ -0.707 \\ 0} \\
+    \vec{u}_3=\myvec{-0.408\\-0.408\\0.816}\\
+    \vec{u}_1+\vec{u}_2+\vec{u}_3\implies\vec{y}=\myvec{0.876\\-0.538\\1.393}
+\end{align}
+Normalize each vector:\\
+   \begin{align}
+    \norm{\vec{u}_1}=1\\
+    \norm{\vec{u}_2}=0.9998\\
+     \norm{\vec{u}_3}=0.9987\\
+     \norm{\vec{y}}=1.732
+   \end{align}
+Finding angles:
+\begin{align}
+    \cos{\theta_1}&=\frac{\myvec{0.577 \\0.577 \\0.577}\myvec{0.876&-0.538&1.393}}{\brak{1}\brak{1.732}}\\
+    \cos{\theta_1}&=\frac{1}{1.732}\\
+    \theta_1=\cos^{-1}\brak{\frac{1}{1.732}}
+    \implies 54.73\degree
+\end{align}
+\begin{align}
+   \cos{\theta_2}&=\frac{\myvec{0.707 \\-0.707 \\0}\myvec{0.876&-0.538&1.393}}{\brak{0.9998}\brak{1.732}}\\
+    \cos{\theta_2}&=\frac{1}{1.732}\\
+    \theta_2=\cos^{-1}\brak{\frac{1}{1.732}}
+    \implies 54.73\degree
+\end{align}
+\begin{align}
+     \cos{\theta_3}&=\frac{\myvec{-0.408 \\-0.408\\0.816}\myvec{0.876&-0.538&1.393}}{\brak{0.9987}\brak{1.732}}\\
+    \cos{\theta_3}&=\frac{1}{1.732}\\
+    \theta_3=\cos^{-1}\brak{\frac{1}{1.732}}
+    \implies 54.73\degree
+\end{align}
+\begin{align*}
+    \therefore  \theta_1=\theta_2=\theta_3
+\end{align*}
+Hence  we can say that $\vec{u}_1+\vec{u}_2+\vec{u}_3 $ is equally inclined to $\vec{u}_1,\vec{u}_2 \text{and} \vec{u}_3  $ 
 \end{enumerate}
