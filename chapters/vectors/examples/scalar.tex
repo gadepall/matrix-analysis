@@ -122,4 +122,58 @@ we get,
 &\impliedby\lambda=\frac{8}{8}\\
  &\implies \lambda = 1
 \end{align}
+\item Let $\vec{a}$ and $\vec{b}$ be two unit vectors and $\theta$ is the angle between them. Then $\vec{a}+\vec{b}$ is a unit vector.
+ \begin{enumerate}[label=(\Alph*)]                     
+ \item $\theta$=$\frac{\pi}{4}$
+ \item $\theta$=$\frac{\pi}{3}$
+  \item $\theta$=$\frac{\pi}{2}$
+   \item $\theta$=$\frac{2\pi}{3}$
+   \end{enumerate}
+   \textbf{solution:}
+Given,
+\begin{align}
+ \norm{\vec{a}} &= \norm{\vec{b}}=1 
+ \label{eq:eq1},\\
+ \norm{\vec{a}+\vec{b}}&=1
+ \label{eq:eq0}
+ \end{align}
+Squaring on both sides of \eqref{eq:eq0}, we get
+\begin{align}
+ \norm{\vec{a}+\vec{b}}^2 &=1^2
+\\
+ \implies \norm{\vec{a}}^2 + \norm{\vec{b}}^2 + 2\vec{a}^{\top}\vec{b} &= 1
+ \label{eq:eq2}
+\end{align}
+Substituting \eqref{eq:eq1} in \eqref{eq:eq2}, we get
+\begin{align}
+ \implies 1+1+2(\norm{\vec{a}}\norm{\vec{b}}\cos{\theta}) &=1\\
+ \implies 2+2(\norm{\vec{a}}\norm{\vec{b}}\cos{\theta}) &=1\\
+ \implies 2(\norm{\vec{a}}\norm{\vec{b}}\cos{\theta}) &=-1\\
+ \implies (\norm{\vec{a}}\norm{\vec{b}}\cos{\theta}) &=\frac{-1}{2}
+ \label{eq:eq3}
+\end{align}
+Substituting \eqref{eq:eq1} in \eqref{eq:eq3}, we get
+\begin{align}
+ \implies \cos{\theta} &=\frac{-1}{2}
+ \\
+ \implies \theta &=\frac{2\pi}{3}
+\end{align}
+Let, \begin{align}
+ \vec{a} &= \myvec{\cos \theta_1 \\ \sin \theta_1}\\
+ \vec{b} &= \myvec{\cos \theta_2 \\ \sin \theta_2}
+\end{align}
+Matrix multiplication of 
+$\vec{a}.\vec{b}$ is:
+\begin{align}
+ \vec{a}^{\top}\vec {b}= \cos \brak{\theta_1 -\theta_2} &= \frac{-1}{2}\\
+ \theta_1 - \theta_2& =\cos^{-1} \brak{\frac{-1}{2}}\\
+ \theta_1 - \theta_2 &= \frac{2\pi}{3}\\
+ \theta_1 &= \theta_2 +\frac{2\pi}{3}
+\end{align}
+  \begin{figure}[H]
+   \centering        
+   \includegraphics[width=\columnwidth]{figs/figg.jpeg}
+   \caption{}       
+   \label{fig:python generated plot}
+  \end{figure}
 \end{enumerate}
